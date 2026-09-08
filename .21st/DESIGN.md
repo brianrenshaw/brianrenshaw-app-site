@@ -13,3 +13,5 @@ Folio uses warm neutral surfaces, an orange accent, system typography and real n
 Common header/footer and document layout are in assets/family.css. All subpages inherit their app’s theme. Keyboard focus, semantic landmarks, guide anchors and reduced motion are required. No analytics or third-party font requests. Fonts from google/fonts are bundled under their OFL licenses.
 
 21st search: "minimal app portfolio static landing page" (2026-09-08). Catalog matches were React components; no catalog code was retrieved or installed. Existing static HTML primitives and supplied designs are the implementation source.
+
+Lankford Legends links to https://lankfordlegends.co/ in a ruled editorial section beneath the app grid. Reuses the about section’s responsive grid, Georgia heading, portfolio colors, and shared SVG arrow. Copy reflects the blog’s public About page and identifies its analysis as AI-generated.
