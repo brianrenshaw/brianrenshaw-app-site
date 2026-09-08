@@ -51,7 +51,7 @@
     "prepared": "migration/legacy/chooser-web-app/web/index.html",
     "target": "https://brianrenshaw.app/whos-first/",
     "kind": "redirect",
-    "original_sha256": "f7d3019a2f211277c428d906511c5180bdd1316b60494ede35733fedfa31afda"
+    "original_sha256": "5813d34b14f76cdecef7d4059936b14c4bf6921fec1390be34ba1e68337f1d65"
   },
   {
     "repo": "chooser-web-app",
@@ -60,7 +60,7 @@
     "prepared": "migration/legacy/chooser-web-app/web/privacy.html",
     "target": "https://brianrenshaw.app/whos-first/privacy/",
     "kind": "mirror",
-    "original_sha256": "5e6082d9be5bf54c222526c272627dd9972de48e531441877d7a38ff184d077c"
+    "original_sha256": "cbe7f0440d7ae0886aaf05aa7cd35354eda1080dc9b04158a05521eaed97e842"
   },
   {
     "repo": "chooser-web-app",
@@ -69,7 +69,7 @@
     "prepared": "migration/legacy/chooser-web-app/web/support.html",
     "target": "https://brianrenshaw.app/whos-first/support/",
     "kind": "mirror",
-    "original_sha256": "c93ebc321513c1213d2b896af0c42f97a6eac5c3b6775f7524d3a16aafc63a5d"
+    "original_sha256": "1059ced75a4f97aa59104da1ae3ae98da93df56262c5fc288e36ca047dabcbe6"
   },
   {
     "repo": "folio-privacy",

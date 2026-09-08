@@ -2,12 +2,12 @@
 
 ## Rollout status
 
-`.app` domains are HSTS-preloaded and require valid HTTPS in browsers. GitHub showing an HTTP deployment URL does not mean the domain is visitor-ready. The Pages UI confirms certificate retries are automatic; leave the validated DNS configuration unchanged while issuance completes. [Google Registry requirement](https://www.registry.google/domains/app/)
+`.app` domains are HSTS-preloaded and require valid HTTPS in browsers. GitHub showing an HTTP deployment URL does not mean the domain is visitor-ready. GitHub has now issued the certificate and HTTPS enforcement is enabled. [Google Registry requirement](https://www.registry.google/domains/app/)
 
 - New public repository and GitHub Actions deployment are working.
 - Hover DNS and GitHub domain ownership verification are complete.
-- GitHub reports valid DNS for both apex and www; HTTPS issuance is pending (`bad_authz`). The custom domain has been removed and re-added following GitHub's recovery instructions.
-- Do not redirect old sites or update Apple URLs until the new domain passes HTTPS checks.
+- GitHub certificate approved for apex and www; HTTPS enabled. All 19 deployed routes match local HTML over validated TLS. www returns HTTP 301 to the HTTPS apex.
+- HTTPS checks passed; all four legacy site repositories received compatibility-page commits.
 - Migration documentation is committed and synced in all five requested app repositories and the nested Where Do We Eat website repository. Folio documentation is synced on GitHub main; its local v1.1 privacy-link change is committed locally, leaving five earlier unpublished release commits alone.
 
 ## URL mapping
@@ -21,7 +21,7 @@ All old paths are on `https://brianrenshaw.github.io`; new paths are on `https:/
 | `/where-do-we-eat-site/` | `/where-do-we-eat/` | HTML redirect |
 | `/where-do-we-eat-site/guide/` | `/where-do-we-eat/guide/` | Redirect with fragment preservation |
 | `/where-do-we-eat-site/privacy/` | `/where-do-we-eat/privacy/` | Readable legacy policy and canonical link |
-| `/chooser-web-app/` | `/whos-first/` | Native app landing page now; redirect after HTTPS |
+| `/chooser-web-app/` | `/whos-first/` | HTML redirect to native app landing |
 | `/chooser-web-app/privacy.html` | `/whos-first/privacy/` | Readable legacy policy and canonical link |
 | `/chooser-web-app/support.html` | `/whos-first/support/` | Readable legacy support and canonical link |
 | `/folio-privacy/` and `/folio-privacy/index.html` | `/folio/privacy/` | Readable legacy policy and canonical link |
@@ -47,10 +47,10 @@ Use `appStoreVersionLocalizations` for marketing/support, `appInfoLocalizations`
 
 ## Validation and limitations
 
-- Static check passes: 16 HTML files (15 routes plus 404); local links/assets, guide anchors, canonical URLs, CSS fonts, and required routes.
+- Static check passes: 20 HTML files (19 routes plus 404); 275 local links/assets, guide anchors, canonical URLs, CSS fonts, and required routes.
 - The playable browser version was removed at the user’s request. The legacy chooser homepage now showcases the native iPhone app; the deployment excludes retired game files.
 - 21st review reports no findings on the portfolio, app landings and migrated guides.
-- Visual browser checks and touch gameplay remain pending: no browser is connected to the agent. Verify widths 375, 768 and 1280, keyboard focus, dark appearance, guides, before claiming visual QA complete.
+- Visual browser checks remain pending: no browser is connected to the agent. Verify widths 375, 768 and 1280, keyboard focus, dark appearance, guides, before claiming visual QA complete.
 
 ## DNS and rollback
 
@@ -66,7 +66,7 @@ Before migration, apex and www resolved to Hover's `216.40.34.41`. No existing a
 
 ## Finish the cutover
 
-The prepared legacy payloads and Apple URL plan are committed under `migration/`. They are not deployed while HTTPS is unavailable. No secret key or token is stored here.
+Legacy payloads were deployed after HTTPS passed. The following commands document the reproducible rollout. No secret key or token is stored here.
 
 1. Open repository Settings → Pages and confirm the certificate is issued. Enable Enforce HTTPS. Keep DNS unchanged.
 2. Run `python3 scripts/check_live.py`. It verifies TLS without disabling certificate checks and compares all deployed HTML routes against local files. During DNS propagation it resolves directly to a GitHub Pages address.
@@ -78,6 +78,16 @@ Prepared redirect source repositories live in the original project folders; Foli
 
 ## Native-design correction
 
-Who’s First? uses its current Icon Composer Five Seats, One Table mark and native app screenshots from the existing build-18 capture set. The current native board palette, all three modes and eight visual worlds guide the page design. Support copy now reflects version 1.2. Reading Habit uses the exact current AppIcon-1024.png (unframed gold R), including favicon/social/portfolio derivatives. The browser game and all play links are removed; `/chooser/play/` redirects to the native app landing page. The old chooser-web-app Pages URL now serves the iPhone marketing/support/privacy pages without a game, while its future redirect points to `/whos-first/`.
+Who’s First? uses its current Icon Composer Five Seats, One Table mark and native app screenshots from the existing build-18 capture set. The current native board palette, all three modes and eight visual worlds guide the page design. Support copy now reflects version 1.2. Reading Habit uses the exact current AppIcon-1024.png (unframed gold R), including favicon/social/portfolio derivatives. The browser game and all play links are removed; `/chooser/play/` redirects to the native app landing page. The old chooser-web-app Pages URL now serves the iPhone marketing/support/privacy pages without a game, with its homepage redirect pointing to `/whos-first/`.
 
 Homepage arrows use one shared SVG shape across all app cards, independent of heading typography.
+
+## Remaining screenshot work
+
+Reading Habit and Where Do We Eat need fresh, publication-ready screenshots. No usable captures of the latest Reading Habit editorial UI were found. The latest Where Do We Eat device captures include personal contacts/history, so they were not published. Current website illustrations/screenshots remain until clean captures are supplied. Fresh Who’s First? simulator capture stalled and was stopped; the published gallery uses existing real native screenshots, including Pinball in flight.
+
+## HTTPS rollout completed
+
+Certificate approved and HTTPS enforced on September 8, 2026. All 19 routes were fetched over valid TLS and matched local files; www redirects to the HTTPS apex. Legacy compatibility pages are committed/pushed for all four websites. App Store Connect draft URLs for Reading Habit and Where Do We Eat and existing TestFlight URL fields were saved and read back. Released Who’s First? and Folio marketing/support/privacy fields require the next editable app version; old support/privacy pages remain readable. See brianrenshaw-app-site/migration/apple-results.json for exact outcomes.
+
+Remaining: clean current Reading Habit and Where Do We Eat screenshots and responsive visual browser review. Homepage arrows now share one SVG shape.
