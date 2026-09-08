@@ -1,0 +1,101 @@
+[
+  {
+    "repo": "reading-habit-site",
+    "root": "/Users/brianrenshaw/Projects/reading-habit-site",
+    "file": "index.html",
+    "prepared": "migration/legacy/reading-habit-site/index.html",
+    "target": "https://brianrenshaw.app/reading-habit/",
+    "kind": "redirect",
+    "original_sha256": "9b894f65ea557ce41998c5f5175c94b7fb11e04364155eaf170fc0cdc3b56e4a"
+  },
+  {
+    "repo": "reading-habit-site",
+    "root": "/Users/brianrenshaw/Projects/reading-habit-site",
+    "file": "guide/index.html",
+    "prepared": "migration/legacy/reading-habit-site/guide/index.html",
+    "target": "https://brianrenshaw.app/reading-habit/guide/",
+    "kind": "redirect",
+    "original_sha256": "67255f380db2b271a2414d18e09abe1547f195d11cfbedc9f7084f6457a52e00"
+  },
+  {
+    "repo": "where-do-we-eat-site",
+    "root": "/Users/brianrenshaw/Projects/where-do-we-eat/where-do-we-eat-site",
+    "file": "index.html",
+    "prepared": "migration/legacy/where-do-we-eat-site/index.html",
+    "target": "https://brianrenshaw.app/where-do-we-eat/",
+    "kind": "redirect",
+    "original_sha256": "b7dccb3296a67cbc7f811dda750e9c99c1734f2f488cceec1398a7245ff4f61b"
+  },
+  {
+    "repo": "where-do-we-eat-site",
+    "root": "/Users/brianrenshaw/Projects/where-do-we-eat/where-do-we-eat-site",
+    "file": "guide/index.html",
+    "prepared": "migration/legacy/where-do-we-eat-site/guide/index.html",
+    "target": "https://brianrenshaw.app/where-do-we-eat/guide/",
+    "kind": "redirect",
+    "original_sha256": "006e324a3e9d3479c84a94fd38eb897849b0ce8b56fbf41ac1c0ab0da820d636"
+  },
+  {
+    "repo": "where-do-we-eat-site",
+    "root": "/Users/brianrenshaw/Projects/where-do-we-eat/where-do-we-eat-site",
+    "file": "privacy/index.html",
+    "prepared": "migration/legacy/where-do-we-eat-site/privacy/index.html",
+    "target": "https://brianrenshaw.app/where-do-we-eat/privacy/",
+    "kind": "mirror",
+    "original_sha256": "bd010042ec37a3d0b28fc3570404deb1020786344e0e4dd44e2b9c9853d9d126"
+  },
+  {
+    "repo": "chooser-web-app",
+    "root": "/Users/brianrenshaw/Projects/chooser-web-app",
+    "file": "web/index.html",
+    "prepared": "migration/legacy/chooser-web-app/web/index.html",
+    "target": "https://brianrenshaw.app/chooser/play/",
+    "kind": "redirect",
+    "original_sha256": "7e1434fcd2dce482fbb9a8d1413169dea80f167889d63d0886f288b69f754178"
+  },
+  {
+    "repo": "chooser-web-app",
+    "root": "/Users/brianrenshaw/Projects/chooser-web-app",
+    "file": "web/privacy.html",
+    "prepared": "migration/legacy/chooser-web-app/web/privacy.html",
+    "target": "https://brianrenshaw.app/chooser/privacy/",
+    "kind": "mirror",
+    "original_sha256": "40e7cc69a5f6d678a04c00198ebe539db076347f0e6717ca178c240167f31ceb"
+  },
+  {
+    "repo": "chooser-web-app",
+    "root": "/Users/brianrenshaw/Projects/chooser-web-app",
+    "file": "web/support.html",
+    "prepared": "migration/legacy/chooser-web-app/web/support.html",
+    "target": "https://brianrenshaw.app/chooser/support/",
+    "kind": "mirror",
+    "original_sha256": "9752f6132350b408c0d8250bd4c944b634671d2a568e711d01b649837a58ba82"
+  },
+  {
+    "repo": "folio-privacy",
+    "root": "/Users/brianrenshaw/Projects/folio-privacy",
+    "file": "home.html",
+    "prepared": "migration/legacy/folio-privacy/home.html",
+    "target": "https://brianrenshaw.app/folio/",
+    "kind": "redirect",
+    "original_sha256": "852dba0c1d960cd8ee6c9d132582537b134c523ffde86f6727ac2555bfd4c49e"
+  },
+  {
+    "repo": "folio-privacy",
+    "root": "/Users/brianrenshaw/Projects/folio-privacy",
+    "file": "index.html",
+    "prepared": "migration/legacy/folio-privacy/index.html",
+    "target": "https://brianrenshaw.app/folio/privacy/",
+    "kind": "mirror",
+    "original_sha256": "80c33f4f4a34ff95337b7afd49696f5077e075b9e43a4e95d8b4474a1f1dcc0d"
+  },
+  {
+    "repo": "folio-privacy",
+    "root": "/Users/brianrenshaw/Projects/folio-privacy",
+    "file": "support.html",
+    "prepared": "migration/legacy/folio-privacy/support.html",
+    "target": "https://brianrenshaw.app/folio/support/",
+    "kind": "mirror",
+    "original_sha256": "fc3987365ec5cde7d2ad1bc7f9a5cd0a03f4f24d2f1d7102487650050898ccda"
+  }
+]

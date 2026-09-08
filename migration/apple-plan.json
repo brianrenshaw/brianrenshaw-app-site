@@ -1,0 +1,181 @@
+[
+  {
+    "app": "Who's First? Decide Together",
+    "appId": "6806757289",
+    "resource": "appStoreVersionLocalizations/239fa77f-1ef9-46d5-819c-1f382cfce048",
+    "locale": "en-US",
+    "version": "1.2",
+    "state": "READY_FOR_SALE",
+    "before": {
+      "marketingUrl": "https://brianrenshaw.github.io/chooser-web-app/",
+      "supportUrl": "https://brianrenshaw.github.io/chooser-web-app/support.html"
+    },
+    "desired": {
+      "marketingUrl": "https://brianrenshaw.app/chooser/",
+      "supportUrl": "https://brianrenshaw.app/chooser/support/"
+    },
+    "result": "planned"
+  },
+  {
+    "app": "Who's First? Decide Together",
+    "appId": "6806757289",
+    "resource": "appInfoLocalizations/45ab7656-4802-4b73-8421-81a17b53c42a",
+    "locale": "en-US",
+    "version": "app information",
+    "state": "READY_FOR_SALE",
+    "before": {
+      "privacyPolicyUrl": "https://brianrenshaw.github.io/chooser-web-app/privacy.html"
+    },
+    "desired": {
+      "privacyPolicyUrl": "https://brianrenshaw.app/chooser/privacy/"
+    },
+    "result": "planned"
+  },
+  {
+    "app": "Who's First? Decide Together",
+    "appId": "6806757289",
+    "resource": "betaAppLocalizations/58c94f09-7be9-47d5-a0b0-5296f1d664cc",
+    "locale": "en-US",
+    "version": "beta",
+    "state": "TestFlight",
+    "before": {
+      "marketingUrl": "https://brianrenshaw.github.io/chooser-web-app/",
+      "privacyPolicyUrl": "https://brianrenshaw.github.io/chooser-web-app/privacy.html"
+    },
+    "desired": {
+      "marketingUrl": "https://brianrenshaw.app/chooser/",
+      "privacyPolicyUrl": "https://brianrenshaw.app/chooser/privacy/"
+    },
+    "result": "planned"
+  },
+  {
+    "app": "Where Do We Eat",
+    "appId": "6808350718",
+    "resource": "appStoreVersionLocalizations/ee1cbeef-687b-48df-9828-b81ee18b39e5",
+    "locale": "en-US",
+    "version": "1.0",
+    "state": "PREPARE_FOR_SUBMISSION",
+    "before": {
+      "marketingUrl": null,
+      "supportUrl": null
+    },
+    "desired": {
+      "marketingUrl": "https://brianrenshaw.app/where-do-we-eat/",
+      "supportUrl": "https://brianrenshaw.app/where-do-we-eat/support/"
+    },
+    "result": "planned"
+  },
+  {
+    "app": "Where Do We Eat",
+    "appId": "6808350718",
+    "resource": "appInfoLocalizations/f00b6212-3a03-4df8-bb21-642cbf7c8610",
+    "locale": "en-US",
+    "version": "app information",
+    "state": "PREPARE_FOR_SUBMISSION",
+    "before": {
+      "privacyPolicyUrl": null
+    },
+    "desired": {
+      "privacyPolicyUrl": "https://brianrenshaw.app/where-do-we-eat/privacy/"
+    },
+    "result": "planned"
+  },
+  {
+    "app": "Where Do We Eat",
+    "appId": "6808350718",
+    "resource": "betaAppLocalizations/d8bc5443-1779-424f-8583-4308245d7b0c",
+    "locale": "en-US",
+    "version": "beta",
+    "state": "TestFlight",
+    "before": {
+      "marketingUrl": null,
+      "privacyPolicyUrl": "https://brianrenshaw.github.io/where-do-we-eat-site/privacy/"
+    },
+    "desired": {
+      "marketingUrl": "https://brianrenshaw.app/where-do-we-eat/",
+      "privacyPolicyUrl": "https://brianrenshaw.app/where-do-we-eat/privacy/"
+    },
+    "result": "planned"
+  },
+  {
+    "app": "Reading Habit - Book Tracker",
+    "appId": "6809740339",
+    "resource": "appStoreVersionLocalizations/a9df0405-62ef-400e-8b3f-af8aa20e872e",
+    "locale": "en-US",
+    "version": "1.0",
+    "state": "PREPARE_FOR_SUBMISSION",
+    "before": {
+      "marketingUrl": null,
+      "supportUrl": null
+    },
+    "desired": {
+      "marketingUrl": "https://brianrenshaw.app/reading-habit/",
+      "supportUrl": "https://brianrenshaw.app/reading-habit/support/"
+    },
+    "result": "planned"
+  },
+  {
+    "app": "Reading Habit - Book Tracker",
+    "appId": "6809740339",
+    "resource": "appInfoLocalizations/0626045c-d4be-44bd-8c1f-f6ce3ac9d92d",
+    "locale": "en-US",
+    "version": "app information",
+    "state": "PREPARE_FOR_SUBMISSION",
+    "before": {
+      "privacyPolicyUrl": null
+    },
+    "desired": {
+      "privacyPolicyUrl": "https://brianrenshaw.app/reading-habit/privacy/"
+    },
+    "result": "planned"
+  },
+  {
+    "app": "Folio \u2014 Offline HTML Viewer",
+    "appId": "6803229706",
+    "resource": "appStoreVersionLocalizations/496e66b9-47b3-4f68-8b2b-0c8ac088b5b9",
+    "locale": "en-US",
+    "version": "1.1.2",
+    "state": "READY_FOR_SALE",
+    "before": {
+      "marketingUrl": "https://brianrenshaw.github.io/folio-privacy/home.html",
+      "supportUrl": "https://brianrenshaw.github.io/folio-privacy/support.html"
+    },
+    "desired": {
+      "marketingUrl": "https://brianrenshaw.app/folio/",
+      "supportUrl": "https://brianrenshaw.app/folio/support/"
+    },
+    "result": "planned"
+  },
+  {
+    "app": "Folio \u2014 Offline HTML Viewer",
+    "appId": "6803229706",
+    "resource": "appInfoLocalizations/9fa294c2-3623-42c6-a8fb-a903251b61f0",
+    "locale": "en-US",
+    "version": "app information",
+    "state": "READY_FOR_SALE",
+    "before": {
+      "privacyPolicyUrl": "https://brianrenshaw.github.io/folio-privacy/"
+    },
+    "desired": {
+      "privacyPolicyUrl": "https://brianrenshaw.app/folio/privacy/"
+    },
+    "result": "planned"
+  },
+  {
+    "app": "Folio \u2014 Offline HTML Viewer",
+    "appId": "6803229706",
+    "resource": "betaAppLocalizations/87ba7c6e-9d6a-42b1-b9a3-99808b2df076",
+    "locale": "en-US",
+    "version": "beta",
+    "state": "TestFlight",
+    "before": {
+      "marketingUrl": "https://brianrenshaw.github.io/folio-privacy/home.html",
+      "privacyPolicyUrl": "https://brianrenshaw.github.io/folio-privacy"
+    },
+    "desired": {
+      "marketingUrl": "https://brianrenshaw.app/folio/",
+      "privacyPolicyUrl": "https://brianrenshaw.app/folio/privacy/"
+    },
+    "result": "planned"
+  }
+]
