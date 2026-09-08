@@ -38,6 +38,10 @@
     {
       "id": "blog-project-card",
       "decision": "Lankford Legends shares the app-card UI in the project grid; utilities remain separate at the bottom."
+    },
+    {
+      "id": "lankford-cardinals-colors",
+      "decision": "Use the blog game graphics as visual reference: Cardinals navy, red, white, and yellow; custom LL baseball-diamond SVG icon."
     }
   ],
   "evidence": [],
