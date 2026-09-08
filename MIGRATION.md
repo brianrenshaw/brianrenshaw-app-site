@@ -2,6 +2,8 @@
 
 ## Rollout status
 
+`.app` domains are HSTS-preloaded and require valid HTTPS in browsers. GitHub showing an HTTP deployment URL does not mean the domain is visitor-ready. The Pages UI confirms certificate retries are automatic; leave the validated DNS configuration unchanged while issuance completes. [Google Registry requirement](https://www.registry.google/domains/app/)
+
 - New public repository and GitHub Actions deployment are working.
 - Hover DNS and GitHub domain ownership verification are complete.
 - GitHub reports valid DNS for both apex and www; HTTPS issuance is pending (`bad_authz`). The custom domain has been removed and re-added following GitHub's recovery instructions.
