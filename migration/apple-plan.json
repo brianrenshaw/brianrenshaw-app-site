@@ -11,8 +11,8 @@
       "supportUrl": "https://brianrenshaw.github.io/chooser-web-app/support.html"
     },
     "desired": {
-      "marketingUrl": "https://brianrenshaw.app/chooser/",
-      "supportUrl": "https://brianrenshaw.app/chooser/support/"
+      "marketingUrl": "https://brianrenshaw.app/whos-first/",
+      "supportUrl": "https://brianrenshaw.app/whos-first/support/"
     },
     "result": "planned"
   },
@@ -27,7 +27,7 @@
       "privacyPolicyUrl": "https://brianrenshaw.github.io/chooser-web-app/privacy.html"
     },
     "desired": {
-      "privacyPolicyUrl": "https://brianrenshaw.app/chooser/privacy/"
+      "privacyPolicyUrl": "https://brianrenshaw.app/whos-first/privacy/"
     },
     "result": "planned"
   },
@@ -43,8 +43,8 @@
       "privacyPolicyUrl": "https://brianrenshaw.github.io/chooser-web-app/privacy.html"
     },
     "desired": {
-      "marketingUrl": "https://brianrenshaw.app/chooser/",
-      "privacyPolicyUrl": "https://brianrenshaw.app/chooser/privacy/"
+      "marketingUrl": "https://brianrenshaw.app/whos-first/",
+      "privacyPolicyUrl": "https://brianrenshaw.app/whos-first/privacy/"
     },
     "result": "planned"
   },

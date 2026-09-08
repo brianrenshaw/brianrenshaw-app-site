@@ -8,7 +8,6 @@ One static website for Reading Habit, Where Do We Eat, Who’s First?, and Folio
 
 ```sh
 python3 scripts/check_site.py
-node --check site/chooser/play/app.js
 python3 -m http.server 8080 --directory site
 ```
 
@@ -22,7 +21,7 @@ GitHub Actions validates links, anchors, local assets and canonical addresses be
 | --- | --- | --- |
 | Reading Habit | `/reading-habit/` | `guide/`, `support/`, `privacy/` |
 | Where Do We Eat | `/where-do-we-eat/` | `guide/`, `support/`, `privacy/` |
-| Who’s First? | `/chooser/` | `support/`, `privacy/`, `play/` |
+| Who’s First? | `/whos-first/` | `support/`, `privacy/` |
 | Folio | `/folio/` | `support/`, `privacy/` |
 
 Support email remains contact@foliohtml.com. Keep app-specific privacy policies accurate; don’t substitute a generic portfolio policy. Existing policy language was preserved, and Reading Habit’s new policy reflects its local implementation (private iCloud, Open Library/Apple cover lookups, user-selected link resolution and imports).

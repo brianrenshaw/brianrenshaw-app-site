@@ -21,9 +21,9 @@ All old paths are on `https://brianrenshaw.github.io`; new paths are on `https:/
 | `/where-do-we-eat-site/` | `/where-do-we-eat/` | HTML redirect |
 | `/where-do-we-eat-site/guide/` | `/where-do-we-eat/guide/` | Redirect with fragment preservation |
 | `/where-do-we-eat-site/privacy/` | `/where-do-we-eat/privacy/` | Readable legacy policy and canonical link |
-| `/chooser-web-app/` | `/chooser/play/` | Redirect to the browser game |
-| `/chooser-web-app/privacy.html` | `/chooser/privacy/` | Readable legacy policy and canonical link |
-| `/chooser-web-app/support.html` | `/chooser/support/` | Readable legacy support and canonical link |
+| `/chooser-web-app/` | `/whos-first/` | Native app landing page now; redirect after HTTPS |
+| `/chooser-web-app/privacy.html` | `/whos-first/privacy/` | Readable legacy policy and canonical link |
+| `/chooser-web-app/support.html` | `/whos-first/support/` | Readable legacy support and canonical link |
 | `/folio-privacy/` and `/folio-privacy/index.html` | `/folio/privacy/` | Readable legacy policy and canonical link |
 | `/folio-privacy/home.html` | `/folio/` | HTML redirect |
 | `/folio-privacy/support.html` | `/folio/support/` | Readable legacy support and canonical link |
@@ -47,10 +47,10 @@ Use `appStoreVersionLocalizations` for marketing/support, `appInfoLocalizations`
 
 ## Validation and limitations
 
-- Static check passes: 17 HTML files (16 routes plus 404), 276 local links/assets, guide anchors, canonical URLs, CSS fonts, and required routes.
-- Browser game JavaScript syntax passes; its gameplay JS and CSS are preserved from the source project.
+- Static check passes: 16 HTML files (15 routes plus 404); local links/assets, guide anchors, canonical URLs, CSS fonts, and required routes.
+- The playable browser version was removed at the user’s request. The legacy chooser homepage now showcases the native iPhone app; the deployment excludes retired game files.
 - 21st review reports no findings on the portfolio, app landings and migrated guides.
-- Visual browser checks and touch gameplay remain pending: no browser is connected to the agent. Verify widths 375, 768 and 1280, keyboard focus, dark appearance, guides, and game interaction before claiming visual QA complete.
+- Visual browser checks and touch gameplay remain pending: no browser is connected to the agent. Verify widths 375, 768 and 1280, keyboard focus, dark appearance, guides, before claiming visual QA complete.
 
 ## DNS and rollback
 
@@ -69,9 +69,15 @@ Before migration, apex and www resolved to Hover's `216.40.34.41`. No existing a
 The prepared legacy payloads and Apple URL plan are committed under `migration/`. They are not deployed while HTTPS is unavailable. No secret key or token is stored here.
 
 1. Open repository Settings → Pages and confirm the certificate is issued. Enable Enforce HTTPS. Keep DNS unchanged.
-2. Run `python3 scripts/check_live.py`. It verifies TLS without disabling certificate checks and compares all 16 deployed HTML routes against local files. During DNS propagation it resolves directly to a GitHub Pages address.
+2. Run `python3 scripts/check_live.py`. It verifies TLS without disabling certificate checks and compares all deployed HTML routes against local files. During DNS propagation it resolves directly to a GitHub Pages address.
 3. Run `python3 scripts/deploy_legacy.py --apply`. It checks HTTPS again, checks all original file hashes and local/remote branch equality, then commits and pushes only the 11 prepared legacy pages. It stops if someone changed the source pages after preparation.
 4. Set `APP_STORE_KEY_ID` and `APP_STORE_ISSUER_ID` for the existing App Store Connect API key. Optionally set `APP_STORE_KEY_PATH`; otherwise it reads the matching file from `~/.appstoreconnect/private_keys/`. Install PyJWT and cryptography if unavailable. Run `python3 scripts/update_apple_urls.py` for a fresh inventory, then add `--apply` to update the URL fields. It verifies HTTPS before updates, reads back every successful write, and records release-dependent errors in `migration/apple-results.json`.
 5. Check old URLs, query strings and guide fragments; verify www redirects to the apex. Update this log and each app's WEBSITE_MIGRATION.md with final results, then commit and push those records.
 
 Prepared redirect source repositories live in the original project folders; Folio's public website repo is now checked out at `/Users/brianrenshaw/Projects/folio-privacy`. All original app worktrees retain their unrelated changes. The Folio main branch predates its privacy-link UI, so only documentation was changed there; its local release branch carries the URL edit for the next release.
+
+## Native-design correction
+
+Who’s First? uses its current Icon Composer Five Seats, One Table mark and native app screenshots from the existing build-18 capture set. The current native board palette, all three modes and eight visual worlds guide the page design. Support copy now reflects version 1.2. Reading Habit uses the exact current AppIcon-1024.png (unframed gold R), including favicon/social/portfolio derivatives. The browser game and all play links are removed; `/chooser/play/` redirects to the native app landing page. The old chooser-web-app Pages URL now serves the iPhone marketing/support/privacy pages without a game, while its future redirect points to `/whos-first/`.
+
+Homepage arrows use one shared SVG shape across all app cards, independent of heading typography.

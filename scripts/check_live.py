@@ -20,6 +20,6 @@ if __name__=='__main__':
    return url
   for url in concurrent.futures.ThreadPoolExecutor(max_workers=4).map(check,pages):print('PASS',url)
   assert fetch('https://www.brianrenshaw.app/')==index,'www content differs'
-  print('PASS: TLS and all 16 deployed routes match the local site; www resolves.')
+  print('PASS: TLS and all deployed routes match the local site; www resolves.')
  except Exception as e:
   print('NOT READY:',e);sys.exit(1)

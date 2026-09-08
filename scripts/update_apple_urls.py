@@ -4,7 +4,7 @@ from pathlib import Path
 import os,time,json,urllib.request,urllib.error,sys,subprocess
 import jwt
 ROOT=Path(__file__).resolve().parents[1]
-APPS={'6806757289':'chooser','6808350718':'where-do-we-eat','6809740339':'reading-habit','6803229706':'folio'}
+APPS={'6806757289':'whos-first','6808350718':'where-do-we-eat','6809740339':'reading-habit','6803229706':'folio'}
 KEY_ID=os.environ['APP_STORE_KEY_ID'];ISSUER=os.environ['APP_STORE_ISSUER_ID']
 KEY=Path(os.environ.get('APP_STORE_KEY_PATH',str(Path.home()/f'.appstoreconnect/private_keys/AuthKey_{KEY_ID}.p8')))
 def request(path,method='GET',data=None):

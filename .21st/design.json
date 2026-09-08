@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "project": {
+    "name": "brianrenshaw-app-site",
+    "productType": null,
+    "stack": []
+  },
+  "sources": {
+    "tokens": [],
+    "components": [],
+    "assets": [],
+    "instructions": []
+  },
+  "design": {
+    "colorMode": "unknown",
+    "colors": {},
+    "typography": {},
+    "spacing": {},
+    "radius": {},
+    "shadows": {},
+    "motion": {},
+    "density": "unknown"
+  },
+  "components": {
+    "installed": [],
+    "preferredPrimitives": [],
+    "patterns": []
+  },
+  "constraints": {
+    "must": [],
+    "avoid": []
+  },
+  "decisions": [
+    {
+      "id": "native-app-assets",
+      "decision": "Native app icons are authoritative over historical website mockups. Who\u2019s First? uses the current board palette and existing native build-18 captures. No playable web app."
+    }
+  ],
+  "evidence": [],
+  "generatedAt": "2026-09-08T20:40:52.027Z"
+}

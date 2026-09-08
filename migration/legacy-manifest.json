@@ -49,27 +49,27 @@
     "root": "/Users/brianrenshaw/Projects/chooser-web-app",
     "file": "web/index.html",
     "prepared": "migration/legacy/chooser-web-app/web/index.html",
-    "target": "https://brianrenshaw.app/chooser/play/",
+    "target": "https://brianrenshaw.app/whos-first/",
     "kind": "redirect",
-    "original_sha256": "7e1434fcd2dce482fbb9a8d1413169dea80f167889d63d0886f288b69f754178"
+    "original_sha256": "f7d3019a2f211277c428d906511c5180bdd1316b60494ede35733fedfa31afda"
   },
   {
     "repo": "chooser-web-app",
     "root": "/Users/brianrenshaw/Projects/chooser-web-app",
     "file": "web/privacy.html",
     "prepared": "migration/legacy/chooser-web-app/web/privacy.html",
-    "target": "https://brianrenshaw.app/chooser/privacy/",
+    "target": "https://brianrenshaw.app/whos-first/privacy/",
     "kind": "mirror",
-    "original_sha256": "40e7cc69a5f6d678a04c00198ebe539db076347f0e6717ca178c240167f31ceb"
+    "original_sha256": "5e6082d9be5bf54c222526c272627dd9972de48e531441877d7a38ff184d077c"
   },
   {
     "repo": "chooser-web-app",
     "root": "/Users/brianrenshaw/Projects/chooser-web-app",
     "file": "web/support.html",
     "prepared": "migration/legacy/chooser-web-app/web/support.html",
-    "target": "https://brianrenshaw.app/chooser/support/",
+    "target": "https://brianrenshaw.app/whos-first/support/",
     "kind": "mirror",
-    "original_sha256": "9752f6132350b408c0d8250bd4c944b634671d2a568e711d01b649837a58ba82"
+    "original_sha256": "c93ebc321513c1213d2b896af0c42f97a6eac5c3b6775f7524d3a16aafc63a5d"
   },
   {
     "repo": "folio-privacy",

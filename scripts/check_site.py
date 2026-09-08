@@ -20,9 +20,11 @@ pages={p:Page(p.read_text()) for p in ROOT.rglob('*.html')};errors=[];links=0
 for p,page in pages.items():
  rel=p.relative_to(ROOT).as_posix();url='https://brianrenshaw.app/'+rel
  if not page.lang:errors.append(f'{rel}: missing language')
- if page.h1!=1 and rel!='chooser/play/index.html':errors.append(f'{rel}: expected one h1, found {page.h1}')
+ if page.h1!=1:errors.append(f'{rel}: expected one h1, found {page.h1}')
  if p.name=='index.html':
   expected=url.removesuffix('index.html')
+  aliases={'chooser/':'whos-first/','chooser/play/':'whos-first/','chooser/support/':'whos-first/support/','chooser/privacy/':'whos-first/privacy/'}
+  expected='https://brianrenshaw.app/'+aliases.get(rel.removesuffix('index.html'),rel.removesuffix('index.html'))
   if page.canonical!=[expected]:errors.append(f'{rel}: canonical {page.canonical}, expected {expected}')
  for tag,attr,ref in page.refs:
   if ref.startswith(('mailto:','tel:','data:')):continue
@@ -39,7 +41,7 @@ for p in ROOT.rglob('*.css'):
  for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)',p.read_text()):
   if ref.startswith('data:'):continue
   if not (p.parent/ref).exists():errors.append(f'{p.relative_to(ROOT)}: missing CSS asset {ref}')
-for slug in ['reading-habit','where-do-we-eat','chooser','folio']:
+for slug in ['reading-habit','where-do-we-eat','whos-first','folio']:
  for sub in ['','privacy','support']:
   if not (ROOT/slug/sub/'index.html').exists():errors.append(f'Missing route {slug}/{sub}')
 if errors:print('\n'.join(errors));sys.exit(1)
