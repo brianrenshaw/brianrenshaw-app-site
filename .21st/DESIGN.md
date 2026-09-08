@@ -14,6 +14,6 @@ Common header/footer and document layout are in assets/family.css. All subpages 
 
 21st search: "minimal app portfolio static landing page" (2026-09-08). Catalog matches were React components; no catalog code was retrieved or installed. Existing static HTML primitives and supplied designs are the implementation source.
 
-Lankford Legends links to https://lankfordlegends.co/ in a ruled editorial section beneath the app grid. Reuses the about section’s responsive grid, Georgia heading, portfolio colors, and shared SVG arrow. Copy reflects the blog’s public About page and identifies its analysis as AI-generated.
+Lankford Legends is the fifth portfolio-app card in the shared project grid, linking to https://lankfordlegends.co/. It reuses the app label, eyebrow, heading arrow, description, and footer structure with a muted red palette and LL monogram. Utilities remain a separate simple section at the bottom.
 
 The homepage is a portfolio of AI-assisted apps, tools, and experiments. Per Brian’s request, spreadsheet utilities are the last section before the footer, after the blog and About. Link to the existing public browser tools and the spreadsheet-scripts GitHub repository; preserve their hosting.

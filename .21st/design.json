@@ -34,6 +34,10 @@
     {
       "id": "native-app-assets",
       "decision": "Native app icons are authoritative over historical website mockups. Who\u2019s First? uses the current board palette and existing native build-18 captures. No playable web app."
+    },
+    {
+      "id": "blog-project-card",
+      "decision": "Lankford Legends shares the app-card UI in the project grid; utilities remain separate at the bottom."
     }
   ],
   "evidence": [],
