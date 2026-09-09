@@ -558,3 +558,21 @@ a:hover {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Native app icons retain their OS-style silhouette; layout remains ruled. */
+.hero-mark img, .brand img { border-radius: 22.4%; }
+.screenshot-gallery { border-bottom: var(--rule); }
+.screenshot-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.screenshot-grid .plate:first-child { border-left: 0; }
+@media (max-width: 640px) {
+  .screenshot-grid { grid-template-columns: minmax(0, 1fr); }
+  .screenshot-grid .plate { border-left: 0; }
+  .screenshot-grid .plate + .plate { border-top: var(--rule); }
+}
+@media (max-width: 760px) {
+  .site-header { position: static; flex-direction: column; align-items: stretch; gap: 0; padding-left: 0; }
+  .site-header .brand { padding: 16px var(--pad-x); }
+  .site-header nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .site-header nav a { min-height: 44px; padding: 12px var(--pad-x); overflow-wrap: normal; border-top: var(--hair); }
+  .site-header nav a:nth-child(odd) { border-left: 0; }
+}

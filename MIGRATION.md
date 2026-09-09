@@ -84,10 +84,18 @@ Homepage arrows use one shared SVG shape across all app cards, independent of he
 
 ## Remaining screenshot work
 
-Reading Habit and Where Do We Eat need fresh, publication-ready screenshots. No usable captures of the latest Reading Habit editorial UI were found. The latest Where Do We Eat device captures include personal contacts/history, so they were not published. Current website illustrations/screenshots remain until clean captures are supplied. Fresh Who’s First? simulator capture stalled and was stopped; the published gallery uses existing real native screenshots, including Pinball in flight.
+Reading Habit needs fresh, publication-ready screenshots; no usable captures of its latest editorial UI were found. Where Do We Eat now uses the clean Work Lunch capture set described below. Fresh Who’s First? simulator capture stalled and was stopped; the published gallery uses existing real native screenshots, including Pinball in flight.
 
 ## HTTPS rollout completed
 
 Certificate approved and HTTPS enforced on September 8, 2026. All 19 routes were fetched over valid TLS and matched local files; www redirects to the HTTPS apex. Legacy compatibility pages are committed/pushed for all four websites. App Store Connect draft URLs for Reading Habit and Where Do We Eat and existing TestFlight URL fields were saved and read back. Released Who’s First? and Folio marketing/support/privacy fields require the next editable app version; old support/privacy pages remain readable. See brianrenshaw-app-site/migration/apple-results.json for exact outcomes.
 
-Remaining: clean current Reading Habit and Where Do We Eat screenshots and responsive visual browser review. Homepage arrows now share one SVG shape.
+Remaining: clean current Reading Habit screenshots and visual review of other app pages. Where Do We Eat screenshot and responsive review completed September 9. Homepage arrows share one SVG shape.
+
+## September 9: Work Lunch website refresh
+
+Replaced the Where Do We Eat website imagery with four genuine iPhone 17 Pro Max simulator captures: Decide, choices, Log, and Juniper Kitchen visit details. All use an explicitly enabled, isolated in-memory Work Lunch fixture with fictional restaurants and people. The hero retains Decide; a responsive Choices/Log gallery precedes the memory section, which now shows visit details. Published imagery is labeled sample data.
+
+The icon is the exact native 4A red-background AppIcon-light.png master, with an HTML corner mask and square source artwork. Portfolio, landing, subpages, favicon, touch and social references use the refreshed asset; the readable legacy privacy page also uses it. Superseded deployed screenshots and inverted icon bytes are removed. Coral now uses #E8391A in the app and widget; other context tokens and aliases remain unchanged.
+
+Validation: iOS Simulator and macOS builds passed; DiningType color/alias tests and native screenshot navigation tests passed. Native light/dark screens were inspected. Isolated Chromium checks passed at 375, 834 and 1440px, including dark appearance, keyboard focus, reduced motion, image loading, icon masking and no horizontal overflow. The static checker passes 20 HTML pages and 279 local links/assets. Reading Habit screenshot work and visual review of other app pages remain separate. No App Store Connect metadata or TestFlight changes were made.

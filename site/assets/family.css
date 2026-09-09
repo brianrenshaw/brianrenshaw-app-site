@@ -3,5 +3,8 @@
 @media(max-width:760px){.family-header{align-items:flex-start;flex-wrap:wrap}.family-header nav{gap:20px}.guide-layout{grid-template-columns:1fr;gap:28px;margin-top:28px}.guide-sidebar,.guide-toc{position:static}.document{padding-top:40px}.family-footer{margin-top:48px}.family-header,.family-footer{padding:20px}.family-brand{font-size:16px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 
+/* Match the native dining icon wherever shared website chrome shows it. */
+img[src*="where-do-we-eat/assets/app-icon.png"], .app-where-do-we-eat .brand img { border-radius: 22.4%; }
+
 /* Keep the portfolio return link easy to find and usable on narrow screens. */
 .portfolio-home-link{display:inline-block;min-height:44px;padding-block:10px;text-underline-offset:4px}.app-reading-habit .header-inner{flex-wrap:wrap}.app-reading-habit .site-header nav{flex-wrap:wrap}
