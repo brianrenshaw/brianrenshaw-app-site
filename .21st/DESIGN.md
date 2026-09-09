@@ -14,7 +14,7 @@ Common header/footer and document layout are in assets/family.css. All subpages 
 
 21st search: "minimal app portfolio static landing page" (2026-09-08). Catalog matches were React components; no catalog code was retrieved or installed. Existing static HTML primitives and supplied designs are the implementation source.
 
-Lankford Legends is the fifth portfolio-app card in the shared project grid, linking to https://lankfordlegends.co/. It reuses the app label, eyebrow, heading arrow, description, and footer structure with the blog’s Cardinals game-graphic styling: navy #0C2340, white bold serif headlines, yellow #FEDB00 labels, and red #C41E3A accent rule. Its custom SVG icon puts white LL lettering on a red baseball diamond with yellow bases. Utilities remain a separate simple section at the bottom.
+Lankford Legends is the fifth portfolio-app card, linking to https://lankfordlegends.co/. Its September 9 revision uses a muted rose background (#eee5e4) and dark rose text (#553e40), with dark-mode equivalents. It inherits the shared system headline font at weight 500, app label, eyebrow, heading arrow, and footer styling. The cream-backed baseball diamond SVG has smaller, thinner white LL lettering and cream bases. The earlier navy card, bold serif headline, yellow accents, and red bottom rule are superseded. Copy leads with a daily Cardinals catch-up; see MESSAGING.md. Utilities remain separate at the bottom.
 
 The homepage is a portfolio of AI-assisted apps, tools, and experiments. Per Brian’s request, spreadsheet utilities are the last section before the footer, after the blog and About. Link to the existing public browser tools and the spreadsheet-scripts GitHub repository; preserve their hosting.
 

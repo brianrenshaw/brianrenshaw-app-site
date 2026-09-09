@@ -44,6 +44,26 @@ Approved with Brian on September 9, 2026. Use these promises for homepage cards,
 
 **Local app handoff:** `HTML Viewer iOS Ass/MESSAGING.md` in the sibling app repository.
 
+### Lankford Legends
+
+**Audience:** Cardinals fans who also want to follow the rest of MLB.
+
+**Problem:** Game coverage is scattered across scores, blogs, and podcasts, often surrounded by ads or more detail than the reader needs.
+
+**Primary promise:** A concise daily catch-up on the Cardinals, with the rest of MLB alongside it.
+
+**Headline:** Catch up on the Cardinals, every day.
+
+**Supporting copy:** Cardinals highlights, one-paragraph recaps from around MLB, and occasional analysis. Together in one clean, ad-free place.
+
+**Card label:** Cardinals & MLB updates
+
+**Priorities:** Cardinals highlights first, brief league-wide game recaps second, and occasional analysis informed by blogs and podcasts third. Emphasize staying informed in one clean, ad-free place. AI is a production method, not the headline benefit.
+
+**Visual direction:** Keep the existing project card structure. Use a muted rose background, standard system headline typography at the shared 500 weight, and smaller, thinner LL letters in the baseball-diamond icon. No yellow accents, heavy serif headline, or dark navy card in light mode.
+
+**Scope:** This copy describes the linked blog at https://lankfordlegends.co/. Updating this portfolio card does not change the blog’s publishing system or content.
+
 ## Editorial rules
 
 - No em dashes. Use short sentences and plain language.
