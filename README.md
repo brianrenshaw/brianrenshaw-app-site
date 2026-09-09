@@ -4,6 +4,10 @@ Canonical website: https://brianrenshaw.app/
 
 One static website for Reading Habit, Where Do We Eat, Who’s First?, and Folio. App source code remains in its existing repositories. Edit public website content here; legacy Pages repositories preserve older links.
 
+## App messaging
+
+Read [MESSAGING.md](MESSAGING.md) before changing app descriptions. It records the approved purpose and copy priorities for all four apps and points to self-contained app-folder references for future native and App Store work.
+
 ## Local preview and checks
 
 ```sh
