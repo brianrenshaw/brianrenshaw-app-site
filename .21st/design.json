@@ -41,7 +41,7 @@
     },
     {
       "id": "lankford-cardinals-colors",
-      "decision": "Owner rejected dusty rose. Use exact Cardinals red #C41E3A and navy #0C2340 with white, on a neutral paper card #eeece5 in light mode. Keep the shared system headline at weight 500 and smaller, thinner LL letters. No heavy serif headline, yellow accents, or thick bottom border. Cardinals-first copy is in MESSAGING.md."
+      "decision": "Owner rejected dusty rose. Use exact Cardinals red #C41E3A and navy #0C2340 with white, on a crisp white card #ffffff in light mode. Keep the shared system headline at weight 500 and smaller, thinner LL letters. No heavy serif headline, yellow accents, or thick bottom border. Cardinals-first copy is in MESSAGING.md."
     },
     {
       "id": "work-lunch-native-gallery",
@@ -54,6 +54,10 @@
     {
       "id": "portfolio-card-order",
       "decision": "Folio, Who’s First?, Where Do We Eat, Reading Habit, Lankford Legends, then Spreadsheet Tools. Number cards 01 through 06. Identify each as iOS app, Blog, or Utility beneath its name. No dedicated blog navigation link."
+    },
+    {
+      "id": "distinct-card-palette",
+      "decision": "Owner approved apricot Folio, seafoam Who’s First?, ivory/tomato Where Do We Eat, golden parchment Reading Habit, white/navy/red Lankford Legends, and pale-blue/slate Spreadsheet Tools. Preserve shared layout and dark-mode readability."
     }
   ],
   "evidence": [],
