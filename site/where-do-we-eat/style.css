@@ -561,13 +561,32 @@ a:hover {
 
 /* Native app icons retain their OS-style silhouette; layout remains ruled. */
 .hero-mark img, .brand img { border-radius: 22.4%; }
-.screenshot-gallery { border-bottom: var(--rule); }
-.screenshot-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.screenshot-grid .plate:first-child { border-left: 0; }
-@media (max-width: 640px) {
-  .screenshot-grid { grid-template-columns: minmax(0, 1fr); }
-  .screenshot-grid .plate { border-left: 0; }
-  .screenshot-grid .plate + .plate { border-top: var(--rule); }
+/* A compact, progressively enhanced native screenshot showcase. */
+.screenshot-gallery { display: grid; grid-template-columns: 1fr 1fr; border-bottom: var(--rule); }
+.showcase-copy { padding: clamp(32px, 4vw, 56px) var(--pad-x); }
+.showcase-copy h2 { margin: 18px 0 24px; max-width: 16ch; font-size: clamp(32px, 4vw, 56px); line-height: 1.04; }
+.showcase-tabs { display: flex; margin-top: 32px; border-bottom: var(--rule); }
+.showcase-tabs[hidden], .showcase-panel[hidden] { display: none; }
+.showcase-tabs button { flex: 1; min-height: 52px; padding: 12px 8px; border: 0; border-bottom: 4px solid transparent; background: transparent; color: var(--ink-soft); font: 700 16px/1.3 var(--font); text-align: left; cursor: pointer; }
+.showcase-tabs button[aria-selected="true"] { border-bottom-color: var(--accent); color: var(--ink); }
+.showcase-tabs button:hover { background: var(--surface); }
+.people-note { margin-top: 32px; padding-top: 24px; border-top: var(--hair); }
+.people-note h3 { margin-bottom: 12px; font-size: 24px; line-height: 1.15; }
+.people-note p { max-width: 44ch; color: var(--ink-soft); }
+.people-note .rule-link { display: inline-block; margin-top: 20px; line-height: 1.4; }
+.showcase-screens { min-width: 0; background: var(--surface); border-left: var(--rule); }
+.showcase-panel { margin: 0; padding: 28px var(--pad-x) 20px; }
+.showcase-panel + .showcase-panel { border-top: var(--rule); }
+.showcase-screens.enhanced .showcase-panel { border-top: 0; }
+.showcase-panel figcaption { max-width: 42ch; margin: 0 auto 24px; }
+.showcase-panel figcaption strong { display: block; font-size: 22px; letter-spacing: -.025em; }
+.showcase-panel figcaption span { display: block; margin-top: 8px; color: var(--ink-soft); }
+.showcase-panel > a { display: block; width: min(100%, 230px); margin: auto; }
+.showcase-panel img { width: 100%; border: var(--hair); }
+.sample-label { margin-top: 18px; text-align: center; font-size: 12px; color: var(--ink-soft); }
+@media (max-width: 760px) {
+ .screenshot-gallery { grid-template-columns: minmax(0, 1fr); }
+ .showcase-screens { border-left: 0; border-top: var(--rule); }
 }
 @media (max-width: 760px) {
   .site-header { position: static; flex-direction: column; align-items: stretch; gap: 0; padding-left: 0; }

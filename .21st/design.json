@@ -46,6 +46,10 @@
     {
       "id": "work-lunch-native-gallery",
       "decision": "Four genuine native Work Lunch screenshots, existing ruled screenshot plates, two-column choices/log gallery stacked on phones. Website uses actual 4A app master; only icon images receive the native corner mask."
+    },
+    {
+      "id": "people-first-compact-showcase",
+      "decision": "Lead with contexts, people and saved restaurants. Explain person-specific do-not-recommend exclusions plainly. Replace the long two-image gallery with keyboard-accessible Choose/Remember tabs and one unchanged native screenshot at a time; both remain available without JavaScript."
     }
   ],
   "evidence": [],
