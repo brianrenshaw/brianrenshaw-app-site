@@ -1,0 +1,20 @@
+[
+  {
+    "app": "whos-first",
+    "resource": "betaAppLocalizations/58c94f09-7be9-47d5-a0b0-5296f1d664cc",
+    "feedbackEmail": "contact@brianrenshaw.app",
+    "result": "saved and read back"
+  },
+  {
+    "app": "where-do-we-eat",
+    "resource": "betaAppLocalizations/d8bc5443-1779-424f-8583-4308245d7b0c",
+    "feedbackEmail": "contact@brianrenshaw.app",
+    "result": "saved and read back"
+  },
+  {
+    "app": "folio",
+    "resource": "betaAppLocalizations/87ba7c6e-9d6a-42b1-b9a3-99808b2df076",
+    "feedbackEmail": "contact@brianrenshaw.app",
+    "result": "saved and read back"
+  }
+]
