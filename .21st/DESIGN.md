@@ -21,3 +21,5 @@ The homepage is a portfolio of AI-assisted apps, tools, and experiments. Per Bri
 Where Do We Eat’s September 9 gallery uses four actual Work Lunch simulator screenshots with fictional sample data. Decide remains in the hero; Choices/Log share a two-column ruled gallery that stacks on phones; visit details illustrate memory. Use the exact 4A native red-background icon everywhere. Its 22.4% HTML corner mask is the icon-specific exception to flat page geometry; source PNG stays square.
 
 The Work Lunch gallery now uses a compact Choose/Remember tabbed showcase, with context and people-specific exclusions explained beside one native screenshot. Tabs follow the explanatory copy on phones. Preserve full-size image links and the no-JavaScript fallback. Existing Archivo, rule, button and screenshot primitives are reused; 21st feature-showcase search informed the pattern without importing React components.
+
+Spreadsheet Tools is hosted at /spreadsheet-tools/ and follows Folio’s cream/orange palette. Source is in the sibling spreadsheet-webapp frontend; generated files are synced into this repository. Its portfolio placement remains at the bottom.
