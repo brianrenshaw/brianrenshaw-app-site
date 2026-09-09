@@ -24,6 +24,6 @@ GitHub Actions validates links, anchors, local assets and canonical addresses be
 | Who’s First? | `/whos-first/` | `support/`, `privacy/` |
 | Folio | `/folio/` | `support/`, `privacy/` |
 
-Support email remains contact@foliohtml.com. Keep app-specific privacy policies accurate; don’t substitute a generic portfolio policy. Existing policy language was preserved, and Reading Habit’s new policy reflects its local implementation (private iCloud, Open Library/Apple cover lookups, user-selected link resolution and imports).
+Support email remains contact@brianrenshaw.app. Keep app-specific privacy policies accurate; don’t substitute a generic portfolio policy. Existing policy language was preserved, and Reading Habit’s new policy reflects its local implementation (private iCloud, Open Library/Apple cover lookups, user-selected link resolution and imports).
 
 See `MIGRATION.md` for rollout status, legacy mapping, DNS, Apple metadata and rollback. See `.21st/DESIGN.md` for the four visual directions.
