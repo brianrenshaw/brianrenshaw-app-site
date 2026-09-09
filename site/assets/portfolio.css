@@ -5,8 +5,10 @@
 
 .portfolio-header nav{flex-wrap:wrap}@media(max-width:700px){.portfolio-header{flex-wrap:wrap}}
 
-.utility-feature{padding:40px 0 56px;border-top:1px solid var(--line)}.utility-links{display:flex;flex-wrap:wrap;gap:12px 24px}.utility-links a{display:inline-block;padding:4px 0}
+
 
 .lankford-legends{background:#eeece5;color:#0C2340;scroll-margin-top:24px}
 .lankford-legends .eyebrow,.lankford-legends .app-bottom a{color:#C41E3A}
 @media(prefers-color-scheme:dark){.lankford-legends{background:#0C2340;color:#fff}.lankford-legends .eyebrow,.lankford-legends .app-bottom a{color:#fff}}
+
+.project-identity{min-width:0;display:flex;flex-direction:column;gap:2px}.project-type{font-size:11px;font-weight:400;letter-spacing:.03em}.app-label img{flex-shrink:0}.spreadsheet-utility{background:#f0ebe4;color:#64432e;scroll-margin-top:24px}@media(prefers-color-scheme:dark){.spreadsheet-utility{background:#3b3025;color:#f3e0c7}}

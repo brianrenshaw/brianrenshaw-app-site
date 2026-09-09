@@ -1,6 +1,6 @@
 # Website design
 
-The portfolio uses warm paper, charcoal, Georgia headlines and system body text; a two-column app grid becomes one column on phones. Each app has its own color field, icon, introduction and availability. The approved card order is Folio, Who’s First?, Where Do We Eat, Reading Habit, then Lankford Legends, numbered 01 through 05.
+The portfolio uses warm paper, charcoal, Georgia headlines and system body text; a two-column app grid becomes one column on phones. Each app has its own color field, icon, introduction and availability. The approved card order is Folio, Who’s First?, Where Do We Eat, Reading Habit, then Lankford Legends, then Spreadsheet Tools, numbered 01 through 06.
 
 Reading Habit follows the supplied Classical homepage in reading-habit-site/design/site: Cormorant Garamond, Lora, paper, hairlines, and gold. The icon is copied from the current native AppIcon-1024.png: an unframed gold R on charcoal. Supplied CSS app illustrations are illustrations, not app screenshots. Preserve opt-in progress copy and reading marks without checkmarks.
 
@@ -14,12 +14,14 @@ Common header/footer and document layout are in assets/family.css. All subpages 
 
 21st search: "minimal app portfolio static landing page" (2026-09-08). Catalog matches were React components; no catalog code was retrieved or installed. Existing static HTML primitives and supplied designs are the implementation source.
 
-Lankford Legends is the fifth portfolio-app card, linking to https://lankfordlegends.co/. Use the existing neutral paper card color (#eeece5), Cardinals navy text (#0C2340), and Cardinals red accents (#C41E3A). Dark mode uses navy with white text. It inherits the shared system headline font at weight 500 and card structure. The white-backed baseball diamond SVG uses Cardinals red, a navy outline, and smaller, thinner white LL lettering. The owner rejected the dusty rose revision; preserve the team colors exactly. The heavy serif headline, yellow accents, and thick bottom rule remain removed. Copy leads with a daily Cardinals catch-up; see MESSAGING.md. Utilities remain separate at the bottom.
+Lankford Legends is the fifth portfolio-app card, linking to https://lankfordlegends.co/. Use the existing neutral paper card color (#eeece5), Cardinals navy text (#0C2340), and Cardinals red accents (#C41E3A). Dark mode uses navy with white text. It inherits the shared system headline font at weight 500 and card structure. The white-backed baseball diamond SVG uses Cardinals red, a navy outline, and smaller, thinner white LL lettering. The owner rejected the dusty rose revision; preserve the team colors exactly. The heavy serif headline, yellow accents, and thick bottom rule remain removed. Copy leads with a daily Cardinals catch-up; see MESSAGING.md. Spreadsheet Tools shares the final row beside the blog.
 
-The homepage is a portfolio of AI-assisted apps, tools, and experiments. Per Brian’s request, spreadsheet utilities are the last section before the footer, after the blog and About. Link to the existing public browser tools and the spreadsheet-scripts GitHub repository; preserve their hosting.
+The homepage is a portfolio of AI-assisted apps, tools, and experiments. Per Brian’s latest request, Spreadsheet Tools is a card beside Lankford Legends, before About. Link to the existing public browser tools and the spreadsheet-scripts GitHub repository; preserve their hosting.
 
 Where Do We Eat’s September 9 gallery uses four actual Work Lunch simulator screenshots with fictional sample data. Decide remains in the hero; Choices/Log share a two-column ruled gallery that stacks on phones; visit details illustrate memory. Use the exact 4A native red-background icon everywhere. Its 22.4% HTML corner mask is the icon-specific exception to flat page geometry; source PNG stays square.
 
 The Work Lunch gallery now uses a compact Choose/Remember tabbed showcase, with context and people-specific exclusions explained beside one native screenshot. Tabs follow the explanatory copy on phones. Preserve full-size image links and the no-JavaScript fallback. Existing Archivo, rule, button and screenshot primitives are reused; 21st feature-showcase search informed the pattern without importing React components.
 
-Spreadsheet Tools is hosted at /spreadsheet-tools/ and follows Folio’s cream/orange palette. Source is in the sibling spreadsheet-webapp frontend; generated files are synced into this repository. Its portfolio placement remains at the bottom.
+Spreadsheet Tools is hosted at /spreadsheet-tools/ and follows Folio’s cream/orange palette. Source is in the sibling spreadsheet-webapp frontend; generated files are synced into this repository. Its portfolio card is sixth, beside Lankford Legends.
+
+Each card identifies its type beneath the project name: iOS app, Blog, or Utility. Reuse the existing static card structure. Spreadsheet Tools has a simple cream/orange spreadsheet SVG icon. Remove the dedicated blog navigation link. On phones the final pair stacks in blog-then-utility order.

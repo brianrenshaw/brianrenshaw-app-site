@@ -37,7 +37,7 @@
     },
     {
       "id": "blog-project-card",
-      "decision": "Lankford Legends shares the app-card UI in the project grid; utilities remain separate at the bottom."
+      "decision": "Lankford Legends and Spreadsheet Tools share the final row of the project grid."
     },
     {
       "id": "lankford-cardinals-colors",
@@ -53,7 +53,7 @@
     },
     {
       "id": "portfolio-card-order",
-      "decision": "Owner-selected order: Folio, Who’s First?, Where Do We Eat, Reading Habit, then Lankford Legends. Number cards 01 through 05 in that order. Keep utilities below."
+      "decision": "Folio, Who’s First?, Where Do We Eat, Reading Habit, Lankford Legends, then Spreadsheet Tools. Number cards 01 through 06. Identify each as iOS app, Blog, or Utility beneath its name. No dedicated blog navigation link."
     }
   ],
   "evidence": [],
