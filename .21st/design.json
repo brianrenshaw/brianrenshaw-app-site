@@ -50,6 +50,10 @@
     {
       "id": "people-first-compact-showcase",
       "decision": "Lead with contexts, people and saved restaurants. Explain person-specific do-not-recommend exclusions plainly. Replace the long two-image gallery with keyboard-accessible Choose/Remember tabs and one unchanged native screenshot at a time; both remain available without JavaScript."
+    },
+    {
+      "id": "portfolio-card-order",
+      "decision": "Owner-selected order: Folio, Who’s First?, Where Do We Eat, Reading Habit, then Lankford Legends. Number cards 01 through 05 in that order. Keep utilities below."
     }
   ],
   "evidence": [],

@@ -2,6 +2,10 @@
 
 Approved with Brian on September 9, 2026. Use these promises for homepage cards, app landing pages, search/social descriptions, and future app copy. The customer’s goal comes first; features support that goal.
 
+## Homepage order
+
+Folio, Who’s First?, Where Do We Eat, Reading Habit, then Lankford Legends. Keep the visible numbers in that order. Spreadsheet utilities remain below the project cards.
+
 ## Approved messages
 
 ### Reading Habit

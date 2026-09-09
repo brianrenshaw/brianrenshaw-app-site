@@ -1,6 +1,6 @@
 # Website design
 
-The portfolio uses warm paper, charcoal, Georgia headlines and system body text; a two-column app grid becomes one column on phones. Each app has its own color field, icon, introduction and availability.
+The portfolio uses warm paper, charcoal, Georgia headlines and system body text; a two-column app grid becomes one column on phones. Each app has its own color field, icon, introduction and availability. The approved card order is Folio, Who’s First?, Where Do We Eat, Reading Habit, then Lankford Legends, numbered 01 through 05.
 
 Reading Habit follows the supplied Classical homepage in reading-habit-site/design/site: Cormorant Garamond, Lora, paper, hairlines, and gold. The icon is copied from the current native AppIcon-1024.png: an unframed gold R on charcoal. Supplied CSS app illustrations are illustrations, not app screenshots. Preserve opt-in progress copy and reading marks without checkmarks.
 
