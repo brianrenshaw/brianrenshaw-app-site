@@ -60,7 +60,7 @@ Approved with Brian on September 9, 2026. Use these promises for homepage cards,
 
 **Priorities:** Cardinals highlights first, brief league-wide game recaps second, and occasional analysis informed by blogs and podcasts third. Emphasize staying informed in one clean, ad-free place. AI is a production method, not the headline benefit.
 
-**Visual direction:** Keep the existing project card structure. Use a muted rose background, standard system headline typography at the shared 500 weight, and smaller, thinner LL letters in the baseball-diamond icon. No yellow accents, heavy serif headline, or dark navy card in light mode.
+**Visual direction:** Keep the existing project card structure. Use a neutral paper background with Cardinals navy (#0C2340) text and Cardinals red (#C41E3A) accents. Keep standard system headline typography at the shared 500 weight and smaller, thinner white LL letters on a Cardinals red baseball diamond. The owner rejected dusty rose: do not mute or reinterpret the team colors. No heavy serif headline or dark navy card in light mode.
 
 **Scope:** This copy describes the linked blog at https://lankfordlegends.co/. Updating this portfolio card does not change the blog’s publishing system or content.
 

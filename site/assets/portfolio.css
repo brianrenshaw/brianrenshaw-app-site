@@ -7,5 +7,6 @@
 
 .utility-feature{padding:40px 0 56px;border-top:1px solid var(--line)}.utility-links{display:flex;flex-wrap:wrap;gap:12px 24px}.utility-links a{display:inline-block;padding:4px 0}
 
-.lankford-legends{background:#eee5e4;color:#553e40;scroll-margin-top:24px}
-@media(prefers-color-scheme:dark){.lankford-legends{background:#3b2c30;color:#f0dce0}}
+.lankford-legends{background:#eeece5;color:#0C2340;scroll-margin-top:24px}
+.lankford-legends .eyebrow,.lankford-legends .app-bottom a{color:#C41E3A}
+@media(prefers-color-scheme:dark){.lankford-legends{background:#0C2340;color:#fff}.lankford-legends .eyebrow,.lankford-legends .app-bottom a{color:#fff}}
