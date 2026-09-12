@@ -96,3 +96,20 @@ Run `python3 scripts/check_site.py`, then review the homepage and all four app l
 - Added app-local messaging documents and AGENTS links without changing native source or historical submission records. Store descriptions are 92 words (Reading Habit), 91 (Where Do We Eat), 89 (Who’s First?), and 95 (Folio).
 - Static checks passed: 21 HTML pages and 288 local links/assets. Responsive checks covered five pages at 375, 834, and 1440 pixels, plus dark/reduced-motion phone checks and dining gallery click/keyboard interaction. Full-page screenshots were reviewed in an isolated Chromium browser after the connected preview timed out.
 - App-folder documentation remains local. No App Store Connect writes, native builds, or release submissions were performed.
+
+## Lankford Legends blog alignment
+
+Approved with Brian in this blog workspace on September 9, 2026:
+
+- Use the Lankford Legends headline and supporting copy above on the blog homepage. Link visibly to “How this site is made.”
+- Describe the reading experience as a quick catch-up with room to go deeper. Do not imply every article is brief.
+- Keep the latest three analysis titles and their existing summaries discoverable under “Beyond the box score,” below the daily features.
+- About starts with the reader's purpose, then explains the three series and separates source data, calculated statistics, attributed commentary, and AI-written prose with automated numerical checks.
+- Footer links: About, Sources and AI, Follow via RSS. Sources and AI links to `/about#how-this-site-is-made`.
+- Preserve the blog's existing typography, colors, spacing, and publishing workflow. The visual instructions for the portfolio card above do not replace the blog's design.
+
+Blog copy locations: `template/entries.html` (homepage), `template/package.json` (site descriptions), `template/footer.html` (footer), and `pages/about.md` (About). Blog validation and publication use this repository's `npm test`, `npm run preview:build`, and scripts documented in `README.md`; the portfolio validation commands above apply to the separate portfolio repository.
+
+Homepage hierarchy refinement: daily reports use separate bordered sections with Cardinals red and navy accents. Analysis uses a neutral paper panel. Recent posts use a stronger section divider and smaller navy headlines. These changes distinguish the homepage sections while preserving article typography and spacing.
+
+Priority clarification: the latest Cardinals Daily is the primary feature, the latest MLB Roundup is secondary, and infrequent analysis is tertiary. Keep that order and show publication dates on homepage analysis entries. Use the strongest red headline and bordered treatment for Cardinals Daily, a smaller navy headline with a simple divider for MLB Roundup, and a lighter neutral analysis section.
