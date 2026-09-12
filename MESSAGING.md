@@ -4,7 +4,7 @@ Approved with Brian on September 9, 2026. Use these promises for homepage cards,
 
 ## Homepage order
 
-Folio, Who’s First?, Where Do We Eat, Reading Habit, then Lankford Legends. Keep the visible numbers in that order. Spreadsheet utilities remain below the project cards.
+Folio, Who’s First?, Where Do We Eat, Reading Habit, Lankford Legends, then What Did They Read? Keep the visible numbers in that order. Spreadsheet Tools is the seventh card. The eighth slot is a dashed placeholder labeled “08 / Not yet” with the line “Reserved for the next thing I want to exist.” and a mailto link. Replace it when the next project ships.
 
 ## Approved messages
 
@@ -67,6 +67,28 @@ Folio, Who’s First?, Where Do We Eat, Reading Habit, then Lankford Legends. Ke
 **Visual direction:** Keep the existing project card structure. Use a neutral paper background with Cardinals navy (#0C2340) text and Cardinals red (#C41E3A) accents. Keep standard system headline typography at the shared 500 weight and smaller, thinner white LL letters on a Cardinals red baseball diamond. The owner rejected dusty rose: do not mute or reinterpret the team colors. No heavy serif headline or dark navy card in light mode.
 
 **Scope:** This copy describes the linked blog at https://lankfordlegends.co/. Updating this portfolio card does not change the blog’s publishing system or content.
+
+### What Did They Read?
+
+Approved with Brian on September 11, 2026.
+
+**Audience:** Podcast listeners who hear a book mentioned on a leadership or business show and want to find it again, with the original conversation attached.
+
+**Primary promise:** Find the books people talk about on podcasts.
+
+**Headline:** Find the books mentioned on podcasts.
+
+**Supporting copy:** Books from leadership and business podcasts, each linked to the conversation that mentioned it. Plus a searchable archive of what Cal Newport has been reading.
+
+**Card label:** Books from podcasts
+
+**Links:** “Browse books” goes to https://www.whatdidtheyread.com/books. “Visit the site →” goes to https://www.whatdidtheyread.com/.
+
+**Priorities:** The podcast book collection first, always with the episode link. What Is Cal Reading? is a second feature, named in one clause. Do not name the individual shows on the card; the site lists them under Shows and the list may grow. AI is a production method, not a benefit to advertise.
+
+**Visual direction:** Keep the shared card structure. Use the site’s own palette: paper #f2efe8, ink #1a1715, oxblood #8c2b18 accents, and a Georgia serif headline at weight 400 to echo the site’s Newsreader. Dark mode uses a warm dark brown with paper text and a lighter oxblood. The icon is four ruled lines beside an oxblood question mark.
+
+**Scope:** This copy describes the linked site at https://www.whatdidtheyread.com/. Its templates, copy, and publishing live in the sibling `blog-explorer` repository under `blogs/whatdidtheyread/`.
 
 ## Editorial rules
 

@@ -29,6 +29,11 @@ def icon(x,y,path=None,kind=None):
             polygon([(x+dx,y+21),(x+dx+3,y+21),(x+dx+3,y+33),(x+dx+9,y+33),(x+dx+9,y+36),(x+dx,y+36)],'#ffffff')
         for dx,dy in [(28,9),(47,28),(28,47),(9,28)]:
             polygon([(x+dx,y+dy-2),(x+dx+2,y+dy),(x+dx,y+dy+2),(x+dx-2,y+dy)],'#ffffff')
+    elif kind=='books':
+        rect((x,y,x+56,y+56),'#f2efe8',12)
+        for dy in [18,26,34,42]:
+            draw.line([((x+11)*SCALE,(y+dy)*SCALE),((x+31 if dy<42 else x+24)*SCALE,(y+dy)*SCALE)],fill='#1a1715',width=3)
+        draw.text(((x+35)*SCALE,(y+6)*SCALE),'?',font=ImageFont.truetype(str(SITE/'reading-habit/assets/fonts/Lora[wght].ttf'),34*SCALE),fill='#8c2b18')
     else:
         rect((x,y,x+56,y+56),'#f3f8fc',12)
         rect((x+12,y+12,x+44,y+44),None,3,'#365e83',2)
@@ -44,13 +49,14 @@ projects=[
  ('Where Do We Eat','iOS app','#fff3df','#482b25','where-do-we-eat/assets/app-icon.png',None),
  ('Reading Habit','iOS app','#f2dfae','#363127','reading-habit/assets/icon-native.png',None),
  ('Lankford Legends','Blog','#ffffff','#0C2340',None,'blog'),
+ ('What Did They Read?','Blog','#f2efe8','#1a1715',None,'books'),
  ('Spreadsheet Tools','Utility','#d5e6f4','#293f55',None,'utility'),
 ]
 for i,(name,kind,bg,ink,path,symbol) in enumerate(projects):
-    x=48+(i%3)*376;y=316+(i//3)*132
-    rect((x,y,x+352,y+112),bg)
-    icon(x+20,y+28,path,symbol)
-    text(x+92,y+32,name,21,ink)
-    text(x+92,y+63,kind,16,ink)
+    x=48+(i%4)*280;y=316+(i//4)*132
+    rect((x,y,x+264,y+112),bg)
+    icon(x+16,y+28,path,symbol)
+    text(x+84,y+34,name,18,ink)
+    text(x+84,y+62,kind,15,ink)
 text(48,590,'brianrenshaw.app',16,'#65685f')
-canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v2.png',optimize=True)
+canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v3.png',optimize=True)

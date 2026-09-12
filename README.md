@@ -32,4 +32,6 @@ Support email remains contact@brianrenshaw.app. Keep app-specific privacy polici
 
 See `MIGRATION.md` for rollout status, legacy mapping, DNS, Apple metadata and rollback. See `.21st/DESIGN.md` for the four visual directions.
 
+Two blogs are linked from homepage cards without local pages: Lankford Legends (https://lankfordlegends.co/) and What Did They Read? (https://www.whatdidtheyread.com/). Both are built in the sibling `blog-explorer` repository. Their card copy is in `MESSAGING.md`.
+
 Spreadsheet Tools lives at `/spreadsheet-tools/`. Its React source remains in the sibling `spreadsheet-webapp` repository (`brianrenshaw/spreadsheet-tools` on GitHub). Run that project's `scripts/sync-website.py` to rebuild and copy generated files here, then commit and push this repository. Keep the utility link at the bottom of the portfolio. See that project's `WEBSITE_MIGRATION.md` for the complete workflow.

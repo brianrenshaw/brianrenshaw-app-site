@@ -13,4 +13,9 @@
 
 .project-identity{min-width:0;display:flex;flex-direction:column;gap:2px}.project-type{font-size:11px;font-weight:400;letter-spacing:.03em}.app-label img{flex-shrink:0}.spreadsheet-utility{background:#d5e6f4;color:#293f55;scroll-margin-top:24px}@media(prefers-color-scheme:dark){.spreadsheet-utility{background:#243747;color:#deecf7}}
 
+.what-did-they-read{background:#f2efe8;color:#1a1715;scroll-margin-top:24px}
+.what-did-they-read h2{font-family:Georgia,serif;font-weight:400;letter-spacing:-.02em}
+.what-did-they-read .eyebrow,.what-did-they-read .app-bottom a{color:#8c2b18}
+@media(prefers-color-scheme:dark){.what-did-they-read{background:#2a2622;color:#f2efe8}.what-did-they-read .eyebrow,.what-did-they-read .app-bottom a{color:#e8a08e}}
+.portfolio-slot{padding:36px;display:flex;flex-direction:column;justify-content:flex-end;min-height:370px;border:1px dashed #0003;color:var(--muted)}.portfolio-slot .eyebrow{margin:0 0 14px}.portfolio-slot h2{font-family:Georgia,serif;font-size:26px;font-weight:400;letter-spacing:-.02em;line-height:1.25;margin:0 0 12px;max-width:18ch}.portfolio-slot p:not(.eyebrow){font-size:15px;max-width:38ch;margin:0}.portfolio-slot a{color:inherit}@media(max-width:700px){.portfolio-slot{padding:28px;min-height:0}}@media(prefers-color-scheme:dark){.portfolio-slot{border-color:#fff3}}
 .folio .eyebrow,.folio .app-bottom a{color:#943b00}.where-do-we-eat .eyebrow,.where-do-we-eat .app-bottom a{color:#b52b17}.portfolio-app .eyebrow{opacity:1}@media(prefers-color-scheme:dark){.folio .eyebrow,.folio .app-bottom a{color:#ffb570}.where-do-we-eat .eyebrow,.where-do-we-eat .app-bottom a{color:#ffab98}}
