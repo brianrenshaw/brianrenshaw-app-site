@@ -4,7 +4,7 @@ Approved with Brian on September 9, 2026. Use these promises for homepage cards,
 
 ## Homepage order
 
-Folio, Who’s First?, Where Do We Eat, Reading Habit, Lankford Legends, then What Did They Read? Keep the visible numbers in that order. Spreadsheet Tools is the seventh card. The eighth slot is a dashed placeholder labeled “08 / Not yet” with the line “Reserved for the next thing I want to exist.” and a mailto link. Replace it when the next project ships.
+Folio, Who’s First?, Reading Habit, Where Do We Eat, Lankford Legends, then What Did They Read? Keep the visible numbers in that order. Reading Habit moved ahead of Where Do We Eat on September 16, 2026, when it reached the App Store; released apps come before the app still in TestFlight. Spreadsheet Tools is the seventh card. The eighth slot is a dashed placeholder labeled “08 / Not yet” with the line “Reserved for the next thing I want to exist.” and a mailto link. Replace it when the next project ships.
 
 ## Approved messages
 
@@ -15,6 +15,8 @@ Folio, Who’s First?, Where Do We Eat, Reading Habit, Lankford Legends, then Wh
 **Supporting copy:** Mark the days you read without counting pages, chapters, or minutes. See your consistency grow and work toward your own monthly book goal.
 
 **Priority:** Daily reading consistency. A little reading counts, regardless of how much. Monthly book goals chosen by the reader. Five books is a starting point, not a requirement.
+
+**Availability:** Free on the App Store since September 16, 2026 (`id6809740339`). For iPhone, iPad, and Mac with Apple silicon, requiring iOS 27, iPadOS 27, or macOS 27. The store listing is named “Reading Habit - Book Tracker”; website copy stays “Reading Habit.” There is no subscription or in-app purchase.
 
 **Local app handoff:** `book-tracker/MESSAGING.md` in the sibling app repository.
 
@@ -118,6 +120,17 @@ Run `python3 scripts/check_site.py`, then review the homepage and all four app l
 - Added app-local messaging documents and AGENTS links without changing native source or historical submission records. Store descriptions are 92 words (Reading Habit), 91 (Where Do We Eat), 89 (Who’s First?), and 95 (Folio).
 - Static checks passed: 21 HTML pages and 288 local links/assets. Responsive checks covered five pages at 375, 834, and 1440 pixels, plus dark/reduced-motion phone checks and dining gallery click/keyboard interaction. Full-page screenshots were reviewed in an isolated Chromium browser after the connected preview timed out.
 - App-folder documentation remains local. No App Store Connect writes, native builds, or release submissions were performed.
+
+## September 16 release update
+
+Reading Habit 1.0 reached the App Store on September 16, 2026. Website availability copy changed accordingly:
+
+- Homepage card: “In development” became “Available on the App Store,” matching Folio and Who’s First?
+- Landing page: the hero action is now the App Store download with the guide as the secondary link, the status line reads “Free on the App Store · iPhone, iPad, and Mac,” the closing callout leads with the download, and the Availability section describes version 1.0 and the Apple silicon requirement for Mac.
+- Guide: the pending-release note became a release note with a download link, the version line reads “Version 1.0 · Updated September 16, 2026,” and the sync paragraph no longer defers verification to a future public release.
+- Privacy policy: the version descriptor is “Version 1.0.” The effective date and policy text are unchanged because data practices did not change.
+- Homepage order: Reading Habit is now card 03 and Where Do We Eat card 04. The share image `assets/social-projects-v4.png` was rebuilt in the new order and replaces v3.
+- Availability was verified against Apple’s public lookup and the store listing before publishing: version 1.0, free, no in-app purchases, iOS/iPadOS 27 and macOS 27 minimums.
 
 ## Lankford Legends blog alignment
 

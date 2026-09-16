@@ -46,8 +46,8 @@ text(48,235,'Apps, tools, and experiments for everyday life.',23,'#65685f')
 projects=[
  ('Folio','iOS app','#ffdbb5','#57331f','folio/assets/icon.png',None),
  ('Who’s First?','iOS app','#bde0d2','#163f3c','whos-first/assets/icon-native.png',None),
- ('Where Do We Eat','iOS app','#fff3df','#482b25','where-do-we-eat/assets/app-icon.png',None),
  ('Reading Habit','iOS app','#f2dfae','#363127','reading-habit/assets/icon-native.png',None),
+ ('Where Do We Eat','iOS app','#fff3df','#482b25','where-do-we-eat/assets/app-icon.png',None),
  ('Lankford Legends','Blog','#ffffff','#0C2340',None,'blog'),
  ('What Did They Read?','Blog','#f2efe8','#1a1715',None,'books'),
  ('Spreadsheet Tools','Utility','#d5e6f4','#293f55',None,'utility'),
@@ -59,4 +59,4 @@ for i,(name,kind,bg,ink,path,symbol) in enumerate(projects):
     text(x+84,y+34,name,18,ink)
     text(x+84,y+62,kind,15,ink)
 text(48,590,'brianrenshaw.app',16,'#65685f')
-canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v3.png',optimize=True)
+canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v4.png',optimize=True)

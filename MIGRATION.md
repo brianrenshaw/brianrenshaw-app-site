@@ -92,6 +92,12 @@ Certificate approved and HTTPS enforced on September 8, 2026. All 19 routes were
 
 Remaining: clean current Reading Habit screenshots and visual review of other app pages. Where Do We Eat screenshot and responsive review completed September 9. Homepage arrows share one SVG shape.
 
+## September 16: Reading Habit 1.0 released
+
+Reading Habit 1.0 is live on the App Store (`id6809740339`) as a free download for iPhone, iPad, and Mac with Apple silicon, requiring iOS 27, iPadOS 27, or macOS 27. This supersedes the “no public download” status recorded in the Apple inventory above. Website availability copy was updated on the homepage card, the Reading Habit landing page, the user guide, and the privacy policy version line. No App Store Connect writes, native builds, or release submissions were made from this repository.
+
+Remaining: fresh Reading Habit screenshots for the landing page, which still uses drawn sample screens.
+
 ## September 9: Work Lunch website refresh
 
 Replaced the Where Do We Eat website imagery with four genuine iPhone 17 Pro Max simulator captures: Decide, choices, Log, and Juniper Kitchen visit details. All use an explicitly enabled, isolated in-memory Work Lunch fixture with fictional restaurants and people. The hero retains Decide; a responsive Choices/Log gallery precedes the memory section, which now shows visit details. Published imagery is labeled sample data.

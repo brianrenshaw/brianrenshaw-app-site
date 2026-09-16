@@ -1,6 +1,6 @@
 # Website design
 
-The portfolio uses warm paper, charcoal, Georgia headlines and system body text; a two-column app grid becomes one column on phones. Each app has its own color field, icon, introduction and availability. The approved card order is Folio, Who’s First?, Where Do We Eat, Reading Habit, then Lankford Legends, then Spreadsheet Tools, numbered 01 through 06.
+The portfolio uses warm paper, charcoal, Georgia headlines and system body text; a two-column app grid becomes one column on phones. Each app has its own color field, icon, introduction and availability. The approved card order is Folio, Who’s First?, Reading Habit, Where Do We Eat, then Lankford Legends, What Did They Read?, then Spreadsheet Tools, numbered 01 through 07, followed by a reserved eighth slot.
 
 Reading Habit follows the supplied Classical homepage in reading-habit-site/design/site: Cormorant Garamond, Lora, paper, hairlines, and gold. The icon is copied from the current native AppIcon-1024.png: an unframed gold R on charcoal. Supplied CSS app illustrations are illustrations, not app screenshots. Preserve opt-in progress copy and reading marks without checkmarks.
 
@@ -30,4 +30,4 @@ Approved brighter homepage palette: Folio apricot #ffdbb5 with orange accents; W
 
 What Did They Read? is the sixth card, linking to https://www.whatdidtheyread.com/. It borrows that site’s letterpress palette: paper #f2efe8, ink #1a1715, oxblood #8c2b18 accents, Georgia serif headline at weight 400. Dark mode is warm dark brown #2a2622 with paper text and #e8a08e accents. The icon is four ruled ink lines beside an oxblood question mark on paper. With seven cards, the eighth grid slot is a dashed, transparent placeholder (`.portfolio-slot`) with muted text anchored to the bottom, a Georgia headline, and no icon. It reads as an empty frame, not a card, and is replaced when the next project ships. Copy is in MESSAGING.md.
 
-Homepage share preview: assets/social-projects-v3.png is a 1200 × 630 image using the current headline, all seven projects in a four-column grid, approved card colors, and app/blog/utility labels. Rebuild with `python3 scripts/build_social.py` (Pillow required). Change the image URL when revising the artwork to help sharing services refresh cached previews. Homepage Open Graph and Twitter metadata reference this image.
+Homepage share preview: assets/social-projects-v4.png is a 1200 × 630 image using the current headline, all seven projects in a four-column grid, approved card colors, and app/blog/utility labels. Rebuild with `python3 scripts/build_social.py` (Pillow required). Change the image URL when revising the artwork to help sharing services refresh cached previews. Homepage Open Graph and Twitter metadata reference this image.
