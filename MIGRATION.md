@@ -108,6 +108,8 @@ Removed as stale or dead: `journal.png` and `book-detail.png` (old blue UI, refe
 
 Captions keep the "sample library" labeling used for Where Do We Eat. The sample library shows real book covers fetched from Open Library at capture time.
 
+The first capture run produced duplicate books and doubled goal totals: `StoreScreenshotLibrary.seed` inserted unconditionally, and the app's store lives in the App Group container, which `simctl uninstall` does not remove, so a second run seeded onto the first run's data. Fixed in `book-tracker` (commit `090d1f0`): seed only into an empty library, erase the device instead of uninstalling, and reapply the 9:41 status bar override that erasing clears. The published images come from a clean run — three books under way, 2 of 4 books this month, 32 of 52 for the year. Only DEBUG screenshot code changed; the shipping app was never affected.
+
 ## September 9: Work Lunch website refresh
 
 Replaced the Where Do We Eat website imagery with four genuine iPhone 17 Pro Max simulator captures: Decide, choices, Log, and Juniper Kitchen visit details. All use an explicitly enabled, isolated in-memory Work Lunch fixture with fictional restaurants and people. The hero retains Decide; a responsive Choices/Log gallery precedes the memory section, which now shows visit details. Published imagery is labeled sample data.
