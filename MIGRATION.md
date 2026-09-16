@@ -84,19 +84,29 @@ Homepage arrows use one shared SVG shape across all app cards, independent of he
 
 ## Remaining screenshot work
 
-Reading Habit needs fresh, publication-ready screenshots; no usable captures of its latest editorial UI were found. Where Do We Eat now uses the clean Work Lunch capture set described below. Fresh Who’s First? simulator capture stalled and was stopped; the published gallery uses existing real native screenshots, including Pinball in flight.
+Reading Habit screenshots were captured and published on September 16, 2026 — see "September 16: Reading Habit screenshots" below. Where Do We Eat uses the clean Work Lunch capture set described below. Fresh Who’s First? simulator capture stalled and was stopped; the published gallery uses existing real native screenshots, including Pinball in flight.
 
 ## HTTPS rollout completed
 
 Certificate approved and HTTPS enforced on September 8, 2026. All 19 routes were fetched over valid TLS and matched local files; www redirects to the HTTPS apex. Legacy compatibility pages are committed/pushed for all four websites. App Store Connect draft URLs for Reading Habit and Where Do We Eat and existing TestFlight URL fields were saved and read back. Released Who’s First? and Folio marketing/support/privacy fields require the next editable app version; old support/privacy pages remain readable. See brianrenshaw-app-site/migration/apple-results.json for exact outcomes.
 
-Remaining: clean current Reading Habit screenshots and visual review of other app pages. Where Do We Eat screenshot and responsive review completed September 9. Homepage arrows share one SVG shape.
+Reading Habit screenshots completed September 16; Where Do We Eat screenshot and responsive review completed September 9. Remaining: visual review of other app pages. Homepage arrows share one SVG shape.
 
 ## September 16: Reading Habit 1.0 released
 
 Reading Habit 1.0 is live on the App Store (`id6809740339`) as a free download for iPhone, iPad, and Mac with Apple silicon, requiring iOS 27, iPadOS 27, or macOS 27. This supersedes the “no public download” status recorded in the Apple inventory above. Website availability copy was updated on the homepage card, the Reading Habit landing page, the user guide, and the privacy policy version line. No App Store Connect writes, native builds, or release submissions were made from this repository.
 
-Remaining: fresh Reading Habit screenshots for the landing page, which still uses drawn sample screens.
+Fresh Reading Habit screenshots followed the same day; see the section below.
+
+## September 16: Reading Habit screenshots
+
+The landing page's hand-drawn CSS screens are replaced with real captures from the shipping 1.0 app, closing the screenshot item open since the migration. Captures came from `book-tracker`'s own pipeline — `Distribution/AppStoreScreenshots/take-shots.sh` running `BookTrackerUITests/AppStoreScreenshots` on the "RH Store iPhone 6.9" and "RH Store iPad 13" simulators (iOS 27.0), launched with `--store-library` so the library is the fictional store fixture. Raw `shots/` output was used, not the caption-framed `framed/` variants, and nothing was written to the app repository.
+
+Published as WebP resized to 690 wide (`screen-journal`, `screen-stats`, `screen-book`, 26-41 KB each) inside the page's existing `.device` frames; the drawn `.notch` is gone because each capture carries its own status bar. The guide's iPad Stats image was replaced the same way (`stats-ipad.webp`, 1032 wide, 22 KB) because the committed `stats-ipad.png` still showed the old blue system UI on a live page.
+
+Removed as stale or dead: `journal.png` and `book-detail.png` (old blue UI, referenced nowhere), `stats-ipad.png` (superseded), and `assets/styles.css` (linked by no page). `site.css` drops from 293 to 198 lines with the `.s-*`, `.plate` and `.ledger` rules deleted; the landing page drops from 279 to 167 lines.
+
+Captions keep the "sample library" labeling used for Where Do We Eat. The sample library shows real book covers fetched from Open Library at capture time.
 
 ## September 9: Work Lunch website refresh
 
@@ -104,7 +114,7 @@ Replaced the Where Do We Eat website imagery with four genuine iPhone 17 Pro Max
 
 The icon is the exact native 4A red-background AppIcon-light.png master, with an HTML corner mask and square source artwork. Portfolio, landing, subpages, favicon, touch and social references use the refreshed asset; the readable legacy privacy page also uses it. Superseded deployed screenshots and inverted icon bytes are removed. Coral now uses #E8391A in the app and widget; other context tokens and aliases remain unchanged.
 
-Validation: iOS Simulator and macOS builds passed; DiningType color/alias tests and native screenshot navigation tests passed. Native light/dark screens were inspected. Isolated Chromium checks passed at 375, 834 and 1440px, including dark appearance, keyboard focus, reduced motion, image loading, icon masking and no horizontal overflow. The static checker passes 20 HTML pages and 279 local links/assets. Reading Habit screenshot work and visual review of other app pages remain separate. No App Store Connect metadata or TestFlight changes were made.
+Validation: iOS Simulator and macOS builds passed; DiningType color/alias tests and native screenshot navigation tests passed. Native light/dark screens were inspected. Isolated Chromium checks passed at 375, 834 and 1440px, including dark appearance, keyboard focus, reduced motion, image loading, icon masking and no horizontal overflow. The static checker passes 20 HTML pages and 279 local links/assets. Visual review of other app pages remains separate. No App Store Connect metadata or TestFlight changes were made.
 
 ## People and context messaging refinement
 
