@@ -5,7 +5,7 @@
 - Feed: `site/listing-namer/appcast.xml`, served at `https://brianrenshaw.app/listing-namer/appcast.xml`.
 - Downloads: public GitHub Releases in `brianrenshaw/brianrenshaw-app-site`, with tags prefixed `listing-namer-`.
 
-The current public release is `listing-namer-v1.1.0`, Walkthrough version 1.1.0 build 5. Its universal app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 5 to existing installations and preserves earlier release download URLs.
+The current public release is `listing-namer-v1.2.0`, Walkthrough version 1.2.0 build 6. Its universal app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 6 to existing installations and preserves earlier release download URLs.
 
 For each notarized release:
 
@@ -23,3 +23,6 @@ Version 1.0.2, build 4, adds the refined house icon, purpose-focused Getting Sta
 
 ## 1.1.0
 Command palette, keyboard ordering, native toolbar, grouped Copy/Move exports, and refreshed Settings. The illustrated guide at `/listing-namer/guide/` documents the shipped behavior. Release notes have one Updated date at the bottom. Screenshots use native 1.1.0 captures.
+
+## 1.2.0
+Native room sidebar and scoped photo browsing, resizable split panes, centered Command-K palette with Change Group Name, native Settings and export controls, and refreshed onboarding and guide. The guide navigation remains in document flow while scrolling. Screenshots use versioned 1.2.0 native captures.
