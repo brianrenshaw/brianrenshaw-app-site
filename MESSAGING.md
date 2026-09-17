@@ -151,3 +151,7 @@ Blog copy locations: `template/entries.html` (homepage), `template/package.json`
 Homepage hierarchy refinement: daily reports use separate bordered sections with Cardinals red and navy accents. Analysis uses a neutral paper panel. Recent posts use a stronger section divider and smaller navy headlines. These changes distinguish the homepage sections while preserving article typography and spacing.
 
 Priority clarification: the latest Cardinals Daily is the primary feature, the latest MLB Roundup is secondary, and infrequent analysis is tertiary. Keep that order and show publication dates on homepage analysis entries. Use the strongest red headline and bordered treatment for Cardinals Daily, a smaller navy headline with a simple divider for MLB Roundup, and a lighter neutral analysis section.
+
+## Listing Namer (September 17, 2026)
+
+Added at Brian's request as the eighth project, replacing the reserved slot. Type: Mac app. Headline: “Give every listing photo its place.” Lead with organizing real estate shoots and consistent delivery filenames while preserving JPG quality. Support keyboard grouping, ordering, presets, and local jobs with practical copy. Availability must say Mac preview until a notarized release is ready. Current requirements: macOS 14+, Apple silicon and Intel. No account is required. Do not describe address search or update checking as offline. The download is Developer ID signed but not yet notarized; disclose that macOS may block it.

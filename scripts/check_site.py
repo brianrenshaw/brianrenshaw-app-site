@@ -41,7 +41,7 @@ for p in ROOT.rglob('*.css'):
  for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)',p.read_text()):
   if ref.startswith('data:'):continue
   if not (p.parent/ref).exists():errors.append(f'{p.relative_to(ROOT)}: missing CSS asset {ref}')
-for slug in ['reading-habit','where-do-we-eat','whos-first','folio']:
+for slug in ['reading-habit','where-do-we-eat','whos-first','folio','listing-namer']:
  for sub in ['','privacy','support']:
   if not (ROOT/slug/sub/'index.html').exists():errors.append(f'Missing route {slug}/{sub}')
 if errors:print('\n'.join(errors));sys.exit(1)

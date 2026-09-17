@@ -33,7 +33,7 @@
   "decisions": [
     {
       "id": "native-app-assets",
-      "decision": "Native app icons are authoritative over historical website mockups. Who’s First? uses the current board palette and existing native build-18 captures. No playable web app."
+      "decision": "Native app icons are authoritative over historical website mockups. Who\u2019s First? uses the current board palette and existing native build-18 captures. No playable web app."
     },
     {
       "id": "blog-project-card",
@@ -53,11 +53,15 @@
     },
     {
       "id": "portfolio-card-order",
-      "decision": "Folio, Who’s First?, Where Do We Eat, Reading Habit, Lankford Legends, then Spreadsheet Tools. Number cards 01 through 06. Identify each as iOS app, Blog, or Utility beneath its name. No dedicated blog navigation link."
+      "decision": "Folio, Who\u2019s First?, Where Do We Eat, Reading Habit, Lankford Legends, then Spreadsheet Tools. Number cards 01 through 06. Identify each as iOS app, Blog, or Utility beneath its name. No dedicated blog navigation link."
     },
     {
       "id": "distinct-card-palette",
-      "decision": "Owner approved apricot Folio, seafoam Who’s First?, ivory/tomato Where Do We Eat, golden parchment Reading Habit, white/navy/red Lankford Legends, and pale-blue/slate Spreadsheet Tools. Preserve shared layout and dark-mode readability."
+      "decision": "Owner approved apricot Folio, seafoam Who\u2019s First?, ivory/tomato Where Do We Eat, golden parchment Reading Habit, white/navy/red Lankford Legends, and pale-blue/slate Spreadsheet Tools. Preserve shared layout and dark-mode readability."
+    },
+    {
+      "id": "listing-namer-project",
+      "decision": "Replace the eighth placeholder with Listing Namer, a Mac app preview. Reuse static family primitives, warm stone/charcoal/amber colors and genuine native screenshots. App pages, feed, and release hosting belong in this website repository."
     }
   ],
   "evidence": [],
