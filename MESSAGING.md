@@ -208,15 +208,23 @@ Added at Brian's request as the fifth project and the last of the iOS apps, beca
 
 **Headline:** Nobody has to be the one who cancels.
 
-**Supporting copy:** You and a friend each privately say whether you want out. If you both do, the plan is off. If not, nothing is revealed.
+**Supporting copy:** You and a friend each privately say whether you want out. If you both do, the plan is off. If not, nobody finds out you wavered.
 
 **Card label:** The quiet way out
 
-**Landing page sections:** 01 / Private, 02 / Mutual, 03 / One app.
+**Landing page sections:** 01 / Private, 02 / Mutual, 03 / One app, then the reveal, then the rotating copy bank.
 
 **Priorities, in order:** Privacy of the individual choice first. The mutual reveal second. Third, that only the plan's creator needs the app, because the friend can accept and cancel in a browser. Calendar import is a supporting detail, always described as opt-in.
 
-**Voice:** The app has its own dry voice and the website borrows it rather than inventing one. Canonical lines: "The plan is still on unless you both cancel." (the load-bearing rule, used verbatim in the cream slip), "Two friends. One mutual understanding.", "Your evening has been returned to you.", and the masthead line "The quiet way out". Keep the plain StoryBrand framing for the headline and the app's wit in the section copy.
+**Voice:** Whimsical and deadpan, in the Carrot Weather register, at Brian's direction on September 17, 2026. The app already has this voice and the website borrows it rather than inventing one; quote the app instead of writing new jokes.
+
+Lines used verbatim on the page: "The plan is still on unless you both cancel." (the load-bearing rule, in the cream slip), "Your evening has been returned to you.", "You both wanted out. Excellent communication, technically.", "Canceled. Beautifully.", "they see nothing, and the plan is still, infuriatingly, on.", "Your calendar still thinks you're going. Bold of it.", "No plans. Suspiciously efficient.", "Look at you, honoring a commitment.", "No scores. No judgment. Well, very little.", and the masthead "The quiet way out".
+
+The reveal's audit row is worth naming on the page: RETURNED 1h 30m and EXCUSES USED None.
+
+**The rotating copy bank is a feature, not decoration.** 120 lines in `PrivateCancelCopy.swift`, mirrored in `Web/public/copy.json`, shuffled so a line never repeats back to back. The page says so and quotes six across the themes: furniture lobby, bureaucracy, past self versus present self, and film notes. Refresh the quoted six from the bank rather than writing new ones.
+
+Keep the headline and the factual claims plain. Snark rides in the section copy, never in an availability or privacy statement.
 
 **Factual boundaries:**
 

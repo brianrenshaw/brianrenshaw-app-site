@@ -41,6 +41,14 @@ body.app-canceled{color-scheme:dark;--bg:#142d4e;--surface:#fffdf6;--ink:#fffdf6
 .reveal-split img{display:block;max-height:560px;width:auto;border-radius:18px;border:1px solid var(--line)}
 .reveal-split figcaption{font-size:12px;color:var(--muted);padding-top:14px;max-width:34ch}
 
+/* The rotating copy bank. Each line gets the same Sunshine tick the plan slips use. */
+.copy-bank{border-top:1px solid var(--line);padding:56px 0 24px;max-width:70ch}
+.copy-bank ul{list-style:none;padding:0;margin:30px 0 26px;display:grid;gap:15px}
+.copy-bank li{position:relative;padding-left:28px;font-size:18px;line-height:1.45}
+.copy-bank li::before{content:"";position:absolute;left:0;top:.58em;width:14px;height:4px;background:var(--accent)}
+.copy-bank>p:not(.eyebrow){color:var(--muted)}
+.copy-bank .quiet{font-size:14px;max-width:62ch}
+
 .app-canceled .closing{border-top:1px solid var(--line);padding-top:44px}
 
 @media(max-width:760px){.app-canceled .app-hero,.reveal-split{grid-template-columns:1fr;gap:28px}.reveal-split{padding-bottom:48px}.rule-slip{padding:24px;margin:44px 0}.app-canceled h1{font-size:clamp(38px,10vw,58px)}}
