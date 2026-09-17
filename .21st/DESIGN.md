@@ -37,3 +37,5 @@ Listing Namer replaces slot 08. Preserve the portfolio's static card structure, 
 Walkthrough 1.0.1 renames Listing Namer while retaining /listing-namer/ for existing links and update clients. Reuse the existing static page sections and palette, refresh native screenshots and icon, and explain the replayable guide and room-first naming philosophy.
 
 Walkthrough 1.0.2: dark app pages use #111214 and #1d1f22 with amber accents. Reuse document primitives for dated release-note cards and stable version anchors. Current icon has a house and numbered label. Messaging focuses on renaming/ordering listing photos for MLS and website uploads. 21st search returned HTTP 401; existing static primitives remain authoritative. Review found only the intentional app-specific color tokens.
+
+Walkthrough 1.1.0 uses undated version cards and one page-level Updated line. The illustrated guide reuses native dark screenshots, document typography, anchor navigation, accessible keyboard tables, and amber focus states. Keep guide images consistent with the downloadable release.

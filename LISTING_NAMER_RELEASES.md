@@ -5,7 +5,7 @@
 - Feed: `site/listing-namer/appcast.xml`, served at `https://brianrenshaw.app/listing-namer/appcast.xml`.
 - Downloads: public GitHub Releases in `brianrenshaw/brianrenshaw-app-site`, with tags prefixed `listing-namer-`.
 
-The current public release is `listing-namer-v1.0.1`, Walkthrough version 1.0.1 build 3. Its app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 3 to existing Listing Namer installations. Version 1.0.0 build 2 remains in the feed. The original `listing-namer-v1.0.0-preview` release remains available as a historical prerelease.
+The current public release is `listing-namer-v1.1.0`, Walkthrough version 1.1.0 build 5. Its universal app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 5 to existing installations and preserves earlier release download URLs.
 
 For each notarized release:
 
@@ -19,4 +19,7 @@ Screenshots are native app captures using demonstration photos. `site/listing-na
 
 ## 1.0.2
 
-Version 1.0.2, build 4, adds the refined house icon, purpose-focused Getting Started copy, and Release Notes links in Help and Settings. Public history: `/listing-namer/release-notes/`, with `#v1.0.2` and a stable anchor for every release. For future updates, add a dated, user-facing entry, refresh changed native captures, upload the versioned DMG, then publish the matching appcast and website version together. The native appcast postprocessor supplies release-note links and preserves older download URLs.
+Version 1.0.2, build 4, adds the refined house icon, purpose-focused Getting Started copy, and Release Notes links in Help and Settings. Public history: `/listing-namer/release-notes/`, with `#v1.0.2` and a stable anchor for every release. For future updates, add an undated, user-facing entry, refresh changed native captures, upload the versioned DMG, then publish the matching appcast and website version together. The native appcast postprocessor supplies release-note links and preserves older download URLs.
+
+## 1.1.0
+Command palette, keyboard ordering, native toolbar, grouped Copy/Move exports, and refreshed Settings. The illustrated guide at `/listing-namer/guide/` documents the shipped behavior. Release notes have one Updated date at the bottom. Screenshots use native 1.1.0 captures.

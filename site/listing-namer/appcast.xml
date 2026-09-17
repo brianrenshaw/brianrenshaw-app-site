@@ -3,6 +3,15 @@
     <channel>
         <title>Walkthrough</title>
         <item>
+            <title>1.1.0</title>
+            <pubDate>Thu, 17 Sep 2026 13:05:11 -0400</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.1.0/Walkthrough-1.1.0.dmg" length="3133476" type="application/octet-stream" sparkle:edSignature="Vd59ePaEE+IG6v8GMQCViDyeJSz3cAh6Eb6lPPm/n7HJBxvYhL1u/Xk6Ki6zkRoZfsntw+cuhfdqMBTETsylAg==" />
+            <sparkle:releaseNotesLink>https://brianrenshaw.app/listing-namer/release-notes/#v1.1.0</sparkle:releaseNotesLink>
+        </item>
+        <item>
             <title>1.0.2</title>
             <pubDate>Thu, 17 Sep 2026 09:54:55 -0400</pubDate>
             <sparkle:version>4</sparkle:version>
