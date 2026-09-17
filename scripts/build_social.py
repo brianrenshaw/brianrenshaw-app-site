@@ -39,25 +39,28 @@ def icon(x,y,path=None,kind=None):
         rect((x+12,y+12,x+44,y+44),None,3,'#365e83',2)
         for points in [[(12,22),(44,22)],[(12,33),(44,33)],[(23,22),(23,44)],[(34,22),(34,44)]]:
             draw.line([((x+dx)*SCALE,(y+dy)*SCALE) for dx,dy in points],fill='#365e83',width=4)
-text(48,30,'BRIAN RENSHAW',18)
-text(48,78,'A few things',54,serif=True)
-text(48,145,'I wanted to exist.',54,serif=True)
-text(48,235,'Apps, tools, and experiments for everyday life.',23,'#65685f')
+text(48,26,'BRIAN RENSHAW',18)
+text(48,58,'A few things',46,serif=True)
+text(48,112,'I wanted to exist.',46,serif=True)
+text(48,172,'Apps, tools, and experiments built with AI.',21,'#65685f')
+# Nine projects in a 3x3 grid. The hero is deliberately compact: three rows of
+# cards plus the footer only fit inside 630px if the grid starts near y=216.
 projects=[
  ('Folio','iOS app','#ffdbb5','#57331f','folio/assets/icon.png',None),
  ('Who’s First?','iOS app','#bde0d2','#163f3c','whos-first/assets/icon-native.png',None),
  ('Reading Habit','iOS app','#f2dfae','#363127','reading-habit/assets/icon-native.png',None),
  ('Where Do We Eat','iOS app','#fff3df','#482b25','where-do-we-eat/assets/app-icon.png',None),
+ ('Canceled','iOS app','#142d4e','#fffdf6','canceled/assets/icon.png',None),
+ ('Walkthrough','Mac app','#e9dfc8','#292b2b','listing-namer/assets/icon-1.0.2.png',None),
  ('Lankford Legends','Blog','#ffffff','#0C2340',None,'blog'),
  ('What Did They Read?','Blog','#f2efe8','#1a1715',None,'books'),
  ('Spreadsheet Tools','Utility','#d5e6f4','#293f55',None,'utility'),
- ('Walkthrough','Mac app','#e9dfc8','#292b2b','listing-namer/assets/icon-1.0.2.png',None),
 ]
 for i,(name,kind,bg,ink,path,symbol) in enumerate(projects):
-    x=48+(i%4)*280;y=316+(i//4)*132
-    rect((x,y,x+264,y+112),bg)
-    icon(x+16,y+28,path,symbol)
-    text(x+84,y+34,name,18,ink)
-    text(x+84,y+62,kind,15,ink)
-text(48,590,'brianrenshaw.app',16,'#65685f')
-canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v7.png',optimize=True)
+    x=48+(i%3)*368;y=216+(i//3)*118
+    rect((x,y,x+348,y+96),bg)
+    icon(x+16,y+20,path,symbol)
+    text(x+84,y+28,name,18,ink)
+    text(x+84,y+56,kind,15,ink)
+text(48,578,'brianrenshaw.app',16,'#65685f')
+canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v8.png',optimize=True)

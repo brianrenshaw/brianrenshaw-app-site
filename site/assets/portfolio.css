@@ -21,3 +21,9 @@
 .folio .eyebrow,.folio .app-bottom a{color:#943b00}.where-do-we-eat .eyebrow,.where-do-we-eat .app-bottom a{color:#b52b17}.portfolio-app .eyebrow{opacity:1}@media(prefers-color-scheme:dark){.folio .eyebrow,.folio .app-bottom a{color:#ffb570}.where-do-we-eat .eyebrow,.where-do-we-eat .app-bottom a{color:#ffab98}}
 .reading-habit .eyebrow,.reading-habit .app-bottom a{color:#7d5411}@media(prefers-color-scheme:dark){.reading-habit .eyebrow,.reading-habit .app-bottom a{color:#e2b15f}}
 .listing-namer{background:#e9dfc8;color:#292b2b}.listing-namer .eyebrow,.listing-namer .app-bottom a{color:#795009}@media(prefers-color-scheme:dark){.listing-namer{background:#292c2e;color:#f1efe9}.listing-namer .eyebrow,.listing-namer .app-bottom a{color:#e9b454}}
+
+.canceled{background:#142d4e;color:#fffdf6}
+.canceled .eyebrow,.canceled .app-bottom a{color:#f7dc12}
+.canceled .app-bottom{border-color:#ffffff40}
+.canceled .app-bottom span{font-size:13px;opacity:.85}
+@media(prefers-color-scheme:dark){.canceled{background:#151d2c;color:#fff4cd}}

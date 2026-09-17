@@ -4,7 +4,21 @@ Approved with Brian on September 9, 2026. Use these promises for homepage cards,
 
 ## Homepage order
 
-Folio, Who’s First?, Reading Habit, Where Do We Eat, Lankford Legends, then What Did They Read? Keep the visible numbers in that order. Reading Habit moved ahead of Where Do We Eat on September 16, 2026, when it reached the App Store; released apps come before the app still in TestFlight. Spreadsheet Tools is the seventh card. The eighth slot is a dashed placeholder labeled “08 / Not yet” with the line “Reserved for the next thing I want to exist.” and a mailto link. Replace it when the next project ships.
+Grouped by platform since September 17, 2026, at Brian’s request: the iOS apps first, then the Mac app, then the blogs, then the utility.
+
+1. Folio (iOS app)
+2. Who’s First? (iOS app)
+3. Reading Habit (iOS app)
+4. Where Do We Eat (iOS app)
+5. Canceled (iOS app)
+6. Walkthrough (Mac app)
+7. Lankford Legends (Blog)
+8. What Did They Read? (Blog)
+9. Spreadsheet Tools (Utility)
+
+Keep the visible numbers in that order. Within the iOS apps, released apps come before the app in TestFlight, and the app still in development comes last; that is why Canceled is the fifth card. Walkthrough sits directly after the iOS apps because it is the only Mac app. Reading Habit moved ahead of Where Do We Eat on September 16, 2026, when it reached the App Store.
+
+With nine cards the tenth grid slot is a dashed placeholder labeled “10 / Not yet” with the line “Reserved for the next thing I want to exist.” and a mailto link. It keeps the two-column grid even. Replace it when the next project ships.
 
 ## Approved messages
 
@@ -158,4 +172,70 @@ Added at Brian's request as the eighth project, replacing the reserved slot. Typ
 
 ### Walkthrough (September 17, 2026, current)
 
-Walkthrough renames and orders listing photos for realtors to upload to the MLS, listing websites, and other destinations. Lead with “Rename photos. Set their order.” Do not describe it as creating a tour. Explain grouping and numbered filenames, original JPG quality, and checking photo order after upload. Use genuine current native screenshots and the house icon with the 01 label. The app page defaults to charcoal with amber accents. Show only the current version number beside the download, without build, signing, or notarization copy. Release history lives at /listing-namer/release-notes/ and is linked from the website and the app’s Help and Settings. This supersedes the earlier preview and tour wording above.
+Repositioned with Brian on September 17, 2026 using the StoryBrand frame. This supersedes the earlier preview, tour, and “Rename photos. Set their order.” wording above.
+
+**Audience:** Realtors and listing assistants. Name both; the assistant is often the person doing the uploading.
+
+**Problem:** A camera names files in the order it shot them, not the order a buyer should walk the house, so photos sorted by filename land on the MLS scrambled. The fallback is dragging them into place one at a time in a browser, and not knowing it is right until the listing is live.
+
+**Primary promise:** Photos upload to the MLS in the order you chose, on the first upload.
+
+**Headline:** Upload listing photos in the right order.
+
+**Supporting copy:** Sort a whole shoot visually, group photos by room, and export numbered filenames. Your photos land on the MLS in the order you chose.
+
+**Card label:** Listing photos in order
+
+**Priorities, in order:** Visual sorting of a whole shoot first. Renaming is the mechanism that carries the order, not the headline benefit. Then repeatability: templates with rooms already ordered, or your own group names for a house that does not fit the pattern. Then the team: sharing your setup so filenames match. JPG integrity and export review are the trust line in the closing section, not a feature block.
+
+**Landing page sections:** 01 / Sort, 02 / Repeat, 03 / Share. These replaced Organize / Name / Deliver, which described what the app does to files rather than why anyone would want it.
+
+**Do not say “sync.”** There is no sync service. Settings export writes a `.listingnamersettings` file containing tags, presets, and templates, shared manually, with Merge or Replace on import. It carries no photographs and no job history. Say “share your setup.” Never imply a cloud service, shared jobs, or shared photos.
+
+**Availability:** Show only the current version number beside the download, without build, signing, or notarization copy. Release history lives at /listing-namer/release-notes/ and is linked from the website and the app’s Help and Settings. Historical release entries stay as written; do not restate them in current positioning language.
+
+**Visual direction:** Unchanged. Genuine current native screenshots, the house icon with the 01 label, charcoal app pages with amber accents.
+
+## Canceled (September 17, 2026)
+
+Added at Brian's request as the fifth project and the last of the iOS apps, because it is still in development. Native source is in the sibling `canceled-app` project. Website route is `/canceled/`, a landing page only; add privacy and support when the app reaches TestFlight.
+
+**Audience:** Two friends who both quietly want out of the same plan.
+
+**Problem:** You want to cancel and you have no idea whether your friend does too. Sending the text makes you the flake; saying nothing means going out drained. Canceling shouldn't cost you the friendship, and honesty shouldn't require someone to go first.
+
+**Primary promise:** The plan comes off without either person having to be the one who asked.
+
+**Headline:** Nobody has to be the one who cancels.
+
+**Supporting copy:** You and a friend each privately say whether you want out. If you both do, the plan is off. If not, nothing is revealed.
+
+**Card label:** The quiet way out
+
+**Landing page sections:** 01 / Private, 02 / Mutual, 03 / One app.
+
+**Priorities, in order:** Privacy of the individual choice first. The mutual reveal second. Third, that only the plan's creator needs the app, because the friend can accept and cancel in a browser. Calendar import is a supporting detail, always described as opt-in.
+
+**Voice:** The app has its own dry voice and the website borrows it rather than inventing one. Canonical lines: "The plan is still on unless you both cancel." (the load-bearing rule, used verbatim in the cream slip), "Two friends. One mutual understanding.", "Your evening has been returned to you.", and the masthead line "The quiet way out". Keep the plain StoryBrand framing for the headline and the app's wit in the section copy.
+
+**Factual boundaries:**
+
+- In development. TestFlight distribution is unverified, so there is no download, beta link, or call to action. The page states status and stops.
+- Notifications are off in the beta service. Do not promise reminders or push.
+- `canceledapp.com` is not yet the application. Do not link to it.
+- Calendar discovery is local and opt-in, starting with no calendars selected.
+- Spelling is Canceled, one L. The wordmark carries a trailing period with the full stop in Sunshine yellow.
+- Screenshots come from the app's Demo mode. Always caption them as example data. The reveal capture is cropped below the "DEMO / MUTUAL CANCELLATION" line, because that is a mode indicator rather than product interface; the caption carries the disclosure instead. Recapture with `--demo --invite-preview --invite-flow-test` for the invite screen and `--demo --demo-reveal` for the reveal, on an iPhone 17 Pro simulator with the status bar overridden to 9:41.
+
+**Visual direction:** The app's own palette, not the portfolio's warm paper. Navy ground `#142d4e` in light mode and `#151d2c` in dark, cream surface `#fffdf6`, Sunshine `#f7dc12` for eyebrows and links, cancellation red `#a42620`, muted `#c5d0df`, rules `#4a5c74`. Archivo at weight 900 for headings, on a smaller headline scale than the shared one because Archivo sets much heavier. Motifs are the cream slip with its Sunshine tick and the rotated red CANCELED stamp. This is the first homepage card that is dark in light mode; navy is the brand's ground in both appearances, so it is intentional here even though a dark navy card was rejected for Lankford Legends.
+
+## September 17 implementation record
+
+- Repositioned Walkthrough on the homepage card, the landing page, the guide and support introductions, and search/social metadata, using the StoryBrand brief above. Feature blocks became Sort / Repeat / Share.
+- Added the `/canceled/` landing page, its `assets/site.css` theme, the `.canceled` portfolio card, and a sitemap entry. The app icon is the 1024 capture from `canceled-app`. Both screenshots are fresh iPhone 17 Pro simulator captures taken for this page, resized to 603px wide; the reveal is cropped below its demo-mode label. They replaced the first pass, which showed a sample dinner at 3:36 AM and a reveal clipped mid-button. The odd time came from the demo fixture offsetting every sample plan by a flat eight hours from launch; `DemoEngine.swift` in `canceled-app` now anchors the samples to sensible evening times, which is an uncommitted change in that project for Brian to review. Archivo is the existing `archivo.woff2` already bundled for Where Do We Eat, copied in at 189KB rather than shipping the 658KB variable TTF; the two source files are byte-identical.
+- Reordered the homepage to nine platform-grouped cards and renumbered cards 5 through 9. Reinstated the dashed placeholder as slot 10 to keep the two-column grid even. Preserved the `#lankford-legends`, `#what-did-they-read`, and `#utilities` anchors.
+- Rebuilt the share image as `social-projects-v8.png`. Nine projects do not fit the old four-column grid inside 1200x630, so `scripts/build_social.py` now lays out a 3x3 grid with a compacted hero. The homepage `og:image` and `twitter:image` point at v8 and the two alt strings were updated to nine projects. `portfolio.css` is now served as `?v=9`.
+- Corrected two stale Walkthrough privacy-page facts found while surveying: the policy said "Applies to Walkthrough 1.0" against a shipping 1.2.1, and its `og:image` still referenced a 1.1.0 capture.
+- Removed the one em dash on the Walkthrough landing page. Em dashes remain in several older privacy and support pages; a site-wide pass was not in scope.
+- Download URLs, DMG filenames, release tags, the appcast, and the historical release notes were left untouched.
+- Static checks passed: 27 HTML pages and 457 local links/assets. Pages were reviewed in Chrome at 375, 834, and 1440 pixels in light and dark mode.
