@@ -51,7 +51,7 @@ projects=[
  ('Lankford Legends','Blog','#ffffff','#0C2340',None,'blog'),
  ('What Did They Read?','Blog','#f2efe8','#1a1715',None,'books'),
  ('Spreadsheet Tools','Utility','#d5e6f4','#293f55',None,'utility'),
- ('Walkthrough','Mac app','#e9dfc8','#292b2b','listing-namer/assets/icon-1.0.1.png',None),
+ ('Walkthrough','Mac app','#e9dfc8','#292b2b','listing-namer/assets/icon-1.0.2.png',None),
 ]
 for i,(name,kind,bg,ink,path,symbol) in enumerate(projects):
     x=48+(i%4)*280;y=316+(i//4)*132
@@ -60,4 +60,4 @@ for i,(name,kind,bg,ink,path,symbol) in enumerate(projects):
     text(x+84,y+34,name,18,ink)
     text(x+84,y+62,kind,15,ink)
 text(48,590,'brianrenshaw.app',16,'#65685f')
-canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v6.png',optimize=True)
+canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v7.png',optimize=True)

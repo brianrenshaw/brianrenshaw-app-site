@@ -44,5 +44,6 @@ for p in ROOT.rglob('*.css'):
 for slug in ['reading-habit','where-do-we-eat','whos-first','folio','listing-namer']:
  for sub in ['','privacy','support']:
   if not (ROOT/slug/sub/'index.html').exists():errors.append(f'Missing route {slug}/{sub}')
+if not (ROOT/'listing-namer/release-notes/index.html').exists():errors.append('Missing Walkthrough release history')
 if errors:print('\n'.join(errors));sys.exit(1)
 print(f'PASS: {len(pages)} HTML pages; {links} local links/assets; canonical URLs, fragments, fonts and required routes.')

@@ -3,12 +3,22 @@
     <channel>
         <title>Walkthrough</title>
         <item>
+            <title>1.0.2</title>
+            <pubDate>Thu, 17 Sep 2026 09:54:55 -0400</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.0.2/Walkthrough-1.0.2.dmg" length="3034881" type="application/octet-stream" sparkle:edSignature="CneZWu6JOZkDRiIosDiwI4xGDwesefuTUSF+dmyaKr+pkIlJkOgHy4mZHar8aid1CwnQsu6G3Wn+gwJPR+5gDQ==" />
+            <sparkle:releaseNotesLink>https://brianrenshaw.app/listing-namer/release-notes/#v1.0.2</sparkle:releaseNotesLink>
+        </item>
+        <item>
             <title>1.0.1</title>
             <pubDate>Thu, 17 Sep 2026 09:18:52 -0400</pubDate>
             <sparkle:version>3</sparkle:version>
             <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.0.1/Walkthrough-1.0.1.dmg" length="3032354" type="application/octet-stream" sparkle:edSignature="BpN60tKJZpfrXo1eLVa9PCmESNWsyO6DHzRocLA32LEa18Gcp6n1ae3jKBEO1Zw1io0XadOgA9pfZtAXItARCQ==" />
+            <sparkle:releaseNotesLink>https://brianrenshaw.app/listing-namer/release-notes/#v1.0.1</sparkle:releaseNotesLink>
         </item>
         <item>
             <title>1.0.0</title>
@@ -17,6 +27,7 @@
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.0.0/Listing-Namer-1.0.0.dmg" length="3038458" type="application/octet-stream" sparkle:edSignature="tVP4i90HiYmHN4+uX+GKcUHm7hjij+HtW5BEy/C5FlvfXDX4824SLeRTz/Yijc3EGWImVu6u3RoxkO6eT+f6DQ==" />
+            <sparkle:releaseNotesLink>https://brianrenshaw.app/listing-namer/release-notes/#v1.0.0</sparkle:releaseNotesLink>
         </item>
     </channel>
 </rss>

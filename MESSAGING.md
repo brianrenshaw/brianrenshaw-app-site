@@ -155,3 +155,7 @@ Priority clarification: the latest Cardinals Daily is the primary feature, the l
 ## Listing Namer (September 17, 2026)
 
 Added at Brian's request as the eighth project, replacing the reserved slot. Type: Mac app. Headline: “Give every listing photo its place.” Lead with organizing real estate shoots and consistent delivery filenames while preserving JPG quality. Support keyboard grouping, ordering, presets, and local jobs with practical copy. Availability must say Mac preview until a notarized release is ready. Current requirements: macOS 14+, Apple silicon and Intel. No account is required. Do not describe address search or update checking as offline. The download is Developer ID signed but not yet notarized; disclose that macOS may block it.
+
+### Walkthrough (September 17, 2026, current)
+
+Walkthrough renames and orders listing photos for realtors to upload to the MLS, listing websites, and other destinations. Lead with “Rename photos. Set their order.” Do not describe it as creating a tour. Explain grouping and numbered filenames, original JPG quality, and checking photo order after upload. Use genuine current native screenshots and the house icon with the 01 label. The app page defaults to charcoal with amber accents. Show only the current version number beside the download, without build, signing, or notarization copy. Release history lives at /listing-namer/release-notes/ and is linked from the website and the app’s Help and Settings. This supersedes the earlier preview and tour wording above.

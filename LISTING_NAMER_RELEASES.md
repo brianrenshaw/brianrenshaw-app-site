@@ -16,3 +16,7 @@ For each notarized release:
 5. Verify the live feed and DMG URLs, then test an actual Sparkle upgrade from the previous installed version and reopen a saved job.
 
 Screenshots are native app captures using demonstration photos. `site/listing-namer/assets/SOURCES.md` records image sources. Website content belongs here; do not create a separate website inside the native app repository.
+
+## 1.0.2
+
+Version 1.0.2, build 4, adds the refined house icon, purpose-focused Getting Started copy, and Release Notes links in Help and Settings. Public history: `/listing-namer/release-notes/`, with `#v1.0.2` and a stable anchor for every release. For future updates, add a dated, user-facing entry, refresh changed native captures, upload the versioned DMG, then publish the matching appcast and website version together. The native appcast postprocessor supplies release-note links and preserves older download URLs.
