@@ -5,7 +5,7 @@
 - Feed: `site/listing-namer/appcast.xml`, served at `https://brianrenshaw.app/listing-namer/appcast.xml`.
 - Downloads: public GitHub Releases in `brianrenshaw/brianrenshaw-app-site`, with tags prefixed `listing-namer-`.
 
-The first release is `listing-namer-v1.0.0-preview`, containing `Listing-Namer-1.0.0-preview.dmg`. It is Developer ID signed but not notarized. The page and release notes disclose this; the feed has no installable update until notarization is configured. Do not represent this as the final public release.
+The current public release is `listing-namer-v1.0.0`, version 1.0.0 build 2. Its app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 2 to configured build-1 previews. The original `listing-namer-v1.0.0-preview` release remains available as a historical prerelease.
 
 For each notarized release:
 

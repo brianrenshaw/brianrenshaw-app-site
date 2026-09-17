@@ -1,2 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"><channel><title>Listing Namer updates</title><link>https://brianrenshaw.app/listing-namer/</link><description>Official Listing Namer releases. The first notarized update is being prepared.</description><language>en</language></channel></rss>
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Listing Namer</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Thu, 17 Sep 2026 08:00:56 -0400</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.0.0/Listing-Namer-1.0.0.dmg" length="3038458" type="application/octet-stream" sparkle:edSignature="tVP4i90HiYmHN4+uX+GKcUHm7hjij+HtW5BEy/C5FlvfXDX4824SLeRTz/Yijc3EGWImVu6u3RoxkO6eT+f6DQ=="/>
+        </item>
+    </channel>
+</rss>
