@@ -5,7 +5,7 @@
 - Feed: `site/listing-namer/appcast.xml`, served at `https://brianrenshaw.app/listing-namer/appcast.xml`.
 - Downloads: public GitHub Releases in `brianrenshaw/brianrenshaw-app-site`, with tags prefixed `listing-namer-`.
 
-The current public release is `listing-namer-v1.2.0`, Walkthrough version 1.2.0 build 6. Its universal app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 6 to existing installations and preserves earlier release download URLs.
+The current public release is `listing-namer-v1.2.1`, Walkthrough version 1.2.1 build 7. Its universal app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 7 to existing installations and preserves earlier release download URLs.
 
 For each notarized release:
 
@@ -26,3 +26,6 @@ Command palette, keyboard ordering, native toolbar, grouped Copy/Move exports, a
 
 ## 1.2.0
 Native room sidebar and scoped photo browsing, resizable split panes, centered Command-K palette with Change Group Name, native Settings and export controls, and refreshed onboarding and guide. The guide navigation remains in document flow while scrolling. Screenshots use versioned 1.2.0 native captures.
+
+## 1.2.1
+Fixes keyboard room-preset naming, persists default tag IDs, refreshes current business details and matching tags for reopened jobs, and fixes blank business filename overrides. The release history and guide describe the saved-profile behavior and inline missing-business explanation.
