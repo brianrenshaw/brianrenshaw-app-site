@@ -7,3 +7,5 @@ Photography from Unsplash, under the Unsplash License (https://unsplash.com/lice
 - Lisa Anna: https://unsplash.com/photos/a-large-open-concept-kitchen-and-living-room-mNrSV2tB35g
 - Bailey Alexander: https://unsplash.com/photos/a-living-room-filled-with-furniture-and-a-kitchen-PE4pFgcYzoQ
 - Bailey Alexander: https://unsplash.com/photos/a-living-room-filled-with-furniture-and-a-kitchen-RbbZn_M5fgU
+
+Version 1.0.1 assets use the Walkthrough native icon and the refreshed dark workspace captures in Review/PhotoStudio. The walkthrough image is an unmodified native UI-test capture of the naming-philosophy step.

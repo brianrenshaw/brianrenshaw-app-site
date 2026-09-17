@@ -1,11 +1,11 @@
-# Listing Namer publishing
+# Walkthrough publishing
 
 - Native source: sibling `../real-estate-photos-renamer`, private GitHub repository `brianrenshaw/listing-namer`.
 - App page and homepage card: this repository, `site/listing-namer/` and `site/index.html`.
 - Feed: `site/listing-namer/appcast.xml`, served at `https://brianrenshaw.app/listing-namer/appcast.xml`.
 - Downloads: public GitHub Releases in `brianrenshaw/brianrenshaw-app-site`, with tags prefixed `listing-namer-`.
 
-The current public release is `listing-namer-v1.0.0`, version 1.0.0 build 2. Its app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 2 to configured build-1 previews. The original `listing-namer-v1.0.0-preview` release remains available as a historical prerelease.
+The current public release is `listing-namer-v1.0.1`, Walkthrough version 1.0.1 build 3. Its app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 3 to existing Listing Namer installations. Version 1.0.0 build 2 remains in the feed. The original `listing-namer-v1.0.0-preview` release remains available as a historical prerelease.
 
 For each notarized release:
 
