@@ -3,13 +3,22 @@
     <channel>
         <title>Walkthrough</title>
         <item>
+            <title>1.2.2</title>
+            <pubDate>Thu, 17 Sep 2026 22:09:50 -0400</pubDate>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>1.2.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.2.2/Walkthrough-1.2.2.dmg" length="3283261" type="application/octet-stream" sparkle:edSignature="I4N62+flB3XEWJv3Q8L0kqEKH5jbcGu0EM+Iftue5GPsLxnLyU7P+WHSe3NXn1/pSe2opDYTCKKP70QvSFGMDw==" />
+            <sparkle:releaseNotesLink>https://brianrenshaw.app/listing-namer/release-notes/#v1.2.2</sparkle:releaseNotesLink>
+        </item>
+        <item>
             <title>1.2.1</title>
             <pubDate>Thu, 17 Sep 2026 16:29:04 -0400</pubDate>
             <sparkle:version>7</sparkle:version>
             <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.2.1/Walkthrough-1.2.1.dmg" length="3092989" type="application/octet-stream" sparkle:edSignature="dD6lurUsp1MWRnW/KMbsaxjq8Cm512Lks8wsESQCbPjOQL5F/CxzIHvowHQzx0firh/YA0JSb0HQgt86omsIBA==" />
-            <sparkle:releaseNotesLink>https://brianrenshaw.app/walkthrough/release-notes/#v1.2.1</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink>https://brianrenshaw.app/listing-namer/release-notes/#v1.2.1</sparkle:releaseNotesLink>
         </item>
         <item>
             <title>1.2.0</title>
@@ -18,16 +27,7 @@
             <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.2.0/Walkthrough-1.2.0.dmg" length="3088961" type="application/octet-stream" sparkle:edSignature="F8LYoBVgn4LSwwtOLfHrbqN6HEDC40bUjIWwl/mZMG0U5Hge0QzqnQHj3IpO/oRuBDPRit0yZz7gzi0GcyXpAA==" />
-            <sparkle:releaseNotesLink>https://brianrenshaw.app/walkthrough/release-notes/#v1.2.0</sparkle:releaseNotesLink>
-        </item>
-        <item>
-            <title>1.1.0</title>
-            <pubDate>Thu, 17 Sep 2026 13:05:11 -0400</pubDate>
-            <sparkle:version>5</sparkle:version>
-            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.1.0/Walkthrough-1.1.0.dmg" length="3133476" type="application/octet-stream" sparkle:edSignature="Vd59ePaEE+IG6v8GMQCViDyeJSz3cAh6Eb6lPPm/n7HJBxvYhL1u/Xk6Ki6zkRoZfsntw+cuhfdqMBTETsylAg==" />
-            <sparkle:releaseNotesLink>https://brianrenshaw.app/walkthrough/release-notes/#v1.1.0</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink>https://brianrenshaw.app/listing-namer/release-notes/#v1.2.0</sparkle:releaseNotesLink>
         </item>
     </channel>
 </rss>

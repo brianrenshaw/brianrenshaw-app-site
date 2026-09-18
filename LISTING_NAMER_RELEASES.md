@@ -5,7 +5,7 @@
 - Feed: `site/listing-namer/appcast.xml`, served at `https://brianrenshaw.app/listing-namer/appcast.xml`. **This path is frozen.** The website moved to `/walkthrough/` on September 17, 2026, but shipped builds have this feed URL compiled into `SUFeedURL`, and a static host cannot redirect it. Keep publishing the feed here. Human-facing pages live under `site/walkthrough/`; `site/listing-namer/` otherwise holds redirect stubs.
 - Downloads: public GitHub Releases in `brianrenshaw/brianrenshaw-app-site`, with tags prefixed `listing-namer-`.
 
-The current public release is `listing-namer-v1.2.1`, Walkthrough version 1.2.1 build 7. Its universal app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 7 to existing installations and preserves earlier release download URLs.
+The current public release is `listing-namer-v1.2.2`, Walkthrough version 1.2.2 build 8. Its universal app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 8 to existing installations and preserves earlier release download URLs.
 
 For each notarized release:
 
@@ -29,3 +29,6 @@ Native room sidebar and scoped photo browsing, resizable split panes, centered C
 
 ## 1.2.1
 Fixes keyboard room-preset naming, persists default tag IDs, refreshes current business details and matching tags for reopened jobs, and fixes blank business filename overrides. The release history and guide describe the saved-profile behavior and inline missing-business explanation.
+
+## 1.2.2
+Build 8 improves responsiveness for larger photo jobs: coalesced typing, targeted photo-grid updates, background job loading and saving, faster asynchronous export previews, pane-sized image requests, reduced cache memory, and faster commands. Saved jobs and original JPG bytes remain compatible; export safety checkpoints are preserved.
