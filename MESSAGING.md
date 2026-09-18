@@ -16,7 +16,7 @@ Grouped by platform since September 17, 2026, at Brian’s request: the iOS apps
 8. What Did They Read? (Blog)
 9. Spreadsheet Tools (Utility)
 
-Keep the visible numbers in that order. Within the iOS apps, released apps come before the app in TestFlight, and the app still in development comes last; that is why Canceled is the fifth card. Walkthrough sits directly after the iOS apps because it is the only Mac app. Reading Habit moved ahead of Where Do We Eat on September 16, 2026, when it reached the App Store.
+Keep the visible numbers in that order. Within the iOS apps, released apps come first and the app still in development comes last; that is why Canceled is the fifth card. Walkthrough sits directly after the iOS apps because it is the only Mac app. Reading Habit moved ahead of Where Do We Eat on September 16, 2026, when it reached the App Store; Where Do We Eat reached the App Store itself on September 17, 2026 and keeps card 04, so all four released iOS apps now sit ahead of Canceled.
 
 With nine cards the tenth grid slot is a dashed placeholder labeled “10 / Not yet” with the line “Reserved for the next thing I want to exist.” and a mailto link. It keeps the two-column grid even. Replace it when the next project ships.
 
@@ -41,6 +41,8 @@ With nine cards the tenth grid slot is a dashed placeholder labeled “10 / Not 
 **Supporting copy:** Get suggestions from your favorites and places you’ve been meaning to try, based on what sounds good and who’s coming. Leave out the places they don’t like.
 
 **Priority:** Make the restaurant decision easier. Use favorites, saved recommendations, the occasion, and companions to shape that decision. These are central, not unrelated extras.
+
+**Availability:** Version 1.0 reached the App Store on September 17, 2026, at `https://apps.apple.com/app/id6808350718`. A free download for iPhone and iPad, requiring iOS or iPadOS 27. The TestFlight beta is over; nothing on the site may call this app a beta, link to `testflight.apple.com`, or hedge that its screens may still change. "No ads or tracking" is supported by the privacy policy, which states the app contains no advertising, analytics, or tracking software.
 
 **Local app handoff:** `where-do-we-eat/MESSAGING.md` in the sibling app repository.
 
@@ -247,3 +249,14 @@ Keep the headline and the factual claims plain. Snark rides in the section copy,
 - Removed the one em dash on the Walkthrough landing page. Em dashes remain in several older privacy and support pages; a site-wide pass was not in scope.
 - Download URLs, DMG filenames, release tags, the appcast, and the historical release notes were left untouched.
 - Static checks passed: 27 HTML pages and 457 local links/assets. Pages were reviewed in Chrome at 375, 834, and 1440 pixels in light and dark mode.
+
+## September 18 implementation record
+
+- Where Do We Eat 1.0 reached the App Store on September 17, 2026. Verified against Apple's public lookup before publishing: free, iOS 27 minimum, universal iPhone and iPad, app ID 6808350718.
+- Replaced every TestFlight link with `https://apps.apple.com/app/id6808350718`: the homepage card footer, the shared header nav on the landing, guide and privacy pages, and both landing-page calls to action. The homepage card now reads "Available on the App Store" and the landing page "Download on the App Store", matching Folio, Who's First? and Reading Habit.
+- The hero availability list dropped "In beta, screens may evolve" for "Free, No ads or tracking". The first is no longer true and the second is a fact the privacy policy already states. Its `.is-note` accent class and rule were removed, because the line is now a plain fact rather than a caveat and should match its two siblings.
+- Renamed the header accent class `nav-beta` to `nav-store` in the page-local stylesheet, so no markup is still named for a beta that ended. It is used only by these four pages.
+- Guide: the stamp now reads "Updated September 18, 2026 / Matches version 1.0" rather than "Matches beta build 15". The device question asks which devices run the app instead of the beta, and feedback routes to email with an app version rather than through TestFlight.
+- The homepage card kept position 04 and its number. All four released iOS apps already sat ahead of Canceled, so no reorder or renumbering was needed, and the share image needed no rebuild because its cards carry no availability.
+- `MIGRATION.md` was left alone. Its App Store Connect table is a dated record of the September rollout, not current status, and the repo keeps historical records historical.
+- Static checks passed: 32 HTML pages and 468 local links/assets. The App Store URL returns 200.

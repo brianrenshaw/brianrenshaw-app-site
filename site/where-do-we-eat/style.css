@@ -227,7 +227,7 @@ a:hover {
   color: var(--ink);
 }
 
-.site-header .nav-beta {
+.site-header .nav-store {
   gap: 8px;
   font-weight: 700;
   color: #fff;
@@ -235,7 +235,7 @@ a:hover {
   border-left: var(--rule);
 }
 
-.site-header .nav-beta:hover {
+.site-header .nav-store:hover {
   background: var(--accent-press);
   color: #fff;
 }
@@ -297,10 +297,6 @@ a:hover {
   font-size: 13px;
   font-weight: 500;
   color: var(--ink-soft);
-}
-
-.availability .is-note {
-  color: var(--accent-deep);
 }
 
 /* ---------- Screenshot plate ---------- */
