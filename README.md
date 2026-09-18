@@ -37,9 +37,18 @@ Two blogs are linked from homepage cards without local pages: Lankford Legends (
 
 Spreadsheet Tools lives at `/spreadsheet-tools/`. Its React source remains in the sibling `spreadsheet-webapp` repository (`brianrenshaw/spreadsheet-tools` on GitHub). Run that project's `scripts/sync-website.py` to rebuild and copy generated files here, then commit and push this repository. Keep the utility link at the bottom of the portfolio. See that project's `WEBSITE_MIGRATION.md` for the complete workflow.
 
-Walkthrough (formerly Listing Namer) is at `/listing-namer/`, with `support/`, `privacy/`, and `appcast.xml`. Its native source is in the private sibling `real-estate-photos-renamer` project / `brianrenshaw/listing-namer` repository. Public DMGs are GitHub Release assets in this website repository; they are not committed into `site/`. See `LISTING_NAMER_RELEASES.md` for the release handoff. The current download is signed and notarized Walkthrough 1.2.1, build 7.
+Walkthrough (formerly Listing Namer) is at `/walkthrough/`, with `guide/`, `support/`, `privacy/`, and `release-notes/`. Its native source is in the private sibling `real-estate-photos-renamer` project / `brianrenshaw/listing-namer` repository. Public DMGs are GitHub Release assets in this website repository; they are not committed into `site/`. See `LISTING_NAMER_RELEASES.md` for the release handoff. The current download is signed and notarized Walkthrough 1.2.1, build 7.
 
-Release notes are published at `/listing-namer/release-notes/`, with links in the native app’s Help menu and Settings. Public copy leads with the outcome: listing photos that upload to the MLS in the order you chose, for realtors and listing assistants. Read the Walkthrough section of `MESSAGING.md` before changing it, including the rule against describing settings export as “sync.”
+### Do not delete `site/listing-namer/`
+
+Walkthrough moved from `/listing-namer/` to `/walkthrough/` on September 17, 2026. The old path is not dead weight:
+
+- **`site/listing-namer/appcast.xml` must stay exactly where it is, permanently.** Every shipped copy of the Mac app, 1.0 through 1.2.1, has `SUFeedURL = https://brianrenshaw.app/listing-namer/appcast.xml` compiled into its `Info.plist`. Sparkle needs real XML at that URL, and GitHub Pages cannot issue a redirect. Move or delete this file and every existing installation silently stops receiving updates. Publishing a release still means updating this file, not a copy under `/walkthrough/`. Only after a future build ships with a new `SPARKLE_FEED_URL`, and every user has taken it, could that change, which in practice means never.
+- The five `index.html` files under `site/listing-namer/` are redirect stubs to `/walkthrough/`, following the same pattern as the older `/chooser/` stubs. They carry the query and hash across, which matters because Sparkle opens release notes at `/release-notes/#v1.2.1` and older builds still ask for the old path.
+
+`scripts/check_site.py` asserts the feed and all five stubs exist, so this cannot be removed by accident.
+
+Release notes are published at `/walkthrough/release-notes/`, with links in the native app’s Help menu and Settings. Public copy leads with the outcome: listing photos that upload to the MLS in the order you chose, for realtors and listing assistants. Read the Walkthrough section of `MESSAGING.md` before changing it, including the rule against describing settings export as “sync.”
 
 Canceled is at `/canceled/`, a landing page only. The app is in development for iPhone and iPad, is not on TestFlight, and has nothing to download, so the page states status and offers no call to action. Its native source is in the sibling `canceled-app` project. Add `support/` and `privacy/` when it reaches TestFlight, and add `canceled` to the required-routes list in `scripts/check_site.py` at the same time. Page assets under `site/canceled/assets/` are copied from that project; its Archivo woff2 is the same file already bundled for Where Do We Eat.
 

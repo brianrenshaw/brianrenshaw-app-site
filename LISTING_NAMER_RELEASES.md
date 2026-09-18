@@ -1,8 +1,8 @@
 # Walkthrough publishing
 
 - Native source: sibling `../real-estate-photos-renamer`, private GitHub repository `brianrenshaw/listing-namer`.
-- App page and homepage card: this repository, `site/listing-namer/` and `site/index.html`.
-- Feed: `site/listing-namer/appcast.xml`, served at `https://brianrenshaw.app/listing-namer/appcast.xml`.
+- App page and homepage card: this repository, `site/walkthrough/` and `site/index.html`.
+- Feed: `site/listing-namer/appcast.xml`, served at `https://brianrenshaw.app/listing-namer/appcast.xml`. **This path is frozen.** The website moved to `/walkthrough/` on September 17, 2026, but shipped builds have this feed URL compiled into `SUFeedURL`, and a static host cannot redirect it. Keep publishing the feed here. Human-facing pages live under `site/walkthrough/`; `site/listing-namer/` otherwise holds redirect stubs.
 - Downloads: public GitHub Releases in `brianrenshaw/brianrenshaw-app-site`, with tags prefixed `listing-namer-`.
 
 The current public release is `listing-namer-v1.2.1`, Walkthrough version 1.2.1 build 7. Its universal app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 7 to existing installations and preserves earlier release download URLs.
@@ -15,7 +15,7 @@ For each notarized release:
 4. Update the page download link and availability statement, run `python3 scripts/check_site.py`, commit, and push. Existing GitHub Pages deployment publishes the feed and page together.
 5. Verify the live feed and DMG URLs, then test an actual Sparkle upgrade from the previous installed version and reopen a saved job.
 
-Screenshots are native app captures using demonstration photos. `site/listing-namer/assets/SOURCES.md` records image sources. Website content belongs here; do not create a separate website inside the native app repository.
+Screenshots are native app captures using demonstration photos. `site/walkthrough/assets/SOURCES.md` records image sources. Website content belongs here; do not create a separate website inside the native app repository.
 
 ## 1.0.2
 

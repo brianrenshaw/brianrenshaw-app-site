@@ -192,7 +192,7 @@ Repositioned with Brian on September 17, 2026 using the StoryBrand frame. This s
 
 **Do not say “sync.”** There is no sync service. Settings export writes a `.listingnamersettings` file containing tags, presets, and templates, shared manually, with Merge or Replace on import. It carries no photographs and no job history. Say “share your setup.” Never imply a cloud service, shared jobs, or shared photos.
 
-**Availability:** Show only the current version number beside the download, without build, signing, or notarization copy. Release history lives at /listing-namer/release-notes/ and is linked from the website and the app’s Help and Settings. Historical release entries stay as written; do not restate them in current positioning language.
+**Availability:** Show only the current version number beside the download, without build, signing, or notarization copy. Release history lives at /walkthrough/release-notes/ and is linked from the website and the app’s Help and Settings. Historical release entries stay as written; do not restate them in current positioning language.
 
 **Visual direction:** Unchanged. Genuine current native screenshots, the house icon with the 01 label, charcoal app pages with amber accents.
 

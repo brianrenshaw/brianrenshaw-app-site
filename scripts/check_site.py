@@ -23,7 +23,7 @@ for p,page in pages.items():
  if page.h1!=1:errors.append(f'{rel}: expected one h1, found {page.h1}')
  if p.name=='index.html':
   expected=url.removesuffix('index.html')
-  aliases={'chooser/':'whos-first/','chooser/play/':'whos-first/','chooser/support/':'whos-first/support/','chooser/privacy/':'whos-first/privacy/'}
+  aliases={'chooser/':'whos-first/','chooser/play/':'whos-first/','chooser/support/':'whos-first/support/','chooser/privacy/':'whos-first/privacy/','listing-namer/':'walkthrough/','listing-namer/guide/':'walkthrough/guide/','listing-namer/support/':'walkthrough/support/','listing-namer/privacy/':'walkthrough/privacy/','listing-namer/release-notes/':'walkthrough/release-notes/'}
   expected='https://brianrenshaw.app/'+aliases.get(rel.removesuffix('index.html'),rel.removesuffix('index.html'))
   if page.canonical!=[expected]:errors.append(f'{rel}: canonical {page.canonical}, expected {expected}')
  for tag,attr,ref in page.refs:
@@ -41,10 +41,16 @@ for p in ROOT.rglob('*.css'):
  for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)',p.read_text()):
   if ref.startswith('data:'):continue
   if not (p.parent/ref).exists():errors.append(f'{p.relative_to(ROOT)}: missing CSS asset {ref}')
-for slug in ['reading-habit','where-do-we-eat','whos-first','folio','listing-namer']:
+for slug in ['reading-habit','where-do-we-eat','whos-first','folio','walkthrough']:
  for sub in ['','privacy','support']:
   if not (ROOT/slug/sub/'index.html').exists():errors.append(f'Missing route {slug}/{sub}')
-if not (ROOT/'listing-namer/release-notes/index.html').exists():errors.append('Missing Walkthrough release history')
-if not (ROOT/'listing-namer/guide/index.html').exists():errors.append('Missing Walkthrough illustrated guide')
+if not (ROOT/'walkthrough/release-notes/index.html').exists():errors.append('Missing Walkthrough release history')
+if not (ROOT/'walkthrough/guide/index.html').exists():errors.append('Missing Walkthrough illustrated guide')
+# Walkthrough moved to /walkthrough/, but every shipped copy of the Mac app has
+# https://brianrenshaw.app/listing-namer/appcast.xml compiled into SUFeedURL, and a
+# static host cannot redirect it. This file must keep serving real XML permanently.
+if not (ROOT/'listing-namer/appcast.xml').exists():errors.append('Missing Sparkle feed at the original /listing-namer/ path')
+for sub in ['','guide/','support/','privacy/','release-notes/']:
+ if not (ROOT/'listing-namer'/sub/'index.html').exists():errors.append(f'Missing listing-namer/{sub} redirect')
 if errors:print('\n'.join(errors));sys.exit(1)
 print(f'PASS: {len(pages)} HTML pages; {links} local links/assets; canonical URLs, fragments, fonts and required routes.')
