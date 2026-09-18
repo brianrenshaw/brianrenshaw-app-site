@@ -307,3 +307,23 @@ Brian asked whether all the real gaps were fixed. They were not. Two were missed
 - `book-tracker/MESSAGING.md` still described the app as in development with no public download, and listed Mac. Corrected and committed there as a single file; that repo was clean.
 - `chooser-web-app/MESSAGING.md` was corrected to record the verified iPad support. It is an untracked file in a repo with other pending work, so the edit is on disk and uncommitted rather than added to git.
 - Folio's own `MESSAGING.md` was checked and needed nothing.
+
+## Folio verified against the exact live build
+
+The earlier Folio audit used `build/export/HTMLViewer.ipa`, which is 1.1 build 11 from August 25, while the App Store serves 1.1.2. Brian asked for the live build. No rebuild was needed: the project's source is already at `MARKETING_VERSION = 1.1.2` and `CURRENT_PROJECT_VERSION = 18`, and commit `92cae0a` is "Release 1.1.2 (18)", so every claim was re-checked with `git show` and `git grep` pinned to that commit.
+
+All seven published claims hold at `92cae0a`:
+
+| Claim | Evidence at the shipped commit |
+| --- | --- |
+| Widget in small, medium and circular Lock Screen sizes, per page | `WidgetExt/FolioWidget.swift`: `supportedFamilies([.systemSmall, .systemMedium, .accessoryCircular])` with `AppIntentConfiguration` |
+| Touch and hold for favorite and recent pages | `QuickActions.swift`, `UIApplicationShortcutItem` |
+| Face ID **or the device passcode** | `PrivacyLock.swift` uses `.deviceOwnerAuthentication`, deliberately not `...WithBiometrics`, which is what makes the passcode fallback real |
+| Locked pages hidden in the app switcher | `PrivacyLock.swift`: `needsShield && scenePhase != .active` |
+| iCloud off until asked, page files and settings separate | `AppSettings.swift`: three independent flags, all read with `UserDefaults.bool(forKey:)`, which is `false` when unset |
+| Any page can be left out of iCloud | `PageSettingsView.swift` binds `store.isCloudSynced(current)`; `BulkActions.swift` also offers "Don't Sync with iCloud" for a batch |
+| PDF export | `PagePrinting.swift`; `HelpView.swift` describes the same action |
+
+**One finding, now in the README.** Only one source file changed after the release commit: `SettingsView.swift`, moving the in-app privacy link from `brianrenshaw.github.io/folio-privacy/` to `brianrenshaw.app/folio/privacy/`. That change is unreleased, so the build on the App Store still opens the legacy URL. It returns 200 and its policy matches the current one, so users are not reading anything stale, but the legacy Pages repository has to stay published until a build with the new URL has fully replaced 1.1.2. Same class of constraint as the Sparkle feed.
+
+**Method note.** Verifying against a checked-out release commit is better than unpacking whichever IPA happens to be on disk, and it is what should have been done the first time. Confirm `MARKETING_VERSION` and `CURRENT_PROJECT_VERSION` at that commit match the live listing before trusting it.
