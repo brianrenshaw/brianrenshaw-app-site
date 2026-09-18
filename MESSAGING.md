@@ -274,3 +274,21 @@ Audited the page against the shipping build rather than the source tree: unpacke
 - Verified accurate and left alone: the guide's control names all match the shipping UI (All saved, Want to try, What sounds good?, Show 3 choices, Browse matches, Pick One for Me, Three More, Log & Get Directions, Directions Only). Sharing, Apple Intelligence, voice entry, and the permission list are already covered correctly in the guide.
 - Corrected a now-false rule in the sibling app project's `MESSAGING.md`, which still told editors the website offered a TestFlight beta and said not to describe the app as released. That edit is uncommitted in `where-do-we-eat`, which has a large amount of unrelated pending work.
 - Static checks after the additions: 32 HTML pages and 472 local links/assets.
+
+## September 18 audit of the other three apps
+
+Same method as Where Do We Eat: check the shipped build and Apple's public listing, not the source tree or the existing copy.
+
+**Support page metadata, all four apps.** Every support page had `og:title` and `og:description` set to the bare placeholder "Support", and none had `og:image:alt`. All four now carry a real title and a one-line summary of what the page covers. An earlier pass reported Reading Habit's and Who's First?'s pages as having no Open Graph tags at all; that was wrong, a regex that assumed `property` came before `content`. Read the raw markup rather than trusting an extraction.
+
+**Who's First? claimed less than it ships.** The landing page said "For iPhone · iOS 26 or later". The app's own `MESSAGING.md` recorded this as deliberate and said to verify the release before changing public device availability, so that verification was done: live version 1.2 reports `iosUniversal` with 80 iPad devices, its store listing carries six screenshots in iPad 3:4 aspect, and the Xcode project sets `TARGETED_DEVICE_FAMILY = "1,2"`. The line now reads "For iPhone and iPad". Update `chooser-web-app/MESSAGING.md` to match when convenient.
+
+**Folio's Files integration was documented nowhere.** The shipped IPA embeds `FileProviderExt.appex`, `ShareExt.appex` and `WidgetExt.appex`. The File Provider publishes the library as a browsable location in Files and the document picker and is read only by design, because Folio reconciles the library against watched folders and Drive. Added a support-page section. Also corrected the widget paragraph: `WidgetExt` declares `systemSmall`, `systemMedium` and `accessoryCircular`, so there is a Lock Screen placement the page did not mention.
+
+**Folio's landing page named one import route out of four.** It said pages come from Files or another app's share sheet. The build also imports from Google Drive, with `drive.file` scope and OAuth confirmed in the binary, and watches a folder to keep pages current. Both were already documented on the support and privacy pages. The feature block now names all four.
+
+**"No account." became "No account required."** Folio works fully without one, but it offers optional iCloud sync and an optional Google Drive connection, both off by default. The absolute phrasing read as a promise the app does not quite make. This matches how Walkthrough states the same thing.
+
+**Reading Habit needed only a wording fix.** Its guide said the Add Book control is "available in supported system control galleries", which is true but tells a reader nothing. It now names Control Center, the Lock Screen, and the Action button, and states that the control shows nothing from the library. Its landing page omits widgets and Shortcuts, which the guide covers; that is an editorial choice and was left alone.
+
+**Checked and deliberately not changed:** Reading Habit's claim of iPhone, iPad and Mac with macOS 27 and Apple silicon. Apple's `supportedDevices` does not enumerate Macs for an iOS app, so the listing cannot confirm or deny it, but `BookTracker.xcodeproj` builds a target for `macosx` and the guide documents Mac widget behavior, so the claim is deliberate and consistent. Who's First?'s "Eight visual worlds" is correct: `ChooserColorTheme.swift` defines exactly eight world cases. Every other app page's control names and feature descriptions matched their shipping builds.
