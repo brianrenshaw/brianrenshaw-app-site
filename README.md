@@ -41,7 +41,7 @@ Walkthrough (formerly Listing Namer) is at `/walkthrough/`, with `guide/`, `supp
 
 ### Do not delete the `folio-privacy` Pages repository
 
-Folio 1.1.2 (18) is the build on the App Store, and its Settings screen opens `https://brianrenshaw.github.io/folio-privacy/`. The move to `brianrenshaw.app/folio/privacy/` is committed in the app project but has not shipped, so every installed copy still uses the old address. That URL is live and its policy is substantively identical to the current one, same headings and the same August 26, 2026 date. Keep the legacy repository published until a build carrying the new URL has replaced 1.1.2 for everyone, because an App Store app needs a working privacy policy link. This is the same constraint as the Sparkle feed below, for the same reason.
+Folio 1.1.2 (18) is the build on the App Store, and its Settings screen opens `https://brianrenshaw.github.io/folio-privacy/`. The move to `brianrenshaw.app/folio/privacy/` is committed in the app project but has not shipped, so every installed copy still uses the old address. That URL is live and its policy is substantively identical to the current one, same headings and the same August 26, 2026 date. Folio 1.1.3 (19) carries the new URL and was uploaded to App Store Connect on September 18, 2026; it is not released yet. Keep the legacy repository published until a build carrying the new URL has replaced 1.1.2 for everyone, because an App Store app needs a working privacy policy link. This is the same constraint as the Sparkle feed below, for the same reason.
 
 ### Do not delete `site/listing-namer/`
 
