@@ -20,3 +20,7 @@ The `native-*-1.2.0.png` images are unmodified macOS UI-test captures of the red
 ## Walkthrough 1.2.3
 
 `native-tabs-1.2.3.png` is an unmodified native UI-test capture of macOS tabs and removable Recents, using an isolated demonstration library. It contains no customer photographs or listing information.
+
+## Walkthrough 1.3.0
+
+The four `native-export-*-1.3.0.png` images are unmodified Dark appearance native UI-test captures at 1440×900 points, taken September 19, 2026. They show separate naming-warning and skip-error controls using the isolated demonstration library and credited photographs above.

@@ -38,7 +38,7 @@ Two blogs are linked from homepage cards without local pages: Lankford Legends (
 
 Spreadsheet Tools lives at `/spreadsheet-tools/`. Its React source remains in the sibling `spreadsheet-webapp` repository (`brianrenshaw/spreadsheet-tools` on GitHub). Run that project's `scripts/sync-website.py` to rebuild and copy generated files here, then commit and push this repository. Keep the utility link at the bottom of the portfolio. See that project's `WEBSITE_MIGRATION.md` for the complete workflow.
 
-Walkthrough (formerly Listing Namer) is at `/walkthrough/`, with `guide/`, `support/`, `privacy/`, and `release-notes/`. Its native source is in the private sibling `real-estate-photos-renamer` project / `brianrenshaw/listing-namer` repository. Public DMGs are GitHub Release assets in this website repository; they are not committed into `site/`. See `LISTING_NAMER_RELEASES.md` for the release handoff. The current download is signed and notarized Walkthrough 1.2.3, build 9.
+Walkthrough (formerly Listing Namer) is at `/walkthrough/`, with `guide/`, `support/`, `privacy/`, and `release-notes/`. Its native source is in the private sibling `real-estate-photos-renamer` project / `brianrenshaw/listing-namer` repository. Public DMGs are GitHub Release assets in this website repository; they are not committed into `site/`. See `LISTING_NAMER_RELEASES.md` for the release handoff. The current download is signed and notarized Walkthrough 1.3.0, build 10.
 
 ### Do not delete the `folio-privacy` Pages repository
 
