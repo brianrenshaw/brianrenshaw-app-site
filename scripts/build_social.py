@@ -39,12 +39,12 @@ def icon(x,y,path=None,kind=None):
         rect((x+12,y+12,x+44,y+44),None,3,'#365e83',2)
         for points in [[(12,22),(44,22)],[(12,33),(44,33)],[(23,22),(23,44)],[(34,22),(34,44)]]:
             draw.line([((x+dx)*SCALE,(y+dy)*SCALE) for dx,dy in points],fill='#365e83',width=4)
-text(48,26,'BRIAN RENSHAW',18)
-text(48,58,'A few things',46,serif=True)
-text(48,112,'I wanted to exist.',46,serif=True)
-text(48,172,'Apps, tools, and experiments built with AI.',21,'#65685f')
-# Nine projects in a 3x3 grid. The hero is deliberately compact: three rows of
-# cards plus the footer only fit inside 630px if the grid starts near y=216.
+text(48,22,'BRIAN RENSHAW',18)
+text(48,50,'A few things',42,serif=True)
+text(48,98,'I wanted to exist.',42,serif=True)
+text(48,152,'Apps, tools, and experiments built with AI.',20,'#65685f')
+# Ten projects in a 3x3 grid plus one. Four rows of cards and the footer only
+# fit inside 630px at this row height, so keep the hero above them compact.
 projects=[
  ('Folio','iOS app','#ffdbb5','#57331f','folio/assets/icon.png',None),
  ('Who’s First?','iOS app','#bde0d2','#163f3c','whos-first/assets/icon-native.png',None),
@@ -55,12 +55,13 @@ projects=[
  ('Lankford Legends','Blog','#ffffff','#0C2340',None,'blog'),
  ('What Did They Read?','Blog','#f2efe8','#1a1715',None,'books'),
  ('Spreadsheet Tools','Utility','#d5e6f4','#293f55',None,'utility'),
+ ('Ingest','Mac app','#1b1c1e','#f5a524','ingest/assets/icon.png',None),
 ]
 for i,(name,kind,bg,ink,path,symbol) in enumerate(projects):
-    x=48+(i%3)*368;y=216+(i//3)*118
-    rect((x,y,x+348,y+96),bg)
-    icon(x+16,y+20,path,symbol)
-    text(x+84,y+28,name,18,ink)
-    text(x+84,y+56,kind,15,ink)
-text(48,578,'brianrenshaw.app',16,'#65685f')
-canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v8.png',optimize=True)
+    x=48+(i%3)*368;y=190+(i//3)*105
+    rect((x,y,x+348,y+88),bg)
+    icon(x+16,y+16,path,symbol)
+    text(x+84,y+24,name,18,ink)
+    text(x+84,y+50,kind,15,ink)
+text(48,608,'brianrenshaw.app',16,'#65685f')
+canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v9.png',optimize=True)

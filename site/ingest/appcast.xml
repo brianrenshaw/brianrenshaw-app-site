@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Ingest</title>
+        <item>
+            <title>0.1.0</title>
+            <pubDate>Fri, 18 Sep 2026 22:12:16 -0400</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.1.0/Ingest-0.1.0.dmg" length="11313666" type="application/octet-stream" sparkle:edSignature="AP+PfgKkw7AutXua7ArdGRi1KuwGMuP5upKaSZHzudpvF6y2iRkvNOhsjEmm9icfy7aOM9JEjc/n9oIVCc/GBQ==" />
+            <sparkle:releaseNotesLink>https://brianrenshaw.app/ingest/release-notes/#v0.1.0</sparkle:releaseNotesLink>
+        </item>
+    </channel>
+</rss>

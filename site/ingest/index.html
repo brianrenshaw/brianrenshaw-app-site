@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingest | Empty the card without the wait</title>
+<meta name="description" content="A keyboard-first Mac app for emptying a camera card. Every raw file on screen instantly, one key per decision, and a copy that is checked before anything is deleted.">
+<link rel="canonical" href="https://brianrenshaw.app/ingest/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ingest | Empty the card without the wait">
+<meta property="og:description" content="A keyboard-first Mac app for emptying a camera card. Every raw file on screen instantly, one key per decision, and a copy that is checked before anything is deleted.">
+<meta property="og:url" content="https://brianrenshaw.app/ingest/">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/grid-cull.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/ingest/assets/icon.png">
+<link rel="stylesheet" href="/assets/apps.css">
+<link rel="stylesheet" href="/assets/family.css">
+<link rel="stylesheet" href="/ingest/assets/site.css">
+</head>
+<body class="app-ingest">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="family-header">
+<a class="family-brand" href="/ingest/">
+<img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a>
+<nav aria-label="Main navigation">
+<a class="portfolio-home-link" href="/">← Brian’s homepage</a>
+<a href="/ingest/guide/">Guide</a>
+<a href="/ingest/shortcuts/">Shortcuts</a>
+<a href="/ingest/support/">Support</a>
+</nav>
+</header>
+<main id="main" tabindex="-1" class="app-landing">
+<section class="app-hero">
+<div>
+<p class="eyebrow">For photographers who shoot Sony and Fujifilm · macOS</p>
+<h1>Empty the card without the wait.</h1>
+<p class="intro">A card of raw files takes longer to look through than it took to shoot. Ingest reads the preview your camera already put inside each file, so the whole card is on screen at once. Tag the keepers, copy them out named the way you want, and never touch the card itself.</p>
+<div class="actions">
+<a class="primary-action" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.1.0/Ingest-0.1.0.dmg">Download for Mac <span aria-hidden="true">↗</span></a>
+<a class="secondary-action" href="/ingest/quick-start/">Five minute quick start →</a>
+</div>
+<p class="quiet">macOS 15 or later · Apple silicon · No account, no subscription</p>
+<p class="preview-note"><a href="/ingest/release-notes/#v0.1.0">Version 0.1.0</a>. This is an early release: the shape of the app is settled and it is what I use on my own work, but it is young.</p>
+</div>
+<figure class="studio-mark">
+<img src="/ingest/assets/icon.png" width="1024" height="1024" alt="The Ingest app icon, an amber memory card with a downward arrow">
+<figcaption>Card in. Keepers out. Nothing written back.</figcaption>
+</figure>
+</section>
+
+<figure class="desktop-shot">
+<a href="/ingest/assets/grid-cull.webp">
+<img src="/ingest/assets/grid-cull.webp" width="2400" height="1500" alt="Ingest showing a card part way through a cull, with tagged photographs, stars, a colour label, bracket stack badges, and live counts for each saved view">
+</a>
+<figcaption>A card part way through a cull. The counts on the left move as you mark. The photographs are demonstration images, not client work.</figcaption>
+</figure>
+
+<section class="features" aria-label="What Ingest does">
+<article class="feature" id="see">
+<span class="eyebrow">01 / See</span>
+<h2>Every frame, the moment the card goes in.</h2>
+<p>Ingest never develops a raw file. It finds the JPEG the camera already wrote inside the ARW or RAF and shows you that, so arrowing through a full card feels like arrowing through thumbnails. No import step, no waiting for a background process to catch up.</p>
+</article>
+<article class="feature" id="cull">
+<span class="eyebrow">02 / Cull</span>
+<h2>Decide with your hands on the keys.</h2>
+<p>Tag, reject, rate, and label without reaching for the mouse. Compare two frames with the zoom locked together, survey a bracket set at once, and let each set of exposures collapse into a single thumbnail. Undo works on all of it.</p>
+</article>
+<article class="feature" id="copy">
+<span class="eyebrow">03 / Ingest</span>
+<h2>One copy, checked, named on the way out.</h2>
+<p>Ingest copies to one folder or two, reads each copy back and compares it to the original, and only then gives it its real name. It renames with a counter that never repeats, and writes the keywords, captions, and locations that Lightroom and Apple Photos read.</p>
+</article>
+</section>
+
+<section class="studio-preview" id="keyboard">
+<div>
+<p class="eyebrow">Built for the keyboard</p>
+<h2>Every command has a key, or a name you can type.</h2>
+<p>Press <kbd>⌘K</kbd> and type a few letters. Every command in the app is there, with its key printed beside it, so the palette teaches the keyboard while you use it. Commands that cannot run right now stay visible and say why, instead of disappearing.</p>
+<p>All of it can be rebound. Settings lists every command, and you click its key and press the one you want. Nine keys stay fixed because they are how you move around, and the app says which.</p>
+<a href="/ingest/shortcuts/">See every shortcut →</a>
+</div>
+<figure class="desktop-shot">
+<a href="/ingest/assets/palette.webp">
+<img src="/ingest/assets/palette.webp" width="2400" height="1500" loading="lazy" alt="The Ingest command palette open over the grid, with keyboard shortcuts on the right of each row">
+</a>
+</figure>
+</section>
+
+<section class="studio-preview" id="naming">
+<div>
+<p class="eyebrow">Names that stay sorted</p>
+<h2>A number that never repeats, and a preview before it writes.</h2>
+<p>Name templates are text plus tokens in braces, the same spelling you already know. <code>{seqn}</code> is one counter across every job you ever run, so files from three cards land in one folder without a collision. The sheet shows the real filenames before it copies anything.</p>
+<p>The same tokens name the subfolder and fill in captions, so a preset that writes the address on every photograph of a job needs editing once, ever.</p>
+<a href="/ingest/templates/">Tokens and quick entry →</a>
+</div>
+<figure class="desktop-shot">
+<a href="/ingest/assets/ingest-dialog.webp">
+<img src="/ingest/assets/ingest-dialog.webp" width="2400" height="1500" loading="lazy" alt="The Ingest sheet showing the destination, a subfolder template, a rename template, and a live preview of the resulting filenames">
+</a>
+</figure>
+</section>
+
+<section class="closing" id="closing">
+<p class="eyebrow">The part that matters at two in the morning</p>
+<h2>The card is never written to.</h2>
+<p>Ingest does not write metadata to a card, does not rename on a card, and does not delete from one except when you ask by name, after the copies have been read back and matched against the originals. That holds however you opened it, including a folder that happens to live on a card. It is not a preference, and Settings shows it with a lock instead of a switch.</p>
+<p>Everything happens on your Mac. There is no account, no analytics, and nothing of yours is uploaded anywhere. Two features touch the network and the <a href="/ingest/privacy/">privacy page</a> names both.</p>
+<div class="actions">
+<a class="primary-action" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.1.0/Ingest-0.1.0.dmg">Download for Mac ↗</a>
+<a href="/ingest/guide/">Read the guide →</a>
+</div>
+<p class="quiet" id="compatibility">Ingest needs macOS 15 or later and an Apple silicon Mac. It reads Sony ARW and Fujifilm RAF at full speed, along with JPEG, HEIC, and video. <a href="/ingest/support/#formats">What it does with everything else</a>.</p>
+</section>
+</main>
+<footer class="family-footer">
+<span>© 2026 Brian Renshaw</span>
+<nav aria-label="Footer">
+<a href="/">← Brian’s homepage</a>
+<a href="/ingest/quick-start/">Quick start</a>
+<a href="/ingest/guide/">Guide</a>
+<a href="/ingest/shortcuts/">Shortcuts</a>
+<a href="/ingest/templates/">Templates</a>
+<a href="/ingest/automation/">Automation</a>
+<a href="/ingest/support/">Support</a>
+<a href="/ingest/release-notes/">Release notes</a>
+<a href="/ingest/privacy/">Privacy</a>
+<a href="mailto:contact@brianrenshaw.app">Contact</a>
+</nav>
+</footer>
+</body>
+</html>

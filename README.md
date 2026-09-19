@@ -28,6 +28,7 @@ GitHub Actions validates links, anchors, local assets and canonical addresses be
 | Who’s First? | `/whos-first/` | `support/`, `privacy/` |
 | Folio | `/folio/` | `support/`, `privacy/` |
 | Canceled | `/canceled/` | none yet |
+| Ingest | `/ingest/` | `quick-start/`, `guide/`, `shortcuts/`, `templates/`, `automation/`, `support/`, `privacy/`, `release-notes/` |
 
 Support email remains contact@brianrenshaw.app. Keep app-specific privacy policies accurate; don’t substitute a generic portfolio policy. Existing policy language was preserved, and Reading Habit’s new policy reflects its local implementation (private iCloud, Open Library/Apple cover lookups, user-selected link resolution and imports).
 
@@ -56,4 +57,13 @@ Release notes are published at `/walkthrough/release-notes/`, with links in the 
 
 Canceled is at `/canceled/`, a landing page only. The app is in development for iPhone and iPad, is not on TestFlight, and has nothing to download, so the page states status and offers no call to action. Its native source is in the sibling `canceled-app` project. Add `support/` and `privacy/` when it reaches TestFlight, and add `canceled` to the required-routes list in `scripts/check_site.py` at the same time. Page assets under `site/canceled/assets/` are copied from that project; its Archivo woff2 is the same file already bundled for Where Do We Eat.
 
-The homepage grid is grouped by platform: iOS apps, then the Mac app, then the blogs, then the utility. See `MESSAGING.md` for the numbered order. The share image `assets/social-projects-v8.png` holds nine projects in a 3x3 grid; rebuild it with `python3 scripts/build_social.py` and bump the filename plus both metadata URLs when the artwork changes.
+The homepage grid is grouped by platform: iOS apps, then the Mac app, then the blogs, then the utility. See `MESSAGING.md` for the numbered order. The share image `assets/social-projects-v9.png` holds ten projects, three rows of three plus one; rebuild it with `python3 scripts/build_social.py` and bump the filename plus both metadata URLs when the artwork changes.
+
+
+Ingest is at `/ingest/`, the second Mac app. Its native source is in the private sibling `photo-importer` project. Public DMGs are GitHub Release assets in this repository, tagged `ingest-v*`; they are not committed into `site/`. See `INGEST_RELEASES.md` for the release handoff. The current download is signed and notarized Ingest 0.1.0, build 4.
+
+The Sparkle feed for Ingest is `site/ingest/appcast.xml`, and every shipped build has that URL compiled into it, so the path is permanent. `scripts/check_site.py` asserts the file exists.
+
+Anchor ids under `/ingest/` are a contract. The app's Help menu links to `/ingest/guide/`, `/ingest/shortcuts/`, `/ingest/release-notes/`, and `/ingest/support/`, the appcast links to `/ingest/release-notes/#vX.Y.Z`, and the pages link to each other's sections. Rename a section heading if you like, but leave its `id` alone.
+
+Facts that live in exactly one place, because the site has no includes: shortcuts on `/ingest/shortcuts/`, name tokens and quick entry on `/ingest/templates/`, requirements and file formats on `/ingest/support/`, the URL scheme and the settings file on `/ingest/automation/`, network behaviour on `/ingest/privacy/`. Everything else links to those. The shortcut tables are transcribed from `Sources/Ingest/Commands/CommandCatalog.swift`; diff them against that file at each release, because the link checker cannot catch a wrong key.

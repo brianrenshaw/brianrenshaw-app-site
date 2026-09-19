@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingest shortcuts | Every key and command</title>
+<meta name="description" content="The complete keyboard reference for Ingest, grouped the way the app groups it, including which keys are fixed and how to change the rest.">
+<link rel="canonical" href="https://brianrenshaw.app/ingest/shortcuts/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ingest shortcuts | Every key and command">
+<meta property="og:description" content="The complete keyboard reference for Ingest, grouped the way the app groups it, including which keys are fixed and how to change the rest.">
+<meta property="og:url" content="https://brianrenshaw.app/ingest/shortcuts/">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/palette.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/ingest/assets/icon.png">
+<link rel="stylesheet" href="/assets/apps.css">
+<link rel="stylesheet" href="/assets/family.css">
+<link rel="stylesheet" href="/ingest/assets/site.css">
+</head>
+<body class="app-ingest">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="family-header">
+<a class="family-brand" href="/ingest/">
+<img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a>
+<nav aria-label="Main navigation">
+<a class="portfolio-home-link" href="/">← Brian’s homepage</a>
+<a href="/ingest/guide/">Guide</a>
+<a href="/ingest/shortcuts/">Shortcuts</a>
+<a href="/ingest/support/">Support</a>
+</nav>
+</header>
+<main id="main" tabindex="-1" class="family-document reference">
+<p class="eyebrow">Ingest / Shortcuts</p>
+<h1>Every key, and how to change it.</h1>
+<p class="intro">The whole keyboard, grouped the way the app groups it. Nine keys are fixed because they move you around. Everything else you can rebind.</p>
+<nav class="guide-toc" aria-label="On this page">
+<a href="#reading">How to read this</a>
+<a href="#movement">Keys that never change</a>
+<a href="#tag">Marking</a>
+<a href="#navigate">Moving</a>
+<a href="#view">Views and overlays</a>
+<a href="#zoom">Zoom</a>
+<a href="#select">Selecting and filtering</a>
+<a href="#stack">Stacks</a>
+<a href="#metadata">Metadata</a>
+<a href="#file">Files and ingest</a>
+<a href="#video">Video</a>
+<a href="#sources">Cards and folders</a>
+<a href="#app">App</a>
+<a href="#rebinding">Changing a key</a>
+<a href="#palette">Commands without a key</a>
+</nav>
+
+<section id="reading" class="guide-section">
+<h2>How to read this</h2>
+<p><kbd>⌘</kbd> is Command, <kbd>⌥</kbd> is Option, <kbd>⌃</kbd> is Control, and <kbd>⇧</kbd> is Shift. A key written on its own, like <kbd>T</kbd>, is pressed on its own.</p>
+<p>Some keys mean different things depending on where you are. There are three places: the <strong>grid</strong> of thumbnails, the large <strong>preview</strong>, and a <strong>video</strong> playing in the preview. Where a key only works in some of them, the table says so. Everything else works anywhere.</p>
+<p>Single letters pause whenever you are typing. If the cursor is in the keyword field, <kbd>T</kbd> types a letter t. Press <kbd>Esc</kbd> to leave the field and the keys come back.</p>
+<p>A command that cannot run right now does not fail quietly. It beeps and the status bar says why, for example that nothing is tagged, or that the source is read only.</p>
+</section>
+
+<section id="movement" class="guide-section">
+<h2>Keys that never change</h2>
+<p>These move you around and open things, so they are not available for rebinding. Settings lists them too, so nothing about the keyboard is hidden.</p>
+<div class="guide-table" tabindex="0" role="region" aria-label="Fixed keys">
+<table>
+<thead><tr><th scope="col">Keys</th><th scope="col">What they do</th></tr></thead>
+<tbody>
+<tr><td><kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd></td><td>Move between photographs. Hold <kbd>⇧</kbd> to extend the selection, hold <kbd>⌘</kbd> to move the focus without changing the selection.</td></tr>
+<tr><td><kbd>Space</kbd></td><td>Open or close the preview. On a video, play or pause.</td></tr>
+<tr><td><kbd>↩</kbd></td><td>Open or close the preview.</td></tr>
+<tr><td><kbd>Esc</kbd></td><td>Leave Compare, then leave the preview. In a text field, leave the field.</td></tr>
+<tr><td><kbd>Tab</kbd></td><td>Hide or show both side panels at once.</td></tr>
+<tr><td><kbd>⌥Tab</kbd></td><td>Next split. <kbd>⌥⇧Tab</kbd> goes back.</td></tr>
+<tr><td><kbd>Home</kbd> <kbd>End</kbd></td><td>First and last photograph.</td></tr>
+<tr><td><kbd>Page Up</kbd> <kbd>Page Down</kbd></td><td>Previous and next photograph.</td></tr>
+<tr><td><kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <kbd>,</kbd> <kbd>.</kbd> <kbd>M</kbd></td><td>In a video: shuttle back, play or pause, shuttle forward, step a frame back, step a frame forward, mute.</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="tag" class="guide-section">
+<h2>Marking</h2>
+<p>By default a marking key acts where you are and does not move on. Turn on advancing in Settings, Culling, and then holding <kbd>⇧</kbd> does the opposite for one press. The command names in the app flip to match, so the menu always tells the truth.</p>
+<div class="guide-table" tabindex="0" role="region" aria-label="Marking keys">
+<table>
+<thead><tr><th scope="col">Keys</th><th scope="col">Command</th><th scope="col">Where</th></tr></thead>
+<tbody>
+<tr><td><kbd>T</kbd></td><td>Tag</td><td>Grid, preview, video</td></tr>
+<tr><td><kbd>⇧T</kbd></td><td>Tag and advance, or tag without advancing</td><td>Grid, preview, video</td></tr>
+<tr><td><kbd>U</kbd></td><td>Untag</td><td>Grid, preview, video</td></tr>
+<tr><td><kbd>X</kbd></td><td>Reject</td><td>Grid, preview, video</td></tr>
+<tr><td><kbd>⇧X</kbd></td><td>Reject and advance, or reject without advancing</td><td>Grid, preview, video</td></tr>
+<tr><td><kbd>1</kbd> … <kbd>5</kbd></td><td>One star to five stars. Pressing the rating it already has clears it.</td><td>Grid, preview</td></tr>
+<tr><td><kbd>⇧1</kbd> … <kbd>⇧5</kbd></td><td>The same, with the opposite advance behaviour</td><td>Grid, preview</td></tr>
+<tr><td><kbd>0</kbd></td><td>Clear the rating</td><td>Grid, preview</td></tr>
+<tr><td><kbd>6</kbd> <kbd>7</kbd> <kbd>8</kbd> <kbd>9</kbd></td><td>Label red, yellow, green, blue. The Lightroom keys and the Lightroom names.</td><td>Grid, preview</td></tr>
+<tr><td><kbd>⇧6</kbd> … <kbd>⇧9</kbd></td><td>The same, with the opposite advance behaviour</td><td>Grid, preview</td></tr>
+<tr><td><kbd>⌥9</kbd></td><td>Label purple</td><td>Grid, preview</td></tr>
+<tr><td><kbd>⌥0</kbd></td><td>Clear the label</td><td>Grid, preview</td></tr>
+<tr><td>no key</td><td>Clear all tags, with a confirmation</td><td></td></tr>
+</tbody>
+</table>
+</div>
+<p>A mark applies to every selected photograph, or to the one under the focus ring. On a collapsed bracket stack it applies to every frame in the stack.</p>
+</section>
+
+<section id="navigate" class="guide-section">
+<h2>Moving</h2>
+<div class="guide-table" tabindex="0" role="region" aria-label="Navigation keys">
+<table>
+<thead><tr><th scope="col">Keys</th><th scope="col">Command</th></tr></thead>
+<tbody>
+<tr><td><kbd>→</kbd> <kbd>←</kbd></td><td>Next and previous photograph</td></tr>
+<tr><td><kbd>Home</kbd> <kbd>End</kbd></td><td>First and last photograph</td></tr>
+<tr><td><kbd>⌘[</kbd> <kbd>⌘]</kbd></td><td>Back and forward through the sources you have opened</td></tr>
+<tr><td><kbd>⌥⌘1</kbd></td><td>Put the keyboard in the sources list. <kbd>Esc</kbd> or <kbd>←</kbd> returns to the photographs.</td></tr>
+<tr><td><kbd>⌥⌘2</kbd></td><td>Put the keyboard back on the photographs</td></tr>
+<tr><td><kbd>⌥⌘3</kbd></td><td>Put the keyboard in the inspector</td></tr>
+</tbody>
+</table>
+</div>
+<p>In the sources list, <kbd>↑</kbd> and <kbd>↓</kbd> move, <kbd>↩</kbd> or <kbd>→</kbd> opens, and typing the first letters of a name jumps to it.</p>
+</section>
+
+<section id="view" class="guide-section">
+<h2>Views and overlays</h2>
+<div class="guide-table" tabindex="0" role="region" aria-label="View keys">
+<table>
+<thead><tr><th scope="col">Keys</th><th scope="col">Command</th><th scope="col">Where</th></tr></thead>
+<tbody>
+<tr><td><kbd>⌘1</kbd> <kbd>⌘2</kbd> <kbd>⌘3</kbd></td><td>Grid, preview, split</td><td></td></tr>
+<tr><td><kbd>Space</kbd></td><td>Toggle the preview</td><td>Grid, preview</td></tr>
+<tr><td><kbd>⌘I</kbd></td><td>Show or hide the inspector</td><td></td></tr>
+<tr><td><kbd>⌥⌘S</kbd></td><td>Show or hide the sources list</td><td></td></tr>
+<tr><td><kbd>Tab</kbd></td><td>Hide or show both side panels</td><td></td></tr>
+<tr><td><kbd>C</kbd></td><td>Compare two photographs side by side</td><td>Grid, preview</td></tr>
+<tr><td><kbd>N</kbd></td><td>Survey up to four at once</td><td>Grid, preview</td></tr>
+<tr><td><kbd>I</kbd></td><td>Cycle the information overlay: off, compact, full</td><td>Preview</td></tr>
+<tr><td><kbd>⌥D</kbd></td><td>Detail overlay, to judge sharpness</td><td>Preview</td></tr>
+<tr><td><kbd>⌥E</kbd></td><td>Edge overlay</td><td>Preview</td></tr>
+<tr><td><kbd>⌥A</kbd></td><td>Show the focus point the camera recorded, when it recorded one</td><td>Preview</td></tr>
+<tr><td><kbd>⌥F</kbd></td><td>Face close-ups along the bottom</td><td>Preview</td></tr>
+<tr><td><kbd>⌘+</kbd> <kbd>⌘-</kbd></td><td>Bigger and smaller thumbnails</td><td>Grid</td></tr>
+<tr><td><kbd>⌃⌘F</kbd></td><td>Full screen</td><td></td></tr>
+<tr><td><kbd>⌥⌘F</kbd></td><td>Put the preview on a second display</td><td></td></tr>
+<tr><td><kbd>⌥⌘J</kbd></td><td>Combine RAW and JPEG pairs into one photograph, for this folder</td><td></td></tr>
+<tr><td><kbd>⌥⌘K</kbd></td><td>Stack bracket sets, for this folder</td><td></td></tr>
+<tr><td><kbd>⌃1</kbd> … <kbd>⌃9</kbd></td><td>Switch to a workspace</td><td></td></tr>
+<tr><td>no key</td><td>Sort by capture time, or by filename</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="zoom" class="guide-section">
+<h2>Zoom</h2>
+<p>All of these work in the preview. Zoom is anchored on the pointer, so the detail under the cursor stays under the cursor.</p>
+<div class="guide-table" tabindex="0" role="region" aria-label="Zoom keys">
+<table>
+<thead><tr><th scope="col">Keys</th><th scope="col">Command</th></tr></thead>
+<tbody>
+<tr><td><kbd>Z</kbd></td><td>Switch between fit and 100 per cent at the pointer</td></tr>
+<tr><td><kbd>F</kbd></td><td>Fit to the window</td></tr>
+<tr><td><kbd>⌥1</kbd> <kbd>⌥2</kbd> <kbd>⌥4</kbd></td><td>100, 200, and 400 per cent</td></tr>
+<tr><td><kbd>⇧Z</kbd></td><td>Lock or free the zoom across Compare panes</td></tr>
+</tbody>
+</table>
+</div>
+<p>A pinch on the trackpad zooms around your fingers, a two finger drag pans, and a two finger double tap does what <kbd>Z</kbd> does. In the grid, a pinch resizes the thumbnails.</p>
+</section>
+
+<section id="select" class="guide-section">
+<h2>Selecting and filtering</h2>
+<div class="guide-table" tabindex="0" role="region" aria-label="Selection keys">
+<table>
+<thead><tr><th scope="col">Keys</th><th scope="col">Command</th></tr></thead>
+<tbody>
+<tr><td><kbd>⌘A</kbd></td><td>Select all</td></tr>
+<tr><td><kbd>⌥⌘A</kbd></td><td>Deselect all</td></tr>
+<tr><td><kbd>⇧⌘I</kbd></td><td>Invert the selection</td></tr>
+<tr><td><kbd>⌘T</kbd></td><td>Select everything tagged</td></tr>
+<tr><td><kbd>⇧⌘T</kbd></td><td>Show only what is tagged</td></tr>
+<tr><td><kbd>⌥⌘X</kbd></td><td>Hide rejects, or show them again</td></tr>
+<tr><td><kbd>⇧⌘1</kbd> … <kbd>⇧⌘5</kbd></td><td>Show only photographs rated that many stars or more</td></tr>
+<tr><td><kbd>⇧⌘0</kbd></td><td>Clear the star filter</td></tr>
+<tr><td><kbd>⌘F</kbd></td><td>Put the cursor in the filter field</td></tr>
+<tr><td><kbd>⌥Tab</kbd> <kbd>⌥⇧Tab</kbd></td><td>Next and previous split</td></tr>
+<tr><td><kbd>⇧⌘S</kbd></td><td>Save the current filter as a split</td></tr>
+</tbody>
+</table>
+</div>
+<p>Selection follows the Finder. Click to select, <kbd>⌘</kbd> click to add or remove one, <kbd>⇧</kbd> click to take a range. <kbd>⌘</kbd> with an arrow key moves the focus ring without changing what is selected, which is how you reach past a selection without losing it.</p>
+</section>
+
+<section id="stack" class="guide-section">
+<h2>Stacks</h2>
+<div class="guide-table" tabindex="0" role="region" aria-label="Stack keys">
+<table>
+<thead><tr><th scope="col">Keys</th><th scope="col">Command</th><th scope="col">Where</th></tr></thead>
+<tbody>
+<tr><td><kbd>S</kbd></td><td>Expand or collapse the stack you are on</td><td>Grid, preview</td></tr>
+<tr><td><kbd>⌥S</kbd></td><td>Expand or collapse every stack</td><td></td></tr>
+<tr><td>no key</td><td>Combine the selected photographs into a stack. With nothing selected, it puts back the stacks you took apart in this view.</td><td></td></tr>
+<tr><td>no key</td><td>Uncombine. Stacks in the selection, or the one you are on, or every stack in this view.</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="metadata" class="guide-section">
+<h2>Metadata</h2>
+<div class="guide-table" tabindex="0" role="region" aria-label="Metadata keys">
+<table>
+<thead><tr><th scope="col">Keys</th><th scope="col">Command</th><th scope="col">Where</th></tr></thead>
+<tbody>
+<tr><td><kbd>Q</kbd></td><td>Quick entry. One line that can set keywords, a rating, a label, a caption, a location, and a preset at once.</td><td>Grid, preview</td></tr>
+<tr><td><kbd>K</kbd></td><td>Put the cursor in the keyword field</td><td>Grid, preview</td></tr>
+<tr><td><kbd>⇧K</kbd></td><td>Take back the keywords you just added</td><td>Grid, preview</td></tr>
+<tr><td><kbd>⇧C</kbd></td><td>Put the cursor in the caption field</td><td>Grid, preview</td></tr>
+<tr><td><kbd>M</kbd></td><td>Choose a metadata preset to apply</td><td>Grid, preview</td></tr>
+<tr><td><kbd>⇧⌘M</kbd></td><td>Apply the preset you used last</td><td></td></tr>
+<tr><td><kbd>⌘L</kbd></td><td>Search for an address and set the location</td><td></td></tr>
+<tr><td><kbd>⇧⌘L</kbd></td><td>Strip the location back out</td><td></td></tr>
+<tr><td><kbd>⌥⌘[</kbd> <kbd>⌥⌘]</kbd></td><td>Rotate left and right, by changing the orientation flag rather than the pixels</td><td></td></tr>
+<tr><td><kbd>⌥⌘T</kbd></td><td>Adjust capture time, for when two cameras disagree about the clock</td><td></td></tr>
+<tr><td>no key</td><td>Apply the current location to the selection, to everything tagged, or to everything</td><td></td></tr>
+</tbody>
+</table>
+</div>
+<p>The quick entry syntax is on the <a href="/ingest/templates/#quick-entry">templates page</a>.</p>
+</section>
+
+<section id="file" class="guide-section">
+<h2>Files and ingest</h2>
+<div class="guide-table" tabindex="0" role="region" aria-label="File keys">
+<table>
+<thead><tr><th scope="col">Keys</th><th scope="col">Command</th></tr></thead>
+<tbody>
+<tr><td><kbd>⌘O</kbd></td><td>Open a folder</td></tr>
+<tr><td><kbd>⌘G</kbd></td><td>Ingest</td></tr>
+<tr><td><kbd>⌘Y</kbd></td><td>Copy to a folder, without the rest of the ingest machinery</td></tr>
+<tr><td><kbd>⌘R</kbd></td><td>Rename photographs where they are</td></tr>
+<tr><td><kbd>⌥⌘R</kbd></td><td>Re-sequence what is shown, so the numbers have no gaps after a cull</td></tr>
+<tr><td><kbd>⇧⌘⌫</kbd></td><td>Empty rejects</td></tr>
+<tr><td><kbd>⇧⌘R</kbd></td><td>Reveal in Finder</td></tr>
+<tr><td><kbd>⇧⌘F</kbd></td><td>Search this Mac, using Spotlight, and browse the results like a folder</td></tr>
+<tr><td><kbd>⌘Z</kbd> <kbd>⇧⌘Z</kbd></td><td>Undo and redo</td></tr>
+<tr><td>no key</td><td>Close the source</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="video" class="guide-section">
+<h2>Video</h2>
+<p>These work while a video is open in the preview, and they take precedence over the letters they share.</p>
+<div class="guide-table" tabindex="0" role="region" aria-label="Video keys">
+<table>
+<thead><tr><th scope="col">Keys</th><th scope="col">Command</th></tr></thead>
+<tbody>
+<tr><td><kbd>Space</kbd> or <kbd>K</kbd></td><td>Play or pause</td></tr>
+<tr><td><kbd>J</kbd> <kbd>L</kbd></td><td>Shuttle backwards and forwards, faster each press</td></tr>
+<tr><td><kbd>,</kbd> <kbd>.</kbd></td><td>Step one frame back and forward</td></tr>
+<tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>Step a frame. Hold <kbd>⇧</kbd> to jump seconds.</td></tr>
+<tr><td><kbd>M</kbd></td><td>Mute</td></tr>
+<tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td>Move to the previous or next item, so a video never traps you</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="sources" class="guide-section">
+<h2>Cards and folders</h2>
+<div class="guide-table" tabindex="0" role="region" aria-label="Source keys">
+<table>
+<thead><tr><th scope="col">Keys</th><th scope="col">Command</th></tr></thead>
+<tbody>
+<tr><td><kbd>⌘E</kbd></td><td>Eject the card</td></tr>
+<tr><td><kbd>⌘D</kbd></td><td>Add the open folder to your favourites</td></tr>
+<tr><td><kbd>⌃⌘1</kbd> … <kbd>⌃⌘9</kbd></td><td>Open favourite one to nine</td></tr>
+<tr><td><kbd>⌘1</kbd> … <kbd>⌘9</kbd></td><td>Inside the Ingest sheet, choose the destination. <kbd>⌥⌘1</kbd> to <kbd>⌥⌘9</kbd> chooses the second destination.</td></tr>
+<tr><td><kbd>⌃1</kbd> … <kbd>⌃4</kbd></td><td>Inside the Ingest sheet, choose what to ingest: tagged, selected, shown, or all</td></tr>
+<tr><td>no key</td><td>Delete tagged, or untagged, from the card, after the copies verified</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="app" class="guide-section">
+<h2>App</h2>
+<div class="guide-table" tabindex="0" role="region" aria-label="App keys">
+<table>
+<thead><tr><th scope="col">Keys</th><th scope="col">Command</th></tr></thead>
+<tbody>
+<tr><td><kbd>⌘K</kbd></td><td>The command palette</td></tr>
+<tr><td><kbd>?</kbd></td><td>The shortcut sheet</td></tr>
+<tr><td>hold <kbd>⌘</kbd></td><td>An overlay of the keys that work where you are</td></tr>
+<tr><td><kbd>⌘,</kbd></td><td>Settings</td></tr>
+<tr><td>no key</td><td>Open the practice folder, to drill the keys on throwaway images</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="rebinding" class="guide-section">
+<h2>Changing a key</h2>
+<p>Open Settings, then Shortcuts. Every command is listed with its key. Click the key and press the one you want. <kbd>Esc</kbd> cancels, and Delete removes the key so the command has none.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/settings-shortcuts.webp"><img src="/ingest/assets/settings-shortcuts.webp" width="1960" height="1800" loading="lazy" alt="The Shortcuts settings page, listing marking commands with their keys and the contexts each one works in"></a><figcaption>Every command, its key, and where it applies. The counter at the top says how many you have changed.</figcaption></figure>
+<p>If the key is already taken by something that overlaps, Ingest names the other command and offers to move the key across. It refuses a key that is <a href="#movement">fixed</a>, and it refuses the bare keys that move you around, because the app consumes those before any command sees them.</p>
+<p>A changed key follows everywhere at once. The menus, the palette, the <kbd>?</kbd> sheet, and the hold overlay all read from the same table, so there is no second place to update and nothing to get out of step. Reset All puts every key back.</p>
+</section>
+
+<section id="palette" class="guide-section">
+<h2>Commands without a key</h2>
+<p>Plenty of commands have no key, on purpose. They are all in the palette. Press <kbd>⌘K</kbd> and type a few letters of the name, an alias, or the category.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/palette.webp"><img src="/ingest/assets/palette.webp" width="2400" height="1500" loading="lazy" alt="The command palette open over the grid, showing commands with their keys on the right and a disabled command explaining why it cannot run"></a><figcaption>Before you type, the palette offers what makes sense for what you have selected. Commands that cannot run stay visible and say why.</figcaption></figure>
+<p>The palette also lists the things that come and go: your favourites, workspaces, splits, metadata presets, actions, and recent folders. <kbd>⇧⌘P</kbd> pins whatever is highlighted to the top of the list. <kbd>⇧⌘C</kbd> copies a link that runs it, which is how <a href="/ingest/automation/#url-scheme">the URL scheme</a> is meant to be discovered.</p>
+</section>
+</main>
+<footer class="family-footer">
+<span>© 2026 Brian Renshaw</span>
+<nav aria-label="Footer">
+<a href="/">← Brian’s homepage</a>
+<a href="/ingest/quick-start/">Quick start</a>
+<a href="/ingest/guide/">Guide</a>
+<a href="/ingest/templates/">Templates</a>
+<a href="/ingest/automation/">Automation</a>
+<a href="/ingest/support/">Support</a>
+<a href="/ingest/release-notes/">Release notes</a>
+<a href="/ingest/privacy/">Privacy</a>
+<a href="mailto:contact@brianrenshaw.app">Contact</a>
+</nav>
+</footer>
+</body>
+</html>

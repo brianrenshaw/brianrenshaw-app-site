@@ -12,13 +12,14 @@ Grouped by platform since September 17, 2026, at Brian’s request: the iOS apps
 4. Where Do We Eat (iOS app)
 5. Canceled (iOS app)
 6. Walkthrough (Mac app)
-7. Lankford Legends (Blog)
-8. What Did They Read? (Blog)
-9. Spreadsheet Tools (Utility)
+7. Ingest (Mac app)
+8. Lankford Legends (Blog)
+9. What Did They Read? (Blog)
+10. Spreadsheet Tools (Utility)
 
-Keep the visible numbers in that order. Within the iOS apps, released apps come first and the app still in development comes last; that is why Canceled is the fifth card. Walkthrough sits directly after the iOS apps because it is the only Mac app. Reading Habit moved ahead of Where Do We Eat on September 16, 2026, when it reached the App Store; Where Do We Eat reached the App Store itself on September 17, 2026 and keeps card 04, so all four released iOS apps now sit ahead of Canceled.
+Keep the visible numbers in that order. Within the iOS apps, released apps come first and the app still in development comes last; that is why Canceled is the fifth card. The Mac apps sit directly after the iOS apps: Walkthrough, then Ingest, which was added on September 18, 2026. Reading Habit moved ahead of Where Do We Eat on September 16, 2026, when it reached the App Store; Where Do We Eat reached the App Store itself on September 17, 2026 and keeps card 04, so all four released iOS apps now sit ahead of Canceled.
 
-With nine cards the tenth grid slot is a dashed placeholder labeled “10 / Not yet” with the line “Reserved for the next thing I want to exist.” and a mailto link. It keeps the two-column grid even. Replace it when the next project ships.
+With ten cards the eleventh grid slot is a dashed placeholder labeled “11 / Not yet” with the line “Reserved for the next thing I want to exist.” and a mailto link. It keeps the two-column grid even. Replace it when the next project ships.
 
 ## Approved messages
 
@@ -107,6 +108,63 @@ Approved with Brian on September 11, 2026.
 **Visual direction:** Keep the shared card structure. Use the site’s own palette: paper #f2efe8, ink #1a1715, oxblood #8c2b18 accents, and a Georgia serif headline at weight 400 to echo the site’s Newsreader. Dark mode uses a warm dark brown with paper text and a lighter oxblood. The icon is four ruled lines beside an oxblood question mark.
 
 **Scope:** This copy describes the linked site at https://www.whatdidtheyread.com/. Its templates, copy, and publishing live in the sibling `blog-explorer` repository under `blogs/whatdidtheyread/`.
+
+## Ingest (September 18, 2026)
+
+Added as the tenth project, taking the reserved slot. Type: Mac app. The second Mac app, and the second one whose pages
+are charcoal with a warm accent, so keep them visually apart: Walkthrough is `#111214` with `#e9b454`, Ingest is
+`#0B0B0D` with `#F5A524`.
+
+**Audience:** Photographers who shoot Sony or Fujifilm and cull on a Mac. People with a full card and no patience.
+
+**Problem:** A card of raw files takes longer to look through than it took to shoot. Everything else either imports
+first and lets you look afterwards, or shows you a card at the speed of developing raw files one at a time.
+
+**Primary promise:** The whole card is on screen the moment it goes in, and the keepers come off it named, described,
+and checked.
+
+**Headline:** Empty the card without the wait.
+
+**Supporting copy:** Every raw file on screen the moment the card goes in. Tag the keepers with one key, then copy them
+out named and checked, without ever writing to the card.
+
+**Card label:** Emptying a camera card
+
+**Priorities, in order:** Speed first, and say why it is fast, because "fast" on its own is what every app claims: the
+camera already wrote a JPEG inside the raw file and Ingest reads that. Then the keyboard, because that is what makes
+culling bearable. Then the copy itself: verified, named, and with the metadata already attached. Safety is the closing
+section, not a feature block.
+
+**Landing page sections:** 01 / See, 02 / Cull, 03 / Ingest. Block three names the app's own verb in its first
+sentence.
+
+**Do not name Photo Mechanic** in a title, a meta description, or a headline. There is one section on the support page,
+Coming from Photo Mechanic, that maps the habits across, and that is the right place for it.
+
+**Do not overstate safety.** Write what is verifiable: Ingest never writes, renames, or deletes anything on a card. Do
+not extend that into a claim that photographs cannot be lost, and never call the second destination a backup. Same
+family rule as the standing ban on calling a settings export "sync".
+
+**Do not overstate verification.** Ingest hashes what it wrote and compares it to the source, and stops when they
+differ. Not "guaranteed", not "bit perfect", and it says nothing about corruption that happens later.
+
+**Say the requirements everywhere.** macOS 15 or later, Apple silicon only. An Intel owner downloading a disk image
+that will not open is the most expensive support email the page can generate. Sony ARW and Fujifilm RAF are named up
+front too; never imply universal raw support.
+
+**Face close-ups need their sentence.** Faces are found on the Mac only in order to zoom in. No names, no identities,
+nothing stored, nothing sent. It appears on the guide and on the privacy page.
+
+**Scripts need their sentence.** A shell step runs as you and Ingest does not restrain it. On the automation page and
+again on the privacy page.
+
+**Availability:** Show the version beside the download and say plainly that 0.1.0 is early. Release history lives at
+/ingest/release-notes/ and is linked from the app's Help menu. Do not restate historical entries in current positioning
+language.
+
+**Visual direction:** Real screenshots of the running app, captured against a demonstration card built from Unsplash
+photographs, credited in `site/ingest/assets/SOURCES.md`. No client work and no personal photographs, ever. Black pages,
+amber accents, the memory card icon.
 
 ## Editorial rules
 

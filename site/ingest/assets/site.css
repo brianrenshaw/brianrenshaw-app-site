@@ -1,0 +1,68 @@
+/* Ingest: the app's own palette, black with amber. Every rule is scoped so it cannot reach another app's pages. */
+body.app-ingest{color-scheme:dark;--bg:#0B0B0D;--surface:#161618;--ink:#F1EFE9;--muted:#B4B5B0;--accent:#F5A524;--line:#5C5F6188}
+@media(prefers-color-scheme:dark){body.app-ingest{--bg:#0B0B0D;--surface:#161618;--ink:#F1EFE9;--muted:#B4B5B0;--accent:#F5A524;--line:#5C5F6188}}
+.app-ingest .app-hero{grid-template-columns:1.5fr .65fr;gap:54px}
+.app-ingest .studio-mark{margin:0;text-align:center}
+.app-ingest .studio-mark img{width:260px}
+.app-ingest .studio-mark figcaption{font-size:13px;color:var(--muted);max-width:24ch;margin:12px auto}
+.app-ingest .primary-action{background:#F5A524;color:#1A1205}
+.app-ingest .quiet{max-width:60ch}
+.app-ingest .desktop-shot{margin:0;padding:18px;background:#161719;border:1px solid #37383b;border-radius:10px}
+.app-ingest .desktop-shot img{display:block;width:100%;height:auto;border-radius:5px}
+.app-ingest .desktop-shot figcaption{font-size:12px;color:#bfc0bf;padding:14px 5px 0}
+.app-ingest .features{margin-top:48px}
+.app-ingest .studio-preview{display:grid;grid-template-columns:.75fr 1.25fr;align-items:center;gap:40px;padding:64px 0}
+.app-ingest .studio-preview p{color:var(--muted)}
+.app-ingest .closing{max-width:760px}
+
+/* Documents: support, privacy, and every reference page. */
+.app-ingest .family-document{max-width:860px;margin:48px auto;padding:0 24px;line-height:1.7}
+.app-ingest .family-document h1{font-size:clamp(36px,5vw,58px)}
+.app-ingest .family-document h2{margin-top:40px;font-size:28px}
+.app-ingest .family-document h3{margin-top:28px;font-size:20px}
+.app-ingest .family-document dt{font-weight:650;margin-top:16px}
+.app-ingest .family-document dd{margin-left:0;color:var(--muted)}
+.app-ingest .family-document section{scroll-margin-top:24px}
+.app-ingest .family-document .intro{font-size:19px;max-width:60ch}
+.app-ingest kbd{font:500 .88em ui-monospace,SFMono-Regular,Menlo,monospace;padding:.18em .42em;border:1px solid #4d4f52;border-radius:4px;background:#1c1d20;color:#f4eee5;white-space:nowrap}
+.app-ingest code{font:500 .9em ui-monospace,SFMono-Regular,Menlo,monospace;color:#f3d7a4}
+
+/* Reference pages: a wider column, an inline index, and tables. */
+.app-ingest .reference{max-width:1040px}
+.app-ingest .guide-toc{position:static;display:flex;flex-wrap:wrap;gap:10px 22px;padding:22px 0;border-block:1px solid #3a3b3e;margin:28px 0}
+.app-ingest .guide-section{scroll-margin-top:24px;padding-block:12px 26px;border-bottom:1px solid #2e2f31}
+.app-ingest .guide-section p,.app-ingest .guide-section li,.app-ingest .guide-definitions{max-width:78ch}
+.app-ingest .guide-section .desktop-shot{margin:26px 0}
+.app-ingest .guide-table{overflow-x:auto;margin-block:22px}
+.app-ingest .guide-table table{width:100%;border-collapse:collapse;text-align:left}
+.app-ingest .guide-table th,.app-ingest .guide-table td{padding:12px 14px;border-bottom:1px solid #3a3b3e;vertical-align:top}
+.app-ingest .guide-table th{color:#f0b95f;font-size:14px}
+.app-ingest .guide-table td:first-child{white-space:nowrap}
+.app-ingest .guide-definitions dt{font-weight:650;color:#efe9e0;margin-top:20px}
+.app-ingest .guide-definitions dd{margin:6px 0 16px}
+.app-ingest .steps{counter-reset:step;list-style:none;padding:0}
+.app-ingest .steps>li{counter-increment:step;position:relative;padding:0 0 26px 52px;border-bottom:1px solid #2e2f31;margin-bottom:26px}
+.app-ingest .steps>li::before{content:counter(step);position:absolute;left:0;top:-2px;width:34px;height:34px;border-radius:50%;border:1px solid var(--accent);color:var(--accent);display:grid;place-items:center;font-size:14px;font-weight:650}
+.app-ingest .steps h2{margin:0 0 8px;font-size:23px}
+.app-ingest .note{border-left:2px solid var(--accent);padding:14px 18px;background:var(--surface);margin:24px 0}
+.app-ingest .note p:last-child{margin-bottom:0}
+
+/* Release notes, same shape as the other Mac app. */
+.app-ingest .release-index{display:flex;flex-wrap:wrap;gap:12px 24px;margin:28px 0}
+.app-ingest .release-entry{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:28px;margin:24px 0;scroll-margin-top:24px}
+.app-ingest .release-entry h2{margin:8px 0;font-size:34px}
+.app-ingest .release-entry h3{font-size:20px;margin-top:4px}
+.app-ingest .release-entry li{margin:12px 0;color:var(--muted)}
+.app-ingest .release-entry ul{padding-left:22px}
+.app-ingest .family-header nav,.app-ingest .family-footer nav{flex-wrap:wrap}
+.app-ingest a:focus-visible{outline:2px solid #f0b96c;outline-offset:5px}
+@media(max-width:760px){
+ .app-ingest .app-hero,.app-ingest .studio-preview{grid-template-columns:1fr;gap:24px}
+ .app-ingest .studio-mark{display:none}
+ .app-ingest .desktop-shot{padding:6px;border-radius:6px}
+ .app-ingest .studio-preview{padding:40px 0}
+ .app-ingest h1{font-size:clamp(36px,9vw,56px)}
+ .app-ingest .guide-table th,.app-ingest .guide-table td{padding:11px 8px}
+ .app-ingest .steps>li{padding-left:0;padding-top:44px}
+ .app-ingest .steps>li::before{top:0}
+}

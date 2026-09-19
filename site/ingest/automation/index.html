@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingest automation | Actions, links, and your settings file</title>
+<meta name="description" content="Steps that run after a copy, the ingest:// links that drive the app from anywhere, and the one file that carries your whole setup between Macs.">
+<link rel="canonical" href="https://brianrenshaw.app/ingest/automation/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ingest automation | Actions, links, and your settings file">
+<meta property="og:description" content="Steps that run after a copy, the ingest:// links that drive the app from anywhere, and the one file that carries your whole setup between Macs.">
+<meta property="og:url" content="https://brianrenshaw.app/ingest/automation/">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/settings-actions.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/ingest/assets/icon.png">
+<link rel="stylesheet" href="/assets/apps.css">
+<link rel="stylesheet" href="/assets/family.css">
+<link rel="stylesheet" href="/ingest/assets/site.css">
+</head>
+<body class="app-ingest">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="family-header">
+<a class="family-brand" href="/ingest/">
+<img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a>
+<nav aria-label="Main navigation">
+<a class="portfolio-home-link" href="/">← Brian’s homepage</a>
+<a href="/ingest/guide/">Guide</a>
+<a href="/ingest/shortcuts/">Shortcuts</a>
+<a href="/ingest/support/">Support</a>
+</nav>
+</header>
+<main id="main" tabindex="-1" class="family-document reference">
+<p class="eyebrow">Ingest / Automation</p>
+<h1>What happens after the copy.</h1>
+<p class="intro">Actions run when an ingest finishes, so the photographs arrive where they are going to be worked on. Links let anything on your Mac drive Ingest. Neither exists until you build it.</p>
+<nav class="guide-toc" aria-label="On this page">
+<a href="#actions">Actions</a>
+<a href="#action-script">Shell scripts</a>
+<a href="#url-scheme">The ingest:// scheme</a>
+<a href="#callbacks">Callbacks</a>
+<a href="#settings-file">Your settings as one file</a>
+</nav>
+
+<section id="actions" class="guide-section">
+<h2>Actions</h2>
+<p>An action is a named list of steps. You choose one in the Ingest sheet under Then run, and it runs once the copies are on disk and verified. You can also run one from <kbd>⌘K</kbd> on whatever is selected, or from a link.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/settings-actions.webp"><img src="/ingest/assets/settings-actions.webp" width="1960" height="1800" loading="lazy" alt="The Actions settings page with a list of actions, their ordered steps, a confirmation switch, and a test button"></a><figcaption>Settings, Actions. Steps run in order, and Run on Selection Now tests one without waiting for an ingest.</figcaption></figure>
+<p>Ingest ships with three: open the copies in Lightroom Classic, reveal them in Finder, and import them into an Apple Photos album. Edit them or delete them.</p>
+<div class="guide-table" tabindex="0" role="region" aria-label="Step types">
+<table>
+<thead><tr><th scope="col">Step</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr id="action-open"><td>Open in an app</td><td>Hands the copied files to an app you choose, the same as dragging them onto it.</td></tr>
+<tr id="action-photos"><td>Import into an Apple Photos album</td><td>Imports the copies into an album, created if it does not exist. The name can use <code>{yyyy}</code>, <code>{mm}</code>, <code>{dd}</code>, <code>{address}</code>, and <code>{city}</code>, so <code>{yyyy}-{mm} Ingest</code> files each month separately. Keywords, captions, and locations are already in the files, so Photos reads them on import.</td></tr>
+<tr id="action-copy"><td>Copy to a folder</td><td>A second copy somewhere else, after the first one is verified.</td></tr>
+<tr><td>Reveal in Finder</td><td>Opens the destination with the new files selected.</td></tr>
+<tr><td>Add the Finder tag “Ingested”</td><td>So Finder, Spotlight, and rules in other apps can see which files came through.</td></tr>
+<tr id="action-shortcut"><td>Run a Shortcut</td><td>Runs a shortcut from the Shortcuts app by name, with the file paths as its input. The picker lists the shortcuts you have.</td></tr>
+<tr id="action-script"><td>Run a shell script</td><td>Runs zsh. Described below.</td></tr>
+</tbody>
+</table>
+</div>
+<p>Turn on <em>Ask before running</em> for anything you want to see coming. Every run is logged, and the log is shown in Settings next to the action so you can tell what happened without hunting for a file.</p>
+</section>
+
+<section id="action-script" class="guide-section">
+<h2>Shell scripts</h2>
+<p>A script step runs zsh. The file paths arrive on standard input, one per line, and four variables are set:</p>
+<div class="guide-table" tabindex="0" role="region" aria-label="Script environment">
+<table>
+<thead><tr><th scope="col">Variable</th><th scope="col">Value</th></tr></thead>
+<tbody>
+<tr><td><code>$INGEST_FILES</code></td><td>The path of a file that lists every copied path.</td></tr>
+<tr><td><code>$INGEST_DESTINATION</code></td><td>Where they were copied to.</td></tr>
+<tr><td><code>$INGEST_ADDRESS</code></td><td>The job address, if one was set.</td></tr>
+<tr><td><code>$INGEST_COUNT</code></td><td>How many files.</td></tr>
+</tbody>
+</table>
+</div>
+<p>The step starts with a line that does nothing but report, which is a good habit to keep while you are working out what you want:</p>
+<p><code>echo "$INGEST_COUNT files in $INGEST_DESTINATION"</code></p>
+<div class="note">
+<p><strong>A script runs as you.</strong> It has your permissions and Ingest does not restrain it. Only add scripts you wrote or understand, and turn on <em>Ask before running</em> while you are still testing one.</p>
+</div>
+</section>
+
+<section id="url-scheme" class="guide-section">
+<h2>The ingest:// scheme</h2>
+<p>Ingest answers links. Anything that can open a URL can drive it: a Shortcut, a script, a Stream Deck button, a Raycast command, a note on your desktop.</p>
+<p>The easiest way to find the link for something is to open <kbd>⌘K</kbd>, highlight the row, and press <kbd>⇧⌘C</kbd>. The link is on your clipboard. Values have to be percent encoded the way any URL does, so a space becomes <code>%20</code>.</p>
+<p>A link cannot do anything a menu item could not. Commands that delete still ask before they delete, whatever started them.</p>
+<div class="guide-table" tabindex="0" role="region" aria-label="URL verbs">
+<table>
+<thead><tr><th scope="col">Link</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr id="verb-open"><td><code>ingest://open?path=…</code></td><td>Opens that folder.</td></tr>
+<tr id="verb-card"><td><code>ingest://card</code></td><td>Opens the mounted card. Add <code>name=</code> to pick one when several are in.</td></tr>
+<tr id="verb-ingest"><td><code>ingest://ingest</code></td><td>Opens the Ingest sheet, filled in. Takes <code>favorite</code>, <code>destination</code>, <code>template</code>, <code>subfolder</code>, and <code>preset</code>. Giving a template turns renaming on.</td></tr>
+<tr id="verb-select"><td><code>ingest://select?paths=…</code></td><td>Selects those files in the open source. Comma separated.</td></tr>
+<tr id="verb-apply"><td><code>ingest://apply?text=…</code></td><td>Runs a <a href="/ingest/templates/#quick-entry">quick entry</a> line against the selection, snippets and all.</td></tr>
+<tr id="verb-workspace"><td><code>ingest://workspace?name=…</code></td><td>Switches workspace.</td></tr>
+<tr id="verb-split"><td><code>ingest://split?name=…</code></td><td>Shows a split.</td></tr>
+<tr id="verb-action"><td><code>ingest://action?name=…</code></td><td>Runs an action on what is selected.</td></tr>
+<tr id="verb-command"><td><code>ingest://command?id=…</code></td><td>Runs any command by its id, which is what <kbd>⇧⌘C</kbd> gives you for commands that have no link of their own.</td></tr>
+</tbody>
+</table>
+</div>
+<p>When a link cannot be carried out, the status bar says why in plain words: no folder at that path, no card is mounted, no workspace with that name, that command is unavailable right now.</p>
+</section>
+
+<section id="callbacks" class="guide-section">
+<h2>Callbacks</h2>
+<p>Every link takes <code>x-success</code> and <code>x-error</code>, in the x-callback-url style. Ingest opens your success URL with a <code>paths</code> parameter listing what it acted on, or your error URL with an <code>errorMessage</code>. That is what lets a Shortcut hand work to Ingest and carry on when it comes back.</p>
+<p>Callback URLs are values inside a URL, so they need encoding twice over. Build them with a tool rather than by hand.</p>
+</section>
+
+<section id="settings-file" class="guide-section">
+<h2>Your settings as one file</h2>
+<p>Settings, Advanced exports everything you have set up as a single <code>.ingestsettings</code> file: options, name templates, metadata presets, snippets, splits, workspaces, actions, and your keyboard shortcuts. That is the file to keep as a backup and to carry to another Mac.</p>
+<p>Importing offers two choices. <strong>Merge</strong> adds what you do not already have and leaves your own items alone. <strong>Replace</strong> makes this Mac match the file. Either way <kbd>⌘Z</kbd> puts it back, because the import is recorded as one undoable step.</p>
+<p>The file holds no photographs, but it can carry destination paths, addresses you have used, your keyword history, and the text of any scripts in your actions. Share it deliberately.</p>
+<p>Restore Defaults is next to it, and puts every page back to how Ingest shipped while keeping your favourites, your sequence number, and the marks on your photographs.</p>
+</section>
+</main>
+<footer class="family-footer">
+<span>© 2026 Brian Renshaw</span>
+<nav aria-label="Footer">
+<a href="/">← Brian’s homepage</a>
+<a href="/ingest/quick-start/">Quick start</a>
+<a href="/ingest/guide/">Guide</a>
+<a href="/ingest/shortcuts/">Shortcuts</a>
+<a href="/ingest/templates/">Templates</a>
+<a href="/ingest/support/">Support</a>
+<a href="/ingest/release-notes/">Release notes</a>
+<a href="/ingest/privacy/">Privacy</a>
+<a href="mailto:contact@brianrenshaw.app">Contact</a>
+</nav>
+</footer>
+</body>
+</html>

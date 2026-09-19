@@ -41,10 +41,14 @@ for p in ROOT.rglob('*.css'):
  for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)',p.read_text()):
   if ref.startswith('data:'):continue
   if not (p.parent/ref).exists():errors.append(f'{p.relative_to(ROOT)}: missing CSS asset {ref}')
-for slug in ['reading-habit','where-do-we-eat','whos-first','folio','walkthrough']:
+for slug in ['reading-habit','where-do-we-eat','whos-first','folio','walkthrough','ingest']:
  for sub in ['','privacy','support']:
   if not (ROOT/slug/sub/'index.html').exists():errors.append(f'Missing route {slug}/{sub}')
 if not (ROOT/'walkthrough/release-notes/index.html').exists():errors.append('Missing Walkthrough release history')
+for sub in ['guide/','quick-start/','shortcuts/','templates/','automation/','release-notes/']:
+ if not (ROOT/'ingest'/sub/'index.html').exists():errors.append(f'Missing Ingest page {sub}')
+# Every shipped Ingest build has https://brianrenshaw.app/ingest/appcast.xml compiled into SUFeedURL.
+if not (ROOT/'ingest/appcast.xml').exists():errors.append('Missing Sparkle feed for Ingest')
 if not (ROOT/'walkthrough/guide/index.html').exists():errors.append('Missing Walkthrough illustrated guide')
 # Walkthrough moved to /walkthrough/, but every shipped copy of the Mac app has
 # https://brianrenshaw.app/listing-namer/appcast.xml compiled into SUFeedURL, and a

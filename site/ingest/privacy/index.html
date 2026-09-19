@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingest privacy</title>
+<meta name="description" content="What Ingest reads, what it writes, and the two things that ever leave your Mac.">
+<link rel="canonical" href="https://brianrenshaw.app/ingest/privacy/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ingest privacy">
+<meta property="og:description" content="What Ingest reads, what it writes, and the two things that ever leave your Mac.">
+<meta property="og:url" content="https://brianrenshaw.app/ingest/privacy/">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/grid-cull.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/ingest/assets/icon.png">
+<link rel="stylesheet" href="/assets/apps.css">
+<link rel="stylesheet" href="/assets/family.css">
+<link rel="stylesheet" href="/ingest/assets/site.css">
+</head>
+<body class="app-ingest">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="family-header">
+<a class="family-brand" href="/ingest/">
+<img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a>
+<nav aria-label="Main navigation">
+<a class="portfolio-home-link" href="/">← Brian’s homepage</a>
+<a href="/ingest/guide/">Guide</a>
+<a href="/ingest/shortcuts/">Shortcuts</a>
+<a href="/ingest/support/">Support</a>
+</nav>
+</header>
+<main id="main" tabindex="-1" class="family-document">
+<p class="eyebrow">Ingest / Privacy</p>
+<h1>Your photographs stay on your Mac.</h1>
+<p>Last updated September 18, 2026. Applies to Ingest 0.1.0.</p>
+<p class="intro">Ingest has no account, no analytics, and no server of mine to send anything to. Two features reach the network, both described below, and both are things you start.</p>
+
+<section id="files">
+<h2>Your photographs and what Ingest stores</h2>
+<p>Ingest reads the cards and folders you open. It reads only the parts of each photograph it needs: a few kilobytes of header, and the preview the camera embedded. It does not upload your photographs anywhere.</p>
+<p>What it keeps on your Mac, and nowhere else:</p>
+<ul>
+<li>Small settings files in your Application Support folder, holding your options, name templates, metadata presets, snippets, splits, workspaces, actions, and keyboard shortcuts.</li>
+<li>Per folder marks. Tags, rejects, stars, and colour labels, stored by file identity rather than written onto a card.</li>
+<li>Cached thumbnails and header information in your Caches folder, kept under 2 GB, cleared from Settings, Advanced.</li>
+<li>Logs from actions you have run, if you have built any.</li>
+<li>A record of each ingest, so the app can tell you which photographs from a card you already copied.</li>
+</ul>
+<p>When you ask it to, Ingest writes keywords, captions, titles, ratings, colour labels, and GPS into your photograph files. That is the point of the app, and it happens to the files you chose, on your disk. It never writes to a memory card.</p>
+<p><strong>Face close-ups.</strong> The face close-up strip finds faces in the photograph on screen so it can show you each one enlarged. That runs on your Mac using Apple's Vision framework. No names or identities are involved, nothing is matched against anything, no result is stored between sessions, and nothing is sent anywhere.</p>
+</section>
+
+<section id="address-search">
+<h2>Address search</h2>
+<p>When you type in the address field, Ingest sends what you typed to Apple's MapKit service to get suggestions and coordinates. That is the only way to turn an address into a location, and Apple handles those requests under its own privacy terms. It happens only while you are typing in that field.</p>
+<p>Addresses you have used are remembered on your Mac so they can be offered next time. Settings, Metadata clears that list. Locations already written into a photograph can be removed with <kbd>⇧⌘L</kbd>, which strips every location field Ingest writes.</p>
+</section>
+
+<section id="updates">
+<h2>Software updates</h2>
+<p>Checking for updates fetches a small file from brianrenshaw.app, which is hosted by GitHub Pages, and downloads come from GitHub Releases. Those hosts see ordinary connection information such as your IP address, as they would for any web page.</p>
+<p>Automatic checking is off until you turn it on. Ingest disables the part of the update system that would report details about your Mac, so nothing about your hardware, your photographs, or your settings is included in a check. Every update must carry a signature made with my key, or it is refused.</p>
+</section>
+
+<section id="no-analytics">
+<h2>No analytics, no account</h2>
+<p>There is no analytics library, no crash reporting service, no advertising, and no account. Ingest contains no code of its own for making web requests. The only two network paths are the two named above.</p>
+</section>
+
+<section id="actions">
+<h2>Actions you build yourself</h2>
+<p>Post-ingest actions can open your photographs in another app, import them into Apple Photos, copy them somewhere, run a Shortcut, or run a shell script you wrote. When an action runs, your files and the information about them are handed to software you chose, and what happens next is up to that software.</p>
+<p>A shell script runs as you, with your permissions, and Ingest does not restrict what it can do. Only add scripts you wrote or understand. Actions can be set to ask before they run, and none of this exists until you create it. See <a href="/ingest/automation/#actions">actions</a> for the detail.</p>
+</section>
+
+<section id="settings-file">
+<h2>The settings file you can export</h2>
+<p>Settings, Advanced can export everything you have configured as one file, to move to another Mac or to keep as a backup. That file can include destination folder paths, addresses you have used, your keyword history, and the text of any scripts in your actions. It contains no photographs. Share it deliberately.</p>
+</section>
+
+<section id="contact">
+<h2>Questions and changes</h2>
+<p>If you email me, I see what you chose to put in the message. I will update this page if what the app does ever changes. Questions: <a href="mailto:contact@brianrenshaw.app">contact@brianrenshaw.app</a>.</p>
+</section>
+</main>
+<footer class="family-footer">
+<span>© 2026 Brian Renshaw</span>
+<nav aria-label="Footer">
+<a href="/">← Brian’s homepage</a>
+<a href="/ingest/quick-start/">Quick start</a>
+<a href="/ingest/guide/">Guide</a>
+<a href="/ingest/shortcuts/">Shortcuts</a>
+<a href="/ingest/templates/">Templates</a>
+<a href="/ingest/automation/">Automation</a>
+<a href="/ingest/release-notes/">Release notes</a>
+<a href="/ingest/support/">Support</a>
+<a href="mailto:contact@brianrenshaw.app">Contact</a>
+</nav>
+</footer>
+</body>
+</html>

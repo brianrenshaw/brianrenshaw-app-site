@@ -27,3 +27,5 @@
 .canceled .app-bottom{border-color:#ffffff40}
 .canceled .app-bottom span{font-size:13px;opacity:.85}
 @media(prefers-color-scheme:dark){.canceled{background:#151d2c;color:#fff4cd}}
+
+.ingest{background:#26272a;color:#f1efe9}.ingest .eyebrow,.ingest .app-bottom a{color:#f5a524}@media(prefers-color-scheme:dark){.ingest{background:#1b1c1e;color:#f1efe9}.ingest .eyebrow,.ingest .app-bottom a{color:#f5a524}}
