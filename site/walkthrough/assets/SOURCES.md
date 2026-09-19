@@ -16,3 +16,7 @@ Versioned 1.1.0 screenshots are unmodified native Dark appearance captures from 
 ## Walkthrough 1.2.0
 
 The `native-*-1.2.0.png` images are unmodified macOS UI-test captures of the redesigned workspace, centered command palette, group rename flow, Settings, and export sheets. Workspace captures use an isolated 100-photo, 18-room demonstration job and the same credited photography above. Getting Started uses a fresh empty demonstration library. The guide, support page, and landing page use these captures. Release-version assets are retained unchanged.
+
+## Walkthrough 1.2.3
+
+`native-tabs-1.2.3.png` is an unmodified native UI-test capture of macOS tabs and removable Recents, using an isolated demonstration library. It contains no customer photographs or listing information.

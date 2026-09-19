@@ -5,7 +5,7 @@
 - Feed: `site/listing-namer/appcast.xml`, served at `https://brianrenshaw.app/listing-namer/appcast.xml`. **This path is frozen.** The website moved to `/walkthrough/` on September 17, 2026, but shipped builds have this feed URL compiled into `SUFeedURL`, and a static host cannot redirect it. Keep publishing the feed here. Human-facing pages live under `site/walkthrough/`; `site/listing-namer/` otherwise holds redirect stubs.
 - Downloads: public GitHub Releases in `brianrenshaw/brianrenshaw-app-site`, with tags prefixed `listing-namer-`.
 
-The current public release is `listing-namer-v1.2.2`, Walkthrough version 1.2.2 build 8. Its universal app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 8 to existing installations and preserves earlier release download URLs.
+The current public release is `listing-namer-v1.2.3`, Walkthrough version 1.2.3 build 9. Its universal app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 9 to existing installations and preserves earlier release download URLs.
 
 For each notarized release:
 
