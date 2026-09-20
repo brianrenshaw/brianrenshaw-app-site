@@ -33,10 +33,24 @@
 <p class="eyebrow">Ingest / Release notes</p>
 <h1>A record of what’s new.</h1>
 <p>What changed in each version. Ingest can check for updates itself, from the Ingest menu, and automatic checking is off until you turn it on.</p>
-<nav class="release-index" aria-label="Versions"><a href="/ingest/release-notes/#v0.2.1">0.2.1 · Latest</a><a href="/ingest/release-notes/#v0.2.0">0.2.0</a><a href="/ingest/release-notes/#v0.1.0">0.1.0</a></nav>
+<nav class="release-index" aria-label="Versions"><a href="/ingest/release-notes/#v0.3.0">0.3.0 · Latest</a><a href="/ingest/release-notes/#v0.2.1">0.2.1</a><a href="/ingest/release-notes/#v0.2.0">0.2.0</a><a href="/ingest/release-notes/#v0.1.0">0.1.0</a></nav>
+
+<article class="release-entry" id="v0.3.0">
+<p class="eyebrow">Latest · September 20, 2026</p>
+<h2>0.3.0</h2>
+<h3>More cameras, with reliable previews and safer imports.</h3>
+<ul>
+<li>Adds camera support for Canon, Nikon, Hasselblad, Panasonic / Lumix, OM System / Olympus, Ricoh / Pentax, and Leica alongside the existing Sony and Fujifilm readers. JPEG and HEIC / HEIF / HIF companions travel with their RAW files.</li>
+<li>Prefers camera previews and paired images. Files that need RAW rendering use a bundled fallback, isolated from normal browsing. No separate decoder installation is needed.</li>
+<li>Proprietary RAW metadata goes into XMP companions. External edits refresh in an open folder while pending local ratings are preserved; rating-only edits keep cached previews.</li>
+<li>Improves cancellation, eject coordination, and recovery after an interrupted import. Verified copies are retained, receipt-save errors keep originals, and retries do not automatically delete source files.</li>
+<li>Preserves the Sony / Fuji preview paths and streaming ingest. Mixed-format samples, large-folder metadata, disposable interruption checks, and repeated preview benchmarks are covered by validation.</li>
+</ul>
+<p>Camera support depends on model and recording mode. The tested Nikon Z8 compression mode cannot be rendered by bundled LibRaw; its embedded preview works, and native rendering works on the tested macOS 27 system. Runtime on macOS 15, physically cold-card behavior, and instrumented display-frame timing remain unverified. See <a href="/ingest/support/#formats">supported formats and limitations</a>.</p>
+</article>
 
 <article class="release-entry" id="v0.2.1">
-<p class="eyebrow">Latest · September 20, 2026</p>
+<p class="eyebrow">September 20, 2026</p>
 <h2>0.2.1</h2>
 <h3>The same Studio design, with more reliable Mac controls.</h3>
 <ul>

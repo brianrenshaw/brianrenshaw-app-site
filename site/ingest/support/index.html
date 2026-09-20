@@ -43,7 +43,7 @@
 
 <section id="formats">
 <h2>Cameras and files it reads</h2>
-<p>Ingest is fast because it never decodes a raw file. It finds the JPEG preview the camera already wrote inside the raw file and shows you that. This is why it can only be fast for formats it knows how to open.</p>
+<p>Ingest prefers an embedded camera preview or a paired JPEG / HEIF image. When a file needs RAW rendering, that slower first preview is handled separately and cached. Camera model and recording mode affect preview availability.</p>
 <div class="guide-table" tabindex="0" role="region" aria-label="Supported files">
 <table>
 <thead><tr><th scope="col">File</th><th scope="col">What happens</th></tr></thead>
@@ -51,12 +51,17 @@
 <tr><td>Sony <code>.ARW</code></td><td>Full speed. The camera writes a small preview and a full size JPEG inside the file, and Ingest reads whichever it needs.</td></tr>
 <tr><td>Fujifilm <code>.RAF</code></td><td>Full speed. The embedded JPEG is found from the file header.</td></tr>
 <tr><td><code>.JPG</code> and <code>.JPEG</code></td><td>Full speed, including the second image that Sony cameras store for fast preview.</td></tr>
-<tr><td><code>.HEIC</code> and <code>.HEIF</code></td><td>Opens and browses.</td></tr>
+<tr><td><code>.HEIC</code>, <code>.HEIF</code>, and <code>.HIF</code></td><td>Opens and browses.</td></tr>
 <tr><td><code>.MP4</code> and <code>.MOV</code></td><td>Browses and plays, with a poster frame in the grid. Sony clip sidecars travel with the file when you ingest.</td></tr>
-<tr><td>Other raw files</td><td>DNG, CR3, CR2, NEF, ORF, and RW2 are recognized as photographs, but Ingest cannot read their previews yet, so they appear without a thumbnail. Support for them is a question of writing one more reader, not of changing the design.</td></tr>
+<tr><td>Canon <code>.CR2</code>, <code>.CR3</code>; Nikon <code>.NEF</code>, <code>.NRW</code></td><td>Embedded previews and metadata, including tested Canon CR3 files with HEIF previews.</td></tr>
+<tr><td>Hasselblad <code>.3FR</code>, camera-origin <code>.FFF</code></td><td>Embedded previews where available, with rendering fallback for files that need it. Scanner files and specialized multishot reconstruction are excluded.</td></tr>
+<tr><td>Panasonic / Lumix <code>.RW2</code>; OM System / Olympus <code>.ORF</code></td><td>Preview and metadata support for tested camera samples.</td></tr>
+<tr><td>Ricoh / Pentax <code>.DNG</code>, <code>.PEF</code>; Leica <code>.DNG</code>, <code>.RWL</code>, <code>.RW2</code></td><td>Preview and metadata support for tested camera samples.</td></tr>
 </tbody>
 </table>
 </div>
+<p>Coverage is based on representative real camera files, not every recording mode. The sampled Nikon Z8 compression mode works through its embedded preview but fails in bundled LibRaw rendering. Native rendering succeeded on macOS 27; macOS 15 runtime remains unverified. Phase One, Sigma, scanner files, and specialized multishot reconstruction are outside this release.</p>
+<p>XMP companions belong to their RAW photo and travel with it during file operations. Ambiguous companion groups remain separate.</p>
 <p>Files that are never treated as photographs: sidecars such as <code>.XMP</code> and <code>.THM</code>, camera database and index files, and anything beginning with a dot.</p>
 </section>
 

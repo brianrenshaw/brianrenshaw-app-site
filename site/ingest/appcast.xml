@@ -3,6 +3,16 @@
     <channel>
         <title>Ingest</title>
         <item>
+            <title>0.3.0</title>
+            <pubDate>Sun, 20 Sep 2026 19:26:13 -0400</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.3.0/Ingest-0.3.0.dmg" length="16919250" type="application/octet-stream" sparkle:edSignature="sp9QAiwj+Tkawza96BsNVBT6YnGO7NTrBkKwb9wIhv93QD87Ufa1WVWd2iBxFvtlGbe8PqAo8r4s3gMOrSBxBQ==" />
+            <sparkle:releaseNotesLink>https://brianrenshaw.app/ingest/release-notes/#v0.3.0</sparkle:releaseNotesLink>
+        </item>
+        <item>
             <title>0.2.1</title>
             <pubDate>Sun, 20 Sep 2026 12:24:43 -0400</pubDate>
             <sparkle:version>6</sparkle:version>
@@ -21,16 +31,6 @@
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.2.0/Ingest-0.2.0.dmg" length="11937611" type="application/octet-stream" sparkle:edSignature="u0X8xIC3bDLcSlHYGMrGYY5vpaPnqs1xMSiLagmKi+Os5hyjLU87txywFZzO9QL0A+xIKa8L61r5urriftsNAA==" />
             <sparkle:releaseNotesLink>https://brianrenshaw.app/ingest/release-notes/#v0.2.0</sparkle:releaseNotesLink>
-        </item>
-        <item>
-            <title>0.1.0</title>
-            <pubDate>Fri, 18 Sep 2026 22:12:16 -0400</pubDate>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.1.0/Ingest-0.1.0.dmg" length="11313666" type="application/octet-stream" sparkle:edSignature="AP+PfgKkw7AutXua7ArdGRi1KuwGMuP5upKaSZHzudpvF6y2iRkvNOhsjEmm9icfy7aOM9JEjc/n9oIVCc/GBQ==" />
-            <sparkle:releaseNotesLink>https://brianrenshaw.app/ingest/release-notes/#v0.1.0</sparkle:releaseNotesLink>
         </item>
     </channel>
 </rss>

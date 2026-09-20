@@ -61,14 +61,14 @@
 <p>Put a card in and it appears in the sources list with its name and free space, and Ingest opens it. Press <kbd>⌘O</kbd> to open an ordinary folder instead. Either way you are looking at photographs within a second, before the app has finished reading everything.</p>
 <p>The sources list holds four things: your saved views of the current source, your workspaces, any cards that are mounted, and your favorite folders. <kbd>⌘D</kbd> adds the folder you are in to the favorites, and the number beside each one is the key that opens it.</p>
 <p><kbd>⌘[</kbd> and <kbd>⌘]</kbd> go back and forward through what you have opened, like a browser, so switching to the card and back to yesterday's folder costs one keystroke.</p>
-<p><kbd>⌘E</kbd> ejects. Ingest closes every file it has open on the card first, which is why eject does not fail with the usual complaint about a file in use. If you pull a card without ejecting, nothing breaks. Ingest notices and closes the source.</p>
+<p><kbd>⌘E</kbd> ejects. Ingest closes every file it has open on the card first, which is why eject does not fail with the usual complaint about a file in use. If a card disappears, Ingest closes the source and cancels an active import. Verified copies are retained; check the result for incomplete groups.</p>
 <p>There is also a menu bar item, on by default, showing the progress of a running ingest, the cards that are in, and your recent folders. It is there so a copy can run while you work in another app.</p>
 </section>
 
 <section id="browsing" class="guide-section">
 <h2>Browsing, and why it is fast</h2>
-<p>A raw file is large and slow to develop. But every camera also writes a finished JPEG inside that raw file, so it has something to show you on its own screen. Ingest finds that JPEG and reads only those bytes. A Sony ARW is 76 MB; the preview Ingest reads out of it is a few hundred kilobytes, and the full size JPEG inside it is about six.</p>
-<p>That is the whole trick, and it is why arrowing through a card feels like arrowing through a folder of thumbnails. Nothing is developed, nothing is rendered ahead of time by a background process, and there is no import step before you can look.</p>
+<p>A raw file is large and slow to develop. Many cameras also write a finished preview inside that raw file for their own screens. Ingest finds that JPEG and reads only those bytes. A Sony ARW is 76 MB; the preview Ingest reads out of it is a few hundred kilobytes, and the full size JPEG inside it is about six.</p>
+<p>Embedded previews keep ordinary browsing fast, with no import step before you can look. If a file has no usable preview or paired image, Ingest can render the selected photo in a separate helper and cache the result. That first fallback preview is slower; whole cards are not rendered in advance.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/grid-cull-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/grid-cull-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The Ingest grid part way through a cull, with tagged photographs, stars, a color label, bracket stack badges, and live counts in the sources list"></a><figcaption>A card part way through a cull. The counts on the left update as you mark. Photographs are demonstration images, credited on the support page.</figcaption></figure>
 <p>Arrow keys move, <kbd>⇧</kbd> extends the selection, and <kbd>⌘</kbd> with an arrow moves the focus ring without disturbing what is selected. <kbd>⌘+</kbd> and <kbd>⌘-</kbd> resize the thumbnails, and so does a pinch.</p>
 <p>Photographs are ordered by when they were taken, down to the fraction of a second, so two cameras at the same event interleave correctly. You can sort by filename instead from the palette.</p>
@@ -118,7 +118,7 @@
 <p><kbd>S</kbd> expands or collapses the set you are on, <kbd>⌥S</kbd> does all of them. A mark on a collapsed set applies to every frame in it, so tagging the bracket keeps the whole bracket.</p>
 <p>Sets are found two ways. Sony writes a flag saying the frames were an auto bracket, which is definitive. Fujifilm does not, so Ingest looks for frames taken a fraction of a second apart with the same aperture and ISO and a clean spread of shutter speeds. Sets of three, five, seven, and nine are recognized, and an incomplete set is still stacked and marked as incomplete rather than quietly hidden.</p>
 <p>If it gets one wrong, fix it. Select frames and combine them into a stack, or uncombine one. Your corrections are remembered for that folder. Stacking can be turned off per folder with <kbd>⌥⌘K</kbd>.</p>
-<p>A RAW and JPEG pair is handled separately: by default the two files show as one photograph, and marking or copying acts on both. <kbd>⌥⌘J</kbd> turns that off for a folder when you want to see them apart.</p>
+<p>A RAW and JPEG / HEIF pair is handled separately: by default the two files show as one photograph, and marking or copying acts on both. <kbd>⌥⌘J</kbd> turns that off for a folder when you want to see them apart.</p>
 </section>
 
 <section id="video" class="guide-section">
@@ -194,7 +194,7 @@
 <p><kbd>⌘G</kbd> opens the sheet. It fills itself in from what you did last and from the workspace you are in, so most of the time the answer is Return.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/ingest-dialog-0.2.1-retina.webp"><img style="--capture-width:640px" src="/ingest/assets/ingest-dialog-0.2.1-retina.webp" width="1280" height="1302" loading="lazy" alt="The Ingest sheet showing scope tabs with counts, a destination, a subfolder template, a rename template with a live preview of the resulting filenames, and the file count and size"></a><figcaption>Everything the copy will do, before it does any of it.</figcaption></figure>
 <p>The tabs at the top choose what to copy, with the count on each one: tagged, selected, what is on screen, or everything. <kbd>⌃1</kbd> to <kbd>⌃4</kbd> pick them without the mouse. The cursor starts in the destination field, where you can type part of a favorite's name.</p>
-<p>Below that: an optional second destination, a subfolder named by template, renaming with a live preview of the actual filenames, which of a RAW and JPEG pair to take, a metadata preset to apply to the copies, and what to do with the card afterwards.</p>
+<p>Below that: an optional second destination, a subfolder named by template, renaming with a live preview of the actual filenames, which files from a RAW and JPEG / HEIF pair to take, a metadata preset to apply to the copies, and what to do with the card afterwards.</p>
 <p>What happens when you press Ingest:</p>
 <ul>
 <li>Each file is copied to a temporary name and flushed to disk.</li>
