@@ -33,10 +33,27 @@
 <p class="eyebrow">Ingest / Release notes</p>
 <h1>A record of what’s new.</h1>
 <p>What changed in each version. Ingest can check for updates itself, from the Ingest menu, and automatic checking is off until you turn it on.</p>
-<nav class="release-index" aria-label="Versions"><a href="#v0.1.0">0.1.0 · Latest</a></nav>
+<nav class="release-index" aria-label="Versions"><a href="#v0.2.0">0.2.0 · Latest</a><a href="#v0.1.0">0.1.0</a></nav>
+
+<article class="release-entry" id="v0.2.0">
+<p class="eyebrow">Latest</p>
+<h2>0.2.0</h2>
+<h3>A new look, and a receipt that tells you when the card can leave.</h3>
+<ul>
+<li>Ingest is set in Archivo, with one type scale across every screen. Filenames, paths, counts, and byte readouts stay in monospace, so the machine keeps speaking in one voice and people in another.</li>
+<li>The inspector is sections rather than a stack of labels. The filename sits above a four-line block of what the camera recorded, and marks, stars, keywords, caption, and location each get their own space.</li>
+<li><kbd>⌘K</kbd> groups results under headings. A command that cannot run keeps its place and prints the reason beneath it, so the list never shortens under the arrow keys.</li>
+<li>Ingesting shows both of its stages at once. One band is what has come off the card; the solid band behind it is what has been read back, verified, and written under its final name. The card is safe to remove when the bar is one colour.</li>
+<li>Each destination reports its own count, and a green tick appears only once that destination holds every file.</li>
+<li>A run ends with a receipt: how many items, how fast, the first and last filename written, and what happened to the card.</li>
+<li>When a run does not finish cleanly, the receipt says how many files exist only on the card and offers to ingest those. Retrying is always a choice, never automatic — a bad read is the clearest evidence a card is failing, and that is worth knowing rather than quietly working around.</li>
+<li>Eject when done no longer fires if files were left behind. Ejecting is never blocked; the button is right there on the receipt.</li>
+<li>Every commit sheet names its action and its count: <em>Ingest 86 items</em> rather than <em>Ingest</em>.</li>
+</ul>
+<p>Memory cards are still never written to. Verification, the journal, and undo are unchanged — this release changes how the app looks and what it tells you, not what it does to your files.</p>
+</article>
 
 <article class="release-entry" id="v0.1.0">
-<p class="eyebrow">Latest</p>
 <h2>0.1.0</h2>
 <h3>The first release.</h3>
 <ul>
@@ -53,7 +70,7 @@
 <p>Memory cards are never written to. That rule holds however a card was opened, and it is not a preference.</p>
 </article>
 
-<p class="quiet">Updated <time datetime="2026-09-18">September 18, 2026</time></p>
+<p class="quiet">Updated <time datetime="2026-09-20">September 20, 2026</time></p>
 <p><a href="/ingest/">← Back to Ingest</a></p>
 </main>
 <footer class="family-footer">

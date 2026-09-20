@@ -49,4 +49,5 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.2.0 | 5 | September 20, 2026 | The Studio design pass: Archivo throughout, sectioned inspector, two-stage ingest bar, and a completion receipt that reports what is still only on the card. |
 | 0.1.0 | 4 | September 18, 2026 | First public release. Signed, notarized, stapled. macOS 15 or later, Apple silicon only. |
