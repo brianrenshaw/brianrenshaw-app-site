@@ -10,7 +10,7 @@
 <meta property="og:title" content="The Ingest guide | From a full card to a finished folder">
 <meta property="og:description" content="How Ingest browses a card at full speed, how culling, stacks, splits, and metadata work, and what happens during a verified copy.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/guide/">
-<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/grid-cull-0.2.1.webp">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/grid-cull-0.2.1-retina.webp">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
@@ -69,7 +69,7 @@
 <h2>Browsing, and why it is fast</h2>
 <p>A raw file is large and slow to develop. But every camera also writes a finished JPEG inside that raw file, so it has something to show you on its own screen. Ingest finds that JPEG and reads only those bytes. A Sony ARW is 76 MB; the preview Ingest reads out of it is a few hundred kilobytes, and the full size JPEG inside it is about six.</p>
 <p>That is the whole trick, and it is why arrowing through a card feels like arrowing through a folder of thumbnails. Nothing is developed, nothing is rendered ahead of time by a background process, and there is no import step before you can look.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/grid-cull-0.2.1.webp"><img src="/ingest/assets/grid-cull-0.2.1.webp" width="1029" height="646" loading="lazy" alt="The Ingest grid part way through a cull, with tagged photographs, stars, a colour label, bracket stack badges, and live counts in the sources list"></a><figcaption>A card part way through a cull. The counts on the left update as you mark. Photographs are demonstration images, credited on the support page.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/grid-cull-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/grid-cull-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The Ingest grid part way through a cull, with tagged photographs, stars, a colour label, bracket stack badges, and live counts in the sources list"></a><figcaption>A card part way through a cull. The counts on the left update as you mark. Photographs are demonstration images, credited on the support page.</figcaption></figure>
 <p>Arrow keys move, <kbd>⇧</kbd> extends the selection, and <kbd>⌘</kbd> with an arrow moves the focus ring without disturbing what is selected. <kbd>⌘+</kbd> and <kbd>⌘-</kbd> resize the thumbnails, and so does a pinch.</p>
 <p>Photographs are ordered by when they were taken, down to the fraction of a second, so two cameras at the same event interleave correctly. You can sort by filename instead from the palette.</p>
 <p>Which files are supported, and what happens to the rest, is on the <a href="/ingest/support/#formats">support page</a>.</p>
@@ -78,7 +78,7 @@
 <section id="preview" class="guide-section">
 <h2>The preview</h2>
 <p><kbd>Space</kbd> opens the large view, and <kbd>Space</kbd> again closes it. <kbd>⌘1</kbd>, <kbd>⌘2</kbd>, and <kbd>⌘3</kbd> switch between grid, preview, and both at once.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/preview-0.2.1.webp"><img src="/ingest/assets/preview-0.2.1.webp" width="1029" height="646" loading="lazy" alt="A photograph filling the preview with a filmstrip of the rest of the card along the bottom"></a><figcaption>The preview with the filmstrip. The marks you have made show on both.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/preview-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/preview-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="A photograph filling the preview with a filmstrip of the rest of the card along the bottom"></a><figcaption>The preview with the filmstrip. The marks you have made show on both.</figcaption></figure>
 <p><kbd>Z</kbd> goes to 100 per cent at the pointer, so whatever is under the cursor stays under the cursor, and <kbd>Z</kbd> again returns to fit. <kbd>⌥1</kbd>, <kbd>⌥2</kbd>, and <kbd>⌥4</kbd> are fixed zoom levels, and <kbd>F</kbd> fits. A pinch, a two finger drag, and a two finger double tap do the same things.</p>
 <p>The zoom is sticky as you move between photographs, which is the point: you set 100 per cent on an eye, then arrow through five frames and compare the same eye in each.</p>
 <p>At 100 per cent Ingest shows the full size JPEG from inside the raw file, which for a Sony body is the whole 9504 pixel frame. When a raw file's preview is smaller than its JPEG twin, Ingest uses the twin, and the information overlay tells you which pixels you are actually judging.</p>
@@ -87,7 +87,7 @@
 <section id="compare" class="guide-section">
 <h2>Compare and survey</h2>
 <p><kbd>C</kbd> puts two photographs side by side. <kbd>N</kbd> shows up to four. Zoom and pan are locked across the panes, so zooming into a face in one zooms into the same place in the others, which is the only way to judge two nearly identical frames.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/compare-0.2.1.webp"><img src="/ingest/assets/compare-0.2.1.webp" width="1029" height="646" loading="lazy" alt="Two photographs side by side in Compare with the zoom locked indicator"></a><figcaption>Compare, with the zoom locked across both panes. <kbd>⇧Z</kbd> frees them.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/compare-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/compare-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="Two photographs side by side in Compare with the zoom locked indicator"></a><figcaption>Compare, with the zoom locked across both panes. <kbd>⇧Z</kbd> frees them.</figcaption></figure>
 <p>Marking keys act on the highlighted pane, so you can reject the loser without leaving the comparison. <kbd>Esc</kbd> leaves.</p>
 <p>On a bracket set, <kbd>C</kbd> opens every frame at once, which is how you check whether the window is blown in all five.</p>
 </section>
@@ -95,7 +95,7 @@
 <section id="overlays" class="guide-section">
 <h2>Overlays</h2>
 <p><kbd>I</kbd> cycles the information panel: off, the exposure, then everything including the pixel size being displayed. That last part matters, because it tells you whether you are looking at a small preview or the full size image.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/preview-info-0.2.1.webp"><img src="/ingest/assets/preview-info-0.2.1.webp" width="1029" height="646" loading="lazy" alt="The preview with the information overlay showing camera, lens, shutter, aperture, ISO, and focal length"></a><figcaption>The information overlay, in the corner and out of the way.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/preview-info-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/preview-info-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The preview with the information overlay showing camera, lens, shutter, aperture, ISO, and focal length"></a><figcaption>The information overlay, in the corner and out of the way.</figcaption></figure>
 <div class="guide-table" tabindex="0" role="region" aria-label="Overlays">
 <table>
 <thead><tr><th scope="col">Key</th><th scope="col">Overlay</th></tr></thead>
@@ -114,7 +114,7 @@
 <section id="stacks" class="guide-section">
 <h2>Bracket stacks</h2>
 <p>A three or five shot bracket is one picture taken several times. Ingest recognises those sets and shows them as a single cell with a badge, so a card of a hundred brackets looks like twenty pictures instead of a hundred frames.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/stacks-0.2.1.webp"><img src="/ingest/assets/stacks-0.2.1.webp" width="1029" height="646" loading="lazy" alt="A grid with bracket stacks expanded, showing demonstration landscapes at different exposures"></a><figcaption>Expanded stacks reveal each frame. The exposure spread is visible in the thumbnails.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/stacks-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/stacks-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="A grid with bracket stacks expanded, showing demonstration landscapes at different exposures"></a><figcaption>Expanded stacks reveal each frame. The exposure spread is visible in the thumbnails.</figcaption></figure>
 <p><kbd>S</kbd> expands or collapses the set you are on, <kbd>⌥S</kbd> does all of them. A mark on a collapsed set applies to every frame in it, so tagging the bracket keeps the whole bracket.</p>
 <p>Sets are found two ways. Sony writes a flag saying the frames were an auto bracket, which is definitive. Fujifilm does not, so Ingest looks for frames taken a fraction of a second apart with the same aperture and ISO and a clean spread of shutter speeds. Sets of three, five, seven, and nine are recognised, and an incomplete set is still stacked and marked as incomplete rather than quietly hidden.</p>
 <p>If it gets one wrong, fix it. Select frames and combine them into a stack, or uncombine one. Your corrections are remembered for that folder. Stacking can be turned off per folder with <kbd>⌥⌘K</kbd>.</p>
@@ -148,7 +148,7 @@
 <section id="metadata" class="guide-section">
 <h2>Metadata</h2>
 <p>Ingest writes keywords, captions, titles, creator, copyright, ratings, colour labels, and GPS into the photographs, in the fields Adobe and Apple read. Not into a sidecar file, because Apple Photos ignores those.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/inspector-0.2.1.webp"><img src="/ingest/assets/inspector-0.2.1.webp" width="1029" height="646" loading="lazy" alt="The inspector showing a photograph's camera details, tag and reject buttons, stars, colour dots, keyword chips, a caption, and the location control"></a><figcaption>The inspector. Every field here can also be reached with a key.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/inspector-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/inspector-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The inspector showing a photograph's camera details, tag and reject buttons, stars, colour dots, and protected metadata fields on the source card"></a><figcaption>The inspector shows camera details and culling marks. Metadata fields stay protected on cards; ingest first to edit the copies.</figcaption></figure>
 <p>The inspector is the slow way, and it is open with <kbd>⌘I</kbd>. <kbd>K</kbd> puts the cursor straight in the keyword field, which completes from every keyword you have ever used. <kbd>⇧C</kbd> goes to the caption. <kbd>⇧K</kbd> takes back the keywords you just added, which is the one you will want after applying the wrong thing to forty photographs.</p>
 <p>Every write is checked. Ingest keeps the tool's backup of the file until it has read the file back and confirmed the new value, then removes the backup. If the read back does not match, the original is put back. That is why writing metadata to a hundred files takes a moment.</p>
 <p><strong>Never to a card.</strong> Whatever you type while culling a card is remembered and applied to the copies as they land, after they have been verified.</p>
@@ -192,7 +192,7 @@
 <section id="ingesting" class="guide-section">
 <h2>Ingesting</h2>
 <p><kbd>⌘G</kbd> opens the sheet. It fills itself in from what you did last and from the workspace you are in, so most of the time the answer is Return.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/ingest-dialog-0.2.1.webp"><img src="/ingest/assets/ingest-dialog-0.2.1.webp" width="640" height="651" loading="lazy" alt="The Ingest sheet showing scope tabs with counts, a destination, a subfolder template, a rename template with a live preview of the resulting filenames, and the file count and size"></a><figcaption>Everything the copy will do, before it does any of it.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/ingest-dialog-0.2.1-retina.webp"><img style="--capture-width:640px" src="/ingest/assets/ingest-dialog-0.2.1-retina.webp" width="1280" height="1302" loading="lazy" alt="The Ingest sheet showing scope tabs with counts, a destination, a subfolder template, a rename template with a live preview of the resulting filenames, and the file count and size"></a><figcaption>Everything the copy will do, before it does any of it.</figcaption></figure>
 <p>The tabs at the top choose what to copy, with the count on each one: tagged, selected, what is on screen, or everything. <kbd>⌃1</kbd> to <kbd>⌃4</kbd> pick them without the mouse. The cursor starts in the destination field, where you can type part of a favourite's name.</p>
 <p>Below that: an optional second destination, a subfolder named by template, renaming with a live preview of the actual filenames, which of a RAW and JPEG pair to take, a metadata preset to apply to the copies, and what to do with the card afterwards.</p>
 <p>What happens when you press Ingest:</p>
@@ -205,8 +205,8 @@
 <li>A record of the job is saved, so Ingest can tell you later which photographs from this card you have already taken.</li>
 <li>Only then, if you asked for it, are files deleted from the card, and only the ones whose copies verified everywhere.</li>
 </ul>
-<figure class="desktop-shot"><a href="/ingest/assets/dest-grid-0.2.1.webp"><img src="/ingest/assets/dest-grid-0.2.1.webp" width="1029" height="646" loading="lazy" alt="The destination folder open in Ingest after a copy, showing renamed files with their stars"></a><figcaption>The destination, opened straight after the copy. Renaming, stars, and metadata all arrived with the files.</figcaption></figure>
-<figure class="desktop-shot"><a href="/ingest/assets/receipt-0.2.1.webp"><img src="/ingest/assets/receipt-0.2.1.webp" width="1029" height="646" loading="lazy" alt="The completion receipt confirms 24 demo items ingested, verified filenames, and originals kept"></a><figcaption>The receipt reports verified results and whether the originals were kept. This small demonstration copy is not a transfer-speed benchmark.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/dest-grid-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/dest-grid-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The destination folder open in Ingest after a copy, showing renamed files with their stars"></a><figcaption>The destination, opened straight after the copy. Renaming, stars, and metadata all arrived with the files.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/receipt-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/receipt-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The completion receipt confirms 24 demo items ingested, verified filenames, and originals kept"></a><figcaption>The receipt reports verified results and whether the originals were kept. This small demonstration copy is not a transfer-speed benchmark.</figcaption></figure>
 <p>The progress strip shows copied files and verified, published files separately. Each destination gets a completion check only when it holds every planned file. If an ingest stops early, the receipt identifies what remains only on the card and offers a deliberate retry.</p>
 <p>Cancelling keeps what was already copied and verified, and the sequence number only advances by the files actually named. A card that was half emptied last time is not a problem either: the photographs you already took are marked, and the New Since Last Import split shows you the rest.</p>
 </section>
@@ -220,14 +220,14 @@
 <section id="workspaces" class="guide-section">
 <h2>Workspaces</h2>
 <p>Different shoots want different defaults. A workspace is a named set of them: the view you start in, the sort, the thumbnail size, whether brackets stack and pairs combine, and the name template, subfolder, metadata preset, and destination the Ingest sheet should start with.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/settings-workspaces-0.2.1.webp"><img src="/ingest/assets/settings-workspaces-0.2.1.webp" width="768" height="964" loading="lazy" alt="The Workspaces settings page showing view defaults, ingest defaults, and the list of cameras that switch to this workspace"></a><figcaption>Three workspaces ship with the app. The camera list at the bottom is what makes switching automatic.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/settings-workspaces-0.2.1-retina.webp"><img style="--capture-width:1028px" src="/ingest/assets/settings-workspaces-0.2.1-retina.webp" width="2056" height="2580" loading="lazy" alt="The Workspaces settings page showing view defaults, ingest defaults, and the list of cameras that switch to this workspace"></a><figcaption>Three workspaces ship with the app. The camera list at the bottom is what makes switching automatic.</figcaption></figure>
 <p><kbd>⌃1</kbd> to <kbd>⌃9</kbd> switch between them. Better than that, each one can list the cameras it belongs to. Open a card and Ingest looks at what most of the photographs came from, and switches for you. A card from the Sony arrives as a job, a card from the Fuji arrives as family photographs, and you did nothing.</p>
 </section>
 
 <section id="palette" class="guide-section">
 <h2>The palette</h2>
 <p><kbd>⌘K</kbd> opens a search field over everything the app can do. Type a few letters of a command, an alias, or a category. Arrow keys move, Return runs.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/palette-0.2.1.webp"><img src="/ingest/assets/palette-0.2.1.webp" width="1029" height="646" loading="lazy" alt="The command palette showing commands with their keys, and a disabled command with its reason underneath"></a><figcaption>Before you type, the palette suggests what fits what you have selected.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/palette-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/palette-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The command palette showing contextual commands, shortcut labels, the highlighted Ingest action, and the Actions button"></a><figcaption>Before you type, the palette suggests what fits what you have selected.</figcaption></figure>
 <p>Every row shows its key, so the palette teaches the keyboard while you use it. Commands that cannot run right now stay visible with the reason underneath, rather than vanishing and leaving you wondering. <kbd>⇧⌘P</kbd> pins a command to the top for good.</p>
 <p>The footer names the command Return will run. Click <strong>Actions</strong> or press <kbd>⌘K</kbd> again to pin or unpin the highlighted command, copy its link, or configure its shortcut. Configure Shortcut opens that exact command in Settings. Copy Link keeps the palette open and confirms the copy. <kbd>Esc</kbd> closes Actions first, then the palette and returns focus to where you were.</p>
 <p>Your favourites, workspaces, splits, presets, actions, and recent folders are all in there too, so the palette is a way to go somewhere as well as a way to do something. <kbd>?</kbd> shows the shortcut sheet, and holding <kbd>⌘</kbd> for a moment shows the keys that work where you are standing.</p>
@@ -236,7 +236,7 @@
 <section id="settings" class="guide-section">
 <h2>Settings</h2>
 <p><kbd>⌘,</kbd> opens a window with eleven pages and a search field. Everything the app stores is in there with a real control: folder and app choosers instead of typed paths, pickers instead of remembered strings, live previews for templates, snippets, and splits, and drag to reorder wherever the order decides a number key.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/settings-culling-0.2.1.webp"><img src="/ingest/assets/settings-culling-0.2.1.webp" width="980" height="700" loading="lazy" alt="The Culling settings page with switches for marking behaviour, new folder defaults, and writing stars into files, plus a locked row stating that memory cards are never modified"></a><figcaption>The Culling page. The last row has a lock rather than a switch, because it is not a preference.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/settings-culling-0.2.1-retina.webp"><img style="--capture-width:980px" src="/ingest/assets/settings-culling-0.2.1-retina.webp" width="1960" height="1400" loading="lazy" alt="The Culling settings page with switches for marking behaviour, new folder defaults, and writing stars into files, plus a locked row stating that memory cards are never modified"></a><figcaption>The Culling page. The last row has a lock rather than a switch, because it is not a preference.</figcaption></figure>
 <p>Edits apply as you make them, the way a Mac app should, and anything destructive is undoable with <kbd>⌘Z</kbd> while the window is open. Settings, Advanced exports the whole configuration as one file to carry to another Mac, described on the <a href="/ingest/automation/#settings-file">automation page</a>.</p>
 <p>There is one row that is not a setting. On the Culling page, <em>Memory cards are never modified</em> has a lock beside it instead of a switch. It is listed so that the rule is visible, not so that it can be turned off.</p>
 </section>

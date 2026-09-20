@@ -10,7 +10,7 @@
 <meta property="og:title" content="Ingest naming | Tokens, the sequence number, and quick entry">
 <meta property="og:description" content="Every token you can put in an Ingest name template, how the never repeating sequence number works, and the one line syntax for keywords, ratings, captions, and locations.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/templates/">
-<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/settings-renaming-0.2.1.webp">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/settings-renaming-0.2.1-retina.webp">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
@@ -49,7 +49,7 @@
 <p>Anything in braces is replaced. Anything else is kept as you typed it. So <code>{yyyy}{mm}{dd}-{seqn}</code> becomes <code>20260912-0001</code>, and <code>Wedding-{seq}</code> becomes <code>Wedding-1</code>.</p>
 <p>Some tokens take an argument after a colon. <code>{seqn:4}</code> sets the width of the number, <code>{date:MMMM d, yyyy}</code> sets a date format. To write a real brace, double it: <code>{{</code> and <code>}}</code>.</p>
 <p>Templates are used in four places: renaming during ingest, renaming in place with <kbd>⌘R</kbd>, naming the subfolder that ingest creates, and filling in captions and titles in a metadata preset. Settings, Renaming keeps your saved templates and shows a live example as you type.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/settings-renaming-0.2.1.webp"><img src="/ingest/assets/settings-renaming-0.2.1.webp" width="980" height="700" loading="lazy" alt="The Renaming settings page with a template list, the pattern field, case and separator choices, and a live preview of three filenames"></a><figcaption>The preview renders three sample photographs, so a pattern is checked before it names anything real.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/settings-renaming-0.2.1-retina.webp"><img style="--capture-width:980px" src="/ingest/assets/settings-renaming-0.2.1-retina.webp" width="1960" height="1400" loading="lazy" alt="The Renaming settings page with a template list, the pattern field, case and separator choices, and a live preview of three filenames"></a><figcaption>The preview renders three sample photographs, so a pattern is checked before it names anything real.</figcaption></figure>
 <p>A template also decides letter case, what spaces turn into, and the case of the extension. The default turns spaces into hyphens and lowercases the extension, which is what keeps filenames easy to sort and safe to send anywhere.</p>
 <p>A token that has no value disappears, and takes the separator next to it with it, so a missing address does not leave a stray hyphen at the front of every name.</p>
 </section>
@@ -174,7 +174,7 @@
 <section id="quick-entry" class="guide-section">
 <h2>Quick entry</h2>
 <p>Press <kbd>Q</kbd> and type one line. Ingest reads it and applies all of it at once, to everything selected. The order does not matter and most of it is optional.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/quick-entry-0.2.1.webp"><img src="/ingest/assets/quick-entry-0.2.1.webp" width="640" height="85" loading="lazy" alt="The quick entry bar showing an example line with keywords, a rating, a colour, a quoted caption, and a preset"></a><figcaption>As you type, the line beneath the field shows how Ingest interpreted the keywords, stars, colour, caption, and preset.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/quick-entry-0.2.1-retina.webp"><img style="--capture-width:640px" src="/ingest/assets/quick-entry-0.2.1-retina.webp" width="1280" height="170" loading="lazy" alt="The quick entry bar showing an example line with keywords, a rating, a colour, a quoted caption, and a preset"></a><figcaption>As you type, the line beneath the field shows how Ingest interpreted the keywords, stars, colour, caption, and preset.</figcaption></figure>
 <div class="guide-table" tabindex="0" role="region" aria-label="Quick entry syntax">
 <table>
 <thead><tr><th scope="col">You type</th><th scope="col">It means</th></tr></thead>

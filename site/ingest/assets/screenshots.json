@@ -1,0 +1,101 @@
+{
+  "capture": "macOS screencapture -x -o -a -l WINDOW_ID; cursor excluded; native 2x; lossless WebP; Ingest 0.2.1 (6)",
+  "images": {
+    "compare-0.2.1-retina.webp": {
+      "width": 2444,
+      "height": 1562,
+      "displayWidth": 1222,
+      "displayHeight": 781
+    },
+    "dest-grid-0.2.1-retina.webp": {
+      "width": 2444,
+      "height": 1562,
+      "displayWidth": 1222,
+      "displayHeight": 781
+    },
+    "grid-cull-0.2.1-retina.webp": {
+      "width": 2444,
+      "height": 1562,
+      "displayWidth": 1222,
+      "displayHeight": 781
+    },
+    "ingest-dialog-0.2.1-retina.webp": {
+      "width": 1280,
+      "height": 1302,
+      "displayWidth": 640,
+      "displayHeight": 651
+    },
+    "inspector-0.2.1-retina.webp": {
+      "width": 2444,
+      "height": 1562,
+      "displayWidth": 1222,
+      "displayHeight": 781
+    },
+    "palette-0.2.1-retina.webp": {
+      "width": 2444,
+      "height": 1562,
+      "displayWidth": 1222,
+      "displayHeight": 781
+    },
+    "preview-0.2.1-retina.webp": {
+      "width": 2444,
+      "height": 1562,
+      "displayWidth": 1222,
+      "displayHeight": 781
+    },
+    "preview-info-0.2.1-retina.webp": {
+      "width": 2444,
+      "height": 1562,
+      "displayWidth": 1222,
+      "displayHeight": 781
+    },
+    "quick-entry-0.2.1-retina.webp": {
+      "width": 1280,
+      "height": 170,
+      "displayWidth": 640,
+      "displayHeight": 85
+    },
+    "receipt-0.2.1-retina.webp": {
+      "width": 2444,
+      "height": 1562,
+      "displayWidth": 1222,
+      "displayHeight": 781
+    },
+    "settings-actions-0.2.1-retina.webp": {
+      "width": 1960,
+      "height": 1400,
+      "displayWidth": 980,
+      "displayHeight": 700
+    },
+    "settings-culling-0.2.1-retina.webp": {
+      "width": 1960,
+      "height": 1400,
+      "displayWidth": 980,
+      "displayHeight": 700
+    },
+    "settings-renaming-0.2.1-retina.webp": {
+      "width": 1960,
+      "height": 1400,
+      "displayWidth": 980,
+      "displayHeight": 700
+    },
+    "settings-shortcuts-0.2.1-retina.webp": {
+      "width": 1960,
+      "height": 1400,
+      "displayWidth": 980,
+      "displayHeight": 700
+    },
+    "settings-workspaces-0.2.1-retina.webp": {
+      "width": 2056,
+      "height": 2580,
+      "displayWidth": 1028,
+      "displayHeight": 1290
+    },
+    "stacks-0.2.1-retina.webp": {
+      "width": 2444,
+      "height": 1562,
+      "displayWidth": 1222,
+      "displayHeight": 781
+    }
+  }
+}

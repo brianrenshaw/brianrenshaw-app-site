@@ -67,3 +67,17 @@ The Sparkle feed for Ingest is `site/ingest/appcast.xml`, and every shipped buil
 Anchor ids under `/ingest/` are a contract. The app's Help menu links to `/ingest/guide/`, `/ingest/shortcuts/`, `/ingest/release-notes/`, and `/ingest/support/`, the appcast links to `/ingest/release-notes/#vX.Y.Z`, and the pages link to each other's sections. Rename a section heading if you like, but leave its `id` alone.
 
 Facts that live in exactly one place, because the site has no includes: shortcuts on `/ingest/shortcuts/`, name tokens and quick entry on `/ingest/templates/`, requirements and file formats on `/ingest/support/`, the URL scheme and the settings file on `/ingest/automation/`, network behaviour on `/ingest/privacy/`. Everything else links to those. The shortcut tables are transcribed from `Sources/Ingest/Commands/CommandCatalog.swift`; diff them against that file at each release, because the link checker cannot catch a wrong key.
+
+### Ingest screenshot quality
+
+Use macOS native `screencapture -x -o -a -l WINDOW_ID capture.png` for app screenshots.
+Do not include `-C` (cursor). Use an isolated demo library and capture the released app
+at native Retina resolution. Encode lossless WebP without resizing; verify decoded
+pixels match the PNG. Keep fonts, colors, and native controls unchanged.
+
+`site/ingest/assets/screenshots.json` records physical and logical dimensions. Every
+screenshot limits its CSS width to the native logical width, preserving at least 2×
+density. Fresh filenames invalidate cached captures; legacy aliases receive the same
+new bytes. Run `python3 scripts/check_ingest_screenshots.py` and visually inspect all
+captures and desktop/mobile pages before pushing. CI checks encoding, dimensions,
+aliases, and display-size limits; cursor absence still requires visual review.
