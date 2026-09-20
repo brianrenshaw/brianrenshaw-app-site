@@ -3,6 +3,16 @@
     <channel>
         <title>Ingest</title>
         <item>
+            <title>0.2.1</title>
+            <pubDate>Sun, 20 Sep 2026 12:24:43 -0400</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.2.1/Ingest-0.2.1.dmg" length="11968766" type="application/octet-stream" sparkle:edSignature="MZroMfNFHj/maeb/btvuL7Kgu87BLo3sM4vrjeiUQLqTXCifm1DUqQxZUAdXhCAZN0dhKpYtPiFACHDkT3AdAQ==" />
+            <sparkle:releaseNotesLink>https://brianrenshaw.app/ingest/release-notes/#v0.2.1</sparkle:releaseNotesLink>
+        </item>
+        <item>
             <title>0.2.0</title>
             <pubDate>Sun, 20 Sep 2026 06:38:58 -0400</pubDate>
             <sparkle:version>5</sparkle:version>
