@@ -3,21 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ingest | Empty the card without the wait</title>
-<meta name="description" content="A keyboard-first Mac app for emptying a camera card. Every raw file on screen instantly, one key per decision, and a copy that is checked before anything is deleted.">
+<title>Ingest | Import. Cull. Manage.</title>
+<meta name="description" content="Quickly import, cull, and organize your photo files in a modern Mac app. Search commands, open favorite folders, and apply presets from the Ingest command bar.">
 <link rel="canonical" href="https://brianrenshaw.app/ingest/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Ingest | Empty the card without the wait">
-<meta property="og:description" content="A keyboard-first Mac app for emptying a camera card. Every raw file on screen instantly, one key per decision, and a copy that is checked before anything is deleted.">
+<meta property="og:title" content="Ingest | Import. Cull. Manage.">
+<meta property="og:description" content="Quickly import, cull, and organize your photo files in a modern Mac app. Search commands, open favorite folders, and apply presets from the Ingest command bar.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/">
-<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/grid-cull-0.2.1-retina.webp">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/palette-0.2.1-retina.webp">
+<meta property="og:image:alt" content="Ingest’s command bar open over a grid of photos, with commands, favorites, and presets at hand">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
 <link rel="stylesheet" href="/ingest/assets/site.css">
+<link rel="stylesheet" href="/ingest/assets/landing.css">
 </head>
-<body class="app-ingest">
+<body class="app-ingest ingest-home">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="family-header">
 <a class="family-brand" href="/ingest/">
@@ -25,94 +27,117 @@
 <nav aria-label="Main navigation">
 <a class="portfolio-home-link" href="/">← Brian’s homepage</a>
 <a href="/ingest/guide/">Guide</a>
-<a href="/ingest/shortcuts/">Shortcuts</a>
 <a href="/ingest/support/">Support</a>
 </nav>
 </header>
 <main id="main" tabindex="-1" class="app-landing">
-<section class="app-hero">
-<div>
-<p class="eyebrow">For photographers who shoot Sony and Fujifilm · macOS</p>
-<h1>Empty the card without the wait.</h1>
-<p class="intro">A card of raw files takes longer to look through than it took to shoot. Ingest reads the preview your camera already put inside each file, so the whole card is on screen at once. Tag the keepers, copy them out named the way you want, and never touch the card itself.</p>
+<section class="ingest-hero" aria-labelledby="hero-title">
+<p class="eyebrow">Modern photo management for Mac</p>
+<h1 id="hero-title">Import. Cull. Manage.</h1>
+<p class="intro">Import a shoot, compare frames, and organize your files. Press <kbd>⌘K</kbd> to find commands, open favorite folders, and apply presets.</p>
 <div class="actions">
 <a class="primary-action" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.2.1/Ingest-0.2.1.dmg">Download for Mac <span aria-hidden="true">↗</span></a>
-<a class="secondary-action" href="/ingest/quick-start/">Five minute quick start →</a>
+<a class="secondary-action" href="#workflow">Explore the workflow <span aria-hidden="true">↓</span></a>
 </div>
-<p class="quiet">macOS 15 or later · Apple silicon · No account, no subscription</p>
-<p class="preview-note"><a href="/ingest/release-notes/#v0.2.1">Version 0.2.1</a>. This is an early release: the shape of the app is settled and it is what I use on my own work, but it is young.</p>
+<div class="hero-details" id="compatibility">
+<p>macOS 15+ · Apple silicon · <a href="/ingest/release-notes/#v0.2.1">0.2.1 / Working beta</a></p>
+<p>Sony ARW &amp; Fujifilm RAF previews. Also JPEG, HEIC &amp; video. <a href="/ingest/support/#formats">File support →</a></p>
 </div>
-<figure class="studio-mark">
-<img src="/ingest/assets/icon.png" width="1024" height="1024" alt="The Ingest app icon, an amber memory card with a downward arrow">
-<figcaption>Card in. Keepers out. Nothing written back.</figcaption>
-</figure>
+<p class="beta-note">Ingest is a working beta. I use it for my own work and am still developing it for a broader audience.</p>
 </section>
 
-<figure class="desktop-shot">
-<a href="/ingest/assets/grid-cull-0.2.1-retina.webp">
-<img style="--capture-width:1222px" src="/ingest/assets/grid-cull-0.2.1-retina.webp" width="2444" height="1562" alt="Ingest showing a card part way through a cull, with tagged photographs, stars, a colour label, bracket stack badges, and live counts for each saved view">
+<figure class="desktop-shot hero-capture">
+<a href="/ingest/assets/palette-0.2.1-retina.webp" aria-label="View the Ingest command bar screenshot at full resolution">
+<img style="--capture-width:1222px" src="/ingest/assets/palette-0.2.1-retina.webp" width="2444" height="1562" fetchpriority="high" alt="Ingest’s command bar open over a photo grid, showing Ingest, Tag, Quick Entry, and Rename Photos alongside their shortcuts">
 </a>
-<figcaption>A card part way through a cull. The counts on the left move as you mark. The photographs are demonstration images, not client work.</figcaption>
+<figcaption><span>Search commands, favorites, and presets.</span><span><kbd>⌘K</kbd> Command bar</span></figcaption>
 </figure>
 
-<section class="features" aria-label="What Ingest does">
-<article class="feature" id="see">
-<span class="eyebrow">01 / See</span>
-<h2>Every frame, the moment the card goes in.</h2>
-<p>Ingest never develops a raw file. It finds the JPEG the camera already wrote inside the ARW or RAF and shows you that, so arrowing through a full card feels like arrowing through thumbnails. No import step, no waiting for a background process to catch up.</p>
-</article>
-<article class="feature" id="cull">
-<span class="eyebrow">02 / Cull</span>
-<h2>Decide with your hands on the keys.</h2>
-<p>Tag, reject, rate, and label without reaching for the mouse. Compare two frames with the zoom locked together, survey a bracket set at once, and let each set of exposures collapse into a single thumbnail. Undo works on all of it.</p>
-</article>
-<article class="feature" id="copy">
-<span class="eyebrow">03 / Ingest</span>
-<h2>One copy, checked, named on the way out.</h2>
-<p>Ingest copies to one folder or two, reads each copy back and compares it to the original, and only then gives it its real name. It renames with a counter that never repeats, and writes the keywords, captions, and locations that Lightroom and Apple Photos read.</p>
-</article>
-</section>
-
-<section class="studio-preview" id="keyboard">
+<section class="command-section" id="keyboard" aria-labelledby="command-title">
 <div>
-<p class="eyebrow">Built for the keyboard</p>
-<h2>Every command has a key, or a name you can type.</h2>
-<p>Press <kbd>⌘K</kbd> and type a few letters. Every command in the app is there, with its key printed beside it, so the palette teaches the keyboard while you use it. Commands that cannot run right now stay visible and say why, instead of disappearing.</p>
-<p>Settings lists the commands and their keys. Click a shortcut or focus it with Tab, then press Return to record a new one. Navigation keys and standard Mac editing shortcuts stay protected; the app explains conflicts.</p>
-<a href="/ingest/shortcuts/">See every shortcut →</a>
+<p class="eyebrow">The command bar</p>
+<h2 id="command-title">Find and run commands with <kbd>⌘K</kbd>.</h2>
+<p>Type a few letters to find a command, favorite folder, preset, or workspace. Use the arrow keys to select a result and Return to open or run it.</p>
+<p>Each command shows its keyboard shortcut. You can pin frequently used commands to the top of the list.</p>
+<a class="text-link" href="/ingest/shortcuts/#palette">Explore the command reference <span aria-hidden="true">→</span></a>
 </div>
-<figure class="desktop-shot">
-<a href="/ingest/assets/palette-0.2.1-retina.webp">
-<img style="--capture-width:1222px" src="/ingest/assets/palette-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The Ingest command palette open over the grid, with keyboard shortcuts on the right of each row">
-</a>
-</figure>
+<dl class="command-examples" aria-label="Commands you can find in Ingest">
+<div><dt>Rename Photos</dt><dd>Rename selected files using a naming template.</dd></div>
+<div><dt>Show Only Tagged</dt><dd>Filter the view to photos you have tagged.</dd></div>
+<div><dt>Add Keywords</dt><dd>Add keywords to the selected photos.</dd></div>
+</dl>
 </section>
 
-<section class="studio-preview" id="naming">
+<section id="workflow" class="workflow" aria-labelledby="workflow-title">
+<div class="workflow-heading" id="see">
+<div><p class="eyebrow">Your photo files</p><h2 id="workflow-title">On a card or already in a folder.</h2></div>
+<nav aria-label="Explore Ingest’s capabilities"><a href="#copy">Import <span aria-hidden="true">↓</span></a><a href="#cull">Cull <span aria-hidden="true">↓</span></a><a href="#naming">Manage <span aria-hidden="true">↓</span></a></nav>
+</div>
+
+<article class="workflow-feature import-feature" id="copy">
+<div class="feature-copy">
+<p class="eyebrow">Import</p>
+<h2>Import photos with names and metadata.</h2>
+<p>Choose which photos to import and where to save them. Preview their filenames and select a metadata preset before copying. Ingest verifies each copy against its source, then applies names and metadata.</p>
+<p>Save your destinations and naming preferences so they are ready for the next shoot.</p>
+<a class="text-link" href="/ingest/guide/#ingesting">A closer look at importing <span aria-hidden="true">→</span></a>
+</div>
+<figure class="desktop-shot">
+<a href="/ingest/assets/ingest-dialog-0.2.1-retina.webp" aria-label="View the import settings screenshot at full resolution"><img style="--capture-width:640px" src="/ingest/assets/ingest-dialog-0.2.1-retina.webp" width="1280" height="1302" loading="lazy" alt="Ingest’s import sheet with destination, subfolder, naming template, and a preview of the resulting filenames"></a>
+<figcaption>Choose a destination and preview filenames before importing.</figcaption>
+</figure>
+</article>
+
+<article class="workflow-feature reverse-feature" id="cull">
+<div class="feature-copy">
+<p class="eyebrow">Cull</p>
+<h2>Compare, rate, and select photos.</h2>
+<p>Browse quickly, compare similar frames side by side, and make your selections with the keyboard. Tag, reject, rate, and label as you go.</p>
+<p>Zoom and pan stay synchronized between photos in Compare view. Filter by tags or ratings to review your selections.</p>
+<a class="text-link" href="/ingest/guide/#culling">A closer look at culling <span aria-hidden="true">→</span></a>
+</div>
+<figure class="desktop-shot">
+<a href="/ingest/assets/compare-0.2.1-retina.webp" aria-label="View the photo comparison screenshot at full resolution"><img style="--capture-width:1222px" src="/ingest/assets/compare-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="Two photos side by side in Ingest’s Compare view, with synchronized zoom and a filmstrip below"></a>
+<figcaption>Compare two photos with synchronized zoom.</figcaption>
+</figure>
+</article>
+
+<article class="workflow-feature" id="naming">
+<div class="feature-copy">
+<p class="eyebrow">Manage</p>
+<h2>Organize photos in existing folders.</h2>
+<p>Open a folder on your Mac to browse and manage its photos. Rename files, add keywords and captions, and organize photos with ratings and labels.</p>
+<p>Return to favorite folders, save filtered views, and switch workspaces for different kinds of shoots. Find them by name in the command bar.</p>
+<a class="text-link" href="/ingest/guide/#sources">Explore folders and photo management <span aria-hidden="true">→</span></a>
+</div>
+<figure class="desktop-shot">
+<a href="/ingest/assets/dest-grid-0.2.1-retina.webp" aria-label="View the organized photo folder screenshot at full resolution"><img style="--capture-width:1222px" src="/ingest/assets/dest-grid-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="A destination folder open in Ingest, with renamed photo files and their star ratings visible in the grid"></a>
+<figcaption>Renamed files and star ratings in the destination folder.</figcaption>
+</figure>
+</article>
+</section>
+
+<section class="ingest-assurance" aria-labelledby="alternative-title">
 <div>
-<p class="eyebrow">Names that stay sorted</p>
-<h2>A number that never repeats, and a preview before it writes.</h2>
-<p>Name templates are text plus tokens in braces, the same spelling you already know. <code>{seqn}</code> is one counter across every job you ever run, so files from three cards land in one folder without a collision. The sheet shows the real filenames before it copies anything.</p>
-<p>The same tokens name the subfolder and fill in captions, so a preset that writes the address on every photograph of a job needs editing once, ever.</p>
-<a href="/ingest/templates/">Tokens and quick entry →</a>
+<h2 id="alternative-title">About Ingest</h2>
+<p>I’m building Ingest as a modern alternative to Photo Mechanic for importing, culling, and managing photo files.</p>
 </div>
-<figure class="desktop-shot">
-<a href="/ingest/assets/ingest-dialog-0.2.1-retina.webp">
-<img style="--capture-width:640px" src="/ingest/assets/ingest-dialog-0.2.1-retina.webp" width="1280" height="1302" loading="lazy" alt="The Ingest sheet showing the destination, a subfolder template, a rename template, and a live preview of the resulting filenames">
-</a>
-</figure>
+<ul class="assurance-links">
+<li><strong>Copies checked against the source.</strong> <a href="/ingest/guide/#ingesting">How verification works →</a></li>
+<li><strong>Card metadata and filenames stay untouched.</strong> <a href="/ingest/support/#cards">How cards are protected →</a></li>
+<li><strong>Your photos stay on your Mac.</strong> No account or analytics. <a href="/ingest/privacy/">Read the privacy details →</a></li>
+</ul>
 </section>
 
-<section class="closing" id="closing">
-<p class="eyebrow">The part that matters at two in the morning</p>
-<h2>The card is never written to.</h2>
-<p>Ingest does not write metadata to a card, does not rename on a card, and does not delete from one except when you ask by name, after the copies have been read back and matched against the originals. That holds however you opened it, including a folder that happens to live on a card. It is not a preference, and Settings shows it with a lock instead of a switch.</p>
-<p>Everything happens on your Mac. There is no account, no analytics, and nothing of yours is uploaded anywhere. Two features touch the network and the <a href="/ingest/privacy/">privacy page</a> names both.</p>
+<section class="ingest-closing" id="closing" aria-labelledby="closing-title">
+<div><p class="eyebrow">Ingest for Mac</p><h2 id="closing-title">Download the working beta.</h2></div>
+<div>
 <div class="actions">
-<a class="primary-action" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.2.1/Ingest-0.2.1.dmg">Download for Mac ↗</a>
-<a href="/ingest/guide/">Read the guide →</a>
+<a class="primary-action" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.2.1/Ingest-0.2.1.dmg">Download for Mac <span aria-hidden="true">↗</span></a>
+<a class="secondary-action" href="/ingest/quick-start/">Read the quick start <span aria-hidden="true">→</span></a>
 </div>
-<p class="quiet" id="compatibility">Ingest needs macOS 15 or later and an Apple silicon Mac. It reads Sony ARW and Fujifilm RAF at full speed, along with JPEG, HEIC, and video. <a href="/ingest/support/#formats">What it does with everything else</a>.</p>
+<p class="quiet">macOS 15+ · Apple silicon · Version 0.2.1 · Working beta</p>
+</div>
 </section>
 </main>
 <footer class="family-footer">

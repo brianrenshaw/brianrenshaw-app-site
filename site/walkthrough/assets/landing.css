@@ -1,0 +1,75 @@
+/* Walkthrough landing page. Reference pages keep their document layout. */
+@font-face{font-family:Walkthrough Archivo;src:url('../../where-do-we-eat/assets/fonts/archivo.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+.walkthrough-home{font-family:Walkthrough Archivo,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.walkthrough-home .family-header{padding-block:16px;border-bottom:0}
+.walkthrough-home .family-header nav a{color:var(--muted);text-decoration:none}
+.walkthrough-home .family-header nav a:hover{color:var(--ink)}
+.walkthrough-home .eyebrow{color:var(--accent);font-size:11px;letter-spacing:.13em;margin-bottom:18px}
+.walkthrough-home h2{font-size:clamp(28px,3.2vw,40px);line-height:1.15;font-weight:600;letter-spacing:-.035em;text-wrap:balance}
+.walkthrough-home p{color:var(--muted)}
+.walkthrough-home section,.walkthrough-home [id]{scroll-margin-top:28px}
+.walkthrough-home .walkthrough-hero{padding:44px 0 32px}
+.walkthrough-home h1{font-size:clamp(42px,5.6vw,68px);line-height:1.08;font-weight:600;letter-spacing:-.045em;max-width:22ch;margin:0 0 24px;text-wrap:balance}
+.walkthrough-home .intro{max-width:64ch;font-size:19px;line-height:1.65;margin-bottom:0}
+.walkthrough-home .actions{display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;gap:16px 28px;margin:26px 0 18px}
+.walkthrough-home .primary-action{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:48px;border-radius:7px;padding:13px 20px}
+.walkthrough-home .primary-action:hover{background:var(--ink);color:var(--bg)}
+.walkthrough-home .secondary-action{color:var(--ink);text-decoration:none;padding:10px 0;min-height:44px}
+.walkthrough-home .secondary-action span,.walkthrough-home .text-link span{color:var(--accent);margin-left:8px}
+.walkthrough-home .secondary-action:hover,.walkthrough-home .text-link:hover{text-decoration:underline}
+.walkthrough-home .hero-details{font-size:12px;line-height:1.6}
+.walkthrough-home .hero-details p{margin:5px 0}
+.walkthrough-home .hero-details a{color:inherit}
+.walkthrough-home .desktop-shot{padding:8px;background:var(--surface);border:1px solid var(--line);border-radius:12px;min-width:0}
+.walkthrough-home .desktop-shot>a{display:block;border-radius:6px}
+.walkthrough-home .desktop-shot img{border-radius:6px;max-width:var(--capture-width,100%);margin-inline:auto}
+.walkthrough-home .desktop-shot figcaption{padding:14px 10px 8px;color:var(--muted);font-size:12px;line-height:1.5}
+.walkthrough-home .organize-section{padding:60px 0;border-bottom:1px solid var(--line)}
+.walkthrough-home .section-heading h2{margin-bottom:32px}
+.walkthrough-home .organize-details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.walkthrough-home .organize-details h3{font-size:20px;font-weight:550;line-height:1.3;letter-spacing:-.02em;margin-bottom:14px}
+.walkthrough-home .organize-details p{font-size:15px;line-height:1.7}
+.walkthrough-home .text-link{display:inline-block;padding:8px 0;color:var(--ink);font-size:14px;text-decoration:none}
+.walkthrough-home .walkthrough-feature{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);grid-template-areas:"copy image";align-items:center;gap:56px;padding:64px 0;border-bottom:1px solid var(--line)}
+.walkthrough-home .feature-copy{grid-area:copy;max-width:46ch}
+.walkthrough-home .feature-copy h2{max-width:19ch;margin-bottom:22px}
+.walkthrough-home .feature-copy p{font-size:16px;line-height:1.7}
+.walkthrough-home .feature-copy h2 kbd{font-size:.7em;letter-spacing:-.03em;vertical-align:.06em}
+.walkthrough-home .walkthrough-feature>.desktop-shot{grid-area:image;width:100%}
+.walkthrough-home .reverse-feature{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);grid-template-areas:"image copy"}
+.walkthrough-home .export-feature>.desktop-shot{max-width:580px;justify-self:center}
+.walkthrough-home .working-details{display:grid;grid-template-columns:1fr 1fr;gap:80px;padding:56px 0;border-bottom:1px solid var(--line)}
+.walkthrough-home .working-details h2{font-size:26px;margin-bottom:18px}
+.walkthrough-home .working-details p{font-size:15px;line-height:1.7;max-width:54ch}
+.walkthrough-home .walkthrough-closing{display:flex;align-items:center;justify-content:space-between;gap:36px;padding:64px 0 24px}
+.walkthrough-home .walkthrough-closing h2{max-width:19ch;margin:0 0 18px}
+.walkthrough-home .walkthrough-closing .actions{margin:0}
+.walkthrough-home .walkthrough-closing .quiet{margin:0}
+.walkthrough-home .family-footer{margin-top:48px}
+@media(max-width:1000px){
+ .walkthrough-home .walkthrough-feature{gap:32px}
+ .walkthrough-home .organize-details{gap:24px}
+ .walkthrough-home .working-details{gap:40px}
+ .walkthrough-home .walkthrough-closing{align-items:start;flex-direction:column;gap:28px}
+ .walkthrough-home .walkthrough-closing h2{max-width:none}
+}
+@media(max-width:760px){
+ .walkthrough-home .family-header{gap:8px 20px;padding-block:14px}
+ .walkthrough-home .family-header nav{gap:16px}
+ .walkthrough-home .family-header nav a{font-size:12px}
+ .walkthrough-home .walkthrough-hero{padding:30px 0 26px}
+ .walkthrough-home h1{font-size:clamp(40px,8vw,52px);max-width:16ch;margin-bottom:20px}
+ .walkthrough-home .intro{font-size:17px;line-height:1.6}
+ .walkthrough-home .actions{gap:10px 20px;margin-top:22px}
+ .walkthrough-home .hero-details{font-size:11px}
+ .walkthrough-home .desktop-shot{padding:5px;border-radius:9px}
+ .walkthrough-home .desktop-shot figcaption{padding:12px 8px 7px}
+ .walkthrough-home .organize-section{padding:40px 0}
+ .walkthrough-home .organize-details{grid-template-columns:1fr;gap:16px}
+ .walkthrough-home .organize-details p{margin-bottom:0}
+ .walkthrough-home .organize-section>.text-link{margin-top:18px}
+ .walkthrough-home .walkthrough-feature,.walkthrough-home .reverse-feature{grid-template-columns:1fr;grid-template-areas:"copy" "image";gap:24px;padding:40px 0}
+ .walkthrough-home .feature-copy{max-width:none}
+ .walkthrough-home .working-details{grid-template-columns:1fr;gap:28px;padding:40px 0}
+ .walkthrough-home .walkthrough-closing{padding:44px 0 12px}
+}

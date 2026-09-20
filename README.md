@@ -6,7 +6,7 @@ One static website for Reading Habit, Where Do We Eat, Who’s First?, and Folio
 
 ## App messaging
 
-Read [MESSAGING.md](MESSAGING.md) before changing app descriptions. It records the approved purpose and copy priorities for all four apps and points to self-contained app-folder references for future native and App Store work.
+Read [MESSAGING.md](MESSAGING.md) for each app’s purpose and copy priorities before changing app descriptions. For Walkthrough, also read [WALKTHROUGH_MESSAGING_PHILOSOPHY.md](WALKTHROUGH_MESSAGING_PHILOSOPHY.md): explain the tools and workflow directly, without slogans or exaggerated promises. The messaging guide also points to app-folder references for future native and App Store work.
 
 ## Local preview and checks
 
@@ -53,7 +53,7 @@ Walkthrough moved from `/listing-namer/` to `/walkthrough/` on September 17, 202
 
 `scripts/check_site.py` asserts the feed and all five stubs exist, so this cannot be removed by accident.
 
-Release notes are published at `/walkthrough/release-notes/`, with links in the native app’s Help menu and Settings. Public copy leads with the outcome: listing photos that upload to the MLS in the order you chose, for realtors and listing assistants. Read the Walkthrough section of `MESSAGING.md` before changing it, including the rule against describing settings export as “sync.”
+Release notes are published at `/walkthrough/release-notes/`, with links in the native app’s Help menu and Settings. Public copy explains grouping listing photos by room, arranging their order, and exporting numbered filenames, for realtors and listing assistants. Avoid guarantees about how an MLS or website orders uploads. Read the Walkthrough section of `MESSAGING.md` before changing it, including the rule against describing settings export as “sync.”
 
 Canceled is at `/canceled/`, a landing page only. The app is in development for iPhone and iPad, is not on TestFlight, and has nothing to download, so the page states status and offers no call to action. Its native source is in the sibling `canceled-app` project. Add `support/` and `privacy/` when it reaches TestFlight, and add `canceled` to the required-routes list in `scripts/check_site.py` at the same time. Page assets under `site/canceled/assets/` are copied from that project; its Archivo woff2 is the same file already bundled for Where Do We Eat.
 
@@ -81,3 +81,5 @@ density. Fresh filenames invalidate cached captures; legacy aliases receive the 
 new bytes. Run `python3 scripts/check_ingest_screenshots.py` and visually inspect all
 captures and desktop/mobile pages before pushing. CI checks encoding, dimensions,
 aliases, and display-size limits; cursor absence still requires visual review.
+
+Walkthrough’s refreshed landing screenshots are native 2× captures with lossless WebP encoding. Their source and capture procedure are recorded in `site/walkthrough/assets/SOURCES.md`; `screenshots.json` records pixel and logical dimensions. Preserve the per-image `--capture-width` limit and intrinsic dimensions when moving these images between pages.

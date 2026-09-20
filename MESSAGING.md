@@ -115,33 +115,35 @@ Added as the tenth project, taking the reserved slot. Type: Mac app. The second 
 are charcoal with a warm accent, so keep them visually apart: Walkthrough is `#111214` with `#e9b454`, Ingest is
 `#0B0B0D` with `#F5A524`.
 
-**Audience:** Photographers who shoot Sony or Fujifilm and cull on a Mac. People with a full card and no patience.
+**Positioning updated September 20, 2026:** Ingest is a modern Mac app for quick photo import, culling, and everyday photo file management. The command bar connects these jobs. The earlier card-emptying pitch is superseded.
 
-**Problem:** A card of raw files takes longer to look through than it took to shoot. Everything else either imports
-first and lets you look afterwards, or shows you a card at the speed of developing raw files one at a time.
+**Audience:** Photographers who want to import shoots, select keepers, and manage photo files on their Mac, including people looking for a modern alternative to Photo Mechanic. Current fast RAW previews support Sony ARW and Fujifilm RAF; never imply universal RAW preview support.
 
-**Primary promise:** The whole card is on screen the moment it goes in, and the keepers come off it named, described,
-and checked.
+**Problem:** Importing a shoot, making selections, and organizing existing photo folders involve many repeated actions. Photographers need those actions easy to find and quick to use.
 
-**Headline:** Empty the card without the wait.
+**Primary promise:** Import, cull, and manage photo files on Mac. Use the command bar to find commands, open folders, and apply presets.
 
-**Supporting copy:** Every raw file on screen the moment the card goes in. Tag the keepers with one key, then copy them
-out named and checked, without ever writing to the card.
+**Headline:** Import. Cull. Manage.
 
-**Card label:** Emptying a camera card
+**Supporting copy:** Import a shoot, compare frames, and organize your files. Press ⌘K to find commands, open favorite folders, and apply presets.
 
-**Priorities, in order:** Speed first, and say why it is fast, because "fast" on its own is what every app claims: the
-camera already wrote a JPEG inside the raw file and Ingest reads that. Then the keyboard, because that is what makes
-culling bearable. Then the copy itself: verified, named, and with the metadata already attached. Safety is the closing
-section, not a feature block.
+**Portfolio headline:** Import, cull, and manage photos.
 
-**Landing page sections:** 01 / See, 02 / Cull, 03 / Ingest. Block three names the app's own verb in its first
-sentence.
+**Portfolio supporting copy:** Browse photos on a card or in a folder, compare frames, and mark your selections. Use the command bar to import files, rename them, and add metadata.
 
-**Do not name Photo Mechanic** in a title, a meta description, or a headline. There is one section on the support page,
-Coming from Photo Mechanic, that maps the habits across, and that is the right place for it.
+**Card label:** Photo import and management
 
-**Do not overstate safety.** Write what is verifiable: Ingest never writes, renames, or deletes anything on a card. Do
+**Priorities:** Import, cull, and manage are equally prominent capabilities, not a required sequence. Show the command bar in the hero and explain command search, favorite folders, presets, and workspaces. Make management of existing folders explicit. Use concrete benefits before implementation details; leave embedded-preview mechanics, naming tokens, and shortcut configuration in the documentation. Avoid absolute speed claims.
+
+**Landing page sections:** Hero with command-bar screenshot; “Find and run commands with ⌘K”; import, cull, and manage sections with real screenshots; brief positioning and reassurance; “Download the working beta” closing. Preserve existing section ids even when the headings change.
+
+**Photo Mechanic:** Mention it once in supporting landing-page copy: “I’m building Ingest as a modern alternative to Photo Mechanic for importing, culling, and managing photo files.” Keep it out of titles, metadata, and headlines. Retain the existing support-page migration reference. Do not claim feature parity or comparative speed.
+
+**Tone:** Explain what the app does and how to use it. Headings name capabilities; captions explain what is shown. Avoid slogans, invented frustrations, strained comparisons, and claims of instant results. Do not replace explanations with generic benefit lines such as “Make room for the photos,” “get moving,” or “keeps your next action close.” Keep explanations concise and useful to photographers, without turning the landing page into implementation documentation.
+
+**Command bar:** Search commands, favorites, presets, and workspaces by name. Do not imply AI, natural-language automation, or a terminal. Marketing calls it the command bar; existing technical references may call it the palette.
+
+**Do not overstate safety.** Write what is verifiable: Card metadata and filenames stay untouched; explicit card deletion is available only after verified copying, as documented on the support page. Do
 not extend that into a claim that photographs cannot be lost, and never call the second destination a backup. Same
 family rule as the standing ban on calling a settings export "sync".
 
@@ -149,8 +151,7 @@ family rule as the standing ban on calling a settings export "sync".
 differ. Not "guaranteed", not "bit perfect", and it says nothing about corruption that happens later.
 
 **Say the requirements everywhere.** macOS 15 or later, Apple silicon only. An Intel owner downloading a disk image
-that will not open is the most expensive support email the page can generate. Sony ARW and Fujifilm RAF are named up
-front too; never imply universal raw support.
+that will not open is the most expensive support email the page can generate. Sony ARW and Fujifilm RAF preview support is named near the download too; never imply universal raw support.
 
 **Face close-ups need their sentence.** Faces are found on the Mac only in order to zoom in. No names, no identities,
 nothing stored, nothing sent. It appears on the guide and on the privacy page.
@@ -158,7 +159,7 @@ nothing stored, nothing sent. It appears on the guide and on the privacy page.
 **Scripts need their sentence.** A shell step runs as you and Ingest does not restrain it. On the automation page and
 again on the privacy page.
 
-**Availability:** Show the version beside the download and say plainly that 0.1.0 is early. Release history lives at
+**Availability:** Show the version beside the download and label the current 0.2.1 release “Working beta.” Use this explanation: “Ingest is a working beta. I use it for my own work and am still developing it for a broader audience.” Avoid vague qualifiers such as “young” or claims that the shape of the app is settled. Release history lives at
 /ingest/release-notes/ and is linked from the app's Help menu. Do not restate historical entries in current positioning
 language.
 
@@ -230,31 +231,39 @@ Priority clarification: the latest Cardinals Daily is the primary feature, the l
 
 Added at Brian's request as the eighth project, replacing the reserved slot. Type: Mac app. Headline: “Give every listing photo its place.” Lead with organizing real estate shoots and consistent delivery filenames while preserving JPG quality. Support keyboard grouping, ordering, presets, and local jobs with practical copy. Availability must say Mac preview until a notarized release is ready. Current requirements: macOS 14+, Apple silicon and Intel. No account is required. Do not describe address search or update checking as offline. The download is Developer ID signed but not yet notarized; disclose that macOS may block it.
 
-### Walkthrough (September 17, 2026, current)
+### Walkthrough (September 20, 2026, current)
 
-Repositioned with Brian on September 17, 2026 using the StoryBrand frame. This supersedes the earlier preview, tour, and “Rename photos. Set their order.” wording above.
+**Writing philosophy:** Read [Walkthrough’s messaging philosophy](WALKTHROUGH_MESSAGING_PHILOSOPHY.md). Explain capabilities and interactions directly. This replaces the earlier StoryBrand framing, invented frustrations, slogans, and guarantees about MLS upload order.
 
-**Audience:** Realtors and listing assistants. Name both; the assistant is often the person doing the uploading.
+**Audience:** Realtors and listing assistants organizing JPG/JPEG listing photos on a Mac.
 
-**Problem:** A camera names files in the order it shot them, not the order a buyer should walk the house, so photos sorted by filename land on the MLS scrambled. The fallback is dragging them into place one at a time in a browser, and not knowing it is right until the listing is live.
+**Purpose:** Group photos by room, arrange rooms and photos, preview filenames, and export numbered files. The command bar finds actions, rooms, presets, templates, and recent jobs.
 
-**Primary promise:** Photos upload to the MLS in the order you chose, on the first upload.
+**Headline:** Sort and name listing photos.
 
-**Headline:** Upload listing photos in the right order.
+**Supporting copy:** Group photos by room, arrange their order, and export numbered filenames. Use the command bar to assign rooms, apply naming presets, and reopen jobs.
 
-**Supporting copy:** Sort a whole shoot visually, group photos by room, and export numbered filenames. Your photos land on the MLS in the order you chose.
+**Portfolio headline:** Organize photos for a property listing.
 
-**Card label:** Listing photos in order
+**Portfolio supporting copy:** Group photos by room, set their order, and export copies with numbered filenames. Save room templates and naming presets for future listings.
 
-**Priorities, in order:** Visual sorting of a whole shoot first. Renaming is the mechanism that carries the order, not the headline benefit. Then repeatability: templates with rooms already ordered, or your own group names for a house that does not fit the pattern. Then the team: sharing your setup so filenames match. JPG integrity and export review are the trust line in the closing section, not a feature block.
+**Card label:** Real estate photo organization
 
-**Landing page sections:** 01 / Sort, 02 / Repeat, 03 / Share. These replaced Organize / Name / Deliver, which described what the app does to files rather than why anyone would want it.
+**Content priorities:** Explain grouping and ordering first, then command-bar actions, reusable naming presets and room templates, and export review. Describe settings-file sharing and saved local jobs separately. Headings name capabilities; screenshot captions explain what is shown.
 
-**Do not say “sync.”** There is no sync service. Settings export writes a `.listingnamersettings` file containing tags, presets, and templates, shared manually, with Merge or Replace on import. It carries no photographs and no job history. Say “share your setup.” Never imply a cloud service, shared jobs, or shared photos.
+**Landing page:** Workspace screenshot; grouping, ordering, and exclusions; command bar; naming presets and room templates; export review; settings sharing and saved jobs; download. Preserve real screenshots, supported formats, system requirements, and exact export behavior.
 
-**Availability:** Show only the current version number beside the download, without build, signing, or notarization copy. Release history lives at /walkthrough/release-notes/ and is linked from the website and the app’s Help and Settings. Historical release entries stay as written; do not restate them in current positioning language.
+**Upload order:** Numbered filenames support sorting by name. Tell users to sort exported files by name before selecting them and check final order in the MLS or website after uploading. Do not guarantee that any receiving service preserves order or that the first upload is correct.
 
-**Visual direction:** Unchanged. Genuine current native screenshots, the house icon with the 01 label, charcoal app pages with amber accents.
+**Export:** Rename only changes filenames in their existing folders. Copy keeps the source files. Move relocates files. Copy and Move can use a flat output or numbered room folders. Review filenames, paths, and naming warnings before confirming. JPG bytes are preserved without re-encoding; export does not publish a listing.
+
+**Settings sharing:** Export tags, naming presets, and templates to a settings file that someone else can import with Merge or Replace. Do not call this sync or imply that it shares photos, saved jobs, or a live configuration.
+
+**Saved jobs:** Organization is stored in the local app library. Reopening a job restores room assignments, photo order, and naming choices on that Mac. Do not imply cross-device job history.
+
+**Availability:** Current download: Walkthrough 1.4.1. macOS 14 or later, Apple silicon and Intel, no account required. Do not copy Ingest’s beta status, RAW support, or system requirements. Historical release notes remain historical; preserve the original Listing Namer update feed and redirects.
+
+**Visual direction:** Dark charcoal with the native teal accent, house-and-number icon, bundled Archivo, and genuine native screenshots using demonstration data. Use a wide workspace screenshot and alternating explanatory sections. Keep layout styles scoped to the landing page and document layouts intact.
 
 ## Canceled (September 17, 2026)
 

@@ -28,3 +28,9 @@ The four `native-export-*-1.3.0.png` images are unmodified Dark appearance nativ
 ## Walkthrough 1.4.1
 
 All `native-*-1.4.1.png` screenshots are unmodified native macOS window captures of the 1.4.1 implementation using an isolated demonstration library, the credited photographs above, and fictional listing/business details. Captured September 20, 2026 in Dark appearance, plus a Light workspace capture. Update checking is disabled in the isolated screenshot fixture. The teal icon is copied directly from the native 1024px AppIcon asset. Current landing, guide, support, and social metadata use these assets; historical assets remain unchanged.
+
+## Walkthrough 1.4.1 website refresh, September 20, 2026
+
+The four `native-*-1.4.1-retina.webp` images show Contact Sheet, the command bar, the Standard naming preset, and Copy export review. They were captured from a fresh Debug build of the clean 1.4.1 (12) source using its isolated-library screenshot hooks. The library is a copy of the existing demonstration fixture; the photos are the same credited fixture images above, and the address is fictional. No personal jobs or client photos appear. No export was performed.
+
+Captures use `screencapture -x -o -a -l WINDOW_ID` without `-C`. The workspace and Settings are 1222 × 820 logical points (2444 × 1640 pixels); the export sheet is 860 × 660 points (1720 × 1320 pixels). Encode with `cwebp -lossless -exact -z 9 -metadata icc`, without resizing; ICC can also be retained with `webpmux -set icc`. Decoded RGBA pixels and ICC color profiles were verified against the original PNG captures. `screenshots.json` records dimensions; each HTML image preserves its logical display-width limit. Historical PNG captures remain unchanged.

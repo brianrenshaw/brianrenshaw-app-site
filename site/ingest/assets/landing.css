@@ -1,0 +1,99 @@
+/* Landing page only. Reference pages keep their existing document styles. */
+@font-face{font-family:Ingest Archivo;src:url('../../where-do-we-eat/assets/fonts/archivo.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+.ingest-home{font-family:Ingest Archivo,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.ingest-home .family-header{padding-block:16px;border-bottom:0}
+.ingest-home .family-header nav a{color:var(--muted);text-decoration:none}
+.ingest-home .family-header nav a:hover{color:var(--ink)}
+.ingest-home .app-landing{padding-top:0}
+.ingest-home .eyebrow{color:var(--accent);font-size:11px;letter-spacing:.13em;margin-bottom:18px}
+.ingest-home h2{font-size:clamp(28px,3.2vw,40px);line-height:1.15;letter-spacing:-.035em;font-weight:600;text-wrap:balance}
+.ingest-home p{color:var(--muted)}
+.ingest-home section,.ingest-home article,.ingest-home [id]{scroll-margin-top:28px}
+.ingest-home .ingest-hero{padding:48px 0 30px}
+.ingest-home h1{font-size:clamp(44px,6.3vw,76px);line-height:1.06;font-weight:600;letter-spacing:-.055em;margin:0 0 24px;text-wrap:balance}
+.ingest-home .intro{max-width:68ch;font-size:19px;line-height:1.65;margin-bottom:0}
+.ingest-home .actions{flex-direction:row;align-items:center;flex-wrap:wrap;gap:16px 28px;margin:26px 0 18px}
+.ingest-home .primary-action{border-radius:7px;padding:13px 20px;display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:48px}
+.ingest-home .primary-action:hover{background:var(--ink);color:var(--bg)}
+.ingest-home .secondary-action{color:var(--ink);text-decoration:none;padding:10px 0;min-height:44px}
+.ingest-home .secondary-action span{color:var(--accent);margin-left:8px}
+.ingest-home .secondary-action:hover,.ingest-home .text-link:hover{text-decoration:underline}
+.ingest-home .hero-details{font-size:12px;line-height:1.6}
+.ingest-home .hero-details p{margin:5px 0}
+.ingest-home .hero-details a{color:inherit}
+.ingest-home .beta-note{font-size:13px;line-height:1.6;max-width:68ch;margin:14px 0 0}
+.ingest-home .desktop-shot{padding:8px;background:var(--surface);border:1px solid var(--line);border-radius:12px;min-width:0}
+.ingest-home .desktop-shot>a{display:block;border-radius:6px}
+.ingest-home .desktop-shot img{border-radius:6px}
+.ingest-home .desktop-shot figcaption{padding:14px 10px 8px;color:var(--muted);font-size:12px;line-height:1.5}
+.ingest-home .hero-capture figcaption{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-inline:14px}
+.ingest-home .hero-capture kbd{margin-right:6px}
+.ingest-home .command-section{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:center;padding:80px 0}
+.ingest-home .command-section h2{max-width:18ch}
+.ingest-home .command-section h2 kbd{font-size:.7em;letter-spacing:-.03em;vertical-align:.06em}
+.ingest-home .command-section p{max-width:52ch}
+.ingest-home .text-link{display:inline-block;padding:8px 0;color:var(--ink);font-size:14px;text-decoration:none}
+.ingest-home .text-link span{color:var(--accent);margin-left:8px}
+.ingest-home .command-examples{margin:0;padding:0 28px;background:var(--surface);border-radius:12px}
+.ingest-home .command-examples>div{padding:22px 0;border-bottom:1px solid var(--line)}
+.ingest-home .command-examples>div:last-child{border-bottom:0}
+.ingest-home .command-examples dt{display:flex;justify-content:space-between;gap:16px;font-size:17px;font-weight:550}
+.ingest-home .command-examples dd{margin:6px 0 0;font-size:14px;color:var(--muted)}
+.ingest-home .workflow-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;padding:32px 0;border-block:1px solid var(--line)}
+.ingest-home .workflow-heading h2{font-size:30px;margin:0}
+.ingest-home .workflow-heading .eyebrow{margin-bottom:12px}
+.ingest-home .workflow-heading nav{display:flex;gap:24px}
+.ingest-home .workflow-heading nav a{color:var(--ink);font-size:14px;text-decoration:none;padding:10px 0;white-space:nowrap}
+.ingest-home .workflow-heading nav a:hover{text-decoration:underline}
+.ingest-home .workflow-heading nav span{color:var(--accent);margin-left:6px}
+.ingest-home .workflow-feature{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);grid-template-areas:"copy image";align-items:center;gap:56px;padding:64px 0;border-bottom:1px solid var(--line)}
+.ingest-home .feature-copy{grid-area:copy;max-width:46ch}
+.ingest-home .feature-copy h2{max-width:17ch;margin-bottom:22px}
+.ingest-home .feature-copy p{font-size:16px;line-height:1.7}
+.ingest-home .workflow-feature>.desktop-shot{grid-area:image;width:100%}
+.ingest-home .import-feature>.desktop-shot{max-width:460px;justify-self:center}
+.ingest-home .reverse-feature{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);grid-template-areas:"image copy"}
+.ingest-home .ingest-assurance{display:grid;grid-template-columns:1fr 1fr;gap:80px;padding:64px 0;border-bottom:1px solid var(--line)}
+.ingest-home .ingest-assurance h2{font-size:29px;max-width:23ch}
+.ingest-home .ingest-assurance p{max-width:52ch;margin-bottom:12px}
+.ingest-home .assurance-links{margin:0;padding:0;list-style:none;align-self:center}
+.ingest-home .assurance-links li{padding:16px 0;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
+.ingest-home .assurance-links li:first-child{padding-top:0}
+.ingest-home .assurance-links li:last-child{border:0;padding-bottom:0}
+.ingest-home .assurance-links strong{display:block;color:var(--ink);font-size:15px;font-weight:500;margin-bottom:5px}
+.ingest-home .assurance-links a{color:var(--muted)}
+.ingest-home .ingest-closing{display:flex;justify-content:space-between;align-items:center;gap:36px;padding:72px 0 32px}
+.ingest-home .ingest-closing h2{max-width:17ch;margin:0}
+.ingest-home .ingest-closing .actions{margin:0 0 16px}
+.ingest-home .ingest-closing .quiet{margin:0}
+.ingest-home .family-footer{margin-top:48px}
+@media(max-width:1000px){
+ .ingest-home .command-section,.ingest-home .ingest-assurance{gap:40px}
+ .ingest-home .workflow-feature{gap:32px}
+ .ingest-home .workflow-heading{align-items:start;flex-direction:column;gap:12px}
+ .ingest-home .ingest-closing{align-items:start;flex-direction:column;gap:28px}
+ .ingest-home .ingest-closing h2{max-width:none}
+}
+@media(max-width:760px){
+ .ingest-home .family-header{gap:8px 20px;padding-block:14px}
+ .ingest-home .family-header nav{gap:16px}
+ .ingest-home .family-header nav a{font-size:12px}
+ .ingest-home .ingest-hero{padding:30px 0 26px}
+ .ingest-home h1{max-width:12ch;margin-bottom:20px}
+ .ingest-home .intro{font-size:17px;line-height:1.6}
+ .ingest-home .actions{gap:10px 20px;margin-top:22px}
+ .ingest-home .hero-details{font-size:11px}
+ .ingest-home .hero-capture figcaption{align-items:start;flex-direction:column;gap:8px}
+ .ingest-home .desktop-shot{padding:5px;border-radius:9px}
+ .ingest-home .desktop-shot figcaption{padding:12px 8px 7px}
+ .ingest-home .command-section,.ingest-home .ingest-assurance{grid-template-columns:1fr;gap:28px;padding:44px 0}
+ .ingest-home .command-section h2{max-width:20ch}
+ .ingest-home .command-examples{padding-inline:20px}
+ .ingest-home .workflow-heading{padding:26px 0}
+ .ingest-home .workflow-heading h2{font-size:27px}
+ .ingest-home .workflow-feature,.ingest-home .reverse-feature{grid-template-columns:1fr;grid-template-areas:"copy" "image";gap:24px;padding:40px 0}
+ .ingest-home .feature-copy{max-width:none}
+ .ingest-home .feature-copy h2{max-width:20ch}
+ .ingest-home .ingest-assurance h2{font-size:28px}
+ .ingest-home .ingest-closing{padding:44px 0 12px}
+}

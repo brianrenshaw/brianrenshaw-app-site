@@ -66,8 +66,25 @@
     {
       "id": "walkthrough-native-1.4.1",
       "decision": "Walkthrough uses its native teal house-and-number icon and teal accent (#52c7c2) with neutral dark surfaces. Current screenshots are real isolated-library native captures from 1.4.1. Settings autosave; keep keyboard, guide, release and download information aligned with the native app."
+    },
+    {
+      "id": "ingest-command-bar-landing",
+      "decision": "September 20, 2026: Ingest leads with Import. Cull. Manage. Use a large unmodified native command-bar screenshot, spacious dark sections, restrained amber, bundled Archivo, and alternating import/cull/folder-management screenshots. Command search is the defining interaction. Photo Mechanic appears once in supporting copy, never a headline. Static HTML/CSS; landing-only styles preserve reference-page layouts. Preserve screenshot density, anchors, and existing download/feed URLs."
+    },
+    {
+      "id": "walkthrough-explanatory-landing",
+      "decision": "September 20, 2026: Sort and name listing photos. Lead with the actual workspace, then explain room grouping, photo order, command-bar actions, naming presets, export modes, settings sharing, and local jobs. No slogans or MLS upload-order guarantees. Preserve native charcoal/teal, use bundled Archivo, and scope new static layout styles to the landing page. Reuse actual demonstration screenshots; no generated app UI."
     }
   ],
-  "evidence": [],
+  "evidence": [
+    {
+      "source": "native Ingest DESIGN.md, existing 0.2.1 screenshots, and site/ingest/assets/site.css",
+      "note": "21st catalog search for desktop photography app landing page command palette product showcase returned HTTP 401 on September 20, 2026. Direction grounded in the actual app; no catalog components imported."
+    },
+    {
+      "source": "Walkthrough native 1.4.1 screenshots, current guide, and assets/site.css",
+      "note": "21st catalog search for Mac photo management app landing page workflow screenshots returned HTTP 401. Existing native app and static site components determine the implementation."
+    }
+  ],
   "generatedAt": "2026-09-08T20:40:52.027Z"
 }

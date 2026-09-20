@@ -1,0 +1,29 @@
+{
+  "capture": "macOS screencapture -x -o -a -l WINDOW_ID; cursor excluded; native 2x; lossless WebP; Walkthrough 1.4.1 (12), Debug build with isolated demonstration library",
+  "images": {
+    "native-contact-sheet-1.4.1-retina.webp": {
+      "width": 2444,
+      "height": 1640,
+      "displayWidth": 1222,
+      "displayHeight": 820
+    },
+    "native-command-palette-1.4.1-retina.webp": {
+      "width": 2444,
+      "height": 1640,
+      "displayWidth": 1222,
+      "displayHeight": 820
+    },
+    "native-presets-1.4.1-retina.webp": {
+      "width": 2444,
+      "height": 1640,
+      "displayWidth": 1222,
+      "displayHeight": 820
+    },
+    "native-export-copy-1.4.1-retina.webp": {
+      "width": 1720,
+      "height": 1320,
+      "displayWidth": 860,
+      "displayHeight": 660
+    }
+  }
+}
