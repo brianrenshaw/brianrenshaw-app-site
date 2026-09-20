@@ -5,7 +5,7 @@
 - Feed: `site/listing-namer/appcast.xml`, served at `https://brianrenshaw.app/listing-namer/appcast.xml`. **This path is frozen.** The website moved to `/walkthrough/` on September 17, 2026, but shipped builds have this feed URL compiled into `SUFeedURL`, and a static host cannot redirect it. Keep publishing the feed here. Human-facing pages live under `site/walkthrough/`; `site/listing-namer/` otherwise holds redirect stubs.
 - Downloads: public GitHub Releases in `brianrenshaw/brianrenshaw-app-site`, with tags prefixed `listing-namer-`.
 
-The current public release is `listing-namer-v1.3.0`, Walkthrough version 1.3.0 build 10. Its universal app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 10 to existing installations and preserves earlier release download URLs.
+The current public release is `listing-namer-v1.4.0`, Walkthrough version 1.4.0 build 11. Its universal app and DMG are Developer ID signed, notarized, and stapled. The website feed offers build 11 to existing installations and preserves earlier release download URLs.
 
 For each notarized release:
 
@@ -32,3 +32,6 @@ Fixes keyboard room-preset naming, persists default tag IDs, refreshes current b
 
 ## 1.2.2
 Build 8 improves responsiveness for larger photo jobs: coalesced typing, targeted photo-grid updates, background job loading and saving, faster asynchronous export previews, pane-sized image requests, reduced cache memory, and faster commands. Saved jobs and original JPG bytes remain compatible; export safety checkpoints are preserved.
+
+## 1.4.0
+Build 11 is the Studio design pass: Archivo bundled and registered from the app bundle, the type scale collapsed onto Studio tokens, four window planes with accent-ring selection and an accent picker in Settings, the inspector rebuilt off Form onto shared sections with real focus rings and a segment-coloured filename preview, the palette keyed on commands rather than positions, sheets on one shape with verb-and-count primaries, and an export progress strip built on what the engine reports. No change to export safety, verification, or recovery; saved jobs remain compatible.
