@@ -49,6 +49,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.3.1 | 8 | September 20, 2026 | Refresh filmstrip thumbnails when preview information arrives. |
 | 0.3.0 | 7 | September 20, 2026 | Expanded camera formats, RAW + JPEG/HEIF pairing, XMP metadata, folder refresh, and safer interrupted imports. |
 | 0.2.1 | 6 | September 20, 2026 | Native editing fixes, accessible shortcut recording, contextual palette Actions, and appearance polish. |
 | 0.2.0 | 5 | September 20, 2026 | The Studio design pass: Archivo throughout, sectioned inspector, two-stage ingest bar, and a completion receipt that reports what is still only on the card. |
