@@ -137,7 +137,9 @@ are charcoal with a warm accent, so keep them visually apart: Walkthrough is `#1
 
 **Landing page sections:** Hero with command-bar screenshot; “Find and run commands with ⌘K”; import, cull, and manage sections with real screenshots; brief positioning and reassurance; “Download the working beta” closing. Preserve existing section ids even when the headings change.
 
-**Photo Mechanic:** Mention it once in supporting landing-page copy: “I’m building Ingest as a modern alternative to Photo Mechanic for importing, culling, and managing photo files.” Keep it out of titles, metadata, and headlines. Retain the existing support-page migration reference. Do not claim feature parity or comparative speed.
+**Photo Mechanic:** Mention it once in supporting landing-page copy. Approved sentence, updated September 20, 2026: “I built Ingest because I wanted a modern Mac app for the part of the workflow Photo Mechanic has covered for years.” Keep it out of titles, metadata, and headlines. Retain the existing support-page migration reference. Do not claim feature parity or comparative speed, and do not raise Photo Mechanic’s price or its age.
+
+**No automatic culling.** Ingest does not rate or reject photographs on the photographer’s behalf. State this on the landing page in the About bullets and once in the Cull section. Scope the claim to rating and rejecting, never to AI or machine learning generally: the face close-up strip uses Apple’s Vision framework on the Mac, so a broad “no AI” claim would contradict the guide and privacy pages. Acknowledge that AI culling tools exist and work; do not invent frustrations about them or about competing apps. Do not add a standalone page or heading arguing the case.
 
 **Tone:** Explain what the app does and how to use it. Headings name capabilities; captions explain what is shown. Avoid slogans, invented frustrations, strained comparisons, and claims of instant results. Do not replace explanations with generic benefit lines such as “Make room for the photos,” “get moving,” or “keeps your next action close.” Keep explanations concise and useful to photographers, without turning the landing page into implementation documentation.
 
@@ -394,3 +396,15 @@ All seven published claims hold at `92cae0a`:
 **One finding, now in the README.** Only one source file changed after the release commit: `SettingsView.swift`, moving the in-app privacy link from `brianrenshaw.github.io/folio-privacy/` to `brianrenshaw.app/folio/privacy/`. That change is unreleased, so the build on the App Store still opens the legacy URL. It returns 200 and its policy matches the current one, so users are not reading anything stale, but the legacy Pages repository has to stay published until a build with the new URL has fully replaced 1.1.2. Same class of constraint as the Sparkle feed.
 
 **Method note.** Verifying against a checked-out release commit is better than unpacking whichever IPA happens to be on disk, and it is what should have been done the first time. Confirm `MARKETING_VERSION` and `CURRENT_PROJECT_VERSION` at that commit match the live listing before trusting it.
+
+## Ingest About section rewritten, September 20, 2026
+
+The About section on the Ingest landing page was a single positioning sentence under a bullet list, so the bullets read as a detached feature inventory. It now opens with two short paragraphs and the bullets follow as the same argument.
+
+- The Photo Mechanic sentence changed from "I'm building Ingest as a modern alternative to Photo Mechanic" to "I built Ingest because I wanted a modern Mac app for the part of the workflow Photo Mechanic has covered for years." Still one mention, still out of titles and headlines. A draft of this sentence said "for twenty years"; the age reference was cut because raising a competitor's age is the same move as raising its price.
+- A draft also summarized file support as "current RAW support," which would have implied the universal RAW previews this document forbids. The shipped sentence names Sony ARW and Fujifilm RAF.
+- New first bullet: "You make the selects. Nothing rates or rejects on your behalf." It has no link, which the existing `.assurance-links` styling handles.
+- The Cull section gained one line, "No automatic rating or rejection. Every tag, rating, and label is one you applied," so the claim reaches someone comparing culling tools without a scroll to About. A slogan version ("Ingest doesn't decide anything for you. It tries to make deciding fast") was rejected under the standing rule against slogans and benefit lines.
+- A proposed support-page essay, "Why there's no AI culling," was not added. The face close-up strip runs Apple's Vision framework on the Mac, documented on the guide and privacy pages, so a page-length "no AI" argument would contradict them; the bullet is scoped to rating and rejecting and does not. It would also commit a 0.2.1 beta to a permanent roadmap position on a public page.
+- The beta note near the download is unchanged and remains the only place the beta is explained. A third About paragraph ending "That's who it's built for first" was dropped as a duplicate of it.
+- `python3 scripts/check_site.py` passes: 41 HTML pages, 823 local links and assets.
