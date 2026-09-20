@@ -135,7 +135,7 @@
 <h2>The sequence number</h2>
 <p><code>{seqn}</code> is one counter for everything you do in Ingest. It goes up as files are named and it never goes back, so no two photographs you have ever named end up with the same number. That is what makes it safe to drop a hundred files from three different cards into one folder.</p>
 <p>The width comes from the zeros you type. <code>0001</code> in the start field gives four digits, so 7078 comes out as <code>7078</code> and 42 comes out as <code>0042</code>. Leading zeros are what keep files in order when something sorts them as text.</p>
-<p>Planning a job never moves the counter. The Ingest sheet shows you the names it would write, and the counter only advances by the number of files actually named. A cancelled ingest costs you nothing, and a failed file does not burn a number.</p>
+<p>Planning a job never moves the counter. The Ingest sheet shows you the names it would write, and the counter only advances by the number of files actually named. A canceled ingest costs you nothing, and a failed file does not burn a number.</p>
 <p>Settings, Renaming shows the next number and lets you set it, which is the equivalent of Photo Mechanic's Set Sequence. Reset to 1 asks first, because reusing numbers you have already used is the one thing this counter exists to prevent.</p>
 <p><code>{seq}</code> is the other counter: it starts wherever you say, for this job only, and it is the right choice when a client wants photographs numbered from one.</p>
 </section>
@@ -174,7 +174,7 @@
 <section id="quick-entry" class="guide-section">
 <h2>Quick entry</h2>
 <p>Press <kbd>Q</kbd> and type one line. Ingest reads it and applies all of it at once, to everything selected. The order does not matter and most of it is optional.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/quick-entry-0.2.1-retina.webp"><img style="--capture-width:640px" src="/ingest/assets/quick-entry-0.2.1-retina.webp" width="1280" height="170" loading="lazy" alt="The quick entry bar showing an example line with keywords, a rating, a colour, a quoted caption, and a preset"></a><figcaption>As you type, the line beneath the field shows how Ingest interpreted the keywords, stars, colour, caption, and preset.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/quick-entry-0.2.1-retina.webp"><img style="--capture-width:640px" src="/ingest/assets/quick-entry-0.2.1-retina.webp" width="1280" height="170" loading="lazy" alt="The quick entry bar showing an example line with keywords, a rating, a color, a quoted caption, and a preset"></a><figcaption>As you type, the line beneath the field shows how Ingest interpreted the keywords, stars, color, caption, and preset.</figcaption></figure>
 <div class="guide-table" tabindex="0" role="region" aria-label="Quick entry syntax">
 <table>
 <thead><tr><th scope="col">You type</th><th scope="col">It means</th></tr></thead>
@@ -183,7 +183,7 @@
 <tr><td><code>front yard, kitchen</code></td><td>With a comma anywhere in the line, each comma separated run is one keyword. So this is two keywords, not three.</td></tr>
 <tr><td><code>#family</code></td><td>A keyword, even when the word would otherwise mean something else.</td></tr>
 <tr><td><code>3*</code> <code>***</code> <code>3 stars</code></td><td>Three stars. <code>0*</code> clears the rating.</td></tr>
-<tr><td><code>red</code> <code>r</code> <code>🔴</code></td><td>A colour label. Also yellow, green, blue, purple, and their first letters.</td></tr>
+<tr><td><code>red</code> <code>r</code> <code>🔴</code></td><td>A color label. Also yellow, green, blue, purple, and their first letters.</td></tr>
 <tr><td><code>"First light at the pier"</code></td><td>The caption. Curly quotes work too, and a quote you never close runs to the end of the line.</td></tr>
 <tr><td><code>@Ecola State Park</code></td><td>Look up that address and set the location. It runs to the next comma or the end of the line.</td></tr>
 <tr><td><code>/listing</code></td><td>Apply the metadata preset with that name.</td></tr>
@@ -192,7 +192,7 @@
 </tbody>
 </table>
 </div>
-<p>The one rule worth knowing: a word like <code>red</code> counts as a command only when its whole comma separated segment is commands. So <code>red door, kitchen</code> gives you two keywords, and <code>kitchen, red</code> gives you a keyword and a colour. That is what lets you write ordinary English without escaping anything.</p>
+<p>The one rule worth knowing: a word like <code>red</code> counts as a command only when its whole comma separated segment is commands. So <code>red door, kitchen</code> gives you two keywords, and <code>kitchen, red</code> gives you a keyword and a color. That is what lets you write ordinary English without escaping anything.</p>
 <p>The same line works from a link, which is how an external script or a Stream Deck button can mark a photograph. See <a href="/ingest/automation/#verb-apply">the URL scheme</a>.</p>
 </section>
 
@@ -200,7 +200,7 @@
 <h2>Snippets</h2>
 <p>A snippet is a short name that expands into longer text. Type <code>;addr</code> in quick entry, a caption, or the keyword field, and it becomes whatever you defined, tokens and all.</p>
 <p>The shipped one is <code>;addr</code>, which expands to <code>{address}, {city} {state}</code>. Settings, Snippets is where you add your own, and it shows you how quick entry will read the result while you are still typing it.</p>
-<p>Snippets expand once and do not nest, and a name Ingest does not recognise is left alone rather than deleted. If two snippets share a name, the first one wins.</p>
+<p>Snippets expand once and do not nest, and a name Ingest does not recognize is left alone rather than deleted. If two snippets share a name, the first one wins.</p>
 </section>
 </main>
 <footer class="family-footer">

@@ -41,6 +41,25 @@ for p in ROOT.rglob('*.css'):
  for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)',p.read_text()):
   if ref.startswith('data:'):continue
   if not (p.parent/ref).exists():errors.append(f'{p.relative_to(ROOT)}: missing CSS asset {ref}')
+# American spellings only. Brian is from the Midwest, and British forms keep
+# creeping into drafted copy. aria-labelledby is a real ARIA attribute, so it is
+# stripped before the scan rather than excused word by word. Suffixes are listed
+# deliberately: cancelled is British, cancellation is correct in both.
+_OUR='col behavi fav hon lab neighb flav hum rum endeav sav arm vap od val vig splend harb parl'
+_ISE='organ recogn real apolog custom optim categor summar priorit standard personal special visual minim maxim util author synchron normal initial final local modern digit item memor familiar character central general sanit emphas critic'
+_LL='trave labe mode cance fue signa tota marve jewe counse'
+_PLAIN='centre metre litre fibre calibre theatre sombre spectre lustre meagre manoeuvre licence defence offence pretence whilst amongst learnt spelt dreamt programme catalogue analogue instalment enrolment skilful wilful judgement ageing storey tyre kerb cheque aluminium aeroplane maths'
+BRITISH=re.compile('(?i)\\b(?:'+'|'.join([
+ '(?:%s)our(?:s|ed|ing|ite|ites|able|ably|ful|less|ist|ists)?'%'|'.join(_OUR.split()),
+ '(?:%s)is(?:e|es|ed|ing|ation|ations|er|ers|able)'%'|'.join(_ISE.split()),
+ '(?:%s)ll(?:ed|ing|er|ers|or|ors|ous|ery)'%'|'.join(_LL.split()),
+ '(?:anal|paral|catal)ys(?:e|es|ed|ing|er|ers)',
+ 'practis(?:e|es|ed|ing)','fulfil(?:s|ment|ments)?','sceptic(?:al|ism)?','mould(?:s|ed|ing|y)?','grey(?:s|ed|ish|scale)?',
+ '(?:%s)s?'%'|'.join(_PLAIN.split()),
+])+')\\b')
+for p,page in pages.items():
+ for word in sorted(set(BRITISH.findall(re.sub(r'\saria-labelledby="[^"]*"','',p.read_text())))):
+  errors.append(f'{p.relative_to(ROOT).as_posix()}: British spelling "{word}"')
 for slug in ['reading-habit','where-do-we-eat','whos-first','folio','walkthrough','ingest']:
  for sub in ['','privacy','support']:
   if not (ROOT/slug/sub/'index.html').exists():errors.append(f'Missing route {slug}/{sub}')
@@ -57,4 +76,4 @@ if not (ROOT/'listing-namer/appcast.xml').exists():errors.append('Missing Sparkl
 for sub in ['','guide/','support/','privacy/','release-notes/']:
  if not (ROOT/'listing-namer'/sub/'index.html').exists():errors.append(f'Missing listing-namer/{sub} redirect')
 if errors:print('\n'.join(errors));sys.exit(1)
-print(f'PASS: {len(pages)} HTML pages; {links} local links/assets; canonical URLs, fragments, fonts and required routes.')
+print(f'PASS: {len(pages)} HTML pages; {links} local links/assets; canonical URLs, fragments, fonts, required routes and American spelling.')

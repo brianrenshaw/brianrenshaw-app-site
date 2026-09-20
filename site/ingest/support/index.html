@@ -53,7 +53,7 @@
 <tr><td><code>.JPG</code> and <code>.JPEG</code></td><td>Full speed, including the second image that Sony cameras store for fast preview.</td></tr>
 <tr><td><code>.HEIC</code> and <code>.HEIF</code></td><td>Opens and browses.</td></tr>
 <tr><td><code>.MP4</code> and <code>.MOV</code></td><td>Browses and plays, with a poster frame in the grid. Sony clip sidecars travel with the file when you ingest.</td></tr>
-<tr><td>Other raw files</td><td>DNG, CR3, CR2, NEF, ORF, and RW2 are recognised as photographs, but Ingest cannot read their previews yet, so they appear without a thumbnail. Support for them is a question of writing one more reader, not of changing the design.</td></tr>
+<tr><td>Other raw files</td><td>DNG, CR3, CR2, NEF, ORF, and RW2 are recognized as photographs, but Ingest cannot read their previews yet, so they appear without a thumbnail. Support for them is a question of writing one more reader, not of changing the design.</td></tr>
 </tbody>
 </table>
 </div>
@@ -64,13 +64,13 @@
 <h2>Memory cards</h2>
 <p>Insert a card and it appears in the sources list within about a second, with its name and free space. By default Ingest opens it for you. That is a setting in Settings, General, if you would rather it just sat in the list.</p>
 <p><strong>Ingest never writes to a card.</strong> No ratings, no keywords, no renames, no Finder tags, no deletions except the ones you ask for by name after a copy has been verified. That holds however you opened the card, including when you open a folder that happens to live on one. Metadata you add while culling is remembered and applied to the copies during ingest.</p>
-<p>If a card does not appear, check that it is mounted in Finder. Ingest looks for a <code>DCIM</code> folder to recognise a volume as a card. A card formatted by something other than a camera may not have one, in which case open it with <kbd>⌘O</kbd> as an ordinary folder.</p>
+<p>If a card does not appear, check that it is mounted in Finder. Ingest looks for a <code>DCIM</code> folder to recognize a volume as a card. A card formatted by something other than a camera may not have one, in which case open it with <kbd>⌘O</kbd> as an ordinary folder.</p>
 <p>To eject, press <kbd>⌘E</kbd>. Ingest closes everything it has open on the card first, so eject does not fail with a file in use. If macOS still refuses, another app is holding the card. Pulling a card without ejecting does not crash Ingest. It notices and closes the source.</p>
 </section>
 
 <section id="first-run">
 <h2>The first hour</h2>
-<p>The keys are the part worth learning, and there is a way to practise them that cannot hurt anything. Choose Help, then Open Practice Folder. Ingest builds about thirty throwaway images and opens them, and the status bar tells you which keys to try. Nothing in that folder matters, so tag, reject, rate, and undo as roughly as you like.</p>
+<p>The keys are the part worth learning, and there is a way to practice them that cannot hurt anything. Choose Help, then Open Practice Folder. Ingest builds about thirty throwaway images and opens them, and the status bar tells you which keys to try. Nothing in that folder matters, so tag, reject, rate, and undo as roughly as you like.</p>
 <p>Press <kbd>?</kbd> at any time for the shortcut sheet, or <kbd>⌘K</kbd> to search every command by name. Holding <kbd>⌘</kbd> for a moment shows the keys that work where you are. The complete list lives on the <a href="/ingest/shortcuts/">shortcuts page</a>, and the <a href="/ingest/quick-start/">quick start</a> walks one card from insert to finished folder.</p>
 </section>
 
@@ -98,7 +98,7 @@
 
 <section id="metadata-problems">
 <h2>Lightroom or Photos does not show my keywords</h2>
-<p>Ingest writes keywords, captions, titles, ratings, colour labels, and GPS into the files themselves, in the fields Adobe and Apple actually read. It does not write sidecar files, because Apple Photos ignores them.</p>
+<p>Ingest writes keywords, captions, titles, ratings, color labels, and GPS into the files themselves, in the fields Adobe and Apple actually read. It does not write sidecar files, because Apple Photos ignores them.</p>
 <p>Two things to check first. Metadata is never written to a card, so if you added keywords while culling, they are applied to the copies during ingest and you should look at the copies. And ratings and labels are written in the background a couple of seconds after you stop pressing keys, so a file read the instant you rated it may not have caught up.</p>
 <p>The writing is done by <a href="#credits">ExifTool</a>, which is included in the app. Ingest keeps ExifTool's backup of each file until it has read the file back and confirmed the write, then removes it. If the read back does not match, the original is put back.</p>
 <p>If Settings, Advanced reports that the metadata tool is not ready, turn <em>Use the built-in exiftool</em> back on. The built-in copy runs with the Perl that ships with macOS. If a future macOS removes Perl, that switch and a copy installed with Homebrew are the way back.</p>
@@ -113,7 +113,7 @@
 <section id="photo-mechanic">
 <h2>Coming from Photo Mechanic</h2>
 <p>The habits carry over. <kbd>T</kbd> tags, the arrow keys move, <kbd>⌘G</kbd> is ingest, and <kbd>{seqn}</kbd> is the sequence number that never repeats. Brace tokens in name templates use the same spelling, so a pattern you have typed a thousand times still works.</p>
-<p>Three differences worth knowing. Marking keys do not advance by default, which matches Photo Mechanic, and you can turn advancing on in Settings, Culling. Rejects are hidden by default and the toggle is visible in the toolbar, so nothing disappears without saying so. And stars and colour labels use the Lightroom keys, <kbd>1</kbd> to <kbd>5</kbd> and <kbd>6</kbd> to <kbd>9</kbd>, written into the files so Lightroom sees them on import.</p>
+<p>Three differences worth knowing. Marking keys do not advance by default, which matches Photo Mechanic, and you can turn advancing on in Settings, Culling. Rejects are hidden by default and the toggle is visible in the toolbar, so nothing disappears without saying so. And stars and color labels use the Lightroom keys, <kbd>1</kbd> to <kbd>5</kbd> and <kbd>6</kbd> to <kbd>9</kbd>, written into the files so Lightroom sees them on import.</p>
 <p>Settings, Shortcuts lists every command. Click a shortcut or focus it with Tab and press Return to record a new one. Navigation keys and standard Mac editing shortcuts stay fixed; Settings explains any conflict.</p>
 </section>
 

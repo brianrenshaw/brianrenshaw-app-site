@@ -59,7 +59,7 @@
 <section id="sources" class="guide-section">
 <h2>Cards and folders</h2>
 <p>Put a card in and it appears in the sources list with its name and free space, and Ingest opens it. Press <kbd>⌘O</kbd> to open an ordinary folder instead. Either way you are looking at photographs within a second, before the app has finished reading everything.</p>
-<p>The sources list holds four things: your saved views of the current source, your workspaces, any cards that are mounted, and your favourite folders. <kbd>⌘D</kbd> adds the folder you are in to the favourites, and the number beside each one is the key that opens it.</p>
+<p>The sources list holds four things: your saved views of the current source, your workspaces, any cards that are mounted, and your favorite folders. <kbd>⌘D</kbd> adds the folder you are in to the favorites, and the number beside each one is the key that opens it.</p>
 <p><kbd>⌘[</kbd> and <kbd>⌘]</kbd> go back and forward through what you have opened, like a browser, so switching to the card and back to yesterday's folder costs one keystroke.</p>
 <p><kbd>⌘E</kbd> ejects. Ingest closes every file it has open on the card first, which is why eject does not fail with the usual complaint about a file in use. If you pull a card without ejecting, nothing breaks. Ingest notices and closes the source.</p>
 <p>There is also a menu bar item, on by default, showing the progress of a running ingest, the cards that are in, and your recent folders. It is there so a copy can run while you work in another app.</p>
@@ -69,7 +69,7 @@
 <h2>Browsing, and why it is fast</h2>
 <p>A raw file is large and slow to develop. But every camera also writes a finished JPEG inside that raw file, so it has something to show you on its own screen. Ingest finds that JPEG and reads only those bytes. A Sony ARW is 76 MB; the preview Ingest reads out of it is a few hundred kilobytes, and the full size JPEG inside it is about six.</p>
 <p>That is the whole trick, and it is why arrowing through a card feels like arrowing through a folder of thumbnails. Nothing is developed, nothing is rendered ahead of time by a background process, and there is no import step before you can look.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/grid-cull-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/grid-cull-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The Ingest grid part way through a cull, with tagged photographs, stars, a colour label, bracket stack badges, and live counts in the sources list"></a><figcaption>A card part way through a cull. The counts on the left update as you mark. Photographs are demonstration images, credited on the support page.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/grid-cull-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/grid-cull-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The Ingest grid part way through a cull, with tagged photographs, stars, a color label, bracket stack badges, and live counts in the sources list"></a><figcaption>A card part way through a cull. The counts on the left update as you mark. Photographs are demonstration images, credited on the support page.</figcaption></figure>
 <p>Arrow keys move, <kbd>⇧</kbd> extends the selection, and <kbd>⌘</kbd> with an arrow moves the focus ring without disturbing what is selected. <kbd>⌘+</kbd> and <kbd>⌘-</kbd> resize the thumbnails, and so does a pinch.</p>
 <p>Photographs are ordered by when they were taken, down to the fraction of a second, so two cameras at the same event interleave correctly. You can sort by filename instead from the palette.</p>
 <p>Which files are supported, and what happens to the rest, is on the <a href="/ingest/support/#formats">support page</a>.</p>
@@ -102,7 +102,7 @@
 <tbody>
 <tr><td><kbd>I</kbd></td><td>Camera, lens, exposure, and what size image is on screen.</td></tr>
 <tr><td><kbd>⌥D</kbd></td><td>Detail. Turns the image into pure edge contrast, which makes soft frames obvious.</td></tr>
-<tr><td><kbd>⌥E</kbd></td><td>Edges, drawn in colour over the photograph.</td></tr>
+<tr><td><kbd>⌥E</kbd></td><td>Edges, drawn in color over the photograph.</td></tr>
 <tr><td><kbd>⌥A</kbd></td><td>The focus point the camera recorded, when it recorded one. Sony and Fujifilm both do; it is hidden when the camera did not.</td></tr>
 <tr><td><kbd>⌥F</kbd></td><td>Face close-ups along the bottom, each cropped at full size so you can check the eyes without zooming.</td></tr>
 </tbody>
@@ -113,10 +113,10 @@
 
 <section id="stacks" class="guide-section">
 <h2>Bracket stacks</h2>
-<p>A three or five shot bracket is one picture taken several times. Ingest recognises those sets and shows them as a single cell with a badge, so a card of a hundred brackets looks like twenty pictures instead of a hundred frames.</p>
+<p>A three or five shot bracket is one picture taken several times. Ingest recognizes those sets and shows them as a single cell with a badge, so a card of a hundred brackets looks like twenty pictures instead of a hundred frames.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/stacks-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/stacks-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="A grid with bracket stacks expanded, showing demonstration landscapes at different exposures"></a><figcaption>Expanded stacks reveal each frame. The exposure spread is visible in the thumbnails.</figcaption></figure>
 <p><kbd>S</kbd> expands or collapses the set you are on, <kbd>⌥S</kbd> does all of them. A mark on a collapsed set applies to every frame in it, so tagging the bracket keeps the whole bracket.</p>
-<p>Sets are found two ways. Sony writes a flag saying the frames were an auto bracket, which is definitive. Fujifilm does not, so Ingest looks for frames taken a fraction of a second apart with the same aperture and ISO and a clean spread of shutter speeds. Sets of three, five, seven, and nine are recognised, and an incomplete set is still stacked and marked as incomplete rather than quietly hidden.</p>
+<p>Sets are found two ways. Sony writes a flag saying the frames were an auto bracket, which is definitive. Fujifilm does not, so Ingest looks for frames taken a fraction of a second apart with the same aperture and ISO and a clean spread of shutter speeds. Sets of three, five, seven, and nine are recognized, and an incomplete set is still stacked and marked as incomplete rather than quietly hidden.</p>
 <p>If it gets one wrong, fix it. Select frames and combine them into a stack, or uncombine one. Your corrections are remembered for that folder. Stacking can be turned off per folder with <kbd>⌥⌘K</kbd>.</p>
 <p>A RAW and JPEG pair is handled separately: by default the two files show as one photograph, and marking or copying acts on both. <kbd>⌥⌘J</kbd> turns that off for a folder when you want to see them apart.</p>
 </section>
@@ -130,10 +130,10 @@
 
 <section id="culling" class="guide-section">
 <h2>Culling</h2>
-<p>Four kinds of mark, and they are all one key. <kbd>T</kbd> tags a keeper. <kbd>X</kbd> rejects. <kbd>1</kbd> to <kbd>5</kbd> set stars, and pressing the star count it already has clears it. <kbd>6</kbd> to <kbd>9</kbd> set the Lightroom colours, with <kbd>⌥9</kbd> for purple.</p>
+<p>Four kinds of mark, and they are all one key. <kbd>T</kbd> tags a keeper. <kbd>X</kbd> rejects. <kbd>1</kbd> to <kbd>5</kbd> set stars, and pressing the star count it already has clears it. <kbd>6</kbd> to <kbd>9</kbd> set the Lightroom colors, with <kbd>⌥9</kbd> for purple.</p>
 <p>By default a mark acts where you are and stays there, which is what Photo Mechanic does and what most people want when they are rating. Turn on advancing in Settings, Culling and the loop becomes one key per photograph: <kbd>T</kbd> to keep, <kbd>→</kbd> to skip. Holding <kbd>⇧</kbd> with any marking key does the opposite for that one press.</p>
 <p>Everything is undoable. <kbd>⌘Z</kbd> puts back a mark, a batch of marks, or a stack you took apart.</p>
-<p>Tags and rejects live in Ingest. Stars and colour labels are written into the photographs themselves, in the background, a couple of seconds after you stop typing, so Lightroom sees them when it imports. On a card nothing is written at all; the marks are remembered and applied to the copies during the ingest.</p>
+<p>Tags and rejects live in Ingest. Stars and color labels are written into the photographs themselves, in the background, a couple of seconds after you stop typing, so Lightroom sees them when it imports. On a card nothing is written at all; the marks are remembered and applied to the copies during the ingest.</p>
 <p>Rejects are hidden by default, and the toggle for that sits in the toolbar where you can see it, so photographs never disappear without the app saying so. <kbd>⇧⌘⌫</kbd> empties them: to a folder beside the source, or to the Trash, and on a card only after a confirmation, because cards have no Trash.</p>
 </section>
 
@@ -147,8 +147,8 @@
 
 <section id="metadata" class="guide-section">
 <h2>Metadata</h2>
-<p>Ingest writes keywords, captions, titles, creator, copyright, ratings, colour labels, and GPS into the photographs, in the fields Adobe and Apple read. Not into a sidecar file, because Apple Photos ignores those.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/inspector-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/inspector-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The inspector showing a photograph's camera details, tag and reject buttons, stars, colour dots, and protected metadata fields on the source card"></a><figcaption>The inspector shows camera details and culling marks. Metadata fields stay protected on cards; ingest first to edit the copies.</figcaption></figure>
+<p>Ingest writes keywords, captions, titles, creator, copyright, ratings, color labels, and GPS into the photographs, in the fields Adobe and Apple read. Not into a sidecar file, because Apple Photos ignores those.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/inspector-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/inspector-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The inspector showing a photograph's camera details, tag and reject buttons, stars, color dots, and protected metadata fields on the source card"></a><figcaption>The inspector shows camera details and culling marks. Metadata fields stay protected on cards; ingest first to edit the copies.</figcaption></figure>
 <p>The inspector is the slow way, and it is open with <kbd>⌘I</kbd>. <kbd>K</kbd> puts the cursor straight in the keyword field, which completes from every keyword you have ever used. <kbd>⇧C</kbd> goes to the caption. <kbd>⇧K</kbd> takes back the keywords you just added, which is the one you will want after applying the wrong thing to forty photographs.</p>
 <p>Every write is checked. Ingest keeps the tool's backup of the file until it has read the file back and confirmed the new value, then removes the backup. If the read back does not match, the original is put back. That is why writing metadata to a hundred files takes a moment.</p>
 <p><strong>Never to a card.</strong> Whatever you type while culling a card is remembered and applied to the copies as they land, after they have been verified.</p>
@@ -177,7 +177,7 @@
 
 <section id="destinations" class="guide-section">
 <h2>Destinations</h2>
-<p>Favourites are the folders you copy into. <kbd>⌘D</kbd> adds the one you are looking at, and you can drop folders onto the list from Finder. Their order matters: the first nine get a number, and that number picks them inside the Ingest sheet with <kbd>⌘1</kbd> to <kbd>⌘9</kbd> and opens them from anywhere with <kbd>⌃⌘1</kbd> to <kbd>⌃⌘9</kbd>.</p>
+<p>Favorites are the folders you copy into. <kbd>⌘D</kbd> adds the one you are looking at, and you can drop folders onto the list from Finder. Their order matters: the first nine get a number, and that number picks them inside the Ingest sheet with <kbd>⌘1</kbd> to <kbd>⌘9</kbd> and opens them from anywhere with <kbd>⌃⌘1</kbd> to <kbd>⌃⌘9</kbd>.</p>
 <p>An ingest can write to two destinations at once. The second copy is made from the first one after it has been verified, and it is checked the same way.</p>
 <p>Under Settings, Destinations there is a card called Ingest starts with. That is the memory of what you used last, in editable form, so a repeat card can be <kbd>⌘G</kbd> and then Return.</p>
 </section>
@@ -193,7 +193,7 @@
 <h2>Ingesting</h2>
 <p><kbd>⌘G</kbd> opens the sheet. It fills itself in from what you did last and from the workspace you are in, so most of the time the answer is Return.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/ingest-dialog-0.2.1-retina.webp"><img style="--capture-width:640px" src="/ingest/assets/ingest-dialog-0.2.1-retina.webp" width="1280" height="1302" loading="lazy" alt="The Ingest sheet showing scope tabs with counts, a destination, a subfolder template, a rename template with a live preview of the resulting filenames, and the file count and size"></a><figcaption>Everything the copy will do, before it does any of it.</figcaption></figure>
-<p>The tabs at the top choose what to copy, with the count on each one: tagged, selected, what is on screen, or everything. <kbd>⌃1</kbd> to <kbd>⌃4</kbd> pick them without the mouse. The cursor starts in the destination field, where you can type part of a favourite's name.</p>
+<p>The tabs at the top choose what to copy, with the count on each one: tagged, selected, what is on screen, or everything. <kbd>⌃1</kbd> to <kbd>⌃4</kbd> pick them without the mouse. The cursor starts in the destination field, where you can type part of a favorite's name.</p>
 <p>Below that: an optional second destination, a subfolder named by template, renaming with a live preview of the actual filenames, which of a RAW and JPEG pair to take, a metadata preset to apply to the copies, and what to do with the card afterwards.</p>
 <p>What happens when you press Ingest:</p>
 <ul>
@@ -208,7 +208,7 @@
 <figure class="desktop-shot"><a href="/ingest/assets/dest-grid-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/dest-grid-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The destination folder open in Ingest after a copy, showing renamed files with their stars"></a><figcaption>The destination, opened straight after the copy. Renaming, stars, and metadata all arrived with the files.</figcaption></figure>
 <figure class="desktop-shot"><a href="/ingest/assets/receipt-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/receipt-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The completion receipt confirms 24 demo items ingested, verified filenames, and originals kept"></a><figcaption>The receipt reports verified results and whether the originals were kept. This small demonstration copy is not a transfer-speed benchmark.</figcaption></figure>
 <p>The progress strip shows copied files and verified, published files separately. Each destination gets a completion check only when it holds every planned file. If an ingest stops early, the receipt identifies what remains only on the card and offers a deliberate retry.</p>
-<p>Cancelling keeps what was already copied and verified, and the sequence number only advances by the files actually named. A card that was half emptied last time is not a problem either: the photographs you already took are marked, and the New Since Last Import split shows you the rest.</p>
+<p>Canceling keeps what was already copied and verified, and the sequence number only advances by the files actually named. A card that was half emptied last time is not a problem either: the photographs you already took are marked, and the New Since Last Import split shows you the rest.</p>
 </section>
 
 <section id="actions" class="guide-section">
@@ -230,13 +230,13 @@
 <figure class="desktop-shot"><a href="/ingest/assets/palette-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/palette-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The command palette showing contextual commands, shortcut labels, the highlighted Ingest action, and the Actions button"></a><figcaption>Before you type, the palette suggests what fits what you have selected.</figcaption></figure>
 <p>Every row shows its key, so the palette teaches the keyboard while you use it. Commands that cannot run right now stay visible with the reason underneath, rather than vanishing and leaving you wondering. <kbd>⇧⌘P</kbd> pins a command to the top for good.</p>
 <p>The footer names the command Return will run. Click <strong>Actions</strong> or press <kbd>⌘K</kbd> again to pin or unpin the highlighted command, copy its link, or configure its shortcut. Configure Shortcut opens that exact command in Settings. Copy Link keeps the palette open and confirms the copy. <kbd>Esc</kbd> closes Actions first, then the palette and returns focus to where you were.</p>
-<p>Your favourites, workspaces, splits, presets, actions, and recent folders are all in there too, so the palette is a way to go somewhere as well as a way to do something. <kbd>?</kbd> shows the shortcut sheet, and holding <kbd>⌘</kbd> for a moment shows the keys that work where you are standing.</p>
+<p>Your favorites, workspaces, splits, presets, actions, and recent folders are all in there too, so the palette is a way to go somewhere as well as a way to do something. <kbd>?</kbd> shows the shortcut sheet, and holding <kbd>⌘</kbd> for a moment shows the keys that work where you are standing.</p>
 </section>
 
 <section id="settings" class="guide-section">
 <h2>Settings</h2>
 <p><kbd>⌘,</kbd> opens a window with eleven pages and a search field. Everything the app stores is in there with a real control: folder and app choosers instead of typed paths, pickers instead of remembered strings, live previews for templates, snippets, and splits, and drag to reorder wherever the order decides a number key.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/settings-culling-0.2.1-retina.webp"><img style="--capture-width:980px" src="/ingest/assets/settings-culling-0.2.1-retina.webp" width="1960" height="1400" loading="lazy" alt="The Culling settings page with switches for marking behaviour, new folder defaults, and writing stars into files, plus a locked row stating that memory cards are never modified"></a><figcaption>The Culling page. The last row has a lock rather than a switch, because it is not a preference.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/settings-culling-0.2.1-retina.webp"><img style="--capture-width:980px" src="/ingest/assets/settings-culling-0.2.1-retina.webp" width="1960" height="1400" loading="lazy" alt="The Culling settings page with switches for marking behavior, new folder defaults, and writing stars into files, plus a locked row stating that memory cards are never modified"></a><figcaption>The Culling page. The last row has a lock rather than a switch, because it is not a preference.</figcaption></figure>
 <p>Edits apply as you make them, the way a Mac app should, and anything destructive is undoable with <kbd>⌘Z</kbd> while the window is open. Settings, Advanced exports the whole configuration as one file to carry to another Mac, described on the <a href="/ingest/automation/#settings-file">automation page</a>.</p>
 <p>There is one row that is not a setting. On the Culling page, <em>Memory cards are never modified</em> has a lock beside it instead of a switch. It is listed so that the rule is visible, not so that it can be turned off.</p>
 </section>

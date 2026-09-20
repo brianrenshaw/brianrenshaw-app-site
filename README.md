@@ -15,9 +15,11 @@ python3 scripts/check_site.py
 python3 -m http.server 8080 --directory site
 ```
 
+`check_site.py` also fails on British spellings. The copy is American English throughout: color, favorite, behavior, recognize, canceled. Extend the word lists in that script rather than letting an exception through.
+
 Open http://localhost:8080/. Links are root-relative because production is served from the custom domain root. The default GitHub project URL is not a supported preview without that domain; use the local server.
 
-GitHub Actions validates links, anchors, local assets and canonical addresses before deploying `site/` to Pages on pushes to main. Pull requests validate without deploying. No build framework, package installation, analytics, or external font dependency is needed.
+GitHub Actions validates links, anchors, local assets, canonical addresses and American spelling before deploying `site/` to Pages on pushes to main. Pull requests validate without deploying. No build framework, package installation, analytics, or external font dependency is needed.
 
 ## Routes
 
@@ -66,7 +68,7 @@ The Sparkle feed for Ingest is `site/ingest/appcast.xml`, and every shipped buil
 
 Anchor ids under `/ingest/` are a contract. The app's Help menu links to `/ingest/guide/`, `/ingest/shortcuts/`, `/ingest/release-notes/`, and `/ingest/support/`, the appcast links to `/ingest/release-notes/#vX.Y.Z`, and the pages link to each other's sections. Rename a section heading if you like, but leave its `id` alone.
 
-Facts that live in exactly one place, because the site has no includes: shortcuts on `/ingest/shortcuts/`, name tokens and quick entry on `/ingest/templates/`, requirements and file formats on `/ingest/support/`, the URL scheme and the settings file on `/ingest/automation/`, network behaviour on `/ingest/privacy/`. Everything else links to those. The shortcut tables are transcribed from `Sources/Ingest/Commands/CommandCatalog.swift`; diff them against that file at each release, because the link checker cannot catch a wrong key.
+Facts that live in exactly one place, because the site has no includes: shortcuts on `/ingest/shortcuts/`, name tokens and quick entry on `/ingest/templates/`, requirements and file formats on `/ingest/support/`, the URL scheme and the settings file on `/ingest/automation/`, network behavior on `/ingest/privacy/`. Everything else links to those. The shortcut tables are transcribed from `Sources/Ingest/Commands/CommandCatalog.swift`; diff them against that file at each release, because the link checker cannot catch a wrong key.
 
 ### Ingest screenshot quality
 
