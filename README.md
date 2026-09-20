@@ -38,7 +38,7 @@ Two blogs are linked from homepage cards without local pages: Lankford Legends (
 
 Spreadsheet Tools lives at `/spreadsheet-tools/`. Its React source remains in the sibling `spreadsheet-webapp` repository (`brianrenshaw/spreadsheet-tools` on GitHub). Run that project's `scripts/sync-website.py` to rebuild and copy generated files here, then commit and push this repository. Keep the utility link at the bottom of the portfolio. See that project's `WEBSITE_MIGRATION.md` for the complete workflow.
 
-Walkthrough (formerly Listing Namer) is at `/walkthrough/`, with `guide/`, `support/`, `privacy/`, and `release-notes/`. Its native source is in the private sibling `real-estate-photos-renamer` project / `brianrenshaw/listing-namer` repository. Public DMGs are GitHub Release assets in this website repository; they are not committed into `site/`. See `LISTING_NAMER_RELEASES.md` for the release handoff. The current download is signed and notarized Walkthrough 1.4.0, build 11.
+Walkthrough (formerly Listing Namer) is at `/walkthrough/`, with `guide/`, `support/`, `privacy/`, and `release-notes/`. Its native source is in the private sibling `real-estate-photos-renamer` project / `brianrenshaw/listing-namer` repository. Public DMGs are GitHub Release assets in this website repository; they are not committed into `site/`. See `LISTING_NAMER_RELEASES.md` for the release handoff. The current download is signed and notarized Walkthrough 1.4.1, build 12.
 
 ### Do not delete the `folio-privacy` Pages repository
 
@@ -57,7 +57,7 @@ Release notes are published at `/walkthrough/release-notes/`, with links in the 
 
 Canceled is at `/canceled/`, a landing page only. The app is in development for iPhone and iPad, is not on TestFlight, and has nothing to download, so the page states status and offers no call to action. Its native source is in the sibling `canceled-app` project. Add `support/` and `privacy/` when it reaches TestFlight, and add `canceled` to the required-routes list in `scripts/check_site.py` at the same time. Page assets under `site/canceled/assets/` are copied from that project; its Archivo woff2 is the same file already bundled for Where Do We Eat.
 
-The homepage grid is grouped by platform: iOS apps, then the Mac app, then the blogs, then the utility. See `MESSAGING.md` for the numbered order. The share image `assets/social-projects-v9.png` holds ten projects, three rows of three plus one; rebuild it with `python3 scripts/build_social.py` and bump the filename plus both metadata URLs when the artwork changes.
+The homepage grid is grouped by platform: iOS apps, then the Mac app, then the blogs, then the utility. See `MESSAGING.md` for the numbered order. The share image `assets/social-projects-v10.png` holds ten projects, three rows of three plus one; rebuild it with `python3 scripts/build_social.py` and bump the filename plus both metadata URLs when the artwork changes.
 
 
 Ingest is at `/ingest/`, the second Mac app. Its native source is in the private sibling `photo-importer` project. Public DMGs are GitHub Release assets in this repository, tagged `ingest-v*`; they are not committed into `site/`. See `INGEST_RELEASES.md` for the release handoff. The current download is signed and notarized Ingest 0.2.0, build 5.

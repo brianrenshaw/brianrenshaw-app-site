@@ -20,7 +20,7 @@
 .portfolio-slot{padding:36px;display:flex;flex-direction:column;justify-content:flex-end;min-height:370px;border:1px dashed #0003;color:var(--muted)}.portfolio-slot .eyebrow{margin:0 0 14px}.portfolio-slot h2{font-family:Georgia,serif;font-size:26px;font-weight:400;letter-spacing:-.02em;line-height:1.25;margin:0 0 12px;max-width:18ch}.portfolio-slot p:not(.eyebrow){font-size:15px;max-width:38ch;margin:0}.portfolio-slot a{color:inherit}@media(max-width:700px){.portfolio-slot{padding:28px;min-height:0}}@media(prefers-color-scheme:dark){.portfolio-slot{border-color:#fff3}}
 .folio .eyebrow,.folio .app-bottom a{color:#943b00}.where-do-we-eat .eyebrow,.where-do-we-eat .app-bottom a{color:#b52b17}.portfolio-app .eyebrow{opacity:1}@media(prefers-color-scheme:dark){.folio .eyebrow,.folio .app-bottom a{color:#ffb570}.where-do-we-eat .eyebrow,.where-do-we-eat .app-bottom a{color:#ffab98}}
 .reading-habit .eyebrow,.reading-habit .app-bottom a{color:#7d5411}@media(prefers-color-scheme:dark){.reading-habit .eyebrow,.reading-habit .app-bottom a{color:#e2b15f}}
-.listing-namer{background:#e9dfc8;color:#292b2b}.listing-namer .eyebrow,.listing-namer .app-bottom a{color:#795009}@media(prefers-color-scheme:dark){.listing-namer{background:#292c2e;color:#f1efe9}.listing-namer .eyebrow,.listing-namer .app-bottom a{color:#e9b454}}
+.listing-namer{background:#d5eeeb;color:#183b3b}.listing-namer .eyebrow,.listing-namer .app-bottom a{color:#176b67}@media(prefers-color-scheme:dark){.listing-namer{background:#292c2e;color:#f1efe9}.listing-namer .eyebrow,.listing-namer .app-bottom a{color:#52c7c2}}
 
 .canceled{background:#142d4e;color:#fffdf6}
 .canceled .eyebrow,.canceled .app-bottom a{color:#f7dc12}

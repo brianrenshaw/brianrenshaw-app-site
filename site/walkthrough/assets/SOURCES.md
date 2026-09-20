@@ -24,3 +24,7 @@ The `native-*-1.2.0.png` images are unmodified macOS UI-test captures of the red
 ## Walkthrough 1.3.0
 
 The four `native-export-*-1.3.0.png` images are unmodified Dark appearance native UI-test captures at 1440×900 points, taken September 19, 2026. They show separate naming-warning and skip-error controls using the isolated demonstration library and credited photographs above.
+
+## Walkthrough 1.4.1
+
+All `native-*-1.4.1.png` screenshots are unmodified native macOS window captures of the 1.4.1 implementation using an isolated demonstration library, the credited photographs above, and fictional listing/business details. Captured September 20, 2026 in Dark appearance, plus a Light workspace capture. Update checking is disabled in the isolated screenshot fixture. The teal icon is copied directly from the native 1024px AppIcon asset. Current landing, guide, support, and social metadata use these assets; historical assets remain unchanged.

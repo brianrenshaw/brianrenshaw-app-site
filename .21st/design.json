@@ -62,6 +62,10 @@
     {
       "id": "listing-namer-project",
       "decision": "Replace the eighth placeholder with Listing Namer, a Mac app preview. Reuse static family primitives, warm stone/charcoal/amber colors and genuine native screenshots. App pages, feed, and release hosting belong in this website repository."
+    },
+    {
+      "id": "walkthrough-native-1.4.1",
+      "decision": "Walkthrough uses its native teal house-and-number icon and teal accent (#52c7c2) with neutral dark surfaces. Current screenshots are real isolated-library native captures from 1.4.1. Settings autosave; keep keyboard, guide, release and download information aligned with the native app."
     }
   ],
   "evidence": [],
