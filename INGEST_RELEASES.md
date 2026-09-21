@@ -49,6 +49,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.4.1 | 10 | September 21, 2026 | Live Social previews, automatic layouts, explicit navigation/import, filmstrip selection, export sheet, project cleanup, and Organize setup/resume. |
 | 0.4.0 | 9 | September 21, 2026 | Social Export compositions and saved projects, Organize workspace, and workflow improvements. |
 | 0.3.1 | 8 | September 20, 2026 | Refresh filmstrip thumbnails when preview information arrives. |
 | 0.3.0 | 7 | September 20, 2026 | Expanded camera formats, RAW + JPEG/HEIF pairing, XMP metadata, folder refresh, and safer interrupted imports. |

@@ -1,5 +1,5 @@
 {
-  "capture": "macOS screencapture -x -o -a -l WINDOW_ID; cursor excluded; native 2x; lossless WebP; Ingest 0.2.1 (6)",
+  "capture": "Native macOS window captures at 2x, cursor and shadow excluded, lossless WebP. Existing Ingest 0.2.1 captures plus Organize and Social Export from 0.4.1 (10).",
   "images": {
     "compare-0.2.1-retina.webp": {
       "width": 2444,
@@ -96,6 +96,30 @@
       "height": 1562,
       "displayWidth": 1222,
       "displayHeight": 781
+    },
+    "social-workspace-0.4.1-retina.webp": {
+      "width": 2880,
+      "height": 1904,
+      "displayWidth": 1440,
+      "displayHeight": 952
+    },
+    "social-export-0.4.1-retina.webp": {
+      "width": 1300,
+      "height": 1082,
+      "displayWidth": 650,
+      "displayHeight": 541
+    },
+    "organize-setup-0.4.1-retina.webp": {
+      "width": 920,
+      "height": 668,
+      "displayWidth": 460,
+      "displayHeight": 334
+    },
+    "organize-workspace-0.4.1-retina.webp": {
+      "width": 2880,
+      "height": 1904,
+      "displayWidth": 1440,
+      "displayHeight": 952
     }
   }
 }
