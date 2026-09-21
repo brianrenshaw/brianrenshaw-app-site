@@ -1,5 +1,5 @@
 {
-  "capture": "Native macOS window captures at 2x, cursor and shadow excluded, lossless WebP. Existing Ingest 0.2.1 captures plus Organize and Social Export from 0.4.1 (10).",
+  "capture": "Native macOS window captures at 2x, cursor and shadow excluded, lossless WebP. Existing Ingest 0.2.1 captures plus Organize and Social Export from 0.4.1 (10). RAW histogram capture from Ingest 0.6.0 (12), native 2x, lossless WebP.",
   "images": {
     "compare-0.2.1-retina.webp": {
       "width": 2444,
@@ -114,6 +114,12 @@
       "height": 1904,
       "displayWidth": 1440,
       "displayHeight": 952
+    },
+    "raw-histogram-0.6.0-retina.webp": {
+      "width": 4112,
+      "height": 2580,
+      "displayWidth": 2056,
+      "displayHeight": 1290
     }
   }
 }

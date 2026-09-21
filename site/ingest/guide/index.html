@@ -38,6 +38,7 @@
 <a href="#browsing">Browsing</a>
 <a href="#preview">The preview</a>
 <a href="#compare">Compare and survey</a>
+<a href="#raw-histogram">RAW histogram and preview comparison</a>
 <a href="#overlays">Overlays</a>
 <a href="#stacks">Bracket stacks</a>
 <a href="#video">Video</a>
@@ -69,7 +70,7 @@
 
 <section id="browsing" class="guide-section">
 <h2>Browsing, and why it is fast</h2>
-<p>Use the Grid, Preview, and Split icons to choose your view. Press <kbd>I</kbd> to cycle photo information in any of them. The inspector opens Histogram, Camera Details, Keywords, Caption, and Location expanded, and remembers sections you collapse. Metadata shortcuts reveal and focus the appropriate field. Grid sizing extends to one photo at a time; arrow keys stay with your photos by default.</p>
+<p>Use the Grid, Preview, and Split icons to choose your view. Press <kbd>I</kbd> to cycle photo information in any of them. The inspector shows Histogram, Camera Details, Caption, Keywords, and Location by default. Settings → Sidebar Information lets you choose fields and drag them into your preferred order. Metadata shortcuts open the appropriate editor. Grid sizing extends to one photo at a time; arrow keys stay with your photos by default.</p>
 <p>A raw file is large and slow to develop. Many cameras also write a finished preview inside that raw file for their own screens. Ingest finds that JPEG and reads only those bytes. A Sony ARW is 76 MB; the preview Ingest reads out of it is a few hundred kilobytes, and the full size JPEG inside it is about six.</p>
 <p>Embedded previews keep ordinary browsing fast, with no import step before you can look. If a file has no usable preview or paired image, Ingest can render the selected photo in a separate helper and cache the result. That first fallback preview is slower; whole cards are not rendered in advance.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/grid-cull-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/grid-cull-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The Ingest grid part way through a cull, with tagged photographs, stars, a color label, bracket stack badges, and live counts in the sources list"></a><figcaption>A card part way through a cull. The counts on the left update as you mark. Photographs are demonstration images, credited on the support page.</figcaption></figure>
@@ -84,7 +85,7 @@
 <figure class="desktop-shot"><a href="/ingest/assets/preview-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/preview-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="A photograph filling the preview with a filmstrip of the rest of the card along the bottom"></a><figcaption>The preview with the filmstrip. The marks you have made show on both.</figcaption></figure>
 <p><kbd>Z</kbd> goes to 100 per cent at the pointer, so whatever is under the cursor stays under the cursor, and <kbd>Z</kbd> again returns to fit. <kbd>⌥1</kbd>, <kbd>⌥2</kbd>, and <kbd>⌥4</kbd> are fixed zoom levels, and <kbd>F</kbd> fits. A pinch, a two finger drag, and a two finger double tap do the same things.</p>
 <p>The zoom is sticky as you move between photographs, which is the point: you set 100 per cent on an eye, then arrow through five frames and compare the same eye in each.</p>
-<p>At 100 per cent Ingest shows the full size JPEG from inside the raw file, which for a Sony body is the whole 9504 pixel frame. When a raw file's preview is smaller than its JPEG twin, Ingest uses the twin, and the information overlay tells you which pixels you are actually judging.</p>
+<p>In ordinary preview mode, at 100 per cent Ingest shows the full size JPEG from inside the raw file, which for a Sony body is the whole 9504 pixel frame. When a raw file's preview is smaller than its JPEG twin, Ingest uses the twin, and the information overlay tells you which pixels you are actually judging.</p>
 </section>
 
 <section id="compare" class="guide-section">
@@ -93,6 +94,20 @@
 <figure class="desktop-shot"><a href="/ingest/assets/compare-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/compare-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="Two photographs side by side in Compare with the zoom locked indicator"></a><figcaption>Compare, with the zoom locked across both panes. <kbd>⇧Z</kbd> frees them.</figcaption></figure>
 <p>Marking keys act on the highlighted pane, so you can tag your choice without leaving the comparison. <kbd>Esc</kbd> leaves.</p>
 <p>On a bracket set, <kbd>C</kbd> opens every frame at once, which is how you check whether the window is blown in all five.</p>
+</section>
+
+<section id="raw-histogram" class="guide-section">
+<h2>RAW histogram and preview comparison</h2>
+<figure class="desktop-shot"><a href="/ingest/assets/raw-histogram-0.6.0-retina.webp"><img style="--capture-width:2056px" src="/ingest/assets/raw-histogram-0.6.0-retina.webp" width="4112" height="2580" loading="lazy" alt="The same Canon RAW photo shown as a RAW preview and embedded JPEG, beside an RGB sensor histogram reporting 1.6 stops of headroom"></a><figcaption>One photo, two previews. The RAW sensor histogram measures exposure independently of either rendering.</figcaption></figure>
+<p>The inspector’s <strong>RAW / JPEG / Compare</strong> selector starts on RAW for each RAW photo. Supported Bayer and X-Trans sensor data, including DNG files with these mosaics, is read directly with black levels subtracted. White balance, demosaic, and rendering tone curves do not affect this histogram.</p>
+<p>RGB curves remain visible by default. Use <strong>Combined / RGB / R / G / B</strong> to combine curves or isolate a channel. An individual RAW channel shows its headroom and clipped percentage. Both green photosite populations are combined, and channels are normalized so green does not dominate simply because the sensor contains more green photosites. Use <strong>Log (stops) / Linear</strong> to change the RAW scale (also available by right-clicking). The default runs from −16 stops to the white level at 0; its midpoint is −8 stops, only 0.39% of sensor saturation. JPEG charts use rendered tone values from 0 to 255, so horizontal positions in the two charts are not directly comparable. White balance and tone processing can make the JPEG reach white before the sensor saturates. Saturated values appear in a separate area at the right edge.</p>
+<p><strong>Highlight headroom</strong> measures the brightest channel’s 99.9th percentile against the camera/file white level, reducing the effect of a few hot pixels. Once 0.1% of any channel clips, the line changes to <strong>Clipped: 2.4%</strong>, for example. This percentage describes the channel with the highest clipped proportion, not a demosaiced pixel count. Clipping below the threshold still appears at the chart’s right edge. An entirely black signal shows “Headroom unavailable.” The measurement covers the active sensor area, independent of display crops.</p>
+<p><strong>JPEG</strong> selects a linear histogram of the paired JPEG, or the largest readable embedded JPEG when no readable JPEG companion exists. The source label’s tooltip identifies which file or preview is used. JPEG histograms do not report RAW highlight headroom.</p>
+<p><strong>Render RAW Preview</strong>, below the main photo or in the command bar, renders only the selected photo. The existing image stays visible while it loads. The photographic rendering includes camera white balance; it remains separate from the unrendered sensor histogram. Choose <strong>Show JPEG Preview</strong> to return.</p>
+<p>Enable <strong>Show clipping on image</strong> to mark clipped regions for the selected channels and histogram source. RAW uses sensor saturation; JPEG uses full-resolution rendered values at 255. Each marker can cover several photosites so small clipped areas remain visible when zoomed out. Markers follow zoom, pan, orientation, and supported display crops. Camera JPEG crops or lens corrections can shift alignment with sensor regions. The overlay label identifies its source, including JPEG fallback. This display does not change exposure or the image file.</p>
+<p><strong>Compare</strong> above the histogram opens the same photo’s labeled RAW and JPEG previews side by side, with linked zoom and pan and full-resolution loading for 100% inspection. The RAW histogram stays visible. <strong>Close Comparison</strong> returns to the single preview. Navigating to another photo returns to ordinary preview loading. This differs from <kbd>C</kbd>, which compares multiple photographs.</p>
+<p>If RAW data cannot be read, Ingest labels the fallback <strong>JPEG histogram</strong> and explains: “Couldn't read raw data for this file. Showing the JPEG histogram instead.” If no JPEG can be read, the module shows an unavailable state. Other rendered formats retain their own source labels. Unsupported sensor layouts and RAW compression variants use this fallback.</p>
+<p>Calculation runs in the background and is cached by file revision. Loading holds the chart’s space; results fade in when ready. RAW rendering and analysis pause during ingest. These controls inspect exposure and rendering; they do not adjust exposure or assign ratings.</p>
 </section>
 
 <section id="overlays" class="guide-section">
@@ -150,10 +165,12 @@
 
 <section id="metadata" class="guide-section">
 <h2>Metadata</h2>
-<p>Ingest writes keywords, captions, titles, creator, copyright, ratings, color labels, and GPS into the photographs, in the fields Adobe and Apple read. Not into a sidecar file, because Apple Photos ignores those.</p>
-<p>The inspector is the slow way, and it is open with <kbd>⌘I</kbd>. <kbd>K</kbd> puts the cursor straight in the keyword field, which completes from every keyword you have ever used. <kbd>⇧C</kbd> goes to the caption. <kbd>⇧K</kbd> takes back the keywords you just added, which is the one you will want after applying the wrong thing to forty photographs.</p>
+<p>Photo Info keeps Caption, Keywords, and Location close at hand. Its menu opens the full IPTC editor when you need specialized fields. Choose and reorder sidebar fields in Settings → Sidebar Information. Ingest writes supported rendered files directly and uses XMP sidecars for proprietary RAW files. Export a JPEG with metadata and GPS included for apps such as Apple Photos that may not read RAW sidecars.</p>
+<p>Use <strong>Suggest…</strong> beside Caption or Keywords for on-device Apple Intelligence suggestions on supported macOS 27 systems. Review each photo, edit the suggested text, and choose what to save. Nothing is written until you approve.</p>
+<p><strong>Location</strong> accepts address/place search, decimal latitude and longitude, an Apple Maps link containing coordinates, or just city and state. Camera location describes where you stood and can set the GPS used by map apps. Place in the photo describes the subject location; photographing a skyline from across a river is one example where they differ. Saving only place names leaves GPS unchanged.</p>
+<p>Open the inspector with <kbd>⌘I</kbd>. <kbd>K</kbd> opens Keywords. <kbd>⇧C</kbd> goes to the caption. <kbd>⇧K</kbd> takes back the keywords you just added, which is the one you will want after applying the wrong thing to forty photographs.</p>
 <p>Every write is checked. Ingest keeps the tool's backup of the file until it has read the file back and confirmed the new value, then removes the backup. If the read back does not match, the original is put back. That is why writing metadata to a hundred files takes a moment.</p>
-<p><strong>Never to a card.</strong> Whatever you type while culling a card is remembered and applied to the copies as they land, after they have been verified.</p>
+<p><strong>Never to a card.</strong> Camera originals are never modified. Set metadata in the ingest flow to apply it to verified destination copies.</p>
 </section>
 
 <section id="quick-entry" class="guide-section">

@@ -32,7 +32,7 @@
 <main id="main" tabindex="-1" class="family-document">
 <p class="eyebrow">Ingest / Privacy</p>
 <h1>Your photographs stay on your Mac.</h1>
-<p>Last updated September 20, 2026. Applies to Ingest 0.2.1.</p>
+<p>Last updated September 21, 2026. Applies to Ingest 0.6.0.</p>
 <p class="intro">Ingest has no account, no analytics, and no server of mine to send anything to. Two features reach the network, both described below, and both are things you start.</p>
 
 <section id="files">
@@ -50,9 +50,14 @@
 <p><strong>Face close-ups.</strong> The face close-up strip finds faces in the photograph on screen so it can show you each one enlarged. That runs on your Mac using Apple's Vision framework. No names or identities are involved, nothing is matched against anything, no result is stored between sessions, and nothing is sent anywhere.</p>
 </section>
 
+<section id="photo-suggestions">
+<h2>Photo suggestions</h2>
+<p>When you request a caption or keywords with Apple Intelligence, the on-device model processes a preview of your selected photo on your Mac. Suggestions remain editable drafts until you approve them. Ingest does not send the photograph to a cloud AI service.</p>
+</section>
+
 <section id="address-search">
 <h2>Address search</h2>
-<p>When you type in the address field, Ingest sends what you typed to Apple's MapKit service to get suggestions and coordinates. That is the only way to turn an address into a location, and Apple handles those requests under its own privacy terms. It happens only while you are typing in that field.</p>
+<p>When you type in the address field, Ingest sends what you typed to Apple's MapKit service to get suggestions and coordinates. That is the only way to turn an address into a location, and Apple handles those requests under its own privacy terms. Address search happens only while you are typing in that field. Displaying a location map can also request map data from Apple for the photograph’s coordinates. You can hide Location map in Settings → Sidebar Information. Pasting coordinates or entering city/state manually does not perform an address search.</p>
 <p>Addresses you have used are remembered on your Mac so they can be offered next time. Settings, Metadata clears that list. Locations already written into a photograph can be removed with <kbd>⇧⌘L</kbd>, which strips every location field Ingest writes.</p>
 </section>
 
@@ -64,7 +69,7 @@
 
 <section id="no-analytics">
 <h2>No analytics, no account</h2>
-<p>There is no analytics library, no crash reporting service, no advertising, and no account. Ingest contains no code of its own for making web requests. The only two network paths are the two named above.</p>
+<p>There is no analytics library, no crash reporting service, no advertising, and no account. Ingest contains no code of its own for making web requests. Address search and location maps use Apple’s MapKit services; update checks use the website and download hosts described above.</p>
 </section>
 
 <section id="actions">

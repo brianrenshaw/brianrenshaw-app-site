@@ -32,3 +32,9 @@ Photography from Unsplash via Lorem Picsum, under the Unsplash License
 
 The repeated landscape frames are demonstration exposure variants used to exercise bracket
 stacking. Camera details are synthetic fixture metadata, not claims about the original photographs.
+
+## RAW histogram development capture
+
+`raw-histogram-0.6.0-retina.webp` is an unretouched native 2× window capture of the Ingest 0.6.0 (12) release build. It shows the actual RAW histogram and LibRaw-rendered preview beside the largest embedded JPEG from the same Canon EOS R5 file. It is not a simulated exposure comparison. The capture excludes the cursor and window shadow and is encoded losslessly without resizing.
+
+The public demonstration RAW is Benjamin Grimm-Lebsanft’s CC0 Canon EOS R5 sample, raw.pixls.us entry 4694: https://raw.pixls.us/getfile.php/4694/nice/Canon%20-%20EOS%20R5%20-%203%3A2.CR3 . The original’s metadata credits the creator and states CC0; the camera fixture manifest records the same license. SHA-256: `21430c36387efe65bd09ac0fcd724bfd959d93dd391ec811a1b741c8663becb5`. A disposable local copy was used with an isolated app library; no personal or client photographs are shown.
