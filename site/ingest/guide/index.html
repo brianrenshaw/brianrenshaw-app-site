@@ -49,6 +49,8 @@
 <a href="#location">Locations</a>
 <a href="#destinations">Destinations</a>
 <a href="#renaming">Renaming</a>
+<a href="#organize">Organize</a>
+<a href="#social-export">Social Export</a>
 <a href="#ingesting">Ingesting</a>
 <a href="#actions">Actions</a>
 <a href="#workspaces">Workspaces</a>
@@ -233,9 +235,25 @@
 <p>Your favorites, workspaces, splits, presets, actions, and recent folders are all in there too, so the palette is a way to go somewhere as well as a way to do something. <kbd>?</kbd> shows the shortcut sheet, and holding <kbd>⌘</kbd> for a moment shows the keys that work where you are standing.</p>
 </section>
 
+<section id="organize" class="guide-section">
+<h2>Organize</h2>
+<p>Open a folder and choose <strong>Organize</strong> in the toolbar or command bar. Choose All, Selected, or Filtered photos, add grouping levels such as date, camera, lens, or keywords, and adjust photo assignments. Browse keeps its selection and filter while you work.</p>
+<p>Choose Copy, Move, or Rename and review every proposed destination before applying the operation. Existing files are preserved; conflicts must be resolved explicitly. Drafts save per folder, and reusable recipes carry grouping and naming rules. Memory cards must be ingested first.</p>
+</section>
+
+<section id="social-export" class="guide-section">
+<h2>Social Export</h2>
+<p>Select still photos and press <kbd>⇧⌘E</kbd>, or choose <strong>Social Export</strong> in the toolbar or photo context menu. Opening without a selection shows saved projects. Videos are excluded, and a combined RAW/JPEG pair counts as one photo.</p>
+<p>Each photo starts in its own frame. <strong>Arrange Photos</strong> groups the current order into Single, Pair, Row, Stack, or Grid layouts, retaining any partially filled final frame. Pair supports horizontal or vertical placement; rows and stacks offer equal or proportional cells. Drag frames or photos to rearrange them, or use Earlier/Later and Move to New Frame.</p>
+<p>Choose <strong>All Frames</strong> for batch appearance, select a frame for overrides, or select a photo to adjust its Fit/Fill crop. Fill supports zoom and pan with sliders or dragging. Set the ratio, uniform or per-side margins, spacing, solid borders, and automatic, solid-color, or chosen-image backgrounds. Frame overrides survive batch edits; reset a property to restore inheritance.</p>
+<p>Projects save automatically with source links, order, crops, and output choices. Rename or duplicate them from the project list. Use Locate or Refresh for unavailable or changed sources. Presets save appearance and export size/format independently of the destination; their background assets are included in settings exports.</p>
+<p>Export size means width: 1080 at 4:5 produces 1080 × 1350; 9:16 produces 1080 × 1920. Choose JPEG or opaque PNG and review exact filenames and dimensions. The default name is <code>{base}_{ratio}_{index:3}</code>; see <a href="/ingest/templates/#tokens-social">Social Export tokens</a>. Existing files are preserved, cancellation keeps completed files, and Review Retry includes only unfinished frames.</p>
+<p>Outputs use sRGB. Single-photo exports retain capture date, camera, lens, and credits, with GPS excluded unless enabled. Collages retain only shared creator/copyright. Original photos are unchanged, and export destinations cannot be on a memory card.</p>
+</section>
+
 <section id="settings" class="guide-section">
 <h2>Settings</h2>
-<p><kbd>⌘,</kbd> opens a window with eleven pages and a search field. Everything the app stores is in there with a real control: folder and app choosers instead of typed paths, pickers instead of remembered strings, live previews for templates, snippets, and splits, and drag to reorder wherever the order decides a number key.</p>
+<p><kbd>⌘,</kbd> opens a window with nine pages and a search field. Everything the app stores is in there with a real control: folder and app choosers instead of typed paths, pickers instead of remembered strings, live previews for templates, snippets, and splits, and drag to reorder wherever the order decides a number key.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/settings-culling-0.2.1-retina.webp"><img style="--capture-width:980px" src="/ingest/assets/settings-culling-0.2.1-retina.webp" width="1960" height="1400" loading="lazy" alt="The Culling settings page with switches for marking behavior, new folder defaults, and writing stars into files, plus a locked row stating that memory cards are never modified"></a><figcaption>The Culling page. The last row has a lock rather than a switch, because it is not a preference.</figcaption></figure>
 <p>Edits apply as you make them, the way a Mac app should, and anything destructive is undoable with <kbd>⌘Z</kbd> while the window is open. Settings, Advanced exports the whole configuration as one file to carry to another Mac, described on the <a href="/ingest/automation/#settings-file">automation page</a>.</p>
 <p>There is one row that is not a setting. On the Culling page, <em>Memory cards are never modified</em> has a lock beside it instead of a switch. It is listed so that the rule is visible, not so that it can be turned off.</p>
