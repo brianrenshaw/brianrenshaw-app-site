@@ -414,3 +414,7 @@ The About section on the Ingest landing page was a single positioning sentence u
 The histogram guide also covers persistent RGB/individual-channel controls and on-image clipping markers. Explain that RAW stops and JPEG tone-value axes differ; a rightward peak is not a cross-mode brightness comparison. Describe markers as regions, since they may cover several photosites and camera JPEG geometry may differ.
 
 Ingest 0.6.0 adds a compact Photo Info sidebar with configurable order and visibility, address/GPS/city-state location entry, and editable on-device Apple Intelligence caption/keyword suggestions (supported macOS 27 systems). Full IPTC editing remains available on demand. This copy accompanies Ingest 0.6.0 (12).
+
+### Ingest 0.7.0: Apple Photos
+
+Apple Photos is integrated by default and can be disabled in Settings. Describe ordinary albums, the System Photo Library, reviewed JPEG-first sending, and importing rendered Photos selections into Social Export. Native caption, keyword, and rating editing requires macOS 27. Do not promise Shared Album publishing, Smart Album rule editing, continuous synchronization, or arbitrary Photos library selection. Photos operations follow the user's iCloud settings; avoid blanket claims that photographs never leave the Mac. Public screenshots use the credited public demonstration photographs, never personal photos or private album names.

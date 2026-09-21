@@ -36,6 +36,7 @@
 <nav class="guide-toc" aria-label="On this page">
 <a href="#sources">Cards and folders</a>
 <a href="#browsing">Browsing</a>
+<a href="#apple-photos">Apple Photos</a>
 <a href="#preview">The preview</a>
 <a href="#compare">Compare and survey</a>
 <a href="#raw-histogram">RAW histogram and preview comparison</a>
@@ -66,6 +67,28 @@
 <p><kbd>⌘[</kbd> and <kbd>⌘]</kbd> go back and forward through what you have opened, like a browser, so switching to the card and back to yesterday's folder costs one keystroke.</p>
 <p><kbd>⌘E</kbd> ejects. Ingest closes every file it has open on the card first, which is why eject does not fail with the usual complaint about a file in use. If a card disappears, Ingest closes the source and cancels an active import. Verified copies are retained; check the result for incomplete groups.</p>
 <p>There is also a menu bar item, on by default, showing the progress of a running ingest, the cards that are in, and your recent folders. It is there so a copy can run while you work in another app.</p>
+</section>
+
+<section id="apple-photos" class="guide-section">
+<h2>Apple Photos, inside Ingest</h2>
+<p>Choose <strong>Apple Photos</strong> in the source sidebar and connect to your System Photo Library. Ingest requests Photos read/write access when you connect or send photos, not simply when it launches. It uses the library designated as the System Photo Library in Photos; it does not open an arbitrary library file.</p>
+<p>Integration is on by default. Turn off <strong>Settings → General → Apple Photos integration</strong> to hide the Photos source, commands, send controls, and Photos actions. Your saved Photos review state and recipes remain available if you turn it back on. Finish an active Photos operation or import review before disabling it.</p>
+<p>Use Library, Favorites, or an ordinary album to browse. <strong>Find albums</strong> narrows the sidebar while keeping matching folders and their parents. Search photos by filename, caption, or keywords; caption and keyword search requires macOS 27. <strong>Unfiled</strong> shows photos outside ordinary albums. <strong>Unreviewed</strong> tracks what you have reviewed in Ingest, independently of album membership.</p>
+<!-- PHOTOS_BROWSER_CAPTURE -->
+<h3>Review and file a selection</h3>
+<p>Select photos, then press <kbd>G</kbd> to add them to one or more albums. Press <kbd>R</kbd> to mark them reviewed, <kbd>⇧R</kbd> to mark and advance, <kbd>F</kbd> to toggle favorite, or <kbd>Space</kbd> to preview. Ingest tags, color labels, and reviewed marks stay local. Favorites are native Photos changes.</p>
+<p>Create albums and folders with the plus menu. Use a collection’s context menu to rename or move it. Within an editable album, <kbd>⌥⌘←</kbd> and <kbd>⌥⌘→</kbd> move selected photos earlier or later. Pressing Delete removes photos from that album only. <strong>Delete from Library…</strong> is a separate action with confirmation; it removes photos from every album and follows Photos’ Recently Deleted and iCloud behavior.</p>
+<h3>Metadata and organization</h3>
+<p>Press <kbd>M</kbd> to review metadata changes. Favorites, capture dates, and locations work on supported macOS versions. Native captions, keywords, and star ratings require macOS 27. On earlier versions, ratings are local to Ingest; copying those ratings into Photos later requires an explicit review.</p>
+<p>Choose <strong>Organize Photos into Albums</strong> to preview a grouping recipe, folder and album paths, manual assignments, and photo order. Apply adds photos to the reviewed destinations without removing unrelated album contents. Rules run when you apply them; they do not continuously synchronize. Shared Album publishing and native Smart Album rule editing are not included.</p>
+<h3 id="send-to-photos">Send files to Apple Photos</h3>
+<p>Select files in a writable folder and choose <strong>Send to Apple Photos…</strong>. Review the album and import choices first. The default uses existing JPEGs or JPEG companions; files with no JPEG are reported as skipped. Choose RAW or RAW + JPEG explicitly when needed. RAW + JPEG creates separate Photos assets, not a paired asset. Ingest stages copies and verifies their bytes before importing, leaving the source files unchanged.</p>
+<p>Memory cards must finish ingest and backups before sending. File-based Organize offers <strong>Send Groups to Photos…</strong>; a Photos post-ingest action opens the same reviewed flow. Browse JPEG Export can offer sending after export, and Social Export’s completion receipt can send finished JPEGs.</p>
+<p>Import receipts reuse confirmed previous Ingest imports by content hash. This is not a scan for every duplicate already in your library. Open <strong>Photos Import History</strong> to reconcile an uncertain submission. Ingest does not silently retry a submitted import whose result is unknown or missing; <strong>Allow a New Import</strong> is an intentional retry that may create a duplicate. A successful import confirms addition to Photos, not completion of iCloud upload.</p>
+<h3>Use Photos in Social Export</h3>
+<p>Select stills in Photos and choose <strong>Import into Social Export</strong> or press <kbd>⇧⌘E</kbd>. Ingest keeps a durable local copy of each current rendered image for the project, along with its Photos reference. Cloud-only originals may need downloading through Apple Photos. Those retained project inputs are separate from the thumbnail cache.</p>
+<p>Photos imports, album changes, metadata edits, and deletions can sync through iCloud if you have enabled iCloud Photos. See <a href="/ingest/privacy/#apple-photos">Photos privacy and storage</a>.</p>
+<!-- PHOTOS_SETTINGS_CAPTURE -->
 </section>
 
 <section id="browsing" class="guide-section">

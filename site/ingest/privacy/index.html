@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ingest privacy</title>
-<meta name="description" content="What Ingest reads, what it writes, and the two things that ever leave your Mac.">
+<meta name="description" content="What Ingest reads, what it writes, and how optional Apple services and update checks use the network.">
 <link rel="canonical" href="https://brianrenshaw.app/ingest/privacy/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ingest privacy">
-<meta property="og:description" content="What Ingest reads, what it writes, and the two things that ever leave your Mac.">
+<meta property="og:description" content="What Ingest reads, what it writes, and how optional Apple services and update checks use the network.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/privacy/">
 <meta property="og:image" content="https://brianrenshaw.app/ingest/assets/grid-cull-0.2.1-retina.webp">
 <meta name="twitter:card" content="summary_large_image">
@@ -31,14 +31,14 @@
 </header>
 <main id="main" tabindex="-1" class="family-document">
 <p class="eyebrow">Ingest / Privacy</p>
-<h1>Your photographs stay on your Mac.</h1>
-<p>Last updated September 21, 2026. Applies to Ingest 0.6.0.</p>
-<p class="intro">Ingest has no account, no analytics, and no server of mine to send anything to. Two features reach the network, both described below, and both are things you start.</p>
+<h1>Your library, under your control.</h1>
+<p>Last updated September 21, 2026. Applies to Ingest 0.7.0.</p>
+<p class="intro">Ingest has no account, no analytics, and no server of mine that receives your photographs. Optional Apple Photos, address and map services, and software updates use the network as described below.</p>
 
 <section id="files">
 <h2>Your photographs and what Ingest stores</h2>
-<p>Ingest reads the cards and folders you open. It reads only the parts of each photograph it needs: a few kilobytes of header, and the preview the camera embedded. It does not upload your photographs anywhere.</p>
-<p>What it keeps on your Mac, and nowhere else:</p>
+<p>Ingest reads the cards and folders you open. It reads metadata and previews for browsing, and reads image data for rendering, analysis, exports, and verified copies. File workflows write to the destinations you choose. Sending files to Apple Photos is described below.</p>
+<p>What Ingest stores locally:</p>
 <ul>
 <li>Small settings files in your Application Support folder, holding your options, name templates, metadata presets, snippets, splits, workspaces, actions, and keyboard shortcuts.</li>
 <li>Per folder marks. Tags, stars, and color labels, stored by file identity rather than written onto a card.</li>
@@ -48,6 +48,14 @@
 </ul>
 <p>When you ask it to, Ingest writes keywords, captions, titles, ratings, color labels, and GPS into your photograph files. That is the point of the app, and it happens to the files you chose, on your disk. It never writes to a memory card.</p>
 <p><strong>Face close-ups.</strong> The face close-up strip finds faces in the photograph on screen so it can show you each one enlarged. That runs on your Mac using Apple's Vision framework. No names or identities are involved, nothing is matched against anything, no result is stored between sessions, and nothing is sent anywhere.</p>
+</section>
+
+<section id="apple-photos">
+<h2>Apple Photos and iCloud</h2>
+<p>Apple Photos integration is on by default and can be turned off in Settings → General. Enabling the feature does not itself request library access. Connecting or sending photos requests native Photos read/write permission for your System Photo Library. You can revoke it in macOS System Settings → Privacy &amp; Security → Photos.</p>
+<p>Ingest uses Apple’s PhotoKit framework to read your photos and albums and apply the changes you request. Cloud-only images, video, or Live Photos may be downloaded by Apple Photos. Imports, favorite and metadata changes, album organization, and library deletions follow your Photos and iCloud settings and may sync to your other devices. Ingest does not upload your library to a server operated by me.</p>
+<p>Ingest stores Photos object references, local tags, color labels, review marks, grouping recipes, and import receipts on your Mac. On systems before macOS 27, Photos star ratings are stored locally as well. Social Export keeps durable local copies of the rendered Photos images you import into a project; clearing thumbnails does not remove those project inputs. Sending files to Photos stages local copies and retains import receipts so confirmed imports can be reused.</p>
+<p>Turning integration off hides its controls and stops library observation. It preserves your saved Ingest state, does not revoke the macOS permission, and does not remove photos or undo changes already made in Photos.</p>
 </section>
 
 <section id="photo-suggestions">
@@ -69,7 +77,7 @@
 
 <section id="no-analytics">
 <h2>No analytics, no account</h2>
-<p>There is no analytics library, no crash reporting service, no advertising, and no account. Ingest contains no code of its own for making web requests. Address search and location maps use Apple’s MapKit services; update checks use the website and download hosts described above.</p>
+<p>There is no analytics library, no crash reporting service, no advertising, and no account. Apple Photos uses Apple’s PhotoKit and iCloud services according to your settings. Address search and location maps use Apple’s MapKit services; update checks use the website and download hosts described above.</p>
 </section>
 
 <section id="actions">

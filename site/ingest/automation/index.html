@@ -51,7 +51,7 @@
 <thead><tr><th scope="col">Step</th><th scope="col">What it does</th></tr></thead>
 <tbody>
 <tr id="action-open"><td>Open in an app</td><td>Hands the copied files to an app you choose, the same as dragging them onto it.</td></tr>
-<tr id="action-photos"><td>Import into an Apple Photos album</td><td>Imports the copies into an album, created if it does not exist. The name can use <code>{yyyy}</code>, <code>{mm}</code>, <code>{dd}</code>, <code>{address}</code>, and <code>{city}</code>, so <code>{yyyy}-{mm} Ingest</code> files each month separately. Keywords, captions, and locations are already in the files, so Photos reads them on import.</td></tr>
+<tr id="action-photos"><td>Import into an Apple Photos album</td><td>Opens a reviewed Send to Apple Photos sheet after ingest and backups finish. Existing JPEGs or JPEG companions are selected by default; RAW choices are explicit. Choose or create the destination album before sending. The name can use <code>{yyyy}</code>, <code>{mm}</code>, <code>{dd}</code>, <code>{address}</code>, and <code>{city}</code>, so <code>{yyyy}-{mm} Ingest</code> files each month separately. Photos reads metadata present in the imported files. Confirmed Ingest imports can be reused using content receipts. This action is unavailable when Apple Photos integration is disabled in Settings.</td></tr>
 <tr id="action-copy"><td>Copy to a folder</td><td>A second copy somewhere else, after the first one is verified.</td></tr>
 <tr><td>Reveal in Finder</td><td>Opens the destination with the new files selected.</td></tr>
 <tr><td>Add the Finder tag “Ingested”</td><td>So Finder, Spotlight, and rules in other apps can see which files came through.</td></tr>

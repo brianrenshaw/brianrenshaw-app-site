@@ -104,7 +104,7 @@
 
 <section id="metadata-problems">
 <h2>Lightroom or Photos does not show my keywords</h2>
-<p>Ingest writes keywords, captions, titles, ratings, color labels, and GPS into the files themselves, in the fields Adobe and Apple actually read. It does not write sidecar files, because Apple Photos ignores them.</p>
+<p>Ingest writes metadata directly into supported rendered files and uses XMP sidecars for proprietary RAW files. Apple Photos may not read RAW sidecars. Export a JPEG with metadata and GPS included, then send that JPEG to Photos when those fields need to travel with the image. Native Photos edits are available separately in the Photos workspace, with caption, keyword, and rating writes requiring macOS 27.</p>
 <p>Two things to check first. Metadata is never written to a card, so if you added keywords while culling, they are applied to the copies during ingest and you should look at the copies. And ratings and labels are written in the background a couple of seconds after you stop pressing keys, so a file read the instant you rated it may not have caught up.</p>
 <p>The writing is done by <a href="#credits">ExifTool</a>, which is included in the app. Ingest keeps ExifTool's backup of each file until it has read the file back and confirmed the write, then removes it. If the read back does not match, the original is put back.</p>
 <p>If Settings, Advanced reports that the metadata tool is not ready, turn <em>Use the built-in exiftool</em> back on. The built-in copy runs with the Perl that ships with macOS. If a future macOS removes Perl, that switch and a copy installed with Homebrew are the way back.</p>
@@ -113,7 +113,12 @@
 <section id="permissions">
 <h2>Permission prompts</h2>
 <p>macOS asks before an app reads a removable volume. Allow it, or Ingest cannot see your cards. If you dismissed it, the switch is in System Settings, Privacy &amp; Security, Files and Folders.</p>
-<p>Two prompts appear only if you use the features that need them. An action that imports into Apple Photos asks for access to your photo library. An action that runs a Shortcut asks for permission to control Shortcuts. Neither is requested until you build an action that uses it.</p>
+<p>Connecting to Apple Photos or sending files to it requests Photos read/write permission. Ingest uses your System Photo Library, not an arbitrary library file. If access was denied, allow Ingest in System Settings → Privacy &amp; Security → Photos and reconnect. Turning Apple Photos integration off in Settings hides those features. An action that runs a Shortcut asks for permission to control Shortcuts when needed.</p>
+</section>
+
+<section id="photos-support">
+<h2>Apple Photos availability</h2>
+<p>Native caption, keyword, and rating edits require macOS 27. Earlier supported versions keep Photos ratings local and provide native favorites, dates, and locations. Cloud-only media needs a working connection to Apple Photos. Offline iCloud transfers, switching System Photo Libraries, and playback across all Live Photo and video formats remain beta validation areas. Use <a href="/ingest/guide/#send-to-photos">Import History</a> to review interrupted or uncertain imports before retrying.</p>
 </section>
 
 <section id="photo-mechanic">
