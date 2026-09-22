@@ -10,7 +10,7 @@
 <meta property="og:title" content="Ingest shortcuts | Every key and command">
 <meta property="og:description" content="The complete keyboard reference for Ingest, grouped the way the app groups it, including which keys are fixed and how to change the rest.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/shortcuts/">
-<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/palette-0.2.1-retina.webp">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/palette-0.8.0-retina.webp">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
@@ -148,7 +148,11 @@
 <tr><td><kbd>⌥⌘J</kbd></td><td>Combine RAW and JPEG / HEIF pairs into one photograph, for this folder</td><td></td></tr>
 <tr><td><kbd>⌥⌘K</kbd></td><td>Stack bracket sets, for this folder</td><td></td></tr>
 <tr><td><kbd>⌃1</kbd> … <kbd>⌃9</kbd></td><td>Switch to a workspace</td><td></td></tr>
-<tr><td>no key</td><td>Sort by capture time, or by filename</td><td></td></tr>
+<tr><td>no key</td><td>Sort by capture time, filename, rating, color label, date modified, or file size</td><td></td></tr>
+<tr><td>no key</td><td>Sort by album order</td><td>Apple Photos</td></tr>
+<tr><td>no key</td><td>Sort by group order</td><td>Organize</td></tr>
+<tr><td>no key</td><td>Reverse the sort order</td><td></td></tr>
+<tr><td>no key</td><td>Manage keywords everywhere at once</td><td></td></tr>
 </tbody>
 </table>
 </div>
@@ -328,7 +332,7 @@
 <section id="rebinding" class="guide-section">
 <h2>Changing a key</h2>
 <p>Open Settings, then Shortcuts. Every command is listed with its key. Click the key and press the one you want. You can also Tab to the recorder and press Return or Space to begin. <kbd>Esc</kbd> cancels, and Delete removes the key so the command has none.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/settings-shortcuts-0.2.1-retina.webp"><img style="--capture-width:980px" src="/ingest/assets/settings-shortcuts-0.2.1-retina.webp" width="1960" height="1400" loading="lazy" alt="The Shortcuts settings page, listing marking commands with their keys and the contexts each one works in"></a><figcaption>Commands, their keys, and where they apply. Each shortcut is a keyboard-focusable control.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/settings-shortcuts-0.8.0-retina.webp"><img style="--capture-width:980px" src="/ingest/assets/settings-shortcuts-0.8.0-retina.webp" width="1960" height="1400" loading="lazy" alt="The Shortcuts settings page, listing marking commands with their keys and the contexts each one works in"></a><figcaption>Commands, their keys, and where they apply. Each shortcut is a keyboard-focusable control.</figcaption></figure>
 <p>If the key is already taken by something that overlaps, Ingest names the other command and offers to move the key across. It refuses a key that is <a href="#movement">fixed</a>, and it refuses the bare keys that move you around, because the app consumes those before any command sees them.</p>
 <p>Standard Mac editing keys are reserved. Select All, Undo, Redo, and Settings retain their native shortcuts. If an older custom binding conflicts with a standard key, Settings explains the conflict and offers a reset; the saved override is kept until you change it.</p>
 <p>While a text field has focus, <kbd>⌘A</kbd> selects its text, and undo and redo stay in that editor. Photo-navigation keys do not intercept typing.</p>
@@ -338,7 +342,7 @@
 <section id="palette" class="guide-section">
 <h2>Commands without a key</h2>
 <p>Plenty of commands have no key, on purpose. They are all in the palette. Press <kbd>⌘K</kbd> and type a few letters of the name, an alias, or the category.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/palette-0.2.1-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/palette-0.2.1-retina.webp" width="2444" height="1562" loading="lazy" alt="The command palette open over the grid, showing commands with their keys on the right and a disabled command explaining why it cannot run"></a><figcaption>Before you type, the palette offers what makes sense for what you have selected. Commands that cannot run stay visible and say why.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/palette-0.8.0-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/palette-0.8.0-retina.webp" width="2444" height="1562" loading="lazy" alt="The command palette open over the grid, showing commands with their keys on the right and a disabled command explaining why it cannot run"></a><figcaption>Before you type, the palette offers what makes sense for what you have selected. Commands that cannot run stay visible and say why.</figcaption></figure>
 <p>Inside the palette, <kbd>⌘K</kbd> toggles <strong>Actions</strong>. Use the arrow keys and Return to choose Pin/Unpin, Copy Link, or Configure Shortcut. <kbd>Esc</kbd> closes Actions before it closes the palette. Configure Shortcut reveals that command in Settings; temporary card and recent-folder entries do not offer it.</p>
 <p>The palette also lists the things that come and go: your favorites, workspaces, splits, metadata presets, actions, and recent folders. <kbd>⇧⌘P</kbd> pins whatever is highlighted to the top of the list. <kbd>⇧⌘C</kbd> copies a link that runs it, which is how <a href="/ingest/automation/#url-scheme">the URL scheme</a> is meant to be discovered.</p>
 </section>

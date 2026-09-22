@@ -1,157 +1,101 @@
 {
-  "capture": "Native macOS window captures at 2x, cursor and shadow excluded, lossless WebP. Existing Ingest 0.2.1 captures plus Organize and Social Export from 0.4.1 (10). RAW histogram capture from Ingest 0.6.0 (12), native 2x, lossless WebP. Apple Photos 0.7.6 images are genuine signed-app screenshots of the public Coastal Study album, captured through computer use as JPEG and displayed at half their available dimensions.",
+  "capture": "Native macOS window captures of the signed Ingest 0.8.0 (22) release at 2x, cursor and shadow excluded, encoded lossless WebP without resizing. The file captures use the credited public demonstration photographs on a read-only disk image and a disposable app library; the RAW captures use the CC0 Canon EOS R5 sample.",
   "images": {
-    "compare-0.2.1-retina.webp": {
+    "grid-cull-0.8.0-retina.webp": {
       "width": 2444,
       "height": 1562,
       "displayWidth": 1222,
       "displayHeight": 781
     },
-    "dest-grid-0.2.1-retina.webp": {
+    "preview-0.8.0-retina.webp": {
       "width": 2444,
       "height": 1562,
       "displayWidth": 1222,
       "displayHeight": 781
     },
-    "grid-cull-0.2.1-retina.webp": {
+    "preview-info-0.8.0-retina.webp": {
       "width": 2444,
       "height": 1562,
       "displayWidth": 1222,
       "displayHeight": 781
     },
-    "ingest-dialog-0.2.1-retina.webp": {
-      "width": 1280,
-      "height": 1302,
-      "displayWidth": 640,
-      "displayHeight": 651
-    },
-    "palette-0.2.1-retina.webp": {
+    "stacks-0.8.0-retina.webp": {
       "width": 2444,
       "height": 1562,
       "displayWidth": 1222,
       "displayHeight": 781
     },
-    "preview-0.2.1-retina.webp": {
+    "palette-0.8.0-retina.webp": {
       "width": 2444,
       "height": 1562,
       "displayWidth": 1222,
       "displayHeight": 781
     },
-    "preview-info-0.2.1-retina.webp": {
+    "split-0.8.0-retina.webp": {
       "width": 2444,
       "height": 1562,
       "displayWidth": 1222,
       "displayHeight": 781
     },
-    "quick-entry-0.2.1-retina.webp": {
-      "width": 1280,
-      "height": 170,
-      "displayWidth": 640,
-      "displayHeight": 85
-    },
-    "receipt-0.2.1-retina.webp": {
+    "ingest-tab-0.8.0-retina.webp": {
       "width": 2444,
       "height": 1562,
       "displayWidth": 1222,
       "displayHeight": 781
     },
-    "settings-actions-0.2.1-retina.webp": {
+    "compare-0.8.0-retina.webp": {
+      "width": 2444,
+      "height": 1562,
+      "displayWidth": 1222,
+      "displayHeight": 781
+    },
+    "organize-workspace-0.8.0-retina.webp": {
+      "width": 2880,
+      "height": 1904,
+      "displayWidth": 1440,
+      "displayHeight": 952
+    },
+    "social-workspace-0.8.0-retina.webp": {
+      "width": 2880,
+      "height": 1904,
+      "displayWidth": 1440,
+      "displayHeight": 952
+    },
+    "settings-browsing-0.8.0-retina.webp": {
       "width": 1960,
       "height": 1400,
       "displayWidth": 980,
       "displayHeight": 700
     },
-    "settings-culling-0.2.1-retina.webp": {
+    "settings-renaming-0.8.0-retina.webp": {
       "width": 1960,
       "height": 1400,
       "displayWidth": 980,
       "displayHeight": 700
     },
-    "settings-renaming-0.2.1-retina.webp": {
+    "settings-actions-0.8.0-retina.webp": {
       "width": 1960,
       "height": 1400,
       "displayWidth": 980,
       "displayHeight": 700
     },
-    "settings-shortcuts-0.2.1-retina.webp": {
+    "settings-shortcuts-0.8.0-retina.webp": {
       "width": 1960,
       "height": 1400,
       "displayWidth": 980,
       "displayHeight": 700
     },
-    "settings-workspaces-0.2.1-retina.webp": {
+    "settings-keywords-0.8.0-retina.webp": {
+      "width": 1960,
+      "height": 1400,
+      "displayWidth": 980,
+      "displayHeight": 700
+    },
+    "settings-workspaces-0.8.0-retina.webp": {
       "width": 2056,
-      "height": 2580,
+      "height": 2284,
       "displayWidth": 1028,
-      "displayHeight": 1290
-    },
-    "stacks-0.2.1-retina.webp": {
-      "width": 2444,
-      "height": 1562,
-      "displayWidth": 1222,
-      "displayHeight": 781
-    },
-    "social-workspace-0.4.1-retina.webp": {
-      "width": 2880,
-      "height": 1904,
-      "displayWidth": 1440,
-      "displayHeight": 952
-    },
-    "social-export-0.4.1-retina.webp": {
-      "width": 1300,
-      "height": 1082,
-      "displayWidth": 650,
-      "displayHeight": 541
-    },
-    "organize-setup-0.4.1-retina.webp": {
-      "width": 920,
-      "height": 668,
-      "displayWidth": 460,
-      "displayHeight": 334
-    },
-    "organize-workspace-0.4.1-retina.webp": {
-      "width": 2880,
-      "height": 1904,
-      "displayWidth": 1440,
-      "displayHeight": 952
-    },
-    "raw-histogram-0.6.0-retina.webp": {
-      "width": 4112,
-      "height": 2580,
-      "displayWidth": 2056,
-      "displayHeight": 1290
-    },
-    "photos-grid-0.7.6.jpg": {
-      "width": 1225,
-      "height": 769,
-      "displayWidth": 612,
-      "displayHeight": 384,
-      "format": "jpeg",
-      "source": "Signed Ingest 0.7.6, public Photos demo album"
-    },
-    "photos-preview-0.7.6.jpg": {
-      "width": 1225,
-      "height": 769,
-      "displayWidth": 612,
-      "displayHeight": 384,
-      "format": "jpeg",
-      "source": "Signed Ingest 0.7.6, public Photos demo album"
-    },
-    "photos-split-0.7.6.jpg": {
-      "width": 1225,
-      "height": 769,
-      "displayWidth": 612,
-      "displayHeight": 384,
-      "format": "jpeg",
-      "source": "Signed Ingest 0.7.6, public Photos demo album"
-    },
-    "photos-settings-0.7.6.jpg": {
-      "width": 980,
-      "height": 700,
-      "displayWidth": 490,
-      "displayHeight": 350,
-      "format": "jpeg",
-      "source": "Signed Ingest 0.7.6, Settings → General"
+      "displayHeight": 1142
     }
   }
 }

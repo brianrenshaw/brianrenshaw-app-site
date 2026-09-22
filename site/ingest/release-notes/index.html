@@ -10,7 +10,7 @@
 <meta property="og:title" content="Ingest release notes">
 <meta property="og:description" content="What changed in each version of Ingest, also available from Check for Updates inside the app.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/release-notes/">
-<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/grid-cull-0.2.1-retina.webp">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/grid-cull-0.8.0-retina.webp">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
@@ -33,10 +33,40 @@
 <p class="eyebrow">Ingest / Release notes</p>
 <h1>A record of what’s new.</h1>
 <p>What changed in each version. Ingest can check for updates itself, from the Ingest menu, and automatic checking is off until you turn it on.</p>
-<nav class="release-index" aria-label="Versions"><a href="/ingest/release-notes/#v0.7.8">0.7.8 · Latest</a><a href="/ingest/release-notes/#v0.7.7">0.7.7</a><a href="/ingest/release-notes/#v0.7.6">0.7.6</a><a href="/ingest/release-notes/#v0.7.5">0.7.5</a><a href="/ingest/release-notes/#v0.7.4">0.7.4</a><a href="/ingest/release-notes/#v0.7.3">0.7.3</a><a href="/ingest/release-notes/#v0.7.2">0.7.2</a><a href="/ingest/release-notes/#v0.7.1">0.7.1</a><a href="/ingest/release-notes/#v0.7.0">0.7.0</a><a href="/ingest/release-notes/#v0.6.0">0.6.0</a><a href="/ingest/release-notes/#v0.5.0">0.5.0</a><a href="/ingest/release-notes/#v0.4.1">0.4.1</a><a href="/ingest/release-notes/#v0.4.0">0.4.0</a><a href="/ingest/release-notes/#v0.3.1">0.3.1</a><a href="/ingest/release-notes/#v0.3.0">0.3.0</a><a href="/ingest/release-notes/#v0.2.1">0.2.1</a><a href="/ingest/release-notes/#v0.2.0">0.2.0</a><a href="/ingest/release-notes/#v0.1.0">0.1.0</a></nav>
+<nav class="release-index" aria-label="Versions"><a href="/ingest/release-notes/#v0.8.0">0.8.0 · Latest</a><a href="/ingest/release-notes/#v0.7.8">0.7.8</a><a href="/ingest/release-notes/#v0.7.7">0.7.7</a><a href="/ingest/release-notes/#v0.7.6">0.7.6</a><a href="/ingest/release-notes/#v0.7.5">0.7.5</a><a href="/ingest/release-notes/#v0.7.4">0.7.4</a><a href="/ingest/release-notes/#v0.7.3">0.7.3</a><a href="/ingest/release-notes/#v0.7.2">0.7.2</a><a href="/ingest/release-notes/#v0.7.1">0.7.1</a><a href="/ingest/release-notes/#v0.7.0">0.7.0</a><a href="/ingest/release-notes/#v0.6.0">0.6.0</a><a href="/ingest/release-notes/#v0.5.0">0.5.0</a><a href="/ingest/release-notes/#v0.4.1">0.4.1</a><a href="/ingest/release-notes/#v0.4.0">0.4.0</a><a href="/ingest/release-notes/#v0.3.1">0.3.1</a><a href="/ingest/release-notes/#v0.3.0">0.3.0</a><a href="/ingest/release-notes/#v0.2.1">0.2.1</a><a href="/ingest/release-notes/#v0.2.0">0.2.0</a><a href="/ingest/release-notes/#v0.1.0">0.1.0</a></nav>
+
+<article class="release-entry" id="v0.8.0">
+<p class="eyebrow">Latest · September 22, 2026</p>
+<h2>0.8.0</h2>
+<h3>Apple Photos is a source, not a second window</h3>
+<ul>
+<li>Choose Library, Favorites, Unfiled, Unreviewed, or any album in the sources list and the photographs swap in place. The sidebar width, the inspector, and the tab you were on stay where they were.</li>
+<li>One set of commands covers files and Photos. A command that cannot apply says why rather than disappearing, and a shortcut you remapped applies in both places.</li>
+<li>Turn Apple Photos integration off in Settings → General and the source is simply absent.</li>
+</ul>
+<h3>A photo bar you can read</h3>
+<ul>
+<li>Sort shows what the order is and turns it around with the button beside it. Sort by capture time, filename, rating, color label, date modified, or file size; Apple Photos adds album order and Organize adds group order.</li>
+<li>Filter is a panel rather than a menu: what is shown, a minimum rating, any combination of color labels, and a kind such as brackets or video.</li>
+<li>Everything you have chosen appears as chips under the bar, each with a cross, beside a count of how many photographs are showing and a Clear.</li>
+<li>The search field is always visible, and a folder now reopens in the order you left it in.</li>
+</ul>
+<h3>Keywords are one pool</h3>
+<ul>
+<li>Settings → Keywords lists every tag with how many photographs carry it in Photos and in which folders, and sorts by any column.</li>
+<li>Rename, merge, change case, unify spellings, or delete a tag everywhere at once, after a preview that says exactly what will change.</li>
+<li>Fixes a merge into one of a tag's own spellings that removed the tag from the photographs in Apple Photos instead of keeping it.</li>
+</ul>
+<h3>New typography</h3>
+<ul>
+<li>Headings, photo names, and folder names are set in IBM Plex Sans. Filenames, exposure readouts, counts, and keyboard hints are set in iA Writer Mono, which is drawn from the same family.</li>
+<li>Controls, captions, and hints stay in the macOS system font, so they match the menus and alerts the system draws.</li>
+</ul>
+<p>macOS 15 or later, Apple silicon. Native Photos captions, keywords, and star ratings require macOS 27. <a href="/ingest/guide/#apple-photos">Read the Photos guide.</a></p>
+</article>
 
 <article class="release-entry" id="v0.7.8">
-<p class="eyebrow">Latest · September 22, 2026</p>
+<p class="eyebrow">September 22, 2026</p>
 <h2>0.7.8</h2>
 <h3>Clearer guidance for older iCloud photos</h3>
 <ul>
