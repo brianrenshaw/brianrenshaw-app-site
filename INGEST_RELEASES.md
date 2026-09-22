@@ -49,6 +49,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.7.1 | 14 | September 21, 2026 | Fix signed-release Photos permission and blocked connection handling. |
 | 0.7.0 | 13 | September 21, 2026 | Optional Apple Photos workspace, albums, reviewed JPEG-first sends, metadata, and Social Export integration. |
 | 0.6.0 | 12 | September 21, 2026 | RAW sensor histograms, same-photo preview comparison, configurable Photo Info, reviewed AI suggestions, and structured metadata. |
 | 0.5.0 | 11 | September 21, 2026 | Folder browsing, simpler tagging, richer Social Export, and workflow improvements. |

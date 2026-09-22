@@ -33,10 +33,22 @@
 <p class="eyebrow">Ingest / Release notes</p>
 <h1>A record of what’s new.</h1>
 <p>What changed in each version. Ingest can check for updates itself, from the Ingest menu, and automatic checking is off until you turn it on.</p>
-<nav class="release-index" aria-label="Versions"><a href="/ingest/release-notes/#v0.7.0">0.7.0 · Latest</a><a href="/ingest/release-notes/#v0.6.0">0.6.0</a><a href="/ingest/release-notes/#v0.5.0">0.5.0</a><a href="/ingest/release-notes/#v0.4.1">0.4.1</a><a href="/ingest/release-notes/#v0.4.0">0.4.0</a><a href="/ingest/release-notes/#v0.3.1">0.3.1</a><a href="/ingest/release-notes/#v0.3.0">0.3.0</a><a href="/ingest/release-notes/#v0.2.1">0.2.1</a><a href="/ingest/release-notes/#v0.2.0">0.2.0</a><a href="/ingest/release-notes/#v0.1.0">0.1.0</a></nav>
+<nav class="release-index" aria-label="Versions"><a href="/ingest/release-notes/#v0.7.1">0.7.1 · Latest</a><a href="/ingest/release-notes/#v0.7.0">0.7.0</a><a href="/ingest/release-notes/#v0.6.0">0.6.0</a><a href="/ingest/release-notes/#v0.5.0">0.5.0</a><a href="/ingest/release-notes/#v0.4.1">0.4.1</a><a href="/ingest/release-notes/#v0.4.0">0.4.0</a><a href="/ingest/release-notes/#v0.3.1">0.3.1</a><a href="/ingest/release-notes/#v0.3.0">0.3.0</a><a href="/ingest/release-notes/#v0.2.1">0.2.1</a><a href="/ingest/release-notes/#v0.2.0">0.2.0</a><a href="/ingest/release-notes/#v0.1.0">0.1.0</a></nav>
+
+<article class="release-entry" id="v0.7.1">
+<p class="eyebrow">Latest · September 21, 2026</p>
+<h2>0.7.1</h2>
+<h3>Fix Apple Photos connection</h3>
+<ul>
+<li>Fix a missing Photos entitlement in the signed release that prevented Connect from displaying the macOS permission prompt.</li>
+<li>Open Photos Privacy Settings when access has already been denied, show connection progress, and check access again when you return to Ingest.</li>
+<li>Add a release check that verifies Photos permission configuration in the signed app before publication.</li>
+</ul>
+<p>If Connect did nothing in 0.7.0, update to 0.7.1 and open Apple Photos again. Allow Photos access when prompted. If you previously denied access, choose Open Photos Privacy Settings and enable Ingest.</p>
+</article>
 
 <article class="release-entry" id="v0.7.0">
-<p class="eyebrow">Latest · September 21, 2026</p>
+<p class="eyebrow">September 21, 2026</p>
 <h2>0.7.0</h2>
 <h3>Apple Photos, integrated and optional</h3>
 <ul>
