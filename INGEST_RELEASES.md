@@ -49,6 +49,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.7.4 | 17 | September 21, 2026 | Restore recipe details on Cancel, clarify keyword actions, and queue card recipe edits after ingest. |
 | 0.7.3 | 16 | September 21, 2026 | Fujifilm JPEG recipe notes, simulation keywords, and Copy/Text/Markdown export. |
 | 0.7.2 | 15 | September 21, 2026 | Shared Photos browsing layout with Grid, Preview, Split, and right-hand Photo Info. |
 | 0.7.1 | 14 | September 21, 2026 | Fix signed-release Photos permission and blocked connection handling. |
