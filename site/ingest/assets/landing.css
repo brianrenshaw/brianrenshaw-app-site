@@ -42,7 +42,7 @@
 .ingest-home .workflow-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;padding:32px 0;border-block:1px solid var(--line)}
 .ingest-home .workflow-heading h2{font-size:30px;margin:0}
 .ingest-home .workflow-heading .eyebrow{margin-bottom:12px}
-.ingest-home .workflow-heading nav{display:flex;gap:24px}
+.ingest-home .workflow-heading nav{display:flex;flex-wrap:wrap;gap:4px 24px}
 .ingest-home .workflow-heading nav a{color:var(--ink);font-size:14px;text-decoration:none;padding:10px 0;white-space:nowrap}
 .ingest-home .workflow-heading nav a:hover{text-decoration:underline}
 .ingest-home .workflow-heading nav span{color:var(--accent);margin-left:6px}

@@ -1,5 +1,5 @@
 {
-  "capture": "Native macOS window captures at 2x, cursor and shadow excluded, lossless WebP. Existing Ingest 0.2.1 captures plus Organize and Social Export from 0.4.1 (10). RAW histogram capture from Ingest 0.6.0 (12), native 2x, lossless WebP.",
+  "capture": "Native macOS window captures at 2x, cursor and shadow excluded, lossless WebP. Existing Ingest 0.2.1 captures plus Organize and Social Export from 0.4.1 (10). RAW histogram capture from Ingest 0.6.0 (12), native 2x, lossless WebP. Apple Photos 0.7.6 images are genuine signed-app screenshots of the public Coastal Study album, captured through computer use as JPEG and displayed at half their available dimensions.",
   "images": {
     "compare-0.2.1-retina.webp": {
       "width": 2444,
@@ -120,6 +120,38 @@
       "height": 2580,
       "displayWidth": 2056,
       "displayHeight": 1290
+    },
+    "photos-grid-0.7.6.jpg": {
+      "width": 1225,
+      "height": 769,
+      "displayWidth": 612,
+      "displayHeight": 384,
+      "format": "jpeg",
+      "source": "Signed Ingest 0.7.6, public Photos demo album"
+    },
+    "photos-preview-0.7.6.jpg": {
+      "width": 1225,
+      "height": 769,
+      "displayWidth": 612,
+      "displayHeight": 384,
+      "format": "jpeg",
+      "source": "Signed Ingest 0.7.6, public Photos demo album"
+    },
+    "photos-split-0.7.6.jpg": {
+      "width": 1225,
+      "height": 769,
+      "displayWidth": 612,
+      "displayHeight": 384,
+      "format": "jpeg",
+      "source": "Signed Ingest 0.7.6, public Photos demo album"
+    },
+    "photos-settings-0.7.6.jpg": {
+      "width": 980,
+      "height": 700,
+      "displayWidth": 490,
+      "displayHeight": 350,
+      "format": "jpeg",
+      "source": "Signed Ingest 0.7.6, Settings → General"
     }
   }
 }

@@ -33,7 +33,7 @@
   "decisions": [
     {
       "id": "native-app-assets",
-      "decision": "Native app icons are authoritative over historical website mockups. Who\u2019s First? uses the current board palette and existing native build-18 captures. No playable web app."
+      "decision": "Native app icons are authoritative over historical website mockups. Who’s First? uses the current board palette and existing native build-18 captures. No playable web app."
     },
     {
       "id": "blog-project-card",
@@ -53,11 +53,11 @@
     },
     {
       "id": "portfolio-card-order",
-      "decision": "Folio, Who\u2019s First?, Where Do We Eat, Reading Habit, Lankford Legends, then Spreadsheet Tools. Number cards 01 through 06. Identify each as iOS app, Blog, or Utility beneath its name. No dedicated blog navigation link."
+      "decision": "Folio, Who’s First?, Where Do We Eat, Reading Habit, Lankford Legends, then Spreadsheet Tools. Number cards 01 through 06. Identify each as iOS app, Blog, or Utility beneath its name. No dedicated blog navigation link."
     },
     {
       "id": "distinct-card-palette",
-      "decision": "Owner approved apricot Folio, seafoam Who\u2019s First?, ivory/tomato Where Do We Eat, golden parchment Reading Habit, white/navy/red Lankford Legends, and pale-blue/slate Spreadsheet Tools. Preserve shared layout and dark-mode readability."
+      "decision": "Owner approved apricot Folio, seafoam Who’s First?, ivory/tomato Where Do We Eat, golden parchment Reading Habit, white/navy/red Lankford Legends, and pale-blue/slate Spreadsheet Tools. Preserve shared layout and dark-mode readability."
     },
     {
       "id": "listing-namer-project",
@@ -84,6 +84,10 @@
     {
       "source": "Walkthrough native 1.4.1 screenshots, current guide, and assets/site.css",
       "note": "21st catalog search for Mac photo management app landing page workflow screenshots returned HTTP 401. Existing native app and static site components determine the implementation."
+    },
+    {
+      "source": "Ingest Apple Photos 0.7.6 release, September 22, 2026",
+      "note": "Reused static workflow, guide, and screenshot styles. 21st catalog was unavailable (HTTP 401), so current site and native app guided the work. Review reported zero findings. All four new captures come from the signed release using the public demo album or Settings. Computer-use captures are JPEG, displayed at half their available dimensions."
     }
   ],
   "generatedAt": "2026-09-08T20:40:52.027Z"

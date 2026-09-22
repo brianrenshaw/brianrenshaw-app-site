@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reject undersized/lossy Ingest captures and missing display-size limits."""
+"""Validate genuine Ingest captures and their displayed size limits."""
 from html.parser import HTMLParser
 from pathlib import Path
 import json
@@ -30,11 +30,38 @@ def lossless_dimensions(path):
     raise AssertionError('missing lossless image')
 
 
+def jpeg_dimensions(path):
+    data = path.read_bytes()
+    assert data.startswith(b'\xff\xd8\xff'), 'not JPEG'
+    offset = 2
+    while offset + 4 < len(data):
+        assert data[offset] == 0xff, 'invalid JPEG marker'
+        while data[offset] == 0xff:
+            offset += 1
+        marker = data[offset]
+        offset += 1
+        if marker in (0xd8, 0xd9) or 0xd0 <= marker <= 0xd7:
+            continue
+        length = int.from_bytes(data[offset:offset + 2], 'big')
+        assert length >= 2, 'invalid JPEG segment'
+        if marker in (0xc0, 0xc1, 0xc2, 0xc3):
+            return (int.from_bytes(data[offset + 5:offset + 7], 'big'),
+                    int.from_bytes(data[offset + 3:offset + 5], 'big'))
+        offset += length
+    raise AssertionError('missing JPEG dimensions')
+
+
 for name, meta in manifest.items():
     try:
-        size = lossless_dimensions(ASSETS / name)
+        jpeg = meta.get('format') == 'jpeg'
+        size = jpeg_dimensions(ASSETS / name) if jpeg else lossless_dimensions(ASSETS / name)
         assert size == (meta['width'], meta['height']), 'dimensions differ from manifest'
-        assert size == (2 * meta['displayWidth'], 2 * meta['displayHeight']), 'capture must be native 2x'
+        if jpeg:
+            assert name.startswith('photos-') and meta.get('source', '').startswith('Signed Ingest 0.7.6'), 'JPEG needs signed-app provenance'
+            assert 0 <= size[0] - 2 * meta['displayWidth'] <= 1, 'JPEG display width exceeds half the source'
+            assert 0 <= size[1] - 2 * meta['displayHeight'] <= 1, 'JPEG display height exceeds half the source'
+        else:
+            assert size == (2 * meta['displayWidth'], 2 * meta['displayHeight']), 'capture must be native 2x'
         for alias in [name.replace('-retina', ''), name.replace('-0.2.1-retina', '')]:
             path = ASSETS / alias
             if path.exists():
@@ -47,7 +74,7 @@ class Images(HTMLParser):
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         src = attrs.get('src', '')
-        if tag != 'img' or not src.startswith('/ingest/assets/') or not src.endswith('.webp'):
+        if tag != 'img' or not src.startswith('/ingest/assets/') or not src.endswith(('.webp', '.jpg')):
             return
         name = src.rsplit('/', 1)[-1]
         if name not in manifest:
@@ -70,4 +97,4 @@ if 'max-width:var(--capture-width,100%)' not in css:
     errors.append('Missing screenshot display-size cap')
 if errors:
     raise SystemExit('\n'.join(errors))
-print(f'PASS: {len(manifest)} lossless Retina captures, aliases, HTML dimensions, and display-size limits.')
+print(f'PASS: {len(manifest)} genuine captures, aliases, HTML dimensions, and display-size limits.')
