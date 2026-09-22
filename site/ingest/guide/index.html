@@ -46,6 +46,7 @@
 <a href="#culling">Culling</a>
 <a href="#splits">Splits</a>
 <a href="#metadata">Metadata</a>
+<a href="#fujifilm-recipes">Fujifilm recipes</a>
 <a href="#quick-entry">Quick entry</a>
 <a href="#presets">Presets</a>
 <a href="#location">Locations</a>
@@ -186,6 +187,16 @@
 <p>The counts update as you mark, which turns culling into something you can see the end of. <kbd>⌥Tab</kbd> steps through the splits.</p>
 <p>Set up a filter you like and press <kbd>⇧⌘S</kbd> to save it as your own split. Settings, Splits lets you edit one, give it an icon, or hide the built-in ones you never use.</p>
 <p>Filters behave: they survive going in and out of the preview, they wrap where you expect, and marking the last photograph out of a view returns you to everything rather than leaving you in an empty room.</p>
+</section>
+
+<section id="fujifilm-recipes" class="guide-section">
+<h2>Fujifilm recipes</h2>
+<p>When browsing files and folders, select a Fujifilm JPEG to see <strong>Fujifilm Recipe</strong> below Location in Photo Info. Its collapsed heading shows the detected film simulation. Expand it to view the camera’s recorded settings and edit your recipe notes. JPEG companions in RAW + JPEG pairs work too.</p>
+<p>If the photo already has saved notes, Ingest displays them as written. Otherwise, it prepares an unsaved draft from the recognized simulation and available white balance, tone, color, grain, and other settings. It leaves missing settings out and does not guess unknown simulations or custom recipe names.</p>
+<p>Edit or replace the entire text, then choose <strong>Save</strong> to keep it with the JPEG. <strong>Cancel</strong> returns to the saved text. Viewing a recipe does not write metadata. Recipe notes share the Instructions field with the full metadata editor; card and read-only restrictions still apply.</p>
+<p><strong>Copy</strong> copies the text currently shown. <strong>Export</strong> saves it as a <code>.txt</code> or <code>.md</code> file, including unsaved edits. These are files for sharing and reference, not profiles that can be loaded onto a camera.</p>
+<p><strong>Add Simulation Keyword</strong> independently adds only the detected simulation name, such as Classic Chrome or Reala Ace. Existing keywords stay in place and duplicates are avoided. With multiple photos selected, each qualifying JPEG gets its own simulation keyword; select one qualifying JPEG to edit recipe text. Recipe saves and simulation keywords affect only JPEGs, including in RAW + JPEG pairs.</p>
+<p>Use Settings → Sidebar Information to hide or reorder the section.</p>
 </section>
 
 <section id="metadata" class="guide-section">
