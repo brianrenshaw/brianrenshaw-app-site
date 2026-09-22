@@ -49,6 +49,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.7.8 | 21 | September 22, 2026 | Explain iCloud-only preview waits in the Photos workspace and Settings. |
 | 0.7.7 | 20 | September 22, 2026 | Bounded album preview warmup, visible cloud fetching, and immediate fallback images. |
 | 0.7.6 | 19 | September 22, 2026 | Responsive native Photos browsing, progressive cached previews, and independent inspector loading. |
 | 0.7.5 | 18 | September 21, 2026 | Recipe controls above the details and an optional after-ingest confirmation. |
