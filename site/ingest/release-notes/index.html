@@ -33,10 +33,35 @@
 <p class="eyebrow">Ingest / Release notes</p>
 <h1>A record of what’s new.</h1>
 <p>What changed in each version. Ingest can check for updates itself, from the Ingest menu, and automatic checking is off until you turn it on.</p>
-<nav class="release-index" aria-label="Versions"><a href="/ingest/release-notes/#v0.8.0">0.8.0 · Latest</a><a href="/ingest/release-notes/#v0.7.8">0.7.8</a><a href="/ingest/release-notes/#v0.7.7">0.7.7</a><a href="/ingest/release-notes/#v0.7.6">0.7.6</a><a href="/ingest/release-notes/#v0.7.5">0.7.5</a><a href="/ingest/release-notes/#v0.7.4">0.7.4</a><a href="/ingest/release-notes/#v0.7.3">0.7.3</a><a href="/ingest/release-notes/#v0.7.2">0.7.2</a><a href="/ingest/release-notes/#v0.7.1">0.7.1</a><a href="/ingest/release-notes/#v0.7.0">0.7.0</a><a href="/ingest/release-notes/#v0.6.0">0.6.0</a><a href="/ingest/release-notes/#v0.5.0">0.5.0</a><a href="/ingest/release-notes/#v0.4.1">0.4.1</a><a href="/ingest/release-notes/#v0.4.0">0.4.0</a><a href="/ingest/release-notes/#v0.3.1">0.3.1</a><a href="/ingest/release-notes/#v0.3.0">0.3.0</a><a href="/ingest/release-notes/#v0.2.1">0.2.1</a><a href="/ingest/release-notes/#v0.2.0">0.2.0</a><a href="/ingest/release-notes/#v0.1.0">0.1.0</a></nav>
+<nav class="release-index" aria-label="Versions"><a href="/ingest/release-notes/#v0.8.1">0.8.1 · Latest</a><a href="/ingest/release-notes/#v0.8.0">0.8.0</a><a href="/ingest/release-notes/#v0.7.8">0.7.8</a><a href="/ingest/release-notes/#v0.7.7">0.7.7</a><a href="/ingest/release-notes/#v0.7.6">0.7.6</a><a href="/ingest/release-notes/#v0.7.5">0.7.5</a><a href="/ingest/release-notes/#v0.7.4">0.7.4</a><a href="/ingest/release-notes/#v0.7.3">0.7.3</a><a href="/ingest/release-notes/#v0.7.2">0.7.2</a><a href="/ingest/release-notes/#v0.7.1">0.7.1</a><a href="/ingest/release-notes/#v0.7.0">0.7.0</a><a href="/ingest/release-notes/#v0.6.0">0.6.0</a><a href="/ingest/release-notes/#v0.5.0">0.5.0</a><a href="/ingest/release-notes/#v0.4.1">0.4.1</a><a href="/ingest/release-notes/#v0.4.0">0.4.0</a><a href="/ingest/release-notes/#v0.3.1">0.3.1</a><a href="/ingest/release-notes/#v0.3.0">0.3.0</a><a href="/ingest/release-notes/#v0.2.1">0.2.1</a><a href="/ingest/release-notes/#v0.2.0">0.2.0</a><a href="/ingest/release-notes/#v0.1.0">0.1.0</a></nav>
+
+<article class="release-entry" id="v0.8.1">
+<p class="eyebrow">Latest · September 23, 2026</p>
+<h2>0.8.1</h2>
+<h3>Assists for culling, never decisions</h3>
+<ul>
+<li>After the scan, at low priority, every photo gets a feature print, its faces, and a sharpness score, kept in a cache and never written to the files. Consecutive frames that look alike become a ≈N stack, the way bracket sets become ×N.</li>
+<li>Frames with faces get a second look for closed eyes and Apple’s face quality. The ⌥F close-ups zoom to a face on a click, and a run of people leads with the frame where nobody blinked.</li>
+<li>Soft marks frames noticeably less sharp than their stack or their neighbors, judged on the subject rather than the background. ⇧P says Not Soft, and ⌘Z takes it back. Tilted and Utility are filters too.</li>
+<li>Nothing is ever tagged or rated for you. Settings → Browsing turns the pass off, and it pauses by itself while the Mac is hot or in Low Power Mode.</li>
+</ul>
+<h3>Workspaces</h3>
+<ul>
+<li>Real Estate, Events, or Family each hold their own Ingest, Organize, Browse, and Social Export settings on one page. A workspace can hide a tab and choose the one it opens in; Organize matches Ingest until you switch it off.</li>
+<li>Video and the JPEG half of a pair can go to their own folders with their own names and metadata, and RAW and JPEG can land in different folders.</li>
+</ul>
+<h3>Compare, histogram, sidebar</h3>
+<ul>
+<li>Compare shows every frame of a stack side by side, twelve to a page. The arrows stop at the edges, panes select like photos, and T tags only the frame shown. Zoomed in, drag the picture to move around it and the other panes follow.</li>
+<li>The histogram is drawn the way Lightroom draws it and counted from the preview already on screen, so it follows each frame at once; corner marks light at 0.1 % clipping. Compare RAW &amp; JPEG shows Apple’s neutral RAW rendering beside the camera JPEG, and Settings → Sidebar Information can switch RAW files to the sensor histogram.</li>
+<li>The sources list is one list: Cards, Favorites, Recent, Saved Views, Folders, and Apple Photos, each collapsing in place. Camera Details reads top-down: the camera as its maker names it, the lens, an exposure strip, then date and file.</li>
+<li>A 16 GB Mac is a first-class Mac: caches, prefetch, and the analysis pass scale to memory and cores, and memory pressure trims caches instead of emptying them.</li>
+</ul>
+<p>macOS 15 or later, Apple silicon. <a href="/ingest/guide/">Read the guide.</a></p>
+</article>
 
 <article class="release-entry" id="v0.8.0">
-<p class="eyebrow">Latest · September 22, 2026</p>
+<p class="eyebrow">September 22, 2026</p>
 <h2>0.8.0</h2>
 <h3>Apple Photos is a source, not a second window</h3>
 <ul>
