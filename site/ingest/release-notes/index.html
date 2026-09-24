@@ -33,10 +33,29 @@
 <p class="eyebrow">Ingest / Release notes</p>
 <h1>A record of what’s new.</h1>
 <p>What changed in each version. Ingest can check for updates itself, from the Ingest menu, and automatic checking is off until you turn it on.</p>
-<nav class="release-index" aria-label="Versions"><a href="/ingest/release-notes/#v0.8.1">0.8.1 · Latest</a><a href="/ingest/release-notes/#v0.8.0">0.8.0</a><a href="/ingest/release-notes/#v0.7.8">0.7.8</a><a href="/ingest/release-notes/#v0.7.7">0.7.7</a><a href="/ingest/release-notes/#v0.7.6">0.7.6</a><a href="/ingest/release-notes/#v0.7.5">0.7.5</a><a href="/ingest/release-notes/#v0.7.4">0.7.4</a><a href="/ingest/release-notes/#v0.7.3">0.7.3</a><a href="/ingest/release-notes/#v0.7.2">0.7.2</a><a href="/ingest/release-notes/#v0.7.1">0.7.1</a><a href="/ingest/release-notes/#v0.7.0">0.7.0</a><a href="/ingest/release-notes/#v0.6.0">0.6.0</a><a href="/ingest/release-notes/#v0.5.0">0.5.0</a><a href="/ingest/release-notes/#v0.4.1">0.4.1</a><a href="/ingest/release-notes/#v0.4.0">0.4.0</a><a href="/ingest/release-notes/#v0.3.1">0.3.1</a><a href="/ingest/release-notes/#v0.3.0">0.3.0</a><a href="/ingest/release-notes/#v0.2.1">0.2.1</a><a href="/ingest/release-notes/#v0.2.0">0.2.0</a><a href="/ingest/release-notes/#v0.1.0">0.1.0</a></nav>
+<nav class="release-index" aria-label="Versions"><a href="/ingest/release-notes/#v0.8.2">0.8.2 · Latest</a><a href="/ingest/release-notes/#v0.8.1">0.8.1</a><a href="/ingest/release-notes/#v0.8.0">0.8.0</a><a href="/ingest/release-notes/#v0.7.8">0.7.8</a><a href="/ingest/release-notes/#v0.7.7">0.7.7</a><a href="/ingest/release-notes/#v0.7.6">0.7.6</a><a href="/ingest/release-notes/#v0.7.5">0.7.5</a><a href="/ingest/release-notes/#v0.7.4">0.7.4</a><a href="/ingest/release-notes/#v0.7.3">0.7.3</a><a href="/ingest/release-notes/#v0.7.2">0.7.2</a><a href="/ingest/release-notes/#v0.7.1">0.7.1</a><a href="/ingest/release-notes/#v0.7.0">0.7.0</a><a href="/ingest/release-notes/#v0.6.0">0.6.0</a><a href="/ingest/release-notes/#v0.5.0">0.5.0</a><a href="/ingest/release-notes/#v0.4.1">0.4.1</a><a href="/ingest/release-notes/#v0.4.0">0.4.0</a><a href="/ingest/release-notes/#v0.3.1">0.3.1</a><a href="/ingest/release-notes/#v0.3.0">0.3.0</a><a href="/ingest/release-notes/#v0.2.1">0.2.1</a><a href="/ingest/release-notes/#v0.2.0">0.2.0</a><a href="/ingest/release-notes/#v0.1.0">0.1.0</a></nav>
+
+<article class="release-entry" id="v0.8.2">
+<p class="eyebrow">Latest · September 24, 2026</p>
+<h2>0.8.2</h2>
+<h3>Culling, inspection, and ingest</h3>
+<ul>
+<li>Review photos with local rejection, reviewed status, and protection. Tagging clears rejection; rejecting clears the tag. Stars and color labels remain independent. Protected photos explain why editing is unavailable, and mixed selections show which photos can be edited.</li>
+<li>Compare / C opens Select and Candidate side by side. Keep Select fixed while browsing candidates, promote a candidate with Up, or swap with Down. Decisions apply to the active pane. Double-clicking a stack still opens its whole-stack grid, also available through Survey / N. Hold B for a temporary reference view.</li>
+<li>Hold Z over a grid thumbnail for a loupe without changing selection. In Preview, Z toggles fit and 100% once per press. Inspection and comparison work with filesystem sources and Apple Photos, including cloud download feedback.</li>
+<li>Review Similar Photos adds group navigation and progress when needed. Keep This Frame is additive, so a group can have several keepers. Suggest Keepers shows thumbnails, alternatives, and reasons before an explicit Tag Suggested Photos action; it never rejects alternatives or assigns stars.</li>
+<li>Crop &amp; Straighten is directly searchable in the command palette and opens inside Preview. Keyword editors wait for successful writes before closing, preserve drafts on failure, and explain protection. Metadata editing adds Apply &amp; Previous.</li>
+<li>Sharpness analysis treats dark, low-contrast, and exposure-bracket images more cautiously. Subject close-ups and persistent analysis corrections help with inspection; uncertain analysis is explained instead of presented as a good result.</li>
+<li>Saved views gain review and metadata filters. Source Summary counts can become filter chips. Add metadata list view, temporary grouping, filename pick lists, portable decisions, Browse source tabs, custom ordering, and controller mappings through Settings.</li>
+<li>Preserve supported editor sidecars and uniquely matched filesystem Live Photo companions through file operations. Ambiguous associations are explained before the affected operation proceeds.</li>
+<li>Ingest gains per-photo inclusion checkboxes, per-project numbering, and browsing of verified destination copies while copying continues. Rejected photos are excluded by default, with Include Rejected available. Cleanup respects excluded and protected originals; decisions transfer to verified copies.</li>
+<li>Keep the default browsing layout quiet: review controls appear in their relevant views, preferences live in Settings, and a single source tab stays hidden. Fix stack activation so it continues to show all frames rather than entering the two-photo comparison.</li>
+</ul>
+<p>macOS 15 or later, Apple silicon. Native Apple Photos captions, keywords, and star ratings require macOS 27. <a href="/ingest/guide/">Read the guide.</a></p>
+</article>
 
 <article class="release-entry" id="v0.8.1">
-<p class="eyebrow">Latest · September 23, 2026</p>
+<p class="eyebrow">September 23, 2026</p>
 <h2>0.8.1</h2>
 <h3>Assists for culling, never decisions</h3>
 <ul>

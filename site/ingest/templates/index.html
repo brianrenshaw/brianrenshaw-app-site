@@ -63,7 +63,7 @@
 <table>
 <thead><tr><th scope="col">Token</th><th scope="col">Value</th></tr></thead>
 <tbody>
-<tr><td><code>{seqn}</code></td><td>The counter that never repeats, shared by every ingest and rename. See <a href="#seqn">below</a>.</td></tr>
+<tr><td><code>{seqn}</code></td><td>The saved counter: per project during ingest, otherwise shared across jobs. See <a href="#seqn">below</a>.</td></tr>
 <tr><td><code>{seq}</code></td><td>A counter for this job only, starting at whatever you put in the start field.</td></tr>
 <tr><td><code>{frame}</code></td><td>The number the camera gave the file. <code>DSC01206</code> gives <code>01206</code>.</td></tr>
 <tr><td><code>{stack}</code></td><td>Which bracket set this photograph belongs to. Empty for photographs that are not in one.</td></tr>
@@ -128,7 +128,7 @@
 <table>
 <thead><tr><th scope="col">Token</th><th scope="col">Value</th></tr></thead>
 <tbody>
-<tr><td><code>{address}</code></td><td>The street address you set with <kbd>⌘L</kbd>, cleaned up for a filename: <code>421 US Highway 2</code> becomes <code>421-US-Hwy-2</code>.</td></tr>
+<tr><td><code>{address}</code></td><td>The job address, set in Ingest or with <kbd>⌘L</kbd>, formatted for filenames using the chosen Spaces setting. The same address can fill a metadata template’s Property address prompt.</td></tr>
 <tr><td><code>{street}</code></td><td>The same value.</td></tr>
 <tr><td><code>{city}</code> <code>{state}</code> <code>{zip}</code></td><td>The rest of the address.</td></tr>
 </tbody>
@@ -138,9 +138,9 @@
 
 <section id="seqn" class="guide-section">
 <h2>The sequence number</h2>
-<p><code>{seqn}</code> is one counter for everything you do in Ingest. It goes up as files are named and it never goes back, so no two photographs you have ever named end up with the same number. That is what makes it safe to drop a hundred files from three different cards into one folder.</p>
+<p>During ingest, <code>{seqn}</code> uses the current project’s saved counter. A new project starts at 0001, and another card for that project continues where the first stopped. Outside a project, it uses the shared counter across jobs. <strong>Start at</strong> shows the next number and accepts an override. Different projects can use the same numbers.</p>
 <p>The width comes from the zeros you type. <code>0001</code> in the start field gives four digits, so 7078 comes out as <code>7078</code> and 42 comes out as <code>0042</code>. Leading zeros are what keep files in order when something sorts them as text.</p>
-<p>Planning a job never moves the counter. The Ingest sheet shows you the names it would write, and the counter only advances by the number of files actually named. A canceled ingest costs you nothing, and a failed file does not burn a number.</p>
+<p>Planning a job does not move the counter. Review the proposed names before copying. The counter is recorded as files are published, so an interrupted job can already have used numbers for its completed copies.</p>
 <p>Settings, Renaming shows the next number and lets you set it, which is the equivalent of Photo Mechanic's Set Sequence. Reset to 1 asks first, because reusing numbers you have already used is the one thing this counter exists to prevent.</p>
 <p><code>{seq}</code> is the other counter: it starts wherever you say, for this job only, and it is the right choice when a client wants photographs numbered from one.</p>
 </section>

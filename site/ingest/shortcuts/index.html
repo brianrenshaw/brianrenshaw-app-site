@@ -91,6 +91,9 @@
 <tr><td><kbd>T</kbd></td><td>Toggle tag</td><td>Grid, preview, video</td></tr>
 <tr><td><kbd>⇧T</kbd></td><td>Tag and advance, or tag without advancing</td><td>Grid, preview, video</td></tr>
 <tr><td><kbd>U</kbd></td><td>Untag</td><td>Grid, preview, video</td></tr>
+<tr><td><kbd>X</kbd> / <kbd>⇧X</kbd></td><td>Reject or clear rejection; Shift reverses the reject advance preference</td><td>Files and Apple Photos</td></tr>
+<tr><td><kbd>R</kbd> / <kbd>⇧R</kbd></td><td>Mark Reviewed; Shift reverses the review advance preference</td><td>Files and Apple Photos</td></tr>
+<tr><td>no key</td><td>Mark Unreviewed; Protect / Unlock Photos</td><td>Files and Apple Photos</td></tr>
 <tr><td><kbd>⌫</kbd></td><td>Delete selected photos; confirmation is on by default</td><td>Grid, preview, video</td></tr>
 <tr><td><kbd>1</kbd> … <kbd>5</kbd></td><td>One star to five stars. Pressing the rating it already has clears it.</td><td>Grid, preview</td></tr>
 <tr><td><kbd>⇧1</kbd> … <kbd>⇧5</kbd></td><td>The same, with the opposite advance behavior</td><td>Grid, preview</td></tr>
@@ -103,6 +106,7 @@
 </tbody>
 </table>
 </div>
+<p>Tag, reject, rating, label, and review actions have separate advance settings. Tagging clears rejection; rejecting clears the tag. Viewing alone does not mark a photo reviewed. Protected photographs are skipped with an explanation.</p>
 <p>A mark applies to every selected photograph, or to the one under the focus ring. On a collapsed bracket stack it applies to every frame in the stack.</p>
 </section>
 
@@ -135,13 +139,13 @@
 <tr><td><kbd>⌘I</kbd></td><td>Show or hide the inspector</td><td></td></tr>
 <tr><td><kbd>⌥⌘S</kbd></td><td>Show or hide the sources list</td><td></td></tr>
 <tr><td><kbd>Tab</kbd></td><td>Hide or show both side panels</td><td></td></tr>
-<tr><td><kbd>C</kbd></td><td>Compare the frames of the stack you are on side by side, twelve to a page. The arrows move between panes and stop at the edges; panes select like photographs.</td><td>Grid, preview</td></tr>
-<tr><td><kbd>N</kbd></td><td>Survey up to four at once</td><td>Grid, preview</td></tr>
+<tr><td><kbd>C</kbd></td><td>Open Select/Candidate. Left/right browses candidates; Up makes Candidate the Select; Down swaps. Marking acts on the active pane; Esc returns to the previous view with Select selected.</td><td>Grid, preview</td></tr>
+<tr><td><kbd>N</kbd></td><td>Survey the whole current stack, twelve frames per page, or up to six selected photographs. Stack double-click opens the same grid.</td><td>Grid, preview</td></tr>
 <tr><td><kbd>I</kbd></td><td>Cycle the information overlay: off, basic, full</td><td>Grid, preview, split</td></tr>
 <tr><td><kbd>⌥D</kbd></td><td>Detail overlay, to judge sharpness</td><td>Preview</td></tr>
 <tr><td><kbd>⌥E</kbd></td><td>Edge overlay</td><td>Preview</td></tr>
 <tr><td><kbd>⌥A</kbd></td><td>Show the focus point the camera recorded, when it recorded one</td><td>Preview</td></tr>
-<tr><td><kbd>⌥F</kbd></td><td>Face close-ups along the bottom</td><td>Preview</td></tr>
+<tr><td><kbd>⌥F</kbd></td><td>Subject Close-ups: faces, detected subjects, or a labeled center fallback</td><td>Preview</td></tr>
 <tr><td><kbd>⌘+</kbd> <kbd>⌘-</kbd></td><td>Bigger and smaller thumbnails</td><td>Grid</td></tr>
 <tr><td><kbd>⌃⌘F</kbd></td><td>Full screen</td><td></td></tr>
 <tr><td><kbd>⌥⌘F</kbd></td><td>Put the preview on a second display</td><td></td></tr>
@@ -158,6 +162,8 @@
 </div>
 </section>
 
+<p>Hold <kbd>B</kbd> to temporarily inspect Select, or the first tagged frame in the current group outside Compare. Release restores the previous view. Hold <kbd>Z</kbd> over a grid thumbnail to inspect it without selecting it; release dismisses the loupe. The View menu offers persistent Grid Loupe activation.</p>
+
 <section id="zoom" class="guide-section">
 <h2>Zoom</h2>
 <p>All of these work in the preview. Zoom is anchored on the pointer, so the detail under the cursor stays under the cursor.</p>
@@ -168,7 +174,7 @@
 <tr><td><kbd>Z</kbd></td><td>Switch between fit and 100 per cent at the pointer</td></tr>
 <tr><td><kbd>F</kbd></td><td>Fit to the window</td></tr>
 <tr><td><kbd>⌥1</kbd> <kbd>⌥2</kbd> <kbd>⌥4</kbd></td><td>100, 200, and 400 per cent</td></tr>
-<tr><td><kbd>⇧Z</kbd></td><td>Lock or free the zoom across Compare panes</td></tr>
+<tr><td><kbd>⇧Z</kbd></td><td>Lock or free zoom across Survey panes. Select/Candidate has a Linked Zoom control inside its view.</td></tr>
 </tbody>
 </table>
 </div>
@@ -205,8 +211,9 @@
 <tbody>
 <tr><td><kbd>S</kbd></td><td>Expand or collapse the stack you are on</td><td>Grid, preview</td></tr>
 <tr><td><kbd>⌥S</kbd></td><td>Expand or collapse every stack</td><td></td></tr>
-<tr><td><kbd>P</kbd></td><td>Keep this frame: tag it, leave the rest of the stack untagged, and collapse the stack</td><td>Grid, preview</td></tr>
+<tr><td><kbd>P</kbd></td><td>Keep This Frame: add a tag without clearing other keepers, and collapse the stack</td><td>Grid, preview</td></tr>
 <tr><td><kbd>⇧P</kbd></td><td>Not Soft. Clears the Soft flag on the selected photographs, or puts it back</td><td>Grid, preview</td></tr>
+<tr><td>no key</td><td>Keep Only This Frame; Review Similar Photos; Suggest Keepers. Suggestions change no decisions until you choose Tag Suggested Photos.</td><td></td></tr>
 <tr><td>no key</td><td>Analyze Photos, or stop the pass; Compare RAW and JPEG, Apple’s neutral rendering beside the camera JPEG</td><td></td></tr>
 <tr><td>no key</td><td>Combine the selected photographs into a stack. With nothing selected, it puts back the stacks you took apart in this view.</td><td></td></tr>
 <tr><td>no key</td><td>Uncombine. Stacks in the selection, or the one you are on, or every stack in this view.</td><td></td></tr>
@@ -231,6 +238,7 @@
 <tr><td><kbd>⇧⌘L</kbd></td><td>Strip the location back out</td><td></td></tr>
 <tr><td><kbd>⌥⌘[</kbd> <kbd>⌥⌘]</kbd></td><td>Rotate left and right, by changing the orientation flag rather than the pixels</td><td></td></tr>
 <tr><td><kbd>⌥⌘T</kbd></td><td>Adjust capture time, for when two cameras disagree about the clock</td><td></td></tr>
+<tr><td>no key</td><td>Crop &amp; Straighten opens an editor inside Preview. Copy Crop and Paste Crop to Selection reuse a composition.</td><td>Writable files</td></tr>
 <tr><td>no key</td><td>Apply the current location to the selection, to everything tagged, or to everything</td><td></td></tr>
 </tbody>
 </table>
@@ -301,7 +309,7 @@
 <p>These commands apply while browsing Apple Photos. File commands elsewhere in this reference apply to the file browser. Single-letter shortcuts pause while you type.</p>
 <table><thead><tr><th>Key</th><th>Action in Photos</th></tr></thead><tbody>
 <tr><td><kbd>G</kbd></td><td>Add selection to albums</td></tr>
-<tr><td><kbd>R</kbd> / <kbd>⇧R</kbd></td><td>Mark reviewed / mark reviewed and advance</td></tr>
+<tr><td><kbd>R</kbd> / <kbd>⇧R</kbd></td><td>Mark Reviewed / reverse the review advance preference for this press</td></tr>
 <tr><td><kbd>F</kbd></td><td>Toggle native favorite</td></tr>
 <tr><td><kbd>M</kbd></td><td>Review Photos metadata edits</td></tr>
 <tr><td><kbd>T</kbd></td><td>Toggle local Ingest tag</td></tr>
@@ -344,6 +352,7 @@
 
 <section id="palette" class="guide-section">
 <h2>Commands without a key</h2>
+<p>Find Source Summary, Select from Pick List, Export Selected Decisions, and Open Current Source in New Tab by name. Source Summary opens in the inspector; clicking a count applies a removable filter.</p>
 <p>Plenty of commands have no key, on purpose. They are all in the palette. Press <kbd>⌘K</kbd> and type a few letters of the name, an alias, or the category.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/palette-0.8.0-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/palette-0.8.0-retina.webp" width="2444" height="1562" loading="lazy" alt="The command palette open over the grid, showing commands with their keys on the right and a disabled command explaining why it cannot run"></a><figcaption>Before you type, the palette offers what makes sense for what you have selected. Commands that cannot run stay visible and say why.</figcaption></figure>
 <p>Inside the palette, <kbd>⌘K</kbd> toggles <strong>Actions</strong>. Use the arrow keys and Return to choose Pin/Unpin, Copy Link, or Configure Shortcut. <kbd>Esc</kbd> closes Actions before it closes the palette. Configure Shortcut reveals that command in Settings; temporary card and recent-folder entries do not offer it.</p>

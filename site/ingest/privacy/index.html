@@ -32,7 +32,7 @@
 <main id="main" tabindex="-1" class="family-document">
 <p class="eyebrow">Ingest / Privacy</p>
 <h1>Your library, under your control.</h1>
-<p>Last updated September 21, 2026. Applies to Ingest 0.7.0.</p>
+<p>Last updated September 24, 2026. Applies to Ingest 0.8.2.</p>
 <p class="intro">Ingest has no account, no analytics, and no server of mine that receives your photographs. Optional Apple Photos, address and map services, and software updates use the network as described below.</p>
 
 <section id="files">
@@ -41,20 +41,20 @@
 <p>What Ingest stores locally:</p>
 <ul>
 <li>Small settings files in your Application Support folder, holding your options, name templates, metadata presets, snippets, splits, workspaces, actions, and keyboard shortcuts.</li>
-<li>Per folder marks. Tags, stars, and color labels, stored by file identity rather than written onto a card.</li>
+<li>Per folder marks. Tags, rejection, reviewed status, protection, stars, and color labels, stored by file identity rather than written onto a card.</li>
 <li>Cached thumbnails and header information in your Caches folder, kept under 2 GB, cleared from Settings, Advanced.</li>
 <li>Logs from actions you have run, if you have built any.</li>
 <li>A record of each ingest, so the app can tell you which photographs from a card you already copied.</li>
 </ul>
 <p>When you ask it to, Ingest writes keywords, captions, titles, ratings, color labels, and GPS into your photograph files. That is the point of the app, and it happens to the files you chose, on your disk. It never writes to a memory card.</p>
-<p><strong>Face close-ups.</strong> The face close-up strip finds faces in the photograph on screen so it can show you each one enlarged. That runs on your Mac using Apple's Vision framework. No names or identities are involved, nothing is matched against anything, no result is stored between sessions, and nothing is sent anywhere.</p>
+<p><strong>Local photo analysis.</strong> Apple’s Vision framework finds faces and other subjects for close-ups, similarity grouping, and culling suggestions. Ingest caches feature prints, face and subject regions, and assessment results on your Mac. User corrections persist locally. No names or identities are assigned, and no analysis or photograph is sent to a server for these features. Suggestions change no decisions until you apply them.</p>
 </section>
 
 <section id="apple-photos">
 <h2>Apple Photos and iCloud</h2>
 <p>Apple Photos integration is on by default and can be turned off in Settings → General. Enabling the feature does not itself request library access. Connecting or sending photos requests native Photos read/write permission for your System Photo Library. You can revoke it in macOS System Settings → Privacy &amp; Security → Photos.</p>
 <p>Ingest uses Apple’s PhotoKit framework to read your photos and albums and apply the changes you request. Cloud-only images, video, or Live Photos may be downloaded by Apple Photos. Imports, favorite and metadata changes, album organization, and library deletions follow your Photos and iCloud settings and may sync to your other devices. Ingest does not upload your library to a server operated by me.</p>
-<p>Ingest stores Photos object references, local tags, color labels, review marks, grouping recipes, and import receipts on your Mac. On systems before macOS 27, Photos star ratings are stored locally as well. Social Export keeps durable local copies of the rendered Photos images you import into a project; clearing thumbnails does not remove those project inputs. Sending files to Photos stages local copies and retains import receipts so confirmed imports can be reused.</p>
+<p>Ingest stores Photos object references, local tags, rejection, protection, color labels, review marks, grouping recipes, and import receipts on your Mac. On systems before macOS 27, Photos star ratings are stored locally as well. Social Export keeps durable local copies of the rendered Photos images you import into a project; clearing thumbnails does not remove those project inputs. Sending files to Photos stages local copies and retains import receipts so confirmed imports can be reused.</p>
 <p>Turning integration off hides its controls and stops library observation. It preserves your saved Ingest state, does not revoke the macOS permission, and does not remove photos or undo changes already made in Photos.</p>
 </section>
 

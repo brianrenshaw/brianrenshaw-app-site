@@ -157,13 +157,12 @@ differ. Not "guaranteed", not "bit perfect", and it says nothing about corruptio
 **Say the requirements everywhere.** macOS 15 or later, Apple silicon only. An Intel owner downloading a disk image
 that will not open is the most expensive support email the page can generate. Sony ARW and Fujifilm RAF preview support is named near the download too; never imply universal raw support.
 
-**Face close-ups need their sentence.** Faces are found on the Mac only in order to zoom in. No names, no identities,
-nothing stored, nothing sent. It appears on the guide and on the privacy page.
+**Local analysis needs its sentence.** Faces and subject regions are found on the Mac for close-ups, grouping, and culling suggestions. Results and corrections are cached locally. No names or identities are assigned, and nothing is sent to a server for this analysis. Keep the guide and privacy page aligned with this behavior.
 
 **Scripts need their sentence.** A shell step runs as you and Ingest does not restrain it. On the automation page and
 again on the privacy page.
 
-**Availability:** Show the version beside the download and label the current 0.2.1 release “Working beta.” Use this explanation: “Ingest is a working beta. I use it for my own work and am still developing it for a broader audience.” Avoid vague qualifiers such as “young” or claims that the shape of the app is settled. Release history lives at
+**Availability:** Show the version beside the download and label the current 0.8.2 release “Working beta.” Use this explanation: “Ingest is a working beta. I use it for my own work and am still developing it for a broader audience.” Avoid vague qualifiers such as “young” or claims that the shape of the app is settled. Release history lives at
 /ingest/release-notes/ and is linked from the app's Help menu. Do not restate historical entries in current positioning
 language.
 

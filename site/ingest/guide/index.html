@@ -96,6 +96,13 @@
 <p>Photos imports, album changes, metadata edits, and deletions can sync through iCloud if you have enabled iCloud Photos. See <a href="/ingest/privacy/#apple-photos">Photos privacy and storage</a>.</p>
 </section>
 
+<section id="review-decisions" class="guide-section">
+<h2>Review decisions and protection</h2>
+<p><kbd>T</kbd> tags a keeper, <kbd>X</kbd> rejects or clears rejection, and <kbd>R</kbd> marks reviewed. Tagging clears rejection; rejecting clears the tag. Stars and labels stay independent. Tagging, rejecting, rating, labeling, or explicitly marking reviewed records a review action; viewing alone does not. Undecided means neither tagged nor rejected; Unreviewed means no recorded review action.</p>
+<p>Protect / Unlock Photos controls editing inside Ingest. Protected photos remain viewable and copyable, and disabled editing controls explain “Protected. Unlock to edit.” Mixed selections report protected exclusions. Keyword drafts stay open if a write fails.</p>
+<p>Ingest excludes rejected photos by default, with an Include Rejected switch. The eligible set freezes when copying starts. Rejecting never deletes an original. Delete-all cleanup is unavailable while excluded rejected or protected photos remain; delete-copied cleanup requires verified, unprotected files.</p>
+</section>
+
 <section id="browsing" class="guide-section">
 <h2>Browsing, and why it is fast</h2>
 <p>Use the Grid, Preview, and Split icons to choose your view. Press <kbd>I</kbd> to cycle photo information in any of them. The inspector shows Histogram, Camera Details, Caption, Keywords, and Location by default. Settings → Sidebar Information lets you choose fields and drag them into your preferred order. Metadata shortcuts open the appropriate editor. Grid sizing extends to one photo at a time; arrow keys stay with your photos by default.</p>
@@ -115,16 +122,23 @@
 <h2>The preview</h2>
 <p><kbd>Space</kbd> opens the large view, and <kbd>Space</kbd> again closes it. <kbd>⌘1</kbd>, <kbd>⌘2</kbd>, and <kbd>⌘3</kbd> switch between grid, preview, and both at once.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/preview-0.8.0-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/preview-0.8.0-retina.webp" width="2444" height="1562" loading="lazy" alt="A photograph filling the preview with a filmstrip of the rest of the card along the bottom"></a><figcaption>The preview with the filmstrip. The marks you have made show on both.</figcaption></figure>
-<p><kbd>Z</kbd> goes to 100 per cent at the pointer, so whatever is under the cursor stays under the cursor, and <kbd>Z</kbd> again returns to fit. <kbd>⌥1</kbd>, <kbd>⌥2</kbd>, and <kbd>⌥4</kbd> are fixed zoom levels, and <kbd>F</kbd> fits. A pinch, a two finger drag, and a two finger double tap do the same things.</p>
+<p>In the grid, hold <kbd>Z</kbd> over a thumbnail to show the loupe, then release to dismiss it. Hovering does not change selection. Loading or limited-resolution labels tell you when full detail is not available. The View menu can keep Grid Loupe enabled; Settings holds its size and magnification.</p>
+<p>In Preview, <kbd>Z</kbd> goes to 100 per cent at the pointer, so whatever is under the cursor stays under the cursor, and <kbd>Z</kbd> again returns to fit. <kbd>⌥1</kbd>, <kbd>⌥2</kbd>, and <kbd>⌥4</kbd> are fixed zoom levels, and <kbd>F</kbd> fits. A pinch, a two finger drag, and a two finger double tap do the same things.</p>
 <p>The zoom is sticky as you move between photographs, which is the point: you set 100 per cent on an eye, then arrow through five frames and compare the same eye in each.</p>
 <p>In ordinary preview mode, at 100 per cent Ingest shows the full size JPEG from inside the raw file, which for a Sony body is the whole 9504 pixel frame. When a raw file's preview is smaller than its JPEG twin, Ingest uses the twin, and the information overlay tells you which pixels you are actually judging.</p>
 </section>
 
+<section id="crop-straighten" class="guide-section">
+<h2>Crop and straighten</h2>
+<p>Select a writable photo and choose Crop &amp; Straighten in Preview, the photo context menu, or <kbd>⌘K</kbd>. Drag a frame corner to crop, drag inside to reposition, choose an aspect ratio, and use Straighten to adjust the angle. Save records reversible crop geometry; Cancel discards the draft. Copy Crop and Paste Crop to Selection reuse a composition after reviewing the affected photos.</p>
+</section>
+
 <section id="compare" class="guide-section">
 <h2>Compare and survey</h2>
-<p><kbd>C</kbd> puts two photographs side by side. <kbd>N</kbd> shows up to four. Zoom and pan are locked across the panes, so zooming into a face in one zooms into the same place in the others, which is the only way to judge two nearly identical frames.</p>
-<p>Marking keys act on the highlighted pane, so you can tag your choice without leaving the comparison. <kbd>Esc</kbd> leaves.</p>
-<p>On a bracket set, <kbd>C</kbd> opens every frame at once, which is how you check whether the window is blown in all five.</p>
+<p><kbd>C</kbd> opens <strong>Select</strong> on the left and <strong>Candidate</strong> on the right. Candidates come from an explicit multiselection, then the current stack, then the filtered source. Left/right changes Candidate while Select stays fixed; Up makes Candidate the Select and advances, and Down swaps the pair. Promotion does not tag a photograph.</p>
+<p>Click either pane to choose the target for tag, reject, rating, and label commands. The active border identifies that target. Linked Zoom keeps inspection aligned; turn it off to inspect each photo independently. Done or <kbd>Esc</kbd> returns to the preceding layout with Select selected.</p>
+<p><kbd>N</kbd> opens <strong>Survey</strong>: the whole current stack, twelve frames per page, or up to six selected photographs. Double-clicking a stack in the grid or filmstrip opens this same whole-stack view. Survey arrows stay within the set.</p>
+<p>Hold <kbd>B</kbd> to temporarily inspect Select. Outside Compare, it uses the first tagged photograph in the current group. Releasing B restores the previous view.</p>
 </section>
 
 <section id="raw-histogram" class="guide-section">
@@ -157,11 +171,13 @@
 </tbody>
 </table>
 </div>
-<p>The face strip finds faces on your Mac, using Apple's Vision framework, only so it can enlarge them. No names, no identities, nothing stored, nothing sent. It runs only while the strip is open.</p>
+<p>Subject close-ups and culling analysis run locally using Apple’s Vision framework. Ingest caches face and subject regions, feature prints, and assessment results for inspection and similar-photo grouping. Corrections such as Not Soft and Intentional Closed Eyes persist locally. No names or identities are assigned, and analysis is not sent to a server.</p>
+<p>Dark, low-contrast, and exposure-bracket frames can be unsuitable for a confident sharpness judgment. Ingest explains uncertainty instead of treating an unavailable assessment as acceptable detail. Use the detail or edge overlay to inspect the photograph yourself.</p>
 </section>
 
 <section id="stacks" class="guide-section">
-<h2>Bracket stacks</h2>
+<h2>Similar photos and bracket stacks</h2>
+<p>For a similar group, <kbd>P</kbd> adds the current frame as a keeper without removing existing keepers. Keep Only This Frame is a separate command. Review Similar Photos adds group navigation and progress only while in that mode. Suggest Keepers shows proposed photos, alternatives, and reasons; opening it changes no decisions. Tag Suggested Photos adds the approved tags, with Undo available.</p>
 <p>A three or five shot bracket is one picture taken several times. Ingest recognizes those sets and shows them as a single cell with a badge, so a card of a hundred brackets looks like twenty pictures instead of a hundred frames.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/stacks-0.8.0-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/stacks-0.8.0-retina.webp" width="2444" height="1562" loading="lazy" alt="A grid with bracket stacks expanded, showing demonstration landscapes at different exposures"></a><figcaption>Expanded stacks reveal each frame. The exposure spread is visible in the thumbnails.</figcaption></figure>
 <p><kbd>S</kbd> expands or collapses the set you are on, <kbd>⌥S</kbd> does all of them. A mark on a collapsed set applies to every frame in it, so tagging the bracket keeps the whole bracket.</p>
@@ -245,7 +261,7 @@
 
 <section id="renaming" class="guide-section">
 <h2>Renaming</h2>
-<p>Names are built from templates: text plus tokens in braces. <code>{yyyy}{mm}{dd}-{seqn}</code> gives <code>20260912-7078</code>. The full list of tokens, and how the sequence number that never repeats works, is on the <a href="/ingest/templates/">naming page</a>.</p>
+<p>Names are built from templates: text plus tokens in braces. <code>{yyyy}{mm}{dd}-{seqn}</code> gives <code>20260912-7078</code>. The full list of tokens, and how saved sequence numbers work, is on the <a href="/ingest/templates/">naming page</a>.</p>
 <p>Renaming happens during an ingest, or in place afterwards with <kbd>⌘R</kbd>. <kbd>⌥⌘R</kbd> re-sequences what is on screen, which is how you close the gaps in the numbering after throwing half a shoot away.</p>
 <p>Every rename records the original filename inside the file, so Undo Rename can put the old names back later, even in a folder you opened fresh.</p>
 </section>
