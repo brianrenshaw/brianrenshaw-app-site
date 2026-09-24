@@ -1,6 +1,92 @@
 {
-  "capture": "Versioned native Retina captures. New 0.8.5 captures use an isolated demonstration library and credited Unsplash photos or a CC0 RAW sample; historical documentation captures retain their versioned filenames. Cursor and window shadow excluded. Lossless WebP with exact decoded RGBA pixels.",
+  "capture": "Current website screenshots are native Retina captures from signed Ingest 0.8.5. Historical captures remain at their existing URLs and are recorded under archivedImages. See SOURCES.md for licenses and provenance.",
   "images": {
+    "palette-0.8.5-retina.webp": {
+      "width": 2882,
+      "height": 1590,
+      "displayWidth": 1441,
+      "displayHeight": 795,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "workspace-wedding-0.8.5-retina.webp": {
+      "width": 2882,
+      "height": 1590,
+      "displayWidth": 1441,
+      "displayHeight": 795,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "command-crop-0.8.5-retina.webp": {
+      "width": 2882,
+      "height": 1590,
+      "displayWidth": 1441,
+      "displayHeight": 795,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "command-sidebars-0.8.5-retina.webp": {
+      "width": 2882,
+      "height": 1590,
+      "displayWidth": 1441,
+      "displayHeight": 795,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "raw-viewer-0.8.5-retina.webp": {
+      "width": 2882,
+      "height": 1590,
+      "displayWidth": 1441,
+      "displayHeight": 795,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "command-folders-0.8.5-retina.webp": {
+      "width": 2882,
+      "height": 1590,
+      "displayWidth": 1441,
+      "displayHeight": 795,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "workspace-personal-0.8.5-retina.webp": {
+      "width": 2882,
+      "height": 1590,
+      "displayWidth": 1441,
+      "displayHeight": 795,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "workspace-wildlife-0.8.5-retina.webp": {
+      "width": 2882,
+      "height": 1590,
+      "displayWidth": 1441,
+      "displayHeight": 795,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "command-workspaces-0.8.5-retina.webp": {
+      "width": 2882,
+      "height": 1590,
+      "displayWidth": 1441,
+      "displayHeight": 795,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "workspace-real-estate-0.8.5-retina.webp": {
+      "width": 2056,
+      "height": 1290,
+      "displayWidth": 1028,
+      "displayHeight": 645,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "organize-0.8.5-retina.webp": {
+      "width": 2882,
+      "height": 1590,
+      "displayWidth": 1441,
+      "displayHeight": 795,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "assistance-0.8.5-retina.webp": {
+      "width": 2882,
+      "height": 1590,
+      "displayWidth": 1441,
+      "displayHeight": 795,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    }
+  },
+  "archivedImages": {
     "grid-cull-0.8.0-retina.webp": {
       "width": 2444,
       "height": 1562,
@@ -96,90 +182,6 @@
       "height": 2284,
       "displayWidth": 1028,
       "displayHeight": 1142
-    },
-    "palette-0.8.5-retina.webp": {
-      "width": 2882,
-      "height": 1590,
-      "displayWidth": 1441,
-      "displayHeight": 795,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
-    },
-    "workspace-wedding-0.8.5-retina.webp": {
-      "width": 2882,
-      "height": 1590,
-      "displayWidth": 1441,
-      "displayHeight": 795,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
-    },
-    "command-crop-0.8.5-retina.webp": {
-      "width": 2882,
-      "height": 1590,
-      "displayWidth": 1441,
-      "displayHeight": 795,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
-    },
-    "command-sidebars-0.8.5-retina.webp": {
-      "width": 2882,
-      "height": 1590,
-      "displayWidth": 1441,
-      "displayHeight": 795,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
-    },
-    "raw-viewer-0.8.5-retina.webp": {
-      "width": 2882,
-      "height": 1590,
-      "displayWidth": 1441,
-      "displayHeight": 795,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
-    },
-    "command-folders-0.8.5-retina.webp": {
-      "width": 2882,
-      "height": 1590,
-      "displayWidth": 1441,
-      "displayHeight": 795,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
-    },
-    "workspace-personal-0.8.5-retina.webp": {
-      "width": 2882,
-      "height": 1590,
-      "displayWidth": 1441,
-      "displayHeight": 795,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
-    },
-    "workspace-wildlife-0.8.5-retina.webp": {
-      "width": 2882,
-      "height": 1590,
-      "displayWidth": 1441,
-      "displayHeight": 795,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
-    },
-    "command-workspaces-0.8.5-retina.webp": {
-      "width": 2882,
-      "height": 1590,
-      "displayWidth": 1441,
-      "displayHeight": 795,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
-    },
-    "workspace-real-estate-0.8.5-retina.webp": {
-      "width": 2056,
-      "height": 1290,
-      "displayWidth": 1028,
-      "displayHeight": 645,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
-    },
-    "organize-0.8.5-retina.webp": {
-      "width": 2882,
-      "height": 1590,
-      "displayWidth": 1441,
-      "displayHeight": 795,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
-    },
-    "assistance-0.8.5-retina.webp": {
-      "width": 2882,
-      "height": 1590,
-      "displayWidth": 1441,
-      "displayHeight": 795,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
     }
   }
 }

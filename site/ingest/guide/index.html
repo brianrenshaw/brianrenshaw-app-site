@@ -3,36 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Ingest guide | Import, cull, and manage your photos</title>
-<meta name="description" content="Import a shoot, cull your photos, and manage existing folders with Ingest. Learn the command bar, browsing, metadata, naming, and verified copies.">
+<title>Ingest Guide — Photo workflow for Mac</title>
+<meta name="description" content="Import a shoot, review your keepers, browse existing folders, and organize your finished exports. Jump to the tool you need, or use the Command Palette in the app to find an action by name.">
 <link rel="canonical" href="https://brianrenshaw.app/ingest/guide/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="The Ingest guide | Import, cull, and manage your photos">
-<meta property="og:description" content="Import a shoot, cull your photos, and manage existing folders with Ingest. Learn the command bar, browsing, metadata, naming, and verified copies.">
+<meta property="og:title" content="Ingest — Your photos, from import to export.">
+<meta property="og:description" content="Import a shoot, review your keepers, browse existing folders, and organize your finished exports. Jump to the tool you need, or use the Command Palette in the app to find an action by name.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/guide/">
-<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/grid-cull-0.8.0-retina.webp">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/palette-0.8.5-retina.webp">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
-<link rel="stylesheet" href="/ingest/assets/site.css">
+<link rel="stylesheet" href="/ingest/assets/site.css?v=085-docs">
 </head>
-<body class="app-ingest">
+<body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="family-header">
-<a class="family-brand" href="/ingest/">
-<img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a>
-<nav aria-label="Main navigation">
-<a class="portfolio-home-link" href="/">← Brian’s homepage</a>
-<a href="/ingest/guide/">Guide</a>
-<a href="/ingest/shortcuts/">Shortcuts</a>
-<a href="/ingest/support/">Support</a>
-</nav>
-</header>
+<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.8.5/Ingest-0.8.5.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
+<nav class="docs-nav" aria-label="Ingest documentation"><a href="/ingest/quick-start/">Quick start</a><a href="/ingest/guide/" aria-current="page">Guide</a><a href="/ingest/shortcuts/">Shortcuts</a><a href="/ingest/templates/">Naming & metadata</a><a href="/ingest/automation/">Automation</a><a href="/ingest/support/">Support</a><a href="/ingest/release-notes/">Release notes</a><a href="/ingest/privacy/">Privacy</a></nav>
 <main id="main" tabindex="-1" class="family-document reference">
 <p class="eyebrow">Ingest / The guide</p>
-<h1>Import, cull, and manage your photos.</h1>
-<p class="intro">Import a new shoot, choose your keepers, or organize photos already in your folders. This guide covers the tools for each job, with the <a href="#palette">command bar</a> connecting them. Start with the <a href="/ingest/quick-start/">quick start</a> for your first import, or jump to the part you need below.</p>
+<h1>Your photos, from import to export.</h1>
+<p class="intro">Import a shoot, review your keepers, browse existing folders, and organize your finished exports. Jump to the tool you need, or use the Command Palette in the app to find an action by name.</p>
 <nav class="guide-toc" aria-label="On this page">
 <a href="#sources">Cards and folders</a>
 <a href="#browsing">Browsing</a>
@@ -41,7 +33,7 @@
 <a href="#compare">Compare and survey</a>
 <a href="#raw-histogram">RAW histogram and preview comparison</a>
 <a href="#overlays">Overlays</a>
-<a href="#stacks">Bracket stacks</a>
+<a href="#stacks">Bursts, scenes, and brackets</a>
 <a href="#video">Video</a>
 <a href="#culling">Culling</a>
 <a href="#splits">Splits</a>
@@ -63,7 +55,7 @@
 
 <section id="sources" class="guide-section">
 <h2>Cards and folders</h2>
-<p>Put a card in and it appears in the sources list with its name and free space, and Ingest opens it. Press <kbd>⌘O</kbd> to open an ordinary folder instead. Either way you are looking at photographs within a second, before the app has finished reading everything.</p>
+<p>Put a card in and it appears in the sources list. Automatic opening is controlled in Settings → General. Press <kbd>⌘O</kbd> to open a folder instead. Available previews load progressively while Ingest reads the source.</p>
 <p>Click the sidebar magnifier, press <kbd>⇧⌘F</kbd>, or choose <strong>Find Folder</strong> in <kbd>⌘K</kbd> to search folder names in a roomy palette. Results include parent paths; Escape closes the palette without changing the tree. Current, recent, and favorite folders appear immediately, with other results supplied by Spotlight.</p>
 <p>The sidebar keeps your Mac’s folder tree in place. Selecting a folder opens it immediately. Favorites, Recent, and Saved Views have collapsible sections. <kbd>⌘D</kbd> adds the current folder to Favorites. Show photos in subfolders is visible beside the folder name and defaults off; when enabled, selecting a photo identifies its containing folder. Finder’s Open With Ingest opens the photo’s folder and selects it.</p>
 <p><kbd>⌘[</kbd> and <kbd>⌘]</kbd> go back and forward through what you have opened, like a browser, so switching to the card and back to yesterday's folder costs one keystroke.</p>
@@ -109,9 +101,9 @@
 <p>Use the Grid, Preview, and Split icons to choose your view. Press <kbd>I</kbd> to cycle photo information in any of them. The inspector shows Histogram, Camera Details, Caption, Keywords, and Location by default. Settings → Sidebar Information lets you choose fields and drag them into your preferred order. Metadata shortcuts open the appropriate editor. Grid sizing extends to one photo at a time; arrow keys stay with your photos by default.</p>
 <p>A raw file is large and slow to develop. Many cameras also write a finished preview inside that raw file for their own screens. Ingest finds that JPEG and reads only those bytes. A Sony ARW is 76 MB; the preview Ingest reads out of it is a few hundred kilobytes, and the full size JPEG inside it is about six.</p>
 <p>Embedded previews keep ordinary browsing fast, with no import step before you can look. If a file has no usable preview or paired image, Ingest can render the selected photo in a separate helper and cache the result. That first fallback preview is slower; whole cards are not rendered in advance.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/grid-cull-0.8.0-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/grid-cull-0.8.0-retina.webp" width="2444" height="1562" loading="lazy" alt="The Ingest grid part way through a cull, with tagged photographs, stars, a color label, bracket stack badges, and live counts in the sources list"></a><figcaption>A card part way through a cull. The counts on the left update as you mark. Photographs are demonstration images, credited on the support page.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/workspace-wedding-0.8.5-retina.webp" aria-label="View full-resolution screenshot: Wedding workspace with face close-ups"><img src="/ingest/assets/workspace-wedding-0.8.5-retina.webp" width="2882" height="1590" style="--capture-width:1441px" loading="lazy" alt="Wedding workspace with face close-ups"></a><figcaption>Inspect expressions in close-ups, then make your own review decisions.</figcaption></figure>
 <p>Arrow keys move, <kbd>⇧</kbd> extends the selection, and <kbd>⌘</kbd> with an arrow moves the focus ring without disturbing what is selected. <kbd>⌘+</kbd> and <kbd>⌘-</kbd> resize the thumbnails, and so does a pinch.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/split-0.8.0-retina.webp" aria-label="View the Split view screenshot at full resolution"><img style="--capture-width:1222px" src="/ingest/assets/split-0.8.0-retina.webp" width="2444" height="1562" loading="lazy" alt="Split view with the grid on the left and the selected photograph filling the pane on the right"></a><figcaption>Split keeps the grid beside the photograph, so the next frame is one arrow key away.</figcaption></figure>
+
 <h3 id="photo-bar">Sorting and filtering</h3>
 <p>Sort and Group are separate controls. Clicking the active sort criterion reverses its direction; the adjacent direction button does the same. Group contains stack controls and <strong>Browse by</strong>, which opens a metadata facet strip below the toolbar. Click a value to select it alone, click the sole selection to clear it, or Shift-click to toggle additional values. Counts reflect the other filters. Choosing a dimension alone does not filter or reorder photos.</p>
 <p>Every workspace has left and right sidebar buttons, equivalent View-menu commands, and palette commands discoverable by typing “sidebar.” Hide either or both; each workspace remembers visibility and retains resized widths. Browse also supports Tab to toggle both.</p>
@@ -124,15 +116,16 @@
 <section id="preview" class="guide-section">
 <h2>The preview</h2>
 <p><kbd>Space</kbd> opens the large view, and <kbd>Space</kbd> again closes it. <kbd>⌘1</kbd>, <kbd>⌘2</kbd>, and <kbd>⌘3</kbd> switch between grid, preview, and both at once.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/preview-0.8.0-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/preview-0.8.0-retina.webp" width="2444" height="1562" loading="lazy" alt="A photograph filling the preview with a filmstrip of the rest of the card along the bottom"></a><figcaption>The preview with the filmstrip. The marks you have made show on both.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/workspace-wildlife-0.8.5-retina.webp" aria-label="View full-resolution screenshot: Wildlife photo in a large Ingest preview"><img src="/ingest/assets/workspace-wildlife-0.8.5-retina.webp" width="2882" height="1590" style="--capture-width:1441px" loading="lazy" alt="Wildlife photo in a large Ingest preview"></a><figcaption>Inspect detail in Preview and move between photographs with the keyboard.</figcaption></figure>
 <p>In the grid, hold <kbd>Z</kbd> over a thumbnail to show the loupe, then release to dismiss it. Hovering does not change selection. Loading or limited-resolution labels tell you when full detail is not available. The View menu can keep Grid Loupe enabled; Settings holds its size and magnification.</p>
-<p>In Preview, <kbd>Z</kbd> goes to 100 per cent at the pointer, so whatever is under the cursor stays under the cursor, and <kbd>Z</kbd> again returns to fit. <kbd>⌥1</kbd>, <kbd>⌥2</kbd>, and <kbd>⌥4</kbd> are fixed zoom levels, and <kbd>F</kbd> fits. A pinch, a two finger drag, and a two finger double tap do the same things.</p>
-<p>The zoom is sticky as you move between photographs, which is the point: you set 100 per cent on an eye, then arrow through five frames and compare the same eye in each.</p>
-<p>In ordinary preview mode, at 100 per cent Ingest shows the full size JPEG from inside the raw file, which for a Sony body is the whole 9504 pixel frame. When a raw file's preview is smaller than its JPEG twin, Ingest uses the twin, and the information overlay tells you which pixels you are actually judging.</p>
+<p>In Preview, <kbd>Z</kbd> goes to 100% at the pointer, so whatever is under the cursor stays under the cursor, and <kbd>Z</kbd> again returns to fit. <kbd>⌥1</kbd>, <kbd>⌥2</kbd>, and <kbd>⌥4</kbd> are fixed zoom levels, and <kbd>F</kbd> fits. A pinch, a two finger drag, and a two finger double tap do the same things.</p>
+<p>The zoom is sticky as you move between photographs, which is the point: you set 100% on an eye, then arrow through five frames and compare the same eye in each.</p>
+<p>In ordinary preview mode, at 100% Ingest shows the full size JPEG from inside the raw file, whose size depends on the camera and recording mode. When a raw file's preview is smaller than its JPEG twin, Ingest uses the twin, and the information overlay tells you which pixels you are actually judging.</p>
 </section>
 
 <section id="crop-straighten" class="guide-section">
 <h2>Crop and straighten</h2>
+<figure class="desktop-shot"><a href="/ingest/assets/command-crop-0.8.5-retina.webp" aria-label="View Crop and Straighten command at full resolution"><img src="/ingest/assets/command-crop-0.8.5-retina.webp" width="2882" height="1590" style="--capture-width:1441px" loading="lazy" alt="Crop and Straighten found in the Ingest Command Palette"></a><figcaption>Search for Crop &amp; Straighten to open it for the selected photo.</figcaption></figure>
 <p>Select a writable photo and choose Crop &amp; Straighten in Preview, the photo context menu, or <kbd>⌘K</kbd>. Drag a frame corner to crop, drag inside to reposition, choose an aspect ratio, and use Straighten to adjust the angle. Save records reversible crop geometry; Cancel discards the draft. Copy Crop and Paste Crop to Selection reuse a composition after reviewing the affected photos.</p>
 </section>
 
@@ -146,7 +139,7 @@
 
 <section id="raw-histogram" class="guide-section">
 <h2>RAW histogram and preview comparison</h2>
-<figure class="desktop-shot"><a href="/ingest/assets/compare-0.8.0-retina.webp" aria-label="View the RAW and JPEG comparison screenshot at full resolution"><img style="--capture-width:1222px" src="/ingest/assets/compare-0.8.0-retina.webp" width="2444" height="1562" loading="lazy" alt="The same Canon RAW photograph shown twice, labeled RAW preview and embedded JPEG, with zoom and pan linked across the two panes"></a><figcaption>One photograph, two renderings, side by side. Zoom and pan stay linked so the same detail is under both.</figcaption></figure>
+
 <p>The inspector’s <strong>RAW / JPEG / Compare</strong> selector starts on RAW for each RAW photo. Supported Bayer and X-Trans sensor data, including DNG files with these mosaics, is read directly with black levels subtracted. White balance, demosaic, and rendering tone curves do not affect this histogram.</p>
 <p>RGB curves remain visible by default. Use <strong>Combined / RGB / R / G / B</strong> to combine curves or isolate a channel. An individual RAW channel shows its headroom and clipped percentage. Both green photosite populations are combined, and channels are normalized so green does not dominate simply because the sensor contains more green photosites. Use <strong>Log (stops) / Linear</strong> to change the RAW scale (also available by right-clicking). The default runs from −16 stops to the white level at 0; its midpoint is −8 stops, only 0.39% of sensor saturation. JPEG charts use rendered tone values from 0 to 255, so horizontal positions in the two charts are not directly comparable. White balance and tone processing can make the JPEG reach white before the sensor saturates. Saturated values appear in a separate area at the right edge.</p>
 <p><strong>Highlight headroom</strong> measures the brightest channel’s 99.9th percentile against the camera/file white level, reducing the effect of a few hot pixels. Once 0.1% of any channel clips, the line changes to <strong>Clipped: 2.4%</strong>, for example. This percentage describes the channel with the highest clipped proportion, not a demosaiced pixel count. Clipping below the threshold still appears at the chart’s right edge. An entirely black signal shows “Headroom unavailable.” The measurement covers the active sensor area, independent of display crops.</p>
@@ -161,7 +154,7 @@
 <section id="overlays" class="guide-section">
 <h2>Overlays</h2>
 <p><kbd>I</kbd> cycles the information panel: off, the exposure, then everything including the pixel size being displayed. That last part matters, because it tells you whether you are looking at a small preview or the full size image.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/preview-info-0.8.0-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/preview-info-0.8.0-retina.webp" width="2444" height="1562" loading="lazy" alt="The preview with the information overlay showing camera, lens, shutter, aperture, ISO, and focal length"></a><figcaption>The information overlay, in the corner and out of the way.</figcaption></figure>
+
 <div class="guide-table" tabindex="0" role="region" aria-label="Overlays">
 <table>
 <thead><tr><th scope="col">Key</th><th scope="col">Overlay</th></tr></thead>
@@ -187,7 +180,7 @@
 <p>Use <strong>Create Scene from Selection</strong>, <strong>Move to Scene</strong>, <strong>Combine Scenes</strong>, and <strong>Rename Scene</strong> through context menus or the command palette. Command-click scene headings to select several scenes. The confirmation shows the complete photo count, including intact burst and exposure stacks. Corrections persist locally, support Undo, and survive automatic analysis. They do not merge pixels, rename files, or change culling decisions.</p>
 <p>For a burst, <kbd>P</kbd> adds the current frame as a keeper without removing existing keepers. Keep Only This Frame is a separate command. Suggest Keepers shows proposals and reasons before you explicitly tag them; it never treats exposure brackets as competing candidates.</p>
 <p>A three or five shot bracket is one picture taken several times. Ingest recognizes those sets and shows them as a single cell with a badge, so a card of a hundred brackets looks like twenty pictures instead of a hundred frames.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/stacks-0.8.0-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/stacks-0.8.0-retina.webp" width="2444" height="1562" loading="lazy" alt="A grid with bracket stacks expanded, showing demonstration landscapes at different exposures"></a><figcaption>Expanded stacks reveal each frame. The exposure spread is visible in the thumbnails.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/workspace-real-estate-0.8.5-retina.webp" aria-label="View full-resolution screenshot: Real estate example with two three-frame exposure stacks and address-based destinations"><img src="/ingest/assets/workspace-real-estate-0.8.5-retina.webp" width="2056" height="1290" style="--capture-width:1028px" loading="lazy" alt="Real estate example with two three-frame exposure stacks and address-based destinations"></a><figcaption>Exposure stacks keep each bracket together. This example uses public interiors with demonstration bracket metadata.</figcaption></figure>
 <p><kbd>S</kbd> expands or collapses the set you are on, <kbd>⌥S</kbd> does all of them. A mark on a collapsed set applies to every frame in it, so tagging the bracket keeps the whole bracket.</p>
 <p>Sets are found two ways. Sony writes a flag saying the frames were an auto bracket, which is definitive. Fujifilm does not, so Ingest looks for frames taken a fraction of a second apart with the same aperture and ISO and a clean spread of shutter speeds. Sets of three, five, seven, and nine are recognized, and an incomplete set is still stacked and marked as incomplete rather than quietly hidden.</p>
 <p>If it gets one wrong, fix it. Select frames and combine them into a stack, or uncombine one. Your corrections are remembered for that folder. Exposure stacking can be turned off per folder with <kbd>⌥⌘K</kbd>.</p>
@@ -250,7 +243,7 @@
 <p>A metadata preset is a named set of fields to apply together: keywords, a caption, a title, your creator and copyright, and optionally a location. <kbd>M</kbd> shows the list with what each one would change, and <kbd>⇧⌘M</kbd> applies the last one again without asking.</p>
 <p>Each field chooses whether it replaces what is there or leaves an existing value alone, so a preset can fill in the blanks on a hundred photographs without overwriting the captions you wrote by hand. Keywords can add to what is there rather than replace it.</p>
 <p>Captions and titles can use the <a href="/ingest/templates/#tokens">tokens</a>, so a preset with the caption <code>{address}</code> writes the right address on every photograph of every job, for ever, without being edited.</p>
-<p>A preset can also be chosen in the Ingest sheet, which applies it to the copies as they arrive. That is usually the right moment, because the card stays untouched and the work happens once.</p>
+<p>A preset can also be chosen in the Ingest workspace, which applies it to the copies as they arrive. That is usually the right moment, because the card stays untouched and the work happens once.</p>
 </section>
 
 <section id="location" class="guide-section">
@@ -262,9 +255,9 @@
 
 <section id="destinations" class="guide-section">
 <h2>Destinations</h2>
-<p>Favorites are the folders you copy into. <kbd>⌘D</kbd> adds the one you are looking at, and you can drop folders onto the list from Finder. Their order matters: the first nine get a number, and that number picks them inside the Ingest sheet with <kbd>⌘1</kbd> to <kbd>⌘9</kbd> and opens them from anywhere with <kbd>⌃⌘1</kbd> to <kbd>⌃⌘9</kbd>.</p>
+<p>Favorites give you quick access to folders you use often. <kbd>⌘D</kbd> adds the current folder; <kbd>⌃⌘1</kbd> through <kbd>⌃⌘9</kbd> open the first nine favorites. Find them by name in <kbd>⌘K</kbd> as well. Ingest destinations and routing are saved with the workspace.</p>
 <p>An ingest can write to two destinations at once. The second copy is made from the first one after it has been verified, and it is checked the same way.</p>
-<p>Under Settings, Destinations there is a card called Ingest starts with. That is the memory of what you used last, in editable form, so a repeat card can be <kbd>⌘G</kbd> and then Return.</p>
+<p>The active workspace supplies the import settings. Use <strong>Change for This Import</strong> for a one-time adjustment, or edit the workspace in Settings to reuse the change on future jobs.</p>
 </section>
 
 <section id="renaming" class="guide-section">
@@ -277,10 +270,10 @@
 <section id="ingesting" class="guide-section">
 <h2>Ingesting</h2>
 <p><kbd>⌘G</kbd> opens the Ingest tab. Choose a card, folder, or archive; the active workspace supplies the saved destination, names, metadata, and routing. Review the destination preview before starting.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/ingest-tab-0.8.0-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/ingest-tab-0.8.0-retina.webp" width="2444" height="1562" loading="lazy" alt="The Ingest sheet showing scope tabs with counts, a destination, a subfolder template, a rename template with a live preview of the resulting filenames, and the file count and size"></a><figcaption>Everything the copy will do, before it does any of it.</figcaption></figure>
-<p>The tabs at the top choose what to copy, with the count on each one: tagged, selected, what is on screen, or everything. <kbd>⌃1</kbd> to <kbd>⌃4</kbd> pick them without the mouse. The cursor starts in the destination field, where you can type part of a favorite's name.</p>
-<p>Below that: an optional second destination, a subfolder named by template, renaming with a live preview of the actual filenames, which files from a RAW and JPEG / HEIF pair to take, a metadata preset to apply to the copies, and what to do with the card afterwards.</p>
-<p>What happens when you press Ingest:</p>
+<figure class="desktop-shot"><a href="/ingest/assets/workspace-personal-0.8.5-retina.webp" aria-label="View full-resolution screenshot: Personal import with original filenames, dated folders, and a second destination"><img src="/ingest/assets/workspace-personal-0.8.5-retina.webp" width="2882" height="1590" style="--capture-width:1441px" loading="lazy" alt="Personal import with original filenames, dated folders, and a second destination"></a><figcaption>Check the photos to import and review the destination preview before starting.</figcaption></figure>
+<p>Check the photos you want to include. Use Check All or Uncheck All, then adjust individual photos or stacks. The check count is separate from your review tags. <kbd>⌃1</kbd> through <kbd>⌃9</kbd> switch saved workspaces; they do not choose an import scope.</p>
+<p>The right sidebar summarizes the workspace’s destinations, filenames, metadata, and routing. Change for This Import opens the job’s editable settings. The destination preview shows the planned folders and filenames before anything is copied.</p>
+<p>Click Ingest or press <kbd>⌘↩</kbd> after reviewing the plan. Then:</p>
 <ul>
 <li>Each file is copied to a temporary name and flushed to disk.</li>
 <li>The copy is read back and compared to the source. If they differ, that file is not published and the ingest says so.</li>
@@ -296,21 +289,21 @@
 
 <section id="actions" class="guide-section">
 <h2>Actions</h2>
-<p>An action is a list of steps that runs when the copy is finished: open the files in Lightroom, import them into an Apple Photos album, copy them somewhere else, run a Shortcut, run a script. You choose one in the Ingest sheet under Then run.</p>
+<p>An action is a list of steps that runs when the copy is finished: open the files in Lightroom, import them into an Apple Photos album, copy them somewhere else, run a Shortcut, run a script. Choose the post-ingest action in your workflow settings.</p>
 <p>They are built in Settings, Actions, with a button that runs one on the current selection so you can test it without waiting for a card. The detail, including what a script gets handed, is on the <a href="/ingest/automation/#actions">automation page</a>.</p>
 </section>
 
 <section id="workspaces" class="guide-section">
 <h2>Workspaces</h2>
 <p>A workspace changes how Ingest looks and works for a kind of photography. It remembers the view, sort, thumbnail size, grouping, favorite folders, visible tabs, and sidebar visibility, along with ingest destinations, filenames, folder structures, metadata, and RAW/JPEG routing. Organize can follow the Ingest setup or have its own settings. Social Export can start with a saved style. Configure these in Settings → Workspaces; you can also begin with the defaults and open a folder without creating a workspace.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/settings-workspaces-0.8.0-retina.webp"><img style="--capture-width:1028px" src="/ingest/assets/settings-workspaces-0.8.0-retina.webp" width="2056" height="2284" loading="lazy" alt="The Workspaces settings page showing view defaults, ingest defaults, and the list of cameras that switch to this workspace"></a><figcaption>Three workspaces ship with the app. The camera list at the bottom is what makes switching automatic.</figcaption></figure>
-<p><kbd>⌃1</kbd> to <kbd>⌃9</kbd> switch between them. Each workspace can list the cameras it belongs to. Enable Choose workspace by camera in Settings to switch when a matching card opens. A workspace you choose by hand takes precedence. Apple Photos integration has a separate global setting; hiding Social Export is a workspace setting.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/command-workspaces-0.8.5-retina.webp" aria-label="View full-resolution screenshot: Four example workspaces in the Command Palette"><img src="/ingest/assets/command-workspaces-0.8.5-retina.webp" width="2882" height="1590" style="--capture-width:1441px" loading="lazy" alt="Four example workspaces in the Command Palette"></a><figcaption>Switch between example setups for personal, real estate, wedding, and wildlife photography.</figcaption></figure>
+<p><kbd>⌃1</kbd> to <kbd>⌃9</kbd> switch between them. Each workspace can list the cameras it belongs to. Enable Choose workspace by camera in Settings to switch when a matching card opens. A workspace you choose by hand takes precedence. In 0.8.5, Apple Photos integration has a global setting; workspace-specific control is planned. Social Export visibility is already a workspace setting.</p>
 </section>
 
 <section id="palette" class="guide-section">
 <h2>The Command Palette</h2>
-<p><kbd>⌘K</kbd> opens a search field over everything the app can do. Type a few letters of a command, an alias, or a category. Arrow keys move, Return runs.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/palette-0.8.0-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/palette-0.8.0-retina.webp" width="2444" height="1562" loading="lazy" alt="The command palette showing contextual commands, shortcut labels, the highlighted Ingest action, and the Actions button"></a><figcaption>Before you type, the palette suggests what fits what you have selected.</figcaption></figure>
+<p>If you can do it in Ingest, you can find it with <kbd>⌘K</kbd>. Search for an action by name: review photos, edit metadata, change a view, organize files, or export. Use the arrow keys to select a result and Return to run it. Commands that cannot run in the current context explain why.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/palette-0.8.5-retina.webp" aria-label="View full-resolution screenshot: Ingest Command Palette over demonstration landscape photos"><img src="/ingest/assets/palette-0.8.5-retina.webp" width="2882" height="1590" style="--capture-width:1441px" loading="lazy" alt="Ingest Command Palette over demonstration landscape photos"></a><figcaption>Search for what you want to do. Commands and their shortcuts are together in one place.</figcaption></figure>
 <p>Every row shows its key, so the palette teaches the keyboard while you use it. Commands that cannot run right now stay visible with the reason underneath, rather than vanishing and leaving you wondering. <kbd>⇧⌘P</kbd> pins a command to the top for good.</p>
 <p>Command descriptions explain what each action does. Settings, Command Palette controls descriptions, shortcut labels, and excluded commands.</p>
 <p>The footer names the command Return will run. Click <strong>Actions</strong> or press <kbd>⌘K</kbd> again to pin or unpin the highlighted command, copy its link, or configure its shortcut. Configure Shortcut opens that exact command in Settings. Copy Link keeps the palette open and confirms the copy. <kbd>Esc</kbd> closes Actions first, then the palette and returns focus to where you were.</p>
@@ -325,7 +318,7 @@
 <p>Organize opens directly into its workspace, resuming saved choices when available. Adjust <strong>Copy</strong>, <strong>Move</strong>, or <strong>Rename</strong> and grouping in the inspector. Start with <strong>No Grouping</strong>, use metadata groups, or apply a saved recipe. Choose All, Selected, or Filtered photos and whether to include subfolders. Entering the workspace does not execute file changes or create saved work by itself.</p>
 <p>Add or change grouping levels, make your own groups, and move photos between them. Grouping choices do not change the original files. Review the proposed filenames and destinations before applying Copy, Move, or Rename. Existing files are preserved; conflicts must be resolved before applying changes. Memory cards must be ingested first.</p>
 <p>Once you edit your choices or accept a new setup, Ingest saves that work for the folder. Returning shows <strong>Resumed saved setup</strong> and its last-edited date. <strong>Start Over</strong> opens the setup chooser again; applying a new setup can be undone and keeps the history needed to recover earlier file operations.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/organize-workspace-0.8.0-retina.webp" aria-label="View screenshot at full resolution"><img style="--capture-width:1440px" src="/ingest/assets/organize-workspace-0.8.0-retina.webp" width="2880" height="1904" loading="lazy" alt="Saved Organize setup with selected photos, year and month groups, and a preview of destination filenames"></a><figcaption>Resume a saved setup, adjust your choices, and review the result before applying it.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/organize-0.8.5-retina.webp" aria-label="View full-resolution screenshot: Organize with grouping and destination controls"><img src="/ingest/assets/organize-0.8.5-retina.webp" width="2882" height="1590" style="--capture-width:1441px" loading="lazy" alt="Organize with grouping and destination controls"></a><figcaption>Review the planned destination and filenames before applying file changes.</figcaption></figure>
 <p>Save a recipe to reuse grouping and naming choices with another folder. Drafts and recipes stay on your Mac; recipes can travel with a settings export.</p>
 </section>
 
@@ -334,7 +327,7 @@
 <p>Select still photos in Browse and choose <strong>Import into Social Export</strong> in the command bar or photo context menu, or press <kbd>⇧⌘E</kbd>. This creates a new project in the visible photo order. Videos are excluded, and a combined RAW/JPEG pair counts as one photo.</p>
 <p>Clicking <strong>Social Export</strong> at the top of the window, or choosing <strong>Go to Social Export</strong>, returns to your last project without importing anything. Use <strong>Add Selected Photos</strong> to append the Browse selection to an open project.</p>
 <p>Each photo starts in its own frame. Choose <strong>Single</strong>, <strong>Pair</strong>, <strong>Row</strong>, <strong>Stack</strong>, or <strong>Grid</strong> and the arrangement updates immediately. Change the number of photos, columns, direction, or equal/proportional sizes as needed. Remaining photos stay in a partially filled final frame. <kbd>⌘Z</kbd> undoes the arrangement.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/social-workspace-0.8.0-retina.webp" aria-label="View screenshot at full resolution"><img style="--capture-width:1440px" src="/ingest/assets/social-workspace-0.8.0-retina.webp" width="2880" height="1904" loading="lazy" alt="Social Export with four vertical Pair frames, a large collage preview, appearance controls, and an Export button"></a><figcaption>Choose a layout and edit while the preview updates.</figcaption></figure>
+
 <p>Use <strong>All Frames</strong> to change the whole project, <strong>This Frame</strong> for individual appearance, or click a photo to adjust its crop. Margins, borders, backgrounds, and Fill crops update while you move their sliders. One undo reverses a gesture. Drag frames to reorder them, drag photos between frames, or use the Reorder menu and Move to New Frame. Frame-specific appearance remains independent of project-wide changes.</p>
 <p>Choose Fit or Fill, drag a photo within its cell, and adjust its zoom. Grid cells can have common or custom aspect ratios independent of the canvas. Add text layers with fonts, alignment, colors, and backgrounds; Copy Design to All Frames optionally includes the wording. Optional snapping helps align photos and text. A Stories safe-area guide is available only on 9:16 still-image canvases, is approximate, and is never exported.</p>
 <p>Click <strong>Export…</strong> or press <kbd>⌘E</kbd> inside Social Export. Choose the folder, output width, JPEG or PNG, and JPEG quality in the export sheet. <strong>Save Beside Original Photos</strong> offers a Social Exports subfolder when all sources share a writable, non-card folder. The sheet shows the actual path, final filenames, and dimensions before saving.</p>
@@ -347,14 +340,15 @@
 <section id="settings" class="guide-section">
 <h2>Settings</h2>
 <p><kbd>⌘,</kbd> opens a window with a search field. Everything the app stores is in there with a real control: folder and app choosers instead of typed paths, pickers instead of remembered strings, live previews for templates, snippets, and splits, and drag to reorder wherever the order decides a number key.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/settings-browsing-0.8.0-retina.webp" aria-label="View the Browsing settings screenshot at full resolution"><img style="--capture-width:980px" src="/ingest/assets/settings-browsing-0.8.0-retina.webp" width="1960" height="1400" loading="lazy" alt="The Browsing settings page with switches for marking behavior, new folder defaults, and writing stars into files, plus a locked row stating that memory cards are never modified"></a><figcaption>The Browsing page. The last row has a lock rather than a switch, because it is not a preference.</figcaption></figure>
+
 <p>Edits apply as you make them, the way a Mac app should, and anything destructive is undoable with <kbd>⌘Z</kbd> while the window is open. Settings, Advanced exports the whole configuration as one file to carry to another Mac, described on the <a href="/ingest/automation/#settings-file">automation page</a>.</p>
 <p>There is one row that is not a setting. On the Browsing page, <em>Memory cards are never modified</em> has a lock beside it instead of a switch. It is listed so that the rule is visible, not so that it can be turned off.</p>
 <h3 id="keywords">Keywords</h3>
 <p>A tag is one tag however it is typed, and Ingest knows every tag on every photograph it has read. Folders record their keywords as they are read, and the Photos library is read in full after it connects, so a tag that exists only in Photos completes in a folder's keyword field without opening Apple Photos. Photos keywords need macOS 27.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/settings-keywords-0.8.0-retina.webp" aria-label="View the Keywords settings screenshot at full resolution"><img style="--capture-width:980px" src="/ingest/assets/settings-keywords-0.8.0-retina.webp" width="1960" height="1400" loading="lazy" alt="The Keywords settings page listing every tag with how many photographs carry it in Apple Photos, how many files carry it in open folders, and how often it has been typed"></a><figcaption>Every tag, and where it is. Click a column heading to sort by it.</figcaption></figure>
+
 <p><strong>Settings → Keywords</strong> lists every tag with how many photographs carry it in Photos and in which folders. Select one or more and rename, merge, change case, unify spellings, remove from suggestions, or delete. Every change shows a preview first: how many photographs in Photos, how many files in each open folder, and how many files sit in folders that are not open, which keep the old spelling until you open them. Photos is changed in batches and a failed batch is reported without stopping the rest; open folders go through the verified metadata path and sit in Undo, and the receipt offers Revert.</p>
 </section>
+<aside class="doc-next"><p>Keep exploring your workflow.</p><a href="/ingest/">Explore Ingest →</a><a href="/ingest/guide/#palette">Find it with ⌘K →</a></aside>
 </main>
 <footer class="family-footer">
 <span>© 2026 Brian Renshaw</span>

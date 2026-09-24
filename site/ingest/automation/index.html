@@ -3,36 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ingest automation | Actions, links, and your settings file</title>
-<meta name="description" content="Steps that run after a copy, the ingest:// links that drive the app from anywhere, and the one file that carries your whole setup between Macs.">
+<title>Ingest Automation — Photo workflow for Mac</title>
+<meta name="description" content="Open verified copies in your editing app, run an action, or connect Ingest to Shortcuts and other tools. Automation is optional; a simple import needs none of it.">
 <link rel="canonical" href="https://brianrenshaw.app/ingest/automation/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Ingest automation | Actions, links, and your settings file">
-<meta property="og:description" content="Steps that run after a copy, the ingest:// links that drive the app from anywhere, and the one file that carries your whole setup between Macs.">
+<meta property="og:title" content="Ingest — Connect the steps in your workflow.">
+<meta property="og:description" content="Open verified copies in your editing app, run an action, or connect Ingest to Shortcuts and other tools. Automation is optional; a simple import needs none of it.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/automation/">
-<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/settings-actions-0.8.0-retina.webp">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/palette-0.8.5-retina.webp">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
-<link rel="stylesheet" href="/ingest/assets/site.css">
+<link rel="stylesheet" href="/ingest/assets/site.css?v=085-docs">
 </head>
-<body class="app-ingest">
+<body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="family-header">
-<a class="family-brand" href="/ingest/">
-<img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a>
-<nav aria-label="Main navigation">
-<a class="portfolio-home-link" href="/">← Brian’s homepage</a>
-<a href="/ingest/guide/">Guide</a>
-<a href="/ingest/shortcuts/">Shortcuts</a>
-<a href="/ingest/support/">Support</a>
-</nav>
-</header>
+<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.8.5/Ingest-0.8.5.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
+<nav class="docs-nav" aria-label="Ingest documentation"><a href="/ingest/quick-start/">Quick start</a><a href="/ingest/guide/">Guide</a><a href="/ingest/shortcuts/">Shortcuts</a><a href="/ingest/templates/">Naming & metadata</a><a href="/ingest/automation/" aria-current="page">Automation</a><a href="/ingest/support/">Support</a><a href="/ingest/release-notes/">Release notes</a><a href="/ingest/privacy/">Privacy</a></nav>
 <main id="main" tabindex="-1" class="family-document reference">
 <p class="eyebrow">Ingest / Automation</p>
-<h1>What happens after the copy.</h1>
-<p class="intro">Actions run when an ingest finishes, so the photographs arrive where they are going to be worked on. Links let anything on your Mac drive Ingest. Neither exists until you build it.</p>
+<h1>Connect the steps in your workflow.</h1>
+<p class="intro">Open verified copies in your editing app, run an action, or connect Ingest to Shortcuts and other tools. Automation is optional; a simple import needs none of it.</p>
 <nav class="guide-toc" aria-label="On this page">
 <a href="#actions">Actions</a>
 <a href="#action-script">Shell scripts</a>
@@ -43,8 +35,8 @@
 
 <section id="actions" class="guide-section">
 <h2>Actions</h2>
-<p>An action is a named list of steps. You choose one in the Ingest sheet under Then run, and it runs once the copies are on disk and verified. You can also run one from <kbd>⌘K</kbd> on whatever is selected, or from a link.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/settings-actions-0.8.0-retina.webp"><img style="--capture-width:980px" src="/ingest/assets/settings-actions-0.8.0-retina.webp" width="1960" height="1400" loading="lazy" alt="The Actions settings page with a list of actions, their ordered steps, a confirmation switch, and a test button"></a><figcaption>Settings, Actions. Steps run in order, and Run on Selection Now tests one without waiting for an ingest.</figcaption></figure>
+<p>An action is a named list of steps. Choose it in your workflow settings, and it runs once the copies are on disk and verified. You can also run one from <kbd>⌘K</kbd> on whatever is selected, or from a link.</p>
+
 <p>Ingest ships with three: open the copies in Lightroom Classic, reveal them in Finder, and import them into an Apple Photos album. Edit them or delete them.</p>
 <div class="guide-table" tabindex="0" role="region" aria-label="Step types">
 <table>
@@ -56,7 +48,7 @@
 <tr><td>Reveal in Finder</td><td>Opens the destination with the new files selected.</td></tr>
 <tr><td>Add the Finder tag “Ingested”</td><td>So Finder, Spotlight, and rules in other apps can see which files came through.</td></tr>
 <tr id="action-shortcut"><td>Run a Shortcut</td><td>Runs a shortcut from the Shortcuts app by name, with the file paths as its input. The picker lists the shortcuts you have.</td></tr>
-<tr id="action-script"><td>Run a shell script</td><td>Runs zsh. Described below.</td></tr>
+<tr><td>Run a shell script</td><td>Runs zsh. Described below.</td></tr>
 </tbody>
 </table>
 </div>
@@ -95,7 +87,7 @@
 <tbody>
 <tr id="verb-open"><td><code>ingest://open?path=…</code></td><td>Opens that folder.</td></tr>
 <tr id="verb-card"><td><code>ingest://card</code></td><td>Opens the mounted card. Add <code>name=</code> to pick one when several are in.</td></tr>
-<tr id="verb-ingest"><td><code>ingest://ingest</code></td><td>Opens the Ingest sheet, filled in. Takes <code>favorite</code>, <code>destination</code>, <code>template</code>, <code>subfolder</code>, and <code>preset</code>. Giving a template turns renaming on.</td></tr>
+<tr id="verb-ingest"><td><code>ingest://ingest</code></td><td>Opens the Ingest workspace with the supplied settings. Takes <code>favorite</code>, <code>destination</code>, <code>template</code>, <code>subfolder</code>, and <code>preset</code>. Giving a template turns renaming on.</td></tr>
 <tr id="verb-select"><td><code>ingest://select?paths=…</code></td><td>Selects those files in the open source. Comma separated.</td></tr>
 <tr id="verb-apply"><td><code>ingest://apply?text=…</code></td><td>Runs a <a href="/ingest/templates/#quick-entry">quick entry</a> line against the selection, snippets and all.</td></tr>
 <tr id="verb-workspace"><td><code>ingest://workspace?name=…</code></td><td>Switches workspace.</td></tr>
@@ -121,6 +113,7 @@
 <p>The file holds no photographs, but it can carry destination paths, addresses you have used, your keyword history, and the text of any scripts in your actions. Share it deliberately.</p>
 <p>Restore Defaults is next to it, and puts every page back to how Ingest shipped while keeping your favorites, your sequence number, and the marks on your photographs.</p>
 </section>
+<aside class="doc-next"><p>Keep exploring your workflow.</p><a href="/ingest/">Explore Ingest →</a><a href="/ingest/guide/#palette">Find it with ⌘K →</a></aside>
 </main>
 <footer class="family-footer">
 <span>© 2026 Brian Renshaw</span>

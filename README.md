@@ -85,3 +85,5 @@ captures and desktop/mobile pages before pushing. CI checks encoding, dimensions
 aliases, and display-size limits; cursor absence still requires visual review.
 
 Walkthrough’s refreshed landing screenshots are native 2× captures with lossless WebP encoding. Their source and capture procedure are recorded in `site/walkthrough/assets/SOURCES.md`; `screenshots.json` records pixel and logical dimensions. Preserve the per-image `--capture-width` limit and intrinsic dimensions when moving these images between pages.
+
+Ingest’s landing page and all eight supporting pages share the bright neutral/amber theme in `site/ingest/assets/site.css`; landing-specific layout stays in `landing.css`. Current captures are listed under `images` in the screenshot manifest. Superseded captures remain at their original URLs under `archivedImages`, with encoding and dimensions still verified.

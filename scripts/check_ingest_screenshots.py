@@ -8,7 +8,10 @@ import struct
 
 ROOT = Path(__file__).resolve().parents[1] / 'site'
 ASSETS = ROOT / 'ingest/assets'
-manifest = json.loads((ASSETS / 'screenshots.json').read_text())['images']
+catalog = json.loads((ASSETS / 'screenshots.json').read_text())
+manifest = catalog['images']
+archived = catalog.get('archivedImages', {})
+assert not manifest.keys() & archived.keys(), 'Capture cannot be both active and archived'
 errors = []
 seen = set()
 
@@ -51,7 +54,7 @@ def jpeg_dimensions(path):
     raise AssertionError('missing JPEG dimensions')
 
 
-for name, meta in manifest.items():
+for name, meta in (manifest | archived).items():
     try:
         jpeg = meta.get('format') == 'jpeg'
         size = jpeg_dimensions(ASSETS / name) if jpeg else lossless_dimensions(ASSETS / name)
@@ -97,4 +100,4 @@ if 'max-width:var(--capture-width,100%)' not in css:
     errors.append('Missing screenshot display-size cap')
 if errors:
     raise SystemExit('\n'.join(errors))
-print(f'PASS: {len(manifest)} genuine captures, aliases, HTML dimensions, and display-size limits.')
+print(f'PASS: {len(manifest)} current and {len(archived)} archived genuine captures; aliases, HTML dimensions, and display-size limits.')

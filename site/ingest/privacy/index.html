@@ -3,38 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ingest privacy</title>
+<title>Ingest Privacy — Photo workflow for Mac</title>
 <meta name="description" content="What Ingest reads, what it writes, and how optional Apple services and update checks use the network.">
 <link rel="canonical" href="https://brianrenshaw.app/ingest/privacy/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Ingest privacy">
+<meta property="og:title" content="Ingest — Your photos. Your control.">
 <meta property="og:description" content="What Ingest reads, what it writes, and how optional Apple services and update checks use the network.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/privacy/">
-<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/grid-cull-0.8.0-retina.webp">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/palette-0.8.5-retina.webp">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
-<link rel="stylesheet" href="/ingest/assets/site.css">
+<link rel="stylesheet" href="/ingest/assets/site.css?v=085-docs">
 </head>
-<body class="app-ingest">
+<body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="family-header">
-<a class="family-brand" href="/ingest/">
-<img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a>
-<nav aria-label="Main navigation">
-<a class="portfolio-home-link" href="/">← Brian’s homepage</a>
-<a href="/ingest/guide/">Guide</a>
-<a href="/ingest/shortcuts/">Shortcuts</a>
-<a href="/ingest/support/">Support</a>
-</nav>
-</header>
+<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.8.5/Ingest-0.8.5.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
+<nav class="docs-nav" aria-label="Ingest documentation"><a href="/ingest/quick-start/">Quick start</a><a href="/ingest/guide/">Guide</a><a href="/ingest/shortcuts/">Shortcuts</a><a href="/ingest/templates/">Naming & metadata</a><a href="/ingest/automation/">Automation</a><a href="/ingest/support/">Support</a><a href="/ingest/release-notes/">Release notes</a><a href="/ingest/privacy/" aria-current="page">Privacy</a></nav>
 <main id="main" tabindex="-1" class="family-document">
 <p class="eyebrow">Ingest / Privacy</p>
-<h1>Your library, under your control.</h1>
-<p>Last updated September 24, 2026. Applies to Ingest 0.8.2.</p>
+<h1>Your photos. Your control.</h1>
+<p>Last updated September 24, 2026. Applies to Ingest 0.8.5.</p>
 <p class="intro">Ingest has no account, no analytics, and no server of mine that receives your photographs. Optional Apple Photos, address and map services, and software updates use the network as described below.</p>
 
+<nav class="guide-toc" aria-label="On this page"><a href="#files">Your photographs and what Ingest stores</a><a href="#apple-photos">Apple Photos and iCloud</a><a href="#photo-suggestions">Photo suggestions</a><a href="#address-search">Address search</a><a href="#updates">Software updates</a><a href="#no-analytics">No analytics, no account</a><a href="#actions">Actions you build yourself</a><a href="#settings-file">The settings file you can export</a><a href="#contact">Questions and changes</a></nav>
 <section id="files">
 <h2>Your photographs and what Ingest stores</h2>
 <p>Ingest reads the cards and folders you open. It reads metadata and previews for browsing, and reads image data for rendering, analysis, exports, and verified copies. File workflows write to the destinations you choose. Sending files to Apple Photos is described below.</p>
@@ -83,7 +76,7 @@
 <section id="actions">
 <h2>Actions you build yourself</h2>
 <p>Post-ingest actions can open your photographs in another app, import them into Apple Photos, copy them somewhere, run a Shortcut, or run a shell script you wrote. When an action runs, your files and the information about them are handed to software you chose, and what happens next is up to that software.</p>
-<p>A shell script runs as you, with your permissions, and Ingest does not restrict what it can do. Only add scripts you wrote or understand. Actions can be set to ask before they run, and none of this exists until you create it. See <a href="/ingest/automation/#actions">actions</a> for the detail.</p>
+<p>A shell script runs as you, with your permissions, and Ingest does not restrict what it can do. Only add scripts you wrote or understand. Actions can be set to ask before they run. Choose a supplied action or create your own; they run only when invoked or selected for a workflow. See <a href="/ingest/automation/#actions">actions</a> for the detail.</p>
 </section>
 
 <section id="settings-file">
@@ -95,6 +88,7 @@
 <h2>Questions and changes</h2>
 <p>If you email me, I see what you chose to put in the message. I will update this page if what the app does ever changes. Questions: <a href="mailto:contact@brianrenshaw.app">contact@brianrenshaw.app</a>.</p>
 </section>
+<aside class="doc-next"><p>Keep exploring your workflow.</p><a href="/ingest/">Explore Ingest →</a><a href="/ingest/guide/#palette">Find it with ⌘K →</a></aside>
 </main>
 <footer class="family-footer">
 <span>© 2026 Brian Renshaw</span>

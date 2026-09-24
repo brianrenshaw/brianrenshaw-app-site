@@ -3,41 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ingest support | Cards, copies, and metadata</title>
-<meta name="description" content="What Ingest needs, which cameras and files it reads, and what to do when a card, a copy, or a metadata write does not go as expected.">
+<title>Ingest Support — Photo workflow for Mac</title>
+<meta name="description" content="Find requirements, file support, and help with browsing, importing, metadata, and Apple Photos. If you need a hand, get in touch with the app version and what happened.">
 <link rel="canonical" href="https://brianrenshaw.app/ingest/support/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Ingest support | Cards, copies, and metadata">
-<meta property="og:description" content="What Ingest needs, which cameras and files it reads, and what to do when a card, a copy, or a metadata write does not go as expected.">
+<meta property="og:title" content="Ingest — Help with your photo workflow.">
+<meta property="og:description" content="Find requirements, file support, and help with browsing, importing, metadata, and Apple Photos. If you need a hand, get in touch with the app version and what happened.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/support/">
-<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/grid-cull-0.8.0-retina.webp">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/palette-0.8.5-retina.webp">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
-<link rel="stylesheet" href="/ingest/assets/site.css">
+<link rel="stylesheet" href="/ingest/assets/site.css?v=085-docs">
 </head>
-<body class="app-ingest">
+<body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="family-header">
-<a class="family-brand" href="/ingest/">
-<img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a>
-<nav aria-label="Main navigation">
-<a class="portfolio-home-link" href="/">← Brian’s homepage</a>
-<a href="/ingest/guide/">Guide</a>
-<a href="/ingest/shortcuts/">Shortcuts</a>
-<a href="/ingest/support/">Support</a>
-</nav>
-</header>
+<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.8.5/Ingest-0.8.5.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
+<nav class="docs-nav" aria-label="Ingest documentation"><a href="/ingest/quick-start/">Quick start</a><a href="/ingest/guide/">Guide</a><a href="/ingest/shortcuts/">Shortcuts</a><a href="/ingest/templates/">Naming & metadata</a><a href="/ingest/automation/">Automation</a><a href="/ingest/support/" aria-current="page">Support</a><a href="/ingest/release-notes/">Release notes</a><a href="/ingest/privacy/">Privacy</a></nav>
 <main id="main" tabindex="-1" class="family-document">
 <p class="eyebrow">Ingest / Support</p>
-<h1>Cards, copies, and metadata.</h1>
-<p class="intro">What Ingest needs, what it reads, and what to do when something does not go the way you expected. If none of this covers it, write to me.</p>
+<h1>Help with your photo workflow.</h1>
+<p class="intro">Find requirements, file support, and help with browsing, importing, metadata, and Apple Photos. If you need a hand, get in touch with the app version and what happened.</p>
 
+<nav class="guide-toc" aria-label="On this page"><a href="#requirements">What you need</a><a href="#formats">Cameras and files it reads</a><a href="#cards">Memory cards</a><a href="#first-run">The first hour</a><a href="#previews">Thumbnails are slow or missing</a><a href="#ingest-problems">A copy did not finish</a><a href="#metadata-problems">Lightroom or Photos does not show my keywords</a><a href="#permissions">Permission prompts</a><a href="#photos-support">Apple Photos availability</a><a href="#photo-mechanic">Coming from Photo Mechanic</a><a href="#updates">Updates</a><a href="#credits">Credits</a><a href="#contact">Get in touch</a></nav>
 <section id="requirements">
 <h2>What you need</h2>
 <p>Ingest runs on <strong>macOS 15 or later</strong>, on <strong>Apple silicon only</strong>. There is no Intel build, so an Intel Mac cannot open it. To check your Mac, open the Apple menu and choose About This Mac: the Chip line reads Apple M1 or later.</p>
-<p>Open the disk image and drag Ingest to your Applications folder. There is no account, no subscription, and no license key. The app is signed and notarized by Apple, so it opens with a double click the first time.</p>
+<p>Open the disk image and drag Ingest to your Applications folder. There is no account or license key. Ingest is free during the beta. The app is signed and notarized by Apple, so it opens with a double click the first time.</p>
 <p>You do not need to install anything else. The tool Ingest uses to write metadata is built in.</p>
 <p>Apple Intelligence caption and keyword suggestions require macOS 27 with Apple Intelligence enabled and the on-device model available. Manual metadata editing, RAW histograms, and preview comparison do not require Apple Intelligence. RAW sensor histograms support readable Bayer and X-Trans mosaics, including matching CFA DNGs; unsupported files use a labeled JPEG fallback.</p>
 </section>
@@ -49,9 +42,9 @@
 <table>
 <thead><tr><th scope="col">File</th><th scope="col">What happens</th></tr></thead>
 <tbody>
-<tr><td>Sony <code>.ARW</code></td><td>Full speed. The camera writes a small preview and a full size JPEG inside the file, and Ingest reads whichever it needs.</td></tr>
-<tr><td>Fujifilm <code>.RAF</code></td><td>Full speed. The embedded JPEG is found from the file header.</td></tr>
-<tr><td><code>.JPG</code> and <code>.JPEG</code></td><td>Full speed, including the second image that Sony cameras store for fast preview.</td></tr>
+<tr><td>Sony <code>.ARW</code></td><td>Uses available embedded previews, choosing the size needed for the current view.</td></tr>
+<tr><td>Fujifilm <code>.RAF</code></td><td>Reads the embedded JPEG where available.</td></tr>
+<tr><td><code>.JPG</code> and <code>.JPEG</code></td><td>Reads the image and available embedded previews.</td></tr>
 <tr><td><code>.HEIC</code>, <code>.HEIF</code>, and <code>.HIF</code></td><td>Opens and browses.</td></tr>
 <tr><td><code>.MP4</code> and <code>.MOV</code></td><td>Browses and plays, with a poster frame in the grid. Sony clip sidecars travel with the file when you ingest.</td></tr>
 <tr><td>Canon <code>.CR2</code>, <code>.CR3</code>; Nikon <code>.NEF</code>, <code>.NRW</code></td><td>Embedded previews and metadata, including tested Canon CR3 files with HEIF previews.</td></tr>
@@ -68,7 +61,7 @@
 
 <section id="cards">
 <h2>Memory cards</h2>
-<p>Insert a card and it appears in the sources list within about a second, with its name and free space. By default Ingest opens it for you. That is a setting in Settings, General, if you would rather it just sat in the list.</p>
+<p>Insert a card and it appears in the sources list with its name and free space. By default Ingest opens it for you. That is a setting in Settings, General, if you would rather it just sat in the list.</p>
 <p><strong>Ingest never writes to a card.</strong> No ratings, no keywords, no renames, no Finder tags, no deletions except the ones you ask for by name after a copy has been verified. That holds however you opened the card, including when you open a folder that happens to live on one. Metadata you add while culling is remembered and applied to the copies during ingest.</p>
 <p>If a card does not appear, check that it is mounted in Finder. Ingest looks for a <code>DCIM</code> folder to recognize a volume as a card. A card formatted by something other than a camera may not have one, in which case open it with <kbd>⌘O</kbd> as an ordinary folder.</p>
 <p>To eject, press <kbd>⌘E</kbd>. Ingest closes everything it has open on the card first, so eject does not fail with a file in use. If macOS still refuses, another app is holding the card. Pulling a card without ejecting does not crash Ingest. It notices and closes the source.</p>
@@ -82,7 +75,7 @@
 
 <section id="previews">
 <h2>Thumbnails are slow or missing</h2>
-<p>A grid of Sony or Fuji raw files should fill immediately. If it does not, the likely cause is that the files are on a slow connection, such as a card reader on a hub or a network volume. Ingest reads only a few megabytes per photograph, but it still has to read them.</p>
+<p>Preview speed depends on the camera format, available embedded image, storage, and connection. If browsing is slow, try a local copy to distinguish file-rendering work from a slow card reader, network volume, or file provider.</p>
 <p>Thumbnails that are expensive to build are cached on disk, under 2 GB, and cleared from Settings, Advanced. Clearing the cache is safe and never touches a photograph.</p>
 <p>A photograph with no thumbnail at all is usually a raw format Ingest cannot read yet. See <a href="#formats">cameras and files it reads</a>.</p>
 </section>
@@ -96,7 +89,7 @@
 <dt>Names collide</dt>
 <dd>Ingest refuses rather than quietly adding a suffix. Add <code>{seqn}</code> or <code>{seq}</code> to the template so every name is different. See <a href="/ingest/templates/#collisions">collisions</a>.</dd>
 <dt>Not enough space</dt>
-<dd>The sheet checks free space before it starts and tells you, rather than filling the disk and failing at photograph two hundred.</dd>
+<dd>The import plan checks free space before it starts and tells you, rather than filling the disk and failing at photograph two hundred.</dd>
 <dt>Deleting from the card</dt>
 <dd>Only files whose copies verified at every destination are deleted. Choosing to delete everything asks you to confirm, and that choice is never remembered for next time.</dd>
 </dl>
@@ -113,7 +106,7 @@
 <section id="permissions">
 <h2>Permission prompts</h2>
 <p>macOS asks before an app reads a removable volume. Allow it, or Ingest cannot see your cards. If you dismissed it, the switch is in System Settings, Privacy &amp; Security, Files and Folders.</p>
-<p>Connecting to Apple Photos or sending files to it requests Photos read/write permission. Ingest uses your System Photo Library, not an arbitrary library file. If Connect did nothing in 0.7.0, update to 0.7.1, which fixes the signed app’s Photos permission configuration. If access was denied, choose Open Photos Privacy Settings, enable Ingest, and return to the app. Turning Apple Photos integration off in Settings hides those features. An action that runs a Shortcut asks for permission to control Shortcuts when needed.</p>
+<p>Connecting to Apple Photos or sending files to it requests Photos read/write permission. Ingest uses your System Photo Library, not an arbitrary library file. If Connect did nothing in an older beta, update to the current release and try again. If access was denied, choose Open Photos Privacy Settings, enable Ingest, and return to the app. Turning Apple Photos integration off in Settings hides those features. An action that runs a Shortcut asks for permission to control Shortcuts when needed.</p>
 </section>
 
 <section id="photos-support">
@@ -123,7 +116,7 @@
 
 <section id="photo-mechanic">
 <h2>Coming from Photo Mechanic</h2>
-<p>The habits carry over. <kbd>T</kbd> tags, the arrow keys move, <kbd>⌘G</kbd> is ingest, and <kbd>{seqn}</kbd> is the sequence number that never repeats. Brace tokens in name templates use the same spelling, so a pattern you have typed a thousand times still works.</p>
+<p>The habits carry over. <kbd>T</kbd> tags, the arrow keys move, <kbd>⌘G</kbd> is ingest, and <kbd>{seqn}</kbd> is the saved sequence counter. Brace tokens in name templates use the same spelling, so a pattern you have typed a thousand times still works.</p>
 <p>Three differences worth knowing. Marking keys do not advance by default, which matches Photo Mechanic, and you can turn advancing on in Settings, Culling. Tags are a simple on/off flag, independent of ratings and colors. The filter menu offers All, Tagged, and Untagged, and the active filter can be cleared from the folder header. And stars and color labels use the Lightroom keys, <kbd>1</kbd> to <kbd>5</kbd> and <kbd>6</kbd> to <kbd>9</kbd>, written into the files so Lightroom sees them on import.</p>
 <p>Settings, Shortcuts lists every command. Click a shortcut or focus it with Tab and press Return to record a new one. Navigation keys and standard Mac editing shortcuts stay fixed; Settings explains any conflict.</p>
 </section>
@@ -131,19 +124,20 @@
 <section id="updates">
 <h2>Updates</h2>
 <p>Choose Ingest, then Check for Updates. Automatic checking is off until you turn it on in Settings, General. An update is only installed if it carries a signature made with my key.</p>
-<p>What each version changed is in the <a href="/ingest/release-notes/">release notes</a>. Nothing about your Mac is sent when Ingest checks. The <a href="/ingest/privacy/">privacy page</a> says exactly what does and does not leave the machine.</p>
+<p>What each version changed is in the <a href="/ingest/release-notes/">release notes</a>. Update checks omit hardware profiling; the host receives normal connection information. The <a href="/ingest/privacy/">privacy page</a> says exactly what does and does not leave the machine.</p>
 </section>
 
 <section id="credits">
 <h2>Credits</h2>
 <p>Metadata is written by <a href="https://exiftool.org">ExifTool</a> by Phil Harvey, copyright 2003 to 2026, used under the same terms as Perl itself. The bundled distribution includes an IPTC language-alternative compatibility patch and runs with the Perl that comes with macOS.</p>
-<p>The photographs in the screenshots on this site are from Unsplash, credited in full in the site's <a href="/ingest/assets/SOURCES.md">sources file</a>. They are not client work.</p>
+<p>The demonstration photographs are licensed Unsplash images and a CC0 camera RAW sample, credited in the site’s <a href="/ingest/assets/SOURCES.md">sources file</a>. They are not client work.</p>
 </section>
 
 <section id="contact">
 <h2>Get in touch</h2>
 <p>Email <a href="mailto:contact@brianrenshaw.app?subject=Ingest%20support">contact@brianrenshaw.app</a> with your macOS version, the Ingest version from Settings, General, and your camera model. Tell me what you pressed and what happened. You never need to send me a photograph to report a problem.</p>
 </section>
+<aside class="doc-next"><p>Keep exploring your workflow.</p><a href="/ingest/">Explore Ingest →</a><a href="/ingest/guide/#palette">Find it with ⌘K →</a></aside>
 </main>
 <footer class="family-footer">
 <span>© 2026 Brian Renshaw</span>
