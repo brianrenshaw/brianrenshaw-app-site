@@ -1,99 +1,76 @@
-/* Landing page only. Reference pages keep their existing document styles. */
-@font-face{font-family:Ingest Archivo;src:url('../../where-do-we-eat/assets/fonts/archivo.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
-.ingest-home{font-family:Ingest Archivo,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-.ingest-home .family-header{padding-block:16px;border-bottom:0}
-.ingest-home .family-header nav a{color:var(--muted);text-decoration:none}
-.ingest-home .family-header nav a:hover{color:var(--ink)}
-.ingest-home .app-landing{padding-top:0}
-.ingest-home .eyebrow{color:var(--accent);font-size:11px;letter-spacing:.13em;margin-bottom:18px}
-.ingest-home h2{font-size:clamp(28px,3.2vw,40px);line-height:1.15;letter-spacing:-.035em;font-weight:600;text-wrap:balance}
-.ingest-home p{color:var(--muted)}
-.ingest-home section,.ingest-home article,.ingest-home [id]{scroll-margin-top:28px}
-.ingest-home .ingest-hero{padding:48px 0 30px}
-.ingest-home h1{font-size:clamp(44px,6.3vw,76px);line-height:1.06;font-weight:600;letter-spacing:-.055em;margin:0 0 24px;text-wrap:balance}
-.ingest-home .intro{max-width:68ch;font-size:19px;line-height:1.65;margin-bottom:0}
-.ingest-home .actions{flex-direction:row;align-items:center;flex-wrap:wrap;gap:16px 28px;margin:26px 0 18px}
-.ingest-home .primary-action{border-radius:7px;padding:13px 20px;display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:48px}
-.ingest-home .primary-action:hover{background:var(--ink);color:var(--bg)}
-.ingest-home .secondary-action{color:var(--ink);text-decoration:none;padding:10px 0;min-height:44px}
-.ingest-home .secondary-action span{color:var(--accent);margin-left:8px}
-.ingest-home .secondary-action:hover,.ingest-home .text-link:hover{text-decoration:underline}
-.ingest-home .hero-details{font-size:12px;line-height:1.6}
-.ingest-home .hero-details p{margin:5px 0}
-.ingest-home .hero-details a{color:inherit}
-.ingest-home .beta-note{font-size:13px;line-height:1.6;max-width:68ch;margin:14px 0 0}
-.ingest-home .desktop-shot{padding:8px;background:var(--surface);border:1px solid var(--line);border-radius:12px;min-width:0}
-.ingest-home .desktop-shot>a{display:block;border-radius:6px}
-.ingest-home .desktop-shot img{border-radius:6px}
-.ingest-home .desktop-shot figcaption{padding:14px 10px 8px;color:var(--muted);font-size:12px;line-height:1.5}
-.ingest-home .hero-capture figcaption{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-inline:14px}
-.ingest-home .hero-capture kbd{margin-right:6px}
-.ingest-home .command-section{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:center;padding:80px 0}
-.ingest-home .command-section h2{max-width:18ch}
-.ingest-home .command-section h2 kbd{font-size:.7em;letter-spacing:-.03em;vertical-align:.06em}
-.ingest-home .command-section p{max-width:52ch}
-.ingest-home .text-link{display:inline-block;padding:8px 0;color:var(--ink);font-size:14px;text-decoration:none}
-.ingest-home .text-link span{color:var(--accent);margin-left:8px}
-.ingest-home .command-examples{margin:0;padding:0 28px;background:var(--surface);border-radius:12px}
-.ingest-home .command-examples>div{padding:22px 0;border-bottom:1px solid var(--line)}
-.ingest-home .command-examples>div:last-child{border-bottom:0}
-.ingest-home .command-examples dt{display:flex;justify-content:space-between;gap:16px;font-size:17px;font-weight:550}
-.ingest-home .command-examples dd{margin:6px 0 0;font-size:14px;color:var(--muted)}
-.ingest-home .workflow-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;padding:32px 0;border-block:1px solid var(--line)}
-.ingest-home .workflow-heading h2{font-size:30px;margin:0}
-.ingest-home .workflow-heading .eyebrow{margin-bottom:12px}
-.ingest-home .workflow-heading nav{display:flex;flex-wrap:wrap;gap:4px 24px}
-.ingest-home .workflow-heading nav a{color:var(--ink);font-size:14px;text-decoration:none;padding:10px 0;white-space:nowrap}
-.ingest-home .workflow-heading nav a:hover{text-decoration:underline}
-.ingest-home .workflow-heading nav span{color:var(--accent);margin-left:6px}
-.ingest-home .workflow-feature{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);grid-template-areas:"copy image";align-items:center;gap:56px;padding:64px 0;border-bottom:1px solid var(--line)}
-.ingest-home .feature-copy{grid-area:copy;max-width:46ch}
-.ingest-home .feature-copy h2{max-width:17ch;margin-bottom:22px}
-.ingest-home .feature-copy p{font-size:16px;line-height:1.7}
-.ingest-home .workflow-feature>.desktop-shot{grid-area:image;width:100%}
-.ingest-home .import-feature>.desktop-shot{max-width:460px;justify-self:center}
-.ingest-home .reverse-feature{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);grid-template-areas:"image copy"}
-.ingest-home .ingest-assurance{display:grid;grid-template-columns:1fr 1fr;gap:80px;padding:64px 0;border-bottom:1px solid var(--line)}
-.ingest-home .ingest-assurance h2{font-size:29px;max-width:23ch}
-.ingest-home .ingest-assurance p{max-width:52ch;margin-bottom:12px}
-.ingest-home .assurance-links{margin:0;padding:0;list-style:none;align-self:center}
-.ingest-home .assurance-links li{padding:16px 0;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
-.ingest-home .assurance-links li:first-child{padding-top:0}
-.ingest-home .assurance-links li:last-child{border:0;padding-bottom:0}
-.ingest-home .assurance-links strong{display:block;color:var(--ink);font-size:15px;font-weight:500;margin-bottom:5px}
-.ingest-home .assurance-links a{color:var(--muted)}
-.ingest-home .ingest-closing{display:flex;justify-content:space-between;align-items:center;gap:36px;padding:72px 0 32px}
-.ingest-home .ingest-closing h2{max-width:17ch;margin:0}
-.ingest-home .ingest-closing .actions{margin:0 0 16px}
-.ingest-home .ingest-closing .quiet{margin:0}
-.ingest-home .family-footer{margin-top:48px}
-@media(max-width:1000px){
- .ingest-home .command-section,.ingest-home .ingest-assurance{gap:40px}
- .ingest-home .workflow-feature{gap:32px}
- .ingest-home .workflow-heading{align-items:start;flex-direction:column;gap:12px}
- .ingest-home .ingest-closing{align-items:start;flex-direction:column;gap:28px}
- .ingest-home .ingest-closing h2{max-width:none}
-}
-@media(max-width:760px){
- .ingest-home .family-header{gap:8px 20px;padding-block:14px}
- .ingest-home .family-header nav{gap:16px}
- .ingest-home .family-header nav a{font-size:12px}
- .ingest-home .ingest-hero{padding:30px 0 26px}
- .ingest-home h1{max-width:12ch;margin-bottom:20px}
- .ingest-home .intro{font-size:17px;line-height:1.6}
- .ingest-home .actions{gap:10px 20px;margin-top:22px}
- .ingest-home .hero-details{font-size:11px}
- .ingest-home .hero-capture figcaption{align-items:start;flex-direction:column;gap:8px}
- .ingest-home .desktop-shot{padding:5px;border-radius:9px}
- .ingest-home .desktop-shot figcaption{padding:12px 8px 7px}
- .ingest-home .command-section,.ingest-home .ingest-assurance{grid-template-columns:1fr;gap:28px;padding:44px 0}
- .ingest-home .command-section h2{max-width:20ch}
- .ingest-home .command-examples{padding-inline:20px}
- .ingest-home .workflow-heading{padding:26px 0}
- .ingest-home .workflow-heading h2{font-size:27px}
- .ingest-home .workflow-feature,.ingest-home .reverse-feature{grid-template-columns:1fr;grid-template-areas:"copy" "image";gap:24px;padding:40px 0}
- .ingest-home .feature-copy{max-width:none}
- .ingest-home .feature-copy h2{max-width:20ch}
- .ingest-home .ingest-assurance h2{font-size:28px}
- .ingest-home .ingest-closing{padding:44px 0 12px}
-}
+/* Ingest's product page. Documentation retains its own dark theme. */
+body.app-ingest.ingest-home{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink:#242622;--muted:#60635d;--accent:#86520b;--line:#dedfd7;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.ingest-home *{box-sizing:border-box}
+.ingest-home [hidden]{display:none!important}
+.ingest-home a{color:inherit;text-underline-offset:4px}
+.ingest-home a:focus-visible,.ingest-home button:focus-visible,.ingest-home [tabindex="0"]:focus-visible{outline:3px solid #9c5e06;outline-offset:5px}
+.ingest-home .family-header{max-width:1248px;margin:auto;padding:22px 24px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:24px;align-items:center}
+.ingest-home .family-brand{font-size:22px;font-weight:650;letter-spacing:-.6px;color:var(--ink)}
+.ingest-home .family-header nav{display:flex;align-items:center;gap:28px;font-size:14px;flex-wrap:wrap}
+.ingest-home .family-header nav a{text-decoration:none;color:var(--muted)}
+.ingest-home .family-header nav a:hover{color:var(--ink);text-decoration:underline}
+.ingest-home .family-header .nav-download{border:1px solid #d1d2ca;border-radius:8px;padding:9px 14px;color:var(--ink);background:white;font-weight:600}
+.ingest-home .app-landing{max-width:1248px;margin:auto;padding:0 24px}
+.ingest-home .eyebrow{font-size:12px;line-height:1.6;font-weight:650;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
+.ingest-home h1,.ingest-home h2,.ingest-home h3{font-family:inherit;color:var(--ink);font-weight:600;text-wrap:balance}
+.ingest-home h1{font-size:clamp(48px,6.8vw,88px);line-height:1.02;letter-spacing:-.045em;margin:0 0 26px}
+.ingest-home h2{font-size:clamp(32px,4.2vw,54px);line-height:1.08;letter-spacing:-.045em;margin:0 0 24px}
+.ingest-home h3{font-size:23px;line-height:1.22;letter-spacing:-.025em;margin:0 0 13px}
+.ingest-home p{font-size:17px;line-height:1.65;color:var(--muted);margin:0 0 18px}
+.ingest-home .ingest-hero{text-align:center;padding:78px 0 45px;max-width:860px;margin:auto}
+.ingest-home .intro{max-width:610px;margin:0 auto 25px;font-size:20px;line-height:1.55}
+.ingest-home .actions{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:14px 24px;margin:25px 0 20px}
+.ingest-home .primary-action{display:inline-flex;align-items:center;gap:26px;background:#efad39;color:#231908;text-decoration:none;padding:14px 22px;border-radius:9px;font-size:15px;font-weight:650;min-height:48px;border:1px solid #d2942b}
+.ingest-home .primary-action:hover{background:#e6a22d;transform:none}
+.ingest-home .secondary-action{padding:12px 0;font-size:15px;font-weight:550;text-decoration:none}
+.ingest-home .secondary-action:hover{text-decoration:underline}
+.ingest-home .hero-details{font-size:12px;line-height:1.9;margin:0;color:var(--muted)}
+.ingest-home .hero-stage{background:#eeeee7;padding:24px;border:1px solid #e0e1d7;border-radius:20px}
+.ingest-home .desktop-shot{margin:0;padding:0;background:transparent;border:0;min-width:0}
+.ingest-home .desktop-shot>a{display:block;border-radius:10px;overflow:hidden;box-shadow:0 14px 35px #20241b12;background:#111113;width:fit-content;max-width:100%;margin:auto}
+.ingest-home .desktop-shot img{display:block;width:100%;height:auto;max-width:var(--capture-width,100%);border-radius:0}
+.ingest-home .desktop-shot figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:18px;color:var(--muted);font-size:12px;line-height:1.5;margin:14px 2px 0;padding:0}
+.ingest-home kbd{font-family:inherit;font-size:.88em;background:#efeee9;color:var(--ink);border:1px solid #d5d6cc;border-bottom-width:2px;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ingest-home h2 kbd{font-size:.8em;letter-spacing:-.04em;padding:0 10px;background:#fff;vertical-align:4px}
+.ingest-home .capability-line{display:flex;justify-content:space-between;gap:18px;padding:30px 12px;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted)}
+.ingest-home .capability-line span:last-child{color:var(--ink);font-weight:600}
+.ingest-home .section-block{padding:95px 0;border-bottom:1px solid var(--line)}
+.ingest-home .section-heading{max-width:720px;margin:0 0 38px}
+.ingest-home .section-heading>p:last-child{max-width:640px;font-size:19px}
+.ingest-home section,.ingest-home [id]{scroll-margin-top:26px}
+.ingest-home .tour-tabs{display:flex;gap:7px;padding:7px;border:1px solid var(--line);background:#efefe9;border-radius:12px;margin:0 0 30px;width:fit-content;max-width:100%;flex-wrap:wrap}
+.ingest-home .tour-tabs button{font:inherit;font-size:14px;font-weight:550;border:1px solid transparent;border-radius:7px;background:transparent;color:#62655e;padding:12px 20px;min-height:44px;cursor:pointer}
+.ingest-home .tour-tabs button:hover{color:var(--ink);background:#f9f8f3}
+.ingest-home .tour-tabs button[aria-selected="true"]{background:white;color:#302413;border-color:#ded7c8;box-shadow:0 2px 4px #25281e09}
+.ingest-home .tour-copy{display:grid;grid-template-columns:1fr 1.2fr;gap:65px;margin-bottom:25px;min-height:162px;align-items:start}
+.ingest-home .tour-copy h3{font-size:30px;max-width:360px;line-height:1.14}
+.ingest-home .tour-copy .eyebrow{font-size:10px;margin-bottom:10px}
+.ingest-home .tour-copy p{font-size:16px;margin-bottom:17px}
+.ingest-home .feature-tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0;font-size:11px;color:#51574d}
+.ingest-home .feature-tags li{border:1px solid #dcded4;border-radius:5px;padding:5px 9px;background:#f5f5ef}
+.ingest-home .tour-panel+.tour-panel{margin-top:55px}
+.ingest-home .tour.is-enhanced .tour-panel{margin-top:0}
+.ingest-home .section-note{font-size:13px;margin:22px 0 0;max-width:850px}
+.ingest-home .section-note a{white-space:normal}
+.ingest-home .start-simple{display:grid;grid-template-columns:1fr 1.6fr auto;gap:30px;align-items:center;margin-top:40px;padding:28px 0;border-top:1px solid var(--line)}
+.ingest-home .start-simple h3{font-size:21px;margin:0}
+.ingest-home .start-simple p{font-size:14px;margin:0}
+.ingest-home .start-simple a{font-size:13px}
+.ingest-home .feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:45px;margin-top:36px}
+.ingest-home .feature-grid p,.ingest-home .workflow-columns p{font-size:15px;line-height:1.7}
+.ingest-home .feature-grid a,.ingest-home .workflow-columns a{font-size:13px}
+.ingest-home .feature-symbol{font-size:28px;color:var(--accent);display:block;margin:0 0 16px}
+.ingest-home .workflow-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:45px;margin:44px 0 38px}
+.ingest-home .step-number{display:block;color:var(--accent);font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px;font-weight:650}
+.ingest-home .made-for-mac{display:grid;grid-template-columns:1fr 1fr;gap:70px;padding:85px 0;border-bottom:1px solid var(--line);align-items:start}
+.ingest-home .signature{font-size:16px;font-weight:600;color:var(--ink);margin-top:28px}
+.ingest-home .signature span{display:block;font-size:12px;font-weight:400;color:var(--muted);margin-top:3px}
+.ingest-home .ingest-closing{text-align:center;padding:85px 0 75px}
+.ingest-home .ingest-closing>img{border-radius:16px;margin-bottom:24px}
+.ingest-home .ingest-closing h2{margin-bottom:16px}
+.ingest-home .beta-note{font-size:12px;max-width:540px;margin:20px auto 0}
+.ingest-home .family-footer{max-width:1248px;padding:26px 24px 40px;margin:auto;border-top:1px solid var(--line);color:var(--muted);font-size:12px;gap:24px}
+.ingest-home .family-footer nav{gap:12px 20px;flex-wrap:wrap}
+@media(max-width:800px){.ingest-home .family-header nav{gap:16px}.ingest-home .ingest-hero{padding-top:55px}.ingest-home .tour-copy{gap:30px;grid-template-columns:1fr 1.25fr;min-height:190px}.ingest-home .tour-tabs button{padding:10px 12px;font-size:12px}.ingest-home .start-simple{grid-template-columns:1fr 1.5fr}.ingest-home .start-simple a{grid-column:2}.ingest-home .feature-grid,.ingest-home .workflow-columns{gap:25px}.ingest-home .made-for-mac{gap:35px}.ingest-home .hero-stage{padding:16px}}
+@media(max-width:600px){.ingest-home .family-header{padding:16px 20px;gap:12px;flex-wrap:wrap}.ingest-home .family-header nav{font-size:12px;gap:14px}.ingest-home .family-header .nav-download{padding:7px 10px}.ingest-home .family-brand{font-size:20px}.ingest-home .family-brand img{width:30px;height:30px}.ingest-home .app-landing{padding:0 20px}.ingest-home .ingest-hero{padding:50px 0 30px}.ingest-home .ingest-hero .eyebrow{font-size:10px;max-width:260px;margin:0 auto 22px}.ingest-home .intro{font-size:17px}.ingest-home .hero-stage{padding:9px;border-radius:12px}.ingest-home .desktop-shot>a{border-radius:6px}.ingest-home .desktop-shot figcaption{font-size:11px}.ingest-home .capability-line{padding:24px 0;gap:10px;font-size:11px}.ingest-home .capability-line span:last-child{display:none}.ingest-home .section-block{padding:58px 0}.ingest-home .section-heading{margin-bottom:26px}.ingest-home .section-heading>p:last-child{font-size:17px}.ingest-home .tour-tabs{display:grid;grid-template-columns:1fr 1fr;width:100%;gap:4px}.ingest-home .tour-tabs button{font-size:12px;padding:10px 6px}.ingest-home .tour-copy{grid-template-columns:1fr;gap:4px;min-height:0}.ingest-home .tour-copy h3{font-size:26px;max-width:none}.ingest-home .tour-copy p{font-size:15px}.ingest-home .feature-grid,.ingest-home .workflow-columns,.ingest-home .made-for-mac{grid-template-columns:1fr;gap:30px}.ingest-home .feature-grid article+article{border-top:1px solid var(--line);padding-top:26px}.ingest-home .start-simple{grid-template-columns:1fr;gap:12px}.ingest-home .start-simple a{grid-column:auto}.ingest-home .made-for-mac{padding:58px 0;gap:8px}.ingest-home .ingest-closing{padding:58px 0}.ingest-home .family-footer{display:block;padding-inline:20px}.ingest-home .family-footer nav{margin-top:20px}.ingest-home .actions{gap:6px 20px}.ingest-home .section-note{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.ingest-home *{scroll-behavior:auto!important;transition:none!important}}

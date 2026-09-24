@@ -109,66 +109,35 @@ Approved with Brian on September 11, 2026.
 
 **Scope:** This copy describes the linked site at https://www.whatdidtheyread.com/. Its templates, copy, and publishing live in the sibling `blog-explorer` repository under `blogs/whatdidtheyread/`.
 
-## Ingest (September 18, 2026)
+## Ingest (September 24, 2026 — current positioning)
 
-Added as the tenth project, taking the reserved slot. Type: Mac app. The second Mac app, and the second one whose pages
-are charcoal with a warm accent, so keep them visually apart: Walkthrough is `#111214` with `#e9b454`, Ingest is
-`#0B0B0D` with `#F5A524`.
+**Identity:** A photo management and workflow app for the Mac.
 
-**Positioning updated September 20, 2026:** Ingest is a modern Mac app for quick photo import, culling, and everyday photo file management. The command bar connects these jobs. The earlier card-emptying pitch is superseded.
+**Headline:** From personal to professional.
 
-**Audience:** Photographers who want to import shoots, select keepers, and manage photo files on their Mac, including people looking for a modern alternative to Photo Mechanic. Current fast RAW previews support Sony ARW and Fujifilm RAF; never imply universal RAW preview support.
+**Supporting copy:** Import, cull, browse, and organize your photos in one fast Mac app. Jump right in, or create workspaces that fit the way you shoot.
 
-**Problem:** Importing a shoot, making selections, and organizing existing photo folders involve many repeated actions. Photographers need those actions easy to find and quick to use.
+**Audience and priorities:** Photographers doing personal and professional work. Lead with workspaces that change views, sorting, favorites, visible tools, and file workflows; follow with the Command Palette. Speed supports the story. Describe fast RAW viewing in the review-tools section rather than positioning the app as a RAW viewer. Do not claim fastest performance, universal format support, exclusivity, or blanket feature parity.
 
-**Primary promise:** Import, cull, and manage photo files on Mac. Use the command bar to find commands, open folders, and apply presets.
+**Workspaces:** Show Personal (original names, dated folders, second copy), Brian’s Real Estate template (address-based filenames and originals/autohdr/final_exports), Wedding Photography, and Landscape / Wildlife. These are example configurations, not four claimed built-in presets. Customization is optional. Apple Photos integration is a global setting; Social Export visibility and sidebars can be configured per workspace.
 
-**Headline:** Import. Cull. Manage.
+**Command Palette:** ⌘K finds commands, workspaces, and favorites; Find Folder searches folders on the Mac and connected drives. Demonstrate folders, workspaces, sidebar controls, and Crop & Straighten. Explain customizable shortcuts without making memorization a prerequisite. It is not a terminal or natural-language AI interface.
 
-**Supporting copy:** Import a shoot, compare frames, and organize your files. Press ⌘K to find commands, open favorite folders, and apply presets.
+**AI assistance:** Local eye and sharpness assessments, scene analysis, and suggested keepers are optional. Photographers review and apply suggestions; opening keeper review does not tag photographs. Supersedes the earlier no-automatic-culling positioning. Do not extend this to a claim of autonomous editing or rejection.
 
-**Portfolio headline:** Import, cull, and manage photos.
+**Scope:** Import, cull, browse, and organize are useful independently. Existing folders and finished exports are first-class uses. Include IPTC metadata, crop, comparison, scenes, bursts, exposure stacks, optional Apple Photos, and Social Export without a long technical inventory in the hero.
 
-**Portfolio supporting copy:** Browse photos on a card or in a folder, compare frames, and mark your selections. Use the command bar to import files, rename them, and add metadata.
+**Visual direction:** Bright neutral product page, readable system typography, restrained amber, and genuine screenshots of signed Ingest 0.8.5. Native dark UI remains unchanged inside the screenshots. Interactive workspace and command tours; all content remains readable without JavaScript. Keep current URLs, section anchors, and the permanent Sparkle feed.
 
-**Card label:** Photo import and management
+**Photography:** Unsplash demonstration collections with credits in assets/SOURCES.md, plus the licensed CC0 Canon RAW sample for RAW-specific demonstrations. Never use personal or client photographs. Capture in an isolated app library at native Retina resolution, encode lossless WebP, and preserve exact pixels.
 
-**Priorities:** Import, cull, and manage are equally prominent capabilities, not a required sequence. Show the command bar in the hero and explain command search, favorite folders, presets, and workspaces. Make management of existing folders explicit. Use concrete benefits before implementation details; leave embedded-preview mechanics, naming tokens, and shortcut configuration in the documentation. Avoid absolute speed claims.
+**Availability:** Working beta, free during beta, no account required. macOS 15+, Apple silicon. Use verified 0.8.5 download. File-format specifics live on Support; do not promise all RAW files work. Native Photos metadata features that require newer macOS versions remain qualified in the guide.
 
-**Landing page sections:** Hero with command-bar screenshot; “Find and run commands with ⌘K”; import, cull, and manage sections with real screenshots; brief positioning and reassurance; “Download the working beta” closing. Preserve existing section ids even when the headings change.
+**Safety and privacy:** Describe verified copies precisely, without loss guarantees. A backup destination is a second copy, not a comprehensive backup service. Card deletion requires an explicit request after verified copying. Photo analysis is local; optional Apple Photos follows iCloud settings. Scripts run with the user’s permissions, as explained on the automation and privacy pages.
 
-**Photo Mechanic:** Mention it once in supporting landing-page copy. Approved sentence, updated September 20, 2026: “I built Ingest because I wanted a modern Mac app for the part of the workflow Photo Mechanic has covered for years.” Keep it out of titles, metadata, and headlines. Retain the existing support-page migration reference. Do not claim feature parity or comparative speed, and do not raise Photo Mechanic’s price or its age.
+**Portfolio:** “From personal to professional.” Support with import, cull, browse, organize, workspaces, and ⌘K.
 
-**RAW histogram and preview comparison (staged for the next app release):** In the Cull section, describe sensor-based exposure inspection, highlight headroom, channel clipping, the RAW/JPEG histogram choice, and on-demand comparison of one photo’s RAW and JPEG previews. Use the guide for the 99.9th percentile, 0.1% clipping threshold, and fallback details. Support is Bayer and X-Trans mosaics, including matching CFA DNG layouts, when the bundled decoder can read the file. Do not imply all RAW files work, claim exclusivity, or advertise the unachieved 200 ms target. Publish the feature copy and captures together with the app release that contains them.
-
-**No automatic culling.** Ingest does not rate or reject photographs on the photographer’s behalf. State this on the landing page in the About bullets and once in the Cull section. Scope the claim to rating and rejecting, never to AI or machine learning generally: the face close-up strip uses Apple’s Vision framework on the Mac, so a broad “no AI” claim would contradict the guide and privacy pages. Acknowledge that AI culling tools exist and work; do not invent frustrations about them or about competing apps. Do not add a standalone page or heading arguing the case.
-
-**Tone:** Explain what the app does and how to use it. Headings name capabilities; captions explain what is shown. Avoid slogans, invented frustrations, strained comparisons, and claims of instant results. Do not replace explanations with generic benefit lines such as “Make room for the photos,” “get moving,” or “keeps your next action close.” Keep explanations concise and useful to photographers, without turning the landing page into implementation documentation.
-
-**Command bar:** Search commands, favorites, presets, and workspaces by name. Do not imply AI, natural-language automation, or a terminal. Marketing calls it the command bar; existing technical references may call it the palette.
-
-**Do not overstate safety.** Write what is verifiable: Card metadata and filenames stay untouched; explicit card deletion is available only after verified copying, as documented on the support page. Do
-not extend that into a claim that photographs cannot be lost, and never call the second destination a backup. Same
-family rule as the standing ban on calling a settings export "sync".
-
-**Do not overstate verification.** Ingest hashes what it wrote and compares it to the source, and stops when they
-differ. Not "guaranteed", not "bit perfect", and it says nothing about corruption that happens later.
-
-**Say the requirements everywhere.** macOS 15 or later, Apple silicon only. An Intel owner downloading a disk image
-that will not open is the most expensive support email the page can generate. Sony ARW and Fujifilm RAF preview support is named near the download too; never imply universal raw support.
-
-**Local analysis needs its sentence.** Faces and subject regions are found on the Mac for close-ups, grouping, and culling suggestions. Results and corrections are cached locally. No names or identities are assigned, and nothing is sent to a server for this analysis. Keep the guide and privacy page aligned with this behavior.
-
-**Scripts need their sentence.** A shell step runs as you and Ingest does not restrain it. On the automation page and
-again on the privacy page.
-
-**Availability:** Show the version beside the download and label the current 0.8.2 release “Working beta.” Use this explanation: “Ingest is a working beta. I use it for my own work and am still developing it for a broader audience.” Avoid vague qualifiers such as “young” or claims that the shape of the app is settled. Release history lives at
-/ingest/release-notes/ and is linked from the app's Help menu. Do not restate historical entries in current positioning
-language.
-
-**Visual direction:** Real screenshots of the running app, captured against a demonstration card built from Unsplash
-photographs, credited in `site/ingest/assets/SOURCES.md`. No client work and no personal photographs, ever. Black pages,
-amber accents, the memory card icon.
+Earlier implementation records below are historical. This section supersedes their conflicting positioning or visual choices.
 
 ## Editorial rules
 
@@ -398,6 +367,27 @@ All seven published claims hold at `92cae0a`:
 
 **Method note.** Verifying against a checked-out release commit is better than unpacking whichever IPA happens to be on disk, and it is what should have been done the first time. Confirm `MARKETING_VERSION` and `CURRENT_PROJECT_VERSION` at that commit match the live listing before trusting it.
 
+## Ingest landing page reworked, September 22, 2026
+
+Decided with Brian on September 22, 2026. Supersedes the headline, section order and hero image in the September 18 entry; the rules in that entry still hold.
+
+- **Positioning:** Ingest is the only modern Mac app that takes a shoot from the card to an organized, named, tagged folder with you making every decision. Culling-only apps and AI-first culling apps do a narrower or a different job; the page says so once, softly, and names nobody: "Culling apps help you pick; Ingest also brings the files in, tags them, and files them."
+- **Headline:** "Everything between the card and the edit. And after it." The "after it" is Organize, Social Export and Apple Photos. **Subhead:** "Import, cull, name, tag, and organize every shoot in one Mac app. Every copy is read back and checked, the card is never written to, and you make every select."
+- **Lead audience:** none. Brian is undecided between real estate, weddings and events, and hobbyists, so the hero carries the workflow promise and "Made for how you shoot" gives the three equal cards.
+- **Price:** "No account. No subscription. Free during the beta." Nothing about a price after the beta.
+- **Photo Mechanic:** still exactly one mention, in About, the approved sentence. The switching guide on the support page is linked with link text that does not name it.
+- **Page order:** hero (cull grid capture), trust strip (the four About bullets, moved up), the loop in five minutes (from the quick start), Import, Cull, Describe, Workspaces, Organize, After the cull (three cards: into the edit, Social Export, Apple Photos), Made for how you shoot (three cards), Built for the keyboard (the command bar, moved down), About (two paragraphs), Download. Existing section ids kept.
+- **Meta:** title "Ingest | Import, cull, and organize photos on your Mac"; description "Take every shoot from the card to a named, tagged, organized folder. Verified copies, keyboard culling, and you make every select."; share image the cull grid.
+- **Captures reused** from the 0.8.0 set; no new captures yet. Wanted when the next release is captured: two similar frames in Compare with a rating applied, quick entry with the legend showing, a workspace before and after, the receipt at the end of an ingest, a short screen recording of the loop for the hero.
+- **Speed:** no absolute claims. "Arrow through a card while it is still being read" replaced a draft "with no waiting".
+
+**Staged for the release that contains photo analysis (built September 22, 2026, unreleased):** add to Cull, in this order, only when that release ships and with its own captures. Feature names in the interface are Similar, Faces, Eyes closed, Soft, Tilted, Utility; the key is P, Keep This Frame.
+
+- "Ingest notices when you fired off five of the same frame and stacks them. Arrow to the one you like, press P, and move on. Nothing is rated or tagged for you."
+- "Face close-ups are instant, and an Eyes closed filter shows you the blinks before you tag."
+- "A Soft filter surfaces the frames noticeably less sharp than the shot next to them. Judged against the shot beside it, never a number in a table."
+- Trust strip bullet stays "You make the selects. Nothing rates or rejects on your behalf." The analysis is filters and stacks; say "flags" or "filters", never "AI culling", and keep the About paragraph's line that AI culling tools exist and are good at what they do.
+
 ## Ingest About section rewritten, September 20, 2026
 
 The About section on the Ingest landing page was a single positioning sentence under a bullet list, so the bullets read as a detached feature inventory. It now opens with two short paragraphs and the bullets follow as the same argument.
@@ -417,3 +407,5 @@ Ingest 0.6.0 adds a compact Photo Info sidebar with configurable order and visib
 ### Ingest 0.7.0: Apple Photos
 
 Apple Photos is integrated by default and can be disabled in Settings. Describe ordinary albums, the System Photo Library, reviewed JPEG-first sending, and importing rendered Photos selections into Social Export. Native caption, keyword, and rating editing requires macOS 27. Do not promise Shared Album publishing, Smart Album rule editing, continuous synchronization, or arbitrary Photos library selection. Photos operations follow the user's iCloud settings; avoid blanket claims that photographs never leave the Mac. Public screenshots use the credited public demonstration photographs, never personal photos or private album names.
+
+Apple Photos roadmap: workspace-specific enable/disable is planned. Until it ships, distinguish that upcoming control from the global integration setting in 0.8.5.

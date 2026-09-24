@@ -276,7 +276,7 @@
 
 <section id="ingesting" class="guide-section">
 <h2>Ingesting</h2>
-<p><kbd>⌘G</kbd> opens the sheet. It fills itself in from what you did last and from the workspace you are in, so most of the time the answer is Return.</p>
+<p><kbd>⌘G</kbd> opens the Ingest tab. Choose a card, folder, or archive; the active workspace supplies the saved destination, names, metadata, and routing. Review the destination preview before starting.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/ingest-tab-0.8.0-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/ingest-tab-0.8.0-retina.webp" width="2444" height="1562" loading="lazy" alt="The Ingest sheet showing scope tabs with counts, a destination, a subfolder template, a rename template with a live preview of the resulting filenames, and the file count and size"></a><figcaption>Everything the copy will do, before it does any of it.</figcaption></figure>
 <p>The tabs at the top choose what to copy, with the count on each one: tagged, selected, what is on screen, or everything. <kbd>⌃1</kbd> to <kbd>⌃4</kbd> pick them without the mouse. The cursor starts in the destination field, where you can type part of a favorite's name.</p>
 <p>Below that: an optional second destination, a subfolder named by template, renaming with a live preview of the actual filenames, which files from a RAW and JPEG / HEIF pair to take, a metadata preset to apply to the copies, and what to do with the card afterwards.</p>
@@ -302,18 +302,19 @@
 
 <section id="workspaces" class="guide-section">
 <h2>Workspaces</h2>
-<p>Different shoots want different defaults. A workspace is a named set of them: the view you start in, the sort, the thumbnail size, whether brackets stack and pairs combine, and the name template, subfolder, metadata preset, and destination the Ingest sheet should start with.</p>
+<p>A workspace changes how Ingest looks and works for a kind of photography. It remembers the view, sort, thumbnail size, grouping, favorite folders, visible tabs, and sidebar visibility, along with ingest destinations, filenames, folder structures, metadata, and RAW/JPEG routing. Organize can follow the Ingest setup or have its own settings. Social Export can start with a saved style. Configure these in Settings → Workspaces; you can also begin with the defaults and open a folder without creating a workspace.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/settings-workspaces-0.8.0-retina.webp"><img style="--capture-width:1028px" src="/ingest/assets/settings-workspaces-0.8.0-retina.webp" width="2056" height="2284" loading="lazy" alt="The Workspaces settings page showing view defaults, ingest defaults, and the list of cameras that switch to this workspace"></a><figcaption>Three workspaces ship with the app. The camera list at the bottom is what makes switching automatic.</figcaption></figure>
-<p><kbd>⌃1</kbd> to <kbd>⌃9</kbd> switch between them. Better than that, each one can list the cameras it belongs to. Open a card and Ingest looks at what most of the photographs came from, and switches for you. A card from the Sony arrives as a job, a card from the Fuji arrives as family photographs, and you did nothing.</p>
+<p><kbd>⌃1</kbd> to <kbd>⌃9</kbd> switch between them. Each workspace can list the cameras it belongs to. Enable Choose workspace by camera in Settings to switch when a matching card opens. A workspace you choose by hand takes precedence. Apple Photos integration has a separate global setting; hiding Social Export is a workspace setting.</p>
 </section>
 
 <section id="palette" class="guide-section">
-<h2>The palette</h2>
+<h2>The Command Palette</h2>
 <p><kbd>⌘K</kbd> opens a search field over everything the app can do. Type a few letters of a command, an alias, or a category. Arrow keys move, Return runs.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/palette-0.8.0-retina.webp"><img style="--capture-width:1222px" src="/ingest/assets/palette-0.8.0-retina.webp" width="2444" height="1562" loading="lazy" alt="The command palette showing contextual commands, shortcut labels, the highlighted Ingest action, and the Actions button"></a><figcaption>Before you type, the palette suggests what fits what you have selected.</figcaption></figure>
 <p>Every row shows its key, so the palette teaches the keyboard while you use it. Commands that cannot run right now stay visible with the reason underneath, rather than vanishing and leaving you wondering. <kbd>⇧⌘P</kbd> pins a command to the top for good.</p>
 <p>Command descriptions explain what each action does. Settings, Command Palette controls descriptions, shortcut labels, and excluded commands.</p>
 <p>The footer names the command Return will run. Click <strong>Actions</strong> or press <kbd>⌘K</kbd> again to pin or unpin the highlighted command, copy its link, or configure its shortcut. Configure Shortcut opens that exact command in Settings. Copy Link keeps the palette open and confirms the copy. <kbd>Esc</kbd> closes Actions first, then the palette and returns focus to where you were.</p>
+<p>Choose <strong>Find Folder…</strong> in the palette, or press <kbd>⇧⌘F</kbd>, to search folders on your Mac and connected drives. <kbd>⌘F</kbd> filters photos in the current collection. Show Left Sidebar, Show Right Sidebar, and Show Both Sidebars change the view for the current workspace.</p>
 <p>Your favorites, workspaces, splits, presets, actions, and recent folders are all in there too, so the palette is a way to go somewhere as well as a way to do something. <kbd>?</kbd> shows the shortcut sheet, and holding <kbd>⌘</kbd> for a moment shows the keys that work where you are standing.</p>
 </section>
 

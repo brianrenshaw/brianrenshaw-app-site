@@ -33,7 +33,7 @@
   "decisions": [
     {
       "id": "native-app-assets",
-      "decision": "Native app icons are authoritative over historical website mockups. Who’s First? uses the current board palette and existing native build-18 captures. No playable web app."
+      "decision": "Native app icons are authoritative over historical website mockups. Who\u2019s First? uses the current board palette and existing native build-18 captures. No playable web app."
     },
     {
       "id": "blog-project-card",
@@ -53,11 +53,11 @@
     },
     {
       "id": "portfolio-card-order",
-      "decision": "Folio, Who’s First?, Where Do We Eat, Reading Habit, Lankford Legends, then Spreadsheet Tools. Number cards 01 through 06. Identify each as iOS app, Blog, or Utility beneath its name. No dedicated blog navigation link."
+      "decision": "Folio, Who\u2019s First?, Where Do We Eat, Reading Habit, Lankford Legends, then Spreadsheet Tools. Number cards 01 through 06. Identify each as iOS app, Blog, or Utility beneath its name. No dedicated blog navigation link."
     },
     {
       "id": "distinct-card-palette",
-      "decision": "Owner approved apricot Folio, seafoam Who’s First?, ivory/tomato Where Do We Eat, golden parchment Reading Habit, white/navy/red Lankford Legends, and pale-blue/slate Spreadsheet Tools. Preserve shared layout and dark-mode readability."
+      "decision": "Owner approved apricot Folio, seafoam Who\u2019s First?, ivory/tomato Where Do We Eat, golden parchment Reading Habit, white/navy/red Lankford Legends, and pale-blue/slate Spreadsheet Tools. Preserve shared layout and dark-mode readability."
     },
     {
       "id": "listing-namer-project",
@@ -74,6 +74,10 @@
     {
       "id": "walkthrough-explanatory-landing",
       "decision": "September 20, 2026: Sort and name listing photos. Lead with the actual workspace, then explain room grouping, photo order, command-bar actions, naming presets, export modes, settings sharing, and local jobs. No slogans or MLS upload-order guarantees. Preserve native charcoal/teal, use bundled Archivo, and scope new static layout styles to the landing page. Reuse actual demonstration screenshots; no generated app UI."
+    },
+    {
+      "id": "ingest-085-bright-workspaces",
+      "decision": "User approved bright neutral Ingest product page, system typography, restrained amber, genuine 0.8.5 captures, interactive workspace and Command Palette tours. Identity: A photo management and workflow app for the Mac. Headline: From personal to professional. Speed is supporting evidence, not RAW-viewer positioning. Preserve URLs and documentation layouts."
     }
   ],
   "evidence": [
@@ -88,6 +92,10 @@
     {
       "source": "Ingest Apple Photos 0.7.6 release, September 22, 2026",
       "note": "Reused static workflow, guide, and screenshot styles. 21st catalog was unavailable (HTTP 401), so current site and native app guided the work. Review reported zero findings. All four new captures come from the signed release using the public demo album or Settings. Computer-use captures are JPEG, displayed at half their available dimensions."
+    },
+    {
+      "source": "Ingest 0.8.5 signed app and public Unsplash demo library",
+      "note": "21st catalog search returned HTTP 401. Reused existing static site primitives; no framework or catalog dependency added."
     }
   ],
   "generatedAt": "2026-09-08T20:40:52.027Z"
