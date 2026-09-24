@@ -62,7 +62,7 @@
 <section id="cards">
 <h2>Memory cards</h2>
 <p>Insert a card and it appears in the sources list with its name and free space. By default Ingest opens it for you. That is a setting in Settings, General, if you would rather it just sat in the list.</p>
-<p><strong>Ingest never writes to a card.</strong> No ratings, no keywords, no renames, no Finder tags, no deletions except the ones you ask for by name after a copy has been verified. That holds however you opened the card, including when you open a folder that happens to live on one. Metadata you add while culling is remembered and applied to the copies during ingest.</p>
+<p><strong>Reviewing does not change your card originals.</strong> Ratings, keywords, renaming, and Finder tags are applied to copies, not to files on the card. Source files are deleted only when you explicitly request it after copies have been verified at every destination. That holds however you opened the card, including when you open a folder that happens to live on one. Metadata you add while culling is remembered and applied to the copies during ingest.</p>
 <p>If a card does not appear, check that it is mounted in Finder. Ingest looks for a <code>DCIM</code> folder to recognize a volume as a card. A card formatted by something other than a camera may not have one, in which case open it with <kbd>⌘O</kbd> as an ordinary folder.</p>
 <p>To eject, press <kbd>⌘E</kbd>. Ingest closes everything it has open on the card first, so eject does not fail with a file in use. If macOS still refuses, another app is holding the card. Pulling a card without ejecting does not crash Ingest. It notices and closes the source.</p>
 </section>
@@ -85,7 +85,7 @@
 <p>Ingest copies to a temporary name, flushes it to disk, reads the copy back, compares it to the source, and only then gives it its real name. Nothing is ever overwritten. If something goes wrong part way, the files that were already copied and verified are kept and the rest are not, and the receipt records what happened.</p>
 <dl>
 <dt>The Ingest button is dim</dt>
-<dd>The reason is printed beside it. The usual ones are no destination chosen, nothing in the scope you picked, a template that will not parse, or two photographs that would end up with the same name.</dd>
+<dd>The reason is printed beside it. The usual ones are no destination chosen, no eligible photos checked for import, a template that will not parse, or two photographs that would end up with the same name.</dd>
 <dt>Names collide</dt>
 <dd>Ingest refuses rather than quietly adding a suffix. Add <code>{seqn}</code> or <code>{seq}</code> to the template so every name is different. See <a href="/ingest/templates/#collisions">collisions</a>.</dd>
 <dt>Not enough space</dt>
@@ -106,7 +106,7 @@
 <section id="permissions">
 <h2>Permission prompts</h2>
 <p>macOS asks before an app reads a removable volume. Allow it, or Ingest cannot see your cards. If you dismissed it, the switch is in System Settings, Privacy &amp; Security, Files and Folders.</p>
-<p>Connecting to Apple Photos or sending files to it requests Photos read/write permission. Ingest uses your System Photo Library, not an arbitrary library file. If Connect did nothing in an older beta, update to the current release and try again. If access was denied, choose Open Photos Privacy Settings, enable Ingest, and return to the app. Turning Apple Photos integration off in Settings hides those features. An action that runs a Shortcut asks for permission to control Shortcuts when needed.</p>
+<p>Connecting to Apple Photos or sending files to it requests Photos read/write permission. Ingest uses your System Photo Library, not an arbitrary library file. If Connect did nothing in an older beta, update to the current release and try again. If access was denied, choose Open Photos Privacy Settings, enable Ingest, and return to the app. In 0.8.5, Settings → General controls Apple Photos integration for the app. Turning it off hides those features. Workspace-specific control is planned. An action that runs a Shortcut asks for permission to control Shortcuts when needed.</p>
 </section>
 
 <section id="photos-support">
@@ -117,7 +117,7 @@
 <section id="photo-mechanic">
 <h2>Coming from Photo Mechanic</h2>
 <p>The habits carry over. <kbd>T</kbd> tags, the arrow keys move, <kbd>⌘G</kbd> is ingest, and <kbd>{seqn}</kbd> is the saved sequence counter. Brace tokens in name templates use the same spelling, so a pattern you have typed a thousand times still works.</p>
-<p>Three differences worth knowing. Marking keys do not advance by default, which matches Photo Mechanic, and you can turn advancing on in Settings, Culling. Tags are a simple on/off flag, independent of ratings and colors. The filter menu offers All, Tagged, and Untagged, and the active filter can be cleared from the folder header. And stars and color labels use the Lightroom keys, <kbd>1</kbd> to <kbd>5</kbd> and <kbd>6</kbd> to <kbd>9</kbd>, written into the files so Lightroom sees them on import.</p>
+<p>Three differences worth knowing. Marking keys do not advance by default, and you can turn advancing on in Settings, Culling. Tags are a simple on/off flag, independent of ratings and colors. The Filter panel offers All, Tagged, and Untagged, and the active filter can be cleared from the folder header. And stars and color labels use the Lightroom keys, <kbd>1</kbd> to <kbd>5</kbd> and <kbd>6</kbd> to <kbd>9</kbd>, saved in supported files or XMP sidecars so compatible editing apps can read them.</p>
 <p>Settings, Shortcuts lists every command. Click a shortcut or focus it with Tab and press Return to record a new one. Navigation keys and standard Mac editing shortcuts stay fixed; Settings explains any conflict.</p>
 </section>
 
@@ -146,7 +146,7 @@
 <a href="/ingest/quick-start/">Quick start</a>
 <a href="/ingest/guide/">Guide</a>
 <a href="/ingest/shortcuts/">Shortcuts</a>
-<a href="/ingest/templates/">Templates</a>
+<a href="/ingest/templates/">Naming &amp; metadata</a>
 <a href="/ingest/automation/">Automation</a>
 <a href="/ingest/release-notes/">Release notes</a>
 <a href="/ingest/privacy/">Privacy</a>

@@ -36,16 +36,16 @@
 <li>Small settings files in your Application Support folder, holding your options, name templates, metadata presets, snippets, splits, workspaces, actions, and keyboard shortcuts.</li>
 <li>Per folder marks. Tags, rejection, reviewed status, protection, stars, and color labels, stored by file identity rather than written onto a card.</li>
 <li>Cached thumbnails and header information in your Caches folder, kept under 2 GB, cleared from Settings, Advanced.</li>
-<li>Logs from actions you have run, if you have built any.</li>
+<li>Logs from supplied or custom actions you have run.</li>
 <li>A record of each ingest, so the app can tell you which photographs from a card you already copied.</li>
 </ul>
-<p>When you ask it to, Ingest writes keywords, captions, titles, ratings, color labels, and GPS into your photograph files. That is the point of the app, and it happens to the files you chose, on your disk. It never writes to a memory card.</p>
+<p>When you ask it to, Ingest writes keywords, captions, titles, ratings, color labels, and GPS into your photograph files. These changes go into supported writable image files or XMP sidecars. Memory-card originals do not receive metadata edits; changes made while reviewing a card are applied to the copies during import. Source files are deleted only when you explicitly request deletion after verified copying.</p>
 <p><strong>Local photo analysis.</strong> Apple’s Vision framework finds faces and other subjects for close-ups, similarity grouping, and culling suggestions. Ingest caches feature prints, face and subject regions, and assessment results on your Mac. User corrections persist locally. No names or identities are assigned, and no analysis or photograph is sent to a server for these features. Suggestions change no decisions until you apply them.</p>
 </section>
 
 <section id="apple-photos">
 <h2>Apple Photos and iCloud</h2>
-<p>Apple Photos integration is on by default and can be turned off in Settings → General. Enabling the feature does not itself request library access. Connecting or sending photos requests native Photos read/write permission for your System Photo Library. You can revoke it in macOS System Settings → Privacy &amp; Security → Photos.</p>
+<p>In 0.8.5, Apple Photos integration is on by default and can be turned off for the app in Settings → General. Workspace-specific control is planned. Enabling the feature does not itself request library access. Connecting or sending photos requests native Photos read/write permission for your System Photo Library. You can revoke it in macOS System Settings → Privacy &amp; Security → Photos.</p>
 <p>Ingest uses Apple’s PhotoKit framework to read your photos and albums and apply the changes you request. Cloud-only images, video, or Live Photos may be downloaded by Apple Photos. Imports, favorite and metadata changes, album organization, and library deletions follow your Photos and iCloud settings and may sync to your other devices. Ingest does not upload your library to a server operated by me.</p>
 <p>Ingest stores Photos object references, local tags, rejection, protection, color labels, review marks, grouping recipes, and import receipts on your Mac. On systems before macOS 27, Photos star ratings are stored locally as well. Social Export keeps durable local copies of the rendered Photos images you import into a project; clearing thumbnails does not remove those project inputs. Sending files to Photos stages local copies and retains import receipts so confirmed imports can be reused.</p>
 <p>Turning integration off hides its controls and stops library observation. It preserves your saved Ingest state, does not revoke the macOS permission, and does not remove photos or undo changes already made in Photos.</p>
@@ -97,7 +97,7 @@
 <a href="/ingest/quick-start/">Quick start</a>
 <a href="/ingest/guide/">Guide</a>
 <a href="/ingest/shortcuts/">Shortcuts</a>
-<a href="/ingest/templates/">Templates</a>
+<a href="/ingest/templates/">Naming &amp; metadata</a>
 <a href="/ingest/automation/">Automation</a>
 <a href="/ingest/release-notes/">Release notes</a>
 <a href="/ingest/support/">Support</a>

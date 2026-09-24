@@ -119,9 +119,9 @@ Approved with Brian on September 11, 2026.
 
 **Audience and priorities:** Photographers doing personal and professional work. Lead with workspaces that change views, sorting, favorites, visible tools, and file workflows; follow with the Command Palette. Speed supports the story. Describe fast RAW viewing in the review-tools section rather than positioning the app as a RAW viewer. Do not claim fastest performance, universal format support, exclusivity, or blanket feature parity.
 
-**Workspaces:** Show Personal (original names, dated folders, second copy), Brian’s Real Estate template (address-based filenames and originals/autohdr/final_exports), Wedding Photography, and Landscape / Wildlife. These are example configurations, not four claimed built-in presets. Customization is optional. Apple Photos integration is a global setting; Social Export visibility and sidebars can be configured per workspace.
+**Workspaces:** Show Personal (original names, dated folders, second copy), Brian’s Real Estate template (address-based filenames and originals/autohdr/final_exports), Wedding Photography, and Landscape / Wildlife. These are example configurations, not four claimed built-in presets. Customization is optional. In 0.8.5, Apple Photos integration is a global setting; workspace-specific control is planned. Social Export visibility and sidebars can already be configured per workspace.
 
-**Command Palette:** ⌘K finds commands, workspaces, and favorites; Find Folder searches folders on the Mac and connected drives. Demonstrate folders, workspaces, sidebar controls, and Crop & Straighten. Explain customizable shortcuts without making memorization a prerequisite. It is not a terminal or natural-language AI interface.
+**Command Palette:** ⌘K finds commands, workspaces, and favorites; Find Folder searches folders on the Mac and connected drives. Lead with “If you can do it in Ingest, you can find it with ⌘K.” Demonstrate the full range of actions, workspace switching, folders, and sidebar controls; keep Crop & Straighten in detailed documentation. Explain customizable shortcuts without making memorization a prerequisite. It is not a terminal or natural-language AI interface.
 
 **AI assistance:** Local eye and sharpness assessments, scene analysis, and suggested keepers are optional. Photographers review and apply suggestions; opening keeper review does not tag photographs. Supersedes the earlier no-automatic-culling positioning. Do not extend this to a claim of autonomous editing or rejection.
 
@@ -134,6 +134,8 @@ Approved with Brian on September 11, 2026.
 **Availability:** Working beta, free during beta, no account required. macOS 15+, Apple silicon. Use verified 0.8.5 download. File-format specifics live on Support; do not promise all RAW files work. Native Photos metadata features that require newer macOS versions remain qualified in the guide.
 
 **Safety and privacy:** Describe verified copies precisely, without loss guarantees. A backup destination is a second copy, not a comprehensive backup service. Card deletion requires an explicit request after verified copying. Photo analysis is local; optional Apple Photos follows iCloud settings. Scripts run with the user’s permissions, as explained on the automation and privacy pages.
+
+**Mac identity:** “Unapologetically Mac.” Brian is an Apple enthusiast and photographer who built Ingest from the ground up for the Mac. Support this with the native interface, keyboard shortcuts, and Command Palette; keep this personal statement in the developer story rather than repeating it throughout reference instructions.
 
 **Portfolio:** “From personal to professional.” Support with import, cull, browse, organize, workspaces, and ⌘K.
 
