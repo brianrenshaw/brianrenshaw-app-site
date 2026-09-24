@@ -49,7 +49,8 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
-| 0.8.4 | 26 | September 24, 2026 | Quiet dark surfaces, folder search in the palette, metadata facets, per-workspace sidebar controls, and direct Organize entry. |
+| 0.8.5 | 27 | September 24, 2026 | Includes 0.8.4 refinements and fixes blocked folder-watch setup during restored-session launch. |
+| 0.8.4 | 26 | September 24, 2026 | Withdrawn: startup stall with slow folder providers. Quiet dark surfaces, folder search in the palette, metadata facets, per-workspace sidebar controls, and direct Organize entry. |
 | 0.8.3 | 25 | September 24, 2026 | Burst stacks, optional scene sections, persistent scene corrections, and review through the existing views. |
 | 0.8.2 | 24 | September 24, 2026 | Review and protection, grid loupe, Select/Candidate and whole-stack Survey, visual keeper suggestions, crop and metadata editing, source tools, and ingest safety. |
 | 0.8.1 | 23 | September 23, 2026 | Vision culling assists (similar stacks, faces, Soft), Workspaces with per-tab settings, Compare as one mode with drag-to-pan, a one-list sidebar, the histogram counted from the preview, a redesigned Camera Details card, and budgets for 16 GB Macs. |
