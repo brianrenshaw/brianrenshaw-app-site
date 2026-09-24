@@ -82,6 +82,10 @@
     {
       "id": "ingest-full-site-bright-docs",
       "decision": "Extend the approved bright Ingest design to every supporting page. Shared light tokens, full documentation navigation, current 0.8.5 captures and workflow instructions. Command Palette is access to all app actions, not just four examples. Preserve all route and section contracts."
+    },
+    {
+      "id": "ingest-five-step-getting-started",
+      "decision": "Five practical steps with genuine demo screenshots and a persistent emphasis on Command-K. Reuse the bright documentation primitives, keep old quick-start URLs and anchors, and link to workspaces, shortcuts and automation."
     }
   ],
   "evidence": [
@@ -100,6 +104,10 @@
     {
       "source": "Ingest 0.8.5 signed app and public Unsplash demo library",
       "note": "21st catalog search returned HTTP 401. Reused existing static site primitives; no framework or catalog dependency added."
+    },
+    {
+      "source": "Native command catalog, walkthrough and existing Ingest 0.8.5 screenshots",
+      "note": "21st search for getting started product guide step by step screenshots returned HTTP 401; reused existing project components."
     }
   ],
   "generatedAt": "2026-09-08T20:40:52.027Z"

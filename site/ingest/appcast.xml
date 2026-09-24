@@ -3,6 +3,16 @@
     <channel>
         <title>Ingest</title>
         <item>
+            <title>0.8.6</title>
+            <pubDate>Thu, 24 Sep 2026 19:33:01 -0400</pubDate>
+            <sparkle:version>28</sparkle:version>
+            <sparkle:shortVersionString>0.8.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.8.6/Ingest-0.8.6.dmg" length="25266025" type="application/octet-stream" sparkle:edSignature="nwOlVLI84URngVENLRWFeHbz6V65v3HZ79V43pQpIrDDad/HGU4UN3pSWlGm6pLUwCUkuAExmAfTw9uf9RlXCQ==" />
+            <sparkle:releaseNotesLink>https://brianrenshaw.app/ingest/release-notes/#v0.8.6</sparkle:releaseNotesLink>
+        </item>
+        <item>
             <title>0.8.5</title>
             <pubDate>Thu, 24 Sep 2026 16:22:56 -0400</pubDate>
             <sparkle:version>27</sparkle:version>
@@ -21,16 +31,6 @@
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.8.3/Ingest-0.8.3.dmg" length="21674014" type="application/octet-stream" sparkle:edSignature="47/oxNFYZR/+/faqyiil5KagT0+6a6E2u1Giv3Hrq4Ylt0D2tXtRFe43QB7vbAlNoGueGkxYp6OBVNxDEOSlCA==" />
             <sparkle:releaseNotesLink>https://brianrenshaw.app/ingest/release-notes/#v0.8.3</sparkle:releaseNotesLink>
-        </item>
-        <item>
-            <title>0.8.2</title>
-            <pubDate>Thu, 24 Sep 2026 06:29:11 -0400</pubDate>
-            <sparkle:version>24</sparkle:version>
-            <sparkle:shortVersionString>0.8.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.8.2/Ingest-0.8.2.dmg" length="21539770" type="application/octet-stream" sparkle:edSignature="aW4quOwPhN054yAm1kb24Vv04x5qAx5vkXg7h/9Azb+iLZAOCe/hJASX/iO9xP53KAh09S1fimvn52K1k6a2DQ==" />
-            <sparkle:releaseNotesLink>https://brianrenshaw.app/ingest/release-notes/#v0.8.2</sparkle:releaseNotesLink>
         </item>
     </channel>
 </rss>

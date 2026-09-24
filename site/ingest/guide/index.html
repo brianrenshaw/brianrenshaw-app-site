@@ -19,8 +19,8 @@
 </head>
 <body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.8.5/Ingest-0.8.5.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
-<nav class="docs-nav" aria-label="Ingest documentation"><a href="/ingest/quick-start/">Quick start</a><a href="/ingest/guide/" aria-current="page">Guide</a><a href="/ingest/shortcuts/">Shortcuts</a><a href="/ingest/templates/">Naming & metadata</a><a href="/ingest/automation/">Automation</a><a href="/ingest/support/">Support</a><a href="/ingest/release-notes/">Release notes</a><a href="/ingest/privacy/">Privacy</a></nav>
+<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.8.6/Ingest-0.8.6.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
+<nav class="docs-nav" aria-label="Ingest documentation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/" aria-current="page">Guide</a><a href="/ingest/shortcuts/">Shortcuts</a><a href="/ingest/templates/">Naming & metadata</a><a href="/ingest/automation/">Automation</a><a href="/ingest/support/">Support</a><a href="/ingest/release-notes/">Release notes</a><a href="/ingest/privacy/">Privacy</a></nav>
 <main id="main" tabindex="-1" class="family-document reference">
 <p class="eyebrow">Ingest / The guide</p>
 <h1>Your photos, from import to export.</h1>
@@ -55,7 +55,7 @@
 
 <section id="sources" class="guide-section">
 <h2>Cards and folders</h2>
-<p>Put a card in and it appears in the sources list. Automatic opening is controlled in Settings → General. Press <kbd>⌘O</kbd> to open a folder instead. Available previews load progressively while Ingest reads the source.</p>
+<p>Put a card in and it appears in the sources list. A newly inserted camera card opens in Ingest when Settings → Transfers → Open a card when it is inserted is on. Cards connected before launch remain available in the sidebar. Press <kbd>⌘O</kbd> to open a folder instead. Available previews load progressively while Ingest reads the source.</p>
 <p>Click the sidebar magnifier, press <kbd>⇧⌘F</kbd>, or choose <strong>Find Folder</strong> in <kbd>⌘K</kbd> to search folder names in a roomy palette. Results include parent paths; Escape closes the palette without changing the tree. Current, recent, and favorite folders appear immediately, with other results supplied by Spotlight.</p>
 <p>The sidebar keeps your Mac’s folder tree in place. Selecting a folder opens it immediately. Favorites, Recent, and Saved Views have collapsible sections. <kbd>⌘D</kbd> adds the current folder to Favorites. Show photos in subfolders is visible beside the folder name and defaults off; when enabled, selecting a photo identifies its containing folder. Finder’s Open With Ingest opens the photo’s folder and selects it.</p>
 <p><kbd>⌘[</kbd> and <kbd>⌘]</kbd> go back and forward through what you have opened, like a browser, so switching to the card and back to yesterday's folder costs one keystroke.</p>
@@ -66,14 +66,14 @@
 <section id="apple-photos" class="guide-section">
 <h2>Apple Photos, inside Ingest</h2>
 <p>Choose <strong>Apple Photos</strong> in the source sidebar and connect to your System Photo Library. Ingest requests Photos read/write access when you connect or send photos, not simply when it launches. It uses the library designated as the System Photo Library in Photos; it does not open an arbitrary library file.</p>
-<p>Integration is on by default. Turn off <strong>Settings → General → Apple Photos integration</strong> to hide the Photos source, commands, send controls, and Photos actions. Your saved Photos review state and recipes remain available if you turn it back on. Finish an active Photos operation or import review before disabling it.</p>
+<p>Integration is on by default. Turn off <strong>Settings → General → Apple Photos integration</strong> to hide the Photos source, commands, send controls, and Photos actions. You can also disable it for individual workspaces in Settings → Workspaces. A workspace can use Photos only when the global switch is on. Your saved Photos review state and recipes remain available if you turn it back on. Finish an active Photos operation or import review before disabling it.</p>
 <p>Use Library, Favorites, or an ordinary album to browse. <strong>Find albums</strong> narrows the sidebar while keeping matching folders and their parents. Search photos by filename, caption, or keywords; caption and keyword search requires macOS 27. <strong>Unfiled</strong> shows photos outside ordinary albums. <strong>Unreviewed</strong> tracks what you have reviewed in Ingest, independently of album membership.</p>
 <p>The first search across a large library can take time as Photos supplies filenames and keywords. Your current photos stay visible while results are prepared.</p>
 <h3>Review and file a selection</h3>
 <p>Apple Photos uses the same browsing layout as files and folders. Choose Grid, Preview, or Split from the photo controls, or press <kbd>⌘1</kbd>, <kbd>⌘2</kbd>, or <kbd>⌘3</kbd>. Preview includes a selection filmstrip; Split keeps the grid beside the preview. <kbd>Space</kbd> opens Preview and returns to the previous layout.</p>
 <p>Click once to select a photo, use the arrow keys to move through the current view, and use Command-click or Shift-click to select several photos. Available image detail appears progressively; recently viewed previews are reused.</p>
 <p>Photos stored on your Mac work without internet. If an older photo’s larger image is only in iCloud, Apple Photos must download it; a local thumbnail may appear first. That wait depends on your internet connection and Photos, not Ingest. For offline viewing, choose <strong>Download Originals to this Mac</strong> in Photos → Settings → iCloud and let syncing finish. This uses more storage. The info button beside the album title and Ingest Settings → General explain this limitation in the app.</p>
-<p>The inspector shows basic photo information first, then loads expanded Histogram and Camera Details sections as needed. On connection, you can begin browsing while Ingest prepares your albums. Unfiled and album organization become available when that preparation finishes.</p>
+<p>The inspector shows basic photo information first, then loads expanded Histogram and Camera Details sections as needed. Opening Photos does not automatically start whole-library image analysis; choose Analyze Review Photos when you want it. On connection, you can begin browsing while Ingest prepares your albums. Unfiled and album organization become available when that preparation finishes.</p>
 <p>Use the toolbar’s Sources and Inspector buttons, <kbd>⌥⌘S</kbd> and <kbd>⌘I</kbd>, to show or hide the sidebars. The right-hand inspector follows Settings → Sidebar information and includes tags, ratings, color labels, favorites, Photo Info, and album/review actions. Its histogram measures the current rendered Photos image. Choose a photo to see its information; widen the window if the shared layout has collapsed a pane to make room.</p>
 <p>Select photos, then press <kbd>G</kbd> to add them to one or more albums. Press <kbd>R</kbd> to mark them reviewed, <kbd>⇧R</kbd> to mark and advance, <kbd>F</kbd> to toggle favorite, or <kbd>Space</kbd> to preview. Ingest tags, color labels, and reviewed marks stay local. Favorites are native Photos changes.</p>
 <p>Create albums and folders with the plus menu. Use a collection’s context menu to rename or move it. Within an editable album, <kbd>⌥⌘←</kbd> and <kbd>⌥⌘→</kbd> move selected photos earlier or later. Pressing Delete removes photos from that album only. <strong>Delete from Library…</strong> is a separate action with confirmation; it removes photos from every album and follows Photos’ Recently Deleted and iCloud behavior.</p>
@@ -355,7 +355,7 @@
 <span>© 2026 Brian Renshaw</span>
 <nav aria-label="Footer">
 <a href="/">← Brian’s homepage</a>
-<a href="/ingest/quick-start/">Quick start</a>
+<a href="/ingest/getting-started/">Getting started</a>
 <a href="/ingest/shortcuts/">Shortcuts</a>
 <a href="/ingest/templates/">Naming &amp; metadata</a>
 <a href="/ingest/automation/">Automation</a>

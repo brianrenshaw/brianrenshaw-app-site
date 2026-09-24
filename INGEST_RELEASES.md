@@ -49,6 +49,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.8.6 | 28 | September 24, 2026 | Screenshot walkthrough on first launch, Getting Started guide, workspace Photos switches, and large-library Photos performance fixes. |
 | 0.8.5 | 27 | September 24, 2026 | Includes 0.8.4 refinements and fixes blocked folder-watch setup during restored-session launch. |
 | 0.8.4 | 26 | September 24, 2026 | Withdrawn: startup stall with slow folder providers. Quiet dark surfaces, folder search in the palette, metadata facets, per-workspace sidebar controls, and direct Organize entry. |
 | 0.8.3 | 25 | September 24, 2026 | Burst stacks, optional scene sections, persistent scene corrections, and review through the existing views. |
