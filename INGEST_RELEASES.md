@@ -49,6 +49,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.8.3 | 25 | September 24, 2026 | Burst stacks, optional scene sections, persistent scene corrections, and review through the existing views. |
 | 0.8.2 | 24 | September 24, 2026 | Review and protection, grid loupe, Select/Candidate and whole-stack Survey, visual keeper suggestions, crop and metadata editing, source tools, and ingest safety. |
 | 0.8.1 | 23 | September 23, 2026 | Vision culling assists (similar stacks, faces, Soft), Workspaces with per-tab settings, Compare as one mode with drag-to-pan, a one-list sidebar, the histogram counted from the preview, a redesigned Camera Details card, and budgets for 16 GB Macs. |
 | 0.8.0 | 22 | September 22, 2026 | Apple Photos as a source inside Browse, a rebuilt photo bar with sortable order and a filter panel, the Ingest tab with routed destinations, the keyword manager, and new typography. |

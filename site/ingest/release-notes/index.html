@@ -33,10 +33,24 @@
 <p class="eyebrow">Ingest / Release notes</p>
 <h1>A record of what’s new.</h1>
 <p>What changed in each version. Ingest can check for updates itself, from the Ingest menu, and automatic checking is off until you turn it on.</p>
-<nav class="release-index" aria-label="Versions"><a href="/ingest/release-notes/#v0.8.2">0.8.2 · Latest</a><a href="/ingest/release-notes/#v0.8.1">0.8.1</a><a href="/ingest/release-notes/#v0.8.0">0.8.0</a><a href="/ingest/release-notes/#v0.7.8">0.7.8</a><a href="/ingest/release-notes/#v0.7.7">0.7.7</a><a href="/ingest/release-notes/#v0.7.6">0.7.6</a><a href="/ingest/release-notes/#v0.7.5">0.7.5</a><a href="/ingest/release-notes/#v0.7.4">0.7.4</a><a href="/ingest/release-notes/#v0.7.3">0.7.3</a><a href="/ingest/release-notes/#v0.7.2">0.7.2</a><a href="/ingest/release-notes/#v0.7.1">0.7.1</a><a href="/ingest/release-notes/#v0.7.0">0.7.0</a><a href="/ingest/release-notes/#v0.6.0">0.6.0</a><a href="/ingest/release-notes/#v0.5.0">0.5.0</a><a href="/ingest/release-notes/#v0.4.1">0.4.1</a><a href="/ingest/release-notes/#v0.4.0">0.4.0</a><a href="/ingest/release-notes/#v0.3.1">0.3.1</a><a href="/ingest/release-notes/#v0.3.0">0.3.0</a><a href="/ingest/release-notes/#v0.2.1">0.2.1</a><a href="/ingest/release-notes/#v0.2.0">0.2.0</a><a href="/ingest/release-notes/#v0.1.0">0.1.0</a></nav>
+<nav class="release-index" aria-label="Versions"><a href="/ingest/release-notes/#v0.8.3">0.8.3 · Latest</a><a href="/ingest/release-notes/#v0.8.2">0.8.2</a><a href="/ingest/release-notes/#v0.8.1">0.8.1</a><a href="/ingest/release-notes/#v0.8.0">0.8.0</a><a href="/ingest/release-notes/#v0.7.8">0.7.8</a><a href="/ingest/release-notes/#v0.7.7">0.7.7</a><a href="/ingest/release-notes/#v0.7.6">0.7.6</a><a href="/ingest/release-notes/#v0.7.5">0.7.5</a><a href="/ingest/release-notes/#v0.7.4">0.7.4</a><a href="/ingest/release-notes/#v0.7.3">0.7.3</a><a href="/ingest/release-notes/#v0.7.2">0.7.2</a><a href="/ingest/release-notes/#v0.7.1">0.7.1</a><a href="/ingest/release-notes/#v0.7.0">0.7.0</a><a href="/ingest/release-notes/#v0.6.0">0.6.0</a><a href="/ingest/release-notes/#v0.5.0">0.5.0</a><a href="/ingest/release-notes/#v0.4.1">0.4.1</a><a href="/ingest/release-notes/#v0.4.0">0.4.0</a><a href="/ingest/release-notes/#v0.3.1">0.3.1</a><a href="/ingest/release-notes/#v0.3.0">0.3.0</a><a href="/ingest/release-notes/#v0.2.1">0.2.1</a><a href="/ingest/release-notes/#v0.2.0">0.2.0</a><a href="/ingest/release-notes/#v0.1.0">0.1.0</a></nav>
+
+<article class="release-entry" id="v0.8.3">
+<p class="eyebrow">Latest · September 24, 2026</p>
+<h2>0.8.3</h2>
+<h3>Burst stacks and scene grouping</h3>
+<ul>
+<li>Burst stacks keep capture sequences intact using recorded burst identifiers, supported Sony sequence metadata, or conservative timing inference. Framing changes no longer split recorded bursts, and the 30-frame limit is gone.</li>
+<li>Optional scenes organize related photos within the same shooting day, including later revisits. Scenes can contain intact bursts and exposure stacks. Uncertain matches stay separate.</li>
+<li>Group by Burst defaults on; Group by Scene defaults off. Set them independently in Sort or save them with a workspace. Exposure stacking remains separate.</li>
+<li>Double-click a burst for its whole-frame Survey. Previous/Next Burst appears while inspecting it. Review Scene scopes the existing browser with a removable filter. The separate Review Similar Photos screen is retired; Compare keeps Select/Candidate navigation.</li>
+<li>Create, combine, move, and name scenes with a photo-count preview, persistent local corrections, and Undo. These actions do not merge images, rename files, or change decisions.</li>
+</ul>
+<p>Scene matching is deliberately conservative. Use Combine Scenes when related compositions remain separate. <a href="/ingest/guide/#stacks">Read the guide.</a></p>
+</article>
 
 <article class="release-entry" id="v0.8.2">
-<p class="eyebrow">Latest · September 24, 2026</p>
+<p class="eyebrow">September 24, 2026</p>
 <h2>0.8.2</h2>
 <h3>Culling, inspection, and ingest</h3>
 <ul>
