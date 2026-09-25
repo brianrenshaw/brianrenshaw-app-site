@@ -238,3 +238,14 @@ Portfolio display filenames use a curated sequence; the category collections ret
 - `070-12-Cafe.jpg` → `12-Cafe.jpg`
 - `071-12-Wedding.jpg` → `12-Wedding.jpg`
 - `072-12-Wildlife.jpg` → `12-Wildlife.jpg`
+
+
+## Ingest 0.9.2 (32) — complete documentation refresh
+
+All active documentation screenshots now use the same signed and notarized build 32 as the homepage. The eleven additional native window captures are workspace-personal, workspace-real-estate, workspace-wedding, workspace-wildlife, organize, command-crop, command-workspaces, social-workspace, copy-metadata, paste-metadata, and shoot-details (each suffixed -0.9.2-retina.webp). All are 2428 × 1622, captured without cursor, shadow, desktop, menu bar, or sharing overlays. Lossless WebP decoding matches each original PNG pixel for pixel. No fades, resizing, or compositing were applied. The old documentation and source-view assets are archived and no longer linked by HTML.
+
+The photos reuse the 72-image public collection credited above. Wedding Preview includes the app’s face close-ups. Social Export shows the actual app canvas with a white border and solid-color background; no export was performed. The EOS R5 source remains a disposable disk image. Personal shows an illustrative fixed date folder, 2026-09-20, since the downloaded photos do not carry their original capture dates. Destination folders are disposable local paths, not separate physical backup devices.
+
+For Organize, category keywords were added only to disposable copies of the 72 photographs in Photo Archive, producing six groups of twelve and a group/sequence filename preview. No organize operation was applied. Copy/Paste Metadata was exercised only on the twelve disposable wedding copies; the final shared caption is “Moments from a wedding celebration.” with wedding and celebration keywords. The import shoot-details capture stages illustrative text only and was canceled. Photographic pixels were not changed by these metadata fixtures.
+
+Real Estate uses two previously credited public interiors by Francesca Tosolini: [living room](https://unsplash.com/photos/living-room-interior-6japTIjUQoI) and [fireplace](https://unsplash.com/photos/a-living-room-filled-with-furniture-and-a-fire-place-4TlrOY2IyUA). Each image has three disposable copies with synthetic camera, timestamp, shutter-speed, and −2/0/+2 exposure metadata so the real app displays two bracket stacks. They are not genuine bracket exposures. The selected 123 Maple Ln address is an illustrative naming example and does not identify the photographed property. No import was performed.
