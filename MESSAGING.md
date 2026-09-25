@@ -127,7 +127,7 @@ Approved with Brian on September 11, 2026.
 
 **AI assistance:** Soft focus, closed eyes, near-duplicates, suggested keepers — optional, on-device, nothing tagged until the photographer applies. Distinct from Metadata Assist. Do not lead the page with AI culling.
 
-**Scope:** Import, cull, browse, and organize are useful independently. Existing folders and finished exports are first-class. IPTC, crop, compare, stacks, optional Apple Photos, and Social Export stay supporting — not hero inventory.
+**Scope:** Import, cull, browse, and organize are useful independently. Existing folders and finished exports are first-class. Table-stakes review tools (loupe, compare, faces, RAW histogram, crop, stacks, ratings) get a short mid/late-page “also the basics” list — not the hero. IPTC, optional Apple Photos, and Social Export stay supporting.
 
 **Visual direction:** Bright neutral product page, genuine app-window screenshots (no desktop or screen-share chrome). Prefer ~2400×1600 retina captures for full-window homepage shots. Keep URLs, section anchors, and the Sparkle feed.
 
