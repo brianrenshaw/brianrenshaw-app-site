@@ -109,35 +109,35 @@ Approved with Brian on September 11, 2026.
 
 **Scope:** This copy describes the linked site at https://www.whatdidtheyread.com/. Its templates, copy, and publishing live in the sibling `blog-explorer` repository under `blogs/whatdidtheyread/`.
 
-## Ingest (September 24, 2026 — current positioning)
+## Ingest (September 25, 2026 — current positioning)
 
-**Identity:** A photo management and workflow app for the Mac.
+**Identity:** A keyboard-first Mac photo workflow app: ingest, cull, browse, organize.
 
-**Headline:** From personal to professional.
+**Headline (exact):** Ingest. Cull. Browse. Organize.
 
-**Supporting copy:** Import, cull, browse, and organize your photos in one fast Mac app. Jump right in, or create workspaces that fit the way you shoot.
+**Supporting copy:** Open a card or a folder. Cull and browse with the keyboard. Organize when you’re ready — in one modern Mac app.
 
-**Audience and priorities:** Photographers doing personal and professional work. Lead with workspaces that change views, sorting, favorites, visible tools, and file workflows; follow with the Command Palette. Speed supports the story. Describe fast RAW viewing in the review-tools section rather than positioning the app as a RAW viewer. Do not claim fastest performance, universal format support, exclusivity, or blanket feature parity.
+**Audience and priorities:** Photographers doing personal and professional work. One homepage for both. Primary differentiators, in visual weight: Workspaces, card-to-folders (verified copies), Command Palette (⌘K), Metadata Assist. Speed supports the story; do not claim fastest performance, universal format support, exclusivity, or blanket feature parity. Keep AI / Suggest keepers mid-page and Social Export low / personal-side. Never use “AI-first” or “AI on call.”
 
-**Workspaces:** Show Personal (original names, dated folders, second copy), Brian’s Real Estate template (address-based filenames and originals/autohdr/final_exports), Wedding Photography, and Landscape / Wildlife. These are example configurations, not four claimed built-in presets. Customization is optional. In 0.8.5, Apple Photos integration is a global setting; workspace-specific control is planned. Social Export visibility and sidebars can already be configured per workspace.
+**Workspaces:** Full shoot setup, not metadata-only presets — naming, folders, templates, delivery folders, Apple Photos and Social Export toggles, starting view, grouping. Example shoots (Personal, Real Estate, Wedding, Wildlife) are configurations, not four claimed built-in presets.
 
-**Command Palette:** ⌘K finds commands, workspaces, and favorites; Find Folder searches folders on the Mac and connected drives. Lead with “If you can do it in Ingest, you can find it with ⌘K.” Demonstrate the full range of actions, workspace switching, folders, and sidebar controls; keep Crop & Straighten in detailed documentation. Explain customizable shortcuts without making memorization a prerequisite. It is not a terminal or natural-language AI interface.
+**Command Palette:** ⌘K is the safety net and teacher. Search an action, view, or mode; the shortcut appears beside it. Not a terminal or natural-language AI interface.
 
-**AI assistance:** Local eye and sharpness assessments, scene analysis, and suggested keepers are optional. Photographers review and apply suggestions; opening keeper review does not tag photographs. Supersedes the earlier no-automatic-culling positioning. Do not extend this to a claim of autonomous editing or rejection.
+**Metadata Assist:** Structured editor, not an AI writer. Type `;` to see field options (a fragment like `;lo` only narrows); Tab, fill or search; review before apply. Typing alone writes nothing. Copy/Paste Metadata with ⇧⌘C / ⇧⌘V (field groups, remembered per workspace). Keep `;` for metadata fields distinct from `{…}` rename and folder template variables. Quick Entry (`Q`) remains the older one-line syntax inside the same reviewed editor.
 
-**Scope:** Import, cull, browse, and organize are useful independently. Existing folders and finished exports are first-class uses. Include IPTC metadata, crop, comparison, scenes, bursts, exposure stacks, optional Apple Photos, and Social Export without a long technical inventory in the hero.
+**AI assistance:** Soft focus, closed eyes, near-duplicates, suggested keepers — optional, on-device, nothing tagged until the photographer applies. Distinct from Metadata Assist. Do not lead the page with AI culling.
 
-**Visual direction:** Bright neutral product page, readable system typography, restrained amber, and genuine screenshots of signed Ingest 0.8.5. Native dark UI remains unchanged inside the screenshots. Interactive workspace and command tours; all content remains readable without JavaScript. Keep current URLs, section anchors, and the permanent Sparkle feed.
+**Scope:** Import, cull, browse, and organize are useful independently. Existing folders and finished exports are first-class. IPTC, crop, compare, stacks, optional Apple Photos, and Social Export stay supporting — not hero inventory.
 
-**Photography:** Unsplash demonstration collections with credits in assets/SOURCES.md, plus the licensed CC0 Canon RAW sample for RAW-specific demonstrations. Never use personal or client photographs. Capture in an isolated app library at native Retina resolution, encode lossless WebP, and preserve exact pixels.
+**Visual direction:** Bright neutral product page, genuine app-window screenshots (no desktop or screen-share chrome). Prefer ~2400×1600 retina captures for full-window homepage shots. Keep URLs, section anchors, and the Sparkle feed.
 
-**Availability:** Working beta, free during beta, no account required. macOS 15+, Apple silicon. Use verified 0.8.5 download. File-format specifics live on Support; do not promise all RAW files work. Native Photos metadata features that require newer macOS versions remain qualified in the guide.
+**Photography:** Public / demo photographs only. Never use personal or client work. Credits in assets/SOURCES.md where applicable.
 
-**Safety and privacy:** Describe verified copies precisely, without loss guarantees. A backup destination is a second copy, not a comprehensive backup service. Card deletion requires an explicit request after verified copying. Photo analysis is local; optional Apple Photos follows iCloud settings. Scripts run with the user’s permissions, as explained on the automation and privacy pages.
+**Availability:** Working beta, free during beta, no account. macOS 15+, Apple silicon. Current download and badges: 0.9.1. File-format specifics live on Support.
 
-**Mac identity:** “Unapologetically Mac.” Brian is an Apple enthusiast and photographer who built Ingest from the ground up for the Mac. Support this with the native interface, keyboard shortcuts, and Command Palette; keep this personal statement in the developer story rather than repeating it throughout reference instructions.
+**Safety and privacy:** Verified copies; card untouched by default; cleanup is a separate explicit choice. Photo analysis is local; optional Apple Photos follows iCloud settings.
 
-**Portfolio:** “From personal to professional.” Support with import, cull, browse, organize, workspaces, and ⌘K.
+**Mac identity:** “Unapologetically Mac.” Brian is an Apple enthusiast and photographer who built Ingest for this machine. Keep that voice in the developer story.
 
 Earlier implementation records below are historical. This section supersedes their conflicting positioning or visual choices.
 
