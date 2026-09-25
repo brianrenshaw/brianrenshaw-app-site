@@ -1,5 +1,5 @@
 {
-  "capture": "Native Retina window captures from signed Ingest 0.9.0 (29), with still-relevant 0.8.5 documentation captures retained. Historical captures keep their URLs under archivedImages. See SOURCES.md for licenses and provenance.",
+  "capture": "Homepage: signed and notarized Ingest 0.9.2 (32), native 2\u00d7 Retina window captures with 72 distinct public Unsplash photographs. Documentation retains separately credited historical and source-view captures. See SOURCES.md.",
   "images": {
     "palette-0.8.5-retina.webp": {
       "width": 2882,
@@ -57,41 +57,6 @@
       "displayHeight": 795,
       "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
     },
-    "assistance-0.8.5-retina.webp": {
-      "width": 2882,
-      "height": 1590,
-      "displayWidth": 1441,
-      "displayHeight": 795,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
-    },
-    "browse-0.9.0-retina.webp": {
-      "width": 2402,
-      "height": 1646,
-      "displayWidth": 1201,
-      "displayHeight": 823,
-      "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
-    },
-    "ingest-0.9.0-retina.webp": {
-      "width": 2402,
-      "height": 1646,
-      "displayWidth": 1201,
-      "displayHeight": 823,
-      "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
-    },
-    "palette-0.9.0-retina.webp": {
-      "width": 2402,
-      "height": 1646,
-      "displayWidth": 1201,
-      "displayHeight": 823,
-      "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
-    },
-    "metadata-assist-0.9.0-retina.webp": {
-      "width": 2402,
-      "height": 1646,
-      "displayWidth": 1201,
-      "displayHeight": 823,
-      "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
-    },
     "walkthrough-ingest-0.9.2.webp": {
       "width": 2400,
       "height": 1600,
@@ -112,6 +77,48 @@
       "displayWidth": 1000,
       "displayHeight": 1400,
       "source": "Ingest 0.9.2 source 9a36b07, native SwiftUI view rendered at 2x in isolated demo library; Light appearance. Lossless WebP, no visual edits. See SOURCES.md."
+    },
+    "browse-0.9.2-retina.webp": {
+      "width": 2428,
+      "height": 1622,
+      "displayWidth": 1214,
+      "displayHeight": 811,
+      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md."
+    },
+    "workspaces-0.9.2-retina.webp": {
+      "width": 1960,
+      "height": 2002,
+      "displayWidth": 980,
+      "displayHeight": 1001,
+      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md."
+    },
+    "ingest-0.9.2-retina.webp": {
+      "width": 2428,
+      "height": 1622,
+      "displayWidth": 1214,
+      "displayHeight": 811,
+      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md."
+    },
+    "palette-0.9.2-retina.webp": {
+      "width": 2428,
+      "height": 1622,
+      "displayWidth": 1214,
+      "displayHeight": 811,
+      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md."
+    },
+    "metadata-assist-0.9.2-retina.webp": {
+      "width": 2428,
+      "height": 1622,
+      "displayWidth": 1214,
+      "displayHeight": 811,
+      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md."
+    },
+    "assistance-0.9.2-retina.webp": {
+      "width": 2428,
+      "height": 1622,
+      "displayWidth": 1214,
+      "displayHeight": 811,
+      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md."
     }
   },
   "archivedImages": {
@@ -237,6 +244,41 @@
       "height": 1400,
       "displayWidth": 980,
       "displayHeight": 700,
+      "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
+    },
+    "assistance-0.8.5-retina.webp": {
+      "width": 2882,
+      "height": 1590,
+      "displayWidth": 1441,
+      "displayHeight": 795,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "browse-0.9.0-retina.webp": {
+      "width": 2402,
+      "height": 1646,
+      "displayWidth": 1201,
+      "displayHeight": 823,
+      "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
+    },
+    "ingest-0.9.0-retina.webp": {
+      "width": 2402,
+      "height": 1646,
+      "displayWidth": 1201,
+      "displayHeight": 823,
+      "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
+    },
+    "palette-0.9.0-retina.webp": {
+      "width": 2402,
+      "height": 1646,
+      "displayWidth": 1201,
+      "displayHeight": 823,
+      "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
+    },
+    "metadata-assist-0.9.0-retina.webp": {
+      "width": 2402,
+      "height": 1646,
+      "displayWidth": 1201,
+      "displayHeight": 823,
       "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
     }
   }
