@@ -65,3 +65,18 @@ Workspaces are example configurations. The real estate example preserves Brian�
 Backup destinations are disposable directories demonstrating the configuration, not independent physical backup media. No real ingest or organization operation was run for these previews. Apple Photos was disabled in the isolated library; the page correctly describes its integration as a global setting, separately from workspace-specific Social Export visibility. No personal photo library or client imagery is included.
 
 The site-wide documentation refresh uses the same signed 0.8.5 capture set. Older captures have been removed from active pages and retained at their existing URLs, with dimensions in `archivedImages` in the manifest. Their image integrity remains checked; active pages may only reference current captures.
+
+## Ingest 0.9.0 focused captures — September 25, 2026
+
+Five native Retina window captures from the signed, notarized 0.9.0 (29) release: `browse`, `workspaces`, `ingest`, `palette`, and `metadata-assist` with the `-0.9.0-retina.webp` suffix. The app used an isolated disposable demo library. No personal photographs, cards, or private paths are shown. Import destinations are demonstration folders; this is a setup view, not a claim of a completed backup.
+
+Captured using `screencapture -x -o -a -l WINDOW_ID`, then encoded with `cwebp -lossless` without cropping, resizing, or compositing. Main windows: 2402 × 1646 pixels (1201 × 823 points). Settings: 1960 × 1400 pixels (980 × 700 points). Source PNGs and demo state remain local.
+
+Demonstration photographs by Paul Jarvis, provided by Lorem Picsum from Unsplash; [Unsplash license](https://unsplash.com/license). Local filenames are Weekend-010, 011, 012, 015, 016, and 017.jpg, respectively:
+
+- [Paul Jarvis, photo 10](https://unsplash.com/photos/6J--NXulQCs)
+- [Paul Jarvis, photo 11](https://unsplash.com/photos/Cm7oKel-X2Q)
+- [Paul Jarvis, photo 12](https://unsplash.com/photos/I_9ILwtsl_k)
+- [Paul Jarvis, photo 15](https://unsplash.com/photos/NYDo21ssGao)
+- [Paul Jarvis, photo 16](https://unsplash.com/photos/gkT4FfgHO5o)
+- [Paul Jarvis, photo 17](https://unsplash.com/photos/Ven2CV8IJ5A)

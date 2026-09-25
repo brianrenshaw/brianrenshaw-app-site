@@ -62,7 +62,7 @@ Canceled is at `/canceled/`, a landing page only. The app is in development for 
 The homepage grid is grouped by platform: iOS apps, then the Mac app, then the blogs, then the utility. See `MESSAGING.md` for the numbered order. The share image `assets/social-projects-v10.png` holds ten projects, three rows of three plus one; rebuild it with `python3 scripts/build_social.py` and bump the filename plus both metadata URLs when the artwork changes.
 
 
-Ingest is at `/ingest/`, the second Mac app. Its native source is in the private sibling `photo-importer` project. Public DMGs are GitHub Release assets in this repository, tagged `ingest-v*`; they are not committed into `site/`. See `INGEST_RELEASES.md` for the release handoff. The current download is signed and notarized Ingest 0.8.6, build 28.
+Ingest is at `/ingest/`, the second Mac app. Its native source is in the private sibling `photo-importer` project. Public DMGs are GitHub Release assets in this repository, tagged `ingest-v*`; they are not committed into `site/`. See `INGEST_RELEASES.md` for the release handoff. The current download is signed and notarized Ingest 0.9.0, build 29.
 
 The Sparkle feed for Ingest is `site/ingest/appcast.xml`, and every shipped build has that URL compiled into it, so the path is permanent. `scripts/check_site.py` asserts the file exists.
 

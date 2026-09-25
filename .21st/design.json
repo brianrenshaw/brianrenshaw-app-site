@@ -86,6 +86,10 @@
     {
       "id": "ingest-five-step-getting-started",
       "decision": "Five practical steps with genuine demo screenshots and a persistent emphasis on Command-K. Reuse the bright documentation primitives, keep old quick-start URLs and anchors, and link to workspaces, shortcuts and automation."
+    },
+    {
+      "id": "ingest-090-workflow-metadata",
+      "decision": "Owner supplied September 25 homepage order and exact hero. Workspaces, verified card-to-folders workflow, Command Palette, and Metadata Assist are primary. Keep bright neutral/system typography and amber site primitives. Use focused genuine signed-release captures; review and Social Export remain subordinate. Metadata Assist is explicit structured editing, separate from optional keeper suggestions."
     }
   ],
   "evidence": [

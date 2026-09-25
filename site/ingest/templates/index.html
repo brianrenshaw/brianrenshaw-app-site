@@ -19,7 +19,7 @@
 </head>
 <body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.8.6/Ingest-0.8.6.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
+<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.0/Ingest-0.9.0.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
 <nav class="docs-nav" aria-label="Ingest documentation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/shortcuts/">Shortcuts</a><a href="/ingest/templates/" aria-current="page">Naming & metadata</a><a href="/ingest/automation/">Automation</a><a href="/ingest/support/">Support</a><a href="/ingest/release-notes/">Release notes</a><a href="/ingest/privacy/">Privacy</a></nav>
 <main id="main" tabindex="-1" class="family-document reference">
 <p class="eyebrow">Ingest / Naming and typing</p>
@@ -169,8 +169,8 @@
 </section>
 
 <section id="quick-entry" class="guide-section">
-<h2>Quick entry</h2>
-<p>Press <kbd>Q</kbd> and type one line. Ingest reads it and applies all of it at once, to everything selected. The order does not matter and most of it is optional.</p>
+<h2>Metadata Assist and Quick Entry</h2><p><kbd>⌘’</kbd> opens field-first Metadata Assist: one labeled field per line, with explicit review before applying. Type <kbd>;</kbd> to find fields and <kbd>Tab</kbd> to fill previously used values. <a href="/ingest/guide/#quick-entry">Read the complete guide.</a></p><p>For import naming, <code>{client}</code>, <code>{event}</code>, <code>{location}</code>, and <code>{shootdate}</code> use staged shoot details. Missing required shoot values block planning. These do not change camera capture timestamps.</p><p>Caption-code files are configured per workspace: UTF-8 TSV, a code followed by tab-separated replacements, normally invoked with <code>=</code>. Later files take precedence. Choose alternatives with <code>#n</code>; unknown or cyclic codes must be resolved before importing.</p>
+<p>Press <kbd>Q</kbd> for the earlier Quick Entry syntax. Enter the line, review the proposed fields, then apply to the selection. The order does not matter and most of it is optional.</p>
 <div class="guide-table" tabindex="0" role="region" aria-label="Quick entry syntax">
 <table>
 <thead><tr><th scope="col">You type</th><th scope="col">It means</th></tr></thead>
@@ -181,7 +181,7 @@
 <tr><td><code>3*</code> <code>***</code> <code>3 stars</code></td><td>Three stars. <code>0*</code> clears the rating.</td></tr>
 <tr><td><code>red</code> <code>r</code> <code>🔴</code></td><td>A color label. Also yellow, green, blue, purple, and their first letters.</td></tr>
 <tr><td><code>"First light at the pier"</code></td><td>The caption. Curly quotes work too, and a quote you never close runs to the end of the line.</td></tr>
-<tr><td><code>@Ecola State Park</code></td><td>Look up that address and set the location. It runs to the next comma or the end of the line.</td></tr>
+<tr><td><code>@Ecola State Park</code></td><td>Propose a descriptive place name, through the next comma or end of the line. Use Find place to explicitly choose a GPS map pin.</td></tr>
 <tr><td><code>/listing</code></td><td>Apply the metadata preset with that name.</td></tr>
 <tr><td><code>;addr</code></td><td>Expand a snippet. See <a href="#snippets">below</a>.</td></tr>
 <tr><td><code>t</code> <code>tag</code> <code>untag</code></td><td>Apply or remove a tag. Stars, colors, and keywords are independent.</td></tr>

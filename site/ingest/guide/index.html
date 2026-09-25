@@ -19,7 +19,7 @@
 </head>
 <body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.8.6/Ingest-0.8.6.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
+<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.0/Ingest-0.9.0.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
 <nav class="docs-nav" aria-label="Ingest documentation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/" aria-current="page">Guide</a><a href="/ingest/shortcuts/">Shortcuts</a><a href="/ingest/templates/">Naming & metadata</a><a href="/ingest/automation/">Automation</a><a href="/ingest/support/">Support</a><a href="/ingest/release-notes/">Release notes</a><a href="/ingest/privacy/">Privacy</a></nav>
 <main id="main" tabindex="-1" class="family-document reference">
 <p class="eyebrow">Ingest / The guide</p>
@@ -39,7 +39,7 @@
 <a href="#splits">Splits</a>
 <a href="#metadata">Metadata</a>
 <a href="#fujifilm-recipes">Fujifilm recipes</a>
-<a href="#quick-entry">Quick entry</a>
+<a href="#quick-entry">Metadata Assist</a>
 <a href="#presets">Presets</a>
 <a href="#location">Locations</a>
 <a href="#destinations">Destinations</a>
@@ -234,9 +234,24 @@
 </section>
 
 <section id="quick-entry" class="guide-section">
-<h2>Quick entry</h2>
-<p>Fields are slow. <kbd>Q</kbd> opens one line that takes all of it at once: <code>coast sunrise 3* red "First light at the pier" @Ecola State Park /personal</code> sets two keywords, three stars, a red label, a caption, a location, and a preset.</p>
-<p>It is deliberately forgiving about order and punctuation, and the legend stays on screen while you type. The full syntax is on the <a href="/ingest/templates/#quick-entry">naming page</a>, along with snippets, which let you type <code>;addr</code> instead of a sentence you use every day.</p>
+<h2>Metadata Assist</h2>
+<p><kbd>⌘’</kbd> opens Metadata Assist for selected photos or the current import. Choose Keywords, Caption, or Location to begin, or type one labeled field per line. Separate keywords with commas. Type <kbd>;</kbd> to find more fields.</p>
+<pre><code>Keywords: landscape, weekend
+Caption: A quiet weekend outdoors
+Location: Riverside Park</code></pre>
+<p>Recognized fields appear immediately in the review panel. Correct a value, add another field, inspect existing values, or change its operation. Keywords append by default; most other fields begin with Replace. Fill Empty and other operations depend on the field. Unrecognized lines and caption-code errors remain visible until resolved.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/metadata-assist-0.9.0-retina.webp"><img src="/ingest/assets/metadata-assist-0.9.0-retina.webp" width="2402" height="1646" style="--capture-width:1201px" loading="lazy" alt="Metadata Assist: labeled details on the left and editable changes on the right"></a><figcaption>Write labeled details, review each change, then apply. Tab completes previously used values.</figcaption></figure>
+<h3>Use details again</h3>
+<p>Previously applied or staged values are remembered locally. Type a prefix and press <kbd>Tab</kbd> to fill the highlighted suggestion; arrow keys choose another result and Escape dismisses suggestions. Keywords complete individually after commas and also use Ingest’s existing keyword history. Caption and other field histories stay separate.</p>
+<p><strong>Recent values</strong> recalls an individual field or map location; each field’s options menu also lists recent values. <strong>Use Last Details</strong> replaces the current review draft with the last applied set. It does not apply anything. Canceled and failed drafts do not enter history; the last 20 distinct values per field and 20 map locations are kept locally.</p>
+<h3>Place names and map pins</h3>
+<p>A typed Location supplies IPTC place text and leaves GPS unchanged. Use <strong>Find place…</strong>, select a result, and review its map pin to prepare GPS and place details. Recalling a saved map location retains its coordinates.</p>
+<h3>Prepare an import</h3>
+<p>Stage client, event, location, and shoot date for naming and folder templates. <strong>Use for Import</strong> updates the plan; copying is still a separate action. Metadata is written to verified destination copies. Shoot date does not rewrite capture timestamps. Projects retain shared details across cards; otherwise choose Keep details for the next card. Explicit per-photo edits take precedence.</p>
+<h3>Codes and copying</h3>
+<p>Workspace caption codes expand short codes into known text, using UTF-8 tab-separated files and normally the <code>=</code> delimiter. <kbd>⇧⌘C</kbd> copies selected metadata groups; <kbd>⇧⌘V</kbd> pastes those groups for the current selection. Copy choices are remembered per workspace.</p>
+<p><strong>Add details. Review. Apply.</strong> Typing alone writes nothing. Metadata Assist does not invent captions or infer instructions from prose. Cancel discards the draft. Its built-in How to use Metadata Assist guide provides examples.</p>
+<p><kbd>Q</kbd> retains the earlier Quick Entry syntax inside the same reviewed editor. See the <a href="/ingest/templates/#quick-entry">syntax reference</a>.</p>
 </section>
 
 <section id="presets" class="guide-section">
@@ -295,7 +310,7 @@
 </section>
 
 <section id="workspaces" class="guide-section">
-<h2>Workspaces</h2>
+<h2>Workspaces</h2><p>The window toolbar and Workspace menu share the workspace chooser. Set Open at Launch separately from your active workspace. Control-0 selects Basic; Control-1 through Control-9 select assigned workspaces. Focus Mode (<kbd>F</kbd>) hides surrounding controls without changing saved panel preferences; <kbd>⇧F</kbd> fits the photo.</p>
 <p>A workspace changes how Ingest looks and works for a kind of photography. It remembers the view, sort, thumbnail size, grouping, favorite folders, visible tabs, and sidebar visibility, along with ingest destinations, filenames, folder structures, metadata, and RAW/JPEG routing. Organize can follow the Ingest setup or have its own settings. Social Export can start with a saved style. Configure these in Settings → Workspaces; you can also begin with the defaults and open a folder without creating a workspace.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/command-workspaces-0.8.5-retina.webp" aria-label="View full-resolution screenshot: Four example workspaces in the Command Palette"><img src="/ingest/assets/command-workspaces-0.8.5-retina.webp" width="2882" height="1590" style="--capture-width:1441px" loading="lazy" alt="Four example workspaces in the Command Palette"></a><figcaption>Switch between example setups for personal, real estate, wedding, and wildlife photography.</figcaption></figure>
 <p><kbd>⌃1</kbd> to <kbd>⌃9</kbd> switch between them. Each workspace can list the cameras it belongs to. Enable Choose workspace by camera in Settings to switch when a matching card opens. A workspace you choose by hand takes precedence. In 0.8.5, Apple Photos integration has a global setting; workspace-specific control is planned. Social Export visibility is already a workspace setting.</p>

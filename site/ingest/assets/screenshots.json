@@ -1,5 +1,5 @@
 {
-  "capture": "Current website screenshots are native Retina captures from signed Ingest 0.8.5. Historical captures remain at their existing URLs and are recorded under archivedImages. See SOURCES.md for licenses and provenance.",
+  "capture": "Native Retina window captures from signed Ingest 0.9.0 (29), with still-relevant 0.8.5 documentation captures retained. Historical captures keep their URLs under archivedImages. See SOURCES.md for licenses and provenance.",
   "images": {
     "palette-0.8.5-retina.webp": {
       "width": 2882,
@@ -16,27 +16,6 @@
       "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
     },
     "command-crop-0.8.5-retina.webp": {
-      "width": 2882,
-      "height": 1590,
-      "displayWidth": 1441,
-      "displayHeight": 795,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
-    },
-    "command-sidebars-0.8.5-retina.webp": {
-      "width": 2882,
-      "height": 1590,
-      "displayWidth": 1441,
-      "displayHeight": 795,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
-    },
-    "raw-viewer-0.8.5-retina.webp": {
-      "width": 2882,
-      "height": 1590,
-      "displayWidth": 1441,
-      "displayHeight": 795,
-      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
-    },
-    "command-folders-0.8.5-retina.webp": {
       "width": 2882,
       "height": 1590,
       "displayWidth": 1441,
@@ -84,6 +63,41 @@
       "displayWidth": 1441,
       "displayHeight": 795,
       "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "browse-0.9.0-retina.webp": {
+      "width": 2402,
+      "height": 1646,
+      "displayWidth": 1201,
+      "displayHeight": 823,
+      "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
+    },
+    "workspaces-0.9.0-retina.webp": {
+      "width": 1960,
+      "height": 1400,
+      "displayWidth": 980,
+      "displayHeight": 700,
+      "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
+    },
+    "ingest-0.9.0-retina.webp": {
+      "width": 2402,
+      "height": 1646,
+      "displayWidth": 1201,
+      "displayHeight": 823,
+      "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
+    },
+    "palette-0.9.0-retina.webp": {
+      "width": 2402,
+      "height": 1646,
+      "displayWidth": 1201,
+      "displayHeight": 823,
+      "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
+    },
+    "metadata-assist-0.9.0-retina.webp": {
+      "width": 2402,
+      "height": 1646,
+      "displayWidth": 1201,
+      "displayHeight": 823,
+      "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
     }
   },
   "archivedImages": {
@@ -182,6 +196,27 @@
       "height": 2284,
       "displayWidth": 1028,
       "displayHeight": 1142
+    },
+    "command-sidebars-0.8.5-retina.webp": {
+      "width": 2882,
+      "height": 1590,
+      "displayWidth": 1441,
+      "displayHeight": 795,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "raw-viewer-0.8.5-retina.webp": {
+      "width": 2882,
+      "height": 1590,
+      "displayWidth": 1441,
+      "displayHeight": 795,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "command-folders-0.8.5-retina.webp": {
+      "width": 2882,
+      "height": 1590,
+      "displayWidth": 1441,
+      "displayHeight": 795,
+      "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
     }
   }
 }
