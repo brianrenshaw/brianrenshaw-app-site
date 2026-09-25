@@ -71,13 +71,6 @@
       "displayHeight": 823,
       "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
     },
-    "workspaces-0.9.0-retina.webp": {
-      "width": 1960,
-      "height": 1400,
-      "displayWidth": 980,
-      "displayHeight": 700,
-      "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
-    },
     "ingest-0.9.0-retina.webp": {
       "width": 2402,
       "height": 1646,
@@ -98,6 +91,27 @@
       "displayWidth": 1201,
       "displayHeight": 823,
       "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
+    },
+    "walkthrough-ingest-0.9.2.webp": {
+      "width": 2400,
+      "height": 1600,
+      "displayWidth": 1200,
+      "displayHeight": 800,
+      "source": "Ingest 0.9.2 source 9a36b07, native SwiftUI view rendered at 2x in isolated demo library; Light appearance. Lossless WebP, no visual edits. See SOURCES.md."
+    },
+    "walkthrough-metadata-0.9.2.webp": {
+      "width": 1720,
+      "height": 1180,
+      "displayWidth": 860,
+      "displayHeight": 590,
+      "source": "Ingest 0.9.2 source 9a36b07, native SwiftUI view rendered at 2x in isolated demo library; Light appearance. Lossless WebP, no visual edits. See SOURCES.md."
+    },
+    "walkthrough-workspaces-0.9.2.webp": {
+      "width": 2000,
+      "height": 2800,
+      "displayWidth": 1000,
+      "displayHeight": 1400,
+      "source": "Ingest 0.9.2 source 9a36b07, native SwiftUI view rendered at 2x in isolated demo library; Light appearance. Lossless WebP, no visual edits. See SOURCES.md."
     }
   },
   "archivedImages": {
@@ -217,6 +231,13 @@
       "displayWidth": 1441,
       "displayHeight": 795,
       "source": "Signed Ingest 0.8.5 (27), isolated demo library, native Retina window capture. See SOURCES.md."
+    },
+    "workspaces-0.9.0-retina.webp": {
+      "width": 1960,
+      "height": 1400,
+      "displayWidth": 980,
+      "displayHeight": 700,
+      "source": "Signed and notarized Ingest 0.9.0 (29), isolated demo library, native Retina window capture without resizing. See SOURCES.md."
     }
   }
 }

@@ -1,3 +1,7 @@
+## 0.9.2 walkthrough refresh
+
+`walkthrough-ingest-0.9.2.webp`, `walkthrough-metadata-0.9.2.webp`, and `walkthrough-workspaces-0.9.2.webp` are native SwiftUI view captures from source `9a36b07` using the opt-in FeatureTourTests capture harness and a disposable demo library. Light appearance, native 2× backing pixels, lossless PNG-to-WebP encoding with pixel equality verified; no resizing or visual edits. These are source-build captures, not signed-release window captures. Metadata is staged only; no real photo writes or imports were performed. Demo landscapes reuse the credited photographs below.
+
 # Ingest assets
 
 Icon: identical to the native Ingest AppIcon asset.
