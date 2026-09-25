@@ -15,11 +15,11 @@
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
-<link rel="stylesheet" href="/ingest/assets/site.css?v=085-docs">
+<link rel="stylesheet" href="/ingest/assets/site.css?v=085-docs-tables">
 </head>
 <body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.0/Ingest-0.9.0.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
+<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.1/Ingest-0.9.1.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
 <nav class="docs-nav" aria-label="Ingest documentation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/" aria-current="page">Guide</a><a href="/ingest/shortcuts/">Shortcuts</a><a href="/ingest/templates/">Naming & metadata</a><a href="/ingest/automation/">Automation</a><a href="/ingest/support/">Support</a><a href="/ingest/release-notes/">Release notes</a><a href="/ingest/privacy/">Privacy</a></nav>
 <main id="main" tabindex="-1" class="family-document reference">
 <p class="eyebrow">Ingest / The guide</p>
@@ -91,9 +91,9 @@
 
 <section id="review-decisions" class="guide-section">
 <h2>Review decisions and protection</h2>
-<p><kbd>T</kbd> tags a keeper, <kbd>X</kbd> rejects or clears rejection, and <kbd>R</kbd> marks reviewed. Tagging clears rejection; rejecting clears the tag. Stars and labels stay independent. Tagging, rejecting, rating, labeling, or explicitly marking reviewed records a review action; viewing alone does not. Undecided means neither tagged nor rejected; Unreviewed means no recorded review action.</p>
+<p><kbd>T</kbd> tags the selected photos, or clears their tags when all are already tagged. <kbd>R</kbd> marks reviewed. Stars and labels stay independent. Use the visible <strong>Show: All / Tagged / Untagged / Selected</strong> controls to narrow the grid. More Filters adds capture dates, kind, and analysis. Before and After exclude the chosen day; Between includes both complete days.</p>
 <p>Protect / Unlock Photos controls editing inside Ingest. Protected photos remain viewable and copyable, and disabled editing controls explain “Protected. Unlock to edit.” Mixed selections report protected exclusions. Keyword drafts stay open if a write fails.</p>
-<p>Ingest excludes rejected photos by default, with an Include Rejected switch. The eligible set freezes when copying starts. Rejecting never deletes an original. Delete-all cleanup is unavailable while excluded rejected or protected photos remain; delete-copied cleanup requires verified, unprotected files.</p>
+<p><strong>Ingest From Selection…</strong> reviews the selected photos for copying. <strong>Ingest…</strong> reviews the complete source. Filters hide nonmatching photos; filtering alone does not change an all-source import into a selection import. The eligible set freezes when copying starts. Protected originals remain protected; delete-copied cleanup requires verified, unprotected files.</p>
 </section>
 
 <section id="browsing" class="guide-section">
@@ -132,7 +132,7 @@
 <section id="compare" class="guide-section">
 <h2>Compare and survey</h2>
 <p><kbd>C</kbd> opens <strong>Select</strong> on the left and <strong>Candidate</strong> on the right. Candidates come from an explicit multiselection, then the current stack, then the filtered source. Left/right changes Candidate while Select stays fixed; Up makes Candidate the Select and advances, and Down swaps the pair. Promotion does not tag a photograph.</p>
-<p>Click either pane to choose the target for tag, reject, rating, and label commands. The active border identifies that target. Linked Zoom keeps inspection aligned; turn it off to inspect each photo independently. Done or <kbd>Esc</kbd> returns to the preceding layout with Select selected.</p>
+<p>Click either pane to choose the target for tag, rating, and label commands. The active border identifies that target. Linked Zoom keeps inspection aligned; turn it off to inspect each photo independently. Done or <kbd>Esc</kbd> returns to the preceding layout with Select selected.</p>
 <p><kbd>N</kbd> opens <strong>Survey</strong>: the whole current stack, twelve frames per page, or up to six selected photographs. Double-clicking a stack in the grid or filmstrip opens this same whole-stack view. Survey arrows stay within the set.</p>
 <p>Hold <kbd>B</kbd> to temporarily inspect Select. Outside Compare, it uses the first tagged photograph in the current group. Releasing B restores the previous view.</p>
 </section>
@@ -168,7 +168,7 @@
 </table>
 </div>
 <p>Subject close-ups and culling analysis run locally using Apple’s Vision framework. Ingest caches face and subject regions, feature prints, and assessment results for inspection and similar-photo grouping. Corrections such as Not Soft and Intentional Closed Eyes persist locally. No names or identities are assigned, and analysis is not sent to a server.</p>
-<p>Dark, low-contrast, and exposure-bracket frames can be unsuitable for a confident sharpness judgment. Ingest explains uncertainty instead of treating an unavailable assessment as acceptable detail. Use the detail or edge overlay to inspect the photograph yourself.</p>
+<p>Dark, low-contrast, and exposure-bracket frames can be unsuitable for a confident sharpness judgment. Ingest explains uncertainty instead of treating an unavailable assessment as acceptable detail. Use the detail or focus peaking to inspect the photograph yourself.</p>
 </section>
 
 <section id="stacks" class="guide-section">
@@ -197,7 +197,7 @@
 <section id="culling" class="guide-section">
 <h2>Culling</h2>
 <p>Review entirely by hand or use optional AI assistance for eye and sharpness assessments, similar-photo evaluation, and keeper suggestions. You review and apply suggestions; opening them does not change your tags. <a href="/ingest/privacy/#files">Photo analysis stays on your Mac.</a></p>
-<p><kbd>T</kbd> toggles a tag and <kbd>U</kbd> removes it. Tag photos to find or act on them together. Stars, colors, and keywords are independent: <kbd>1</kbd> to <kbd>5</kbd> set stars, and pressing the current rating clears it. <kbd>6</kbd> to <kbd>9</kbd> set color labels, with <kbd>⌥9</kbd> for purple. <kbd>X</kbd> rejects a photo or clears its rejection; <kbd>R</kbd> marks it reviewed.</p>
+<p><kbd>T</kbd> toggles a tag and <kbd>U</kbd> removes it. Tag photos to find or act on them together. Stars, colors, and keywords are independent: <kbd>1</kbd> to <kbd>5</kbd> set stars, and pressing the current rating clears it. <kbd>6</kbd> to <kbd>9</kbd> set color labels, with <kbd>⌥9</kbd> for purple. <kbd>R</kbd> marks it reviewed.</p>
 <p>By default a marking key changes the current photo without advancing. Turn on advancing in Settings, Culling and the loop becomes one key per photograph: <kbd>T</kbd> to keep, <kbd>→</kbd> to skip. Holding <kbd>⇧</kbd> with any marking key does the opposite for that one press.</p>
 <p>Use <kbd>⌘Z</kbd> to undo review marks, batches of marks, and supported stack changes.</p>
 <p>Tags live in Ingest. For writable folders, stars and color labels are saved in supported image files or XMP sidecars, so compatible editing apps can read them. Writes run in the background. On a memory card, Ingest keeps review changes locally and applies them to the copies during import.</p>
@@ -234,13 +234,15 @@
 </section>
 
 <section id="quick-entry" class="guide-section">
+<p>Focus Peaking (<kbd>⌥E</kbd>) overlays green edge highlights while preserving the original color and brightness. It is not a complete map of focused areas: low-contrast detail can be sharp without a highlight. Toggle it off and inspect the original at 100% before deciding.</p>
+<p><strong>Edit Metadata…</strong> opens Metadata Assist. Choose <strong>Edit Individual Fields…</strong> inside it for the detailed field editor. <strong>Use Changes</strong> returns that draft to the review panel; only <strong>Apply</strong> applies the reviewed changes.</p>
 <h2>Metadata Assist</h2>
-<p><kbd>⌘’</kbd> opens Metadata Assist for selected photos or the current import. Choose Keywords, Caption, or Location to begin, or type one labeled field per line. Separate keywords with commas. Type <kbd>;</kbd> to find more fields.</p>
-<pre><code>Keywords: landscape, weekend
-Caption: A quiet weekend outdoors
-Location: Riverside Park</code></pre>
-<p>Recognized fields appear immediately in the review panel. Correct a value, add another field, inspect existing values, or change its operation. Keywords append by default; most other fields begin with Replace. Fill Empty and other operations depend on the field. Unrecognized lines and caption-code errors remain visible until resolved.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/metadata-assist-0.9.0-retina.webp"><img src="/ingest/assets/metadata-assist-0.9.0-retina.webp" width="2402" height="1646" style="--capture-width:1201px" loading="lazy" alt="Metadata Assist: labeled details on the left and editable changes on the right"></a><figcaption>Write labeled details, review each change, then apply. Tab completes previously used values.</figcaption></figure>
+<p><kbd>⌘’</kbd> opens Metadata Assist for selected photos or the current import. Choose Keywords, Caption, or Location to begin, or type <kbd>;</kbd> to see your field options, pick one (a fragment like <kbd>;lo</kbd> narrows the list), then <kbd>Tab</kbd> to take it and fill the value or search for a place. Separate keywords with commas.</p>
+<pre><code>;
+;lo
+;capt</code></pre>
+<p>Recognized fields appear immediately in the review panel. Correct a value, add another field, inspect existing values, or change its operation. Keywords append by default; most other fields begin with Replace. Fill Empty and other operations depend on the field. Unrecognized input and caption-code errors remain visible until resolved.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/metadata-assist-0.9.0-retina.webp"><img src="/ingest/assets/metadata-assist-0.9.0-retina.webp" width="2402" height="1646" style="--capture-width:1201px" loading="lazy" alt="Metadata Assist: labeled details on the left and editable changes on the right"></a><figcaption>Type <kbd>;</kbd> to see your options, review each change, then apply. Tab completes previously used values.</figcaption></figure>
 <h3>Use details again</h3>
 <p>Previously applied or staged values are remembered locally. Type a prefix and press <kbd>Tab</kbd> to fill the highlighted suggestion; arrow keys choose another result and Escape dismisses suggestions. Keywords complete individually after commas and also use Ingest’s existing keyword history. Caption and other field histories stay separate.</p>
 <p><strong>Recent values</strong> recalls an individual field or map location; each field’s options menu also lists recent values. <strong>Use Last Details</strong> replaces the current review draft with the last applied set. It does not apply anything. Canceled and failed drafts do not enter history; the last 20 distinct values per field and 20 map locations are kept locally.</p>
@@ -278,7 +280,7 @@ Location: Riverside Park</code></pre>
 
 <section id="renaming" class="guide-section">
 <h2>Renaming</h2>
-<p>Names are built from templates: text plus tokens in braces. <code>{yyyy}{mm}{dd}-{seqn}</code> gives <code>20260912-7078</code>. The full list of tokens, and how saved sequence numbers work, is on the <a href="/ingest/templates/">naming page</a>.</p>
+<p><strong>Curly braces rename.</strong> Names are built from templates: text plus tokens in braces. <code>{yyyy}{mm}{dd}-{seqn}</code> gives <code>20260912-7078</code>. Semicolon finds metadata fields instead — a different habit. The full list of tokens, and how saved sequence numbers work, is on the <a href="/ingest/templates/">naming page</a>.</p>
 <p>Renaming happens during an ingest, or in place afterwards with <kbd>⌘R</kbd>. <kbd>⌥⌘R</kbd> re-sequences what is on screen, which is how you close the gaps in the numbering after throwing half a shoot away.</p>
 <p>Every rename records the original filename inside the file, so Undo Rename can put the old names back later, even in a folder you opened fresh.</p>
 </section>

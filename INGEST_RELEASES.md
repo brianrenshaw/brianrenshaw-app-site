@@ -49,6 +49,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.9.1 | 30 | September 25, 2026 | Visible tag and selection filters, selection-based import, workspace defaults, unified metadata editing, Focus Peaking, and thumbnail spacing. |
 | 0.9.0 | 29 | September 25, 2026 | Metadata Assist, local history and Tab completion, workspace and Focus Mode controls, learning tips, and progressive photo browsing. |
 | 0.8.6 | 28 | September 24, 2026 | Screenshot walkthrough on first launch, Getting Started guide, workspace Photos switches, and large-library Photos performance fixes. |
 | 0.8.5 | 27 | September 24, 2026 | Includes 0.8.4 refinements and fixes blocked folder-watch setup during restored-session launch. |

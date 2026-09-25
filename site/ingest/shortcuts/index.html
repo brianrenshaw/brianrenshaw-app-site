@@ -15,11 +15,11 @@
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
-<link rel="stylesheet" href="/ingest/assets/site.css?v=085-docs">
+<link rel="stylesheet" href="/ingest/assets/site.css?v=085-docs-tables">
 </head>
 <body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.0/Ingest-0.9.0.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
+<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.1/Ingest-0.9.1.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
 <nav class="docs-nav" aria-label="Ingest documentation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/shortcuts/" aria-current="page">Shortcuts</a><a href="/ingest/templates/">Naming & metadata</a><a href="/ingest/automation/">Automation</a><a href="/ingest/support/">Support</a><a href="/ingest/release-notes/">Release notes</a><a href="/ingest/privacy/">Privacy</a></nav>
 <main id="main" tabindex="-1" class="family-document reference">
 <p class="eyebrow">Ingest / Shortcuts</p>
@@ -83,7 +83,6 @@
 <tr><td><kbd>T</kbd></td><td>Toggle tag</td><td>Grid, preview, video</td></tr>
 <tr><td><kbd>⇧T</kbd></td><td>Tag and advance, or tag without advancing</td><td>Grid, preview, video</td></tr>
 <tr><td><kbd>U</kbd></td><td>Untag</td><td>Grid, preview, video</td></tr>
-<tr><td><kbd>X</kbd> / <kbd>⇧X</kbd></td><td>Reject or clear rejection; Shift reverses the reject advance preference</td><td>Files and Apple Photos</td></tr>
 <tr><td><kbd>R</kbd> / <kbd>⇧R</kbd></td><td>Mark Reviewed; Shift reverses the review advance preference</td><td>Files and Apple Photos</td></tr>
 <tr><td>no key</td><td>Mark Unreviewed; Protect / Unlock Photos</td><td>Files and Apple Photos</td></tr>
 <tr><td><kbd>⌫</kbd></td><td>Delete selected photos; confirmation is on by default</td><td>Grid, preview, video</td></tr>
@@ -98,7 +97,7 @@
 </tbody>
 </table>
 </div>
-<p>Tag, reject, rating, label, and review actions have separate advance settings. Tagging clears rejection; rejecting clears the tag. Viewing alone does not mark a photo reviewed. Protected photographs are skipped with an explanation.</p>
+<p>Tag, rating, label, and review actions have separate advance settings. With multiple photos selected, T tags all of them, or clears their tags when all are already tagged. Viewing alone does not mark a photo reviewed. Protected photographs are skipped with an explanation.</p>
 <p>A mark applies to every selected photograph, or to the one under the focus ring. On a collapsed bracket stack it applies to every frame in the stack.</p>
 </section>
 
@@ -135,7 +134,7 @@
 <tr><td><kbd>N</kbd></td><td>Survey the whole current stack, twelve frames per page, or up to six selected photographs. Stack double-click opens the same grid.</td><td>Grid, preview</td></tr>
 <tr><td><kbd>I</kbd></td><td>Cycle the information overlay: off, basic, full</td><td>Grid, preview, split</td></tr>
 <tr><td><kbd>⌥D</kbd></td><td>Detail overlay, to judge sharpness</td><td>Preview</td></tr>
-<tr><td><kbd>⌥E</kbd></td><td>Edge overlay</td><td>Preview</td></tr>
+<tr><td><kbd>⌥E</kbd></td><td>Focus Peaking</td><td>Preview</td></tr>
 <tr><td><kbd>⌥A</kbd></td><td>Show the focus point the camera recorded, when it recorded one</td><td>Preview</td></tr>
 <tr><td><kbd>⌥F</kbd></td><td>Subject Close-ups: faces, detected subjects, or a labeled center fallback</td><td>Preview</td></tr>
 <tr><td><kbd>⌘+</kbd> <kbd>⌘-</kbd></td><td>Bigger and smaller thumbnails</td><td>Grid</td></tr>
@@ -223,7 +222,7 @@
 <table>
 <thead><tr><th scope="col">Keys</th><th scope="col">Command</th><th scope="col">Where</th></tr></thead>
 <tbody>
-<tr><td><kbd>⌘’</kbd></td><td>Open Metadata Assist: enter fields, review values, then apply</td><td>Files and import</td></tr><tr><td><kbd>⇧⌘C</kbd> / <kbd>⇧⌘V</kbd></td><td>Copy selected metadata groups / paste copied metadata</td><td>Files</td></tr><tr><td><kbd>Tab</kbd></td><td>Fill the highlighted field, code, or previously used value</td><td>Metadata Assist writing area</td></tr><tr><td><kbd>Q</kbd></td><td>Quick Entry syntax in Metadata Assist. One line that can set keywords, a rating, a label, a caption, a location, and a preset at once.</td><td>Grid, preview</td></tr>
+<tr><td><kbd>⌘’</kbd></td><td>Open Metadata Assist: type <kbd>;</kbd> to see field options, review values, then apply</td><td>Files and import</td></tr><tr><td><kbd>⇧⌘C</kbd> / <kbd>⇧⌘V</kbd></td><td>Copy selected metadata groups / paste copied metadata</td><td>Files</td></tr><tr><td><kbd>Tab</kbd></td><td>Fill the highlighted field, code, or previously used value</td><td>Metadata Assist writing area</td></tr><tr><td><kbd>Q</kbd></td><td>Quick Entry syntax in Metadata Assist. One line that can set keywords, a rating, a label, a caption, a location, and a preset at once.</td><td>Grid, preview</td></tr>
 <tr><td><kbd>K</kbd></td><td>Put the cursor in the keyword field</td><td>Grid, preview</td></tr>
 <tr><td><kbd>⇧K</kbd></td><td>Take back the keywords you just added</td><td>Grid, preview</td></tr>
 <tr><td><kbd>⇧C</kbd></td><td>Put the cursor in the caption field</td><td>Grid, preview</td></tr>

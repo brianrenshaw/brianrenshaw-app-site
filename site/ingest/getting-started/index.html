@@ -15,18 +15,18 @@
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
-<link rel="stylesheet" href="/ingest/assets/site.css?v=085-docs">
+<link rel="stylesheet" href="/ingest/assets/site.css?v=085-docs-tables">
 </head>
 <body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.0/Ingest-0.9.0.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
+<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/#workspaces">Workspaces</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.1/Ingest-0.9.1.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
 <nav class="docs-nav" aria-label="Ingest documentation"><a href="/ingest/getting-started/" aria-current="page">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/shortcuts/">Shortcuts</a><a href="/ingest/templates/">Naming & metadata</a><a href="/ingest/automation/">Automation</a><a href="/ingest/support/">Support</a><a href="/ingest/release-notes/">Release notes</a><a href="/ingest/privacy/">Privacy</a></nav>
 <main id="main" tabindex="-1" class="family-document reference">
 <p class="eyebrow">Ingest / Getting started</p>
 <h1>From your SD card to Lightroom.</h1>
 <p class="intro">Learn the flow in about five minutes. Plug in a card, tag the keepers, check the close calls, then copy and verify. Save your setup when you’re ready.</p>
 <p id="before">You’ll need an Apple silicon Mac with macOS 15 or later, a card reader or photo folder, and a destination with enough space. Lightroom Classic is optional. Transfer time depends on your card, drive, and files.</p>
-<aside class="doc-next"><p><strong>Add details when you’re ready.</strong> Open Metadata Assist with <kbd>⌘’</kbd>, choose a starter field, then review and apply. Tab fills previously used values. <a href="/ingest/guide/#quick-entry">Metadata Assist guide →</a></p><p><strong>Start with <kbd>⌘K</kbd>.</strong> The Command Palette finds commands, folders, and saved workspaces. You don’t have to memorize every shortcut.</p><a href="/ingest/guide/#palette">Meet the palette →</a></aside>
+<aside class="doc-next"><p><strong>Add details when you’re ready.</strong> Open Metadata Assist with <kbd>⌘’</kbd>. Type <kbd>;</kbd> to see your options, pick a field, then Tab, fill or search, and review before you apply. <a href="/ingest/guide/#quick-entry">Metadata Assist guide →</a></p><p><strong>Start with <kbd>⌘K</kbd>.</strong> The Command Palette finds commands, folders, and saved workspaces. You don’t have to memorize every shortcut.</p><a href="/ingest/guide/#palette">Meet the palette →</a></aside>
 <p>The app shows this walkthrough on your first launch. Reopen it through <strong>Help → Walkthrough: Card to Lightroom</strong>, or type “walkthrough” in <kbd>⌘K</kbd>. You can leave for Settings and return to the same step while the app stays open.</p>
 <nav class="guide-toc" aria-label="Five steps"><a href="#open">1. Insert</a><a href="#cull">2. Tag</a><a href="#look">3. Inspect</a><a href="#go">4. Copy</a><a href="#next">5. Set up</a></nav>
 <ol class="steps">
@@ -37,8 +37,7 @@
 <p><strong>Find it with <kbd>⌘K</kbd>:</strong> type “Ingest” or “Find Folder”.</p></li>
 <li id="cull"><h2>Tag your keepers.</h2>
 <p>Use the arrow keys to move through the shoot. Press <kbd>T</kbd> to tag a keeper; press it again to untag. <kbd>Space</kbd> opens a larger Preview and returns to your previous view.</p>
-<p>In Ingest, choose <strong>Filter → Tagged</strong> to check the matching photos. The checked-photo count is what matters for copying. A tag is a review decision; tagging alone does not start an import.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/workspace-personal-0.8.5-retina.webp" aria-label="Enlarge screenshot: Photo checkboxes and checked-photo count in the Ingest grid"><img src="/ingest/assets/workspace-personal-0.8.5-retina.webp" width="2882" height="1590" style="--capture-width:1441px" loading="lazy" alt="Photo checkboxes and checked-photo count in the Ingest grid"></a><figcaption>Use the filter and checkboxes to choose the files that will be copied.</figcaption></figure>
+<p>Choose <strong>Show: Tagged</strong> above the grid to see your tagged photos. Select the photos you want, then choose <strong>Ingest From Selection…</strong>. Review the destination and file count before starting the copy. A checkmark means tagged; it is not a separate import checkbox.</p>
 <p>These are the default keys. Your customized shortcuts appear in the app walkthrough. <a href="/ingest/shortcuts/">See the keyboard reference</a> or open <strong>Settings → Shortcuts</strong>.</p>
 <p><strong>Find it with <kbd>⌘K</kbd>:</strong> type “Tag” or “Show Tagged Only”.</p></li>
 <li id="look"><h2>Check the close calls.</h2>
@@ -46,7 +45,7 @@
 <div class="guide-table"><table><caption>Default inspection shortcuts</caption><thead><tr><th scope="col">Key</th><th scope="col">What it does</th></tr></thead><tbody>
 <tr><td><kbd>C</kbd></td><td>Compare selected photos side by side.</td></tr>
 <tr><td><kbd>Z</kbd></td><td>Grid loupe under the pointer; in Preview, toggle Fit / 100%.</td></tr>
-<tr><td><kbd>⌥E</kbd></td><td>Toggle the Edge Overlay in Preview to help judge focus.</td></tr>
+<tr><td><kbd>⌥E</kbd></td><td>Toggle Focus Peaking in Preview. Green highlights strong edges; unhighlighted areas may still be sharp. Inspect the original at 100% to judge focus.</td></tr>
 <tr><td><kbd>⌥D</kbd></td><td>Toggle the Detail Overlay in Preview to inspect fine detail.</td></tr>
 <tr><td><kbd>I</kbd></td><td>Cycle the photo information display.</td></tr>
 </tbody></table></div>

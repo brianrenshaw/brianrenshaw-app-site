@@ -38,11 +38,13 @@ body.app-ingest{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink:#242622;--m
 .ingest-docs .guide-toc a:hover{text-decoration:underline}
 .ingest-docs .family-document>section,.ingest-docs .guide-section{padding:8px 0 26px;border-bottom:1px solid var(--line)}
 .ingest-docs .guide-table{overflow-x:auto;max-width:100%;margin:24px 0;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
-.ingest-docs .guide-table table{width:100%;border-collapse:collapse;text-align:left;font-size:15px;line-height:1.65}
-.ingest-docs .guide-table th,.ingest-docs .guide-table td{padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+.ingest-docs .guide-table table{width:100%;border-collapse:collapse;table-layout:auto;text-align:left;font-size:15px;line-height:1.65}
+.ingest-docs .guide-table th,.ingest-docs .guide-table td{padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:normal;word-break:normal}
 .ingest-docs .guide-table th{color:var(--ink);font-size:13px;font-weight:650;background:var(--soft)}
 .ingest-docs .guide-table td{color:var(--muted)}
-.ingest-docs .guide-table td:first-child{min-width:145px;color:var(--ink)}
+.ingest-docs .guide-table td:first-child{min-width:145px;color:var(--ink);white-space:nowrap}
+.ingest-docs .guide-table td:nth-child(2){overflow-wrap:break-word}
+.ingest-docs .guide-table th:last-child,.ingest-docs .guide-table td:last-child{white-space:nowrap;min-width:9.5rem}
 .ingest-docs .guide-table tr:last-child td{border-bottom:0}
 .ingest-docs .guide-definitions dt,.ingest-docs dt{font-weight:650;color:var(--ink);margin-top:22px}
 .ingest-docs dd{margin:6px 0 18px}
