@@ -584,26 +584,10 @@
   },
   {
     "type": "section",
-    "title": "Try semicolon (Metadata Assist demo)",
-    "url": "/ingest/#try-semicolon",
-    "page": "Home",
-    "keywords": "semicolon metadata assist demo try ;",
-    "hint": "Home"
-  },
-  {
-    "type": "section",
-    "title": "Try semicolon and braces",
+    "title": "Try braces (rename demo)",
     "url": "/ingest/templates/#try-braces",
     "page": "Naming & metadata",
     "keywords": "rename braces curly demo try {",
-    "hint": "Naming & metadata"
-  },
-  {
-    "type": "section",
-    "title": "Try semicolon fields",
-    "url": "/ingest/templates/#try-semicolon",
-    "page": "Naming & metadata",
-    "keywords": "semicolon metadata demo",
     "hint": "Naming & metadata"
   }
 ]
