@@ -93,3 +93,8 @@ body.app-ingest.ingest-home{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink
 .ingest-home .review-band h2,.ingest-home .supporting-shelf h2{font-size:34px}.ingest-home .review-band p,.ingest-home .supporting-shelf p{max-width:780px}
 .ingest-home .inline-links{display:flex;gap:24px;flex-wrap:wrap;font-size:15px}
 @media(max-width:800px){.ingest-home .feature-story{grid-template-columns:1fr;gap:25px}.ingest-home .workspace-examples,.ingest-home .metadata-notes{grid-template-columns:1fr;gap:10px}.ingest-home .workflow-steps{grid-template-columns:1fr;gap:16px}.ingest-home .hero-aside{font-size:.62em}}
+
+/* Trimmed pitch: Social Export + optional AI as one quiet line */
+.ingest-home .quiet-line{padding:28px 0 36px}
+.ingest-home .quiet-line p{font-size:15px;max-width:720px;margin:0;color:var(--muted)}
+.ingest-home .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

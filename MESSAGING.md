@@ -117,17 +117,21 @@ Approved with Brian on September 11, 2026.
 
 **Supporting copy:** Open a card or a folder. Cull and browse with the keyboard. Organize when you’re ready — in one modern Mac app.
 
-**Audience and priorities:** Photographers doing personal and professional work. One homepage for both. Primary differentiators, in visual weight: Workspaces, card-to-folders (verified copies), Command Palette (⌘K), Metadata Assist. Speed supports the story; do not claim fastest performance, universal format support, exclusivity, or blanket feature parity. Keep AI / Suggest keepers mid-page and Social Export low / personal-side. Never use “AI-first” or “AI on call.”
+**Homepage pitch order:** hero → Workspaces → Metadata Assist (one beat) → basics demoted → download. Card-to-folders and Command Palette are no longer primary homepage sections; verified copies and ⌘K stay as short mentions inside the demoted basics band.
+
+**Audience and priorities:** Photographers doing personal and professional work. One homepage for both. Primary differentiators in visual weight: Workspaces, then Metadata Assist. Speed supports the story; do not claim fastest performance, universal format support, exclusivity, or blanket feature parity. Push Social Export and optional AI off the main story into one quiet line. Social Export is not personal-only — it covers business social posts too — but it stays quiet, not a front-of-page pitch. Never use “AI-first” or “AI on call.”
+
+**Marketing deep links:** Getting started (`/ingest/getting-started/`) is the default first-touch docs link from marketing CTAs and “learn more.” Guide stays the encyclopedia; nav can still list it. `/ingest/quick-start/` redirects to Getting started.
 
 **Workspaces:** Full shoot setup, not metadata-only presets — naming, folders, templates, delivery folders, Apple Photos and Social Export toggles, starting view, grouping. Example shoots (Personal, Real Estate, Wedding, Wildlife) are configurations, not four claimed built-in presets.
 
-**Command Palette:** ⌘K is the safety net and teacher. Search an action, view, or mode; the shortcut appears beside it. Not a terminal or natural-language AI interface.
+**Command Palette:** ⌘K is the safety net and teacher. Search an action, view, or mode; the shortcut appears beside it. Not a terminal or natural-language AI interface. On the homepage it is mentioned inside the demoted basics band, not as its own hero section.
 
-**Metadata Assist:** Structured editor, not an AI writer. Type `;` to see field options (a fragment like `;lo` only narrows); Tab, fill or search; review before apply. Typing alone writes nothing. Copy/Paste Metadata with ⇧⌘C / ⇧⌘V (field groups, remembered per workspace). Keep `;` for metadata fields distinct from `{…}` rename and folder template variables. Quick Entry (`Q`) remains the older one-line syntax inside the same reviewed editor.
+**Metadata Assist:** Structured editor, not an AI writer. Type `;` to see field options (a fragment like `;lo` only narrows); Tab, fill or search; review before apply. Typing alone writes nothing. Copy/Paste Metadata with ⇧⌘C / ⇧⌘V (field groups, remembered per workspace). Keep `;` for metadata fields distinct from `{…}` rename and folder template variables. Quick Entry (`Q`) remains the older one-line syntax inside the same reviewed editor. No fake interactive `;` demos on the site.
 
-**AI assistance:** Soft focus, closed eyes, near-duplicates, suggested keepers — optional, on-device, nothing tagged until the photographer applies. Distinct from Metadata Assist. Do not lead the page with AI culling.
+**AI assistance:** Soft focus, closed eyes, near-duplicates, suggested keepers — optional, on-device, nothing tagged until the photographer applies. Distinct from Metadata Assist. Do not lead the page with AI culling. On the homepage it shares one quiet line with Social Export.
 
-**Scope:** Import, cull, browse, and organize are useful independently. Existing folders and finished exports are first-class. Table-stakes review tools (loupe, compare, faces, RAW histogram, crop, stacks, ratings) get a short mid/late-page “also the basics” list — not the hero. IPTC, optional Apple Photos, and Social Export stay supporting.
+**Scope:** Import, cull, browse, and organize are useful independently. Existing folders and finished exports are first-class. Table-stakes review tools (loupe, compare, faces, RAW histogram, crop, stacks, ratings) get a short demoted “also the basics” list — not the hero. IPTC and optional Apple Photos stay supporting.
 
 **Visual direction:** Bright neutral product page, genuine app-window screenshots (no desktop or screen-share chrome). Prefer ~2400×1600 retina captures for full-window homepage shots. Keep URLs, section anchors, and the Sparkle feed.
 
