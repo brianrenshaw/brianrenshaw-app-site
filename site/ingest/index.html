@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <title>Ingest — Ingest. Cull. Browse. Organize.</title>
 <meta name="description" content="Open a card or a folder. Cull and browse with the keyboard. Organize when you’re ready — in one modern Mac app. Workspaces, verified copies, and Metadata Assist.">
 <link rel="canonical" href="https://brianrenshaw.app/ingest/">
@@ -8,8 +8,8 @@
 <meta property="og:description" content="Open a card or a folder. Cull and browse with the keyboard. Organize when you’re ready — in one modern Mac app.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/"><meta property="og:image" content="https://brianrenshaw.app/ingest/assets/hero-wedding-dark-0.9.4.2-retina.webp">
 <meta property="og:image:alt" content="Ingest’s Wedding workspace in dark mode with genuine wedding RAW photographs"><meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/ingest/assets/icon.png"><link rel="stylesheet" href="/assets/apps.css"><link rel="stylesheet" href="/assets/family.css"><link rel="stylesheet" href="/ingest/assets/site.css?v=092-no-semi-demo"><link rel="stylesheet" href="/ingest/assets/landing.css?v=0942-dark-workspaces">
-<script src="/ingest/assets/landing.js?v=0942-dark-workspaces" defer></script><script src="/ingest/assets/command-palette.js" defer></script></head>
+<link rel="icon" href="/ingest/assets/icon.png"><link rel="stylesheet" href="/assets/apps.css"><link rel="stylesheet" href="/assets/family.css"><link rel="stylesheet" href="/ingest/assets/site.css?v=0942-overlays"><link rel="stylesheet" href="/ingest/assets/landing.css?v=0942-overlays">
+<script src="/ingest/assets/landing.js?v=0942-dark-workspaces" defer></script><script src="/ingest/assets/overlays.js?v=1" defer></script><script src="/ingest/assets/command-palette.js" defer></script></head>
 <body class="app-ingest ingest-home"><a class="skip-link" href="#main">Skip to content</a>
 <header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" aria-label="Download Ingest" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.4.2/Ingest-0.9.4.2.dmg"><span class="nav-download-label">Download <span aria-hidden="true">↗</span></span><svg class="nav-download-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3"/></svg></a></nav></header>
 <main id="main" tabindex="-1" class="app-landing">
@@ -64,7 +64,13 @@
     ├── Highlights  · empty
     └── Delivery  · empty</pre><h4>Second verified copy · Photo Backup</h4><p class="workspace-backup"><code>Photo Backup/Events/2026/2026-09-26-Community-Evening/Originals/</code></p><p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p></div><figure class="desktop-shot"><a href="/ingest/assets/workspace-events-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Events destination, folder, and naming settings"><img src="/ingest/assets/workspace-events-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Events workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Community-Evening, Originals as the receiving folder, and the Community-Evening-{seqn} naming template"></a><figcaption><span>Events · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure></section>
 </div></div><div class="workspace-notes"><p>Adaptable examples, with fictional job names and organization dates. Original camera capture dates are unchanged. The project folders separate source photographs from outputs, an approach also used by <a href="https://support.captureone.com/hc/en-us/articles/360003115137-The-Complete-Guide-to-Sessions-in-Capture-One">Capture One Sessions</a>. These aren’t mandatory standards.</p><p>Use a separate physical drive for Photo Backup. Ingest’s second verified copy is one part of a backup workflow: arrange off-site protection and editor/catalog backups separately. A <a href="https://helpx.adobe.com/lightroom-classic/desktop/manage-catalogs-and-files/back-catalog.html">Lightroom catalog backup does not back up your original photographs</a>. See <a href="https://www.backblaze.com/blog/the-3-2-1-backup-strategy/">3-2-1 backup guidance</a>.</p><a href="/ingest/getting-started/#next">Build your workspace →</a></div></section>
-<section class="section-block primary-feature" id="metadata-assist" aria-labelledby="metadata-title"><div class="section-heading"><p class="eyebrow">02 / Metadata Assist</p><h2 id="metadata-title">Type <kbd>;</kbd>.<br>See your options.</h2><p>A structured editor, not an AI writer. Type <kbd>;</kbd> and pick the field — Location, Caption, Keywords, or anything else — then Tab and fill it in. Changes show in a review panel first. Typing alone writes nothing. <kbd>;</kbd> is for metadata fields; <code>{…}</code> is for rename and folder variables.</p></div>
+<section class="section-block primary-feature" id="metadata-assist" aria-labelledby="metadata-title"><div class="section-heading"><p class="eyebrow">02 / Metadata Assist</p><h2 id="metadata-title">Type <kbd>;</kbd>.<br>See your options.</h2><p>A structured editor, not an AI writer. Type <kbd>;</kbd> and pick the field — Location, Caption, Keywords, or anything else — then Tab and fill it in. Changes show in a review panel first. Typing alone writes nothing. <kbd>;</kbd> is for metadata fields; <code>{…}</code> is for rename and folder variables.</p>
+<ul class="ingest-detail-chips" aria-label="Metadata Assist details">
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-fields" aria-haspopup="dialog">Find a field with <kbd>;</kbd></button></li>
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-tab" aria-haspopup="dialog">Tab completion</button></li>
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-review" aria-haspopup="dialog">Review before Apply</button></li>
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-camera" aria-haspopup="dialog">Camera &amp; Lens</button></li>
+</ul></div>
 <figure class="metadata-demo" data-metadata-demo>
 <video id="metadata-demo-video" width="2880" height="1800" style="--capture-width:1440px" poster="/ingest/assets/metadata-assist-result-dark-0.9.4.2-retina.webp" controls muted playsinline preload="none" aria-label="Metadata Assist: add a location and keywords, replace a caption, review and apply" aria-describedby="metadata-walkthrough">
 <source src="/ingest/assets/metadata-assist-demo-0.9.4.2.webm" type="video/webm">
@@ -75,13 +81,52 @@
 <p class="metadata-status" data-video-status role="status" aria-live="polite"></p>
 <figcaption>Actual Ingest interactions, from entry to saved metadata. <a href="/ingest/assets/metadata-assist-demo-0.9.4.2.mp4">Open video ↗</a></figcaption>
 </figure>
-<ol class="metadata-walkthrough" id="metadata-walkthrough"><li><strong>Find a field.</strong> Open Metadata Assist, type <kbd>;</kbd> and search Location. Choose IPTC Place Shown and enter <strong>Yosemite Valley</strong>.</li><li><strong>Add the details.</strong> Add Keywords: <strong>landscape, waterfall, Yosemite</strong>. Replace the Caption <strong>Yosemite</strong> with <strong>Waterfall in Yosemite Valley</strong>.</li><li><strong>Review, then Apply.</strong> Check the proposed changes and the existing caption. Click Apply to 1 Photo; the saved caption, keywords, and place appear beside the photograph.</li></ol>
+<ol class="metadata-walkthrough" id="metadata-walkthrough">
+<li><button type="button" class="metadata-step" data-ingest-detail data-detail-title="Find a field" aria-controls="detail-ma-fields" aria-haspopup="dialog"><strong>Find a field.</strong> Open Metadata Assist, type <kbd>;</kbd> and search Location. Choose IPTC Place Shown and enter <strong>Yosemite Valley</strong>.</button></li>
+<li><button type="button" class="metadata-step" data-ingest-detail data-detail-title="Add the details" aria-controls="detail-ma-tab" aria-haspopup="dialog"><strong>Add the details.</strong> Add Keywords: <strong>landscape, waterfall, Yosemite</strong>. Replace the Caption <strong>Yosemite</strong> with <strong>Waterfall in Yosemite Valley</strong>.</button></li>
+<li><button type="button" class="metadata-step" data-ingest-detail data-detail-title="Review, then Apply" aria-controls="detail-ma-review" aria-haspopup="dialog"><strong>Review, then Apply.</strong> Check the proposed changes and the existing caption. Click Apply to 1 Photo; the saved caption, keywords, and place appear beside the photograph.</button></li>
+</ol>
 <p class="section-note">A place name describes the photo; it doesn’t change its GPS coordinates. Pause or open fullscreen to take a closer look.</p>
 <p class="section-note"><a href="/ingest/getting-started/#look">How Metadata Assist works →</a></p></section>
 <section class="review-band" id="workflow" aria-labelledby="workflow-title"><span id="see"></span><span id="cull"></span><p class="eyebrow">Also here</p><h2 id="workflow-title">Also the basics.<br>Without making them the story.</h2><p>Loupe, compare, faces, histograms, crop, stacks, ratings. Verified copies when you ingest. <kbd>⌘K</kbd> finds any action. A modern Mac photo app has to have them. They’re here. They’re not why you open Ingest.</p><a href="/ingest/getting-started/">Get started →</a></section>
-<section class="supporting-shelf quiet-line" id="social-export" aria-labelledby="social-export-title"><span id="assistance"></span><h2 id="social-export-title" class="visually-hidden">Social Export and optional help</h2><p>Social Export for posts, personal or business social. Optional on-device checks for soft focus, closed eyes, and near-duplicates. Both stay out of the way until you want them.</p></section>
+<section class="supporting-shelf quiet-line" id="social-export" aria-labelledby="social-export-title"><span id="assistance"></span><h2 id="social-export-title" class="visually-hidden">Social Export and optional help</h2><p>Short extras, when you want them:</p>
+<ul class="ingest-detail-chips" aria-label="Optional features">
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-social-export" aria-haspopup="dialog">Social Export</button></li>
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-on-device" aria-haspopup="dialog">On-device checks</button></li>
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-basics" aria-haspopup="dialog">Loupe, compare &amp; more</button></li>
+</ul></section>
 <section class="made-for-mac" id="shoot"><div><p class="eyebrow" id="shoot-title">Built for this machine</p><h2 id="alternative-title">Unapologetically Mac.</h2></div><div><p>I’m a photographer and an Apple enthusiast. I built Ingest for the Mac, with native controls, the keyboard, and <kbd>⌘K</kbd> at its center. From family cards to client shoots — it’s the photo workflow app I wanted on my own Mac.</p><p class="signature">Brian Renshaw <span>Photographer &amp; developer</span></p></div></section>
 <section class="ingest-closing" id="closing" aria-labelledby="closing-title"><img src="/ingest/assets/icon.png" width="72" height="72" alt=""><h2 id="closing-title">Off the card. Into your folders.</h2><p>Start with a folder. Make the workspace yours.</p><div class="actions"><a class="primary-action" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.4.2/Ingest-0.9.4.2.dmg">Download Ingest ↗</a><a class="secondary-action" href="/ingest/getting-started/">Get started →</a></div><p class="hero-details">Free during beta · No account<br>macOS 15+ · Apple silicon · Version 0.9.4.2</p><p class="beta-note">Ingest is a working beta. I use it for my own work and am still developing it for a broader audience. <a href="mailto:contact@brianrenshaw.app?subject=Ingest%20feedback">Send feedback →</a></p></section>
+
+<div class="ingest-detail-source" id="detail-ma-fields" hidden>
+<p>Press <kbd>⌘’</kbd> to open Metadata Assist. Type <kbd>;</kbd> to see your field options — Location, Caption, Keywords, and the rest. A fragment like <kbd>;lo</kbd> narrows the list. Choose a field, then fill the value or search for a place. Separate keywords with commas.</p>
+<p><kbd>;</kbd> finds metadata fields. Curly-brace tokens such as <code>{client}</code> are for rename and folder templates, not for Metadata Assist.</p>
+<p><a href="/ingest/guide/#quick-entry">Metadata Assist guide →</a></p>
+</div>
+<div class="ingest-detail-source" id="detail-ma-tab" hidden>
+<p>Tab fills the highlighted field, code, or a value you have used before. Successfully applied or staged values stay in local history for recent-value menus, Tab completion, and Use Last Details. That history stays on this Mac.</p>
+<p>In the demonstration: add Keywords <strong>landscape, waterfall, Yosemite</strong>, then replace the Caption <strong>Yosemite</strong> with <strong>Waterfall in Yosemite Valley</strong>.</p>
+</div>
+<div class="ingest-detail-source" id="detail-ma-review" hidden>
+<p>Typing alone writes nothing. Changes appear in a review panel first. Check the proposed values against what is already on the photograph, then Apply. Cancel discards the draft.</p>
+<p>Edit Individual Fields opens a detailed draft editor inside Metadata Assist; Use Changes returns that draft for review. Only Apply writes the reviewed changes.</p>
+</div>
+<div class="ingest-detail-source" id="detail-ma-camera" hidden>
+<p>Choose <strong>Camera &amp; Lens…</strong> in Metadata Assist for film scans and other files that need equipment details. Pick saved gear from My Gear, search the offline catalog, or save a custom make and model.</p>
+<p>Enter known aperture, shutter speed, ISO, and focal length; leave unknowns blank. Fill missing values preserves recorded metadata; Replace recorded values is for scanner metadata. Review Details returns to Metadata Assist before Apply. My Gear is local to this Mac.</p>
+<p><a href="/ingest/guide/#camera-details">Record camera and lens details →</a></p>
+</div>
+<div class="ingest-detail-source" id="detail-social-export" hidden>
+<p>Social Export prepares a photograph for posts — personal or business social — with canvas, border, and background controls. Turn it on per workspace so it stays out of the way on jobs that do not need it.</p>
+<p><a href="/ingest/guide/#social-export">Social Export in the guide →</a></p>
+</div>
+<div class="ingest-detail-source" id="detail-on-device" hidden>
+<p>Optional on-device checks can flag soft focus, closed eyes, and near-duplicates. Analysis stays on your Mac. Suggestions stay suggestions; every keep is yours.</p>
+</div>
+<div class="ingest-detail-source" id="detail-basics" hidden>
+<p>Loupe, compare, faces, histograms, crop, stacks, and ratings are all here. Verified copies when you ingest. <kbd>⌘K</kbd> finds any action. A modern Mac photo app has to have them — they are not why you open Ingest.</p>
+<p><a href="/ingest/getting-started/">Get started →</a></p>
+</div>
 </main><footer class="family-footer">
 <span>© 2026 Brian Renshaw</span>
 <nav aria-label="Footer">

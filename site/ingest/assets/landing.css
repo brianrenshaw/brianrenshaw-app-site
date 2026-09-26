@@ -179,3 +179,12 @@ body.app-ingest.ingest-home{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink
   .ingest-home .hero-playback [data-hero-toggle]{min-width:88px}
   .ingest-home .hero-showcase .hero-credit{margin-top:10px}
 }
+
+/* Metadata Assist walkthrough steps open detail modals. */
+.ingest-home .metadata-walkthrough .metadata-step{display:block;width:100%;text-align:left;font:inherit;font-size:14px;line-height:1.7;color:var(--muted);background:transparent;border:0;padding:0;cursor:pointer}
+.ingest-home .metadata-walkthrough .metadata-step:hover,.ingest-home .metadata-walkthrough .metadata-step:focus-visible{color:var(--ink)}
+.ingest-home .metadata-walkthrough .metadata-step:focus-visible{outline:2px solid var(--ink);outline-offset:6px;border-radius:4px}
+.ingest-home .metadata-walkthrough .metadata-step strong{font-weight:550;color:var(--ink)}
+.ingest-home .section-heading .ingest-detail-chips{margin-top:8px}
+.ingest-home .quiet-line .ingest-detail-chips{margin-top:14px}
+.ingest-home .quiet-line>p{margin-bottom:0}
