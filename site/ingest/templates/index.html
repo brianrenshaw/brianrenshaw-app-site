@@ -15,8 +15,8 @@
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
-<link rel="stylesheet" href="/ingest/assets/site.css?v=092-assist-demo">
-<script src="/ingest/assets/command-palette.js" defer></script><script src="/ingest/assets/typing-demo.js?v=2" defer></script></head>
+<link rel="stylesheet" href="/ingest/assets/site.css?v=092-assist-nogrps">
+<script src="/ingest/assets/command-palette.js" defer></script><script src="/ingest/assets/typing-demo.js?v=3" defer></script></head>
 <body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.2/Ingest-0.9.2.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
@@ -28,26 +28,23 @@
 <div class="typing-demo-grid">
 <div class="typing-demo" data-typing-demo="metadata" id="try-semicolon">
 <h3>Try <kbd>;</kbd></h3>
-<p>Same habit as Metadata Assist. Type a semicolon to find fields — including Map Location (GPS). Place names and map pins stay separate until you review.</p>
+<p>Same habit as Metadata Assist. Type a semicolon to find fields, fill a value, and watch Review changes. Map Location / Find place uses Apple Maps search in the app, so it is not shown here.</p>
 <div class="typing-demo-assist">
 <div class="typing-demo-editor">
 <div class="typing-demo-shell">
 <input class="typing-demo-input" data-demo-input type="text" spellcheck="false" autocomplete="off" placeholder="Type ; for a field…" aria-label="Metadata Assist demo">
 <ul class="typing-demo-menu" data-demo-menu hidden></ul>
 </div>
-<p class="typing-demo-hint" data-demo-hint>Type ; to see fields — including Map Location (GPS). Same habit as Metadata Assist.</p>
-<div class="typing-demo-map" data-demo-map hidden>
-<p>Find place (demo)</p>
-<div data-demo-map-list></div>
-</div>
+<p class="typing-demo-hint" data-demo-hint>Type ; to find metadata fields. Same habit as Metadata Assist.</p>
 </div>
 <div class="typing-demo-review" data-demo-review>
 <p>Review changes</p>
-<p class="typing-demo-empty" data-demo-empty>Your changes appear here as you type. A typed Location is a place name only. Map Location adds a GPS pin you review first. Nothing is saved until you confirm in the app.</p>
+<p class="typing-demo-empty" data-demo-empty>Your changes appear here as you type. Nothing is saved until you confirm in the app.</p>
 <div data-demo-review-list></div>
 </div>
 </div>
 </div>
+
 <div class="typing-demo" data-typing-demo="rename" id="try-braces">
 <h3>Try <kbd>{…}</kbd></h3>
 <p>Curly braces fill rename and folder variables. Edit the template and watch the filename.</p>
@@ -57,6 +54,7 @@
 <div class="typing-demo-output" data-demo-output></div>
 <p class="typing-demo-hint" data-demo-hint></p>
 </div>
+
 </div>
 <nav class="guide-toc" aria-label="On this page">
 <a href="#how">How a template works</a>

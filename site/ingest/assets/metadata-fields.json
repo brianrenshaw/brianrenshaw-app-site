@@ -1,15 +1,4 @@
 {
-  "mapLocation": {
-    "id": "map.location",
-    "label": "Map Location (GPS)",
-    "aliases": [
-      "gps",
-      "map",
-      "place",
-      "pin"
-    ],
-    "detail": "Search a place and review its map pin"
-  },
   "shootDetails": [
     {
       "id": "input.client",
@@ -465,38 +454,6 @@
       "label": "Web Statement of Rights",
       "aliases": [],
       "detail": "Metadata field"
-    }
-  ],
-  "samplePlaces": [
-    {
-      "name": "Louisville, Kentucky",
-      "subtitle": "United States",
-      "lat": 38.2527,
-      "lon": -85.7585
-    },
-    {
-      "name": "Waterfront Park",
-      "subtitle": "Louisville, KY",
-      "lat": 38.2589,
-      "lon": -85.7482
-    },
-    {
-      "name": "Churchill Downs",
-      "subtitle": "Louisville, KY",
-      "lat": 38.2028,
-      "lon": -85.77
-    },
-    {
-      "name": "Main Street",
-      "subtitle": "Louisville, KY",
-      "lat": 38.2542,
-      "lon": -85.7594
-    },
-    {
-      "name": "Central Park",
-      "subtitle": "New York, NY",
-      "lat": 40.7829,
-      "lon": -73.9654
     }
   ]
 }

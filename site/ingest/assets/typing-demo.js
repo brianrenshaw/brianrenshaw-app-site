@@ -1,4 +1,5 @@
-/* Interactive demos for Metadata Assist (;) and rename tokens ({…}). Progressive enhancement. */
+/* Interactive demos for Metadata Assist (;) and rename tokens ({…}). Progressive enhancement.
+   Map Location / Find place is not demoed here — it uses Apple Maps search in the app. */
 (() => {
   const FIELDS_URL = '/ingest/assets/metadata-fields.json';
   const SAMPLE = {
@@ -19,20 +20,16 @@
       catalog = await (await fetch(FIELDS_URL, { credentials: 'same-origin' })).json();
     } catch (e) {
       catalog = {
-        mapLocation: { id: 'map.location', label: 'Map Location (GPS)', aliases: ['gps', 'map'], detail: 'Map pin' },
         shootDetails: [
           { id: 'input.client', label: 'Client', aliases: [], detail: 'Shoot detail' },
           { id: 'input.event', label: 'Event', aliases: [], detail: 'Shoot detail' },
           { id: 'input.location', label: 'Location', aliases: [], detail: 'Shoot detail' },
-          { id: 'input.shootDate', label: 'Shoot Date', aliases: [], detail: 'Shoot detail' }
+          { id: 'input.shootDate', label: 'Shoot date', aliases: [], detail: 'Shoot detail' }
         ],
         fields: [
           { id: 'locationsShown', label: 'IPTC Place Shown', aliases: ['location', 'loc'], detail: 'Metadata field' },
           { id: 'description', label: 'Caption', aliases: ['caption'], detail: 'Metadata field' },
           { id: 'keywords', label: 'Keywords', aliases: ['kw'], detail: 'Metadata field' }
-        ],
-        samplePlaces: [
-          { name: 'Louisville, Kentucky', subtitle: 'United States', lat: 38.2527, lon: -85.7585 }
         ]
       };
     }
@@ -59,10 +56,8 @@
   const suggestionsFor = (cat, rawQuery) => {
     const q = (rawQuery || '').toLowerCase().trim();
     const out = [];
-    const mapQ = !q || ['map', 'gps', 'place', 'pin', 'location'].some(w => w.includes(q) || q.includes(w));
-    if (mapQ) out.push(cat.mapLocation);
-    cat.shootDetails.filter(s => matchItem(s, q)).forEach(s => out.push(s));
-    cat.fields.filter(f => matchItem(f, q)).forEach(f => out.push(f));
+    (cat.shootDetails || []).filter(s => matchItem(s, q)).forEach(s => out.push(s));
+    (cat.fields || []).filter(f => matchItem(f, q)).forEach(f => out.push(f));
     const seen = new Set();
     return out.filter(i => (seen.has(i.id) ? false : (seen.add(i.id), true))).slice(0, 14);
   };
@@ -77,7 +72,6 @@
     const reviewList = root.querySelector('[data-demo-review-list]');
     const empty = root.querySelector('[data-demo-empty]');
     const hint = root.querySelector('[data-demo-hint]');
-    const mapPanel = root.querySelector('[data-demo-map]');
     if (!input || !menu || !review || !reviewList) return;
 
     let active = 0;
@@ -116,71 +110,18 @@
       syncEmpty();
     };
 
-    const renderPlaces = (places) => {
-      if (!mapPanel) return;
-      mapPanel.hidden = false;
-      const list = mapPanel.querySelector('[data-demo-map-list]');
-      list.innerHTML = places.length
-        ? places.map((p) => {
-            const idx = cat.samplePlaces.indexOf(p);
-            return `<button type="button" class="typing-demo-place" data-place="${idx}"><strong>${escapeHtml(p.name)}</strong><span>${escapeHtml(p.subtitle)} · ${p.lat.toFixed(4)}, ${p.lon.toFixed(4)}</span></button>`;
-          }).join('')
-        : '<p class="typing-demo-hint">No demo places match. Try Louisville or Park.</p>';
-    };
-
     const choose = (item) => {
       menu.hidden = true;
       matches = [];
-      if (item.id === 'map.location') {
-        pending = { mode: 'map' };
-        input.value = '';
-        input.placeholder = 'Search a place for a map pin…';
-        setHint('In the app this opens Find place. Typed Location is a name only; Map Location adds a GPS pin you review first.');
-        renderPlaces(cat.samplePlaces);
-        input.focus();
-        return;
-      }
-      if (mapPanel) mapPanel.hidden = true;
       pending = item;
       input.value = '';
       input.placeholder = `${item.label}…`;
-      if (item.id === 'locationsShown' || item.id === 'input.location') {
-        setHint('Place name only — no GPS yet. Use Map Location (GPS) when you want a pin.');
-      } else if ((item.detail || '').includes('Shoot')) {
-        setHint('Shoot detail for naming and folders. Capture times stay unchanged.');
-      } else {
-        setHint(`Type a value for ${item.label}, then Return. Review appears on the right — nothing writes until Apply in the app.`);
-      }
+      setHint(`Type a value for ${item.label}, then Return. Review appears on the right — nothing writes until you confirm in the app.`);
       input.focus();
     };
 
-    const pickPlace = (place) => {
-      upsertRow('map.location', 'Map Location (GPS)',
-        `${escapeHtml(place.name)}<span class="typing-demo-coords">${place.lat.toFixed(5)}, ${place.lon.toFixed(5)}</span>`,
-        'Pin reviewed — GPS + place details');
-      upsertRow('locationsShown', 'IPTC Place Shown', escapeHtml(place.name), 'Place text from the pin');
-      pending = null;
-      input.value = '';
-      input.placeholder = 'Type ; for another field…';
-      if (mapPanel) mapPanel.hidden = true;
-      setHint('Map pin is in the review panel. In Ingest you confirm before GPS is written.');
-    };
-
-    if (mapPanel) {
-      mapPanel.addEventListener('click', (e) => {
-        const btn = e.target.closest('[data-place]');
-        if (!btn) return;
-        pickPlace(cat.samplePlaces[Number(btn.dataset.place)]);
-      });
-    }
-
     input.addEventListener('input', () => {
       const v = input.value;
-      if (pending && pending.mode === 'map') {
-        const q = v.toLowerCase();
-        renderPlaces(cat.samplePlaces.filter(p => !q || `${p.name} ${p.subtitle}`.toLowerCase().includes(q)));
-        return;
-      }
       if (pending) return;
       if (v.startsWith(';')) {
         matches = suggestionsFor(cat, v.slice(1));
@@ -190,7 +131,7 @@
       } else {
         matches = [];
         menu.hidden = true;
-        if (!v) setHint('Type ; to see fields — including Map Location (GPS). Same habit as Metadata Assist.');
+        if (!v) setHint('Type ; to find metadata fields. Same habit as Metadata Assist.');
       }
     });
 
@@ -202,35 +143,24 @@
         if (e.key === 'Escape') {
           e.preventDefault();
           input.value = ''; matches = []; menu.hidden = true;
-          setHint('Type ; to see fields — including Map Location (GPS). Same habit as Metadata Assist.');
+          setHint('Type ; to find metadata fields. Same habit as Metadata Assist.');
         }
         return;
       }
-      if (pending && pending.mode === 'map' && e.key === 'Escape') {
-        e.preventDefault();
-        pending = null; input.value = ''; input.placeholder = 'Type ; for a field…';
-        if (mapPanel) mapPanel.hidden = true;
-        setHint('Type ; to see fields — including Map Location (GPS). Same habit as Metadata Assist.');
-        return;
-      }
-      if (pending && pending.mode !== 'map' && e.key === 'Enter') {
+      if (pending && e.key === 'Enter') {
         e.preventDefault();
         const value = input.value.trim() || '(example value)';
-        const isPlaceText = pending.id === 'locationsShown' || pending.id === 'input.location';
-        upsertRow(pending.id, pending.label, escapeHtml(value),
-          isPlaceText ? 'Place name only — no GPS pin' : (pending.detail || ''));
+        upsertRow(pending.id, pending.label, escapeHtml(value), pending.detail || '');
         pending = null;
         input.value = '';
         input.placeholder = 'Type ; for another field…';
-        setHint(isPlaceText
-          ? 'Place text is staged. Choose Map Location (GPS) when you also want a pin.'
-          : 'Review panel updated. In Ingest, Apply writes only after you confirm.');
+        setHint('Review panel updated. In Ingest, nothing is saved until you confirm.');
         return;
       }
-      if (pending && pending.mode !== 'map' && e.key === 'Escape') {
+      if (pending && e.key === 'Escape') {
         e.preventDefault();
         pending = null; input.value = ''; input.placeholder = 'Type ; for a field…';
-        setHint('Type ; to see fields — including Map Location (GPS). Same habit as Metadata Assist.');
+        setHint('Type ; to find metadata fields. Same habit as Metadata Assist.');
       }
     });
 
