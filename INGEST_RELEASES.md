@@ -49,6 +49,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.9.4.2 | 36 | September 25, 2026 | Informational retained-pair receipts, conservative cleanup checks, and stable Focus Mode window bounds. |
 | 0.9.4.1 | 35 | September 25, 2026 | Focus Mode synchronization, Settings layout and narrow-window fixes, and Basic card-handling value correction. |
 | 0.9.4 | 34 | September 25, 2026 | Reviewed camera/lens and exposure metadata for film scans, saved equipment, folder-preview fixes, and clearer Settings contrast. |
 | 0.9.3 | 33 | September 25, 2026 | Sharper Social Export with Sharpen for Screen, no enlarging by default, Actual Pixels, size estimates, and full-bleed starters for every Instagram shape. |
