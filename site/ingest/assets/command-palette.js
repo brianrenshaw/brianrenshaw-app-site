@@ -1,7 +1,7 @@
 /* Site command palette. Progressive enhancement — navigation works without JS. */
 (() => {
   const INDEX_URL = '/ingest/assets/search-index.json';
-  const DOWNLOAD = 'https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.2/Ingest-0.9.2.dmg';
+  const DOWNLOAD = 'https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.3/Ingest-0.9.3.dmg';
 
   const isMac = /Mac|iPhone|iPad|iPod/.test(navigator.platform || '') || (navigator.userAgentData && navigator.userAgentData.platform === 'macOS');
   const modLabel = isMac ? '⌘' : 'Ctrl';

@@ -49,6 +49,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.9.3 | 33 | September 25, 2026 | Sharper Social Export with Sharpen for Screen, no enlarging by default, Actual Pixels, size estimates, and full-bleed starters for every Instagram shape. |
 | 0.9.2 | 32 | September 25, 2026 | Simpler workspace settings and refreshed five-screen walkthrough with Metadata Assist. |
 | 0.9.1 | 30 | September 25, 2026 | Visible tag and selection filters, selection-based import, workspace defaults, unified metadata editing, Focus Peaking, and thumbnail spacing. |
 | 0.9.0 | 29 | September 25, 2026 | Metadata Assist, local history and Tab completion, workspace and Focus Mode controls, learning tips, and progressive photo browsing. |
