@@ -8,7 +8,7 @@
 <meta property="og:description" content="Open a card or a folder. Cull and browse with the keyboard. Organize when you’re ready — in one modern Mac app.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/"><meta property="og:image" content="https://brianrenshaw.app/ingest/assets/hero-wedding-dark-0.9.4.2-retina.webp">
 <meta property="og:image:alt" content="Ingest’s Wedding workspace in dark mode with genuine wedding RAW photographs"><meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/ingest/assets/icon.png"><link rel="stylesheet" href="/assets/apps.css"><link rel="stylesheet" href="/assets/family.css"><link rel="stylesheet" href="/ingest/assets/site.css?v=0942-gps-options"><link rel="stylesheet" href="/ingest/assets/landing.css?v=0942-gps-options">
+<link rel="icon" href="/ingest/assets/icon.png"><link rel="stylesheet" href="/assets/apps.css"><link rel="stylesheet" href="/assets/family.css"><link rel="stylesheet" href="/ingest/assets/site.css?v=0942-ma-trim"><link rel="stylesheet" href="/ingest/assets/landing.css?v=0942-ma-trim">
 <script src="/ingest/assets/landing.js?v=0942-dark-workspaces" defer></script><script src="/ingest/assets/overlays.js?v=3" defer></script><script src="/ingest/assets/command-palette.js" defer></script></head>
 <body class="app-ingest ingest-home"><a class="skip-link" href="#main">Skip to content</a>
 <header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" aria-label="Download Ingest" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.4.2/Ingest-0.9.4.2.dmg"><span class="nav-download-label">Download <span aria-hidden="true">↗</span></span><svg class="nav-download-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3"/></svg></a></nav></header>
@@ -39,7 +39,7 @@
 <li><button type="button" class="ingest-detail-chip" data-ingest-detail data-detail-title="Headshots setup" aria-controls="detail-workspace-headshots" aria-haspopup="dialog">Headshots</button></li>
 <li><button type="button" class="ingest-detail-chip" data-ingest-detail data-detail-title="Events setup" aria-controls="detail-workspace-events" aria-haspopup="dialog">Events</button></li>
 </ul></div>
-<div class="workspace-notes"><p>Use a separate physical drive for Photo Backup. A second copy is one part of a backup workflow; arrange off-site protection and editor/catalog backups separately. A <a href="https://helpx.adobe.com/lightroom-classic/desktop/manage-catalogs-and-files/back-catalog.html">Lightroom catalog backup</a> does not include the original photographs.</p><p><a href="/ingest/getting-started/#next">Build your workspace →</a></p></div></section>
+<div class="workspace-notes"><p>Use a separate physical drive for Photo Backup. <a href="/ingest/support/#backup-strategy">Backup strategy →</a></p><p><a href="/ingest/getting-started/#next">Build your workspace →</a></p></div></section>
 <section class="section-block primary-feature" id="metadata-assist" aria-labelledby="metadata-title"><div class="section-heading"><p class="eyebrow">02 / Metadata Assist</p><h2 id="metadata-title">Type <kbd>;</kbd>.<br>See your options.</h2><p>Pick a field, add the details, and review before Apply. Set a GPS pin, add keywords, or update a caption — without leaving your photographs.</p>
 <ul class="ingest-detail-chips" aria-label="Metadata Assist details">
 <li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-fields" aria-haspopup="dialog">Find a field with <kbd>;</kbd></button></li>
@@ -47,9 +47,7 @@
 <li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-review" aria-haspopup="dialog">Review before Apply</button></li>
 <li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-camera" aria-haspopup="dialog">Camera &amp; Lens</button></li>
 <li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-gps" aria-haspopup="dialog">GPS &amp; other apps</button></li>
-<li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-iptc" aria-haspopup="dialog">Optional IPTC fields</button></li>
-<li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-templates" aria-haspopup="dialog">Import templates</button></li>
-<li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-codes" aria-haspopup="dialog">TSV caption codes</button></li>
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail data-detail-title="Also in Metadata Assist" aria-controls="detail-ma-also" aria-haspopup="dialog">Also in Metadata Assist</button></li>
 </ul></div>
 <figure class="metadata-demo" data-metadata-demo>
 <video id="metadata-demo-video" width="2880" height="1592" style="--capture-width:1440px" poster="/ingest/assets/metadata-assist-gps-poster-dark-0.9.4.2-retina.webp" controls muted playsinline preload="none" aria-label="Metadata Assist: set GPS coordinates and keywords, replace a caption, review and apply" aria-describedby="metadata-walkthrough">
@@ -194,6 +192,10 @@
 
 <div class="ingest-detail-source" id="detail-ma-gps" hidden>
 <p><strong>Map Location (GPS)</strong> searches for a place and previews its pin before Apply. It saves coordinates as well as IPTC place details. GPS coordinates are what photo apps such as Apple Photos and Lightroom use for a map location.</p><p>For proprietary RAW files, Ingest writes metadata to an XMP sidecar. Have your editor read the updated metadata. For Apple Photos, export a JPEG with metadata and GPS included; do not assume Photos reads a RAW sidecar. This is file metadata, not automatic cloud synchronization.</p>
+</div>
+<div class="ingest-detail-source" id="detail-ma-also" hidden>
+<p><strong>Optional IPTC fields</strong>, <strong>import templates</strong>, and <strong>TSV caption codes</strong> live in Metadata Assist when a job needs them. Use Edit Individual Fields for creator, copyright, and other IPTC details; import a local <code>.ingesttemplate</code> for reusable fills; type <kbd>=</kbd> for caption codes from a workspace TSV file.</p>
+<p><a href="/ingest/guide/#metadata">Metadata Assist in the guide →</a></p>
 </div>
 <div class="ingest-detail-source" id="detail-ma-iptc" hidden>
 <p>Choose <strong>Edit Individual Fields</strong> for optional IPTC details beyond Caption and Keywords, including creator, copyright, credit, and location fields. Use only the fields your workflow needs. Return the draft to Metadata Assist, review the proposed changes, and Apply.</p>
