@@ -19,7 +19,7 @@
 <script src="/ingest/assets/command-palette.js" defer></script></head>
 <body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/" aria-current="page">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.3/Ingest-0.9.3.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
+<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/" aria-current="page">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.4/Ingest-0.9.4.dmg">Download <span aria-hidden="true">↗</span></a></nav></header>
 <nav class="docs-nav" aria-label="Ingest documentation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/" aria-current="page">Guide</a><a href="/ingest/shortcuts/">Shortcuts</a><a href="/ingest/templates/">Naming &amp; metadata</a><a href="/ingest/automation/">Automation</a></nav>
 <main id="main" tabindex="-1" class="family-document reference">
 <p class="eyebrow">Ingest / The guide</p>
@@ -238,6 +238,9 @@
 <p>Focus Peaking (<kbd>⌥E</kbd>) overlays green edge highlights while preserving the original color and brightness. It is not a complete map of focused areas: low-contrast detail can be sharp without a highlight. Toggle it off and inspect the original at 100% before deciding.</p>
 <p><strong>Edit Metadata…</strong> opens Metadata Assist. Choose <strong>Edit Individual Fields…</strong> inside it for the detailed field editor. <strong>Use Changes</strong> returns that draft to the review panel; only <strong>Apply</strong> applies the reviewed changes.</p>
 <h2>Metadata Assist</h2>
+<h3 id="camera-details">Camera and lens details for film scans</h3>
+<p>Choose <strong>Camera &amp; Lens…</strong> in Metadata Assist. Pick saved equipment from <strong>My Gear</strong>, search the offline camera/lens catalog, or save a custom make and model. Enter known aperture, shutter speed, ISO, and focal length; leave unknown details blank. Shutter speed accepts a fraction such as <code>1/125</code> or seconds.</p>
+<p><strong>Fill missing values</strong> preserves recorded metadata. Choose <strong>Replace recorded values</strong> when the scan describes the scanner instead of the taking camera. <strong>Review Details</strong> returns to Metadata Assist before Apply. JPEG/TIFF edits and RAW sidecars use verification and Undo. During ingest, the details go to verified copies. My Gear is saved on this Mac and does not yet sync with Ingest Field.</p>
 <p><kbd>⌘’</kbd> opens Metadata Assist for selected photos or the current import. Choose Keywords, Caption, or Location to begin, or type <kbd>;</kbd> to see your field options, pick one (a fragment like <kbd>;lo</kbd> narrows the list), then <kbd>Tab</kbd> to take it and fill the value or search for a place. Separate keywords with commas.</p>
 <pre><code>;
 ;lo
