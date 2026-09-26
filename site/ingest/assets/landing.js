@@ -57,6 +57,7 @@
       tab.setAttribute('aria-controls', panels[index].id);
       panels[index].setAttribute('role', 'tabpanel');
       panels[index].setAttribute('aria-labelledby', tab.id);
+      panels[index].tabIndex = 0;
     });
     const select = (index, focus = false) => {
       tabs.forEach((tab, i) => {
@@ -64,6 +65,7 @@
         tab.tabIndex = i === index ? 0 : -1;
         panels[i].hidden = i !== index;
       });
+      panels[index].querySelectorAll('img').forEach(img => { img.loading = 'eager'; });
       if (focus) tabs[index].focus();
     };
     tabs.forEach((tab, index) => {
@@ -81,6 +83,7 @@
       });
     });
     select(0);
+    workspaces.querySelector('.workspace-chips').hidden = false;
     workspaces.classList.add('is-enhanced');
   });
 })();
@@ -173,5 +176,112 @@
     carousel.querySelector('.hero-controls').hidden = false;
     updatePlayback();
     prepare(1);
+  });
+})();
+
+// A real app recording. Intent survives visibility pauses; reduced motion is opt-in.
+(() => {
+  document.querySelectorAll('[data-metadata-demo]').forEach(demo => {
+    const video = demo.querySelector('video');
+    const toggle = demo.querySelector('[data-video-toggle]');
+    const status = demo.querySelector('[data-video-status]');
+    const motion = matchMedia('(prefers-reduced-motion: reduce)');
+    let intended = !motion.matches, visible = false, loaded = false, pending = false;
+    let failed = false, automaticPauses = 0;
+    const eligible = () => visible && !document.hidden;
+    const update = () => {
+      toggle.textContent = intended && (!video.paused || pending) ? 'Pause' : 'Play';
+      toggle.setAttribute('aria-label', `${toggle.textContent} Metadata Assist demonstration`);
+    };
+    const load = () => {
+      if (loaded) return;
+      loaded = true;
+      video.preload = 'auto';
+      video.load();
+    };
+    const pause = () => {
+      if (!video.paused) { automaticPauses++; video.pause(); }
+      update();
+    };
+    const sync = async () => {
+      video.loop = !motion.matches && intended && eligible();
+      if (!intended || !eligible() || failed) { pause(); return; }
+      load();
+      if (pending || !video.paused) return;
+      pending = true;
+      update();
+      try {
+        await video.play();
+        if (!intended || !eligible()) pause();
+      } catch (error) {
+        // Visibility may abort an in-flight play. Only a real playback failure
+        // should require a new deliberate Play action.
+        if (intended && eligible()) {
+          intended = false;
+          status.textContent = 'Press Play to watch the demonstration.';
+        }
+      } finally { pending = false; update(); }
+    };
+    const play = () => {
+      if (failed) { failed = false; loaded = false; }
+      intended = true;
+      status.textContent = '';
+      sync();
+    };
+    toggle.addEventListener('click', () => {
+      if (intended && (!video.paused || pending)) { intended = false; sync(); }
+      else play();
+    });
+    demo.querySelector('[data-video-restart]').addEventListener('click', () => {
+      video.currentTime = 0;
+      play();
+    });
+    demo.querySelector('[data-video-fullscreen]').addEventListener('click', async () => {
+      try {
+        if (video.requestFullscreen) await video.requestFullscreen();
+        else if (video.webkitEnterFullscreen) video.webkitEnterFullscreen();
+        else throw new Error('Fullscreen unavailable');
+      } catch { status.textContent = 'Fullscreen isn’t available here. Use Open video below.'; }
+    });
+    video.addEventListener('play', () => {
+      // The native controls remain useful without JS and allow deliberate play.
+      if (!pending) intended = true;
+      if (!eligible()) pause();
+      else { video.loop = !motion.matches && intended; status.textContent = ''; }
+      update();
+    });
+    video.addEventListener('pause', () => {
+      if (automaticPauses) automaticPauses--;
+      else if (!video.ended) intended = false;
+      update();
+    });
+    video.addEventListener('ended', () => { intended = false; update(); });
+    video.addEventListener('error', () => {
+      failed = true; intended = false; pending = false;
+      status.textContent = 'The video couldn’t load. Try Play, open the MP4 below, or follow the steps beneath it.';
+      update();
+    });
+    motion.addEventListener('change', () => {
+      intended = false;
+      sync();
+      status.textContent = motion.matches ? 'Reduced motion: press Play to watch once.' : '';
+    });
+    document.addEventListener('visibilitychange', sync);
+    if ('IntersectionObserver' in window) {
+      const nearby = new IntersectionObserver(entries => {
+        if (entries.some(entry => entry.isIntersecting)) { load(); nearby.disconnect(); }
+      }, {rootMargin: '300px'});
+      nearby.observe(video);
+      new IntersectionObserver(entries => {
+        visible = entries[0].isIntersecting && entries[0].intersectionRatio >= .5;
+        sync();
+      }, {threshold: [0, .5, 1]}).observe(video);
+    } else {
+      // Older browsers keep native controls and deliberate playback.
+      visible = true; intended = false;
+    }
+    if (motion.matches) status.textContent = 'Reduced motion: press Play to watch once.';
+    demo.querySelector('[data-video-controls]').hidden = false;
+    update();
   });
 })();

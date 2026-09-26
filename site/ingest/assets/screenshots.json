@@ -133,6 +133,48 @@
       "displayWidth": 1440,
       "displayHeight": 900,
       "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "workspace-wedding-setup-dark-0.9.4.2-retina.webp": {
+      "width": 2056,
+      "height": 2580,
+      "displayWidth": 1028,
+      "displayHeight": 1290,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "workspace-landscapes-setup-dark-0.9.4.2-retina.webp": {
+      "width": 2056,
+      "height": 2580,
+      "displayWidth": 1028,
+      "displayHeight": 1290,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "workspace-personal-setup-dark-0.9.4.2-retina.webp": {
+      "width": 2056,
+      "height": 2580,
+      "displayWidth": 1028,
+      "displayHeight": 1290,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "workspace-headshots-setup-dark-0.9.4.2-retina.webp": {
+      "width": 2056,
+      "height": 2580,
+      "displayWidth": 1028,
+      "displayHeight": 1290,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "workspace-events-setup-dark-0.9.4.2-retina.webp": {
+      "width": 2056,
+      "height": 2580,
+      "displayWidth": 1028,
+      "displayHeight": 1290,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "metadata-assist-result-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     }
   },
   "archivedImages": {
@@ -602,6 +644,28 @@
       "displayWidth": 1440,
       "displayHeight": 900,
       "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    }
+  },
+  "videos": {
+    "metadata-assist-demo-0.9.4.2.mp4": {
+      "width": 2880,
+      "height": 1800,
+      "duration": 31.0,
+      "codec": "h264",
+      "audio": false,
+      "sha256": "07f634314acd0a4d28ef11d137375f62908d06fc6067708109f43fd79fb9767f",
+      "poster": "metadata-assist-result-dark-0.9.4.2-retina.webp",
+      "source": "Actual signed Ingest 0.9.4.2 (36), isolated RAW demo, native 2x window recording. 31-second continuous take; window shadow trimmed to native bounds, no retiming, overlays, reconstructed UI, or audio. See SOURCES.md."
+    },
+    "metadata-assist-demo-0.9.4.2.webm": {
+      "width": 2880,
+      "height": 1800,
+      "duration": 31.0,
+      "codec": "vp9",
+      "audio": false,
+      "sha256": "a39f8fcc3295756bc49f9b2ea7a6a94bbc5feee7901fa99e309baa8a53c1c170",
+      "poster": "metadata-assist-result-dark-0.9.4.2-retina.webp",
+      "source": "Actual signed Ingest 0.9.4.2 (36), isolated RAW demo, native 2x window recording. 31-second continuous take; window shadow trimmed to native bounds, no retiming, overlays, reconstructed UI, or audio. See SOURCES.md."
     }
   }
 }

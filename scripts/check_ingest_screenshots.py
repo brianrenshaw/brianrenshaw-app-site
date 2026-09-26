@@ -5,6 +5,7 @@ from pathlib import Path
 import json
 import re
 import struct
+import hashlib
 
 ROOT = Path(__file__).resolve().parents[1] / 'site'
 ASSETS = ROOT / 'ingest/assets'
@@ -14,6 +15,8 @@ archived = catalog.get('archivedImages', {})
 assert not manifest.keys() & archived.keys(), 'Capture cannot be both active and archived'
 errors = []
 seen = set()
+videos = catalog.get('videos', {})
+seen_videos = set()
 
 
 def lossless_dimensions(path):
@@ -77,7 +80,24 @@ class Images(HTMLParser):
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         src = attrs.get('src', '')
-        if tag != 'img' or not src.startswith('/ingest/assets/') or not src.endswith(('.webp', '.jpg')):
+        if tag == 'source' and src.startswith('/ingest/assets/'):
+            name = src.rsplit('/', 1)[-1]
+            if name not in videos:
+                errors.append(f'{page}: untracked video source {name}')
+            else:
+                seen_videos.add(name)
+                if attrs.get('type') != 'video/' + name.rsplit('.', 1)[-1]:
+                    errors.append(f'{page}: incorrect video MIME type for {name}')
+            return
+        if tag == 'video':
+            src = attrs.get('poster', '')
+            if not src:
+                errors.append(f'{page}: missing video poster')
+            if 'controls' not in attrs or attrs.get('preload') != 'none':
+                errors.append(f'{page}: video needs native controls and deferred loading')
+            if 'autoplay' in attrs or 'loop' in attrs:
+                errors.append(f'{page}: autoplay and loop must respect motion/visibility in JS')
+        if tag not in ('img', 'video') or not src.startswith('/ingest/assets/') or not src.endswith(('.webp', '.jpg')):
             return
         name = src.rsplit('/', 1)[-1]
         if name not in manifest:
@@ -95,9 +115,20 @@ for page in ROOT.rglob('*.html'):
     Images().feed(page.read_text())
 for name in manifest.keys() - seen:
     errors.append(f'{name}: capture is unused')
+for name, meta in videos.items():
+    try:
+        data = (ASSETS / name).read_bytes()
+        assert name in seen_videos, 'video is unused'
+        assert hashlib.sha256(data).hexdigest() == meta['sha256'], 'video checksum differs'
+        assert (data[4:8] == b'ftyp' if name.endswith('.mp4') else data[:4] == b'\x1aE\xdf\xa3'), 'invalid video container'
+        poster = manifest[meta['poster']]
+        assert (meta['width'], meta['height']) == (poster['width'], poster['height']), 'poster/video dimensions differ'
+        assert 25 <= meta['duration'] <= 35 and meta['audio'] is False, 'expected short silent demo'
+    except (AssertionError, OSError, KeyError) as error:
+        errors.append(f'{name}: {error}')
 css = (ASSETS / 'site.css').read_text()
 if 'max-width:var(--capture-width,100%)' not in css:
     errors.append('Missing screenshot display-size cap')
 if errors:
     raise SystemExit('\n'.join(errors))
-print(f'PASS: {len(manifest)} current and {len(archived)} archived genuine captures; aliases, HTML dimensions, and display-size limits.')
+print(f'PASS: {len(manifest)} current and {len(archived)} archived genuine captures; {len(videos)} video sources; checksums, posters, HTML dimensions, and display-size limits.')

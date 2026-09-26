@@ -19,6 +19,7 @@ jobs:
           python-version: '3.12'
       - run: python3 scripts/check_site.py
       - run: python3 scripts/check_ingest_screenshots.py
+      - run: node scripts/check_ingest_interactions.cjs
   deploy:
     if: github.event_name != 'pull_request'
     needs: check

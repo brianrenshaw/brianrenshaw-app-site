@@ -94,6 +94,10 @@
     {
       "id": "ingest-dark-demo-workspaces",
       "decision": "September 26, 2026: keep the bright website and use only genuine dark-mode native app captures. Hero automatically cycles Wedding, Landscapes, Personal, Headshots, Events with explicit pause and manual controls. Curated real RAW photos, neutral Photo Library root, useful Favorites and Recent folders; no personal username or camera-test filenames. Honor reduced motion and provide a no-JavaScript fallback. Wedding styling is classic white gowns, suits, veils, ceremony and reception details; exclude tiaras, flower-crown portraits, and Indian wedding styling. Each slide demonstrates a distinct native review layout: Grid, Split with histogram/camera details, Focus with filmstrip, portrait Grid, and a candid with two sharp face close-ups. Headshots uses neutral fully clothed portraits of men and women; no glamour or suggestive selections. Preserve both Focus-mode captions requested by the owner."
+    },
+    {
+      "id": "ingest-native-metadata-video-and-setups",
+      "decision": "Five manual workspace tabs change complete native settings captures, folders, naming, review summary, and second-copy paths together. Wedding first; independent of hero. Keep bright site and dark current app. Genuine silent 31-second Metadata Assist recording uses explicit playback controls, visibility pausing, reduced-motion opt-in, poster and text walkthrough. Reserve panel and media dimensions; no framework."
     }
   ],
   "evidence": [
