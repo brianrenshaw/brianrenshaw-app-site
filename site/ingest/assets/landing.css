@@ -115,6 +115,7 @@ body.app-ingest.ingest-home{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink
 .ingest-home .hero-controls[hidden]{display:none}
 .ingest-home .hero-controls{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:0 0 18px}
 .ingest-home .hero-workspaces,.ingest-home .hero-playback{display:flex;align-items:center;gap:4px}
+.ingest-home .hero-workspaces{flex-wrap:wrap;justify-content:center}
 .ingest-home .hero-controls button{font:inherit;font-size:13px;font-weight:550;line-height:1.3;min-height:44px;border:1px solid transparent;border-radius:7px;padding:10px 15px;background:transparent;color:var(--muted);cursor:pointer}
 .ingest-home .hero-controls button:hover{color:var(--ink);background:var(--surface)}
 .ingest-home .hero-controls button[aria-pressed="true"]{color:var(--ink);background:var(--surface);border-color:var(--line)}
