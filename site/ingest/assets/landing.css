@@ -98,34 +98,3 @@ body.app-ingest.ingest-home{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink
 .ingest-home .quiet-line{padding:28px 0 36px}
 .ingest-home .quiet-line p{font-size:15px;max-width:720px;margin:0;color:var(--muted)}
 .ingest-home .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-
-/* Solo visuals: mode ribbon, card→folders filmstrip, setup scrubber */
-.ingest-home .mode-ribbon{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:28px 0 8px;padding:0}
-.ingest-home .mode-ribbon figure{margin:0;min-width:0}
-.ingest-home .mode-ribbon a{display:block;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:#111113;box-shadow:0 8px 22px #20241b0f}
-.ingest-home .mode-ribbon img{display:block;width:100%;height:auto;aspect-ratio:15/9.5;object-fit:cover}
-.ingest-home .mode-ribbon figcaption{margin:10px 2px 0;font-size:13px;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
-.ingest-home .mode-ribbon .mode-note{font-size:12px;color:var(--muted);font-weight:400;display:block;margin-top:2px}
-.ingest-home .metaphor-strip{margin:36px 0 0;padding:0}
-.ingest-home .metaphor-strip .desktop-shot>a{background:var(--bg);box-shadow:none;border:1px solid var(--line)}
-.ingest-home .metaphor-strip img{max-width:100%;width:100%}
-.ingest-home .setup-scrubber{position:relative;margin:0;min-width:0;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--surface);isolation:isolate}
-.ingest-home .setup-scrubber .scrubber-frame{position:relative;aspect-ratio:8/5;background:#eeeee7}
-.ingest-home .setup-scrubber img{display:block;width:100%;height:100%;object-fit:cover;user-select:none;pointer-events:none}
-.ingest-home .setup-scrubber .scrubber-before,.ingest-home .setup-scrubber .scrubber-after{position:absolute;inset:0}
-.ingest-home .setup-scrubber:not(.is-enhanced) .scrubber-frame{display:grid;grid-template-columns:1fr 1fr;aspect-ratio:auto}
-.ingest-home .setup-scrubber:not(.is-enhanced) .scrubber-before,.ingest-home .setup-scrubber:not(.is-enhanced) .scrubber-after{position:relative;inset:auto}
-.ingest-home .setup-scrubber:not(.is-enhanced) img{height:auto;aspect-ratio:8/5;object-fit:cover}
-.ingest-home .setup-scrubber.is-enhanced .scrubber-after{clip-path:inset(0 0 0 52%)}
-.ingest-home .setup-scrubber .scrubber-range{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;z-index:3}
-.ingest-home .setup-scrubber:not(.is-enhanced) .scrubber-range{display:none}
-.ingest-home .setup-scrubber .scrubber-guide{display:none}
-.ingest-home .setup-scrubber.is-enhanced .scrubber-guide{display:block;position:absolute;top:0;bottom:0;left:52%;width:2px;background:#efad39;box-shadow:0 0 0 1px #fff8;transform:translateX(-1px);pointer-events:none;z-index:2}
-.ingest-home .setup-scrubber.is-enhanced .scrubber-guide::before{content:"";position:absolute;top:50%;left:50%;width:28px;height:28px;border-radius:50%;background:#efad39;border:2px solid #fff;box-shadow:0 2px 8px #20241b33;transform:translate(-50%,-50%)}
-.ingest-home .setup-scrubber .scrubber-labels{display:flex;justify-content:space-between;gap:12px;padding:12px 14px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);background:var(--surface)}
-.ingest-home .setup-scrubber .scrubber-labels strong{color:var(--ink);font-weight:650}
-.ingest-home .honesty-note{font-size:13px;color:var(--muted);margin:14px 0 0;max-width:720px;padding:12px 14px;border-left:3px solid #efad39;background:#f4f1e9}
-.ingest-home .honesty-note strong{color:var(--ink);font-weight:600}
-@media(max-width:800px){.ingest-home .mode-ribbon{grid-template-columns:1fr 1fr;gap:12px}.ingest-home .metaphor-strip{margin-top:24px}}
-@media(max-width:600px){.ingest-home .mode-ribbon{gap:10px}.ingest-home .mode-ribbon figcaption{font-size:12px}.ingest-home .setup-scrubber:not(.is-enhanced) .scrubber-frame{grid-template-columns:1fr}}
-@media(prefers-reduced-motion:reduce){.ingest-home .setup-scrubber .scrubber-after{transition:none}}
