@@ -44,7 +44,7 @@ def font(size: int, bold: bool = False):
 
 def save_webp(im: Image.Image, path: Path, quality: int = 90):
     rgb = im.convert("RGB") if im.mode == "RGBA" else im
-    rgb.save(path, "WEBP", quality=quality, method=6)
+    rgb.save(path, "WEBP", lossless=True, method=6)
     print(f"wrote {path.relative_to(ROOT)} {rgb.size}")
 
 
@@ -146,7 +146,7 @@ def draw_light_path(base: Image.Image, start, end):
 
 
 def build_filmstrip():
-    W, H = 2400, 900
+    W, H = 2400, 860
     im = Image.new("RGBA", (W, H), BG)
     d = ImageDraw.Draw(im)
     # Stage panel
