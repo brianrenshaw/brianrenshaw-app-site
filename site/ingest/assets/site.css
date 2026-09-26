@@ -95,25 +95,41 @@ html.ingest-palette-open{overflow:hidden}
 }
 
 
+
 /* Typing grammar demos */
 .typing-demo{margin:28px 0;padding:20px;border:1px solid var(--line);border-radius:12px;background:var(--soft)}
 .typing-demo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .typing-demo h3{margin:0 0 8px;font-size:18px;letter-spacing:-.015em}
-.typing-demo p{margin:0 0 14px;font-size:14px;color:var(--muted);max-width:none}
+.typing-demo>p{margin:0 0 14px;font-size:14px;color:var(--muted);max-width:none}
+.typing-demo-assist{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:16px;align-items:start}
+.typing-demo-editor,.typing-demo-review{min-width:0}
 .typing-demo-shell{position:relative}
 .typing-demo-input{width:100%;box-sizing:border-box;font:500 15px ui-monospace,SFMono-Regular,Menlo,monospace;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
-.typing-demo-menu{position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:5;margin:0;padding:6px;list-style:none;border:1px solid var(--line);border-radius:8px;background:var(--surface);box-shadow:0 12px 32px rgba(22,20,16,.16);max-height:220px;overflow:auto}
+.typing-demo-menu{position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:5;margin:0;padding:6px;list-style:none;border:1px solid var(--line);border-radius:8px;background:var(--surface);box-shadow:0 12px 32px rgba(22,20,16,.16);max-height:260px;overflow:auto}
 .typing-demo-menu[hidden]{display:none!important}
-.typing-demo-option{padding:10px 12px;border-radius:6px;cursor:pointer;font-size:14px;color:var(--ink)}
+.typing-demo-option{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:10px 12px;border-radius:6px;cursor:pointer}
 .typing-demo-option.is-active,.typing-demo-option:hover{background:var(--soft)}
+.typing-demo-option-title{font-size:14px;color:var(--ink)}
+.typing-demo-option-detail{font-size:11px;color:var(--muted);white-space:nowrap}
 .typing-demo-hint{margin:10px 0 0;font-size:13px;color:var(--muted)}
-.typing-demo-review{margin-top:14px;padding:12px 14px;border-radius:8px;border:1px dashed var(--line);background:var(--surface)}
-.typing-demo-review[hidden]{display:none!important}
-.typing-demo-review > p{margin:0 0 8px;font-size:12px;font-weight:650;letter-spacing:.04em;text-transform:uppercase;color:var(--accent)}
-.typing-demo-review-row{display:flex;justify-content:space-between;gap:16px;padding:6px 0;border-top:1px solid var(--line);font-size:14px}
+.typing-demo-review{padding:14px;border-radius:8px;border:1px solid var(--line);background:var(--surface);min-height:180px}
+.typing-demo-review>p:first-child{margin:0 0 10px;font-size:12px;font-weight:650;letter-spacing:.04em;text-transform:uppercase;color:var(--accent)}
+.typing-demo-empty{margin:0;font-size:13px;color:var(--muted);line-height:1.5}
+.typing-demo-review-row{display:grid;gap:4px;padding:10px 0;border-top:1px solid var(--line);font-size:14px}
 .typing-demo-review-row:first-of-type{border-top:0}
+.typing-demo-review-row strong{color:var(--ink)}
+.typing-demo-note{display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:2px}
+.typing-demo-value{color:var(--ink)}
+.typing-demo-coords{display:block;font:500 12px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--muted);margin-top:4px}
+.typing-demo-map{margin-top:12px;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.typing-demo-map[hidden]{display:none!important}
+.typing-demo-map>p{margin:0 0 8px;font-size:12px;font-weight:650;color:var(--ink)}
+.typing-demo-place{display:flex;flex-direction:column;align-items:flex-start;gap:2px;width:100%;margin:0;padding:10px 10px;border:0;border-radius:6px;background:transparent;text-align:left;cursor:pointer;font:inherit;color:inherit}
+.typing-demo-place:hover,.typing-demo-place:focus-visible{background:var(--soft)}
+.typing-demo-place strong{font-size:14px}
+.typing-demo-place span{font-size:12px;color:var(--muted)}
 .typing-demo-output{margin-top:12px;padding:12px 14px;border-radius:8px;background:var(--surface);border:1px solid var(--line);font:500 15px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ink);overflow-wrap:anywhere}
 .ingest-home .typing-demo{background:#f4f1e9}
-@media(max-width:800px){.typing-demo-grid{grid-template-columns:1fr}}
-
-.ingest-docs .site-search-hint{margin:-18px 0 28px;font-size:15px;color:var(--muted)}
+@media(max-width:800px){
+  .typing-demo-grid,.typing-demo-assist{grid-template-columns:1fr}
+}
