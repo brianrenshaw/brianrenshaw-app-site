@@ -1,5 +1,7 @@
+@font-face{font-family:"Ingest Plex Sans";src:url("fonts/ibm-plex-sans.ttf") format("truetype");font-style:normal;font-weight:100 700;font-display:swap}
+@font-face{font-family:"Ingest iA Writer Mono";src:url("fonts/ia-writer-mono.ttf") format("truetype");font-style:normal;font-weight:400 700;font-display:swap}
 /* Shared Ingest design: warm paper, readable ink, restrained amber. */
-body.app-ingest{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink:#242622;--muted:#60635d;--accent:#86520b;--line:#dedfd7;--soft:#eeeee7;--focus:#9c5e06;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body.app-ingest{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink:#242622;--muted:#60635d;--accent:#86520b;--line:#dedfd7;--soft:#eeeee7;--focus:#9c5e06;background:var(--bg);color:var(--ink);font-family:"Ingest Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 .app-ingest .family-header{max-width:1248px;padding:22px 24px}
 .app-ingest .family-brand{font-size:22px;font-weight:650;letter-spacing:-.6px}
 .app-ingest .family-header nav{align-items:center;gap:28px}
@@ -13,8 +15,8 @@ body.app-ingest{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink:#242622;--m
 .app-ingest .desktop-shot>a{display:block;width:fit-content;max-width:100%;margin:auto}
 .app-ingest .desktop-shot img{display:block;width:100%;max-width:var(--capture-width,100%);height:auto;margin:auto;border-radius:6px}
 .app-ingest .desktop-shot figcaption{font-size:13px;line-height:1.6;color:var(--muted);padding:14px 3px 0}
-.app-ingest kbd{font:500 .88em ui-monospace,SFMono-Regular,Menlo,monospace;padding:.18em .42em;border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;background:var(--soft);color:var(--ink);white-space:nowrap}
-.app-ingest code{font:500 .9em ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--accent);overflow-wrap:anywhere}
+.app-ingest kbd{font:500 .88em "Ingest iA Writer Mono",ui-monospace,SFMono-Regular,Menlo,monospace;padding:.18em .42em;border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;background:var(--soft);color:var(--ink);white-space:nowrap}
+.app-ingest code{font:500 .9em "Ingest iA Writer Mono",ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--accent);overflow-wrap:anywhere}
 /* Documentation navigation stays available without JavaScript. */
 .ingest-docs .docs-nav{max-width:1200px;margin:auto;display:flex;flex-wrap:wrap;gap:4px 22px;padding:16px 24px;border-bottom:1px solid var(--line)}
 .ingest-docs .docs-nav a{display:inline-flex;align-items:center;min-height:44px;font-size:13px;text-decoration:none;color:var(--muted);border-bottom:2px solid transparent}
@@ -72,7 +74,7 @@ body.app-ingest{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink:#242622;--m
 .ingest-docs .family-header .nav-search:hover,
 .app-ingest .family-header .nav-search:hover{color:var(--ink);text-decoration:none}
 .ingest-docs .family-header .nav-search kbd,
-.app-ingest .family-header .nav-search kbd{font:500 11px ui-monospace,SFMono-Regular,Menlo,monospace;padding:.12em .4em;border:1px solid var(--line);border-radius:4px;background:var(--soft);color:var(--muted)}
+.app-ingest .family-header .nav-search kbd{font:500 11px "Ingest iA Writer Mono",ui-monospace,SFMono-Regular,Menlo,monospace;padding:.12em .4em;border:1px solid var(--line);border-radius:4px;background:var(--soft);color:var(--muted)}
 html.ingest-palette-open{overflow:hidden}
 .ingest-palette{position:fixed;inset:0;z-index:1000;display:grid;place-items:start center;padding:12vh 16px 24px}
 .ingest-palette[hidden]{display:none!important}
@@ -80,7 +82,7 @@ html.ingest-palette-open{overflow:hidden}
 .ingest-palette-dialog{position:relative;width:min(560px,100%);background:var(--surface,#fff);color:var(--ink,#1c1914);border:1px solid var(--line,#d9d3c7);border-radius:14px;box-shadow:0 24px 80px rgba(22,20,16,.28);overflow:hidden}
 .ingest-palette-input-row{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line,#d9d3c7)}
 .ingest-palette-input{flex:1;border:0;outline:0;font:inherit;font-size:17px;background:transparent;color:inherit}
-.ingest-palette-esc{font:500 11px ui-monospace,SFMono-Regular,Menlo,monospace;padding:.18em .45em;border:1px solid var(--line,#d9d3c7);border-radius:5px;color:var(--muted,#6d675c)}
+.ingest-palette-esc{font:500 11px "Ingest iA Writer Mono",ui-monospace,SFMono-Regular,Menlo,monospace;padding:.18em .45em;border:1px solid var(--line,#d9d3c7);border-radius:5px;color:var(--muted,#6d675c)}
 .ingest-palette-list{list-style:none;margin:0;padding:8px;max-height:min(52vh,420px);overflow:auto}
 .ingest-palette-option{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:12px 12px;border-radius:8px;cursor:pointer}
 .ingest-palette-option.is-active{background:var(--soft,#f4f1e9)}
@@ -102,7 +104,7 @@ html.ingest-palette-open{overflow:hidden}
 .typing-demo h3{margin:0 0 8px;font-size:18px;letter-spacing:-.015em}
 .typing-demo>p{margin:0 0 14px;font-size:14px;color:var(--muted);max-width:none}
 .typing-demo-shell{position:relative}
-.typing-demo-input{width:100%;box-sizing:border-box;font:500 15px ui-monospace,SFMono-Regular,Menlo,monospace;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.typing-demo-input{width:100%;box-sizing:border-box;font:500 15px "Ingest iA Writer Mono",ui-monospace,SFMono-Regular,Menlo,monospace;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
 .typing-demo-hint{margin:10px 0 0;font-size:13px;color:var(--muted)}
-.typing-demo-output{margin-top:12px;padding:12px 14px;border-radius:8px;background:var(--surface);border:1px solid var(--line);font:500 15px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ink);overflow-wrap:anywhere}
+.typing-demo-output{margin-top:12px;padding:12px 14px;border-radius:8px;background:var(--surface);border:1px solid var(--line);font:500 15px "Ingest iA Writer Mono",ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ink);overflow-wrap:anywhere}
 .ingest-home .typing-demo{background:#f4f1e9}

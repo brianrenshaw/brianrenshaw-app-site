@@ -1,5 +1,5 @@
 /* Ingest product-page layout, using the shared bright Ingest palette. */
-body.app-ingest.ingest-home{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink:#242622;--muted:#60635d;--accent:#86520b;--line:#dedfd7;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body.app-ingest.ingest-home{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink:#242622;--muted:#60635d;--accent:#86520b;--line:#dedfd7;background:var(--bg);color:var(--ink);font-family:"Ingest Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 .ingest-home *{box-sizing:border-box}
 .ingest-home [hidden]{display:none!important}
 .ingest-home a{color:inherit;text-underline-offset:4px}
