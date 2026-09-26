@@ -167,3 +167,15 @@ body.app-ingest.ingest-home{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink
 .ingest-home .workspace-chip:focus-visible,.ingest-home .metadata-controls button:focus-visible,.ingest-home .workspace-panel:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
 @media(max-width:800px){.ingest-home .workspace-panel{grid-template-columns:1fr;gap:24px}.ingest-home .workspace-panel .desktop-shot{width:100%;max-width:520px;justify-self:center}.ingest-home .metadata-walkthrough{grid-template-columns:1fr;gap:14px}}
 @media(max-width:600px){.ingest-home .workspace-chips{grid-template-columns:repeat(3,minmax(0,1fr))}.ingest-home .workspace-tree{padding:12px;font-size:11px}.ingest-home .metadata-demo figcaption{display:block}.ingest-home .metadata-demo figcaption a{display:block}.ingest-home .metadata-controls span{width:100%;margin:0}}
+
+/* Keep five workspace choices balanced instead of wrapping four plus one. */
+@media(max-width:600px){
+  .ingest-home .hero-controls{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin-top:0}
+  .ingest-home .hero-workspaces{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px;width:100%}
+  .ingest-home .hero-workspaces button{grid-column:span 2;min-width:0;padding-inline:4px}
+  .ingest-home .hero-workspaces button:nth-last-child(2){grid-column:2 / span 2}
+  .ingest-home .hero-playback{width:100%;gap:6px;border-top:1px solid var(--line);padding-top:10px}
+  .ingest-home .hero-playback button{min-width:44px}
+  .ingest-home .hero-playback [data-hero-toggle]{min-width:88px}
+  .ingest-home .hero-showcase .hero-credit{margin-top:10px}
+}
