@@ -1,10 +1,10 @@
 {
-  "description": "154 genuine RAW photographs in isolated Wedding, Landscapes, Personal, Headshots, and Events demonstration collections. Originals stay outside the website repository. Demo folder and file names do not change camera EXIF dates or imply authorship.",
+  "description": "155 genuine RAW photographs in isolated Wedding, Landscapes, Personal, Headshots, and Events demonstration collections. Originals stay outside the website repository. Demo folder and file names do not change camera EXIF dates or imply authorship.",
   "source": "https://www.signatureedits.com/free-raw-photos/",
   "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
   "selectionDate": "2026-09-26",
   "collections": {
-    "Wedding": 25,
+    "Wedding": 26,
     "Landscapes": 40,
     "Personal": 39,
     "Headshots": 25,
@@ -148,9 +148,9 @@
     },
     {
       "id": "1xRm6VVzg98TlBW8zGQXT_SF7Pgriy2yd",
-      "workspace": "Events",
-      "filename": "025-Event-Highlights.CR2",
-      "demoPath": "Events/Event Highlights/025-Event-Highlights.CR2",
+      "workspace": "Wedding",
+      "filename": "010-Wedding-Selects.CR2",
+      "demoPath": "Wedding/Wedding Selects/010-Wedding-Selects.CR2",
       "originalFilename": "IMG_0958.CR2",
       "url": "https://www.signatureedits.com/wp-admin/admin-ajax.php?action=useyourdrive-download&account_id=102647584259678856487&id=1xRm6VVzg98TlBW8zGQXT_SF7Pgriy2yd&dl=1&listtoken=cfa792d2d6bb42f58bc047183b06a8ae",
       "sha256": "aa48561f960219536d19e6dc1e447b6428c0cf17342df6ace828e40a152b4617",
@@ -2317,6 +2317,21 @@
       "bytes": 20157658,
       "make": "Canon",
       "model": "Canon EOS 7D",
+      "license": "Signature-Edits-Free-RAW",
+      "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
+      "source": "https://www.signatureedits.com/free-raw-photos/"
+    },
+    {
+      "id": "1mGI-_-zTbB6SpwXfUB2qon450Rz7HvAx",
+      "workspace": "Events",
+      "filename": "026-Event-Highlights.ARW",
+      "demoPath": "Events/Event Highlights/026-Event-Highlights.ARW",
+      "originalFilename": "Signature Edits Free Raw Photos - DSC09127.ARW",
+      "url": "https://www.signatureedits.com/wp-admin/admin-ajax.php?action=useyourdrive-download&account_id=103498887174941726250&id=1mGI-_-zTbB6SpwXfUB2qon450Rz7HvAx&dl=1&listtoken=51c9893230ca3b69a2ce8e33ff6d0b4c",
+      "sha256": "0c4cc1aff1bca9674fb665dfebe4120e00afda8b9a52bd8092559cb42084e2fd",
+      "bytes": 24918784,
+      "make": "SONY",
+      "model": "ILCE-7M3",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
       "source": "https://www.signatureedits.com/free-raw-photos/"
