@@ -120,14 +120,14 @@
       "displayHeight": 900,
       "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "hero-headshots-compare-dark-0.9.4.2-retina.webp": {
+    "hero-headshots-grid-dark-0.9.4.2-retina.webp": {
       "width": 2880,
       "height": 1800,
       "displayWidth": 1440,
       "displayHeight": 900,
       "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "hero-events-faces-dark-0.9.4.2-retina.webp": {
+    "hero-events-group-faces-dark-0.9.4.2-retina.webp": {
       "width": 2880,
       "height": 1800,
       "displayWidth": 1440,
@@ -576,6 +576,20 @@
       "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
     "hero-personal-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "hero-headshots-compare-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "hero-events-faces-dark-0.9.4.2-retina.webp": {
       "width": 2880,
       "height": 1800,
       "displayWidth": 1440,
