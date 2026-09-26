@@ -1,117 +1,124 @@
 {
-  "capture": "Native 2x signed-release captures: Ingest 0.9.4.2 (36) with 74 verified CC0 RAW photographs, plus retained 0.9.2 examples. See per-image provenance and SOURCES.md.",
+  "capture": "Native 2x dark-mode captures of signed Ingest 0.9.4.2 (36), using an isolated 105-photo licensed RAW demo library. See SOURCES.md and raw-samples.json.",
   "images": {
-    "workspaces-0.9.2-retina.webp": {
-      "width": 1960,
-      "height": 2002,
-      "displayWidth": 980,
-      "displayHeight": 1001,
-      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md."
+    "paste-metadata-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "workspace-real-estate-0.9.2-retina.webp": {
-      "width": 2428,
-      "height": 1622,
-      "displayWidth": 1214,
-      "displayHeight": 811,
-      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md for disposable fixtures."
+    "command-crop-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "workspace-wedding-0.9.2-retina.webp": {
-      "width": 2428,
-      "height": 1622,
-      "displayWidth": 1214,
-      "displayHeight": 811,
-      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md for disposable fixtures."
+    "metadata-assist-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "copy-metadata-0.9.2-retina.webp": {
-      "width": 2428,
-      "height": 1622,
-      "displayWidth": 1214,
-      "displayHeight": 811,
-      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md for disposable fixtures."
+    "hero-landscapes-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "paste-metadata-0.9.2-retina.webp": {
-      "width": 2428,
-      "height": 1622,
-      "displayWidth": 1214,
-      "displayHeight": 811,
-      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md for disposable fixtures."
+    "preview-landscape-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "browse-raw-0.9.4.2-retina.webp": {
-      "width": 2808,
-      "height": 1668,
-      "displayWidth": 1404,
-      "displayHeight": 834,
-      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    "ingest-wedding-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "palette-raw-0.9.4.2-retina.webp": {
-      "width": 2808,
-      "height": 1668,
-      "displayWidth": 1404,
-      "displayHeight": 834,
-      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    "command-workspaces-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "metadata-assist-raw-0.9.4.2-retina.webp": {
-      "width": 2808,
-      "height": 1668,
-      "displayWidth": 1404,
-      "displayHeight": 834,
-      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    "organize-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "workspace-personal-raw-0.9.4.2-retina.webp": {
-      "width": 2808,
-      "height": 1668,
-      "displayWidth": 1404,
-      "displayHeight": 834,
-      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    "workspaces-dark-0.9.4.2-retina.webp": {
+      "width": 2058,
+      "height": 2580,
+      "displayWidth": 1029,
+      "displayHeight": 1290,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "workspace-wildlife-raw-0.9.4.2-retina.webp": {
-      "width": 2808,
-      "height": 1668,
-      "displayWidth": 1404,
-      "displayHeight": 834,
-      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    "palette-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "organize-raw-0.9.4.2-retina.webp": {
-      "width": 2808,
-      "height": 1668,
-      "displayWidth": 1404,
-      "displayHeight": 834,
-      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    "shoot-details-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "command-crop-raw-0.9.4.2-retina.webp": {
-      "width": 2808,
-      "height": 1668,
-      "displayWidth": 1404,
-      "displayHeight": 834,
-      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    "hero-wedding-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "command-workspaces-raw-0.9.4.2-retina.webp": {
-      "width": 2808,
-      "height": 1668,
-      "displayWidth": 1404,
-      "displayHeight": 834,
-      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    "hero-personal-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "social-workspace-raw-0.9.4.2-retina.webp": {
-      "width": 2808,
-      "height": 1668,
-      "displayWidth": 1404,
-      "displayHeight": 834,
-      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    "copy-metadata-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "shoot-details-raw-0.9.4.2-retina.webp": {
-      "width": 2808,
-      "height": 1668,
-      "displayWidth": 1404,
-      "displayHeight": 834,
-      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    "raw-compare-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "raw-compare-raw-0.9.4.2-retina.webp": {
-      "width": 2808,
-      "height": 1668,
-      "displayWidth": 1404,
-      "displayHeight": 834,
-      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    "workspace-wedding-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "social-workspace-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     }
   },
   "archivedImages": {
@@ -434,6 +441,118 @@
       "displayWidth": 1214,
       "displayHeight": 811,
       "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md for disposable fixtures."
+    },
+    "workspaces-0.9.2-retina.webp": {
+      "width": 1960,
+      "height": 2002,
+      "displayWidth": 980,
+      "displayHeight": 1001,
+      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md."
+    },
+    "workspace-real-estate-0.9.2-retina.webp": {
+      "width": 2428,
+      "height": 1622,
+      "displayWidth": 1214,
+      "displayHeight": 811,
+      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md for disposable fixtures."
+    },
+    "workspace-wedding-0.9.2-retina.webp": {
+      "width": 2428,
+      "height": 1622,
+      "displayWidth": 1214,
+      "displayHeight": 811,
+      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md for disposable fixtures."
+    },
+    "copy-metadata-0.9.2-retina.webp": {
+      "width": 2428,
+      "height": 1622,
+      "displayWidth": 1214,
+      "displayHeight": 811,
+      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md for disposable fixtures."
+    },
+    "paste-metadata-0.9.2-retina.webp": {
+      "width": 2428,
+      "height": 1622,
+      "displayWidth": 1214,
+      "displayHeight": 811,
+      "source": "Signed and notarized Ingest 0.9.2 (32), isolated public Unsplash collection, native Retina window capture without cursor, shadow, resizing, or compositing. See SOURCES.md for disposable fixtures."
+    },
+    "browse-raw-0.9.4.2-retina.webp": {
+      "width": 2808,
+      "height": 1668,
+      "displayWidth": 1404,
+      "displayHeight": 834,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "palette-raw-0.9.4.2-retina.webp": {
+      "width": 2808,
+      "height": 1668,
+      "displayWidth": 1404,
+      "displayHeight": 834,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "metadata-assist-raw-0.9.4.2-retina.webp": {
+      "width": 2808,
+      "height": 1668,
+      "displayWidth": 1404,
+      "displayHeight": 834,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "workspace-personal-raw-0.9.4.2-retina.webp": {
+      "width": 2808,
+      "height": 1668,
+      "displayWidth": 1404,
+      "displayHeight": 834,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "workspace-wildlife-raw-0.9.4.2-retina.webp": {
+      "width": 2808,
+      "height": 1668,
+      "displayWidth": 1404,
+      "displayHeight": 834,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "organize-raw-0.9.4.2-retina.webp": {
+      "width": 2808,
+      "height": 1668,
+      "displayWidth": 1404,
+      "displayHeight": 834,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "command-crop-raw-0.9.4.2-retina.webp": {
+      "width": 2808,
+      "height": 1668,
+      "displayWidth": 1404,
+      "displayHeight": 834,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "command-workspaces-raw-0.9.4.2-retina.webp": {
+      "width": 2808,
+      "height": 1668,
+      "displayWidth": 1404,
+      "displayHeight": 834,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "social-workspace-raw-0.9.4.2-retina.webp": {
+      "width": 2808,
+      "height": 1668,
+      "displayWidth": 1404,
+      "displayHeight": 834,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "shoot-details-raw-0.9.4.2-retina.webp": {
+      "width": 2808,
+      "height": 1668,
+      "displayWidth": 1404,
+      "displayHeight": 834,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "raw-compare-raw-0.9.4.2-retina.webp": {
+      "width": 2808,
+      "height": 1668,
+      "displayWidth": 1404,
+      "displayHeight": 834,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), isolated 74-photo CC0 RAW collection, native 2x window capture without cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     }
   }
 }

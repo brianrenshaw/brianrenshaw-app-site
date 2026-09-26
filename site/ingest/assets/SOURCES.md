@@ -1,3 +1,17 @@
+# Current dark-mode demo library — September 26, 2026
+
+All 17 active images in `screenshots.json` are genuine native Retina window captures from signed and notarized **Ingest 0.9.4.2 (36)** in dark appearance. The isolated demo library lives outside the home directory, under `/Users/Shared/Ingest Demo`; its sidebar root is **Photo Library**. No personal account or home-directory paths appear in these captures.
+
+Photography comes from the [Signature Edits public RAW library](https://www.signatureedits.com/free-raw-photos/), under its [Free RAW License Terms](https://www.signatureedits.com/free-raw-license-terms/), reviewed on September 26, 2026. Those terms permit commercial website use. Photography belongs to Signature Edits and its contributing photographers; it is not represented as work by Ingest's developer. The homepage credits the source. `raw-samples.json` records the source and license links, credited original filename, camera, format, SHA-256 checksum, and demonstration filename for every selected RAW. The website distributes screenshots, not the original RAW library.
+
+The collection contains 26 classic wedding photographs (white gowns, suits, veils, ceremony, reception, and detail photographs), 40 landscapes, and 39 personal photographs. These are separate photographs, not repeated filler or camera-test charts. Their original RAW formats and camera metadata were checked with ExifTool, including CFA checks for DNG files. Original capture dates are preserved; recent-folder order reflects demo organization. Wedding Selects, Mountain Light, and Everyday Stories are neutral demonstration folders.
+
+Capture command: `screencapture -x -o -a -l WINDOW_ID capture.png`. PNGs were exported as lossless WebP with decoded pixel equality verified. Main windows are 1440 × 900 logical pixels / 2880 × 1800 physical pixels; the Settings window is 1029 × 1290 / 2058 × 2580. No resizing, retouching, compositing, shadow, or cursor was added. A contact sheet and individual windows were reviewed for privacy, loading states, and framing. Metadata demonstrations use disposable copies and XMP sidecars; final fixture originals were restored where necessary and all 105 source checksums verified. Destination folders are disposable; no real client imports were performed.
+
+The earlier synthetic bracket illustration was retired instead of presenting fabricated exposure metadata as genuine RAW camera data. The naming guide now shows the real Wedding destination preview. Earlier captures are retained under `archivedImages` at their original URLs and are not used on active pages.
+
+---
+
 ## 0.9.2 walkthrough refresh
 
 `walkthrough-ingest-0.9.2.webp`, `walkthrough-metadata-0.9.2.webp`, and `walkthrough-workspaces-0.9.2.webp` are native SwiftUI view captures from source `9a36b07` using the opt-in FeatureTourTests capture harness and a disposable demo library. Light appearance, native 2× backing pixels, lossless PNG-to-WebP encoding with pixel equality verified; no resizing or visual edits. These are source-build captures, not signed-release window captures. Metadata is staged only; no real photo writes or imports were performed. Demo landscapes reuse the credited photographs below.

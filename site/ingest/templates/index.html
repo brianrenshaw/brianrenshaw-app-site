@@ -10,7 +10,7 @@
 <meta property="og:title" content="Ingest — Names and metadata that fit the job.">
 <meta property="og:description" content="Curly braces fill rename and folder variables. Semicolon finds metadata fields. Keep originals, or build names from dates, addresses, and sequence numbers.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/templates/">
-<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/palette-raw-0.9.4.2-retina.webp">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/palette-dark-0.9.4.2-retina.webp">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
@@ -50,7 +50,7 @@
 <p><strong>Curly braces rename.</strong> Anything in braces is replaced; anything else is kept as you typed it. So <code>{yyyy}{mm}{dd}-{seqn}</code> becomes <code>20260912-0001</code>, and <code>Wedding-{seq}</code> becomes <code>Wedding-1</code>. Semicolon is a different habit — it finds metadata fields in Metadata Assist, not tokens in a name.</p>
 <p>Some tokens take an argument after a colon. <code>{seqn:4}</code> sets the width of the number, <code>{date:MMMM d, yyyy}</code> sets a date format. To write a real brace, double it: <code>{{</code> and <code>}}</code>.</p>
 <p>Templates are used in four places: renaming during ingest, renaming in place with <kbd>⌘R</kbd>, naming the subfolder that ingest creates, and filling in captions and titles in a metadata preset. Settings, Renaming keeps your saved templates and shows a live example as you type.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/workspace-real-estate-0.9.2-retina.webp" aria-label="View full-resolution screenshot: Address-based folder and filename preview"><img src="/ingest/assets/workspace-real-estate-0.9.2-retina.webp" width="2428" height="1622" style="--capture-width:1214px" loading="lazy" alt="Address-based folder and filename preview"></a><figcaption>One address supplies the folder and filename tokens in this example workspace.</figcaption></figure>
+<figure class="desktop-shot"><a href="/ingest/assets/ingest-wedding-dark-0.9.4.2-retina.webp" aria-label="View full-resolution screenshot: Wedding folder and filename preview"><img src="/ingest/assets/ingest-wedding-dark-0.9.4.2-retina.webp" width="2880" height="1800" style="--capture-width:1440px" loading="lazy" alt="Wedding folder and filename preview"></a><figcaption>A shoot name and sequence token supply clear folders and filenames in this example workspace.</figcaption></figure>
 <p>A template also decides letter case, what spaces turn into, and the case of the extension. The default turns spaces into hyphens and lowercases the extension, which is what keeps filenames easy to sort and safe to send anywhere.</p>
 <p>A token that has no value disappears, and takes the separator next to it with it, so a missing address does not leave a stray hyphen at the front of every name.</p>
 </section>

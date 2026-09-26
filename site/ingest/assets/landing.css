@@ -110,3 +110,20 @@ body.app-ingest.ingest-home{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink
 .ingest-home .workspace-copy p{font-size:15px;line-height:1.55;margin:0;color:var(--muted)}
 .ingest-home .workspace-copy p+p{margin-top:12px}
 @media(max-width:600px){.ingest-home .workspace-switcher{margin-top:26px}.ingest-home .workspace-chips{gap:6px}.ingest-home .workspace-chip{font-size:12px;padding-inline:5px}}
+
+/* Native workspace slideshow; the bright page frames the dark app. */
+.ingest-home .hero-controls[hidden]{display:none}
+.ingest-home .hero-controls{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:0 0 18px}
+.ingest-home .hero-workspaces,.ingest-home .hero-playback{display:flex;align-items:center;gap:4px}
+.ingest-home .hero-controls button{font:inherit;font-size:13px;font-weight:550;line-height:1.3;min-height:44px;border:1px solid transparent;border-radius:7px;padding:10px 15px;background:transparent;color:var(--muted);cursor:pointer}
+.ingest-home .hero-controls button:hover{color:var(--ink);background:var(--surface)}
+.ingest-home .hero-controls button[aria-pressed="true"]{color:var(--ink);background:var(--surface);border-color:var(--line)}
+.ingest-home .hero-playback button{border-color:var(--line);padding-inline:12px;background:var(--surface)}
+.ingest-home [data-hero-toggle]{min-width:78px}
+.ingest-home .hero-slide+.hero-slide{margin-top:28px}
+.ingest-home .hero-showcase.is-enhanced .hero-slides{display:grid}
+.ingest-home .hero-showcase.is-enhanced .hero-slide{grid-area:1/1;margin:0;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .3s ease,visibility .3s}
+.ingest-home .hero-showcase.is-enhanced .hero-slide.is-active{opacity:1;visibility:visible;pointer-events:auto}
+.ingest-home .hero-showcase .hero-credit{margin:14px 0 0;font-size:11px;line-height:1.5;color:var(--muted)}
+@media(max-width:600px){.ingest-home .hero-controls{flex-wrap:wrap;justify-content:center;gap:8px;margin:4px 0 12px}.ingest-home .hero-controls button{font-size:12px;padding-inline:10px}.ingest-home .hero-playback{justify-content:center}.ingest-home .hero-showcase .hero-credit{font-size:10px}.ingest-home .hero-slide figcaption{min-height:36px}}
+@media(prefers-reduced-motion:reduce){.ingest-home .hero-showcase.is-enhanced .hero-slide{transition:none}}
