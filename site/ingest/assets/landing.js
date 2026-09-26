@@ -46,48 +46,6 @@
   });
 })();
 
-// Workspace examples: one quiet, keyboard-accessible disclosure at a time.
-(() => {
-  document.querySelectorAll('[data-workspaces]').forEach(workspaces => {
-    const tabs = [...workspaces.querySelectorAll('[data-workspace-tab]')];
-    const panels = tabs.map(tab => document.getElementById(tab.dataset.workspaceTab));
-    if (!tabs.length || panels.some(panel => !panel)) return;
-    tabs.forEach((tab, index) => {
-      tab.setAttribute('role', 'tab');
-      tab.setAttribute('aria-controls', panels[index].id);
-      panels[index].setAttribute('role', 'tabpanel');
-      panels[index].setAttribute('aria-labelledby', tab.id);
-      panels[index].tabIndex = 0;
-    });
-    const select = (index, focus = false) => {
-      tabs.forEach((tab, i) => {
-        tab.setAttribute('aria-selected', String(i === index));
-        tab.tabIndex = i === index ? 0 : -1;
-        panels[i].hidden = i !== index;
-      });
-      panels[index].querySelectorAll('img').forEach(img => { img.loading = 'eager'; });
-      if (focus) tabs[index].focus();
-    };
-    tabs.forEach((tab, index) => {
-      tab.addEventListener('click', () => select(index));
-      tab.addEventListener('keydown', event => {
-        let next;
-        if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
-        if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
-        if (event.key === 'Home') next = 0;
-        if (event.key === 'End') next = tabs.length - 1;
-        if (next !== undefined) {
-          event.preventDefault();
-          select(next, true);
-        }
-      });
-    });
-    select(0);
-    workspaces.querySelector('.workspace-chips').hidden = false;
-    workspaces.classList.add('is-enhanced');
-  });
-})();
-
 // Autoplay belongs only to the hero, never to the documentation tours.
 (() => {
   document.querySelectorAll('[data-hero-carousel]').forEach(carousel => {

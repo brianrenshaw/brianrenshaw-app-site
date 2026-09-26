@@ -165,6 +165,31 @@ html.ingest-overlay-open{overflow:hidden;overscroll-behavior:none}
   .ingest-detail-chip{font-size:12px;padding:8px 12px}
 }
 
+
+/* Workspace setup detail bodies (chips → modal). */
+.ingest-detail-copy .workspace-pitch{font-size:clamp(20px,2.4vw,26px);line-height:1.2;letter-spacing:-.025em;margin:0 0 10px;color:var(--ink,#242622);font-weight:600}
+.ingest-detail-copy .workspace-description{font-size:15px;line-height:1.65;margin:0 0 18px}
+.ingest-detail-copy h4{font-size:13px;line-height:1.5;margin:22px 0 10px;color:var(--ink,#242622);font-weight:650}
+.ingest-detail-copy .workspace-summary{margin:0;border-top:1px solid var(--line,#dedfd7)}
+.ingest-detail-copy .workspace-summary>div{padding:12px 0;border-bottom:1px solid var(--line,#dedfd7);display:grid;grid-template-columns:95px minmax(0,1fr);gap:12px;font-size:14px}
+.ingest-detail-copy .workspace-summary dt{color:var(--muted,#60635d)}
+.ingest-detail-copy .workspace-summary dd{margin:0;overflow-wrap:anywhere;color:var(--ink,#242622)}
+.ingest-detail-copy .workspace-summary dd span{display:block}
+.ingest-detail-copy .workspace-summary dd span+span{margin-top:4px;color:var(--muted,#60635d)}
+.ingest-detail-copy .workspace-tree{font:500 12px "Ingest iA Writer Mono",ui-monospace,SFMono-Regular,Menlo,monospace;line-height:1.8;padding:16px;background:var(--soft,#eeeee7);border:1px solid var(--line,#dedfd7);border-radius:8px;white-space:pre-wrap;overflow-wrap:anywhere;margin:0;color:var(--ink,#242622)}
+.ingest-detail-copy .workspace-backup{font-size:13px;line-height:1.7;overflow-wrap:anywhere;margin:0 0 8px}
+.ingest-detail-copy .workspace-receiving{font-size:13px;color:var(--muted,#60635d);line-height:1.6;margin:0 0 18px}
+.ingest-detail-copy .desktop-shot{margin:18px 0;padding:10px;background:var(--soft,#eeeee7);border:1px solid var(--line,#dedfd7);border-radius:10px}
+.ingest-detail-copy .desktop-shot>a{display:block;width:fit-content;max-width:100%;margin:auto}
+.ingest-detail-copy .desktop-shot img{display:block;width:100%;max-width:min(var(--capture-width,520px),100%);height:auto;margin:auto;border-radius:6px}
+.ingest-detail-copy .desktop-shot figcaption{font-size:12px;line-height:1.5;color:var(--muted,#60635d);padding:10px 2px 0;display:flex;justify-content:space-between;gap:12px}
+.ingest-detail-modal .ingest-overlay-dialog{width:min(720px,100%)}
+.ingest-detail-copy{max-width:none}
+@media(max-width:600px){
+  .ingest-detail-copy .workspace-summary>div{grid-template-columns:1fr;gap:4px}
+  .ingest-detail-copy .workspace-tree{padding:12px;font-size:11px}
+}
+
 /* Keep /ingest/ feeling static on phones: vertical pan only, no sideways rubber-band. */
-html:has(body.app-ingest),body.app-ingest{touch-action:pan-y;overscroll-behavior-x:none}
+html:has(body.app-ingest),body.app-ingest{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 body.app-ingest{overflow-x:hidden}

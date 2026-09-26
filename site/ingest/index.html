@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ingest — Ingest. Cull. Browse. Organize.</title>
 <meta name="description" content="Open a card or a folder. Cull and browse with the keyboard. Organize when you’re ready — in one modern Mac app. Workspaces, verified copies, and Metadata Assist.">
 <link rel="canonical" href="https://brianrenshaw.app/ingest/">
@@ -8,12 +8,12 @@
 <meta property="og:description" content="Open a card or a folder. Cull and browse with the keyboard. Organize when you’re ready — in one modern Mac app.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/"><meta property="og:image" content="https://brianrenshaw.app/ingest/assets/hero-wedding-dark-0.9.4.2-retina.webp">
 <meta property="og:image:alt" content="Ingest’s Wedding workspace in dark mode with genuine wedding RAW photographs"><meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/ingest/assets/icon.png"><link rel="stylesheet" href="/assets/apps.css"><link rel="stylesheet" href="/assets/family.css"><link rel="stylesheet" href="/ingest/assets/site.css?v=0942-overlays"><link rel="stylesheet" href="/ingest/assets/landing.css?v=0942-overlays">
-<script src="/ingest/assets/landing.js?v=0942-dark-workspaces" defer></script><script src="/ingest/assets/overlays.js?v=1" defer></script><script src="/ingest/assets/command-palette.js" defer></script></head>
+<link rel="icon" href="/ingest/assets/icon.png"><link rel="stylesheet" href="/assets/apps.css"><link rel="stylesheet" href="/assets/family.css"><link rel="stylesheet" href="/ingest/assets/site.css?v=0942-workspaces-chips"><link rel="stylesheet" href="/ingest/assets/landing.css?v=0942-workspaces-chips">
+<script src="/ingest/assets/landing.js?v=0942-dark-workspaces" defer></script><script src="/ingest/assets/overlays.js?v=2" defer></script><script src="/ingest/assets/command-palette.js" defer></script></head>
 <body class="app-ingest ingest-home"><a class="skip-link" href="#main">Skip to content</a>
 <header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" aria-label="Download Ingest" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.4.2/Ingest-0.9.4.2.dmg"><span class="nav-download-label">Download <span aria-hidden="true">↗</span></span><svg class="nav-download-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3"/></svg></a></nav></header>
 <main id="main" tabindex="-1" class="app-landing">
-<section class="ingest-hero" aria-labelledby="hero-title"><p class="eyebrow">Photo workflow for Mac</p><h1 id="hero-title">Ingest. Cull.<br>Browse. Organize.</h1><p class="intro">Open a card or a folder. Cull and browse with the keyboard. Organize when you’re ready — in one modern Mac app.</p><div class="actions"><a class="primary-action" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.4.2/Ingest-0.9.4.2.dmg">Download Ingest <span aria-hidden="true">↗</span></a><a class="secondary-action" href="#workspaces">See how it works ↓</a></div><p class="hero-details" id="compatibility">Free during beta · No account<br>macOS 15+ · Apple silicon · <a href="/ingest/release-notes/#v0.9.4.2">Version 0.9.4.2</a></p></section>
+<section class="ingest-hero" aria-labelledby="hero-title"><p class="eyebrow">Photo workflow for Mac</p><h1 id="hero-title">Ingest. Cull.<br>Browse. Organize.</h1><p class="intro">Open a card or a folder. Cull and browse with the keyboard. Organize when you’re ready — in one modern Mac app.</p><div class="actions"><a class="primary-action" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.4.2/Ingest-0.9.4.2.dmg">Download Ingest <span aria-hidden="true">↗</span></a><a class="secondary-action" href="/ingest/getting-started/">See how it works →</a></div><p class="hero-details" id="compatibility">Free during beta · No account<br>macOS 15+ · Apple silicon · <a href="/ingest/release-notes/#v0.9.4.2">Version 0.9.4.2</a></p></section>
 <section class="hero-stage hero-showcase" data-hero-carousel aria-label="Ingest workspaces">
 <div class="hero-controls" hidden>
 <div class="hero-workspaces" aria-label="Choose a workspace">
@@ -31,39 +31,15 @@
 </section>
 <!-- Legacy anchors kept for deep links and the site palette -->
 <span id="command-tab-crop"></span><span id="command-tab-folders"></span><span id="command-tab-sidebars"></span><span id="command-tab-workspaces"></span><span id="loop"></span><span id="copy"></span><span id="naming"></span><span id="keyboard"></span><span id="command-title"></span><span id="command-crop"></span><span id="command-sidebars"></span><span id="command-workspaces"></span><span id="command-folders"></span><span id="after"></span><span id="describe"></span><span id="apple-photos"></span><span id="apple-photos-title"></span><span id="files-title"></span><span id="assistance-title"></span>
-<section class="section-block primary-feature" id="workspaces" aria-labelledby="workspaces-title"><div class="section-heading"><p class="eyebrow">01 / Workspaces</p><h2 id="workspaces-title">Set up the shoot once.<br>Forget the folders.</h2><p>Five starting points for where your photos go, how they’re named, and how you review them. Make any of them your own.</p></div>
-<div class="workspace-switcher" data-workspaces><div class="workspace-chips" role="tablist" aria-label="Workspace setup examples" hidden>
-<button class="workspace-chip" id="workspace-tab-wedding" type="button" data-workspace-tab="workspace-copy-wedding">Wedding</button>
-<button class="workspace-chip" id="workspace-tab-landscapes" type="button" data-workspace-tab="workspace-copy-landscapes">Landscapes</button>
-<button class="workspace-chip" id="workspace-tab-personal" type="button" data-workspace-tab="workspace-copy-personal">Personal</button>
-<button class="workspace-chip" id="workspace-tab-headshots" type="button" data-workspace-tab="workspace-copy-headshots">Headshots</button>
-<button class="workspace-chip" id="workspace-tab-events" type="button" data-workspace-tab="workspace-copy-events">Events</button>
-</div><div class="workspace-panels">
-<section class="workspace-panel" id="workspace-copy-wedding"><div class="workspace-details"><p class="eyebrow">Wedding setup</p><h3>One job, from ceremony to delivery.</h3><p class="workspace-description">Keep the couple’s originals together, with empty folders ready for edited files and final exports.</p><h4>What changes with this workspace</h4><dl class="workspace-summary"><div><dt>Review</dt><dd>Grid · RAW + JPEG paired</dd></div><div><dt>File naming</dt><dd><code>Morgan-Lee-{seqn}</code><span>Example: <code>Morgan-Lee-0001.arw</code></span></dd></div></dl><h4>Working storage · Photo Work</h4><pre class="workspace-tree">Weddings/2026/
-└── 2026-09-26-Morgan-Lee/
-    ├── Originals  ← receives photos
-    ├── Edits  · empty
-    └── Delivery  · empty</pre><h4>Second verified copy · Photo Backup</h4><p class="workspace-backup"><code>Photo Backup/Weddings/2026/2026-09-26-Morgan-Lee/Originals/</code></p><p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p></div><figure class="desktop-shot"><a href="/ingest/assets/workspace-wedding-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Wedding destination, folder, and naming settings"><img src="/ingest/assets/workspace-wedding-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Wedding workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Morgan-Lee, Originals as the receiving folder, and the Morgan-Lee-{seqn} naming template"></a><figcaption><span>Wedding · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure></section>
-<section class="workspace-panel" id="workspace-copy-landscapes"><div class="workspace-details"><p class="eyebrow">Landscapes setup</p><h3>File by place. Keep the camera’s names.</h3><p class="workspace-description">Organize each trip beneath its location, with space for edits and print-ready exports.</p><h4>What changes with this workspace</h4><dl class="workspace-summary"><div><dt>Review</dt><dd>Split · histogram and camera details</dd></div><div><dt>File naming</dt><dd><span>Preserve camera filenames</span><span>Example: <code>DSC01356.ARW</code></span></dd></div></dl><h4>Working storage · Photo Work</h4><pre class="workspace-tree">Landscapes/Yosemite/
-└── 2026-09-26-Valley/
-    ├── Originals  ← receives photos
-    ├── Edits  · empty
-    └── Prints  · empty</pre><h4>Second verified copy · Photo Backup</h4><p class="workspace-backup"><code>Photo Backup/Landscapes/Yosemite/2026-09-26-Valley/Originals/</code></p><p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p></div><figure class="desktop-shot"><a href="/ingest/assets/workspace-landscapes-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Landscapes destination, folder, and naming settings"><img src="/ingest/assets/workspace-landscapes-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Landscapes workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Valley, Originals as the receiving folder, and original camera filenames"></a><figcaption><span>Landscapes · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure></section>
-<section class="workspace-panel" id="workspace-copy-personal"><div class="workspace-details"><p class="eyebrow">Personal setup</p><h3>A simple home for everyday photographs.</h3><p class="workspace-description">Keep each day together and leave a Favorites folder ready for copies you choose to make.</p><h4>What changes with this workspace</h4><dl class="workspace-summary"><div><dt>Review</dt><dd>Preview · optional Focus mode</dd></div><div><dt>File naming</dt><dd><span>Preserve camera filenames</span><span>Example: <code>DSC01356.ARW</code></span></dd></div></dl><h4>Working storage · Photo Work</h4><pre class="workspace-tree">Personal/2026/
-└── 2026-09-26-Sunday-at-Home/
-    ├── Originals  ← receives photos
-    └── Favorites  · empty</pre><h4>Second verified copy · Photo Backup</h4><p class="workspace-backup"><code>Photo Backup/Personal/2026/2026-09-26-Sunday-at-Home/Originals/</code></p><p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p></div><figure class="desktop-shot"><a href="/ingest/assets/workspace-personal-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Personal destination, folder, and naming settings"><img src="/ingest/assets/workspace-personal-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Personal workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Sunday-at-Home, Originals as the receiving folder, and original camera filenames"></a><figcaption><span>Personal · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure></section>
-<section class="workspace-panel" id="workspace-copy-headshots"><div class="workspace-details"><p class="eyebrow">Headshots setup</p><h3>Keep the team together under one client.</h3><p class="workspace-description">Use the client and job in each filename. Retouch and Delivery start empty, ready for work from your editor.</p><h4>What changes with this workspace</h4><dl class="workspace-summary"><div><dt>Review</dt><dd>Portrait Grid · review each person</dd></div><div><dt>File naming</dt><dd><code>Acme-Headshots-{seqn}</code><span>Example: <code>Acme-Headshots-0001.arw</code></span></dd></div></dl><h4>Working storage · Photo Work</h4><pre class="workspace-tree">Clients/Acme/
-└── 2026-09-26-Team-Headshots/
-    ├── Originals  ← receives photos
-    ├── Retouch  · empty
-    └── Delivery  · empty</pre><h4>Second verified copy · Photo Backup</h4><p class="workspace-backup"><code>Photo Backup/Clients/Acme/2026-09-26-Team-Headshots/Originals/</code></p><p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p></div><figure class="desktop-shot"><a href="/ingest/assets/workspace-headshots-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Headshots destination, folder, and naming settings"><img src="/ingest/assets/workspace-headshots-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Headshots workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Team-Headshots, Originals as the receiving folder, and the Acme-Headshots-{seqn} naming template"></a><figcaption><span>Headshots · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure></section>
-<section class="workspace-panel" id="workspace-copy-events"><div class="workspace-details"><p class="eyebrow">Events setup</p><h3>One evening, a clear path to highlights.</h3><p class="workspace-description">Keep the complete event in Originals, with empty folders for your chosen highlights and delivery exports.</p><h4>What changes with this workspace</h4><dl class="workspace-summary"><div><dt>Review</dt><dd>Preview · face review</dd></div><div><dt>File naming</dt><dd><code>Community-Evening-{seqn}</code><span>Example: <code>Community-Evening-0001.arw</code></span></dd></div></dl><h4>Working storage · Photo Work</h4><pre class="workspace-tree">Events/2026/
-└── 2026-09-26-Community-Evening/
-    ├── Originals  ← receives photos
-    ├── Highlights  · empty
-    └── Delivery  · empty</pre><h4>Second verified copy · Photo Backup</h4><p class="workspace-backup"><code>Photo Backup/Events/2026/2026-09-26-Community-Evening/Originals/</code></p><p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p></div><figure class="desktop-shot"><a href="/ingest/assets/workspace-events-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Events destination, folder, and naming settings"><img src="/ingest/assets/workspace-events-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Events workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Community-Evening, Originals as the receiving folder, and the Community-Evening-{seqn} naming template"></a><figcaption><span>Events · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure></section>
-</div></div><div class="workspace-notes"><p>Adaptable examples, with fictional job names and organization dates. Original camera capture dates are unchanged. The project folders separate source photographs from outputs, an approach also used by <a href="https://support.captureone.com/hc/en-us/articles/360003115137-The-Complete-Guide-to-Sessions-in-Capture-One">Capture One Sessions</a>. These aren’t mandatory standards.</p><p>Use a separate physical drive for Photo Backup. Ingest’s second verified copy is one part of a backup workflow: arrange off-site protection and editor/catalog backups separately. A <a href="https://helpx.adobe.com/lightroom-classic/desktop/manage-catalogs-and-files/back-catalog.html">Lightroom catalog backup does not back up your original photographs</a>. See <a href="https://www.backblaze.com/blog/the-3-2-1-backup-strategy/">3-2-1 backup guidance</a>.</p><a href="/ingest/getting-started/#next">Build your workspace →</a></div></section>
+<section class="section-block primary-feature" id="workspaces" aria-labelledby="workspaces-title"><div class="section-heading"><p class="eyebrow">01 / Workspaces</p><h2 id="workspaces-title">Set up the shoot once.<br>Forget the folders.</h2><p>Five starting points for where your photos go, how they’re named, and how you review them. Make any of them your own.</p>
+<ul class="ingest-detail-chips workspace-setup-chips" aria-label="Workspace setup examples">
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail data-detail-title="Wedding setup" aria-controls="detail-workspace-wedding" aria-haspopup="dialog">Wedding</button></li>
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail data-detail-title="Landscapes setup" aria-controls="detail-workspace-landscapes" aria-haspopup="dialog">Landscapes</button></li>
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail data-detail-title="Personal setup" aria-controls="detail-workspace-personal" aria-haspopup="dialog">Personal</button></li>
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail data-detail-title="Headshots setup" aria-controls="detail-workspace-headshots" aria-haspopup="dialog">Headshots</button></li>
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail data-detail-title="Events setup" aria-controls="detail-workspace-events" aria-haspopup="dialog">Events</button></li>
+</ul></div>
+<div class="workspace-notes"><p>Use a separate physical drive for Photo Backup when you add a second verified copy.</p><p><a href="/ingest/getting-started/#next">Build your workspace →</a></p></div></section>
 <section class="section-block primary-feature" id="metadata-assist" aria-labelledby="metadata-title"><div class="section-heading"><p class="eyebrow">02 / Metadata Assist</p><h2 id="metadata-title">Type <kbd>;</kbd>.<br>See your options.</h2><p>A structured editor, not an AI writer. Type <kbd>;</kbd> and pick the field — Location, Caption, Keywords, or anything else — then Tab and fill it in. Changes show in a review panel first. Typing alone writes nothing. <kbd>;</kbd> is for metadata fields; <code>{…}</code> is for rename and folder variables.</p>
 <ul class="ingest-detail-chips" aria-label="Metadata Assist details">
 <li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-fields" aria-haspopup="dialog">Find a field with <kbd>;</kbd></button></li>
@@ -97,6 +73,95 @@
 </ul></section>
 <section class="made-for-mac" id="shoot"><div><p class="eyebrow" id="shoot-title">Built for this machine</p><h2 id="alternative-title">Unapologetically Mac.</h2></div><div><p>I’m a photographer and an Apple enthusiast. I built Ingest for the Mac, with native controls, the keyboard, and <kbd>⌘K</kbd> at its center. From family cards to client shoots — it’s the photo workflow app I wanted on my own Mac.</p><p class="signature">Brian Renshaw <span>Photographer &amp; developer</span></p></div></section>
 <section class="ingest-closing" id="closing" aria-labelledby="closing-title"><img src="/ingest/assets/icon.png" width="72" height="72" alt=""><h2 id="closing-title">Off the card. Into your folders.</h2><p>Start with a folder. Make the workspace yours.</p><div class="actions"><a class="primary-action" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.4.2/Ingest-0.9.4.2.dmg">Download Ingest ↗</a><a class="secondary-action" href="/ingest/getting-started/">Get started →</a></div><p class="hero-details">Free during beta · No account<br>macOS 15+ · Apple silicon · Version 0.9.4.2</p><p class="beta-note">Ingest is a working beta. I use it for my own work and am still developing it for a broader audience. <a href="mailto:contact@brianrenshaw.app?subject=Ingest%20feedback">Send feedback →</a></p></section>
+
+<div class="ingest-detail-source" id="detail-workspace-wedding" hidden>
+<p class="workspace-pitch">One job, from ceremony to delivery.</p>
+<p class="workspace-description">Keep the couple’s originals together, with empty folders ready for edited files and final exports.</p>
+<h4>What changes with this workspace</h4>
+<dl class="workspace-summary"><div><dt>Review</dt><dd>Grid · RAW + JPEG paired</dd></div><div><dt>File naming</dt><dd><code>Morgan-Lee-{seqn}</code><span>Example: <code>Morgan-Lee-0001.arw</code></span></dd></div></dl>
+<h4>Working storage · Photo Work</h4>
+<pre class="workspace-tree">Weddings/2026/
+└── 2026-09-26-Morgan-Lee/
+    ├── Originals  ← receives photos
+    ├── Edits  · empty
+    └── Delivery  · empty</pre>
+<h4>Second verified copy · Photo Backup</h4>
+<p class="workspace-backup"><code>Photo Backup/Weddings/2026/2026-09-26-Morgan-Lee/Originals/</code></p>
+<p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/workspace-wedding-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Wedding destination, folder, and naming settings"><img src="/ingest/assets/workspace-wedding-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Wedding workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Morgan-Lee, Originals as the receiving folder, and the Morgan-Lee-{seqn} naming template"></a><figcaption><span>Wedding · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure>
+<p><a href="/ingest/getting-started/#next">Build your workspace →</a></p>
+</div>
+
+<div class="ingest-detail-source" id="detail-workspace-landscapes" hidden>
+<p class="workspace-pitch">File by place. Keep the camera’s names.</p>
+<p class="workspace-description">Organize each trip beneath its location, with space for edits and print-ready exports.</p>
+<h4>What changes with this workspace</h4>
+<dl class="workspace-summary"><div><dt>Review</dt><dd>Split · histogram and camera details</dd></div><div><dt>File naming</dt><dd><span>Preserve camera filenames</span><span>Example: <code>DSC01356.ARW</code></span></dd></div></dl>
+<h4>Working storage · Photo Work</h4>
+<pre class="workspace-tree">Landscapes/Yosemite/
+└── 2026-09-26-Valley/
+    ├── Originals  ← receives photos
+    ├── Edits  · empty
+    └── Prints  · empty</pre>
+<h4>Second verified copy · Photo Backup</h4>
+<p class="workspace-backup"><code>Photo Backup/Landscapes/Yosemite/2026-09-26-Valley/Originals/</code></p>
+<p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/workspace-landscapes-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Landscapes destination, folder, and naming settings"><img src="/ingest/assets/workspace-landscapes-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Landscapes workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Valley, Originals as the receiving folder, and original camera filenames"></a><figcaption><span>Landscapes · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure>
+<p><a href="/ingest/getting-started/#next">Build your workspace →</a></p>
+</div>
+
+<div class="ingest-detail-source" id="detail-workspace-personal" hidden>
+<p class="workspace-pitch">A simple home for everyday photographs.</p>
+<p class="workspace-description">Keep each day together and leave a Favorites folder ready for copies you choose to make.</p>
+<h4>What changes with this workspace</h4>
+<dl class="workspace-summary"><div><dt>Review</dt><dd>Preview · optional Focus mode</dd></div><div><dt>File naming</dt><dd><span>Preserve camera filenames</span><span>Example: <code>DSC01356.ARW</code></span></dd></div></dl>
+<h4>Working storage · Photo Work</h4>
+<pre class="workspace-tree">Personal/2026/
+└── 2026-09-26-Sunday-at-Home/
+    ├── Originals  ← receives photos
+    └── Favorites  · empty</pre>
+<h4>Second verified copy · Photo Backup</h4>
+<p class="workspace-backup"><code>Photo Backup/Personal/2026/2026-09-26-Sunday-at-Home/Originals/</code></p>
+<p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/workspace-personal-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Personal destination, folder, and naming settings"><img src="/ingest/assets/workspace-personal-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Personal workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Sunday-at-Home, Originals as the receiving folder, and original camera filenames"></a><figcaption><span>Personal · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure>
+<p><a href="/ingest/getting-started/#next">Build your workspace →</a></p>
+</div>
+
+<div class="ingest-detail-source" id="detail-workspace-headshots" hidden>
+<p class="workspace-pitch">Keep the team together under one client.</p>
+<p class="workspace-description">Use the client and job in each filename. Retouch and Delivery start empty, ready for work from your editor.</p>
+<h4>What changes with this workspace</h4>
+<dl class="workspace-summary"><div><dt>Review</dt><dd>Portrait Grid · review each person</dd></div><div><dt>File naming</dt><dd><code>Acme-Headshots-{seqn}</code><span>Example: <code>Acme-Headshots-0001.arw</code></span></dd></div></dl>
+<h4>Working storage · Photo Work</h4>
+<pre class="workspace-tree">Clients/Acme/
+└── 2026-09-26-Team-Headshots/
+    ├── Originals  ← receives photos
+    ├── Retouch  · empty
+    └── Delivery  · empty</pre>
+<h4>Second verified copy · Photo Backup</h4>
+<p class="workspace-backup"><code>Photo Backup/Clients/Acme/2026-09-26-Team-Headshots/Originals/</code></p>
+<p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/workspace-headshots-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Headshots destination, folder, and naming settings"><img src="/ingest/assets/workspace-headshots-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Headshots workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Team-Headshots, Originals as the receiving folder, and the Acme-Headshots-{seqn} naming template"></a><figcaption><span>Headshots · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure>
+<p><a href="/ingest/getting-started/#next">Build your workspace →</a></p>
+</div>
+
+<div class="ingest-detail-source" id="detail-workspace-events" hidden>
+<p class="workspace-pitch">One evening, a clear path to highlights.</p>
+<p class="workspace-description">Keep the complete event in Originals, with empty folders for your chosen highlights and delivery exports.</p>
+<h4>What changes with this workspace</h4>
+<dl class="workspace-summary"><div><dt>Review</dt><dd>Preview · face review</dd></div><div><dt>File naming</dt><dd><code>Community-Evening-{seqn}</code><span>Example: <code>Community-Evening-0001.arw</code></span></dd></div></dl>
+<h4>Working storage · Photo Work</h4>
+<pre class="workspace-tree">Events/2026/
+└── 2026-09-26-Community-Evening/
+    ├── Originals  ← receives photos
+    ├── Highlights  · empty
+    └── Delivery  · empty</pre>
+<h4>Second verified copy · Photo Backup</h4>
+<p class="workspace-backup"><code>Photo Backup/Events/2026/2026-09-26-Community-Evening/Originals/</code></p>
+<p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/workspace-events-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Events destination, folder, and naming settings"><img src="/ingest/assets/workspace-events-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Events workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Community-Evening, Originals as the receiving folder, and the Community-Evening-{seqn} naming template"></a><figcaption><span>Events · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure>
+<p><a href="/ingest/getting-started/#next">Build your workspace →</a></p>
+</div>
 
 <div class="ingest-detail-source" id="detail-ma-fields" hidden>
 <p>Press <kbd>⌘’</kbd> to open Metadata Assist. Type <kbd>;</kbd> to see your field options — Location, Caption, Keywords, and the rest. A fragment like <kbd>;lo</kbd> narrows the list. Choose a field, then fill the value or search for a place. Separate keywords with commas.</p>

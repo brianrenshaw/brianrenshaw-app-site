@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ingest Support — Photo workflow for Mac</title>
 <meta name="description" content="Find requirements, file support, and help with browsing, importing, metadata, and Apple Photos. If you need a hand, get in touch with the app version and what happened.">
 <link rel="canonical" href="https://brianrenshaw.app/ingest/support/">
@@ -15,8 +15,8 @@
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
-<link rel="stylesheet" href="/ingest/assets/site.css?v=0942-overlays">
-<script src="/ingest/assets/overlays.js?v=1" defer></script><script src="/ingest/assets/command-palette.js" defer></script></head>
+<link rel="stylesheet" href="/ingest/assets/site.css?v=0942-workspaces-chips">
+<script src="/ingest/assets/overlays.js?v=2" defer></script><script src="/ingest/assets/command-palette.js" defer></script></head>
 <body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/" aria-current="page">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" aria-label="Download Ingest" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.4.2/Ingest-0.9.4.2.dmg"><span class="nav-download-label">Download <span aria-hidden="true">↗</span></span><svg class="nav-download-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3"/></svg></a></nav></header>
@@ -25,7 +25,7 @@
 <h1>Help with your photo workflow.</h1>
 <p class="intro">Find requirements, file support, and help with browsing, importing, metadata, and Apple Photos. If you need a hand, get in touch with the app version and what happened.</p>
 
-<nav class="guide-toc" aria-label="On this page"><a href="#requirements">What you need</a><a href="#formats">Cameras and files it reads</a><a href="#cards">Memory cards</a><a href="#first-run">The first hour</a><a href="#previews">Thumbnails are slow or missing</a><a href="#ingest-problems">A copy did not finish</a><a href="#metadata-problems">Lightroom or Photos does not show my keywords</a><a href="#permissions">Permission prompts</a><a href="#photos-support">Apple Photos availability</a><a href="#photo-mechanic">Coming from Photo Mechanic</a><a href="#updates">Updates</a><a href="#credits">Credits</a><a href="#contact">Get in touch</a></nav>
+<nav class="guide-toc" aria-label="On this page"><a href="#requirements">What you need</a><a href="#formats">Cameras and files it reads</a><a href="#cards">Memory cards</a><a href="#first-run">The first hour</a><a href="#previews">Thumbnails are slow or missing</a><a href="#ingest-problems">A copy did not finish</a><a href="#backup-strategy">Backup strategy</a><a href="#metadata-problems">Lightroom or Photos does not show my keywords</a><a href="#permissions">Permission prompts</a><a href="#photos-support">Apple Photos availability</a><a href="#photo-mechanic">Coming from Photo Mechanic</a><a href="#updates">Updates</a><a href="#credits">Credits</a><a href="#contact">Get in touch</a></nav>
 <section id="requirements">
 <h2>What you need</h2>
 <p>Ingest runs on <strong>macOS 15 or later</strong>, on <strong>Apple silicon only</strong>. There is no Intel build, so an Intel Mac cannot open it. To check your Mac, open the Apple menu and choose About This Mac: the Chip line reads Apple M1 or later.</p>
@@ -92,6 +92,14 @@
 <dt>Deleting from the card</dt>
 <dd>Only files whose copies verified at every destination are deleted. Choosing to delete everything asks you to confirm, and that choice is never remembered for next time.</dd>
 </dl>
+</section>
+
+
+<section id="backup-strategy">
+<h2>Backup strategy</h2>
+<p>Use a separate physical drive for Photo Backup. Ingest’s second verified copy is one part of a backup workflow: arrange off-site protection and editor/catalog backups separately.</p>
+<p>A <a href="https://helpx.adobe.com/lightroom-classic/desktop/manage-catalogs-and-files/back-catalog.html">Lightroom catalog backup does not back up your original photographs</a>. See <a href="https://www.backblaze.com/blog/the-3-2-1-backup-strategy/">3-2-1 backup guidance</a> for keeping originals safe across media and locations.</p>
+<p>Project folders that separate source photographs from outputs are an approach also used by <a href="https://support.captureone.com/hc/en-us/articles/360003115137-The-Complete-Guide-to-Sessions-in-Capture-One">Capture One Sessions</a>. They are not mandatory standards.</p>
 </section>
 
 <section id="metadata-problems">
