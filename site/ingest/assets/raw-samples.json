@@ -1,0 +1,672 @@
+{
+  "source": "https://raw.pixls.us/",
+  "license": "CC0-1.0",
+  "samples": [
+    {
+      "id": 1837,
+      "filename": "01837-Nikon-D850.nef",
+      "url": "https://raw.pixls.us/getfile.php/1837/nice/Nikon - D850 - 12bit 12bit compressed (Lossless) (3:2).NEF",
+      "sha256": "61dff3d1b520b46d81bc948b2d1614e56f75142a4aea0aa1d8c28d35ce118a8f",
+      "license": "CC0-1.0",
+      "make": "Nikon",
+      "model": "D850"
+    },
+    {
+      "id": 3204,
+      "filename": "03204-Leica-Q2.dng",
+      "url": "https://raw.pixls.us/getfile.php/3204/nice/Leica - Q2 - 14bit 14bit uncompressed (3:2).DNG",
+      "sha256": "a71f98405e9e9c1e4ac0f2d2e6c52d65daae3234fc0a9f6eed2a84ee4ce794ad",
+      "license": "CC0-1.0",
+      "make": "Leica",
+      "model": "Q2"
+    },
+    {
+      "id": 3381,
+      "filename": "03381-Nikon-COOLPIX-P1000.nrw",
+      "url": "https://raw.pixls.us/getfile.php/3381/nice/Nikon - COOLPIX P1000 - 12bit 12bit uncompressed (4:3).NRW",
+      "sha256": "1d9470ee083f914e51aa0be782161b432f27f87dbef551a59ec435f5dbc289dd",
+      "license": "CC0-1.0",
+      "make": "Nikon",
+      "model": "COOLPIX P1000"
+    },
+    {
+      "id": 3863,
+      "filename": "03863-Leica-C-Lux.rwl",
+      "url": "https://raw.pixls.us/getfile.php/3863/nice/Leica - C-Lux - 4:3.RWL",
+      "sha256": "286106ec2df65539912709c64e84a9b94686443fe5ea05b8ebada76daa1feb2d",
+      "license": "CC0-1.0",
+      "make": "Leica",
+      "model": "C-Lux"
+    },
+    {
+      "id": 3874,
+      "filename": "03874-Hasselblad-X1D-II-50C.fff",
+      "url": "https://raw.pixls.us/getfile.php/3874/nice/Hasselblad - X1D II 50C - 16bit (4:3).fff",
+      "sha256": "8c2451b3478fb529b4e9bd51ed3267999ce26eb1fcb5c3b93c3ae7bc56267794",
+      "license": "CC0-1.0",
+      "make": "Hasselblad",
+      "model": "X1D II 50C"
+    },
+    {
+      "id": 4132,
+      "filename": "04132-Olympus-E-M10-Mark-IV.orf",
+      "url": "https://raw.pixls.us/getfile.php/4132/nice/Olympus - E-M10 Mark IV - 16bit (4:3).ORF",
+      "sha256": "77b67d898f85d3d738cb16daf9740c0fcf078ce9662c381994604ac540ce36b4",
+      "license": "CC0-1.0",
+      "make": "Olympus",
+      "model": "E-M10 Mark IV"
+    },
+    {
+      "id": 4694,
+      "filename": "04694-Canon-EOS-R5.cr3",
+      "url": "https://raw.pixls.us/getfile.php/4694/nice/Canon - EOS R5 - 3:2.CR3",
+      "sha256": "21430c36387efe65bd09ac0fcd724bfd959d93dd391ec811a1b741c8663becb5",
+      "license": "CC0-1.0",
+      "make": "Canon",
+      "model": "EOS R5"
+    },
+    {
+      "id": 5283,
+      "filename": "05283-OM-System-OM-1.orf",
+      "url": "https://raw.pixls.us/getfile.php/5283/nice/OM System - OM-1 - 16bit (4:3).ORF",
+      "sha256": "bf2eef6becc0851e48231617c3e2eac27a2cdb44c75b93035c561d837952c18b",
+      "license": "CC0-1.0",
+      "make": "OM System",
+      "model": "OM-1"
+    },
+    {
+      "id": 5818,
+      "filename": "05818-Ricoh-GR-IIIx.dng",
+      "url": "https://raw.pixls.us/getfile.php/5818/nice/Ricoh - GR IIIx - 14bit (3:2).DNG",
+      "sha256": "1e318af31be4baa9949f0ed4af5cfe8ffb2c180e2c12926cd75ac1d029bb0fae",
+      "license": "CC0-1.0",
+      "make": "Ricoh",
+      "model": "GR IIIx"
+    },
+    {
+      "id": 6011,
+      "filename": "06011-Leica-D-LUX-6.rwl",
+      "url": "https://raw.pixls.us/getfile.php/6011/nice/Leica - D-LUX 6 - 16:9.RWL",
+      "sha256": "785127e959ba004b36e61d4153b11debe161dd98c45618aa561899795eea3888",
+      "license": "CC0-1.0",
+      "make": "Leica",
+      "model": "D-LUX 6"
+    },
+    {
+      "id": 6123,
+      "filename": "06123-Fujifilm-X-T5.raf",
+      "url": "https://raw.pixls.us/getfile.php/6123/nice/Fujifilm - X-T5 - 14bit 14bit compressed (3:2).RAF",
+      "sha256": "cddd7ae0c43f9280876e5fdcbdf8878718972ebd3d034d8affc8cfc6752d33dc",
+      "license": "CC0-1.0",
+      "make": "Fujifilm",
+      "model": "X-T5"
+    },
+    {
+      "id": 6616,
+      "filename": "06616-Nikon-Z-8.nef",
+      "url": "https://raw.pixls.us/getfile.php/6616/nice/Nikon - Z 8 - 8bit 8bit compressed (3:2).NEF",
+      "sha256": "82df041542b8d328738443bb5ff3373b396e406ecc8cbe7dc3b35252790c53e7",
+      "license": "CC0-1.0",
+      "make": "Nikon",
+      "model": "Z 8"
+    },
+    {
+      "id": 6932,
+      "filename": "06932-Sony-ILCE-7M4.arw",
+      "url": "https://raw.pixls.us/getfile.php/6932/nice/Sony - ILCE-7M4 - 14bit (3:2).ARW",
+      "sha256": "73c79fd9fbd73dff89548b611aaedc3c5a7e3412ec190c23881ea8434ff2214c",
+      "license": "CC0-1.0",
+      "make": "Sony",
+      "model": "ILCE-7M4"
+    },
+    {
+      "id": 7793,
+      "filename": "07793-Panasonic-DC-S5M2.rw2",
+      "url": "https://raw.pixls.us/getfile.php/7793/nice/Panasonic - DC-S5M2 - 14bit (3:2).RW2",
+      "sha256": "a5e9b84e3471a69cdb025c4b1fb5d51001fd494b411dc05d74dd518ba1adf4e9",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DC-S5M2"
+    },
+    {
+      "id": 9065,
+      "filename": "09065-Nikon-D2X.NEF",
+      "url": "https://raw.pixls.us/getfile.php/9065/nice/Nikon - D2X - 12bit compressed (Lossy (type 1)) (3:2).NEF",
+      "sha256": "b0b96cc953b8c2f86a216e64e575cbdaee935ddfe75e5a4adc861e41f668b83b",
+      "license": "CC0-1.0",
+      "make": "Nikon",
+      "model": "D2X"
+    },
+    {
+      "id": 8964,
+      "filename": "08964-Canon-EOS-R6-Mark-III.CR3",
+      "url": "https://raw.pixls.us/getfile.php/8964/nice/Canon - EOS R6 Mark III - CRAW (3:2).CR3",
+      "sha256": "7e1a5d84297a52853b0bbe5a5c03a5d4f5b93e00b7020271523240f9cabfe50e",
+      "license": "CC0-1.0",
+      "make": "Canon",
+      "model": "EOS R6 Mark III"
+    },
+    {
+      "id": 8811,
+      "filename": "08811-Sony-ILME-FX2.ARW",
+      "url": "https://raw.pixls.us/getfile.php/8811/nice/Sony - ILME-FX2 - 4:3.ARW",
+      "sha256": "582735361d972ff4e29d3dd998de992f51ca0a57657598e10c4b88f0bafc9b86",
+      "license": "CC0-1.0",
+      "make": "Sony",
+      "model": "ILME-FX2"
+    },
+    {
+      "id": 8790,
+      "filename": "08790-Panasonic-DC-S1M2.RW2",
+      "url": "https://raw.pixls.us/getfile.php/8790/nice/Panasonic - DC-S1M2 - 3:2.RW2",
+      "sha256": "e50ae28ab990a7997b1f2142e976619d072969186ed4f0095bef0724d2c70563",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DC-S1M2"
+    },
+    {
+      "id": 8771,
+      "filename": "08771-Fujifilm-X-T30-III.RAF",
+      "url": "https://raw.pixls.us/getfile.php/8771/nice/Fujifilm - X-T30 III - 14bit compressed (3:2).RAF",
+      "sha256": "1910b95422240f97781fa3296d67a56cc8f62de63144ac11cbf4267a11278042",
+      "license": "CC0-1.0",
+      "make": "Fujifilm",
+      "model": "X-T30 III"
+    },
+    {
+      "id": 8609,
+      "filename": "08609-Olympus-SP550UZ.ORF",
+      "url": "https://raw.pixls.us/getfile.php/8609/nice/Olympus - SP550UZ - 12bit (4:3).ORF",
+      "sha256": "05f49918e1b1894c3abd2b5451b356f7a00adb1c8568abc5babff33fcade1bb2",
+      "license": "CC0-1.0",
+      "make": "Olympus",
+      "model": "SP550UZ"
+    },
+    {
+      "id": 8566,
+      "filename": "08566-Nikon-Z-fc.NEF",
+      "url": "https://raw.pixls.us/getfile.php/8566/nice/Nikon - Z fc - 14bit compressed ((10)) (3:2).NEF",
+      "sha256": "8ff63bbe2a55aa682112662674b302e50a650a671a3022c68f787672961a0683",
+      "license": "CC0-1.0",
+      "make": "Nikon",
+      "model": "Z fc"
+    },
+    {
+      "id": 8547,
+      "filename": "08547-Sony-DSC-RX1RM3.ARW",
+      "url": "https://raw.pixls.us/getfile.php/8547/nice/Sony - DSC-RX1RM3 - 4:3.ARW",
+      "sha256": "0fbbc32e4e24faa3626027987bc1591faf5aec76b47c8f857464ee97be9c224a",
+      "license": "CC0-1.0",
+      "make": "Sony",
+      "model": "DSC-RX1RM3"
+    },
+    {
+      "id": 8509,
+      "filename": "08509-Fujifilm-X-E5.RAF",
+      "url": "https://raw.pixls.us/getfile.php/8509/nice/Fujifilm - X-E5 - 14bit lossy compressed (3:2).RAF",
+      "sha256": "28f56cc9784164209e92fae209bdcc78267bd692aa2fb964595485f7e93692ab",
+      "license": "CC0-1.0",
+      "make": "Fujifilm",
+      "model": "X-E5"
+    },
+    {
+      "id": 8500,
+      "filename": "08500-Canon-PowerShot-V1.CR3",
+      "url": "https://raw.pixls.us/getfile.php/8500/nice/Canon - PowerShot V1 - CRAW (3:2).CR3",
+      "sha256": "0a0abfd81b3a34fa513ac8ed24c809275160d65b07e892c2eb4353b77c535a31",
+      "license": "CC0-1.0",
+      "make": "Canon",
+      "model": "PowerShot V1"
+    },
+    {
+      "id": 8470,
+      "filename": "08470-Canon-EOS-M200.CR3",
+      "url": "https://raw.pixls.us/getfile.php/8470/nice/Canon - EOS M200 - CRAW (3:2).CR3",
+      "sha256": "0585a468143c6606936d0ffbff1788c6c02e3610d8ecb50614e21492fbacd052",
+      "license": "CC0-1.0",
+      "make": "Canon",
+      "model": "EOS M200"
+    },
+    {
+      "id": 8366,
+      "filename": "08366-Nikon-D5300.NEF",
+      "url": "https://raw.pixls.us/getfile.php/8366/nice/Nikon - D5300 - 14bit compressed (Lossy (type 2)) (3:2).NEF",
+      "sha256": "8751a0a3bc491bb5c79ed6b32f83b3923b119ae9d950b851ad26db2a0fbb3b91",
+      "license": "CC0-1.0",
+      "make": "Nikon",
+      "model": "D5300"
+    },
+    {
+      "id": 8185,
+      "filename": "08185-Canon-EOS-R10.CR3",
+      "url": "https://raw.pixls.us/getfile.php/8185/nice/Canon - EOS R10 - RAW (3:2).CR3",
+      "sha256": "2dc0bbdf04c93ca62c914604f644c735286037912d6fba609d0cb78d00acd097",
+      "license": "CC0-1.0",
+      "make": "Canon",
+      "model": "EOS R10"
+    },
+    {
+      "id": 8172,
+      "filename": "08172-Pentax-K-r.DNG",
+      "url": "https://raw.pixls.us/getfile.php/8172/nice/Pentax - K-r - 12bit (3:2).DNG",
+      "sha256": "adc5c155341543e2e5c6de9c0ce87c86cc4629fe90a0f6e68fdf685dcd531b64",
+      "license": "CC0-1.0",
+      "make": "Pentax",
+      "model": "K-r"
+    },
+    {
+      "id": 8096,
+      "filename": "08096-Sony-DSC-RX100M7A.ARW",
+      "url": "https://raw.pixls.us/getfile.php/8096/nice/Sony - DSC-RX100M7A - 12bit (3:2).ARW",
+      "sha256": "80adbc5b1cb3342058d5998cf2eda1e6b408565169462d6d26dfe02f0c140b30",
+      "license": "CC0-1.0",
+      "make": "Sony",
+      "model": "DSC-RX100M7A"
+    },
+    {
+      "id": 8079,
+      "filename": "08079-Nikon-D200.nef",
+      "url": "https://raw.pixls.us/getfile.php/8079/nice/Nikon - D200 - 12bit compressed (Lossy (type 1)) (3:2).nef",
+      "sha256": "b0800a1166b952430b255600373573e1d528adf8de98857781e06a98472b3c35",
+      "license": "CC0-1.0",
+      "make": "Nikon",
+      "model": "D200"
+    },
+    {
+      "id": 8065,
+      "filename": "08065-Panasonic-DC-GH7.RW2",
+      "url": "https://raw.pixls.us/getfile.php/8065/nice/Panasonic - DC-GH7 - 1:1.RW2",
+      "sha256": "fe5d894cec5d9e82e40b55ecf9c68c047bab860cc8c4496086bb151f944679de",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DC-GH7"
+    },
+    {
+      "id": 8022,
+      "filename": "08022-Sony-ZV-E10M2.ARW",
+      "url": "https://raw.pixls.us/getfile.php/8022/nice/Sony - ZV-E10M2 - 12bit (3:2).ARW",
+      "sha256": "3d61e7f685460e6e77a52355d88bc960d51332f3470468a06c4490a406e6b715",
+      "license": "CC0-1.0",
+      "make": "Sony",
+      "model": "ZV-E10M2"
+    },
+    {
+      "id": 7897,
+      "filename": "07897-Canon-EOS-R100.CR3",
+      "url": "https://raw.pixls.us/getfile.php/7897/nice/Canon - EOS R100 - CRAW (3:2).CR3",
+      "sha256": "0b66842b2fe00329ebc05fe8ab9357ddbbe1a0a2d2e69a2893102de7fdf5c942",
+      "license": "CC0-1.0",
+      "make": "Canon",
+      "model": "EOS R100"
+    },
+    {
+      "id": 7895,
+      "filename": "07895-Sony-ILCE-6400A.ARW",
+      "url": "https://raw.pixls.us/getfile.php/7895/nice/Sony - ILCE-6400A - 14bit (3:2).ARW",
+      "sha256": "0bd1d7f0e5666d1d0a72830e03f95fe173fd7b4c854b30f5e79585c9d86a6107",
+      "license": "CC0-1.0",
+      "make": "Sony",
+      "model": "ILCE-6400A"
+    },
+    {
+      "id": 7884,
+      "filename": "07884-Canon-EOS-R5-Mark-II.CR3",
+      "url": "https://raw.pixls.us/getfile.php/7884/nice/Canon - EOS R5 Mark II - CRAW (3:2).CR3",
+      "sha256": "6a597497776a6abbfab8fcf12d0086ac7a3f8afea2879d61accf6bbf48d357d7",
+      "license": "CC0-1.0",
+      "make": "Canon",
+      "model": "EOS R5 Mark II"
+    },
+    {
+      "id": 7835,
+      "filename": "07835-Sony-ILCE-1M2.ARW",
+      "url": "https://raw.pixls.us/getfile.php/7835/nice/Sony - ILCE-1M2 - 14bit Lossy (3:2).ARW",
+      "sha256": "050c924e5f78afd8479aa442f17b8650e0a5ebfa5757e57368cb0dc865ca2417",
+      "license": "CC0-1.0",
+      "make": "Sony",
+      "model": "ILCE-1M2"
+    },
+    {
+      "id": 7807,
+      "filename": "07807-Fujifilm-X-T50.RAF",
+      "url": "https://raw.pixls.us/getfile.php/7807/nice/Fujifilm - X-T50 - 14bit compressed (3:2).RAF",
+      "sha256": "3a8a9ac6d92274969aaa1f55ea669191b98bb8f588d00ec8ec17afd8b3963dea",
+      "license": "CC0-1.0",
+      "make": "Fujifilm",
+      "model": "X-T50"
+    },
+    {
+      "id": 7770,
+      "filename": "07770-Nikon-Z50_2.NEF",
+      "url": "https://raw.pixls.us/getfile.php/7770/nice/Nikon - Z50_2 - 8bit compressed (16:9).NEF",
+      "sha256": "663fd340edbf91cae2e754c2c5c0b2e49e3a25b7a471c1379ecffdb01cfe1599",
+      "license": "CC0-1.0",
+      "make": "Nikon",
+      "model": "Z50_2"
+    },
+    {
+      "id": 7750,
+      "filename": "07750-Fujifilm-X-M5.RAF",
+      "url": "https://raw.pixls.us/getfile.php/7750/nice/Fujifilm - X-M5 - 14bit compressed (16:9).RAF",
+      "sha256": "af853b753bb91d40a0881978229f872cdafd8860794885366e9313b605221461",
+      "license": "CC0-1.0",
+      "make": "Fujifilm",
+      "model": "X-M5"
+    },
+    {
+      "id": 7746,
+      "filename": "07746-Nikon-Z5_2.NEF",
+      "url": "https://raw.pixls.us/getfile.php/7746/nice/Nikon - Z5_2 - 8bit compressed (3:2).NEF",
+      "sha256": "ba6c66ece60b18eaf6a3461ecfbccd346af785a1db311b3e651ae0284232a1c8",
+      "license": "CC0-1.0",
+      "make": "Nikon",
+      "model": "Z5_2"
+    },
+    {
+      "id": 7725,
+      "filename": "07725-Panasonic-DC-S1RM2.RW2",
+      "url": "https://raw.pixls.us/getfile.php/7725/nice/Panasonic - DC-S1RM2 - 3:2.RW2",
+      "sha256": "0fde3176fd98214f64d5d472162d47f7146267c29f39eb8f3dd2351bc60158d0",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DC-S1RM2"
+    },
+    {
+      "id": 7702,
+      "filename": "07702-Panasonic-DC-S9.RW2",
+      "url": "https://raw.pixls.us/getfile.php/7702/nice/Panasonic - DC-S9 - 3:2.RW2",
+      "sha256": "290ad5b4e396cb241a59459b2613d2b0659a03ff654e5d5368b3376d35812e50",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DC-S9"
+    },
+    {
+      "id": 7412,
+      "filename": "07412-Panasonic-DMC-FX150.RW2",
+      "url": "https://raw.pixls.us/getfile.php/7412/nice/Panasonic - DMC-FX150 - 16:9.RW2",
+      "sha256": "6d58a5067e681f98293436e05e440e0fe79c54e7107afaeeca51c7dc13f6cc32",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DMC-FX150"
+    },
+    {
+      "id": 7302,
+      "filename": "07302-Fujifilm-X100VI.RAF",
+      "url": "https://raw.pixls.us/getfile.php/7302/nice/Fujifilm - X100VI - 14bit 14bit compressed (3:2).RAF",
+      "sha256": "7f19c7c5914542b91829ac2e41c8d4c10e414b28b0f7a793001e1a979c8c6056",
+      "license": "CC0-1.0",
+      "make": "Fujifilm",
+      "model": "X100VI"
+    },
+    {
+      "id": 7271,
+      "filename": "07271-Fujifilm-X-T5.RAF",
+      "url": "https://raw.pixls.us/getfile.php/7271/nice/Fujifilm - X-T5 - 14bit 14bit compressed (16:9).RAF",
+      "sha256": "b77b0352a02c5a9272f5e4ee0bfb9ba270cf7482a727f5ffb91cf1d41a280e2c",
+      "license": "CC0-1.0",
+      "make": "Fujifilm",
+      "model": "X-T5"
+    },
+    {
+      "id": 7252,
+      "filename": "07252-Panasonic-DC-TZ95D.RW2",
+      "url": "https://raw.pixls.us/getfile.php/7252/nice/Panasonic - DC-TZ95D - 4:3.RW2",
+      "sha256": "c7cb71d84567b0a966eda0a76d941ad89940e64d8baddb3ad92a289a8626ec77",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DC-TZ95D"
+    },
+    {
+      "id": 7082,
+      "filename": "07082-Pentax-K-3-Mark-III-Monochrome.PEF",
+      "url": "https://raw.pixls.us/getfile.php/7082/nice/Pentax - K-3 Mark III Monochrome - 14bit (3:2).PEF",
+      "sha256": "2d47df9825d1f0fa14321b589f2934678b19dcb28d74210b86bf8a0efc7d514a",
+      "license": "CC0-1.0",
+      "make": "Pentax",
+      "model": "K-3 Mark III Monochrome"
+    },
+    {
+      "id": 7038,
+      "filename": "07038-Sony-ILCE-7CR.ARW",
+      "url": "https://raw.pixls.us/getfile.php/7038/nice/Sony - ILCE-7CR - 14bit 14bit losseless compressed (4:3).ARW",
+      "sha256": "07e3ab527c8c415cc1ccd7808fb71ca4e251c234cf0a9b6d8def7ad2feb77a8c",
+      "license": "CC0-1.0",
+      "make": "Sony",
+      "model": "ILCE-7CR"
+    },
+    {
+      "id": 7023,
+      "filename": "07023-Canon-EOS-7D-Mark-II.dng",
+      "url": "https://raw.pixls.us/getfile.php/7023/nice/Canon - EOS 7D Mark II - 16bit (3:2).dng",
+      "sha256": "090e01f9a7a860b2f2f0ead770b8a9ba3b17ea98dc1997835c6bda2fc0a2ae54",
+      "license": "CC0-1.0",
+      "make": "Canon",
+      "model": "EOS 7D Mark II"
+    },
+    {
+      "id": 7005,
+      "filename": "07005-Panasonic-DC-G9M2.RW2",
+      "url": "https://raw.pixls.us/getfile.php/7005/nice/Panasonic - DC-G9M2 - 1:1.RW2",
+      "sha256": "d8d536a46985020e6fa1b40c0a814e3a2362890dd5bfeb4f72db13da8907976c",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DC-G9M2"
+    },
+    {
+      "id": 6887,
+      "filename": "06887-Nikon-Z-f.NEF",
+      "url": "https://raw.pixls.us/getfile.php/6887/nice/Nikon - Z f - 8bit 8bit lossy compressed (3:2).NEF",
+      "sha256": "98d6ca8e6c98048ca7ffed68ccaeda7b2b9f03807f0d320d97d5678db21748c2",
+      "license": "CC0-1.0",
+      "make": "Nikon",
+      "model": "Z f"
+    },
+    {
+      "id": 6869,
+      "filename": "06869-Sony-ILCE-7CM2.ARW",
+      "url": "https://raw.pixls.us/getfile.php/6869/nice/Sony - ILCE-7CM2 - 14bit (3:2).ARW",
+      "sha256": "002c86d38a16b08a2438780728b4fda8efcc745fa6c26231dad6af67b383b11e",
+      "license": "CC0-1.0",
+      "make": "Sony",
+      "model": "ILCE-7CM2"
+    },
+    {
+      "id": 6821,
+      "filename": "06821-Panasonic-DMC-GM1S.RW2",
+      "url": "https://raw.pixls.us/getfile.php/6821/nice/Panasonic - DMC-GM1S - 1:1.RW2",
+      "sha256": "c9ec448cb0132fe8cab6a427cf0aaeb6f9f251450b1420de0774658e7f4b067e",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DMC-GM1S"
+    },
+    {
+      "id": 6813,
+      "filename": "06813-Sony-ZV-E1.ARW",
+      "url": "https://raw.pixls.us/getfile.php/6813/nice/Sony - ZV-E1 - 14bit (3:2).ARW",
+      "sha256": "d1e37dcdd0a590c62dc1d5c693f0bd202e51929b5a32d6c00b0dd1bc738620b4",
+      "license": "CC0-1.0",
+      "make": "Sony",
+      "model": "ZV-E1"
+    },
+    {
+      "id": 6736,
+      "filename": "06736-Sony-ILCE-6700.ARW",
+      "url": "https://raw.pixls.us/getfile.php/6736/nice/Sony - ILCE-6700 - 14bit (4:3).ARW",
+      "sha256": "dc3e2ed22f46fcef778553767e0703bc37cfb043f107afe2d7e6e4dbca34200a",
+      "license": "CC0-1.0",
+      "make": "Sony",
+      "model": "ILCE-6700"
+    },
+    {
+      "id": 6712,
+      "filename": "06712-Panasonic-DC-ZS200D.RW2",
+      "url": "https://raw.pixls.us/getfile.php/6712/nice/Panasonic - DC-ZS200D - 1:1.RW2",
+      "sha256": "a95fc91a051e1498311a726508c5b32d12e3d70112846cf5b090f2e4b58cd857",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DC-ZS200D"
+    },
+    {
+      "id": 6668,
+      "filename": "06668-Fujifilm-X-S20.RAF",
+      "url": "https://raw.pixls.us/getfile.php/6668/nice/Fujifilm - X-S20 - 14bit 14bit compressed (3:2).RAF",
+      "sha256": "4ee64930d06376b793afac901cd5e808cbc666fed3ecc27fb9ac846c05c1edd6",
+      "license": "CC0-1.0",
+      "make": "Fujifilm",
+      "model": "X-S20"
+    },
+    {
+      "id": 6664,
+      "filename": "06664-Pentax-KF.PEF",
+      "url": "https://raw.pixls.us/getfile.php/6664/nice/Pentax - KF - 14bit (3:2).PEF",
+      "sha256": "ddc9cdf399a7210b203dee1765ab9f4165a2e695da59bce6bcabf75b77174a4b",
+      "license": "CC0-1.0",
+      "make": "Pentax",
+      "model": "KF"
+    },
+    {
+      "id": 6556,
+      "filename": "06556-Panasonic-DC-TZ200D.RW2",
+      "url": "https://raw.pixls.us/getfile.php/6556/nice/Panasonic - DC-TZ200D - 1:1.RW2",
+      "sha256": "47657b805337f3c4ddc60d69c4fa1abd972a24f06af6f732e93e2c70fff15d49",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DC-TZ200D"
+    },
+    {
+      "id": 6514,
+      "filename": "06514-Panasonic-DMC-GF8.RW2",
+      "url": "https://raw.pixls.us/getfile.php/6514/nice/Panasonic - DMC-GF8 - 1:1.RW2",
+      "sha256": "bd38c1c95ef0b4cd6abdabb609576091805fb2ee2ff13067844291d49e10df21",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DMC-GF8"
+    },
+    {
+      "id": 6499,
+      "filename": "06499-Sony-ILME-FX30.ARW",
+      "url": "https://raw.pixls.us/getfile.php/6499/nice/Sony - ILME-FX30 - 12bit 12bit compressed (3:2).ARW",
+      "sha256": "87a187dd3f30d6704112bb1d5e8e4ef8ce2f30af3236acdabc85980aa8da3872",
+      "license": "CC0-1.0",
+      "make": "Sony",
+      "model": "ILME-FX30"
+    },
+    {
+      "id": 6457,
+      "filename": "06457-Canon-EOS-Kiss-F.CR2",
+      "url": "https://raw.pixls.us/getfile.php/6457/nice/Canon - EOS Kiss F - RAW (3:2).CR2",
+      "sha256": "12402b46f3cfaa66a671c7b6524c741dd17d6a2add3bc6cc41dcaf1570b0e722",
+      "license": "CC0-1.0",
+      "make": "Canon",
+      "model": "EOS Kiss F"
+    },
+    {
+      "id": 6409,
+      "filename": "06409-Canon-EOS-R6-Mark-II.cr3",
+      "url": "https://raw.pixls.us/getfile.php/6409/nice/Canon - EOS R6 Mark II - 3:2.cr3",
+      "sha256": "409eb724212abde94e18fbd3170abf3264951fab13384c36cbf6fb4f22ea4201",
+      "license": "CC0-1.0",
+      "make": "Canon",
+      "model": "EOS R6 Mark II"
+    },
+    {
+      "id": 6334,
+      "filename": "06334-Panasonic-DC-G95D.RW2",
+      "url": "https://raw.pixls.us/getfile.php/6334/nice/Panasonic - DC-G95D - 4:3.RW2",
+      "sha256": "773fb77c1e71b03f44d351adfaa565c1aed5697aa9f103b2f0f19a2f0eb2c855",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DC-G95D"
+    },
+    {
+      "id": 6265,
+      "filename": "06265-Panasonic-DMC-GF2.rw2",
+      "url": "https://raw.pixls.us/getfile.php/6265/nice/Panasonic - DMC-GF2 - 1:1.rw2",
+      "sha256": "b0009f1d1ded7f787c76348a52f6b66acb9c5c9e5e107c1bc753901ffb4530f5",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DMC-GF2"
+    },
+    {
+      "id": 6242,
+      "filename": "06242-Panasonic-DMC-G2.RW2",
+      "url": "https://raw.pixls.us/getfile.php/6242/nice/Panasonic - DMC-G2 - 16:9.RW2",
+      "sha256": "a6fdb64edfa65ef4d727d572fa659fa63edd01b3b0322cceb3023efe54650e26",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DMC-G2"
+    },
+    {
+      "id": 6173,
+      "filename": "06173-Nikon-Z-30.NEF",
+      "url": "https://raw.pixls.us/getfile.php/6173/nice/Nikon - Z 30 - 14bit 14bit compressed (Lossless) (3:2).NEF",
+      "sha256": "a952c7baaed05c0f191fa3698262a1a894e54e3799dd34dc1ead0f63cf09e2ca",
+      "license": "CC0-1.0",
+      "make": "Nikon",
+      "model": "Z 30"
+    },
+    {
+      "id": 6054,
+      "filename": "06054-Canon-PowerShot-G7-X-Mark-III.CR3",
+      "url": "https://raw.pixls.us/getfile.php/6054/nice/Canon - PowerShot G7 X Mark III - 3:2.CR3",
+      "sha256": "29fa26718f2791f8dc3a69d8517d0575f8cf165492253671e7b1a5151a512f02",
+      "license": "CC0-1.0",
+      "make": "Canon",
+      "model": "PowerShot G7 X Mark III"
+    },
+    {
+      "id": 6018,
+      "filename": "06018-Fujifilm-FinePix-HS50EXR.RAF",
+      "url": "https://raw.pixls.us/getfile.php/6018/nice/Fujifilm - FinePix HS50EXR - 12bit 12bit uncompressed (4:3).RAF",
+      "sha256": "b5c4f3658dc686e535eeaf639729f2cb6b54e60a3e1ab206eabba1024c4dce83",
+      "license": "CC0-1.0",
+      "make": "Fujifilm",
+      "model": "FinePix HS50EXR"
+    },
+    {
+      "id": 6002,
+      "filename": "06002-Fujifilm-X-H2.RAF",
+      "url": "https://raw.pixls.us/getfile.php/6002/nice/Fujifilm - X-H2 - 14bit 14bit compressed (3:2).RAF",
+      "sha256": "109be38f59963c9b8ff289ebe1f5ec9168c52f609e5b601432bd194520b4605b",
+      "license": "CC0-1.0",
+      "make": "Fujifilm",
+      "model": "X-H2"
+    },
+    {
+      "id": 5980,
+      "filename": "05980-Olympus-E-P7.ORF",
+      "url": "https://raw.pixls.us/getfile.php/5980/nice/Olympus - E-P7 - 16bit (4:3).ORF",
+      "sha256": "391b7a28d088f093a93d05c43b82bc8e9403579dea8cdc066d28af53a773d9c5",
+      "license": "CC0-1.0",
+      "make": "Olympus",
+      "model": "E-P7"
+    },
+    {
+      "id": 5922,
+      "filename": "05922-Nikon-1-J4.NEF",
+      "url": "https://raw.pixls.us/getfile.php/5922/nice/Nikon - 1 J4 - 12bit 12bit compressed (Lossy (type 2)) (3:2).NEF",
+      "sha256": "0e2887892b8cfc80891b2c510721088fcac6d77eff9ba68089f382a0115b274c",
+      "license": "CC0-1.0",
+      "make": "Nikon",
+      "model": "1 J4"
+    },
+    {
+      "id": 5915,
+      "filename": "05915-Olympus-E-M10-Mark-II.ORF",
+      "url": "https://raw.pixls.us/getfile.php/5915/nice/Olympus - E-M10 Mark II - 16bit (4:3).ORF",
+      "sha256": "1a95224502963c892aa69ceb58767e58730f223c4b60b62119261d45eeba8bd9",
+      "license": "CC0-1.0",
+      "make": "Olympus",
+      "model": "E-M10 Mark II"
+    },
+    {
+      "id": 5879,
+      "filename": "05879-Panasonic-DC-GH6.RW2",
+      "url": "https://raw.pixls.us/getfile.php/5879/nice/Panasonic - DC-GH6 - 1:1.RW2",
+      "sha256": "69da3d4ad6ea3baee84801c59402b12e92378192f272b03eb6cc3c3bcbf38413",
+      "license": "CC0-1.0",
+      "make": "Panasonic",
+      "model": "DC-GH6"
+    }
+  ]
+}

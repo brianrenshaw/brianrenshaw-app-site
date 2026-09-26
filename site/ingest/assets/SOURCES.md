@@ -259,3 +259,21 @@ Illustrated metaphor art and cropped mode thumbs for the trimmed Ingest homepage
 - `mode-ingest.webp`, `mode-cull.webp`, `mode-browse.webp`, `mode-organize.webp` — crops from existing site screenshots `ingest-0.9.2-retina.webp`, `grid-cull-0.8.0-retina.webp`, `browse-0.9.2-retina.webp`, and `organize-0.9.2-retina.webp`. No new captures.
 
 Regenerate with `python3 scripts/build_ingest_solo_visuals.py`.
+
+## Genuine RAW collection — September 26, 2026
+
+The `*-raw-0.9.4.2-retina.webp` captures show signed, notarized Ingest 0.9.4.2 (36) with an isolated collection of **74 genuine RAW files**, approximately 2 GB. Every sample is listed as CC0 in the [raw.pixls.us repository](https://raw.pixls.us/), checked September 26, 2026. `raw-samples.json` records each original download URL, camera, license, and SHA-256. All source hashes were verified before use. Formats include ARW, CR2, CR3, DNG, FFF, NEF, NRW, ORF, PEF, RAF, RW2, and RWL. These are downloaded camera RAW samples, not renamed or converted stock JPEGs.
+
+The local collection is `~/Pictures/Ingest Website RAW/Public RAW`. Recreate it with `python3 scripts/fetch_ingest_raw_samples.py /path/to/Public-RAW`. Keep the RAW files outside `site/`; the website serves native app captures as lossless WebP. The new collection replaces the Unsplash examples in Browse, Metadata Assist, the general import example, wildlife Preview, Organize, Social Export, shoot details, and three Command Palette captures. The older wedding, real-estate, copy/paste metadata, and workspace-settings captures retain their existing provenance above.
+
+Capture procedure: launch `/Applications/Ingest.app/Contents/MacOS/Ingest` with a separate `INGEST_TEST_LIBRARY`, choose Light appearance, and capture the native window using `screencapture -x -o -a -l WINDOW_ID`. Each capture is 2808 × 1668 physical pixels (1404 × 834 logical pixels). Encode lossless WebP without resizing; verify decoded RGBA pixels against the original PNG. No UI or photo pixels were retouched or composited. Source PNGs and isolated app state are in `/tmp/ingest-raw-site-20260926/` during this session.
+
+- Browse and the command examples show the real collection, with a Hasselblad X1D II 50C landscape selected.
+- Metadata Assist stages landscape keywords and a caption. Shoot details stages a generic collection caption and keywords. Both drafts were canceled; no metadata was written to the originals.
+- The general import example previews two disposable local destinations (`Demo Import` and `Demo Backup`) with a capture-date folder template. They are demonstration paths on the same disk, not separate backup devices. No ingest was performed.
+- Wildlife Preview shows the public Canon EOS 7D Mark II DNG sample (entry 7023), depicting ducks on water.
+- Organize previews groups by actual RAW file extension. No file organization was applied.
+- Social Export shows a project using the Hasselblad RAW sample with a white border and automatic photographic background. No export was performed.
+- The new RAW comparison figure uses Canon EOS R5 CR3 entry 4694: Apple's neutral RAW rendering and the embedded camera JPEG from the same original. It is not a simulated exposure comparison. The displayed inspector histogram is the release's visible tone histogram; this capture documents the side-by-side previews.
+
+Superseded 0.9.2 captures remain in `archivedImages` at their original URLs. New filenames prevent cached JPEG-based screenshots from persisting on refreshed pages.
