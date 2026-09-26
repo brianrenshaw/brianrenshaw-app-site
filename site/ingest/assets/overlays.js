@@ -1,6 +1,6 @@
 /* Shared Ingest lightbox + detail modals. Progressive: links still navigate without JS. */
 (() => {
-  const FOCUSABLE = 'a[href],button:not([disabled]),textarea,input,select,[tabindex]:not([tabindex="-1"])';
+  const FOCUSABLE = 'a[href],button:not([disabled]),textarea,input,select,summary,[tabindex]:not([tabindex="-1"])';
   let active = null;
   let lastFocus = null;
 

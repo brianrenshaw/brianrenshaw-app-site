@@ -8,8 +8,8 @@
 <meta property="og:description" content="Open a card or a folder. Cull and browse with the keyboard. Organize when you’re ready — in one modern Mac app.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/"><meta property="og:image" content="https://brianrenshaw.app/ingest/assets/hero-wedding-dark-0.9.4.2-retina.webp">
 <meta property="og:image:alt" content="Ingest’s Wedding workspace in dark mode with genuine wedding RAW photographs"><meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/ingest/assets/icon.png"><link rel="stylesheet" href="/assets/apps.css"><link rel="stylesheet" href="/assets/family.css"><link rel="stylesheet" href="/ingest/assets/site.css?v=0942-workspaces-chips"><link rel="stylesheet" href="/ingest/assets/landing.css?v=0942-workspaces-chips">
-<script src="/ingest/assets/landing.js?v=0942-dark-workspaces" defer></script><script src="/ingest/assets/overlays.js?v=2" defer></script><script src="/ingest/assets/command-palette.js" defer></script></head>
+<link rel="icon" href="/ingest/assets/icon.png"><link rel="stylesheet" href="/assets/apps.css"><link rel="stylesheet" href="/assets/family.css"><link rel="stylesheet" href="/ingest/assets/site.css?v=0942-gps-options"><link rel="stylesheet" href="/ingest/assets/landing.css?v=0942-gps-options">
+<script src="/ingest/assets/landing.js?v=0942-dark-workspaces" defer></script><script src="/ingest/assets/overlays.js?v=3" defer></script><script src="/ingest/assets/command-palette.js" defer></script></head>
 <body class="app-ingest ingest-home"><a class="skip-link" href="#main">Skip to content</a>
 <header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" aria-label="Download Ingest" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.4.2/Ingest-0.9.4.2.dmg"><span class="nav-download-label">Download <span aria-hidden="true">↗</span></span><svg class="nav-download-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3"/></svg></a></nav></header>
 <main id="main" tabindex="-1" class="app-landing">
@@ -31,7 +31,7 @@
 </section>
 <!-- Legacy anchors kept for deep links and the site palette -->
 <span id="command-tab-crop"></span><span id="command-tab-folders"></span><span id="command-tab-sidebars"></span><span id="command-tab-workspaces"></span><span id="loop"></span><span id="copy"></span><span id="naming"></span><span id="keyboard"></span><span id="command-title"></span><span id="command-crop"></span><span id="command-sidebars"></span><span id="command-workspaces"></span><span id="command-folders"></span><span id="after"></span><span id="describe"></span><span id="apple-photos"></span><span id="apple-photos-title"></span><span id="files-title"></span><span id="assistance-title"></span>
-<section class="section-block primary-feature" id="workspaces" aria-labelledby="workspaces-title"><div class="section-heading"><p class="eyebrow">01 / Workspaces</p><h2 id="workspaces-title">Set up the shoot once.<br>Forget the folders.</h2><p>Five starting points for where your photos go, how they’re named, and how you review them. Make any of them your own.</p>
+<section class="section-block primary-feature" id="workspaces" aria-labelledby="workspaces-title"><div class="section-heading"><p class="eyebrow">01 / Workspaces</p><h2 id="workspaces-title">Set up the shoot once.<br>Forget the folders.</h2><p>Different shoots, different tools. Explore five setups for review, import, metadata, and storage. Make any of them your own.</p>
 <ul class="ingest-detail-chips workspace-setup-chips" aria-label="Workspace setup examples">
 <li><button type="button" class="ingest-detail-chip" data-ingest-detail data-detail-title="Wedding setup" aria-controls="detail-workspace-wedding" aria-haspopup="dialog">Wedding</button></li>
 <li><button type="button" class="ingest-detail-chip" data-ingest-detail data-detail-title="Landscapes setup" aria-controls="detail-workspace-landscapes" aria-haspopup="dialog">Landscapes</button></li>
@@ -39,30 +39,34 @@
 <li><button type="button" class="ingest-detail-chip" data-ingest-detail data-detail-title="Headshots setup" aria-controls="detail-workspace-headshots" aria-haspopup="dialog">Headshots</button></li>
 <li><button type="button" class="ingest-detail-chip" data-ingest-detail data-detail-title="Events setup" aria-controls="detail-workspace-events" aria-haspopup="dialog">Events</button></li>
 </ul></div>
-<div class="workspace-notes"><p>Use a separate physical drive for Photo Backup when you add a second verified copy.</p><p><a href="/ingest/getting-started/#next">Build your workspace →</a></p></div></section>
-<section class="section-block primary-feature" id="metadata-assist" aria-labelledby="metadata-title"><div class="section-heading"><p class="eyebrow">02 / Metadata Assist</p><h2 id="metadata-title">Type <kbd>;</kbd>.<br>See your options.</h2><p>A structured editor, not an AI writer. Type <kbd>;</kbd> and pick the field — Location, Caption, Keywords, or anything else — then Tab and fill it in. Changes show in a review panel first. Typing alone writes nothing. <kbd>;</kbd> is for metadata fields; <code>{…}</code> is for rename and folder variables.</p>
+<div class="workspace-notes"><p>Use a separate physical drive for Photo Backup. A second copy is one part of a backup workflow; arrange off-site protection and editor/catalog backups separately. A <a href="https://helpx.adobe.com/lightroom-classic/desktop/manage-catalogs-and-files/back-catalog.html">Lightroom catalog backup</a> does not include the original photographs.</p><p><a href="/ingest/getting-started/#next">Build your workspace →</a></p></div></section>
+<section class="section-block primary-feature" id="metadata-assist" aria-labelledby="metadata-title"><div class="section-heading"><p class="eyebrow">02 / Metadata Assist</p><h2 id="metadata-title">Type <kbd>;</kbd>.<br>See your options.</h2><p>Pick a field, add the details, and review before Apply. Set a GPS pin, add keywords, or update a caption — without leaving your photographs.</p>
 <ul class="ingest-detail-chips" aria-label="Metadata Assist details">
 <li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-fields" aria-haspopup="dialog">Find a field with <kbd>;</kbd></button></li>
 <li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-tab" aria-haspopup="dialog">Tab completion</button></li>
 <li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-review" aria-haspopup="dialog">Review before Apply</button></li>
 <li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-camera" aria-haspopup="dialog">Camera &amp; Lens</button></li>
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-gps" aria-haspopup="dialog">GPS &amp; other apps</button></li>
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-iptc" aria-haspopup="dialog">Optional IPTC fields</button></li>
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-templates" aria-haspopup="dialog">Import templates</button></li>
+<li><button type="button" class="ingest-detail-chip" data-ingest-detail aria-controls="detail-ma-codes" aria-haspopup="dialog">TSV caption codes</button></li>
 </ul></div>
 <figure class="metadata-demo" data-metadata-demo>
-<video id="metadata-demo-video" width="2880" height="1800" style="--capture-width:1440px" poster="/ingest/assets/metadata-assist-result-dark-0.9.4.2-retina.webp" controls muted playsinline preload="none" aria-label="Metadata Assist: add a location and keywords, replace a caption, review and apply" aria-describedby="metadata-walkthrough">
-<source src="/ingest/assets/metadata-assist-demo-0.9.4.2.webm" type="video/webm">
-<source src="/ingest/assets/metadata-assist-demo-0.9.4.2.mp4" type="video/mp4">
-<p><a href="/ingest/assets/metadata-assist-demo-0.9.4.2.mp4">Watch the Metadata Assist demonstration</a>.</p>
+<video id="metadata-demo-video" width="2880" height="1592" style="--capture-width:1440px" poster="/ingest/assets/metadata-assist-gps-poster-dark-0.9.4.2-retina.webp" controls muted playsinline preload="none" aria-label="Metadata Assist: set GPS coordinates and keywords, replace a caption, review and apply" aria-describedby="metadata-walkthrough">
+<source src="/ingest/assets/metadata-assist-gps-0.9.4.2.webm" type="video/webm">
+<source src="/ingest/assets/metadata-assist-gps-0.9.4.2.mp4" type="video/mp4">
+<p><a href="/ingest/assets/metadata-assist-gps-0.9.4.2.mp4">Watch the Metadata Assist demonstration</a>.</p>
 </video>
-<div class="metadata-controls" data-video-controls hidden><button type="button" data-video-toggle aria-controls="metadata-demo-video">Play</button><button type="button" data-video-restart aria-controls="metadata-demo-video">Restart</button><button type="button" data-video-fullscreen aria-controls="metadata-demo-video">Fullscreen</button><span>31 seconds · silent</span></div>
+<div class="metadata-controls" data-video-controls hidden><button type="button" data-video-toggle aria-controls="metadata-demo-video">Play</button><button type="button" data-video-restart aria-controls="metadata-demo-video">Restart</button><button type="button" data-video-fullscreen aria-controls="metadata-demo-video">Fullscreen</button><span>34 seconds · silent</span></div>
 <p class="metadata-status" data-video-status role="status" aria-live="polite"></p>
-<figcaption>Actual Ingest interactions, from entry to saved metadata. <a href="/ingest/assets/metadata-assist-demo-0.9.4.2.mp4">Open video ↗</a></figcaption>
+<figcaption>Metadata Assist is open from the first frame. Search, preview the GPS pin, then Apply. <a href="/ingest/assets/metadata-assist-gps-0.9.4.2.mp4">Open video ↗</a></figcaption>
 </figure>
 <ol class="metadata-walkthrough" id="metadata-walkthrough">
-<li><button type="button" class="metadata-step" data-ingest-detail data-detail-title="Find a field" aria-controls="detail-ma-fields" aria-haspopup="dialog"><strong>Find a field.</strong> Open Metadata Assist, type <kbd>;</kbd> and search Location. Choose IPTC Place Shown and enter <strong>Yosemite Valley</strong>.</button></li>
+<li><button type="button" class="metadata-step" data-ingest-detail data-detail-title="Find a field" aria-controls="detail-ma-fields" aria-haspopup="dialog"><strong>Find a field.</strong> Open Metadata Assist, type <kbd>;</kbd> and search Location. Choose <strong>Map Location (GPS)</strong>, search <strong>Yosemite Valley</strong>, and select a place on the map.</button></li>
 <li><button type="button" class="metadata-step" data-ingest-detail data-detail-title="Add the details" aria-controls="detail-ma-tab" aria-haspopup="dialog"><strong>Add the details.</strong> Add Keywords: <strong>landscape, waterfall, Yosemite</strong>. Replace the Caption <strong>Yosemite</strong> with <strong>Waterfall in Yosemite Valley</strong>.</button></li>
-<li><button type="button" class="metadata-step" data-ingest-detail data-detail-title="Review, then Apply" aria-controls="detail-ma-review" aria-haspopup="dialog"><strong>Review, then Apply.</strong> Check the proposed changes and the existing caption. Click Apply to 1 Photo; the saved caption, keywords, and place appear beside the photograph.</button></li>
+<li><button type="button" class="metadata-step" data-ingest-detail data-detail-title="Review, then Apply" aria-controls="detail-ma-review" aria-haspopup="dialog"><strong>Review, then Apply.</strong> Check the proposed changes and the existing caption. Click Apply to 1 Photo; the saved caption, keywords, map, and coordinates appear beside the photograph.</button></li>
 </ol>
-<p class="section-note">A place name describes the photo; it doesn’t change its GPS coordinates. Pause or open fullscreen to take a closer look.</p>
+<p class="section-note">Map Location sets real GPS coordinates. A typed IPTC place name is separate. Pause or open fullscreen to take a closer look.</p>
 <p class="section-note"><a href="/ingest/getting-started/#look">How Metadata Assist works →</a></p></section>
 <section class="review-band" id="workflow" aria-labelledby="workflow-title"><span id="see"></span><span id="cull"></span><p class="eyebrow">Also here</p><h2 id="workflow-title">Also the basics.<br>Without making them the story.</h2><p>Loupe, compare, faces, histograms, crop, stacks, ratings. Verified copies when you ingest. <kbd>⌘K</kbd> finds any action. A modern Mac photo app has to have them. They’re here. They’re not why you open Ingest.</p><a href="/ingest/getting-started/">Get started →</a></section>
 <section class="supporting-shelf quiet-line" id="social-export" aria-labelledby="social-export-title"><span id="assistance"></span><h2 id="social-export-title" class="visually-hidden">Social Export and optional help</h2><p>Short extras, when you want them:</p>
@@ -79,6 +83,9 @@
 <p class="workspace-description">Keep the couple’s originals together, with empty folders ready for edited files and final exports.</p>
 <h4>What changes with this workspace</h4>
 <dl class="workspace-summary"><div><dt>Review</dt><dd>Grid · RAW + JPEG paired</dd></div><div><dt>File naming</dt><dd><code>Morgan-Lee-{seqn}</code><span>Example: <code>Morgan-Lee-0001.arw</code></span></dd></div></dl>
+<h4>Chronological review</h4><p>Grid, oldest capture first, burst grouping, and combined RAW + JPEG pairs. Follow the day in order and keep rapid sequences together.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/workspace-wedding-options-dark-0.9.4.2-retina.webp" aria-label="Enlarge Wedding workspace options"><img src="/ingest/assets/workspace-wedding-options-dark-0.9.4.2-retina.webp" width="2058" height="2580" style="--capture-width:1029px" loading="lazy" alt="Native dark Wedding settings: Grid, oldest capture first, burst grouping, and combined RAW + JPEG pairs. Follow the day in order and keep rapid sequences together."></a><figcaption>Wedding · Chronological review</figcaption></figure>
+<details class="workspace-storage"><summary>Folders, naming, and verified backup example</summary>
 <h4>Working storage · Photo Work</h4>
 <pre class="workspace-tree">Weddings/2026/
 └── 2026-09-26-Morgan-Lee/
@@ -89,6 +96,8 @@
 <p class="workspace-backup"><code>Photo Backup/Weddings/2026/2026-09-26-Morgan-Lee/Originals/</code></p>
 <p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/workspace-wedding-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Wedding destination, folder, and naming settings"><img src="/ingest/assets/workspace-wedding-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Wedding workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Morgan-Lee, Originals as the receiving folder, and the Morgan-Lee-{seqn} naming template"></a><figcaption><span>Wedding · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure>
+</details>
+<p class="section-note">Fictional client names and dates. Adapt this example to your own workflow.</p>
 <p><a href="/ingest/getting-started/#next">Build your workspace →</a></p>
 </div>
 
@@ -97,6 +106,9 @@
 <p class="workspace-description">Organize each trip beneath its location, with space for edits and print-ready exports.</p>
 <h4>What changes with this workspace</h4>
 <dl class="workspace-summary"><div><dt>Review</dt><dd>Split · histogram and camera details</dd></div><div><dt>File naming</dt><dd><span>Preserve camera filenames</span><span>Example: <code>DSC01356.ARW</code></span></dd></div></dl>
+<h4>Scene-based review</h4><p>Split view with scene grouping instead of burst grouping. Keep camera filenames and inspect the histogram and camera details alongside the photograph.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/workspace-landscapes-options-dark-0.9.4.2-retina.webp" aria-label="Enlarge Landscapes workspace options"><img src="/ingest/assets/workspace-landscapes-options-dark-0.9.4.2-retina.webp" width="2058" height="2580" style="--capture-width:1029px" loading="lazy" alt="Native dark Landscapes settings: Split view with scene grouping instead of burst grouping. Keep camera filenames and inspect the histogram and camera details alongside the photograph."></a><figcaption>Landscapes · Scene-based review</figcaption></figure>
+<details class="workspace-storage"><summary>Folders, naming, and verified backup example</summary>
 <h4>Working storage · Photo Work</h4>
 <pre class="workspace-tree">Landscapes/Yosemite/
 └── 2026-09-26-Valley/
@@ -107,6 +119,8 @@
 <p class="workspace-backup"><code>Photo Backup/Landscapes/Yosemite/2026-09-26-Valley/Originals/</code></p>
 <p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/workspace-landscapes-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Landscapes destination, folder, and naming settings"><img src="/ingest/assets/workspace-landscapes-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Landscapes workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Valley, Originals as the receiving folder, and original camera filenames"></a><figcaption><span>Landscapes · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure>
+</details>
+<p class="section-note">Fictional client names and dates. Adapt this example to your own workflow.</p>
 <p><a href="/ingest/getting-started/#next">Build your workspace →</a></p>
 </div>
 
@@ -115,6 +129,9 @@
 <p class="workspace-description">Keep each day together and leave a Favorites folder ready for copies you choose to make.</p>
 <h4>What changes with this workspace</h4>
 <dl class="workspace-summary"><div><dt>Review</dt><dd>Preview · optional Focus mode</dd></div><div><dt>File naming</dt><dd><span>Preserve camera filenames</span><span>Example: <code>DSC01356.ARW</code></span></dd></div></dl>
+<h4>A simpler workspace</h4><p>Hide the Organize tab and enable Apple Photos for this workspace. Browse in Preview; hit F to toggle Focus mode. The global Apple Photos switch must also be enabled.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/workspace-personal-options-dark-0.9.4.2-retina.webp" aria-label="Enlarge Personal workspace options"><img src="/ingest/assets/workspace-personal-options-dark-0.9.4.2-retina.webp" width="2058" height="2580" style="--capture-width:1029px" loading="lazy" alt="Native dark Personal settings: Hide the Organize tab and enable Apple Photos for this workspace. Browse in Preview; hit F to toggle Focus mode. The global Apple Photos switch must also be enabled."></a><figcaption>Personal · A simpler workspace</figcaption></figure>
+<details class="workspace-storage"><summary>Folders, naming, and verified backup example</summary>
 <h4>Working storage · Photo Work</h4>
 <pre class="workspace-tree">Personal/2026/
 └── 2026-09-26-Sunday-at-Home/
@@ -124,6 +141,8 @@
 <p class="workspace-backup"><code>Photo Backup/Personal/2026/2026-09-26-Sunday-at-Home/Originals/</code></p>
 <p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/workspace-personal-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Personal destination, folder, and naming settings"><img src="/ingest/assets/workspace-personal-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Personal workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Sunday-at-Home, Originals as the receiving folder, and original camera filenames"></a><figcaption><span>Personal · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure>
+</details>
+<p class="section-note">Fictional client names and dates. Adapt this example to your own workflow.</p>
 <p><a href="/ingest/getting-started/#next">Build your workspace →</a></p>
 </div>
 
@@ -132,6 +151,9 @@
 <p class="workspace-description">Use the client and job in each filename. Retouch and Delivery start empty, ready for work from your editor.</p>
 <h4>What changes with this workspace</h4>
 <dl class="workspace-summary"><div><dt>Review</dt><dd>Portrait Grid · review each person</dd></div><div><dt>File naming</dt><dd><code>Acme-Headshots-{seqn}</code><span>Example: <code>Acme-Headshots-0001.arw</code></span></dd></div></dl>
+<h4>Photo-only import</h4><p>Skip video while keeping RAW + JPEG pairs together. Use client-based filenames and a portrait Grid to review each person’s photographs.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/workspace-headshots-options-dark-0.9.4.2-retina.webp" aria-label="Enlarge Headshots workspace options"><img src="/ingest/assets/workspace-headshots-options-dark-0.9.4.2-retina.webp" width="2058" height="2580" style="--capture-width:1029px" loading="lazy" alt="Native dark Headshots settings: Skip video while keeping RAW + JPEG pairs together. Use client-based filenames and a portrait Grid to review each person’s photographs."></a><figcaption>Headshots · Photo-only import</figcaption></figure>
+<details class="workspace-storage"><summary>Folders, naming, and verified backup example</summary>
 <h4>Working storage · Photo Work</h4>
 <pre class="workspace-tree">Clients/Acme/
 └── 2026-09-26-Team-Headshots/
@@ -142,6 +164,8 @@
 <p class="workspace-backup"><code>Photo Backup/Clients/Acme/2026-09-26-Team-Headshots/Originals/</code></p>
 <p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/workspace-headshots-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Headshots destination, folder, and naming settings"><img src="/ingest/assets/workspace-headshots-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Headshots workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Team-Headshots, Originals as the receiving folder, and the Acme-Headshots-{seqn} naming template"></a><figcaption><span>Headshots · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure>
+</details>
+<p class="section-note">Fictional client names and dates. Adapt this example to your own workflow.</p>
 <p><a href="/ingest/getting-started/#next">Build your workspace →</a></p>
 </div>
 
@@ -150,6 +174,9 @@
 <p class="workspace-description">Keep the complete event in Originals, with empty folders for your chosen highlights and delivery exports.</p>
 <h4>What changes with this workspace</h4>
 <dl class="workspace-summary"><div><dt>Review</dt><dd>Preview · face review</dd></div><div><dt>File naming</dt><dd><code>Community-Evening-{seqn}</code><span>Example: <code>Community-Evening-0001.arw</code></span></dd></div></dl>
+<h4>A vocabulary for the job</h4><p>Load an event-specific TSV caption-code file and reload it when it changes. Keep event names and venue details ready in Metadata Assist, with Preview and face review for expressions.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/workspace-events-options-dark-0.9.4.2-retina.webp" aria-label="Enlarge Events workspace options"><img src="/ingest/assets/workspace-events-options-dark-0.9.4.2-retina.webp" width="2058" height="2580" style="--capture-width:1029px" loading="lazy" alt="Native dark Events settings: Load an event-specific TSV caption-code file and reload it when it changes. Keep event names and venue details ready in Metadata Assist, with Preview and face review for expressions."></a><figcaption>Events · A vocabulary for the job</figcaption></figure>
+<details class="workspace-storage"><summary>Folders, naming, and verified backup example</summary>
 <h4>Working storage · Photo Work</h4>
 <pre class="workspace-tree">Events/2026/
 └── 2026-09-26-Community-Evening/
@@ -160,9 +187,23 @@
 <p class="workspace-backup"><code>Photo Backup/Events/2026/2026-09-26-Community-Evening/Originals/</code></p>
 <p class="workspace-receiving">Originals receives the photos. The other folders start empty for work you create or copy later.</p>
 <figure class="desktop-shot"><a href="/ingest/assets/workspace-events-setup-dark-0.9.4.2-retina.webp" aria-label="Enlarge Events destination, folder, and naming settings"><img src="/ingest/assets/workspace-events-setup-dark-0.9.4.2-retina.webp" width="2056" height="2580" style="--capture-width:1028px" loading="lazy" alt="Dark Ingest Events workspace settings showing Photo Work and Photo Backup destinations, 2026-09-26-Community-Evening, Originals as the receiving folder, and the Community-Evening-{seqn} naming template"></a><figcaption><span>Events · native workspace settings</span><span aria-hidden="true">↗</span></figcaption></figure>
+</details>
+<p class="section-note">Fictional client names and dates. Adapt this example to your own workflow.</p>
 <p><a href="/ingest/getting-started/#next">Build your workspace →</a></p>
 </div>
 
+<div class="ingest-detail-source" id="detail-ma-gps" hidden>
+<p><strong>Map Location (GPS)</strong> searches for a place and previews its pin before Apply. It saves coordinates as well as IPTC place details. GPS coordinates are what photo apps such as Apple Photos and Lightroom use for a map location.</p><p>For proprietary RAW files, Ingest writes metadata to an XMP sidecar. Have your editor read the updated metadata. For Apple Photos, export a JPEG with metadata and GPS included; do not assume Photos reads a RAW sidecar. This is file metadata, not automatic cloud synchronization.</p>
+</div>
+<div class="ingest-detail-source" id="detail-ma-iptc" hidden>
+<p>Choose <strong>Edit Individual Fields</strong> for optional IPTC details beyond Caption and Keywords, including creator, copyright, credit, and location fields. Use only the fields your workflow needs. Return the draft to Metadata Assist, review the proposed changes, and Apply.</p>
+</div>
+<div class="ingest-detail-source" id="detail-ma-templates" hidden>
+<p>Build reusable metadata templates with the fields you need. Import or export a local <code>.ingesttemplate</code> file in the metadata template editor, then choose a template in your workspace’s Metadata &amp; actions settings.</p><p>Templates can replace values, fill empty fields, or add to supported lists. Review your template before using it on a job. Importing a template does not upload your photographs.</p>
+</div>
+<div class="ingest-detail-source" id="detail-ma-codes" hidden>
+<p>Add a UTF-8 <strong>TSV caption-code file</strong> to a workspace. Each row begins with a short code followed by tab-separated replacement text. Type <kbd>=</kbd> in Metadata Assist to find your codes; <kbd>;</kbd> finds fields.</p><p>Enable <strong>Reload when code files change</strong> to pick up edits to those local TSV files. Keep a different vocabulary for each shoot, such as event names and venues. TSV files supply caption shortcuts; XMP sidecars store photograph metadata.</p>
+</div>
 <div class="ingest-detail-source" id="detail-ma-fields" hidden>
 <p>Press <kbd>⌘’</kbd> to open Metadata Assist. Type <kbd>;</kbd> to see your field options — Location, Caption, Keywords, and the rest. A fragment like <kbd>;lo</kbd> narrows the list. Choose a field, then fill the value or search for a place. Separate keywords with commas.</p>
 <p><kbd>;</kbd> finds metadata fields. Curly-brace tokens such as <code>{client}</code> are for rename and folder templates, not for Metadata Assist.</p>
@@ -192,6 +233,7 @@
 <p>Loupe, compare, faces, histograms, crop, stacks, and ratings are all here. Verified copies when you ingest. <kbd>⌘K</kbd> finds any action. A modern Mac photo app has to have them — they are not why you open Ingest.</p>
 <p><a href="/ingest/getting-started/">Get started →</a></p>
 </div>
+<noscript><style>.ingest-detail-source[hidden]{display:block!important;margin:2rem 0}.ingest-detail-chips{display:none}</style><p>Workspace and metadata details are shown above; JavaScript enables the compact popups.</p></noscript>
 </main><footer class="family-footer">
 <span>© 2026 Brian Renshaw</span>
 <nav aria-label="Footer">

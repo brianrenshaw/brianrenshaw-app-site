@@ -169,11 +169,46 @@
       "displayHeight": 1290,
       "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     },
-    "metadata-assist-result-dark-0.9.4.2-retina.webp": {
+    "workspace-wedding-options-dark-0.9.4.2-retina.webp": {
+      "width": 2058,
+      "height": 2580,
+      "displayWidth": 1029,
+      "displayHeight": 1290,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "workspace-landscapes-options-dark-0.9.4.2-retina.webp": {
+      "width": 2058,
+      "height": 2580,
+      "displayWidth": 1029,
+      "displayHeight": 1290,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "workspace-personal-options-dark-0.9.4.2-retina.webp": {
+      "width": 2058,
+      "height": 2580,
+      "displayWidth": 1029,
+      "displayHeight": 1290,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "workspace-headshots-options-dark-0.9.4.2-retina.webp": {
+      "width": 2058,
+      "height": 2580,
+      "displayWidth": 1029,
+      "displayHeight": 1290,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "workspace-events-options-dark-0.9.4.2-retina.webp": {
+      "width": 2058,
+      "height": 2580,
+      "displayWidth": 1029,
+      "displayHeight": 1290,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "metadata-assist-gps-poster-dark-0.9.4.2-retina.webp": {
       "width": 2880,
-      "height": 1800,
+      "height": 1592,
       "displayWidth": 1440,
-      "displayHeight": 900,
+      "displayHeight": 796,
       "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     }
   },
@@ -644,9 +679,16 @@
       "displayWidth": 1440,
       "displayHeight": 900,
       "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
+    },
+    "metadata-assist-result-dark-0.9.4.2-retina.webp": {
+      "width": 2880,
+      "height": 1800,
+      "displayWidth": 1440,
+      "displayHeight": 900,
+      "source": "Signed and notarized Ingest 0.9.4.2 (36), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json."
     }
   },
-  "videos": {
+  "archivedVideos": {
     "metadata-assist-demo-0.9.4.2.mp4": {
       "width": 2880,
       "height": 1800,
@@ -666,6 +708,28 @@
       "sha256": "a39f8fcc3295756bc49f9b2ea7a6a94bbc5feee7901fa99e309baa8a53c1c170",
       "poster": "metadata-assist-result-dark-0.9.4.2-retina.webp",
       "source": "Actual signed Ingest 0.9.4.2 (36), isolated RAW demo, native 2x window recording. 31-second continuous take; window shadow trimmed to native bounds, no retiming, overlays, reconstructed UI, or audio. See SOURCES.md."
+    }
+  },
+  "videos": {
+    "metadata-assist-gps-0.9.4.2.mp4": {
+      "width": 2880,
+      "height": 1592,
+      "duration": 34.0,
+      "codec": "h264",
+      "audio": false,
+      "sha256": "604a907004d07c18452a48674328c332a16ce33eb3a79cb7f2d8837f79192735",
+      "poster": "metadata-assist-gps-poster-dark-0.9.4.2-retina.webp",
+      "source": "Signed Ingest 0.9.4.2 (36), isolated RAW demo. Continuous native Retina recording, leading idle time and window shadow trimmed. No retiming, overlays, reconstructed UI, or audio. See SOURCES.md."
+    },
+    "metadata-assist-gps-0.9.4.2.webm": {
+      "width": 2880,
+      "height": 1592,
+      "duration": 34.0,
+      "codec": "vp9",
+      "audio": false,
+      "sha256": "814d57ee274e9d60d39e077814991466dff91c5829df73e017b532e4cece8b5e",
+      "poster": "metadata-assist-gps-poster-dark-0.9.4.2-retina.webp",
+      "source": "Signed Ingest 0.9.4.2 (36), isolated RAW demo. Continuous native Retina recording, leading idle time and window shadow trimmed. No retiming, overlays, reconstructed UI, or audio. See SOURCES.md."
     }
   }
 }

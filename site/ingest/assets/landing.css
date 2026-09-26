@@ -125,7 +125,7 @@ body.app-ingest.ingest-home{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink
 @media(prefers-reduced-motion:reduce){.ingest-home .hero-showcase.is-enhanced .hero-slide{transition:none}}
 
 .ingest-home .metadata-demo{margin:0}
-.ingest-home .metadata-demo video{display:block;width:100%;height:auto;aspect-ratio:8/5;max-width:var(--capture-width,100%);background:#111;border-radius:10px;border:1px solid var(--line)}
+.ingest-home .metadata-demo video{display:block;width:100%;height:auto;aspect-ratio:auto 2880/1592;max-width:var(--capture-width,100%);background:#111;border-radius:10px;border:1px solid var(--line)}
 .ingest-home .metadata-controls{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:12px}
 .ingest-home .metadata-controls[hidden]{display:none}
 .ingest-home .metadata-controls button{font:inherit;font-size:13px;min-height:44px;padding:8px 17px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--ink);cursor:pointer}
@@ -161,3 +161,6 @@ body.app-ingest.ingest-home{color-scheme:light;--bg:#fbfaf7;--surface:#fff;--ink
 .ingest-home .section-heading .ingest-detail-chips{margin-top:8px}
 .ingest-home .quiet-line .ingest-detail-chips{margin-top:14px}
 .ingest-home .quiet-line>p{margin-bottom:0}
+
+.ingest-home .workspace-storage summary{cursor:pointer;font-weight:600;padding:1rem 0;min-height:44px}
+.ingest-home .workspace-storage summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}

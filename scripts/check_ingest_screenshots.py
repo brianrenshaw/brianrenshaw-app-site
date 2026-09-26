@@ -17,6 +17,8 @@ errors = []
 seen = set()
 videos = catalog.get('videos', {})
 seen_videos = set()
+archived_videos = catalog.get('archivedVideos', {})
+assert not videos.keys() & archived_videos.keys()
 
 
 def lossless_dimensions(path):
@@ -115,13 +117,13 @@ for page in ROOT.rglob('*.html'):
     Images().feed(page.read_text())
 for name in manifest.keys() - seen:
     errors.append(f'{name}: capture is unused')
-for name, meta in videos.items():
+for name, meta in (videos | archived_videos).items():
     try:
         data = (ASSETS / name).read_bytes()
-        assert name in seen_videos, 'video is unused'
+        assert name in seen_videos or name in archived_videos, 'video is unused'
         assert hashlib.sha256(data).hexdigest() == meta['sha256'], 'video checksum differs'
         assert (data[4:8] == b'ftyp' if name.endswith('.mp4') else data[:4] == b'\x1aE\xdf\xa3'), 'invalid video container'
-        poster = manifest[meta['poster']]
+        poster = (manifest | archived)[meta['poster']]
         assert (meta['width'], meta['height']) == (poster['width'], poster['height']), 'poster/video dimensions differ'
         assert 25 <= meta['duration'] <= 35 and meta['audio'] is False, 'expected short silent demo'
     except (AssertionError, OSError, KeyError) as error:
