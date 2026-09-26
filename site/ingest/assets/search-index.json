@@ -1,0 +1,585 @@
+[
+  {
+    "type": "page",
+    "title": "Home",
+    "url": "/ingest/",
+    "keywords": "home",
+    "hint": "Page"
+  },
+  {
+    "type": "section",
+    "title": "Set up the shoot once. Forget the folders.",
+    "url": "/ingest/#workspaces",
+    "page": "Home",
+    "keywords": "set up the shoot once. forget the folders. workspaces",
+    "hint": "Home"
+  },
+  {
+    "type": "section",
+    "title": "From the card. To your folders.",
+    "url": "/ingest/#loop",
+    "page": "Home",
+    "keywords": "from the card. to your folders. loop",
+    "hint": "Home"
+  },
+  {
+    "type": "section",
+    "title": "Keyboard-first. Never lost.",
+    "url": "/ingest/#keyboard",
+    "page": "Home",
+    "keywords": "keyboard-first. never lost. keyboard",
+    "hint": "Home"
+  },
+  {
+    "type": "section",
+    "title": "Type ;. See your options.",
+    "url": "/ingest/#metadata-assist",
+    "page": "Home",
+    "keywords": "type ;. see your options. metadata-assist",
+    "hint": "Home"
+  },
+  {
+    "type": "section",
+    "title": "Also the basics. Without making them the story.",
+    "url": "/ingest/#workflow",
+    "page": "Home",
+    "keywords": "also the basics. without making them the story. workflow",
+    "hint": "Home"
+  },
+  {
+    "type": "section",
+    "title": "Fits the rest of your Mac.",
+    "url": "/ingest/#after",
+    "page": "Home",
+    "keywords": "fits the rest of your mac. after",
+    "hint": "Home"
+  },
+  {
+    "type": "section",
+    "title": "A little something to share.",
+    "url": "/ingest/#social-export",
+    "page": "Home",
+    "keywords": "a little something to share. social-export",
+    "hint": "Home"
+  },
+  {
+    "type": "section",
+    "title": "Off the card. Into your folders.",
+    "url": "/ingest/#closing",
+    "page": "Home",
+    "keywords": "off the card. into your folders. closing",
+    "hint": "Home"
+  },
+  {
+    "type": "section",
+    "title": "A little help. Only if you want it.",
+    "url": "/ingest/#assistance-title",
+    "page": "Home",
+    "keywords": "a little help. only if you want it. assistance",
+    "hint": "Home"
+  },
+  {
+    "type": "page",
+    "title": "Getting started",
+    "url": "/ingest/getting-started/",
+    "keywords": "getting started",
+    "hint": "Page"
+  },
+  {
+    "type": "page",
+    "title": "Guide",
+    "url": "/ingest/guide/",
+    "keywords": "guide",
+    "hint": "Page"
+  },
+  {
+    "type": "section",
+    "title": "Cards and folders",
+    "url": "/ingest/guide/#sources",
+    "page": "Guide",
+    "keywords": "cards and folders sources",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Apple Photos, inside Ingest",
+    "url": "/ingest/guide/#apple-photos",
+    "page": "Guide",
+    "keywords": "apple photos, inside ingest apple-photos",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Review decisions and protection",
+    "url": "/ingest/guide/#review-decisions",
+    "page": "Guide",
+    "keywords": "review decisions and protection review-decisions",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Browsing, and why it is fast",
+    "url": "/ingest/guide/#browsing",
+    "page": "Guide",
+    "keywords": "browsing, and why it is fast browsing",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "The preview",
+    "url": "/ingest/guide/#preview",
+    "page": "Guide",
+    "keywords": "the preview preview",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Crop and straighten",
+    "url": "/ingest/guide/#crop-straighten",
+    "page": "Guide",
+    "keywords": "crop and straighten crop-straighten",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Compare and survey",
+    "url": "/ingest/guide/#compare",
+    "page": "Guide",
+    "keywords": "compare and survey compare",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "RAW histogram and preview comparison",
+    "url": "/ingest/guide/#raw-histogram",
+    "page": "Guide",
+    "keywords": "raw histogram and preview comparison raw-histogram",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Overlays",
+    "url": "/ingest/guide/#overlays",
+    "page": "Guide",
+    "keywords": "overlays overlays",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Burst stacks, scenes, and exposure stacks",
+    "url": "/ingest/guide/#stacks",
+    "page": "Guide",
+    "keywords": "burst stacks, scenes, and exposure stacks stacks",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Video",
+    "url": "/ingest/guide/#video",
+    "page": "Guide",
+    "keywords": "video video",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Culling",
+    "url": "/ingest/guide/#culling",
+    "page": "Guide",
+    "keywords": "culling culling",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Splits",
+    "url": "/ingest/guide/#splits",
+    "page": "Guide",
+    "keywords": "splits splits",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Fujifilm recipes",
+    "url": "/ingest/guide/#fujifilm-recipes",
+    "page": "Guide",
+    "keywords": "fujifilm recipes fujifilm-recipes",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Metadata",
+    "url": "/ingest/guide/#metadata",
+    "page": "Guide",
+    "keywords": "metadata metadata",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Metadata Assist",
+    "url": "/ingest/guide/#quick-entry",
+    "page": "Guide",
+    "keywords": "metadata assist quick-entry",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Presets",
+    "url": "/ingest/guide/#presets",
+    "page": "Guide",
+    "keywords": "presets presets",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Locations",
+    "url": "/ingest/guide/#location",
+    "page": "Guide",
+    "keywords": "locations location",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Destinations",
+    "url": "/ingest/guide/#destinations",
+    "page": "Guide",
+    "keywords": "destinations destinations",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Renaming",
+    "url": "/ingest/guide/#renaming",
+    "page": "Guide",
+    "keywords": "renaming renaming",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Ingesting",
+    "url": "/ingest/guide/#ingesting",
+    "page": "Guide",
+    "keywords": "ingesting ingesting",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Actions",
+    "url": "/ingest/guide/#actions",
+    "page": "Guide",
+    "keywords": "actions actions",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Workspaces",
+    "url": "/ingest/guide/#workspaces",
+    "page": "Guide",
+    "keywords": "workspaces workspaces",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "The Command Palette",
+    "url": "/ingest/guide/#palette",
+    "page": "Guide",
+    "keywords": "the command palette palette",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Organize",
+    "url": "/ingest/guide/#organize",
+    "page": "Guide",
+    "keywords": "organize organize",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Social Export",
+    "url": "/ingest/guide/#social-export",
+    "page": "Guide",
+    "keywords": "social export social-export",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Settings",
+    "url": "/ingest/guide/#settings",
+    "page": "Guide",
+    "keywords": "settings settings",
+    "hint": "Guide"
+  },
+  {
+    "type": "page",
+    "title": "Shortcuts",
+    "url": "/ingest/shortcuts/",
+    "keywords": "shortcuts",
+    "hint": "Page"
+  },
+  {
+    "type": "section",
+    "title": "How to read this",
+    "url": "/ingest/shortcuts/#reading",
+    "page": "Shortcuts",
+    "keywords": "how to read this reading",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "section",
+    "title": "Keys that never change",
+    "url": "/ingest/shortcuts/#movement",
+    "page": "Shortcuts",
+    "keywords": "keys that never change movement",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "section",
+    "title": "Marking",
+    "url": "/ingest/shortcuts/#tag",
+    "page": "Shortcuts",
+    "keywords": "marking tag",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "section",
+    "title": "Moving",
+    "url": "/ingest/shortcuts/#navigate",
+    "page": "Shortcuts",
+    "keywords": "moving navigate",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "section",
+    "title": "Views and overlays",
+    "url": "/ingest/shortcuts/#view",
+    "page": "Shortcuts",
+    "keywords": "views and overlays view",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "section",
+    "title": "Zoom",
+    "url": "/ingest/shortcuts/#zoom",
+    "page": "Shortcuts",
+    "keywords": "zoom zoom",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "section",
+    "title": "Selecting and filtering",
+    "url": "/ingest/shortcuts/#select",
+    "page": "Shortcuts",
+    "keywords": "selecting and filtering select",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "section",
+    "title": "Stacks",
+    "url": "/ingest/shortcuts/#stack",
+    "page": "Shortcuts",
+    "keywords": "stacks stack",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "section",
+    "title": "Metadata",
+    "url": "/ingest/shortcuts/#metadata",
+    "page": "Shortcuts",
+    "keywords": "metadata metadata",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "section",
+    "title": "Files and ingest",
+    "url": "/ingest/shortcuts/#file",
+    "page": "Shortcuts",
+    "keywords": "files and ingest file",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "section",
+    "title": "Video",
+    "url": "/ingest/shortcuts/#video",
+    "page": "Shortcuts",
+    "keywords": "video video",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "section",
+    "title": "Cards and folders",
+    "url": "/ingest/shortcuts/#sources",
+    "page": "Shortcuts",
+    "keywords": "cards and folders sources",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "section",
+    "title": "Apple Photos",
+    "url": "/ingest/shortcuts/#apple-photos",
+    "page": "Shortcuts",
+    "keywords": "apple photos apple-photos",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "section",
+    "title": "App",
+    "url": "/ingest/shortcuts/#app",
+    "page": "Shortcuts",
+    "keywords": "app app",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "section",
+    "title": "Changing a key",
+    "url": "/ingest/shortcuts/#rebinding",
+    "page": "Shortcuts",
+    "keywords": "changing a key rebinding",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "section",
+    "title": "Every action, one search",
+    "url": "/ingest/shortcuts/#palette",
+    "page": "Shortcuts",
+    "keywords": "every action, one search palette",
+    "hint": "Shortcuts"
+  },
+  {
+    "type": "page",
+    "title": "Naming & metadata",
+    "url": "/ingest/templates/",
+    "keywords": "naming & metadata",
+    "hint": "Page"
+  },
+  {
+    "type": "section",
+    "title": "How a template works",
+    "url": "/ingest/templates/#how",
+    "page": "Naming & metadata",
+    "keywords": "how a template works how",
+    "hint": "Naming & metadata"
+  },
+  {
+    "type": "section",
+    "title": "Every token",
+    "url": "/ingest/templates/#tokens",
+    "page": "Naming & metadata",
+    "keywords": "every token tokens",
+    "hint": "Naming & metadata"
+  },
+  {
+    "type": "section",
+    "title": "The sequence number",
+    "url": "/ingest/templates/#seqn",
+    "page": "Naming & metadata",
+    "keywords": "the sequence number seqn",
+    "hint": "Naming & metadata"
+  },
+  {
+    "type": "section",
+    "title": "Examples",
+    "url": "/ingest/templates/#examples",
+    "page": "Naming & metadata",
+    "keywords": "examples examples",
+    "hint": "Naming & metadata"
+  },
+  {
+    "type": "section",
+    "title": "Subfolders",
+    "url": "/ingest/templates/#subfolders",
+    "page": "Naming & metadata",
+    "keywords": "subfolders subfolders",
+    "hint": "Naming & metadata"
+  },
+  {
+    "type": "section",
+    "title": "When names collide",
+    "url": "/ingest/templates/#collisions",
+    "page": "Naming & metadata",
+    "keywords": "when names collide collisions",
+    "hint": "Naming & metadata"
+  },
+  {
+    "type": "section",
+    "title": "Metadata Assist and Quick Entry",
+    "url": "/ingest/templates/#quick-entry",
+    "page": "Naming & metadata",
+    "keywords": "metadata assist and quick entry quick-entry",
+    "hint": "Naming & metadata"
+  },
+  {
+    "type": "section",
+    "title": "Snippets",
+    "url": "/ingest/templates/#snippets",
+    "page": "Naming & metadata",
+    "keywords": "snippets snippets",
+    "hint": "Naming & metadata"
+  },
+  {
+    "type": "page",
+    "title": "Automation",
+    "url": "/ingest/automation/",
+    "keywords": "automation",
+    "hint": "Page"
+  },
+  {
+    "type": "section",
+    "title": "Actions",
+    "url": "/ingest/automation/#actions",
+    "page": "Automation",
+    "keywords": "actions actions",
+    "hint": "Automation"
+  },
+  {
+    "type": "section",
+    "title": "Shell scripts",
+    "url": "/ingest/automation/#action-script",
+    "page": "Automation",
+    "keywords": "shell scripts action-script",
+    "hint": "Automation"
+  },
+  {
+    "type": "section",
+    "title": "The ingest:// scheme",
+    "url": "/ingest/automation/#url-scheme",
+    "page": "Automation",
+    "keywords": "the ingest:// scheme url-scheme",
+    "hint": "Automation"
+  },
+  {
+    "type": "section",
+    "title": "Callbacks",
+    "url": "/ingest/automation/#callbacks",
+    "page": "Automation",
+    "keywords": "callbacks callbacks",
+    "hint": "Automation"
+  },
+  {
+    "type": "section",
+    "title": "Your settings as one file",
+    "url": "/ingest/automation/#settings-file",
+    "page": "Automation",
+    "keywords": "your settings as one file settings-file",
+    "hint": "Automation"
+  },
+  {
+    "type": "page",
+    "title": "Support",
+    "url": "/ingest/support/",
+    "keywords": "support",
+    "hint": "Page"
+  },
+  {
+    "type": "page",
+    "title": "Release notes",
+    "url": "/ingest/release-notes/",
+    "keywords": "release notes",
+    "hint": "Page"
+  },
+  {
+    "type": "page",
+    "title": "Privacy",
+    "url": "/ingest/privacy/",
+    "keywords": "privacy",
+    "hint": "Page"
+  }
+]
