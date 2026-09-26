@@ -45,3 +45,23 @@
     window.addEventListener('hashchange', showHash);
   });
 })();
+
+/* Before/after scrubber. Readable without JS as stacked panels. */
+(() => {
+  document.querySelectorAll('[data-scrubber]').forEach(root => {
+    const after = root.querySelector('.scrubber-after');
+    const range = root.querySelector('input[type="range"]');
+    const guide = root.querySelector('.scrubber-guide');
+    if (!after || !range) return;
+    const set = (value) => {
+      const pct = Math.max(0, Math.min(100, Number(value)));
+      after.style.clipPath = `inset(0 0 0 ${pct}%)`;
+      if (guide) guide.style.left = `${pct}%`;
+      range.setAttribute('aria-valuenow', String(pct));
+      range.value = String(pct);
+    };
+    range.addEventListener('input', () => set(range.value));
+    root.classList.add('is-enhanced');
+    set(range.value || 52);
+  });
+})();

@@ -249,3 +249,13 @@ The photos reuse the 72-image public collection credited above. Wedding Preview 
 For Organize, category keywords were added only to disposable copies of the 72 photographs in Photo Archive, producing six groups of twelve and a group/sequence filename preview. No organize operation was applied. Copy/Paste Metadata was exercised only on the twelve disposable wedding copies; the final shared caption is “Moments from a wedding celebration.” with wedding and celebration keywords. The import shoot-details capture stages illustrative text only and was canceled. Photographic pixels were not changed by these metadata fixtures.
 
 Real Estate uses two previously credited public interiors by Francesca Tosolini: [living room](https://unsplash.com/photos/living-room-interior-6japTIjUQoI) and [fireplace](https://unsplash.com/photos/a-living-room-filled-with-furniture-and-a-fire-place-4TlrOY2IyUA). Each image has three disposable copies with synthetic camera, timestamp, shutter-speed, and −2/0/+2 exposure metadata so the real app displays two bracket stacks. They are not genuine bracket exposures. The selected 123 Maple Ln address is an illustrative naming example and does not identify the photographed property. No import was performed.
+
+## Solo marketing visuals — September 25, 2026
+
+Illustrated metaphor art and cropped mode thumbs for the trimmed Ingest homepage. Not documentary desk photos or fake interactive UI.
+
+- `card-to-folders-filmstrip.webp` — drawn SD/CF card, quiet folder tree, thin path of light. Metaphor only; not an Ingest window.
+- `setup-once-before.webp` / `setup-once-after.webp` — drawn before/after panels for the setup-once scrubber (messy rename pile vs workspace that sticks).
+- `mode-ingest.webp`, `mode-cull.webp`, `mode-browse.webp`, `mode-organize.webp` — crops from existing site screenshots `ingest-0.9.2-retina.webp`, `grid-cull-0.8.0-retina.webp`, `browse-0.9.2-retina.webp`, and `organize-0.9.2-retina.webp`. No new captures.
+
+Regenerate with `python3 scripts/build_ingest_solo_visuals.py`.
