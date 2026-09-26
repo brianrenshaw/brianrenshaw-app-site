@@ -39,3 +39,7 @@ Build 11 is the Studio design pass: Archivo bundled and registered from the app 
 ## 1.4.1
 
 Build 12 brings native typography, automatic Settings saving with close protection, clearer palette actions and shadows, Light-mode photo contrast, accessibility refinements, and the teal app icon. All current screenshots, icon references, portfolio accents, guide instructions, and social artwork were refreshed together. The permanent Sparkle feed remains at `/listing-namer/appcast.xml`.
+
+## 1.4.2
+
+Build 13 names the photo workflow Process Photos, adds a pinned inspector button with whole-job count, refreshes Getting Started with five screenshot-based steps, and adapts Settings rows to their available space. Website instructions, captures, download links, release notes, and the permanent Sparkle feed are updated together.

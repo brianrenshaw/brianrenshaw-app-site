@@ -34,3 +34,9 @@ All `native-*-1.4.1.png` screenshots are unmodified native macOS window captures
 The four `native-*-1.4.1-retina.webp` images show Contact Sheet, the command bar, the Standard naming preset, and Copy export review. They were captured from a fresh Debug build of the clean 1.4.1 (12) source using its isolated-library screenshot hooks. The library is a copy of the existing demonstration fixture; the photos are the same credited fixture images above, and the address is fictional. No personal jobs or client photos appear. No export was performed.
 
 Captures use `screencapture -x -o -a -l WINDOW_ID` without `-C`. The workspace and Settings are 1222 × 820 logical points (2444 × 1640 pixels); the export sheet is 860 × 660 points (1720 × 1320 pixels). Encode with `cwebp -lossless -exact -z 9 -metadata icc`, without resizing; ICC can also be retained with `webpmux -set icc`. Decoded RGBA pixels and ICC color profiles were verified against the original PNG captures. `screenshots.json` records dimensions; each HTML image preserves its logical display-width limit. Historical PNG captures remain unchanged.
+
+## Walkthrough 1.4.2 dark-mode refresh
+
+All `native-*-1.4.2.png` captures are original, unretouched PNG screenshots of the updated app in Dark appearance, captured September 26, 2026 with `NativeWorkspaceTests.testWebsiteDarkScreenshots`. The fictional listing uses an isolated library and the existing credited demonstration-photo set. No photo processing is confirmed during capture. Workspace images are captured at 1440 × 900 points, settings at the native settings size, and dialogs at their native sheet sizes; HTML width/height attributes preserve the original 2× pixel dimensions.
+
+The five-step guide shows Open, Group, Order, Name, and Process Photos. The workspace and Process Photos screenshots are also bundled in the app. The 1.4.1 screenshots remain archived, while current pages reference this dark capture set.
