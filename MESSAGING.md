@@ -295,7 +295,7 @@ Added at Brian's request as the sixth project and the last of the iOS apps, beca
 
 **Primary promise:** Frames, camera details, text, and captions in one place, saved as a template so the next post is a few taps or a Shortcut.
 
-**Headline:** A modern frames app, by a photographer, for photographers. (Brian’s line, September 29, 2026. "Frame the photo. Credit the camera. Post." moved to the closing.)
+**Headline:** A modern frames app, by a photographer, for photographers. (Brian’s line, September 29, 2026. The earlier draft line "Frame the photo. Credit the camera. Post." is retired; Brian called it a slogan and it must not come back anywhere.)
 
 **Supporting copy:** Frames sized for Instagram and Threads, with camera details, text, and captions beside the photo. Save the look as a template and post from a Shortcut.
 
@@ -311,14 +311,14 @@ Added at Brian's request as the sixth project and the last of the iOS apps, beca
 
 - In development. Not on TestFlight, so there is no download, beta link, or call to action. The page states status and stops.
 - iOS and iPadOS 18 or later. Do not name a release date.
-- Shapes offered in the app: 4:5, 1:1, 9:16, 3:4, 16:9, and TH+ (9:19.5, for Threads full-screen). Do not present these as official platform requirements; the Size Guide in the app lists pixel sizes.
+- Shapes shown on the page: 1:1, 4:5, 3:4, 2:3, 9:16. The 9:19.5 Threads full-screen shape is described as "a taller page shape" and never as "TH+": that label is Series' term and Brian is removing it from the app (September 29, 2026). Do not present shapes as official platform requirements; the Size Guide in the app lists pixel sizes.
 - Each saved template appears in Shortcuts as "Save photos with <template>". The Photos share-sheet path needs the user to install the Decks Templates shortcut and duplicate it per template; iOS cannot create Shortcuts on the user's behalf, so the page says "add the Decks Templates shortcut to the Photos share sheet" and nothing stronger.
-- Camera details come from EXIF via ImageIO. Fujifilm film simulation and recipe are read from camera JPEGs only; RAF, HEIC, and PNG do not supply them. Scans and clips carry no metadata, so those details come from the saved gear list (My Gear).
+- Camera details come from EXIF via ImageIO. Do not mention Fujifilm film simulations or recipes: Brian said on September 29, 2026 that the feature is not working and it stays off the page until it does. Scans and clips carry no metadata, so those details come from the saved gear list (My Gear).
 - Video: one clip per page, trimmed in place, 1 second minimum, H.264 by default with HEVC optional, exported as MP4 and saved to Photos. The blurred background can be a still or move with the clip.
 - Export defaults to 1440 pixels wide, JPEG, saved to Photos or handed to the share sheet. Do not describe posting to Instagram or Threads as automatic; the app saves or shares, and the user posts.
 - Mac synchronization with Ingest is deferred. The closing says Decks comes from the same workshop as Ingest and nothing about sync.
 - The name Acros for the default appearance is used inside the app's Settings and is not on the page.
-- Screenshots come from the app's demo fixture (synthetic hill illustrations). Always caption them as example photos. Recapture with the screenshot walk in `Social/Tests/IngestSocialShots.swift`.
+- Screenshots come from the app's demo fixture seeded with Ansel Adams' National Park Service photographs (1941 to 1942, National Archives, public domain as US government work) via the debug `--social-demo-dir` argument. Credit Adams and the National Archives on the page wherever they appear. Recapture with the screenshot walk in `Social/Tests/IngestSocialShots.swift`.
 
 **Visual direction:** The app's own Acros appearance, dark in both color schemes: ground `#101011` with a faint radial light at the top, cards as a `#1e1e20` to `#171719` gradient with no borders, ink `#ececea` as both text and accent, muted `#a3a3a1`, mono readouts for eyebrows and shape labels. No color accent anywhere on the page. This is the second homepage card that is dark in light mode, for the same reason as Canceled: the dark ground is the app's identity.
 

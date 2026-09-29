@@ -47,6 +47,7 @@ body.app-decks{background:radial-gradient(ellipse 80% 40% at 50% -5%,#19191b 0%,
 
 .app-decks .screens img{box-shadow:0 8px 24px #0006}
 .app-decks .screens figcaption{color:var(--readout)}
+.photo-credit{font-size:12px;color:var(--readout);max-width:70ch;margin:0 0 40px}
 .app-decks .closing{border-top:1px solid var(--line);padding-top:44px}
 
 @media(max-width:900px){.app-decks .features,.no-ceiling ul{grid-template-columns:1fr 1fr}}
