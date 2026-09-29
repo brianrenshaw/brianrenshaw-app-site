@@ -11,15 +11,16 @@ Grouped by platform since September 17, 2026, at Brian’s request: the iOS apps
 3. Reading Habit (iOS app)
 4. Where Do We Eat (iOS app)
 5. Canceled (iOS app)
-6. Walkthrough (Mac app)
-7. Ingest (Mac app)
-8. Lankford Legends (Blog)
-9. What Did They Read? (Blog)
-10. Spreadsheet Tools (Utility)
+6. Decks (iOS app)
+7. Walkthrough (Mac app)
+8. Ingest (Mac app)
+9. Lankford Legends (Blog)
+10. What Did They Read? (Blog)
+11. Spreadsheet Tools (Utility)
 
-Keep the visible numbers in that order. Within the iOS apps, released apps come first and the app still in development comes last; that is why Canceled is the fifth card. The Mac apps sit directly after the iOS apps: Walkthrough, then Ingest, which was added on September 18, 2026. Reading Habit moved ahead of Where Do We Eat on September 16, 2026, when it reached the App Store; Where Do We Eat reached the App Store itself on September 17, 2026 and keeps card 04, so all four released iOS apps now sit ahead of Canceled.
+Keep the visible numbers in that order. Within the iOS apps, released apps come first and the app still in development comes last; that is why Canceled is the fifth card and Decks, added September 29, 2026, is the sixth. The Mac apps sit directly after the iOS apps: Walkthrough, then Ingest, which was added on September 18, 2026. Reading Habit moved ahead of Where Do We Eat on September 16, 2026, when it reached the App Store; Where Do We Eat reached the App Store itself on September 17, 2026 and keeps card 04, so all four released iOS apps now sit ahead of Canceled.
 
-With ten cards the eleventh grid slot is a dashed placeholder labeled “11 / Not yet” with the line “Reserved for the next thing I want to exist.” and a mailto link. It keeps the two-column grid even. Replace it when the next project ships.
+With eleven cards the twelfth grid slot is a dashed placeholder labeled “12 / Not yet” with the line “Reserved for the next thing I want to exist.” and a mailto link. It keeps the two-column grid even. Replace it when the next project ships.
 
 ## Approved messages
 
@@ -283,6 +284,43 @@ Keep the headline and the factual claims plain. Snark rides in the section copy,
 - Screenshots come from the app's Demo mode. Always caption them as example data. The reveal capture is cropped below the "DEMO / MUTUAL CANCELLATION" line, because that is a mode indicator rather than product interface; the caption carries the disclosure instead. Recapture with `--demo --invite-preview --invite-flow-test` for the invite screen and `--demo --demo-reveal` for the reveal, on an iPhone 17 Pro simulator with the status bar overridden to 9:41.
 
 **Visual direction:** The app's own palette, not the portfolio's warm paper. Navy ground `#142d4e` in light mode and `#151d2c` in dark, cream surface `#fffdf6`, Sunshine `#f7dc12` for eyebrows and links, cancellation red `#a42620`, muted `#c5d0df`, rules `#4a5c74`. Archivo at weight 900 for headings, on a smaller headline scale than the shared one because Archivo sets much heavier. Motifs are the cream slip with its Sunshine tick and the rotated red CANCELED stamp. This is the first homepage card that is dark in light mode; navy is the brand's ground in both appearances, so it is intentional here even though a dark navy card was rejected for Lankford Legends.
+
+## Decks (September 29, 2026)
+
+Added at Brian's request as the sixth project and the last of the iOS apps, because it is still in development. Native source is the `codex/acros` branch of the sibling `photo-importer` project (worktree `photo-importer-acros`); the app was Ingest Social until its rename on September 29, 2026. Website route is `/decks/`, a landing page only; add privacy and support when the app reaches TestFlight.
+
+**Audience:** Photographers posting their own work to Instagram and Threads, who want the frame and the credit to look as considered as the photo.
+
+**Problem:** Posting a photograph well takes several apps: one to frame it for the feed, one to look up the exposure, one to write the caption. Doing that for a ten-page carousel is a chore, so the details get left out.
+
+**Primary promise:** Frames, camera details, text, and captions in one place, saved as a template so the next post is a few taps or a Shortcut.
+
+**Headline:** A modern frames app, by a photographer, for photographers. (Brian’s line, September 29, 2026. "Frame the photo. Credit the camera. Post." moved to the closing.)
+
+**Supporting copy:** Frames sized for Instagram and Threads, with camera details, text, and captions beside the photo. Save the look as a template and post from a Shortcut.
+
+**Card label:** Photos, framed for posting
+
+**Landing page sections:** the hero with a status note, six features (01 / Frames, 02 / Templates, 03 / Shortcuts, 04 / Camera details, 05 / Text and logos, 06 / Video), Captions, Instagram and Threads, No ceilings, three screens, closing.
+
+**Priorities, in order:** Frames sized for the destinations first. Templates and the Shortcuts path second, because they are what make the app fast. Camera details third, as the thing that makes it a photographer's app. Text, logos, and video are supporting features. Captions get their own section because the Caption Sheet is the screen Brian bounces back to from Instagram.
+
+**Voice:** Plain and direct, the shared portfolio register. No slogans about creativity. The line "by a photographer, for photographers" is Brian's framing and carries the headline.
+
+**Factual boundaries:**
+
+- In development. Not on TestFlight, so there is no download, beta link, or call to action. The page states status and stops.
+- iOS and iPadOS 18 or later. Do not name a release date.
+- Shapes offered in the app: 4:5, 1:1, 9:16, 3:4, 16:9, and TH+ (9:19.5, for Threads full-screen). Do not present these as official platform requirements; the Size Guide in the app lists pixel sizes.
+- Each saved template appears in Shortcuts as "Save photos with <template>". The Photos share-sheet path needs the user to install the Decks Templates shortcut and duplicate it per template; iOS cannot create Shortcuts on the user's behalf, so the page says "add the Decks Templates shortcut to the Photos share sheet" and nothing stronger.
+- Camera details come from EXIF via ImageIO. Fujifilm film simulation and recipe are read from camera JPEGs only; RAF, HEIC, and PNG do not supply them. Scans and clips carry no metadata, so those details come from the saved gear list (My Gear).
+- Video: one clip per page, trimmed in place, 1 second minimum, H.264 by default with HEVC optional, exported as MP4 and saved to Photos. The blurred background can be a still or move with the clip.
+- Export defaults to 1440 pixels wide, JPEG, saved to Photos or handed to the share sheet. Do not describe posting to Instagram or Threads as automatic; the app saves or shares, and the user posts.
+- Mac synchronization with Ingest is deferred. The closing says Decks comes from the same workshop as Ingest and nothing about sync.
+- The name Acros for the default appearance is used inside the app's Settings and is not on the page.
+- Screenshots come from the app's demo fixture (synthetic hill illustrations). Always caption them as example photos. Recapture with the screenshot walk in `Social/Tests/IngestSocialShots.swift`.
+
+**Visual direction:** The app's own Acros appearance, dark in both color schemes: ground `#101011` with a faint radial light at the top, cards as a `#1e1e20` to `#171719` gradient with no borders, ink `#ececea` as both text and accent, muted `#a3a3a1`, mono readouts for eyebrows and shape labels. No color accent anywhere on the page. This is the second homepage card that is dark in light mode, for the same reason as Canceled: the dark ground is the app's identity.
 
 ## September 17 implementation record
 

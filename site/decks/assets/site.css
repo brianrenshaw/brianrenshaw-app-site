@@ -1,0 +1,53 @@
+/* Decks uses the app's own Acros appearance: a near-black ground in both color
+   schemes, gradient cards with no borders, and ink as the accent. Tokens mirror
+   SocialUI in Social/Shared/SocialEnvironment.swift in the photo-importer project. */
+body.app-decks{color-scheme:dark;--bg:#101011;--surface:#1c1c1f;--card-top:#1e1e20;--card-bottom:#171719;--ink:#ececea;--muted:#a3a3a1;--accent:#ececea;--line:#ffffff1f;--readout:#8d8d8b}
+body.app-decks{background:radial-gradient(ellipse 80% 40% at 50% -5%,#19191b 0%,var(--bg) 70%) fixed}
+.app-decks .eyebrow{color:var(--readout);font-family:ui-monospace,"SF Mono",Menlo,monospace;letter-spacing:.14em}
+.app-decks a{color:var(--accent)}
+.app-decks .family-brand{color:var(--ink)}
+
+.app-decks .app-hero{grid-template-columns:1.1fr .9fr;gap:56px}
+.app-decks h1{font-size:clamp(40px,4.8vw,66px)}
+.app-decks .intro{max-width:46ch}
+
+/* In development, so the hero states status instead of offering an action. */
+.status-note{font-size:14px;border-left:2px solid var(--ink);padding:12px 16px;background:#ffffff0a;max-width:52ch;margin:32px 0 0;color:var(--ink)}
+
+.app-decks .hero-screen{background:linear-gradient(var(--card-top),var(--card-bottom));border-radius:28px;box-shadow:0 8px 24px #0006,inset 0 1px 0 #ffffff0f;padding:28px}
+.app-decks .hero-screen img{border-radius:18px;box-shadow:none}
+.app-decks .hero-screen figcaption{font-size:12px;color:var(--readout);padding-top:16px}
+
+.app-decks .features{grid-template-columns:repeat(3,minmax(0,1fr));border-color:var(--line);margin-top:24px}
+.app-decks .feature h2{font-size:24px}
+.app-decks .feature p{max-width:40ch}
+
+/* The shape row: chips drawn at their own proportion, as the app's ratio chips are. */
+.shape-row{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;margin:20px 0 0;padding:0;list-style:none}
+.shape-row li{display:flex;flex-direction:column;align-items:center;gap:8px;font-size:11px;color:var(--readout);font-family:ui-monospace,"SF Mono",Menlo,monospace}
+.shape-row span{display:block;background:var(--surface);border:1px solid #ffffff24;border-radius:4px;height:52px}
+.shape-row .r11{width:52px}.shape-row .r45{width:42px}.shape-row .r34{width:39px}.shape-row .r23{width:35px}.shape-row .r916{width:29px}.shape-row .rth{width:24px}
+
+/* Split sections: copy beside a phone capture, capped so the phone never towers. */
+.split{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:56px;padding:64px 0;border-bottom:1px solid var(--line)}
+.split p{color:var(--muted);max-width:46ch}
+.split figure{margin:0;justify-self:center}
+.split img{display:block;max-height:560px;width:auto;border-radius:18px;box-shadow:0 8px 24px #0006}
+.split figcaption{font-size:12px;color:var(--readout);padding-top:14px;max-width:38ch}
+.split.reverse figure{order:-1}
+
+/* Caption variables, set in the app's mono readout style. */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.chips li{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:12px;color:var(--ink);background:var(--surface);border-radius:999px;padding:6px 12px}
+
+.no-ceiling{padding:56px 0;border-bottom:1px solid var(--line)}
+.no-ceiling ul{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.no-ceiling li{color:var(--muted);font-size:15px;line-height:1.55}
+.no-ceiling li strong{display:block;color:var(--ink);font-weight:600;margin-bottom:4px}
+
+.app-decks .screens img{box-shadow:0 8px 24px #0006}
+.app-decks .screens figcaption{color:var(--readout)}
+.app-decks .closing{border-top:1px solid var(--line);padding-top:44px}
+
+@media(max-width:900px){.app-decks .features,.no-ceiling ul{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.app-decks .app-hero,.split{grid-template-columns:1fr;gap:28px}.split{padding:44px 0}.split.reverse figure{order:0}.split img{max-height:480px}.app-decks .features,.no-ceiling ul{grid-template-columns:1fr}.app-decks h1{font-size:clamp(38px,10vw,58px)}.status-note{margin-top:24px}}

@@ -29,3 +29,6 @@
 @media(prefers-color-scheme:dark){.canceled{background:#151d2c;color:#fff4cd}}
 
 .ingest{background:#26272a;color:#f1efe9}.ingest .eyebrow,.ingest .app-bottom a{color:#f5a524}@media(prefers-color-scheme:dark){.ingest{background:#1b1c1e;color:#f1efe9}.ingest .eyebrow,.ingest .app-bottom a{color:#f5a524}}
+
+/* Decks uses its Acros appearance: near-black ground, ink text, in both color schemes. */
+.decks{background:#101011;color:#ececea}.decks .eyebrow,.decks .app-bottom a{color:#ececea}.decks .app-bottom{border-color:#ffffff33}.decks .app-bottom span{font-size:13px;opacity:.7}.decks .app-label img{border-radius:13px}
