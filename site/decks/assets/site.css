@@ -30,6 +30,7 @@ body.app-decks{background:radial-gradient(ellipse 80% 40% at 50% -5%,#19191b 0%,
 
 /* Split sections: copy beside a phone capture, capped so the phone never towers. */
 .split{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:56px;padding:64px 0;border-bottom:1px solid var(--line)}
+.app-decks .app-hero+.split{border-top:1px solid var(--line)}
 .split p{color:var(--muted);max-width:46ch}
 .split figure{margin:0;justify-self:center}
 .split img{display:block;max-height:560px;width:auto;border-radius:18px;box-shadow:0 8px 24px #0006}
@@ -47,7 +48,7 @@ body.app-decks{background:radial-gradient(ellipse 80% 40% at 50% -5%,#19191b 0%,
 
 .app-decks .screens img{box-shadow:0 8px 24px #0006}
 .app-decks .screens figcaption{color:var(--readout)}
-.photo-credit{font-size:12px;color:var(--readout);max-width:70ch;margin:0 0 40px}
+.photo-credit{font-size:12px;color:var(--readout);max-width:70ch;margin:32px 0 40px}
 .app-decks .closing{border-top:1px solid var(--line);padding-top:44px}
 
 @media(max-width:900px){.app-decks .features,.no-ceiling ul{grid-template-columns:1fr 1fr}}

@@ -301,7 +301,7 @@ Added at Brian's request as the sixth project and the last of the iOS apps, beca
 
 **Card label:** Photos, framed for posting
 
-**Landing page sections:** the hero with a status note, six features (01 / Frames, 02 / Templates, 03 / Shortcuts, 04 / Camera details, 05 / Text and logos, 06 / Video), Captions, Instagram and Threads, No ceilings, three screens, closing.
+**Landing page sections (rebuilt September 29, 2026 around Brian’s framing: the photo is the focus, video the same way, details on the photo or in the post):** hero with a status note, 01 / The photo, 02 / Video, 03 / Details on the photo, 04 / Details in the post, 05 / Posting (templates, Shortcuts, share sheet, project lifecycle), 06 / Export (privacy, contact sheet, sync), credit, closing.
 
 **Priorities, in order:** Frames sized for the destinations first. Templates and the Shortcuts path second, because they are what make the app fast. Camera details third, as the thing that makes it a photographer's app. Text, logos, and video are supporting features. Captions get their own section because the Caption Sheet is the screen Brian bounces back to from Instagram.
 
