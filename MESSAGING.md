@@ -305,7 +305,7 @@ Added at Brian's request as the sixth project and the last of the iOS apps, beca
 
 **Priorities, in order:** Frames sized for the destinations first. Templates and the Shortcuts path second, because they are what make the app fast. Camera details third, as the thing that makes it a photographer's app. Text, logos, and video are supporting features. Captions get their own section because the Caption Sheet is the screen Brian bounces back to from Instagram.
 
-**Voice:** Plain and direct, the shared portfolio register. No slogans about creativity. The line "by a photographer, for photographers" is Brian's framing and carries the headline.
+**Voice:** Plain and direct, the shared portfolio register. No slogans about creativity. Section headings are descriptive statements of what the feature is ("Templates for every setting."), never playful lines; Brian rejected "Panoramas that survive the crop." and its kind on September 29, 2026. The line "by a photographer, for photographers" is Brian's framing and carries the headline.
 
 **Factual boundaries:**
 
