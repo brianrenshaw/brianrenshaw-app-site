@@ -49,6 +49,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.9.4.4 | 38 | September 30, 2026 | Ingest sidebar rebuilt in three planes with one destination tree, project job folders follow the Subfolders template, sharper focus peaking, ranked palette metadata searches, Metadata Assist location summary, and metadata read retries. |
 | 0.9.4.3 | 37 | September 27, 2026 | Saved GPS locations, photo-by-photo Metadata Assist, explicit import scopes, and import/export reliability fixes. |
 | 0.9.4.2 | 36 | September 25, 2026 | Informational retained-pair receipts, conservative cleanup checks, and stable Focus Mode window bounds. |
 | 0.9.4.1 | 35 | September 25, 2026 | Focus Mode synchronization, Settings layout and narrow-window fixes, and Basic card-handling value correction. |
