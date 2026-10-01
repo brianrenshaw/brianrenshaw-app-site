@@ -3,7 +3,9 @@
 from pathlib import Path
 from urllib.parse import urlsplit
 import subprocess,hashlib,concurrent.futures,sys
+from build_portfolio_site import main as build_portfolio
 ROOT=Path(__file__).resolve().parents[1]
+DEPLOYMENT=ROOT/'dist/portfolio'
 # Resolve directly to GitHub while recursive DNS caches expire. TLS verification stays enabled.
 def fetch(url):
  r=subprocess.run(['curl','--silent','--show-error','--fail','--location','--connect-timeout','5','--max-time','20','--resolve','brianrenshaw.app:443:185.199.108.153','--resolve','www.brianrenshaw.app:443:185.199.108.153',url],capture_output=True)
@@ -11,11 +13,12 @@ def fetch(url):
  return r.stdout
 if __name__=='__main__':
  try:
+  build_portfolio()
   index=fetch('https://brianrenshaw.app/')
-  assert index==(ROOT/'site/index.html').read_bytes(),'Homepage differs from local deployment'
-  pages=list((ROOT/'site').rglob('index.html'))
+  assert index==(DEPLOYMENT/'index.html').read_bytes(),'Homepage differs from local deployment'
+  pages=list(DEPLOYMENT.rglob('index.html'))
   def check(p):
-   url='https://brianrenshaw.app/'+p.relative_to(ROOT/'site').as_posix().removesuffix('index.html')
+   url='https://brianrenshaw.app/'+p.relative_to(DEPLOYMENT).as_posix().removesuffix('index.html')
    if fetch(url)!=p.read_bytes():raise RuntimeError('Deployed page differs: '+url)
    return url
   for url in concurrent.futures.ThreadPoolExecutor(max_workers=4).map(check,pages):print('PASS',url)

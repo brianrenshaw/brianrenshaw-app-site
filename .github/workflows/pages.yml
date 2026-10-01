@@ -19,6 +19,7 @@ jobs:
           python-version: '3.12'
       - run: python3 scripts/check_site.py
       - run: python3 scripts/build_decks_site.py
+      - run: python3 scripts/build_portfolio_site.py
       - run: python3 scripts/check_ingest_screenshots.py
       - run: node scripts/check_ingest_interactions.cjs
   deploy:
@@ -34,8 +35,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - run: python3 scripts/build_portfolio_site.py
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: dist/portfolio
       - uses: actions/deploy-pages@v4
         id: deployment

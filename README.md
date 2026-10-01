@@ -2,7 +2,8 @@
 
 Canonical website: https://brianrenshaw.app/
 
-Decks's dedicated Cloudflare Pages deployment is prepared with
+Decks is live at https://decksphotoapp.com/ on Cloudflare Pages, with its
+dedicated deployment built using
 `python3 scripts/build_decks_site.py`. See [DECKS_HOSTING.md](DECKS_HOSTING.md)
 for build settings, domain redirects, and cutover steps.
 
@@ -23,7 +24,7 @@ python3 -m http.server 8080 --directory site
 
 Open http://localhost:8080/. Links are root-relative because production is served from the custom domain root. The default GitHub project URL is not a supported preview without that domain; use the local server.
 
-GitHub Actions validates links, anchors, local assets, canonical addresses and American spelling before deploying `site/` to Pages on pushes to main. Pull requests validate without deploying. No build framework, package installation, analytics, or external font dependency is needed.
+GitHub Actions validates links, anchors, local assets, canonical addresses and American spelling before exporting `site/` to `dist/portfolio/` and deploying that artifact to Pages on pushes to main. The export points Decks links and its three old pages to `decksphotoapp.com`; the real Decks source stays in `site/decks/` for the Cloudflare build. Pull requests validate without deploying. No build framework, package installation, analytics, or external font dependency is needed.
 
 ## Routes
 
