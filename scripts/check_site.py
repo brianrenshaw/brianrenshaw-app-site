@@ -60,7 +60,7 @@ BRITISH=re.compile('(?i)\\b(?:'+'|'.join([
 for p,page in pages.items():
  for word in sorted(set(BRITISH.findall(re.sub(r'\saria-labelledby="[^"]*"','',p.read_text())))):
   errors.append(f'{p.relative_to(ROOT).as_posix()}: British spelling "{word}"')
-for slug in ['reading-habit','where-do-we-eat','whos-first','folio','walkthrough','ingest']:
+for slug in ['reading-habit','where-do-we-eat','whos-first','folio','walkthrough','ingest','decks']:
  for sub in ['','privacy','support']:
   if not (ROOT/slug/sub/'index.html').exists():errors.append(f'Missing route {slug}/{sub}')
 if not (ROOT/'walkthrough/release-notes/index.html').exists():errors.append('Missing Walkthrough release history')

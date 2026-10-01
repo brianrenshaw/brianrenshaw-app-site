@@ -246,7 +246,7 @@ Added at Brian's request as the eighth project, replacing the reserved slot. Typ
 
 ## Canceled (September 17, 2026)
 
-Added at Brian's request as the fifth project and the last of the iOS apps, because it is still in development. Native source is in the sibling `canceled-app` project. Website route is `/canceled/`, a landing page only; add privacy and support when the app reaches TestFlight.
+Added at Brian's request as the fifth project and the last of the iOS apps, because it is still in development. Native source is in the sibling `canceled-app` project. Website route is `/canceled/`, a landing page with privacy and support pages. The public TestFlight beta is available at https://testflight.apple.com/join/SAMjeMy5.
 
 **Audience:** Two friends who both quietly want out of the same plan.
 
@@ -287,7 +287,7 @@ Keep the headline and the factual claims plain. Snark rides in the section copy,
 
 ## Decks (September 29, 2026)
 
-Added at Brian's request as the sixth project and the last of the iOS apps, because it is still in development. Native source is the `codex/acros` branch of the sibling `photo-importer` project (worktree `photo-importer-acros`); the app was Ingest Social until its rename on September 29, 2026. Website route is `/decks/`, a landing page only; add privacy and support when the app reaches TestFlight.
+Added at Brian's request as the sixth project and the last of the iOS apps, because it is still in development. Native source is the `codex/acros` branch of the sibling `photo-importer` project (worktree `photo-importer-acros`); the app was Ingest Social until its rename on September 29, 2026. Website route is `/decks/`, a landing page with privacy and support pages. The public TestFlight beta is available at https://testflight.apple.com/join/SAMjeMy5.
 
 **Audience:** Photographers posting their own work to Instagram and Threads, who want the frame and the credit to look as considered as the photo.
 

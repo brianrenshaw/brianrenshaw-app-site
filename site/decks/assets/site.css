@@ -5,13 +5,14 @@ body.app-decks{color-scheme:dark;--bg:#101011;--surface:#1c1c1f;--card-top:#1e1e
 body.app-decks{background:radial-gradient(ellipse 80% 40% at 50% -5%,#19191b 0%,var(--bg) 70%) fixed}
 .app-decks .eyebrow{color:var(--readout);font-family:ui-monospace,"SF Mono",Menlo,monospace;letter-spacing:.14em}
 .app-decks a{color:var(--accent)}
+.app-decks .primary-action{color:var(--bg)}
 .app-decks .family-brand{color:var(--ink)}
 
 .app-decks .app-hero{grid-template-columns:1.1fr .9fr;gap:56px}
 .app-decks h1{font-size:clamp(40px,4.8vw,66px)}
 .app-decks .intro{max-width:46ch}
 
-/* In development, so the hero states status instead of offering an action. */
+/* Beta availability and installation link. */
 .status-note{font-size:14px;border-left:2px solid var(--ink);padding:12px 16px;background:#ffffff0a;max-width:52ch;margin:32px 0 0;color:var(--ink)}
 
 .app-decks .hero-screen{background:linear-gradient(var(--card-top),var(--card-bottom));border-radius:28px;box-shadow:0 8px 24px #0006,inset 0 1px 0 #ffffff0f;padding:28px}
