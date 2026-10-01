@@ -285,42 +285,36 @@ Keep the headline and the factual claims plain. Snark rides in the section copy,
 
 **Visual direction:** The app's own palette, not the portfolio's warm paper. Navy ground `#142d4e` in light mode and `#151d2c` in dark, cream surface `#fffdf6`, Sunshine `#f7dc12` for eyebrows and links, cancellation red `#a42620`, muted `#c5d0df`, rules `#4a5c74`. Archivo at weight 900 for headings, on a smaller headline scale than the shared one because Archivo sets much heavier. Motifs are the cream slip with its Sunshine tick and the rotated red CANCELED stamp. This is the first homepage card that is dark in light mode; navy is the brand's ground in both appearances, so it is intentional here even though a dark navy card was rejected for Lankford Legends.
 
-## Decks (September 29, 2026)
+## Decks (updated October 1, 2026)
 
-Added at Brian's request as the sixth project and the last of the iOS apps, because it is still in development. Native source is the `codex/acros` branch of the sibling `photo-importer` project (worktree `photo-importer-acros`); the app was Ingest Social until its rename on September 29, 2026. Website route is `/decks/`, a landing page with privacy and support pages. The public TestFlight beta is available at https://testflight.apple.com/join/SAMjeMy5.
+Decks is an iPhone and iPad frames app by Brian Renshaw, a photographer. It is available in beta through https://testflight.apple.com/join/SAMjeMy5. The dedicated site is https://decksphotoapp.com/; source remains in `site/decks/`. Native source is the `codex/acros` branch in the sibling `photo-importer-acros` project.
 
-**Audience:** Photographers posting their own work to Instagram and Threads, who want the frame and the credit to look as considered as the photo.
+**Audience:** Photographers sharing their own photographs and the stories behind them.
 
-**Problem:** Posting a photograph well takes several apps: one to frame it for the feed, one to look up the exposure, one to write the caption. Doing that for a ten-page carousel is a chore, so the details get left out.
+**Headline:** Frames for your photography.
 
-**Primary promise:** Frames, camera details, text, and captions in one place, saved as a template so the next post is a few taps or a Shortcut.
+**Supporting line:** By a photographer, for photographers.
 
-**Headline:** A modern frames app, by a photographer, for photographers. (Brian’s line, September 29, 2026. The earlier draft line "Frame the photo. Credit the camera. Post." is retired; Brian called it a slogan and it must not come back anywhere.)
+**Primary message:** Add frames to highlight your photography, bring photos together, and write the story behind them. Start with a template and adjust as much or as little as needed.
 
-**Supporting copy:** Frames sized for Instagram and Threads, with camera details, text, and captions beside the photo. Save the look as a template and post from a Shortcut.
+**Priorities:** Simple template creation first. Walk through choosing a layout, size, and frame, then adding media. Camera details can go on the photo or in the caption. Captions stay with projects and are easy to copy while switching to Instagram. Saved templates work with Apple Shortcuts without opening Decks. Photos and videos use the same editing tools. Creating and editing personal templates is central to the app.
 
-**Card label:** Photos, framed for posting
+**Voice:** Simplicity over cleverness, explicitly requested by Brian on October 1. Use descriptive headings and short, concrete explanations. No slogans, creativity claims, exaggerated promises, or gimmicky headlines. Keep advanced controls in expandable details. The previous headline and dense numbered feature sections are retired.
 
-**Landing page sections (rebuilt September 29, 2026 around Brian’s framing: the photo is the focus, video the same way, details on the photo or in the post):** hero with a status note, 01 / The photo, 02 / Video, 03 / Details on the photo, 04 / Details in the post, 05 / Posting (templates, Shortcuts, share sheet, project lifecycle), 06 / Export (privacy, contact sheet, sync), credit, closing.
+**Visual direction:** Quiet light paper, charcoal text, system type, thin dividers. Photography and real native screenshots lead. No decorative gradients, floating cards, mock app UI, or oversized slogans. Support and privacy use the same theme. This supersedes the original dark landing-page direction; the portfolio card retains its own styling.
 
-**Priorities, in order:** Frames sized for the destinations first. Templates and the Shortcuts path second, because they are what make the app fast. Camera details third, as the thing that makes it a photographer's app. Text, logos, and video are supporting features. Captions get their own section because the Caption Sheet is the screen Brian bounces back to from Instagram.
-
-**Voice:** Plain and direct, the shared portfolio register. No slogans about creativity. Section headings are descriptive statements of what the feature is ("Templates for every setting."), never playful lines; Brian rejected "Panoramas that survive the crop." and its kind on September 29, 2026. The line "by a photographer, for photographers" is Brian's framing and carries the headline.
+**Assets:** Build 43 uses Brian's own photography. The website uses original native onboarding renders and native iPhone captures from that build, losslessly encoded at original dimensions. `site/decks/assets/SOURCES.md` and `build43-assets.json` record provenance. No archival photographs are shown in the redesigned page. Keep older assets available for existing links.
 
 **Factual boundaries:**
 
-- In development. Not on TestFlight, so there is no download, beta link, or call to action. The page states status and stops.
-- iOS and iPadOS 18 or later. Do not name a release date.
-- Shapes shown on the page: 1:1, 4:5, 3:4, 2:3, 9:16. The 9:19.5 Threads full-screen shape is described as "a taller page shape" and never as "TH+": that label is Series' term and Brian is removing it from the app (September 29, 2026). Do not present shapes as official platform requirements; the Size Guide in the app lists pixel sizes.
-- Each saved template appears in Shortcuts as "Save photos with <template>". The Photos share-sheet path needs the user to install the Decks Templates shortcut and duplicate it per template; iOS cannot create Shortcuts on the user's behalf, so the page says "add the Decks Templates shortcut to the Photos share sheet" and nothing stronger.
-- Camera details come from EXIF via ImageIO. Do not mention Fujifilm film simulations or recipes: Brian said on September 29, 2026 that the feature is not working and it stays off the page until it does. Scans and clips carry no metadata, so those details come from the saved gear list (My Gear).
-- Video: one clip per page, trimmed in place, 1 second minimum, H.264 by default with HEVC optional, exported as MP4 and saved to Photos. The blurred background can be a still or move with the clip.
-- Export defaults to 1440 pixels wide, JPEG, saved to Photos or handed to the share sheet. Do not describe posting to Instagram or Threads as automatic; the app saves or shares, and the user posts.
-- Mac synchronization with Ingest is deferred. The closing says Decks comes from the same workshop as Ingest and nothing about sync.
-- The name Acros for the default appearance is used inside the app's Settings and is not on the page.
-- Screenshots come from the app's demo fixture seeded with Ansel Adams' National Park Service photographs (1941 to 1942, National Archives, public domain as US government work) via the debug `--social-demo-dir` argument. Credit Adams and the National Archives on the page wherever they appear. Recapture with the screenshot walk in `Social/Tests/IngestSocialShots.swift`.
-
-**Visual direction:** The app's own Acros appearance, dark in both color schemes: ground `#101011` with a faint radial light at the top, cards as a `#1e1e20` to `#171719` gradient with no borders, ink `#ececea` as both text and accent, muted `#a3a3a1`, mono readouts for eyebrows and shape labels. No color accent anywhere on the page. This is the second homepage card that is dark in light mode, for the same reason as Canceled: the dark ground is the app's identity.
+- Beta for iOS and iPadOS 18 or later; do not promise a release date.
+- Templates walk through layout, size, background, and frame before media selection. Saved designs can be edited or duplicated.
+- Saved templates appear in Shortcuts as “Save photos with <template>”. Photos share-sheet use requires adding the Decks Templates shortcut and duplicating/configuring it for the desired template. Do not imply installation is automatic.
+- Camera details come from actual photo metadata. Manual camera/lens information can come from My Gear. Do not advertise Fujifilm simulations or recipes until confirmed working.
+- The camera pictured in the Mamiya photograph is its subject, not its capture camera. The bridge render uses real Fujifilm X-T4 settings.
+- Photos and videos use the same frames/layouts; clips are trimmed in the editor and export as MP4. Do not imply all video contains camera metadata.
+- Exports default to 1440-pixel-wide stills. Decks saves/shares prepared files; the user posts in Instagram or Threads.
+- Optional iCloud sync is between iPhone and iPad. Do not promise Ingest/Mac sync.
 
 ## September 17 implementation record
 

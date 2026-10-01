@@ -1,0 +1,79 @@
+{
+  "build": "0.1.0 (43)",
+  "photographer": "Brian Renshaw",
+  "encoding": "Lossless WebP, original dimensions and colors",
+  "images": [
+    {
+      "file": "build43-single.webp",
+      "source": "/Users/brianrenshaw/Projects/photo-importer-acros/Social/Assets.xcassets/OnboardingSingle.imageset/Image.png",
+      "width": 1200,
+      "height": 1500,
+      "sha256": "d199efee87bad46af0415518ca7375b49a2e1c33f40137e01d6998425c625bda",
+      "kind": "native rendered design"
+    },
+    {
+      "file": "build43-pair.webp",
+      "source": "/Users/brianrenshaw/Projects/photo-importer-acros/Social/Assets.xcassets/OnboardingPair.imageset/Image.png",
+      "width": 1200,
+      "height": 1500,
+      "sha256": "f4823f1c6cece87768101defcf718563cb829f1215b3e64950daf1b4b200ad4e",
+      "kind": "native rendered design"
+    },
+    {
+      "file": "build43-coffee.webp",
+      "source": "/Users/brianrenshaw/Projects/photo-importer-acros/Social/Assets.xcassets/OnboardingReuse.imageset/Image.png",
+      "width": 1200,
+      "height": 1500,
+      "sha256": "c9347e8794d927ddacf4ad4bbcc7b6cd0c70d56b3a54eb6cd8615439a8cc2819",
+      "kind": "native rendered design"
+    },
+    {
+      "file": "build43-camera.webp",
+      "source": "/Users/brianrenshaw/Projects/photo-importer-acros/Social/Assets.xcassets/OnboardingCamera.imageset/Image.png",
+      "width": 1200,
+      "height": 800,
+      "sha256": "49cc99da3d7e5d9619e4b9dfd6eaebe24c66d4ff14d96ba78928eddd7c2b6406",
+      "kind": "native rendered design"
+    },
+    {
+      "file": "build43-home.webp",
+      "source": "/tmp/decks43-ui-shots/Decks home.png",
+      "width": 1206,
+      "height": 2622,
+      "sha256": "ad6fe623edffe29a698e8c3f1af4a5933cb523478bb31d009fc021d603214984",
+      "kind": "native screenshot"
+    },
+    {
+      "file": "build43-size.webp",
+      "source": "/tmp/decks43-ui-shots/9F29A169-6C78-431F-BD77-77819FA81CE8.png",
+      "width": 1206,
+      "height": 2622,
+      "sha256": "8f2780b5cb85ece05ae938c7870f8abde8f71ed7328383217bbfc3686d88eec3",
+      "kind": "native screenshot"
+    },
+    {
+      "file": "build43-frame.webp",
+      "source": "/tmp/decks43-ui-shots/C9DB9418-D72F-4670-AA8C-A4BE39349848.png",
+      "width": 1206,
+      "height": 2622,
+      "sha256": "5c183a74a3de70dbedcf9be29710684d62ed19e49753bdb1927ff2c501d0c941",
+      "kind": "native screenshot"
+    },
+    {
+      "file": "build43-caption.webp",
+      "source": "/tmp/decks43-ui-shots/Introduction card 5.png",
+      "width": 1206,
+      "height": 2622,
+      "sha256": "99973d7be5b2bef6e8491b3c518bcfa704b8383aa6c777043af9339c6f8f2d3e",
+      "kind": "native screenshot"
+    },
+    {
+      "file": "build43-panorama.webp",
+      "source": "/tmp/decks43-ui-shots/Threads panorama preview.png",
+      "width": 1206,
+      "height": 2622,
+      "sha256": "4cd543981f44d1cb4bec0ff970cd614c5a4b8cf107200e64dd85d9764623b975",
+      "kind": "native screenshot"
+    }
+  ]
+}
