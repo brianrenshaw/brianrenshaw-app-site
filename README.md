@@ -2,6 +2,10 @@
 
 Canonical website: https://brianrenshaw.app/
 
+Decks's dedicated Cloudflare Pages deployment is prepared with
+`python3 scripts/build_decks_site.py`. See [DECKS_HOSTING.md](DECKS_HOSTING.md)
+for build settings, domain redirects, and cutover steps.
+
 One static website for Reading Habit, Where Do We Eat, Who’s First?, and Folio. App source code remains in its existing repositories. Edit public website content here; legacy Pages repositories preserve older links.
 
 ## App messaging
