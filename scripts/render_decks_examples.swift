@@ -14,7 +14,7 @@ import IngestSocialKit
     let assets = try SocialAssetStore(root: output.appendingPathComponent("working-assets"))
     let renderer = SocialRenderService(assets: assets)
     var sources: [String: SocialSource] = [:]
-    for name in ["Coastline", "Coffee", "Library", "Bridge", "Sunset", "Winter"] {
+    for name in ["Burger", "Example40", "Example26", "Example29", "Example24", "Example27", "Example14", "Example25", "Example19", "Sunset", "Example37", "Example38"] {
       sources[name] = try assets.importImage(input.appendingPathComponent(name + ".jpg"))
       let source = sources[name]!
       print(name, source.exif?.values ?? [:])
@@ -45,13 +45,13 @@ import IngestSocialKit
       try data.write(to: output.appendingPathComponent(name + ".json"))
       print("Rendered",name,image.width,image.height)
     }
-    try await save("frame-white", project(["Coastline"], background: .white))
-    try await save("frame-black", project(["Coastline"], background: .black))
-    try await save("frame-blur", project(["Coastline"], background: .blur))
-    try await save("frame-black-border", project(["Winter"], background: .white, border: 0.018, color: .black))
-    try await save("frame-blur-pair", project(["Coffee", "Coastline"], background: .blur))
-    try await save("frame-film", project(["Library"], background: .black, film: true))
-    var beside = try project(["Bridge"], background: .white, details: true, ratio: SocialRatio(3,2))
+    try await save("frame-white", project(["Burger"], background: .white))
+    try await save("frame-black", project(["Example40"], background: .black))
+    try await save("frame-blur", project(["Example26"], background: .blur))
+    try await save("frame-black-border", project(["Example29"], background: .white, border: 0.018, color: .black))
+    try await save("frame-blur-pair", project(["Example24", "Example27"], background: .blur))
+    try await save("frame-film", project(["Example14"], background: .black, film: true))
+    var beside = try project(["Example25"], background: .white, details: true, ratio: SocialRatio(3,2))
     beside.style.fit = .fill
     beside.frames[0].metadataPlate?.opacity = 0
     beside.frames[0].metadataPlate?.textColor = .black
@@ -59,8 +59,8 @@ import IngestSocialKit
     beside.frames[0].metadataPlate?.size = 0.035
     try await save("camera-beside", beside)
     try await save("camera-below", project(["Sunset"], background: .black, details: true))
-    try await save("camera-per-photo", project(["Bridge", "Winter"], background: .white, details: true))
-    var over = try project(["Coastline"], background: .black, ratio: SocialRatio(3,2), border: 0)
+    try await save("camera-per-photo", project(["Example37", "Example38"], background: .white, details: true))
+    var over = try project(["Example19"], background: .black, ratio: SocialRatio(3,2), border: 0)
     over.style.margins = SocialMargins(0)
     over.style.fit = .fill
     var card = SocialMetadataPlate.card(details: SocialStartChoices.defaultDetails)

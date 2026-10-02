@@ -11,79 +11,111 @@
       "height": 1500,
       "nativeRender": "camera-below.png",
       "sourcePNGsha256": "cf4eeafe6a4003828f09444e1458eea149f892779723b77e647adb1c43fcf02c",
-      "sha256": "7a7496a6482c0dd791fd9997fafea99fa13e870d0790945ec739279d1a993537"
+      "sha256": "7a7496a6482c0dd791fd9997fafea99fa13e870d0790945ec739279d1a993537",
+      "sources": [
+        "Sunset.jpg"
+      ]
     },
     {
       "file": "build43-camera-beside.webp",
       "width": 1200,
       "height": 800,
       "nativeRender": "camera-beside.png",
-      "sourcePNGsha256": "7b2ce3c44fa20e80769ed4ae9d91e886d7f99005b7b63e412ce060dad23ae2b5",
-      "sha256": "c2479e83fcf7dc405d754c070f13f134158cf810077a434d7585ef0683537207"
+      "sourcePNGsha256": "0d8a1329e3e3e138bd5d827d1d1e4270c7213a501edba9eb8a646914568d644e",
+      "sha256": "461757fcc9f04ef38da820085a84a38e918654033409345addccfcc89a6ceb11",
+      "sources": [
+        "Example25.jpg"
+      ]
     },
     {
       "file": "build43-camera-on-photo.webp",
       "width": 1200,
       "height": 800,
       "nativeRender": "camera-on-photo.png",
-      "sourcePNGsha256": "ceaa3ccc7820eb0b76f61778829c687ac74a66e7f4386fc07f9e89ec2cc784f9",
-      "sha256": "e86d3c2b5db80ae065bb7614314fd5c244bc9a3689320be03d9098b9365c6bec"
+      "sourcePNGsha256": "2c9b3bd7bf9600a848fe75579285614ba492b1a636ab24776bd9ca8aa93cde7d",
+      "sha256": "3934d0312d645547eab5237df03dc6a7b6ac4d6a730ff34e7d8b0ee6906d5dac",
+      "sources": [
+        "Example19.jpg"
+      ]
     },
     {
       "file": "build43-camera-per-photo.webp",
       "width": 1200,
       "height": 1500,
       "nativeRender": "camera-per-photo.png",
-      "sourcePNGsha256": "e5c0e01a4a4d8e36a862d0ba841783b56a255a08ad8667f77faf479041ffc8d1",
-      "sha256": "5216f111630a78af5efde540eb24f8c53f08f77c24a56845e40341d446b50818"
+      "sourcePNGsha256": "1738171185901635cae6aed4be20c2c15104212b01b847429540230912e22b82",
+      "sha256": "9fcb7d8c42153b43c638f17ecbe0191d5fae4d07b0507f9736b22dc2808c9f70",
+      "sources": [
+        "Example37.jpg",
+        "Example38.jpg"
+      ]
     },
     {
       "file": "build43-frame-black-border.webp",
       "width": 1200,
       "height": 1500,
       "nativeRender": "frame-black-border.png",
-      "sourcePNGsha256": "f5972f136ff410863a1f7299f4cddc02679dead7cb4e0aec796005b91d736839",
-      "sha256": "bf7e0b28d64da45393f557595a8fefc0fbf3e2ba6c18eab65c80641c247d2059"
+      "sourcePNGsha256": "c159734fc4f3c2c7afffce8c7e4acbb7614d613278ffab0061684422f4c1b63a",
+      "sha256": "186572a8eff3f86c42176c35cda30e52737010fd979a329a859abaaf194df79c",
+      "sources": [
+        "Example29.jpg"
+      ]
     },
     {
       "file": "build43-frame-black.webp",
       "width": 1200,
       "height": 1500,
       "nativeRender": "frame-black.png",
-      "sourcePNGsha256": "71937f5c6e1f742872dd30aad2e88be5a5b2571a7fcf031e7104d3385d658693",
-      "sha256": "ca3e5085f9a9192cb1529216d6f32843bc4e850f7bf157683b1f55672bc9b8e5"
+      "sourcePNGsha256": "0fec0c5c87b9f8e1a6b92e83671c7fa508ba3fa540d293c35374ec61bfbcc584",
+      "sha256": "03f137cb15f145cbb1104734605f6ac23e9cb64462f42d552892efe0615589f2",
+      "sources": [
+        "Example40.jpg"
+      ]
     },
     {
       "file": "build43-frame-blur-pair.webp",
       "width": 1200,
       "height": 1500,
       "nativeRender": "frame-blur-pair.png",
-      "sourcePNGsha256": "8212f6a5dd81fd9b9d270dec7b5c840f27a66274f782d1bebe91958dedd6cef7",
-      "sha256": "b0dadb9df79f4cb340e02f6a6649e1e1b9634f58262a259dfdb4756ac3fcdf22"
+      "sourcePNGsha256": "0b04c5d309794cc8fc54fe76c7d516a3edf17f2a1808295c2196bc12409eff83",
+      "sha256": "1d858500ea6e40640595ab4c69ce6395796497261e77ad82e76c6152295c90a9",
+      "sources": [
+        "Example24.jpg",
+        "Example27.jpg"
+      ]
     },
     {
       "file": "build43-frame-blur.webp",
       "width": 1200,
       "height": 1500,
       "nativeRender": "frame-blur.png",
-      "sourcePNGsha256": "2f6365ae4580961643205b9188430e5328c80152aa9fcb0a40612ae94079f912",
-      "sha256": "02a5747b114651b195a4f5315c2c99bbe6ea8216935ce97cbf900b2468fbb78e"
+      "sourcePNGsha256": "61889b060b208e1945b7156923657a7e027cc8b1ac4bf09dea4f5b6e3a756f93",
+      "sha256": "c176b527fe639456011d104fed9a39a98ca9d9c70d068cb6cbc92aa3381efed2",
+      "sources": [
+        "Example26.jpg"
+      ]
     },
     {
       "file": "build43-frame-film.webp",
       "width": 1200,
       "height": 1500,
       "nativeRender": "frame-film.png",
-      "sourcePNGsha256": "930d1f4fee0e6d3769440212585ecf50700adfdd73942f192cb1c4248d8440b5",
-      "sha256": "05f2743068f49add13edcfba2c58bc02488465b01d4b46b6c7ab050d0788b770"
+      "sourcePNGsha256": "03dfc5d26cedd6085d099f07fb1b6810afd186cf3247f83a49084c3f9be1b408",
+      "sha256": "045df86ad199e249fab9adf850cee5e78f114c837c46f0188aeb11434b7fcd63",
+      "sources": [
+        "Example14.jpg"
+      ]
     },
     {
       "file": "build43-frame-white.webp",
       "width": 1200,
       "height": 1500,
       "nativeRender": "frame-white.png",
-      "sourcePNGsha256": "c45748d466e5ce8c4d7360cca18d46dd817f183d966d05a5540d6d41a74def92",
-      "sha256": "67a0c6aef817257021020a2dff87ee01770d8313a54087daf364a83e1b16b5a5"
+      "sourcePNGsha256": "3ee9d473375a7ee55757e2779cb987167c0112b449a7e4edbecc48496f96cdcf",
+      "sha256": "35f9ed3a7b84fa211716fc26d336d095beb0a5fd5ee8de6f45e3a5e1fc0f4e53",
+      "sources": [
+        "Burger.jpg"
+      ]
     }
   ]
 }

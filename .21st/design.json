@@ -105,7 +105,7 @@
     },
     {
       "id": "decks-native-style-comparisons",
-      "decision": "Show six native frame/background examples and four camera-detail arrangements, all rendered with build 43 IngestSocialKit and Brian\u2019s photography. Compare the same coastline on white, black, and blur; use real EXIF. Neutral static galleries reuse existing type, spacing, and full-size links. All examples remain visible on mobile."
+      "decision": "Show six native frame/background examples and four camera-detail arrangements, all rendered with build 43 IngestSocialKit and Brian\u2019s photography. Use distinct photographs across examples: In-N-Out, baseball, fall basketball, espresso, autumn landscapes, rainbow, sunset, and food. The owner explicitly rejected repeating one photo across styles; use real EXIF. Neutral static galleries reuse existing type, spacing, and full-size links. All examples remain visible on mobile."
     }
   ],
   "evidence": [
