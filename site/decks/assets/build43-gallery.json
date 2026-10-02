@@ -66,8 +66,8 @@
       "width": 1200,
       "height": 1500,
       "nativeRender": "frame-black.png",
-      "sourcePNGsha256": "0fec0c5c87b9f8e1a6b92e83671c7fa508ba3fa540d293c35374ec61bfbcc584",
-      "sha256": "03f137cb15f145cbb1104734605f6ac23e9cb64462f42d552892efe0615589f2",
+      "sourcePNGsha256": "d14f16f4e278bc3b9424ec98a87d02ca2ac606a71c666eb3dd619257dc3631c5",
+      "sha256": "b684e283c37640c3f70e00807993d2167518197b939ee3424c7a78ccf5a4baca",
       "sources": [
         "Example40.jpg"
       ]
@@ -115,28 +115,6 @@
       "sha256": "35f9ed3a7b84fa211716fc26d336d095beb0a5fd5ee8de6f45e3a5e1fc0f4e53",
       "sources": [
         "Burger.jpg"
-      ]
-    },
-    {
-      "file": "build43-camera-intro-white.webp",
-      "width": 1200,
-      "height": 1500,
-      "nativeRender": "camera-intro-white.png",
-      "sourcePNGsha256": "f0e1a502578ea67f4d7af31f78d8e4098e6a13c4f36deb293fcc601fd55f3407",
-      "sha256": "2a24168f1911798a9e8fe9ea4855bd5d3c7f24a5b2713a73b38044fe51801350",
-      "sources": [
-        "Example03.jpg"
-      ]
-    },
-    {
-      "file": "build43-camera-intro-black.webp",
-      "width": 1200,
-      "height": 1500,
-      "nativeRender": "camera-intro-black.png",
-      "sourcePNGsha256": "66f66c7ef018e9175c2d51adcb2c3f4acda6c56de3a5339b5fd2e340421e531f",
-      "sha256": "4ecdaf65f0c7578c88594ef0872b3f75e63fcdc8ab281eab1194b7e56c4e7e1f",
-      "sources": [
-        "Example30.jpg"
       ]
     }
   ]

@@ -14,7 +14,7 @@ import IngestSocialKit
     let assets = try SocialAssetStore(root: output.appendingPathComponent("working-assets"))
     let renderer = SocialRenderService(assets: assets)
     var sources: [String: SocialSource] = [:]
-    for name in ["Burger", "Example40", "Example26", "Example29", "Example24", "Example27", "Example14", "Example25", "Example19", "Sunset", "Example37", "Example38", "Example03", "Example30"] {
+    for name in ["Burger", "Example40", "Example26", "Example29", "Example24", "Example27", "Example14", "Example25", "Example19", "Sunset", "Example37", "Example38"] {
       sources[name] = try assets.importImage(input.appendingPathComponent(name + ".jpg"))
       let source = sources[name]!
       print(name, source.exif?.values ?? [:])
@@ -46,7 +46,7 @@ import IngestSocialKit
       print("Rendered",name,image.width,image.height)
     }
     try await save("frame-white", project(["Burger"], background: .white))
-    try await save("frame-black", project(["Example40"], background: .black))
+    try await save("frame-black", project(["Example40"], background: .black, details: true))
     try await save("frame-blur", project(["Example26"], background: .blur))
     try await save("frame-black-border", project(["Example29"], background: .white, border: 0.018, color: .black))
     try await save("frame-blur-pair", project(["Example24", "Example27"], background: .blur))
@@ -70,7 +70,5 @@ import IngestSocialKit
     card.position = "Bottom"
     over.frames[0].metadataPlate = card
     try await save("camera-on-photo", over)
-    try await save("camera-intro-white", project(["Example03"], background: .white, details: true))
-    try await save("camera-intro-black", project(["Example30"], background: .black, details: true))
   }
 }
