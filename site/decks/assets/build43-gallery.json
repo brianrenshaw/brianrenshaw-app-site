@@ -1,0 +1,89 @@
+{
+  "rendererCommit": "1d05ac8",
+  "recipe": "scripts/render_decks_examples.swift",
+  "photographer": "Brian Renshaw",
+  "metadata": "Actual EXIF imported by Decks; no invented camera settings",
+  "encoding": "Lossless WebP, original 1200-pixel render dimensions",
+  "images": [
+    {
+      "file": "build43-camera-below.webp",
+      "width": 1200,
+      "height": 1500,
+      "nativeRender": "camera-below.png",
+      "sourcePNGsha256": "cf4eeafe6a4003828f09444e1458eea149f892779723b77e647adb1c43fcf02c",
+      "sha256": "7a7496a6482c0dd791fd9997fafea99fa13e870d0790945ec739279d1a993537"
+    },
+    {
+      "file": "build43-camera-beside.webp",
+      "width": 1200,
+      "height": 800,
+      "nativeRender": "camera-beside.png",
+      "sourcePNGsha256": "7b2ce3c44fa20e80769ed4ae9d91e886d7f99005b7b63e412ce060dad23ae2b5",
+      "sha256": "c2479e83fcf7dc405d754c070f13f134158cf810077a434d7585ef0683537207"
+    },
+    {
+      "file": "build43-camera-on-photo.webp",
+      "width": 1200,
+      "height": 800,
+      "nativeRender": "camera-on-photo.png",
+      "sourcePNGsha256": "ceaa3ccc7820eb0b76f61778829c687ac74a66e7f4386fc07f9e89ec2cc784f9",
+      "sha256": "e86d3c2b5db80ae065bb7614314fd5c244bc9a3689320be03d9098b9365c6bec"
+    },
+    {
+      "file": "build43-camera-per-photo.webp",
+      "width": 1200,
+      "height": 1500,
+      "nativeRender": "camera-per-photo.png",
+      "sourcePNGsha256": "e5c0e01a4a4d8e36a862d0ba841783b56a255a08ad8667f77faf479041ffc8d1",
+      "sha256": "5216f111630a78af5efde540eb24f8c53f08f77c24a56845e40341d446b50818"
+    },
+    {
+      "file": "build43-frame-black-border.webp",
+      "width": 1200,
+      "height": 1500,
+      "nativeRender": "frame-black-border.png",
+      "sourcePNGsha256": "f5972f136ff410863a1f7299f4cddc02679dead7cb4e0aec796005b91d736839",
+      "sha256": "bf7e0b28d64da45393f557595a8fefc0fbf3e2ba6c18eab65c80641c247d2059"
+    },
+    {
+      "file": "build43-frame-black.webp",
+      "width": 1200,
+      "height": 1500,
+      "nativeRender": "frame-black.png",
+      "sourcePNGsha256": "71937f5c6e1f742872dd30aad2e88be5a5b2571a7fcf031e7104d3385d658693",
+      "sha256": "ca3e5085f9a9192cb1529216d6f32843bc4e850f7bf157683b1f55672bc9b8e5"
+    },
+    {
+      "file": "build43-frame-blur-pair.webp",
+      "width": 1200,
+      "height": 1500,
+      "nativeRender": "frame-blur-pair.png",
+      "sourcePNGsha256": "8212f6a5dd81fd9b9d270dec7b5c840f27a66274f782d1bebe91958dedd6cef7",
+      "sha256": "b0dadb9df79f4cb340e02f6a6649e1e1b9634f58262a259dfdb4756ac3fcdf22"
+    },
+    {
+      "file": "build43-frame-blur.webp",
+      "width": 1200,
+      "height": 1500,
+      "nativeRender": "frame-blur.png",
+      "sourcePNGsha256": "2f6365ae4580961643205b9188430e5328c80152aa9fcb0a40612ae94079f912",
+      "sha256": "02a5747b114651b195a4f5315c2c99bbe6ea8216935ce97cbf900b2468fbb78e"
+    },
+    {
+      "file": "build43-frame-film.webp",
+      "width": 1200,
+      "height": 1500,
+      "nativeRender": "frame-film.png",
+      "sourcePNGsha256": "930d1f4fee0e6d3769440212585ecf50700adfdd73942f192cb1c4248d8440b5",
+      "sha256": "05f2743068f49add13edcfba2c58bc02488465b01d4b46b6c7ab050d0788b770"
+    },
+    {
+      "file": "build43-frame-white.webp",
+      "width": 1200,
+      "height": 1500,
+      "nativeRender": "frame-white.png",
+      "sourcePNGsha256": "c45748d466e5ce8c4d7360cca18d46dd817f183d966d05a5540d6d41a74def92",
+      "sha256": "67a0c6aef817257021020a2dff87ee01770d8313a54087daf364a83e1b16b5a5"
+    }
+  ]
+}

@@ -16,12 +16,9 @@ body.app-decks{color-scheme:light;--bg:#f5f4f0;--surface:#eae8e2;--ink:#242422;-
 .intro-copy{align-self:center}
 .decks-home .intro{font-size:19px;line-height:1.6;max-width:42ch;margin-bottom:26px}
 .decks-home .availability{font-size:12px;margin:14px 0 0}
-.photo-examples{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:48px}
-.photo-examples figure{margin:0;min-width:0}
-.photo-examples img{display:block;width:100%;height:auto}
 .decks-home figcaption{color:var(--muted);font-size:12px;line-height:1.5;margin-top:13px}
 .decks-home .photo-credit{grid-column:1/-1;font-size:12px;margin:22px 0 0}
-.walkthrough,.feature-row,.reuse-section,.everyday-features,.details-section{border-top:1px solid var(--line);padding:68px 0}
+.walkthrough,.feature-row,.reuse-section,.everyday-features,.details-section,.examples-section{border-top:1px solid var(--line);padding:68px 0}
 .section-heading{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-bottom:38px}
 .section-heading p{margin:0;max-width:45ch}
 .walkthrough-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
@@ -35,7 +32,6 @@ body.app-decks{color-scheme:light;--bg:#f5f4f0;--surface:#eae8e2;--ink:#242422;-
 .feature-row{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
 .feature-copy p{max-width:43ch}
 .feature-copy p:last-child{margin-bottom:0}
-.camera-example{margin:0}.camera-example img{display:block;width:100%}
 .captions-section .phone-example{order:-1;margin:0;text-align:center}
 .reuse-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
 .shortcut-copy{max-width:46ch}.shortcut-copy a{font-size:15px}
@@ -51,6 +47,17 @@ body.app-decks{color-scheme:light;--bg:#f5f4f0;--surface:#eae8e2;--ink:#242422;-
 .decks-closing{border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:40px;padding:52px 0 24px}
 .decks-closing p{max-width:48ch;margin-bottom:12px}.decks-closing .maker{font-size:13px;margin-bottom:0}
 .app-decks .family-footer{margin-top:48px}
-@media(max-width:900px){.decks-intro,.section-heading,.feature-row,.reuse-grid,.everyday-features{gap:36px}.photo-examples{gap:16px}.walkthrough-steps{gap:24px}.step-copy{min-height:185px}}
-@media(max-width:680px){.app-decks .family-header{flex-wrap:nowrap;gap:16px;align-items:center}.app-decks .family-header nav{gap:16px}.app-decks .family-header nav a{font-size:12px}.app-decks .family-header nav a:first-child{display:none}.decks-intro{grid-template-columns:1fr;padding-top:42px;gap:24px}.decks-home h1{max-width:15ch}.decks-home .eyebrow{margin-bottom:18px}.decks-home .intro{font-size:18px}.photo-examples{grid-column:1;margin-top:12px;grid-template-columns:1fr 1fr;gap:16px}.photo-examples figure:last-child{display:none}.decks-home .photo-credit{grid-column:1;margin-top:0}.section-heading,.feature-row,.reuse-grid,.everyday-features{grid-template-columns:1fr;gap:24px}.section-heading{margin-bottom:28px}.walkthrough,.feature-row,.reuse-section,.everyday-features,.details-section{padding:44px 0}.walkthrough-steps{grid-template-columns:1fr;gap:36px}.walkthrough-steps li{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}.step-copy{min-height:0;padding-left:0}.step-number{position:static;display:block;margin-bottom:10px}.step-copy p{font-size:14px;margin-bottom:0}.step-copy h3{font-size:19px}.walkthrough-steps img{border-radius:12px;max-width:190px}.captions-section .phone-example{order:0}.phone-example img{max-width:260px}.reuse-photo{max-width:260px}.everyday-features{gap:28px}.detail-with-photo{grid-template-columns:1fr;gap:20px}.detail-with-photo img{max-width:220px}.decks-closing{flex-direction:column;align-items:flex-start;gap:24px;padding-top:40px}.decks-home figcaption{font-size:11px}.app-decks .family-footer{margin-top:28px}}
+@media(max-width:900px){.decks-intro,.section-heading,.feature-row,.reuse-grid,.everyday-features{gap:36px}.walkthrough-steps{gap:24px}.step-copy{min-height:185px}}
+@media(max-width:680px){.app-decks .family-header{flex-wrap:nowrap;gap:16px;align-items:center}.app-decks .family-header nav{gap:16px}.app-decks .family-header nav a{font-size:12px}.app-decks .family-header nav a:first-child{display:none}.decks-intro{grid-template-columns:1fr;padding-top:42px;gap:24px}.decks-home h1{max-width:15ch}.decks-home .eyebrow{margin-bottom:18px}.decks-home .intro{font-size:18px}.decks-home .photo-credit{grid-column:1;margin-top:0}.section-heading,.feature-row,.reuse-grid,.everyday-features{grid-template-columns:1fr;gap:24px}.section-heading{margin-bottom:28px}.walkthrough,.feature-row,.reuse-section,.everyday-features,.details-section,.examples-section{padding:44px 0}.walkthrough-steps{grid-template-columns:1fr;gap:36px}.walkthrough-steps li{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}.step-copy{min-height:0;padding-left:0}.step-number{position:static;display:block;margin-bottom:10px}.step-copy p{font-size:14px;margin-bottom:0}.step-copy h3{font-size:19px}.walkthrough-steps img{border-radius:12px;max-width:190px}.captions-section .phone-example{order:0}.phone-example img{max-width:260px}.reuse-photo{max-width:260px}.everyday-features{gap:28px}.detail-with-photo{grid-template-columns:1fr;gap:20px}.detail-with-photo img{max-width:220px}.decks-closing{flex-direction:column;align-items:flex-start;gap:24px;padding-top:40px}.decks-home figcaption{font-size:11px}.app-decks .family-footer{margin-top:28px}}
 @media(max-width:360px){.app-decks .family-header nav{gap:10px}.app-decks .family-brand{gap:8px}.walkthrough-steps li{gap:14px}.app-decks .family-header,.app-decks .app-landing{padding-left:16px;padding-right:16px}}
+
+/* Native exports show frame choices and multiple camera-detail arrangements. */
+.examples-section .photo-credit{margin:22px 0 0}
+.frame-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 24px}
+.camera-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 32px;align-items:start}
+.frame-gallery figure,.camera-gallery figure{margin:0;min-width:0}
+.frame-gallery a,.camera-gallery a{display:block}
+.frame-gallery img,.camera-gallery img{display:block;width:100%;height:auto}
+.camera-gallery .portrait-example{width:100%;max-width:390px;justify-self:center}
+.camera-section .section-heading p+p{margin-top:16px}
+@media(max-width:680px){.frame-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px}.camera-gallery{grid-template-columns:1fr;gap:28px}.camera-gallery .portrait-example{max-width:340px}}

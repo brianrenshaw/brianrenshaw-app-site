@@ -18,7 +18,7 @@
 <link rel="icon" href="/decks/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
-<link rel="stylesheet" href="/decks/assets/site.css?v=43">
+<link rel="stylesheet" href="/decks/assets/site.css?v=43-gallery">
 </head>
 <body class="app-decks decks-home">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -38,12 +38,19 @@
 <a class="primary-action" href="https://testflight.apple.com/join/SAMjeMy5">Try Decks on TestFlight</a>
 <p class="availability">Available in beta · iOS and iPadOS 18 or later</p>
 </div>
-<div class="photo-examples" aria-label="Photographs framed in Decks">
-<figure><img src="assets/build43-single.webp" width="1200" height="1500" fetchpriority="high" alt="A photograph of a Mamiya RB67 camera with a simple white frame"><figcaption>One photo</figcaption></figure>
-<figure><img src="assets/build43-pair.webp" width="1200" height="1500" alt="A Mamiya camera and the Scripps coastline in a two-photo layout with white borders"><figcaption>Two photos together</figcaption></figure>
-<figure><img src="assets/build43-coffee.webp" width="1200" height="1500" alt="A photograph of a coffee shop in the same white frame as the single camera photograph"><figcaption>The same template, another photo</figcaption></figure>
+</section>
+
+<section id="frames" class="examples-section" aria-labelledby="frames-heading">
+<div class="section-heading"><h2 id="frames-heading">Choose a background and frame.</h2><p>Use white, black, or a blurred version of your photo. Add a border and choose its color and width.</p></div>
+<div class="frame-gallery">
+<figure><a href="assets/build43-frame-white.webp" aria-label="View white background at full size"><img src="assets/build43-frame-white.webp" width="1200" height="1500" fetchpriority="high" alt="The Scripps coastline centered on a white background"></a><figcaption>White background</figcaption></figure>
+<figure><a href="assets/build43-frame-black.webp" aria-label="View black background, white border at full size"><img src="assets/build43-frame-black.webp" width="1200" height="1500" loading="lazy" alt="The same coastline photograph on a black background with a white border"></a><figcaption>Black background, white border</figcaption></figure>
+<figure><a href="assets/build43-frame-blur.webp" aria-label="View blurred background, white border at full size"><img src="assets/build43-frame-blur.webp" width="1200" height="1500" loading="lazy" alt="The coastline photograph with a white border over a blurred version of the same photograph"></a><figcaption>Blurred background, white border</figcaption></figure>
+<figure><a href="assets/build43-frame-black-border.webp" aria-label="View white background, black border at full size"><img src="assets/build43-frame-black-border.webp" width="1200" height="1500" loading="lazy" alt="A snow-covered branch framed with a black border on white"></a><figcaption>White background, black border</figcaption></figure>
+<figure><a href="assets/build43-frame-blur-pair.webp" aria-label="View two photos on a blurred background at full size"><img src="assets/build43-frame-blur-pair.webp" width="1200" height="1500" loading="lazy" alt="Coffee-shop and coastline photographs with white borders on a blurred photographic background"></a><figcaption>Two photos on a blurred background</figcaption></figure>
+<figure><a href="assets/build43-frame-film.webp" aria-label="View film border at full size"><img src="assets/build43-frame-film.webp" width="1200" height="1500" loading="lazy" alt="A black-and-white library photograph with a native Kodak Tri-X film-style border"></a><figcaption>Film border</figcaption></figure>
 </div>
-<p class="photo-credit">Photographs by Brian Renshaw. Designs made in Decks.</p>
+<p class="photo-credit">Photographs by Brian Renshaw. All examples made with Decks.</p>
 </section>
 
 <section id="templates" class="walkthrough" aria-labelledby="templates-heading">
@@ -56,9 +63,15 @@
 <p class="section-note">Once your photos are in, you can change any of these choices in the editor.</p>
 </section>
 
-<section class="feature-row camera-section" aria-labelledby="camera-heading">
-<div class="feature-copy"><h2 id="camera-heading">Include your camera details.</h2><p>Add the camera, lens, and exposure settings to the frame or include them in your caption. Decks reads the details from your photo, so you don’t have to look them up.</p><p>Choose the information you want to share. For film photographs, you can add your own camera and lens details.</p></div>
-<figure class="camera-example"><img src="assets/build43-camera.webp" width="1200" height="800" loading="lazy" alt="Brian Renshaw’s bridge photograph with its real Fujifilm X-T4, XF35mmF2 R WR, 1/240, f/7.1, and ISO 160 details beside it"><figcaption>A photograph and its camera details, made in Decks.</figcaption></figure>
+<section class="examples-section camera-section" aria-labelledby="camera-heading">
+<div class="section-heading"><h2 id="camera-heading">Include your camera details.</h2><div><p>Put the camera, lens, and exposure settings beside your photo, beneath it, or over it. Each photo can have its own details, even when several share a page.</p><p>Decks reads the information from your photo. You can also insert it into a caption or add your own camera and lens details for film photographs.</p></div></div>
+<div class="camera-gallery">
+<figure><a href="assets/build43-camera-beside.webp" aria-label="View details beside the photo at full size"><img src="assets/build43-camera-beside.webp" width="1200" height="800" loading="lazy" alt="A bridge photograph beside its real Fujifilm X-T4 camera, lens, and exposure details"></a><figcaption>Details beside the photo</figcaption></figure>
+<figure><a href="assets/build43-camera-on-photo.webp" aria-label="View details over the photo at full size"><img src="assets/build43-camera-on-photo.webp" width="1200" height="800" loading="lazy" alt="The Scripps coastline with a camera card showing its real Hasselblad L2D-20c camera and exposure settings"></a><figcaption>Details over the photo</figcaption></figure>
+<figure class="portrait-example"><a href="assets/build43-camera-below.webp" aria-label="View details beneath the photo at full size"><img src="assets/build43-camera-below.webp" width="1200" height="1500" loading="lazy" alt="A sunset photograph on black with a white border and its real Sony α1 camera, lens, and exposure settings below"></a><figcaption>Details beneath the photo</figcaption></figure>
+<figure class="portrait-example"><a href="assets/build43-camera-per-photo.webp" aria-label="View each photo’s own details at full size"><img src="assets/build43-camera-per-photo.webp" width="1200" height="1500" loading="lazy" alt="Bridge and winter photographs on one page, each with its own Fujifilm or Sony camera and exposure details"></a><figcaption>Each photo’s own details</figcaption></figure>
+</div>
+<p class="section-note">These examples use the photographs’ actual camera settings. Choose which details appear and where they go.</p>
 </section>
 
 <section class="feature-row captions-section" aria-labelledby="captions-heading">

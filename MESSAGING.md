@@ -303,6 +303,8 @@ Decks is an iPhone and iPad frames app by Brian Renshaw, a photographer. It is a
 
 **Visual direction:** Quiet light paper, charcoal text, system type, thin dividers. Photography and real native screenshots lead. No decorative gradients, floating cards, mock app UI, or oversized slogans. Support and privacy use the same theme. This supersedes the original dark landing-page direction; the portfolio card retains its own styling.
 
+**Examples:** Show several actual results, not just one white frame. White and black backgrounds, contrasting borders, photo blur, multi-photo layouts, and film borders should be visible. Include multiple camera-detail arrangements, using actual capture metadata. Brian explicitly requested these galleries on October 1.
+
 **Assets:** Build 43 uses Brian's own photography. The website uses original native onboarding renders and native iPhone captures from that build, losslessly encoded at original dimensions. `site/decks/assets/SOURCES.md` and `build43-assets.json` record provenance. No archival photographs are shown in the redesigned page. Keep older assets available for existing links.
 
 **Factual boundaries:**

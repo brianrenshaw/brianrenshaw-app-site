@@ -102,6 +102,10 @@
     {
       "id": "decks-photography-first-build43",
       "decision": "October 1, 2026: Brian requested simplicity over cleverness. Decks uses quiet light paper, charcoal system type, native build 43 photos/renders/screenshots, a layout-size-frame walkthrough, concise camera/caption/Shortcuts explanations, and expandable advanced details. Reuse static family primitives; no catalog components imported (21st search HTTP 401)."
+    },
+    {
+      "id": "decks-native-style-comparisons",
+      "decision": "Show six native frame/background examples and four camera-detail arrangements, all rendered with build 43 IngestSocialKit and Brian\u2019s photography. Compare the same coastline on white, black, and blur; use real EXIF. Neutral static galleries reuse existing type, spacing, and full-size links. All examples remain visible on mobile."
     }
   ],
   "evidence": [
