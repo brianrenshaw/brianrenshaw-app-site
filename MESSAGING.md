@@ -295,11 +295,11 @@ Decks is an iPhone and iPad frames app by Brian Renshaw, a photographer. It is a
 
 **Supporting line:** By a photographer, for photographers.
 
-**Primary message:** Add frames to highlight your photography, bring photos together, and write the story behind them. Start with a template and adjust as much or as little as needed.
+**Primary message:** Decks helps your photos and videos look their best on Instagram and Threads. Start with a template, add text or camera details, and customize every detail.
 
 **Priorities:** Simple template creation first. Walk through choosing a layout, size, and frame, then adding media. Camera details can go on the photo or in the caption. Captions stay with projects and are easy to copy while switching to Instagram. Saved templates work with Apple Shortcuts without opening Decks. Photos and videos use the same editing tools. Creating and editing personal templates is central to the app.
 
-**Voice:** Simplicity over cleverness, explicitly requested by Brian on October 1. Use descriptive headings and short, concrete explanations. No slogans, creativity claims, exaggerated promises, or gimmicky headlines. Keep advanced controls in expandable details. The previous headline and dense numbered feature sections are retired.
+**Voice:** Simplicity over cleverness, explicitly requested by Brian on October 1. Lead with getting photos and videos ready to post, useful templates, and customization. Keep sentences short and human. Avoid competitor criticism in public copy. Use descriptive headings and short, concrete explanations. No slogans, creativity claims, exaggerated promises, or gimmicky headlines. Keep advanced controls in expandable details. The previous headline and dense numbered feature sections are retired.
 
 **Visual direction:** Quiet light paper, charcoal text, system type, thin dividers. Photography and real native screenshots lead. No decorative gradients, floating cards, mock app UI, or oversized slogans. Support and privacy use the same theme. This supersedes the original dark landing-page direction; the portfolio card retains its own styling.
 

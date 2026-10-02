@@ -50,7 +50,7 @@ import IngestSocialKit
     try await save("frame-blur", project(["Example26"], background: .blur))
     try await save("frame-black-border", project(["Example29"], background: .white, border: 0.018, color: .black))
     try await save("frame-blur-pair", project(["Example24", "Example27"], background: .blur))
-    try await save("frame-film", project(["Example14"], background: .black, film: true))
+    try await save("frame-film", project(["Example14"], background: .white, film: true))
     var beside = try project(["Example25"], background: .white, details: true, ratio: SocialRatio(3,2))
     beside.style.fit = .fill
     beside.frames[0].metadataPlate?.opacity = 0

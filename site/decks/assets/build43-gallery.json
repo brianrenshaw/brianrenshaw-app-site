@@ -100,8 +100,8 @@
       "width": 1200,
       "height": 1500,
       "nativeRender": "frame-film.png",
-      "sourcePNGsha256": "03dfc5d26cedd6085d099f07fb1b6810afd186cf3247f83a49084c3f9be1b408",
-      "sha256": "045df86ad199e249fab9adf850cee5e78f114c837c46f0188aeb11434b7fcd63",
+      "sourcePNGsha256": "966504bb048e5f3a3adb32246cb360cf9f5eb01e20d56d7d66343988935bff0e",
+      "sha256": "5b6693f1ea6d8049e0b2b4d9c593d1a57713e6778212ea04f43ab91c037acee4",
       "sources": [
         "Example14.jpg"
       ]
