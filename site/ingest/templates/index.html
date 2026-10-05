@@ -10,13 +10,13 @@
 <meta property="og:title" content="Ingest — Names and metadata that fit the job.">
 <meta property="og:description" content="Curly braces fill rename and folder variables. Semicolon finds metadata fields. Keep originals, or build names from dates, addresses, and sequence numbers.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/templates/">
-<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/palette-dark-0.9.4.2-retina.webp">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/share-0.9.5.png">
+<meta property="og:image:alt" content="Ingest. Cull. Browse. Organize. Workspaces and Metadata Assist for Mac."><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
-<link rel="stylesheet" href="/ingest/assets/site.css?v=0942-workspaces-chips">
-<script src="/ingest/assets/overlays.js?v=2" defer></script><script src="/ingest/assets/command-palette.js" defer></script><script src="/ingest/assets/typing-demo.js?v=4" defer></script></head>
+<link rel="stylesheet" href="/ingest/assets/site.css?v=095-refresh">
+<script src="/ingest/assets/overlays.js?v=2" defer></script><script src="/ingest/assets/command-palette.js?v=095-refresh" defer></script><script src="/ingest/assets/typing-demo.js?v=4" defer></script></head>
 <body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" aria-label="Download Ingest" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.5/Ingest-0.9.5.dmg"><span class="nav-download-label">Download <span aria-hidden="true">↗</span></span><svg class="nav-download-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3"/></svg></a></nav></header>
@@ -49,8 +49,8 @@
 <h2>How a template works</h2>
 <p><strong>Curly braces rename.</strong> Anything in braces is replaced; anything else is kept as you typed it. So <code>{yyyy}{mm}{dd}-{seqn}</code> becomes <code>20260912-0001</code>, and <code>Wedding-{seq}</code> becomes <code>Wedding-1</code>. Semicolon is a different habit — it finds metadata fields in Metadata Assist, not tokens in a name.</p>
 <p>Some tokens take an argument after a colon. <code>{seqn:4}</code> sets the width of the number, <code>{date:MMMM d, yyyy}</code> sets a date format. To write a real brace, double it: <code>{{</code> and <code>}}</code>.</p>
-<p>Templates are used in four places: renaming during ingest, renaming in place with <kbd>⌘R</kbd>, naming the subfolder that ingest creates, and filling in captions and titles in a metadata preset. Settings, Renaming keeps your saved templates and shows a live example as you type.</p>
-<figure class="desktop-shot"><a href="/ingest/assets/ingest-wedding-dark-0.9.4.2-retina.webp" aria-label="View full-resolution screenshot: Wedding folder and filename preview"><img src="/ingest/assets/ingest-wedding-dark-0.9.4.2-retina.webp" width="2880" height="1800" style="--capture-width:1440px" loading="lazy" alt="Wedding folder and filename preview"></a><figcaption>A shoot name and sequence token supply clear folders and filenames in this example workspace.</figcaption></figure>
+<p>Templates are used in four places: renaming during ingest, renaming in place with <kbd>⌘R</kbd>, naming the subfolder that ingest creates, and filling in captions and titles in a metadata preset. Settings → Naming keeps your saved templates and shows a live example as you type.</p>
+<figure class="desktop-shot"><a href="/ingest/assets/ingest-wedding-dark-0.9.5-retina.webp" aria-label="View full-resolution screenshot: Wedding folder and filename preview"><img src="/ingest/assets/ingest-wedding-dark-0.9.5-retina.webp" loading="lazy" alt="Wedding folder and filename preview" width="1800" height="1408" style="--capture-width:900px"></a><figcaption>A shoot name and sequence token supply clear folders and filenames in this example workspace.</figcaption></figure>
 <p>A template also decides letter case, what spaces turn into, and the case of the extension. The default turns spaces into hyphens and lowercases the extension, which is what keeps filenames easy to sort and safe to send anywhere.</p>
 <p>A token that has no value disappears, and takes the separator next to it with it, so a missing address does not leave a stray hyphen at the front of every name.</p>
 </section>
@@ -75,7 +75,7 @@
 <p>All five take a width: <code>{seqn:4}</code> gives <code>0001</code>. Widths from 1 to 12.</p>
 
 <h3 id="tokens-social">Social Export</h3>
-<p>Open <strong>Custom Naming</strong> in the Export sheet to edit the filename pattern. The default produces names such as <code>Photo_4x5_001.jpg</code>. Social Export adds <code>{ratio}</code> (such as <code>4x5</code>), <code>{preset}</code>, and <code>{index}</code>, the frame’s one-based sequence. <code>{index:3}</code> produces <code>001</code>. The default is <code>{base}_{ratio}_{index:3}</code>. Multi-photo frames use their first photo for source-name and date tokens. The chosen JPEG or PNG extension always replaces the source extension.</p>
+<p>Open <strong>Custom Naming</strong> in the Export sheet to edit the filename pattern. The default produces names such as <code>Photo_social.jpg</code>. Social Export adds <code>{ratio}</code> (such as <code>4x5</code>), <code>{preset}</code>, and <code>{index}</code>, the frame’s one-based sequence. <code>{index:3}</code> produces <code>001</code>. The default is <code>{base}_social</code>. Multi-photo frames use their first photo for source-name and date tokens. The chosen JPEG or PNG extension always replaces the source extension.</p>
 <h3 id="tokens-organize">Organize</h3>
 <p>Organization templates add <code>{group}</code>, <code>{groupnumber}</code> (two digits by default), and <code>{groupseq}</code> (three digits, restarting in each group). Explicit widths such as <code>{groupseq:4}</code> are supported.</p>
 
@@ -142,7 +142,7 @@
 <p>During ingest, <code>{seqn}</code> uses the current project’s saved counter. A new project starts at 0001, and another card for that project continues where the first stopped. Outside a project, it uses the shared counter across jobs. <strong>Start at</strong> shows the next number and accepts an override. Different projects can use the same numbers.</p>
 <p>The width comes from the zeros you type. <code>0001</code> in the start field gives four digits, so 7078 comes out as <code>7078</code> and 42 comes out as <code>0042</code>. Leading zeros are what keep files in order when something sorts them as text.</p>
 <p>Planning a job does not move the counter. Review the proposed names before copying. The counter is recorded as files are published, so an interrupted job can already have used numbers for its completed copies.</p>
-<p>Settings → Renaming shows the next sequence number and lets you change it. Review the starting number for the current project or job. Resetting or overriding a counter can reuse earlier numbers; the collision check still protects files already at the destination.</p>
+<p>Settings → Naming shows the next sequence number and lets you change it. Review the starting number for the current project or job. Resetting or overriding a counter can reuse earlier numbers; the collision check still protects files already at the destination.</p>
 <p><code>{seq}</code> is the other counter: it starts wherever you say, for this job only, and it is the right choice when a client wants photographs numbered from one.</p>
 </section>
 
@@ -166,7 +166,7 @@
 
 <section id="subfolders" class="guide-section">
 <h2>Subfolders</h2>
-<p>Your Ingest workspace can put each job in its own folder, named by the same kind of template. <code>{date:yyyy-MM-dd}</code> gives <code>2026-09-12</code>, and <code>{address}</code> gives a folder per listing.</p>
+<p>Your workspace’s import settings can put each job in its own folder, named by the same kind of template. <code>{date:yyyy-MM-dd}</code> gives <code>2026-09-12</code>, and <code>{address}</code> gives a folder per listing.</p>
 <p>Subfolder templates cannot use the per file tokens, because a folder cannot have a different name for each photograph inside it. <code>{seqn}</code>, <code>{seq}</code>, <code>{frame}</code>, <code>{base}</code>, <code>{ext}</code>, <code>{stack}</code>, and <code>{stackframe}</code> are refused with an explanation rather than silently ignored.</p>
 </section>
 
@@ -204,7 +204,7 @@
 <section id="snippets" class="guide-section">
 <h2>Snippets</h2>
 <p>A snippet is a short name that expands into longer text. Type <code>;addr</code> in quick entry, a caption, or the keyword field, and it becomes whatever you defined, tokens and all.</p>
-<p>The shipped one is <code>;addr</code>, which expands to <code>{address}, {city} {state}</code>. Settings, Snippets is where you add your own, and it shows you how quick entry will read the result while you are still typing it.</p>
+<p>The shipped one is <code>;addr</code>, which expands to <code>{address}, {city} {state}</code>. Settings → Metadata → Text Snippets is where you add your own, and it shows you how quick entry will read the result while you are still typing it.</p>
 <p>Snippets expand once and do not nest, and a name Ingest does not recognize is left alone rather than deleted. If two snippets share a name, the first one wins.</p>
 </section>
 <aside class="doc-next"><p>Keep exploring your workflow.</p><a href="/ingest/">Explore Ingest →</a><a href="/ingest/guide/#palette">Find it with ⌘K →</a></aside>

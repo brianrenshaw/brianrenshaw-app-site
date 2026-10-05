@@ -8,26 +8,10 @@
   },
   {
     "type": "section",
-    "title": "Set up the shoot once. Forget the folders.",
+    "title": "Your setup, ready for the next shoot.",
     "url": "/ingest/#workspaces",
     "page": "Home",
-    "keywords": "set up the shoot once. forget the folders. workspaces",
-    "hint": "Home"
-  },
-  {
-    "type": "section",
-    "title": "From the card. To your folders.",
-    "url": "/ingest/#loop",
-    "page": "Home",
-    "keywords": "from the card. to your folders. loop",
-    "hint": "Home"
-  },
-  {
-    "type": "section",
-    "title": "Keyboard-first. Never lost.",
-    "url": "/ingest/#keyboard",
-    "page": "Home",
-    "keywords": "keyboard-first. never lost. keyboard",
+    "keywords": "your setup, ready for the next shoot. workspaces wedding landscapes personal headshots events destinations settings",
     "hint": "Home"
   },
   {
@@ -35,31 +19,31 @@
     "title": "Type ;. See your options.",
     "url": "/ingest/#metadata-assist",
     "page": "Home",
-    "keywords": "type ;. see your options. metadata-assist",
+    "keywords": "type ;. see your options. metadata assist",
     "hint": "Home"
   },
   {
     "type": "section",
-    "title": "Also the basics. Without making them the story.",
+    "title": "See the detail. Keep the decisions.",
     "url": "/ingest/#workflow",
     "page": "Home",
-    "keywords": "also the basics. without making them the story. workflow",
+    "keywords": "see the detail. keep the decisions. workflow review faces detail reference candidate compare import",
     "hint": "Home"
   },
   {
     "type": "section",
-    "title": "Fits the rest of your Mac.",
-    "url": "/ingest/#after",
-    "page": "Home",
-    "keywords": "fits the rest of your mac. after",
-    "hint": "Home"
-  },
-  {
-    "type": "section",
-    "title": "A little something to share.",
+    "title": "Social Export and optional help",
     "url": "/ingest/#social-export",
     "page": "Home",
-    "keywords": "a little something to share. social-export",
+    "keywords": "social export and optional help social export social export naming base social",
+    "hint": "Home"
+  },
+  {
+    "type": "section",
+    "title": "Unapologetically Mac.",
+    "url": "/ingest/#shoot",
+    "page": "Home",
+    "keywords": "unapologetically mac. shoot",
     "hint": "Home"
   },
   {
@@ -68,14 +52,6 @@
     "url": "/ingest/#closing",
     "page": "Home",
     "keywords": "off the card. into your folders. closing",
-    "hint": "Home"
-  },
-  {
-    "type": "section",
-    "title": "A little help. Only if you want it.",
-    "url": "/ingest/#assistance-title",
-    "page": "Home",
-    "keywords": "a little help. only if you want it. assistance",
     "hint": "Home"
   },
   {
@@ -105,7 +81,7 @@
     "title": "Apple Photos, inside Ingest",
     "url": "/ingest/guide/#apple-photos",
     "page": "Guide",
-    "keywords": "apple photos, inside ingest apple-photos",
+    "keywords": "apple photos, inside ingest apple photos",
     "hint": "Guide"
   },
   {
@@ -113,7 +89,7 @@
     "title": "Review decisions and protection",
     "url": "/ingest/guide/#review-decisions",
     "page": "Guide",
-    "keywords": "review decisions and protection review-decisions",
+    "keywords": "review decisions and protection review decisions",
     "hint": "Guide"
   },
   {
@@ -137,7 +113,7 @@
     "title": "Crop and straighten",
     "url": "/ingest/guide/#crop-straighten",
     "page": "Guide",
-    "keywords": "crop and straighten crop-straighten",
+    "keywords": "crop and straighten crop straighten",
     "hint": "Guide"
   },
   {
@@ -153,7 +129,7 @@
     "title": "RAW histogram and preview comparison",
     "url": "/ingest/guide/#raw-histogram",
     "page": "Guide",
-    "keywords": "raw histogram and preview comparison raw-histogram",
+    "keywords": "raw histogram and preview comparison raw histogram",
     "hint": "Guide"
   },
   {
@@ -201,7 +177,7 @@
     "title": "Fujifilm recipes",
     "url": "/ingest/guide/#fujifilm-recipes",
     "page": "Guide",
-    "keywords": "fujifilm recipes fujifilm-recipes",
+    "keywords": "fujifilm recipes fujifilm recipes",
     "hint": "Guide"
   },
   {
@@ -217,7 +193,7 @@
     "title": "Metadata Assist",
     "url": "/ingest/guide/#quick-entry",
     "page": "Guide",
-    "keywords": "metadata assist quick-entry",
+    "keywords": "metadata assist quick entry metadata assist gps caption keywords location",
     "hint": "Guide"
   },
   {
@@ -257,7 +233,7 @@
     "title": "Ingesting",
     "url": "/ingest/guide/#ingesting",
     "page": "Guide",
-    "keywords": "ingesting ingesting",
+    "keywords": "ingesting ingesting import selected all tagged scope settings defaults",
     "hint": "Guide"
   },
   {
@@ -273,7 +249,7 @@
     "title": "Workspaces",
     "url": "/ingest/guide/#workspaces",
     "page": "Guide",
-    "keywords": "workspaces workspaces",
+    "keywords": "workspaces workspaces wedding landscapes personal headshots events destinations settings",
     "hint": "Guide"
   },
   {
@@ -297,7 +273,7 @@
     "title": "Social Export",
     "url": "/ingest/guide/#social-export",
     "page": "Guide",
-    "keywords": "social export social-export",
+    "keywords": "social export social export social export naming base social",
     "hint": "Guide"
   },
   {
@@ -306,6 +282,38 @@
     "url": "/ingest/guide/#settings",
     "page": "Guide",
     "keywords": "settings settings",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Send files to Apple Photos",
+    "url": "/ingest/guide/#send-to-photos",
+    "page": "Guide",
+    "keywords": "send files to apple photos send to photos",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Sorting and filtering",
+    "url": "/ingest/guide/#photo-bar",
+    "page": "Guide",
+    "keywords": "sorting and filtering photo bar",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Camera and lens details for film scans",
+    "url": "/ingest/guide/#camera-details",
+    "page": "Guide",
+    "keywords": "camera and lens details for film scans camera details",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Keywords",
+    "url": "/ingest/guide/#keywords",
+    "page": "Guide",
+    "keywords": "keywords keywords",
     "hint": "Guide"
   },
   {
@@ -416,7 +424,7 @@
     "title": "Apple Photos",
     "url": "/ingest/shortcuts/#apple-photos",
     "page": "Shortcuts",
-    "keywords": "apple photos apple-photos",
+    "keywords": "apple photos apple photos",
     "hint": "Shortcuts"
   },
   {
@@ -503,7 +511,7 @@
     "title": "Metadata Assist and Quick Entry",
     "url": "/ingest/templates/#quick-entry",
     "page": "Naming & metadata",
-    "keywords": "metadata assist and quick entry quick-entry",
+    "keywords": "metadata assist and quick entry quick entry metadata assist gps caption keywords location",
     "hint": "Naming & metadata"
   },
   {
@@ -512,6 +520,62 @@
     "url": "/ingest/templates/#snippets",
     "page": "Naming & metadata",
     "keywords": "snippets snippets",
+    "hint": "Naming & metadata"
+  },
+  {
+    "type": "section",
+    "title": "Numbers",
+    "url": "/ingest/templates/#tokens-sequence",
+    "page": "Naming & metadata",
+    "keywords": "numbers tokens sequence",
+    "hint": "Naming & metadata"
+  },
+  {
+    "type": "section",
+    "title": "Social Export",
+    "url": "/ingest/templates/#tokens-social",
+    "page": "Naming & metadata",
+    "keywords": "social export tokens social",
+    "hint": "Naming & metadata"
+  },
+  {
+    "type": "section",
+    "title": "Organize",
+    "url": "/ingest/templates/#tokens-organize",
+    "page": "Naming & metadata",
+    "keywords": "organize tokens organize",
+    "hint": "Naming & metadata"
+  },
+  {
+    "type": "section",
+    "title": "The file itself",
+    "url": "/ingest/templates/#tokens-file",
+    "page": "Naming & metadata",
+    "keywords": "the file itself tokens file",
+    "hint": "Naming & metadata"
+  },
+  {
+    "type": "section",
+    "title": "When it was taken",
+    "url": "/ingest/templates/#tokens-date",
+    "page": "Naming & metadata",
+    "keywords": "when it was taken tokens date",
+    "hint": "Naming & metadata"
+  },
+  {
+    "type": "section",
+    "title": "The camera",
+    "url": "/ingest/templates/#tokens-camera",
+    "page": "Naming & metadata",
+    "keywords": "the camera tokens camera",
+    "hint": "Naming & metadata"
+  },
+  {
+    "type": "section",
+    "title": "Where it was taken",
+    "url": "/ingest/templates/#tokens-place",
+    "page": "Naming & metadata",
+    "keywords": "where it was taken tokens place",
     "hint": "Naming & metadata"
   },
   {
@@ -534,7 +598,7 @@
     "title": "Shell scripts",
     "url": "/ingest/automation/#action-script",
     "page": "Automation",
-    "keywords": "shell scripts action-script",
+    "keywords": "shell scripts action script",
     "hint": "Automation"
   },
   {
@@ -542,7 +606,7 @@
     "title": "The ingest:// scheme",
     "url": "/ingest/automation/#url-scheme",
     "page": "Automation",
-    "keywords": "the ingest:// scheme url-scheme",
+    "keywords": "the ingest:// scheme url scheme",
     "hint": "Automation"
   },
   {
@@ -558,7 +622,7 @@
     "title": "Your settings as one file",
     "url": "/ingest/automation/#settings-file",
     "page": "Automation",
-    "keywords": "your settings as one file settings-file",
+    "keywords": "your settings as one file settings file",
     "hint": "Automation"
   },
   {
@@ -567,6 +631,126 @@
     "url": "/ingest/support/",
     "keywords": "support",
     "hint": "Page"
+  },
+  {
+    "type": "section",
+    "title": "What you need",
+    "url": "/ingest/support/#requirements",
+    "page": "Support",
+    "keywords": "what you need requirements",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "Cameras and files it reads",
+    "url": "/ingest/support/#formats",
+    "page": "Support",
+    "keywords": "cameras and files it reads formats",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "Memory cards",
+    "url": "/ingest/support/#cards",
+    "page": "Support",
+    "keywords": "memory cards cards",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "The first hour",
+    "url": "/ingest/support/#first-run",
+    "page": "Support",
+    "keywords": "the first hour first run",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "Thumbnails are slow or missing",
+    "url": "/ingest/support/#previews",
+    "page": "Support",
+    "keywords": "thumbnails are slow or missing previews",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "A copy did not finish",
+    "url": "/ingest/support/#ingest-problems",
+    "page": "Support",
+    "keywords": "a copy did not finish ingest problems",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "Backup strategy",
+    "url": "/ingest/support/#backup-strategy",
+    "page": "Support",
+    "keywords": "backup strategy backup strategy",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "Lightroom or Photos does not show my keywords",
+    "url": "/ingest/support/#metadata-problems",
+    "page": "Support",
+    "keywords": "lightroom or photos does not show my keywords metadata problems",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "Permission prompts",
+    "url": "/ingest/support/#permissions",
+    "page": "Support",
+    "keywords": "permission prompts permissions",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "Apple Photos availability",
+    "url": "/ingest/support/#photos-support",
+    "page": "Support",
+    "keywords": "apple photos availability photos support",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "Coming from Photo Mechanic",
+    "url": "/ingest/support/#photo-mechanic",
+    "page": "Support",
+    "keywords": "coming from photo mechanic photo mechanic",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "Updates",
+    "url": "/ingest/support/#updates",
+    "page": "Support",
+    "keywords": "updates updates",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "Credits",
+    "url": "/ingest/support/#credits",
+    "page": "Support",
+    "keywords": "credits credits",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "Get in touch",
+    "url": "/ingest/support/#contact",
+    "page": "Support",
+    "keywords": "get in touch contact",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "Claude Second Opinion",
+    "url": "/ingest/support/#second-opinion",
+    "page": "Support",
+    "keywords": "claude second opinion second opinion",
+    "hint": "Support"
   },
   {
     "type": "page",
@@ -584,10 +768,90 @@
   },
   {
     "type": "section",
-    "title": "Try braces (rename demo)",
-    "url": "/ingest/templates/#try-braces",
-    "page": "Naming & metadata",
-    "keywords": "rename braces curly demo try {",
-    "hint": "Naming & metadata"
+    "title": "Your photographs and what Ingest stores",
+    "url": "/ingest/privacy/#files",
+    "page": "Privacy",
+    "keywords": "your photographs and what ingest stores files",
+    "hint": "Privacy"
+  },
+  {
+    "type": "section",
+    "title": "Apple Photos and iCloud",
+    "url": "/ingest/privacy/#apple-photos",
+    "page": "Privacy",
+    "keywords": "apple photos and icloud apple photos",
+    "hint": "Privacy"
+  },
+  {
+    "type": "section",
+    "title": "Photo suggestions",
+    "url": "/ingest/privacy/#photo-suggestions",
+    "page": "Privacy",
+    "keywords": "photo suggestions photo suggestions",
+    "hint": "Privacy"
+  },
+  {
+    "type": "section",
+    "title": "Optional Claude Second Opinion",
+    "url": "/ingest/privacy/#second-opinion",
+    "page": "Privacy",
+    "keywords": "optional claude second opinion second opinion",
+    "hint": "Privacy"
+  },
+  {
+    "type": "section",
+    "title": "Address search",
+    "url": "/ingest/privacy/#address-search",
+    "page": "Privacy",
+    "keywords": "address search address search",
+    "hint": "Privacy"
+  },
+  {
+    "type": "section",
+    "title": "Software updates",
+    "url": "/ingest/privacy/#updates",
+    "page": "Privacy",
+    "keywords": "software updates updates",
+    "hint": "Privacy"
+  },
+  {
+    "type": "section",
+    "title": "No analytics, no account",
+    "url": "/ingest/privacy/#no-analytics",
+    "page": "Privacy",
+    "keywords": "no analytics, no account no analytics",
+    "hint": "Privacy"
+  },
+  {
+    "type": "section",
+    "title": "Actions you build yourself",
+    "url": "/ingest/privacy/#actions",
+    "page": "Privacy",
+    "keywords": "actions you build yourself actions",
+    "hint": "Privacy"
+  },
+  {
+    "type": "section",
+    "title": "The settings file you can export",
+    "url": "/ingest/privacy/#settings-file",
+    "page": "Privacy",
+    "keywords": "the settings file you can export settings file",
+    "hint": "Privacy"
+  },
+  {
+    "type": "section",
+    "title": "Questions and changes",
+    "url": "/ingest/privacy/#contact",
+    "page": "Privacy",
+    "keywords": "questions and changes contact",
+    "hint": "Privacy"
+  },
+  {
+    "type": "section",
+    "title": "Metadata Assist history",
+    "url": "/ingest/privacy/#metadata-assist-history",
+    "page": "Privacy",
+    "keywords": "metadata assist history metadata assist history",
+    "hint": "Privacy"
   }
 ]

@@ -1,3 +1,21 @@
+# Current website captures — October 5, 2026
+
+The 28 active images in `screenshots.json` are genuine native Retina window captures of the installed, signed **Ingest 0.9.5 (build 41)**, matching release source commit `661216f`. They replace every active app screenshot. Earlier images and recordings remain available at their original URLs, with their historical manifest entries and provenance below.
+
+The existing public photography was reused: 26 Wedding, 40 Landscapes, 39 Personal, 25 Headshots, and 25 Events RAW photographs from Signature Edits. License, original filename, source URL, camera, demo filename, and SHA-256 evidence remain in `raw-samples.json`. No new photography or personal library was introduced. The app used isolated state at `/Users/Shared/Ingest Website 0.9.5/Library` and the existing public Photo Library. All 155 original RAW hashes were verified after the session; the disposable landscape XMP sidecar used for Metadata Assist was restored from its pre-session copy.
+
+Stills were captured with `screencapture -x -o -a -l WINDOW_ID capture.png`, without cursor or window shadow. PNGs were encoded as lossless WebP without resizing or compositing; decoded pixel equality was checked. Individual physical dimensions, half-size display limits, and original PNG hashes are in the manifest. Most Browse and Review captures are 2882 × 1592; Settings and independent windows have their own native dimensions. Every image was visually inspected. Captures show no personal paths, accounts, or private photographs. Masters are retained locally under `/Users/Shared/Ingest Website 0.9.5/Captures`, outside the website repository.
+
+The five workspace setups and their matching options are illustrative settings, not built-in presets. Photo Work and Photo Backup are the existing disposable APFS demo volumes on the same host storage; they illustrate destination controls, **not resilient backup storage**. The website tells readers to use separate physical drives for the second copy. Example job names and dates describe organization; RAW capture dates remain intact. No actual import, Organize move, or Social Export was executed.
+
+`metadata-assist-gps-0.9.5.mp4` and `.webm` encode the same continuous 30-second, silent, 24 fps native recording. A 3106 × 1816 window recording was trimmed to the observed 2882 × 1592 content bounds (`crop=2882:1592:112:76`), and only its final fractional second was removed. There is no retiming, reconstructed interface, fake typing, or instructional overlay. The native macOS recording indicator remains visible. The user-visible sequence enters a caption and keywords, sets coordinates 37.746498, -119.584433, views the map, reviews the operations, and clicks Apply. The saved confirmation appears at the end. This writes only the disposable sample's metadata. The sample is `Landscapes/Mountain Light/002-Mountain-Light.CR2` (Canon EOS 6D), SHA-256 `660485046224b0cad01d3645eb783c8e0ec5c7cc4228358055a293fa02f8489a`. The poster is a separate lossless current-interface capture, `metadata-assist-dark-0.9.5-retina.webp`. Video checksums, codecs, dimensions, and poster associations are recorded in the manifest.
+
+`share-0.9.5.png` is dedicated website share artwork, rendered from the established colors and bundled Archivo font by `scripts/build_ingest_social.py`. It is typography, not an app screenshot.
+
+---
+
+# Historical capture records
+
 ## Interactive setups and Metadata Assist recording — September 26, 2026
 
 Five `workspace-*-setup-dark-0.9.4.2-retina.webp` files show genuine signed Ingest 0.9.4.2 (36) Settings windows. Each is 2056 × 2580 physical pixels (1028 × 1290 logical), captured with `screencapture -x -o -a -l` and encoded as lossless WebP with decoded pixel equality checked against its PNG. No UI was composited or retouched. Workspaces use the exact Wedding, Landscapes, Personal, Headshots, and Events job/folder/naming examples on the homepage. Originals is the receiving child folder; the other child folders are empty placeholders for later editor outputs or chosen copies. No ingest or editor operation was performed.

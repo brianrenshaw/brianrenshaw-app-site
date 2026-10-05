@@ -10,13 +10,13 @@
 <meta property="og:title" content="Ingest — Help with your photo workflow.">
 <meta property="og:description" content="Find requirements, file support, and help with browsing, importing, metadata, and Apple Photos. If you need a hand, get in touch with the app version and what happened.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/support/">
-<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/palette-dark-0.9.4.2-retina.webp">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/share-0.9.5.png">
+<meta property="og:image:alt" content="Ingest. Cull. Browse. Organize. Workspaces and Metadata Assist for Mac."><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
-<link rel="stylesheet" href="/ingest/assets/site.css?v=0942-workspaces-chips">
-<script src="/ingest/assets/overlays.js?v=2" defer></script><script src="/ingest/assets/command-palette.js" defer></script></head>
+<link rel="stylesheet" href="/ingest/assets/site.css?v=095-refresh">
+<script src="/ingest/assets/overlays.js?v=2" defer></script><script src="/ingest/assets/command-palette.js?v=095-refresh" defer></script></head>
 <body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/" aria-current="page">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" aria-label="Download Ingest" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.5/Ingest-0.9.5.dmg"><span class="nav-download-label">Download <span aria-hidden="true">↗</span></span><svg class="nav-download-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3"/></svg></a></nav></header>
@@ -60,7 +60,7 @@
 
 <section id="cards">
 <h2>Memory cards</h2>
-<p>Insert a card and it appears in the sources list with its name and free space. By default Ingest opens it for you. That is a setting in Settings, General, if you would rather it just sat in the list.</p>
+<p>Insert a card and it appears in the sources list with its name and free space. By default Ingest opens it for you. That is a setting in Settings → Transfers, if you would rather it just sat in the list.</p>
 <p><strong>Reviewing does not change your card originals.</strong> Ratings, keywords, renaming, and Finder tags are applied to copies, not to files on the card. Source files are deleted only when you explicitly request it after copies have been verified at every destination. That holds however you opened the card, including when you open a folder that happens to live on one. Metadata you add while culling is remembered and applied to the copies during ingest.</p>
 <p>If a card does not appear, check that it is mounted in Finder. Ingest looks for a <code>DCIM</code> folder to recognize a volume as a card. A card formatted by something other than a camera may not have one, in which case open it with <kbd>⌘O</kbd> as an ordinary folder.</p>
 <p>To eject, press <kbd>⌘E</kbd>. Ingest closes everything it has open on the card first, so eject does not fail with a file in use. If macOS still refuses, another app is holding the card. Pulling a card without ejecting does not crash Ingest. It notices and closes the source.</p>
@@ -83,14 +83,14 @@
 <h2>A copy did not finish</h2>
 <p>Ingest copies to a temporary name, flushes it to disk, reads the copy back, compares it to the source, and only then gives it its real name. Nothing is ever overwritten. If something goes wrong part way, the files that were already copied and verified are kept and the rest are not, and the receipt records what happened.</p>
 <dl>
-<dt>The Ingest button is dim</dt>
-<dd>The reason is printed beside it. The usual ones are no destination chosen, no eligible photos checked for import, a template that will not parse, or two photographs that would end up with the same name.</dd>
+<dt>The Import button is dim</dt>
+<dd>The reason is printed beside it. The usual ones are no destination chosen, an empty All, Tagged, or Selected scope, a template that will not parse, or two photographs that would end up with the same name.</dd>
 <dt>Names collide</dt>
 <dd>Ingest refuses rather than quietly adding a suffix. Add <code>{seqn}</code> or <code>{seq}</code> to the template so every name is different. See <a href="/ingest/templates/#collisions">collisions</a>.</dd>
 <dt>Not enough space</dt>
 <dd>The import plan checks free space before it starts and tells you, rather than filling the disk and failing at photograph two hundred.</dd>
 <dt>Deleting from the card</dt>
-<dd>Only files whose copies verified at every destination are deleted. Choosing to delete everything asks you to confirm, and that choice is never remembered for next time.</dd>
+<dd>Keep Leave the card alone to preserve originals. If you choose Delete copied files, copies must verify at every destination. In a RAW-only import, cleanup also removes the intentionally excluded JPEG/HEIF twin after its RAW verifies. Changed, failed, or protected files are retained. Delete everything asks for confirmation and is not remembered for next time.</dd>
 </dl>
 </section>
 
@@ -113,7 +113,7 @@
 <section id="permissions">
 <h2>Permission prompts</h2>
 <p>macOS asks before an app reads a removable volume. Allow it, or Ingest cannot see your cards. If you dismissed it, the switch is in System Settings, Privacy &amp; Security, Files and Folders.</p>
-<p>Connecting to Apple Photos or sending files to it requests Photos read/write permission. Ingest uses your System Photo Library, not an arbitrary library file. If Connect did nothing in an older beta, update to the current release and try again. If access was denied, choose Open Photos Privacy Settings, enable Ingest, and return to the app. In 0.8.5, Settings → General controls Apple Photos integration for the app. Turning it off hides those features. Workspace-specific control is planned. An action that runs a Shortcut asks for permission to control Shortcuts when needed.</p>
+<p>Connecting to Apple Photos or sending files to it requests Photos read/write permission. Ingest uses your System Photo Library, not an arbitrary library file. If Connect did nothing in an older beta, update to the current release and try again. If access was denied, choose Open Photos Privacy Settings, enable Ingest, and return to the app. Settings → General controls Apple Photos integration for the app, and each workspace has its own switch. Both must be on. Turning integration off hides Photos controls and stops observation; it preserves your saved state. An action that runs a Shortcut asks for permission to control Shortcuts when needed.</p>
 </section>
 
 <section id="photos-support">
@@ -144,6 +144,7 @@
 <h2>Get in touch</h2>
 <p>Email <a href="mailto:contact@brianrenshaw.app?subject=Ingest%20support">contact@brianrenshaw.app</a> with your macOS version, the Ingest version from Settings, General, and your camera model. Tell me what you pressed and what happened. You never need to send me a photograph to report a problem.</p>
 </section>
+<section id="second-opinion"><h2>Claude Second Opinion</h2><p>This optional feature needs Claude Code installed and signed in to your Claude subscription. It uses your account’s connection and usage limits. It is separate from the built-in on-device checks, which do not require Claude. <a href="/ingest/privacy/#second-opinion">Review what Ask sends to Anthropic</a> before using it.</p></section>
 <aside class="doc-next"><p>Keep exploring your workflow.</p><a href="/ingest/">Explore Ingest →</a><a href="/ingest/guide/#palette">Find it with ⌘K →</a></aside>
 </main>
 <footer class="family-footer">

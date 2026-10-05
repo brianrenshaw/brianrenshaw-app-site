@@ -1,7 +1,8 @@
 /* Site command palette. Progressive enhancement — navigation works without JS. */
 (() => {
-  const INDEX_URL = '/ingest/assets/search-index.json';
-  const DOWNLOAD = 'https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.3/Ingest-0.9.3.dmg';
+  const INDEX_URL = '/ingest/assets/search-index.json?v=095-refresh';
+  const DOWNLOAD = document.querySelector('a[href*="/releases/download/ingest-v"][href$=".dmg"]')?.href
+    || 'https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.5/Ingest-0.9.5.dmg';
 
   const isMac = /Mac|iPhone|iPad|iPod/.test(navigator.platform || '') || (navigator.userAgentData && navigator.userAgentData.platform === 'macOS');
   const modLabel = isMac ? '⌘' : 'Ctrl';
@@ -95,7 +96,7 @@
       const el = document.getElementById(url.hash.slice(1));
       if (el) {
         history.pushState(null, '', url.hash);
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        el.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' });
         return;
       }
     }

@@ -10,23 +10,23 @@
 <meta property="og:title" content="Ingest — Your photos. Your control.">
 <meta property="og:description" content="What Ingest reads, what it writes, and how optional Apple services and update checks use the network.">
 <meta property="og:url" content="https://brianrenshaw.app/ingest/privacy/">
-<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/palette-dark-0.9.4.2-retina.webp">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://brianrenshaw.app/ingest/assets/share-0.9.5.png">
+<meta property="og:image:alt" content="Ingest. Cull. Browse. Organize. Workspaces and Metadata Assist for Mac."><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/ingest/assets/icon.png">
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
-<link rel="stylesheet" href="/ingest/assets/site.css?v=0942-workspaces-chips">
-<script src="/ingest/assets/overlays.js?v=2" defer></script><script src="/ingest/assets/command-palette.js" defer></script></head>
+<link rel="stylesheet" href="/ingest/assets/site.css?v=095-refresh">
+<script src="/ingest/assets/overlays.js?v=2" defer></script><script src="/ingest/assets/command-palette.js?v=095-refresh" defer></script></head>
 <body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" aria-label="Download Ingest" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.5/Ingest-0.9.5.dmg"><span class="nav-download-label">Download <span aria-hidden="true">↗</span></span><svg class="nav-download-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3"/></svg></a></nav></header>
 <main id="main" tabindex="-1" class="family-document">
 <p class="eyebrow">Ingest / Privacy</p>
 <h1>Your photos. Your control.</h1>
-<p>Last updated September 24, 2026. Applies to Ingest 0.8.5.</p>
-<p class="intro">Ingest has no account, no analytics, and no server of mine that receives your photographs. Optional Apple Photos, address and map services, and software updates use the network as described below.</p>
+<p>Last updated October 5, 2026. Applies to Ingest 0.9.5 (41).</p>
+<p class="intro">Ingest has no account, no analytics, and no server of mine that receives your photographs. Optional Apple Photos, address and map services, Claude Second Opinion, and software updates use the network as described below.</p>
 
-<nav class="guide-toc" aria-label="On this page"><a href="#files">Your photographs and what Ingest stores</a><a href="#apple-photos">Apple Photos and iCloud</a><a href="#photo-suggestions">Photo suggestions</a><a href="#address-search">Address search</a><a href="#updates">Software updates</a><a href="#no-analytics">No analytics, no account</a><a href="#actions">Actions you build yourself</a><a href="#settings-file">The settings file you can export</a><a href="#contact">Questions and changes</a></nav>
+<nav class="guide-toc" aria-label="On this page"><a href="#files">Your photographs and what Ingest stores</a><a href="#apple-photos">Apple Photos and iCloud</a><a href="#photo-suggestions">Photo suggestions</a><a href="#second-opinion">Claude Second Opinion</a><a href="#address-search">Address search</a><a href="#updates">Software updates</a><a href="#no-analytics">No analytics, no account</a><a href="#actions">Actions you build yourself</a><a href="#settings-file">The settings file you can export</a><a href="#contact">Questions and changes</a></nav>
 <section id="files">
 <h2>Your photographs and what Ingest stores</h2>
 <p>Ingest reads the cards and folders you open. It reads metadata and previews for browsing, and reads image data for rendering, analysis, exports, and verified copies. File workflows write to the destinations you choose. Sending files to Apple Photos is described below.</p>
@@ -35,16 +35,17 @@
 <li>Small settings files in your Application Support folder, holding your options, name templates, metadata presets, snippets, splits, workspaces, actions, and keyboard shortcuts.</li>
 <li>Per folder marks. Tags, rejection, reviewed status, protection, stars, and color labels, stored by file identity rather than written onto a card.</li>
 <li>Cached thumbnails and header information in your Caches folder, kept under 2 GB, cleared from Settings, Advanced.</li>
+<li>Review layout and inspection preferences, face/detail corrections, saved Organize drafts, and Social Export projects and presets.</li>
 <li>Logs from supplied or custom actions you have run.</li>
 <li>A record of each ingest, so the app can tell you which photographs from a card you already copied.</li>
 </ul>
-<p>When you ask it to, Ingest writes keywords, captions, titles, ratings, color labels, and GPS into your photograph files. These changes go into supported writable image files or XMP sidecars. Memory-card originals do not receive metadata edits; changes made while reviewing a card are applied to the copies during import. Source files are deleted only when you explicitly request deletion after verified copying.</p>
+<p>When you ask it to, Ingest writes keywords, captions, titles, ratings, color labels, and GPS into your photograph files. These changes go into supported writable image files or XMP sidecars. Memory-card originals do not receive metadata edits; changes made while reviewing a card are applied to the copies during import. Card cleanup runs only when explicitly requested after verified copying. With RAW-only import, Delete copied files also removes deliberately excluded JPEG/HEIF twins after their RAW copy verifies at every destination. Keep Leave the card alone to preserve all originals.</p>
 <p><strong>Local photo analysis.</strong> Apple’s Vision framework finds faces and other subjects for close-ups, similarity grouping, and culling suggestions. Ingest caches feature prints, face and subject regions, and assessment results on your Mac. User corrections persist locally. No names or identities are assigned, and no analysis or photograph is sent to a server for these features. Suggestions change no decisions until you apply them.</p>
 </section>
 
 <section id="apple-photos">
 <h2>Apple Photos and iCloud</h2>
-<p>In 0.8.5, Apple Photos integration is on by default and can be turned off for the app in Settings → General. Workspace-specific control is planned. Enabling the feature does not itself request library access. Connecting or sending photos requests native Photos read/write permission for your System Photo Library. You can revoke it in macOS System Settings → Privacy &amp; Security → Photos.</p>
+<p>Apple Photos integration has a global switch in Settings → General and a switch for each workspace. Both must be enabled. Enabling the feature does not itself request library access. Connecting or sending photos requests native Photos read/write permission for your System Photo Library. You can revoke it in macOS System Settings → Privacy &amp; Security → Photos.</p>
 <p>Ingest uses Apple’s PhotoKit framework to read your photos and albums and apply the changes you request. Cloud-only images, video, or Live Photos may be downloaded by Apple Photos. Imports, favorite and metadata changes, album organization, and library deletions follow your Photos and iCloud settings and may sync to your other devices. Ingest does not upload your library to a server operated by me.</p>
 <p>Ingest stores Photos object references, local tags, rejection, protection, color labels, review marks, grouping recipes, and import receipts on your Mac. On systems before macOS 27, Photos star ratings are stored locally as well. Social Export keeps durable local copies of the rendered Photos images you import into a project; clearing thumbnails does not remove those project inputs. Sending files to Photos stages local copies and retains import receipts so confirmed imports can be reused.</p>
 <p>Turning integration off hides its controls and stops library observation. It preserves your saved Ingest state, does not revoke the macOS permission, and does not remove photos or undo changes already made in Photos.</p>
@@ -55,6 +56,7 @@
 <p>When you request a caption or keywords with Apple Intelligence, the on-device model processes a preview of your selected photo on your Mac. Suggestions remain editable drafts until you approve them. Ingest does not send the photograph to a cloud AI service.</p>
 </section>
 
+<section id="second-opinion"><h2>Optional Claude Second Opinion</h2><p>Choosing <strong>Ask Claude for a Second Opinion…</strong> or <strong>Ask Claude About This Folder or Album…</strong> opens an optional conversation. Clicking <strong>Ask</strong> sends your question and requested photo previews, detail crops, and measurements to Anthropic through your own Claude account and installed Claude Code. Each question can retrieve up to 12 previews and four detail crops. Your Claude account’s terms and usage limits apply.</p><p>This is separate from Ingest’s built-in on-device analysis and Apple Intelligence suggestions. Claude can inspect and navigate the fixed photo scope, including opening comparisons; its Ingest tools cannot change ratings, tags, metadata, or originals. Opening the conversation alone does not send a question. Ingest disables Claude session persistence for this integration; this does not describe Anthropic’s server-side retention.</p></section>
 <section id="address-search">
 <h2>Address search</h2>
 <p>When you type in the address field, Ingest sends what you typed to Apple's MapKit service to get suggestions and coordinates. That is the only way to turn an address into a location, and Apple handles those requests under its own privacy terms. Address search happens only while you are typing in that field. Displaying a location map can also request map data from Apple for the photograph’s coordinates. You can hide Location map in Settings → Sidebar Information. Pasting coordinates or entering city/state manually does not perform an address search.</p>

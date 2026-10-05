@@ -3,7 +3,7 @@
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin,urlsplit,unquote
-import re,sys
+import json,re,sys
 ROOT=Path(__file__).resolve().parents[1]/'site'
 class Page(HTMLParser):
  def __init__(self,text):
@@ -37,6 +37,12 @@ for p,page in pages.items():
   if not path.exists():errors.append(f'{rel}: missing {ref}')
   elif target.fragment and path in pages and unquote(target.fragment) not in pages[path].ids:errors.append(f'{rel}: missing fragment {ref}')
   links+=1
+# Search has its own route list; validate it alongside links rendered in HTML.
+for item in json.loads((ROOT/'ingest/assets/search-index.json').read_text()):
+ target=urlsplit(item['url'])
+ path=ROOT/target.path.lstrip('/')/'index.html'
+ if path not in pages:errors.append(f"Ingest search: missing page {item['url']}")
+ elif target.fragment and unquote(target.fragment) not in pages[path].ids:errors.append(f"Ingest search: missing fragment {item['url']}")
 for p in ROOT.rglob('*.css'):
  for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)',p.read_text()):
   if ref.startswith('data:'):continue

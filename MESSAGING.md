@@ -110,41 +110,37 @@ Approved with Brian on September 11, 2026.
 
 **Scope:** This copy describes the linked site at https://www.whatdidtheyread.com/. Its templates, copy, and publishing live in the sibling `blog-explorer` repository under `blogs/whatdidtheyread/`.
 
-## Ingest (September 25, 2026 — current positioning)
+## Ingest (October 5, 2026; release 0.9.5, build 41)
 
-**Identity:** A keyboard-first Mac photo workflow app: ingest, cull, browse, organize.
+**Identity:** A native Mac photo workflow app for personal and professional photography.
 
 **Headline (exact):** Ingest. Cull. Browse. Organize.
 
-**Supporting copy:** Open a card or a folder. Cull and browse with the keyboard. Organize when you’re ready — in one modern Mac app.
+**Supporting copy:** Save a workspace for each kind of shoot. Review your photos, add metadata, and import into folders named the way you want.
 
-**Homepage pitch order:** hero → Workspaces → Metadata Assist (one beat) → basics demoted → download. Card-to-folders and Command Palette are no longer primary homepage sections; verified copies and ⌘K stay as short mentions inside the demoted basics band.
+**Homepage order:** Introduction and five-shoot showcase → Workspaces → Metadata Assist → concise Review/import capabilities → supporting extras → Mac developer story → download. Keep Workspaces first and Metadata Assist second. Social Export and optional analysis remain secondary.
 
-**Audience and priorities:** Photographers doing personal and professional work. One homepage for both. Primary differentiators in visual weight: Workspaces, then Metadata Assist. Speed supports the story; do not claim fastest performance, universal format support, exclusivity, or blanket feature parity. Push Social Export and optional AI off the main story into one quiet line. Social Export is not personal-only — it covers business social posts too — but it stays quiet, not a front-of-page pitch. Never use “AI-first” or “AI on call.”
+**Workspaces:** Saved destinations, backup, folder structures, filenames, metadata, routing, starting view, grouping, and favorites. Wedding, Landscapes, Personal, Headshots, and Events are adaptable examples, not built-in presets. Settings sections named Ingest, Organize, Browse, and Social Export configure defaults; they are not navigation tabs. Apple Photos requires both the global switch and the workspace switch.
 
-**Marketing deep links:** Getting started (`/ingest/getting-started/`) is the default first-touch docs link from marketing CTAs and “learn more.” Guide stays the encyclopedia; nav can still list it. `/ingest/quick-start/` redirects to Getting started.
+**Workflow:** Browse is central. Import… opens reviewed Import Settings. Scope starts at Selected when a selection exists, otherwise All; Tagged is an explicit choice. Display filters do not choose import membership. Organize and Social Export open independent windows and retain drafts. Review uses a fixed queue with face/detail inspection. Compare holds Select while candidates change. Canonical details live in the Guide; default keys live in Shortcuts.
 
-**Workspaces:** Full shoot setup, not metadata-only presets — naming, folders, templates, delivery folders, Apple Photos and Social Export toggles, starting view, grouping. Example shoots (Personal, Real Estate, Wedding, Wildlife) are configurations, not four claimed built-in presets.
+**Metadata Assist:** Structured entry and review. Type `;` to find fields, use Tab for completion, and review before Apply. GPS locations and typed IPTC place names are distinct. Apply edits writable files or sidecars; Use for Import stages details for verified copies. Copy Metadata chooses field groups and keyword merge behavior; Paste Metadata applies those choices directly. `{…}` tokens belong to naming templates. Quick Entry remains supported in the same reviewed editor. Do not make fake interactive app demos.
 
-**Command Palette:** ⌘K is the safety net and teacher. Search an action, view, or mode; the shortcut appears beside it. Not a terminal or natural-language AI interface. On the homepage it is mentioned inside the demoted basics band, not as its own hero section.
+**Supporting capabilities:** Manual culling, face inspection, comparison, loupe, histograms, reversible crops, ratings, and verified copies. ⌘K finds commands and shows contextual availability and shortcuts. Do not claim universal format support, fastest performance, or blanket parity.
 
-**Metadata Assist:** Structured editor, not an AI writer. Type `;` to see field options (a fragment like `;lo` only narrows); Tab, fill or search; review before apply. Typing alone writes nothing. Copy/Paste Metadata with ⇧⌘C / ⇧⌘V (field groups, remembered per workspace). Keep `;` for metadata fields distinct from `{…}` rename and folder template variables. Quick Entry (`Q`) remains the older one-line syntax inside the same reviewed editor. No fake interactive `;` demos on the site.
+**Optional analysis:** Built-in face, sharpness, similarity, and keeper checks run locally. Apple Intelligence caption/keyword suggestions run on-device on supported systems. Claude Second Opinion is a separate opt-in integration: Ask sends requested previews, crops, measurements, and the question through the user's Claude account. Never describe all optional assistance as offline or account-free. Ingest itself needs no account. Privacy is authoritative for storage and network behavior.
 
-**AI assistance:** Soft focus, closed eyes, near-duplicates, suggested keepers — optional, on-device, nothing tagged until the photographer applies. Distinct from Metadata Assist. Do not lead the page with AI culling. On the homepage it shares one quiet line with Social Export.
+**Social Export:** Independent window; Send to Social Export… uses the selection, Social Export… resumes the editor. Export reviews destinations, dimensions, and names. The native default pattern is `{base}_social`; Naming & Metadata owns the token reference.
 
-**Scope:** Import, cull, browse, and organize are useful independently. Existing folders and finished exports are first-class. Table-stakes review tools (loupe, compare, faces, RAW histogram, crop, stacks, ratings) get a short demoted “also the basics” list — not the hero. IPTC and optional Apple Photos stay supporting.
+**Visual direction:** Existing bright neutral/amber static HTML and CSS. Genuine dark native app captures, cursor-free and lossless at 2× density, with full-resolution links. Photography uses the existing licensed public RAW collections. Keep their provenance and archive old assets at existing URLs. Share artwork is separate branded typography, not an app screenshot.
 
-**Visual direction:** Bright neutral product page, genuine app-window screenshots (no desktop or screen-share chrome). Prefer ~2400×1600 retina captures for full-window homepage shots. Keep URLs, section anchors, and the Sparkle feed.
+**Availability:** Free during beta, no Ingest account, macOS 15+, Apple silicon. Current download: 0.9.5 (41).
 
-**Photography:** Public / demo photographs only. Never use personal or client work. Credits in assets/SOURCES.md where applicable.
+**Mac identity:** “Unapologetically Mac.” Brian is a photographer and Apple enthusiast who built the app for his own Mac workflow.
 
-**Availability:** Working beta, free during beta, no account. macOS 15+, Apple silicon. Current download and badges: 0.9.1. File-format specifics live on Support.
+**Canonical references:** Getting Started owns the first-run path; Guide owns behavior; Shortcuts owns default keys and contexts; Naming & Metadata owns tokens and naming defaults; Automation owns URL schemes and actions; Support owns compatibility and troubleshooting; Privacy owns data handling. Preserve routes, anchor IDs, the Quick Start redirect, historical release entries, and the permanent Sparkle feed.
 
-**Safety and privacy:** Verified copies; card untouched by default; cleanup is a separate explicit choice. Photo analysis is local; optional Apple Photos follows iCloud settings.
-
-**Mac identity:** “Unapologetically Mac.” Brian is an Apple enthusiast and photographer who built Ingest for this machine. Keep that voice in the developer story.
-
-Earlier implementation records below are historical. This section supersedes their conflicting positioning or visual choices.
+Earlier implementation records below are historical. This section supersedes conflicting positioning or visual choices.
 
 ## Editorial rules
 
