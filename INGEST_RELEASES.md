@@ -49,6 +49,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.9.5 | 41 | October 5, 2026 | Review queue and face inspection, independent editors, Import Settings, reliable eye assessments, shortcuts, and steadier navigation. |
 | 0.9.4.6 | 40 | September 30, 2026 | Photo Suggestions shows one section per set of similar shots and leaves out photos with nothing to compare; a group bar, clickable headings and [ ] move between group-by sections, scenes and suggestion sets. |
 | 0.9.4.5 | 39 | September 30, 2026 | Sort by Visual appeal (the stored on-device estimate, highest first, unassessed last) replaces Photo Suggestions' Find highlights mode, which excluded most photos of people and buried its picks. |
 | 0.9.4.4 | 38 | September 30, 2026 | Ingest sidebar rebuilt in three planes with one destination tree, project job folders follow the Subfolders template, sharper focus peaking, ranked palette metadata searches, Metadata Assist location summary, and metadata read retries. |

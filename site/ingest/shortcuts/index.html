@@ -19,7 +19,7 @@
 <script src="/ingest/assets/overlays.js?v=2" defer></script><script src="/ingest/assets/command-palette.js" defer></script></head>
 <body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" aria-label="Download Ingest" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.4.4/Ingest-0.9.4.4.dmg"><span class="nav-download-label">Download <span aria-hidden="true">↗</span></span><svg class="nav-download-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3"/></svg></a></nav></header>
+<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" aria-label="Download Ingest" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.5/Ingest-0.9.5.dmg"><span class="nav-download-label">Download <span aria-hidden="true">↗</span></span><svg class="nav-download-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3"/></svg></a></nav></header>
 <nav class="docs-nav" aria-label="Ingest documentation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/shortcuts/" aria-current="page">Shortcuts</a><a href="/ingest/templates/">Naming &amp; metadata</a><a href="/ingest/automation/">Automation</a></nav>
 <main id="main" tabindex="-1" class="family-document reference">
 <p class="eyebrow">Ingest / Shortcuts</p>
@@ -42,7 +42,7 @@
 <a href="#app">App</a>
 <a href="#rebinding">Changing a key</a>
 <a href="#palette">The Command Palette</a>
-</nav>
+</nav><p>To show the shortcut overlay, tap and release <kbd>⌘</kbd>, then press it again and hold. A single long hold does not open it. Settings offers an enable switch and 600, 900, or 1,200 ms second-hold delay. Quick Tips can teach current custom shortcuts as you work; disable teaching or reset its learning in Browsing Settings.</p>
 
 <section id="reading" class="guide-section">
 <h2>How to read this</h2>
@@ -59,10 +59,10 @@
 <table>
 <thead><tr><th scope="col">Keys</th><th scope="col">What they do</th></tr></thead>
 <tbody>
-<tr><td><kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd></td><td>Move between photographs. Hold <kbd>⇧</kbd> to extend the selection, hold <kbd>⌘</kbd> to move the focus without changing the selection.</td></tr>
+<tr><td><kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd></td><td>Move between photographs; when zoomed, pan the current photo. Hold <kbd>⇧</kbd> to extend the selection, hold <kbd>⌘</kbd> to move the focus without changing the selection.</td></tr>
 <tr><td><kbd>Space</kbd></td><td>Open or close the preview. On a video, play or pause.</td></tr>
 <tr><td><kbd>↩</kbd></td><td>Open or close the preview.</td></tr>
-<tr><td><kbd>Esc</kbd></td><td>Leave Compare, then leave the preview. In a text field, leave the field.</td></tr>
+<tr><td><kbd>Esc</kbd></td><td>Dismiss the innermost popup or editing interaction, then leave Compare or Review. Escape does not close an idle standalone editor.</td></tr>
 <tr><td><kbd>Tab</kbd></td><td>Hide or show both side panels at once.</td></tr>
 <tr><td><kbd>⌥Tab</kbd></td><td>Next split. <kbd>⌥⇧Tab</kbd> goes back.</td></tr>
 <tr><td><kbd>Home</kbd> <kbd>End</kbd></td><td>First and last photograph.</td></tr>
@@ -75,7 +75,7 @@
 
 <section id="tag" class="guide-section">
 <h2>Marking</h2>
-<p>By default a marking key acts where you are and does not move on. Turn on advancing in Settings, Culling, and then holding <kbd>⇧</kbd> does the opposite for one press. The command names in the app flip to match, so the menu always tells the truth.</p>
+<p>By default a marking key acts where you are and does not move on. Turn on advancing in Settings → Browsing, and then holding <kbd>⇧</kbd> does the opposite for one press. The command names in the app flip to match, so the menu always tells the truth.</p>
 <div class="guide-table" tabindex="0" role="region" aria-label="Marking keys">
 <table>
 <thead><tr><th scope="col">Keys</th><th scope="col">Command</th><th scope="col">Where</th></tr></thead>
@@ -148,7 +148,7 @@
 <tr><td>no key</td><td>Sort by group order</td><td>Organize</td></tr>
 <tr><td>no key</td><td>Reverse the sort order</td><td></td></tr>
 <tr><td>no key</td><td>Hide Both Sidebars / Show Both Sidebars (search “sidebar” in the Command Palette)</td><td>All workspaces</td></tr>
-<tr><td><kbd>[</kbd> <kbd>]</kbd></td><td>Previous and next group: a day or other group-by section, a scene, or a set in Photo Suggestions</td><td>Grid, preview</td></tr>
+<tr><td><kbd>[</kbd> <kbd>]</kbd></td><td>Previous and next face while face inspection is active; otherwise the previous and next group, scene, or Photo Suggestions set</td><td>Grid, preview</td></tr>
 <tr><td>no key</td><td>Group by Day, Camera, Lens, ISO or Location; Clear Grouping. Click the group bar or any heading to jump to a group.</td><td>Group control</td></tr>
 <tr><td>no key</td><td>Manage keywords everywhere at once</td><td></td></tr>
 </tbody>
@@ -182,7 +182,7 @@
 <thead><tr><th scope="col">Keys</th><th scope="col">Command</th></tr></thead>
 <tbody>
 <tr><td><kbd>⌘A</kbd></td><td>Select all</td></tr>
-<tr><td><kbd>⌥⌘A</kbd></td><td>Deselect all</td></tr>
+<tr><td><kbd>⌘D</kbd></td><td>Deselect all</td></tr>
 <tr><td><kbd>⇧⌘I</kbd></td><td>Invert the selection</td></tr>
 <tr><td><kbd>⌘T</kbd></td><td>Select everything tagged</td></tr>
 <tr><td><kbd>⇧⌘T</kbd></td><td>Show only what is tagged</td></tr>
@@ -194,7 +194,7 @@
 </tbody>
 </table>
 </div>
-<p>Selection follows the Finder. Click to select, <kbd>⌘</kbd> click to add or remove one, <kbd>⇧</kbd> click to take a range. <kbd>⌘</kbd> with an arrow key moves the focus ring without changing what is selected, which is how you reach past a selection without losing it.</p>
+<p>Click to start a new selection, <kbd>⌘</kbd> click to add or remove one, <kbd>⇧</kbd> click to add an anchor-to-click range while preserving earlier selections. <kbd>⌘</kbd> with an arrow key moves the focus ring without changing what is selected, which is how you reach past a selection without losing it.</p>
 </section>
 
 <section id="stack" class="guide-section">
@@ -243,7 +243,7 @@
 
 <section id="file" class="guide-section">
 <h2>Files and ingest</h2>
-<p><kbd>⇧⌘E</kbd> imports the current selection into a new <a href="/ingest/guide/#social-export">Social Export</a> project. <kbd>⌘E</kbd> opens its export sheet. Browse keeps <kbd>⌘E</kbd> for Eject. Use Go to Social Export to resume a project without importing. Inside Social Export, arrows select frames, or nudge a selected photo by one exported pixel (<kbd>⇧</kbd> for ten). <kbd>Z</kbd> shows the exported file at 100%. <kbd>Esc</kbd> steps back out of that view, then out of the selected photo, then out of Social Export. <kbd>⌘Z</kbd>/<kbd>⇧⌘Z</kbd> undo or redo composition edits. Text fields retain native editing shortcuts.</p>
+<p><kbd>⇧⌘E</kbd> sends the current selection to an independent <a href="/ingest/guide/#social-export">Social Export</a> project. <kbd>⌘E</kbd> opens its export sheet. Browse keeps <kbd>⌘E</kbd> for Eject. Choose File → Social Export… with no selection to resume. Sending photos to a populated editor offers New Project, Add to Current, or Cancel. Inside Social Export, arrows select frames, or nudge a selected photo by one exported pixel (<kbd>⇧</kbd> for ten). <kbd>Z</kbd> shows the exported file at 100%. <kbd>Esc</kbd> steps back out of that view, then out of the selected photo, without closing the editor window. Use <kbd>⌘W</kbd> to close an idle editor and save its draft. <kbd>⌘Z</kbd>/<kbd>⇧⌘Z</kbd> undo or redo composition edits. Text fields retain native editing shortcuts.</p>
 <div class="guide-table" tabindex="0" role="region" aria-label="File keys">
 <table>
 <thead><tr><th scope="col">Keys</th><th scope="col">Command</th></tr></thead>
@@ -251,7 +251,7 @@
 <tr><td><kbd>⇧⌘E</kbd></td><td>Import into Social Export</td></tr>
 <tr><td><kbd>⌘E</kbd></td><td>Export in Social Export; eject a card in Browse</td></tr>
 <tr><td><kbd>⌘O</kbd></td><td>Open a folder</td></tr>
-<tr><td><kbd>⌘G</kbd></td><td>Open the Ingest workspace</td></tr>
+<tr><td><kbd>⌘G</kbd></td><td>Open Import Settings</td></tr><tr><td>no default key</td><td>Review the selection or visible photo queue; configurable in Settings</td></tr><tr><td><kbd>⌘W</kbd></td><td>Close the current Browse tab, or the focused idle editor window</td></tr>
 <tr><td><kbd>⌘Y</kbd></td><td>Copy to a folder, without the rest of the ingest machinery</td></tr>
 <tr><td><kbd>⌘R</kbd></td><td>Rename photographs where they are</td></tr>
 <tr><td><kbd>⌥⌘R</kbd></td><td>Re-sequence what is shown, so the numbers have no gaps after a cull</td></tr>
@@ -289,10 +289,10 @@
 <thead><tr><th scope="col">Keys</th><th scope="col">Command</th></tr></thead>
 <tbody>
 <tr><td><kbd>⌘E</kbd></td><td>Eject the card</td></tr>
-<tr><td><kbd>⌘D</kbd></td><td>Add the open folder to your favorites</td></tr>
+<tr><td>no default key</td><td>Add the open folder to your favorites</td></tr>
 <tr><td><kbd>⌃⌘1</kbd> … <kbd>⌃⌘9</kbd></td><td>Open favorite one to nine</td></tr>
 
-<tr><td><kbd>⌘↩</kbd></td><td>Start the reviewed import from the Ingest workspace</td></tr>
+<tr><td><kbd>⌘↩</kbd></td><td>Start the reviewed import from Import Settings</td></tr>
 <tr><td><kbd>=</kbd> / <kbd>−</kbd></td><td>Include the selected photos in the import / leave them out</td></tr>
 <tr><td>no key</td><td>Delete tagged, or untagged, from the card, after the copies verified</td></tr>
 </tbody>
