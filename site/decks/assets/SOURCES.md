@@ -19,3 +19,10 @@ The six frame examples use distinct subjects: In-N-Out (`Burger.jpg`, original `
 Four camera examples use an autumn landscape (`Example25.jpg`, `DSCF3202.jpg`) beside its details, a rainbow (`Example19.jpg`, `DSC07096.jpg`) with an overlay, sunset details below the photo, and separate details on food and pizza (`Example37.jpg` / `Example38.jpg`, `fuji_5453.jpg` / `fuji_5458.jpg`). All settings come from actual EXIF through the native importer; none are invented. Each gallery photograph appears only once. The requested `_DSC1997` filename is absent from the supplied collection; `_DSC1199 1.jpg` is the available espresso photo.
 
 `build43-gallery.json` records original PNG hashes, lossless WebP hashes, and original dimensions. All decoded RGB pixels were verified against the PNG exports. Full-size image links let visitors inspect the designs and small camera text.
+
+
+## Build 77 — October 4, 2026
+
+Current editor captures (`build77-home`, `layout`, `background`, `photo`, `caption`, and `gestures`) come from the actual native iPhone simulator using Brian's bundled Bridge/Mamiya/Coastline photography. No interface was reconstructed. Camera cards use the photograph's own metadata. Screenshots were captured by `SocialQuickArrangeUITests.testCurrentPhotographyAndOnboardingCaptures`; lossless WebP retains their full pixel dimensions.
+
+Frame and camera examples were rendered with the current `IngestSocialKit` using `scripts/render_decks_examples.swift` and Brian's `Social/Resources/Tutorial` originals. Beside/below examples use the production Quick Arrange algorithm, including enlarged cards and balanced margins. The source projects are in `/tmp/decks77-gallery/output/` on the development machine. `build77-assets.json` records dimensions and hashes. Older assets remain available for existing links; unchanged finished photography and the panorama preview retain their original provenance above.

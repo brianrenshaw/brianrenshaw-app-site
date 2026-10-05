@@ -1,0 +1,146 @@
+[
+  {
+    "file": "build77-background.webp",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "sha256": "9a0b2e3b339042e25ea9eb9bb230f4826a4c5505e51ba0b6f726fee225f0f2b8",
+    "source": "Native iPhone simulator screenshot"
+  },
+  {
+    "file": "build77-camera-below.webp",
+    "dimensions": [
+      1200,
+      1500
+    ],
+    "sha256": "7346310d279a95d80b8f66df74a7ee504394a83d2d0472d4388aeaab572c3b43",
+    "source": "Native IngestSocialKit renderer with original photograph metadata"
+  },
+  {
+    "file": "build77-camera-beside.webp",
+    "dimensions": [
+      1200,
+      800
+    ],
+    "sha256": "81cb52b36570778edf21df939603d1bc9f876b897e8521a4b5e1416cb1c8ed89",
+    "source": "Native IngestSocialKit renderer with original photograph metadata"
+  },
+  {
+    "file": "build77-camera-on-photo.webp",
+    "dimensions": [
+      800,
+      533
+    ],
+    "sha256": "6314401016789e7554586abbd3e371755bc49290e1117e63e28684665e60860d",
+    "source": "Native IngestSocialKit renderer with original photograph metadata"
+  },
+  {
+    "file": "build77-camera-per-photo.webp",
+    "dimensions": [
+      1200,
+      1500
+    ],
+    "sha256": "8d749479e56e62e74e220bb051db1f54ef54614b9ca22dc38c5efe1cb92a7f16",
+    "source": "Native IngestSocialKit renderer with original photograph metadata"
+  },
+  {
+    "file": "build77-caption.webp",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "sha256": "3b99c8ffca67a3ed0ab5cf5394a5b534735918764f039c5881613e2b2b78e491",
+    "source": "Native iPhone simulator screenshot"
+  },
+  {
+    "file": "build77-frame-black-border.webp",
+    "dimensions": [
+      1090,
+      1363
+    ],
+    "sha256": "ddb21affa7aa6ecda35a19f3700ba36c4446ed83551032ba1717b22ac806fdd3",
+    "source": "Native IngestSocialKit renderer with original photograph metadata"
+  },
+  {
+    "file": "build77-frame-black.webp",
+    "dimensions": [
+      1200,
+      1500
+    ],
+    "sha256": "72845f6c50a4a8a490099da7cfd784fa05c8eb8a9f463a95cb729f60fbf62fe6",
+    "source": "Native IngestSocialKit renderer with original photograph metadata"
+  },
+  {
+    "file": "build77-frame-blur-pair.webp",
+    "dimensions": [
+      1200,
+      1500
+    ],
+    "sha256": "4747a34b15c161e0bc44220f5c920df2e9ea6541d4165a4ebe77a397b21eb4fc",
+    "source": "Native IngestSocialKit renderer with original photograph metadata"
+  },
+  {
+    "file": "build77-frame-blur.webp",
+    "dimensions": [
+      1061,
+      1326
+    ],
+    "sha256": "7c4254c6b24169553fd91906bda937aa59aa7eb9e628d0d1ed632111c827952c",
+    "source": "Native IngestSocialKit renderer with original photograph metadata"
+  },
+  {
+    "file": "build77-frame-film.webp",
+    "dimensions": [
+      1200,
+      1500
+    ],
+    "sha256": "857c0fa86404f092c9204f00d2763c49d6c8b0c674a5b97708f4248b7e35fab7",
+    "source": "Native IngestSocialKit renderer with original photograph metadata"
+  },
+  {
+    "file": "build77-frame-white.webp",
+    "dimensions": [
+      1200,
+      1500
+    ],
+    "sha256": "ef91dfded2968a56d0bdb3c1babb5b6eeceaed08434111ff8536912d55c3d71d",
+    "source": "Native IngestSocialKit renderer with original photograph metadata"
+  },
+  {
+    "file": "build77-gestures.webp",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "sha256": "d9e7a622b2d4cbbff0bd0dc99d2acd0cb118c813072dac5489feb2d18e344d4e",
+    "source": "Native iPhone simulator screenshot"
+  },
+  {
+    "file": "build77-home.webp",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "sha256": "559093ca313ec6b0b4250eeb472ed3eeda8f0813e964bf7e6236ab568fd41d98",
+    "source": "Native iPhone simulator screenshot"
+  },
+  {
+    "file": "build77-layout.webp",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "sha256": "029e99af7e71f3ae4c351ace57a70850a467638ec7c813852f7fc578a1adbcef",
+    "source": "Native iPhone simulator screenshot"
+  },
+  {
+    "file": "build77-photo.webp",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "sha256": "78354023809255ecb67d3307bc65a14c6a8aab16b163e7269bf67716175d8927",
+    "source": "Native iPhone simulator screenshot"
+  }
+]

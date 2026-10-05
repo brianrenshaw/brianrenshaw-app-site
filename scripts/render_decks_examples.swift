@@ -1,6 +1,6 @@
 // Run as a temporary Swift executable depending on Decks's IngestSocialKit.
 // Arguments: tutorial photograph directory, PNG output directory.
-// Website examples use the native build 43 renderer, commit 1d05ac8.
+// Website examples use the native build 77 renderer and original photo metadata.
 import Foundation
 import CoreGraphics
 import ImageIO
@@ -57,8 +57,11 @@ import IngestSocialKit
     beside.frames[0].metadataPlate?.textColor = .black
     beside.frames[0].metadataPlate?.showIcons = false
     beside.frames[0].metadataPlate?.size = 0.035
+    beside.frames[0] = try SocialQuickArrange.arrange(project: beside, frameID: beside.frames[0].id, direction: .left)
     try await save("camera-beside", beside)
-    try await save("camera-below", project(["Sunset"], background: .black, details: true))
+    var below = try project(["Sunset"], background: .black, details: true)
+    below.frames[0] = try SocialQuickArrange.arrange(project: below, frameID: below.frames[0].id, direction: .top)
+    try await save("camera-below", below)
     try await save("camera-per-photo", project(["Example37", "Example38"], background: .white, details: true))
     var over = try project(["Example19"], background: .black, ratio: SocialRatio(3,2), border: 0)
     over.style.margins = SocialMargins(0)

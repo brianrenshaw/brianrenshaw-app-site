@@ -1,4 +1,4 @@
-/* Decks: photography first, plain copy, neutral paper and native build 43 assets. */
+/* Decks: photography first, plain copy, neutral paper and native app captures and rendered photographs. */
 body.app-decks{color-scheme:light;--bg:#f5f4f0;--surface:#eae8e2;--ink:#242422;--muted:#60605b;--accent:#242422;--line:#d4d2ca;background:var(--bg);color:var(--ink)}
 .app-decks .family-header,.app-decks .family-footer,.app-decks .app-landing{max-width:1240px}
 .app-decks .family-brand img{border-radius:9px}

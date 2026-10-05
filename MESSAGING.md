@@ -285,7 +285,7 @@ Keep the headline and the factual claims plain. Snark rides in the section copy,
 
 **Visual direction:** The app's own palette, not the portfolio's warm paper. Navy ground `#142d4e` in light mode and `#151d2c` in dark, cream surface `#fffdf6`, Sunshine `#f7dc12` for eyebrows and links, cancellation red `#a42620`, muted `#c5d0df`, rules `#4a5c74`. Archivo at weight 900 for headings, on a smaller headline scale than the shared one because Archivo sets much heavier. Motifs are the cream slip with its Sunshine tick and the rotated red CANCELED stamp. This is the first homepage card that is dark in light mode; navy is the brand's ground in both appearances, so it is intentional here even though a dark navy card was rejected for Lankford Legends.
 
-## Decks (updated October 1, 2026)
+## Decks (updated October 4, 2026)
 
 Decks is an iPhone and iPad frames app by Brian Renshaw, a photographer. It is available in beta through https://testflight.apple.com/join/SAMjeMy5. The dedicated site is https://decksphotoapp.com/; source remains in `site/decks/`. Native source is the `codex/acros` branch in the sibling `photo-importer-acros` project.
 
@@ -297,7 +297,7 @@ Decks is an iPhone and iPad frames app by Brian Renshaw, a photographer. It is a
 
 **Primary message:** Decks helps your photos and videos look their best on Instagram and Threads. Start with a template, add text or camera details, and customize every detail.
 
-**Priorities:** Simple template creation first. Walk through choosing a layout, size, and frame, then adding media. Camera details can go on the photo or in the caption. Captions stay with projects and are easy to copy while switching to Instagram. Saved templates work with Apple Shortcuts without opening Decks. Photos and videos use the same editing tools. Creating and editing personal templates is central to the app.
+**Priorities:** Simple template creation first. Choose a layout and media first, then size and frame with the user’s own photos in the preview. Camera details can go on the photo or in the caption. Captions stay with projects and are easy to copy while switching to Instagram. Saved templates work with Apple Shortcuts without opening Decks. Photos and videos use the same editing tools. Creating and editing personal templates is central to the app.
 
 **Voice:** Simplicity over cleverness, explicitly requested by Brian on October 1. Lead with getting photos and videos ready to post, useful templates, and customization. Keep sentences short and human. Avoid competitor criticism in public copy. Use descriptive headings and short, concrete explanations. No slogans, creativity claims, exaggerated promises, or gimmicky headlines. Keep advanced controls in expandable details. The previous headline and dense numbered feature sections are retired.
 
@@ -305,13 +305,13 @@ Decks is an iPhone and iPad frames app by Brian Renshaw, a photographer. It is a
 
 **Examples:** Show several actual results, not just one white frame. White and black backgrounds, contrasting borders, photo blur, multi-photo layouts, and film borders should be visible. Include multiple camera-detail arrangements, using actual capture metadata. Brian explicitly requested these galleries on October 1.
 
-**Assets:** Build 43 uses Brian's own photography. The website uses original native onboarding renders and native iPhone captures from that build, losslessly encoded at original dimensions. `site/decks/assets/SOURCES.md` and `build43-assets.json` record provenance. No archival photographs are shown in the redesigned page. Keep older assets available for existing links.
+**Assets:** Current editor screenshots and camera arrangements use build 77 and Brian’s own photography. Earlier finished examples remain where the rendering is unchanged. Native iPhone captures and native renders are losslessly encoded at original dimensions. `site/decks/assets/SOURCES.md` and `build43-assets.json` record provenance. No archival photographs are shown in the redesigned page. Keep older assets available for existing links.
 
 **Factual boundaries:**
 
 - Beta for iOS and iPadOS 18 or later; do not promise a release date.
-- Templates walk through layout, size, background, and frame before media selection. Saved designs can be edited or duplicated.
-- Saved templates appear in Shortcuts as “Save photos with <template>”. Photos share-sheet use requires adding the Decks Templates shortcut and duplicating/configuring it for the desired template. Do not imply installation is automatic.
+- Choose a starting layout and media before the size, background, and frame walkthrough. Saved designs can be edited or duplicated.
+- Saved templates appear in Shortcuts as “Save photos with <template>”. Photos share-sheet use requires adding the Decks Templates shortcut; its picker lets the user choose a saved template. Do not imply installation is automatic.
 - Camera details come from actual photo metadata. Manual camera/lens information can come from My Gear. Do not advertise Fujifilm simulations or recipes until confirmed working.
 - The camera pictured in the Mamiya photograph is its subject, not its capture camera. The bridge render uses real Fujifilm X-T4 settings.
 - Photos and videos use the same frames/layouts; clips are trimmed in the editor and export as MP4. Do not imply all video contains camera metadata.
