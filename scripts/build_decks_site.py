@@ -43,7 +43,7 @@ def main():
         # The portfolio home link stays external when Decks lives at the root.
         text = text.replace('href="/"', 'href="https://brianrenshaw.app/"')
         text = text.replace("https://brianrenshaw.app/decks/", ORIGIN + "/")
-        text = text.replace('href="/ingest/', 'href="https://brianrenshaw.app/ingest/')
+        text = text.replace('href="/ingest/', 'href="https://ingestphotoapp.com/')
         text = text.replace('"/decks/', '"/')
         path.write_text(text)
     routes = sorted("/" + p.relative_to(OUTPUT).as_posix().removesuffix("index.html")

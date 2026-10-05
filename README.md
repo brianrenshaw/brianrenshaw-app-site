@@ -24,7 +24,7 @@ python3 -m http.server 8080 --directory site
 
 Open http://localhost:8080/. Links are root-relative because production is served from the custom domain root. The default GitHub project URL is not a supported preview without that domain; use the local server.
 
-GitHub Actions validates links, anchors, local assets, canonical addresses and American spelling before exporting `site/` to `dist/portfolio/` and deploying that artifact to Pages on pushes to main. The export points Decks links and its three old pages to `decksphotoapp.com`; the real Decks source stays in `site/decks/` for the Cloudflare build. Pull requests validate without deploying. No build framework, package installation, analytics, or external font dependency is needed.
+GitHub Actions validates links, anchors, local assets, canonical addresses and American spelling before exporting `site/` to `dist/portfolio/` and deploying that artifact to Pages on pushes to main. The export points Decks and Ingest links and old HTML routes to their dedicated domains; their source stays in `site/decks/` and `site/ingest/` for separate Cloudflare builds. Historical assets and permanent appcast feeds stay at their original URLs. Pull requests validate without deploying. No build framework, package installation, analytics, or external font dependency is needed.
 
 ## Routes
 
@@ -68,7 +68,7 @@ Canceled is at `/canceled/`, a landing page only. The app is in development for 
 The homepage grid is grouped by platform: iOS apps, then the Mac app, then the blogs, then the utility. See `MESSAGING.md` for the numbered order. The share image `assets/social-projects-v10.png` holds ten projects, three rows of three plus one; rebuild it with `python3 scripts/build_social.py` and bump the filename plus both metadata URLs when the artwork changes.
 
 
-Ingest is at `/ingest/`, the second Mac app. Its native source is in the private sibling `photo-importer` project. Public DMGs are GitHub Release assets in this repository, tagged `ingest-v*`; they are not committed into `site/`. See `INGEST_RELEASES.md` for the release handoff. The current download is signed and notarized Ingest 0.9.5, build 41.
+Ingest’s dedicated website is at https://ingestphotoapp.com/, built for Cloudflare Pages with `python3 scripts/build_ingest_site.py`. Keep its source in `site/ingest/`. See [INGEST_HOSTING.md](INGEST_HOSTING.md) for hosting, DNS, redirects, and the permanent update feed. The legacy `/ingest/` routes redirect through the portfolio export. Its native source is in the private sibling `photo-importer` project. Public DMGs are GitHub Release assets in this repository, tagged `ingest-v*`; they are not committed into `site/`. See `INGEST_RELEASES.md` for the release handoff. The current download is signed and notarized Ingest 0.9.5, build 41.
 
 The Sparkle feed for Ingest is `site/ingest/appcast.xml`, and every shipped build has that URL compiled into it, so the path is permanent. `scripts/check_site.py` asserts the file exists.
 

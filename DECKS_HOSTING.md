@@ -10,7 +10,7 @@ Decks's dedicated website is built from `site/decks/` in this repository.
 Keep editing those source pages and assets; do not edit generated files.
 `python3 scripts/build_decks_site.py` generates and validates `dist/decks/`,
 rewriting Decks routes and metadata for `https://decksphotoapp.com/` and copying
-the shared styles. Portfolio and Ingest links stay on `brianrenshaw.app`.
+the shared styles. Portfolio links stay on `brianrenshaw.app`; Ingest links lead to `ingestphotoapp.com`.
 
 ## Cloudflare Pages configuration
 
