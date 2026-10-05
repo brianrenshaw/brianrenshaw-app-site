@@ -47,8 +47,8 @@ preserving path and query. Always Use HTTPS is enabled for the zone.
 Publish and verify the new domain before publishing the portfolio redirects.
 `build_portfolio_site.py` keeps all Ingest assets at their historical URLs and
 replaces its old HTML pages with redirects that preserve query strings and
-fragments. Quick Start goes directly to Getting Started. The portfolio card
-and the standalone Decks site's Ingest link lead directly to the new domain.
+fragments. Quick Start goes directly to Getting Started. The portfolio card leads directly to the new domain. The standalone Decks
+build also rewrites any Ingest navigation links to the dedicated domain.
 Old Ingest URLs are removed from the portfolio sitemap.
 
 **`https://brianrenshaw.app/ingest/appcast.xml` is permanent.** Installed apps
@@ -73,3 +73,20 @@ permanent feed still match their source bytes after the portfolio cutover.
 
 References: [Pages custom domains](https://developers.cloudflare.com/pages/configuration/custom-domains/),
 [monorepos](https://developers.cloudflare.com/pages/configuration/monorepos/).
+
+## October 5 verification
+
+The Cloudflare custom domain reports Active with SSL enabled. The www redirect
+rule is `cf5231a45e364eb1abf585b56e5ec98c`, matching only
+`www.ingestphotoapp.com`, with a dynamic apex target, status 301, and Preserve
+query string enabled. The zone is `c1fbee0f656800e93d306a92a5259d4a`.
+
+The cutover deployment (`46d609a`) passed GitHub Pages and both Cloudflare
+project builds. All nine content pages, current media, search assets, fonts,
+metadata, sitemap, HTTPS/www/path/query redirects, 404, historical media, and
+the permanent feed passed live verification. Chrome confirmed site search,
+workspace/full-resolution dialogs, video playback, and the old Guide URL
+redirecting with both its query string and `#workspaces` fragment preserved.
+Cloudflare's default email obfuscation may transform public contact links at
+the edge; the live checker accounts for that while checking navigation and
+metadata. Decks's existing pages remain available.
