@@ -1,0 +1,38 @@
+[
+  {
+    "file": "build78-text.webp",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "sha256": "8169db74447897e74036b0b021fe5d2cd56a4544c2dae9220855274d59aefc18",
+    "source": "Content-sized Text Dark native iPhone simulator capture"
+  },
+  {
+    "file": "build78-layout.webp",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "sha256": "609a76377a4ffaf5ba757f380e1b4ff85b00f69634d7731128eb2079bdbfba44",
+    "source": "Content-sized Layout Dark native iPhone simulator capture"
+  },
+  {
+    "file": "build78-background.webp",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "sha256": "11e29becd91f8d36557490a0e018c0c57ca70cfc3578392e89f074fddf2316ce",
+    "source": "Content-sized Background Dark native iPhone simulator capture"
+  },
+  {
+    "file": "build78-photo.webp",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "sha256": "6cb2ecff503b67b08e3e77c705fb645f999aa32f70b143c5b563b205e2566360",
+    "source": "Content-sized Photo Dark native iPhone simulator capture"
+  }
+]

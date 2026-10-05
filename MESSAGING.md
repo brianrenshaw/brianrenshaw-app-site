@@ -451,3 +451,6 @@ Apple Photos is integrated by default and can be disabled in Settings. Describe 
 Apple Photos roadmap: workspace-specific enable/disable is planned. Until it ships, distinguish that upcoming control from the global integration setting in 0.8.5.
 
 Ingest site-wide follow-up: all documentation, support, privacy, and release pages use the approved bright neutral theme. Lead Command Palette messaging with access to every app action through search; workspace switching is a strong example, while Crop belongs in detailed tool documentation.
+
+
+Decks build 78, October 5, 2026: panels fit visible controls by default; manual heights are remembered per tool. This Page / All Pages stays available across tools for page layout and frame settings. Object controls still edit the selected item. Background's neutral swatch is Ivory; Replace Background belongs only to Photo/Video mode. Current native Layout, Background, Photo, and Text captures replace affected examples.

@@ -26,3 +26,8 @@ Four camera examples use an autumn landscape (`Example25.jpg`, `DSCF3202.jpg`) b
 Current editor captures (`build77-home`, `layout`, `background`, `photo`, `caption`, and `gestures`) come from the actual native iPhone simulator using Brian's bundled Bridge/Mamiya/Coastline photography. No interface was reconstructed. Camera cards use the photograph's own metadata. Screenshots were captured by `SocialQuickArrangeUITests.testCurrentPhotographyAndOnboardingCaptures`; lossless WebP retains their full pixel dimensions.
 
 Frame and camera examples were rendered with the current `IngestSocialKit` using `scripts/render_decks_examples.swift` and Brian's `Social/Resources/Tutorial` originals. Beside/below examples use the production Quick Arrange algorithm, including enlarged cards and balanced margins. The source projects are in `/tmp/decks77-gallery/output/` on the development machine. `build77-assets.json` records dimensions and hashes. Older assets remain available for existing links; unchanged finished photography and the panorama preview retain their original provenance above.
+
+
+## Build 78 — October 5, 2026
+
+`build78-layout`, `background`, `photo`, and `text` are unmodified native iPhone simulator captures from `testContentSizedPhotographyCaptures`, using the bundled Bridge photograph and its original metadata. They show content-sized panels, the persistent scope menu, Ivory, Color mode without Replace Background, and compact Text actions. Lossless WebP preserves original dimensions and RGB pixels; `build78-assets.json` records hashes. Other build-77 artwork remains current because its rendering has not changed.
