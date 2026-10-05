@@ -32,10 +32,10 @@
   },
   {
     "type": "section",
-    "title": "Social Export and optional help",
+    "title": "Send to Decks and optional help",
     "url": "/ingest/#social-export",
     "page": "Home",
-    "keywords": "social export and optional help social export social export naming base social",
+    "keywords": "send to decks social export handoff share photos airdrop",
     "hint": "Home"
   },
   {
@@ -270,10 +270,10 @@
   },
   {
     "type": "section",
-    "title": "Social Export",
+    "title": "Send to Decks",
     "url": "/ingest/guide/#social-export",
     "page": "Guide",
-    "keywords": "social export social export social export naming base social",
+    "keywords": "send to decks social export handoff share photos airdrop mac iphone ipad shift command e",
     "hint": "Guide"
   },
   {
@@ -532,10 +532,10 @@
   },
   {
     "type": "section",
-    "title": "Social Export",
+    "title": "Legacy Social Export naming",
     "url": "/ingest/templates/#tokens-social",
     "page": "Naming & metadata",
-    "keywords": "social export tokens social",
+    "keywords": "legacy social export naming send decks",
     "hint": "Naming & metadata"
   },
   {
