@@ -30,7 +30,7 @@
   {
     "type": "section",
     "title": "How to read this",
-    "url": "/ingest/shortcuts/#reading",
+    "url": "/ingest/shortcuts/reading/",
     "page": "Shortcuts",
     "keywords": "how to read this reading",
     "hint": "Shortcuts"
@@ -38,7 +38,7 @@
   {
     "type": "section",
     "title": "Keys that never change",
-    "url": "/ingest/shortcuts/#movement",
+    "url": "/ingest/shortcuts/movement/",
     "page": "Shortcuts",
     "keywords": "keys that never change movement",
     "hint": "Shortcuts"
@@ -46,7 +46,7 @@
   {
     "type": "section",
     "title": "Marking",
-    "url": "/ingest/shortcuts/#tag",
+    "url": "/ingest/shortcuts/tag/",
     "page": "Shortcuts",
     "keywords": "marking tag",
     "hint": "Shortcuts"
@@ -54,7 +54,7 @@
   {
     "type": "section",
     "title": "Moving",
-    "url": "/ingest/shortcuts/#navigate",
+    "url": "/ingest/shortcuts/navigate/",
     "page": "Shortcuts",
     "keywords": "moving navigate",
     "hint": "Shortcuts"
@@ -62,7 +62,7 @@
   {
     "type": "section",
     "title": "Views and overlays",
-    "url": "/ingest/shortcuts/#view",
+    "url": "/ingest/shortcuts/view/",
     "page": "Shortcuts",
     "keywords": "views and overlays view",
     "hint": "Shortcuts"
@@ -70,7 +70,7 @@
   {
     "type": "section",
     "title": "Zoom",
-    "url": "/ingest/shortcuts/#zoom",
+    "url": "/ingest/shortcuts/zoom/",
     "page": "Shortcuts",
     "keywords": "zoom zoom",
     "hint": "Shortcuts"
@@ -78,7 +78,7 @@
   {
     "type": "section",
     "title": "Selecting and filtering",
-    "url": "/ingest/shortcuts/#select",
+    "url": "/ingest/shortcuts/select/",
     "page": "Shortcuts",
     "keywords": "selecting and filtering select",
     "hint": "Shortcuts"
@@ -86,7 +86,7 @@
   {
     "type": "section",
     "title": "Stacks",
-    "url": "/ingest/shortcuts/#stack",
+    "url": "/ingest/shortcuts/stack/",
     "page": "Shortcuts",
     "keywords": "stacks stack",
     "hint": "Shortcuts"
@@ -94,7 +94,7 @@
   {
     "type": "section",
     "title": "Metadata",
-    "url": "/ingest/shortcuts/#metadata",
+    "url": "/ingest/shortcuts/metadata/",
     "page": "Shortcuts",
     "keywords": "metadata metadata",
     "hint": "Shortcuts"
@@ -102,7 +102,7 @@
   {
     "type": "section",
     "title": "Files and ingest",
-    "url": "/ingest/shortcuts/#file",
+    "url": "/ingest/shortcuts/file/",
     "page": "Shortcuts",
     "keywords": "files and ingest file",
     "hint": "Shortcuts"
@@ -110,7 +110,7 @@
   {
     "type": "section",
     "title": "Video",
-    "url": "/ingest/shortcuts/#video",
+    "url": "/ingest/shortcuts/video/",
     "page": "Shortcuts",
     "keywords": "video video",
     "hint": "Shortcuts"
@@ -118,7 +118,7 @@
   {
     "type": "section",
     "title": "Cards and folders",
-    "url": "/ingest/shortcuts/#sources",
+    "url": "/ingest/shortcuts/sources/",
     "page": "Shortcuts",
     "keywords": "cards and folders sources",
     "hint": "Shortcuts"
@@ -126,7 +126,7 @@
   {
     "type": "section",
     "title": "Apple Photos",
-    "url": "/ingest/shortcuts/#apple-photos",
+    "url": "/ingest/shortcuts/apple-photos/",
     "page": "Shortcuts",
     "keywords": "apple photos apple photos",
     "hint": "Shortcuts"
@@ -134,7 +134,7 @@
   {
     "type": "section",
     "title": "App",
-    "url": "/ingest/shortcuts/#app",
+    "url": "/ingest/shortcuts/app/",
     "page": "Shortcuts",
     "keywords": "app app",
     "hint": "Shortcuts"
@@ -142,7 +142,7 @@
   {
     "type": "section",
     "title": "Changing a key",
-    "url": "/ingest/shortcuts/#rebinding",
+    "url": "/ingest/shortcuts/rebinding/",
     "page": "Shortcuts",
     "keywords": "changing a key rebinding",
     "hint": "Shortcuts"
@@ -150,7 +150,7 @@
   {
     "type": "section",
     "title": "Every action, one search",
-    "url": "/ingest/shortcuts/#palette",
+    "url": "/ingest/shortcuts/palette/",
     "page": "Shortcuts",
     "keywords": "every action, one search palette",
     "hint": "Shortcuts"
@@ -529,7 +529,7 @@
   {
     "type": "section",
     "title": "Workspaces and the guided builder",
-    "url": "/ingest/guide/#workspaces",
+    "url": "/ingest/guide/workspaces/",
     "page": "Guide",
     "keywords": "Workspaces and the guided builder Browse is the main workspace. File → Organize… opens its independent editor. File → Send to Decks… sends selected still photos to the separate Decks app. Both actions are available through photo context menus and the command palette. The window toolbar and Workspace menu share the workspace chooser. Set Open at Launch separately from your active workspace. Control-0 selects Basic; Control-1 through Control-9 select assigned workspaces. Focus Mode ( F ) hides surrounding controls without changing saved panel preferences; ⇧F fits the photo. A workspace remembers the setup for a kind of photography. New Workspace… offers Set Up Manually for direct section navigation or Use Workspace Builder for guided steps. Both use the same workspace settings with explicit Save and Cancel; the chosen experience stays with an open draft. Save keeps the workspace and its new supporting templates and actions together; Cancel leaves them unchanged. The nine sections are Workspace , Questions , Photo Groups , Folders , File Names , Browse & Review , Metadata , After Import",
     "hint": "Guide"
@@ -537,7 +537,7 @@
   {
     "type": "section",
     "title": "The Command Palette",
-    "url": "/ingest/guide/#palette",
+    "url": "/ingest/guide/palette/",
     "page": "Guide",
     "keywords": "The Command Palette If you can do it in Ingest, you can find it with ⌘K . Search for an action by name: review photos, edit metadata, change a view, organize files, or export. Use the arrow keys to select a result and Return to run it. Commands that cannot run in the current context explain why. Find an action and see its context and keyboard shortcut. Commands with assigned shortcuts show them beside their names, so the Command Palette helps you learn the keys you use most. Commands that cannot run right now stay visible with the reason underneath, rather than vanishing and leaving you wondering. ⇧⌘P pins a command to the top for good. Command descriptions explain what each action does. Settings → Command Palette controls descriptions, shortcut labels, and excluded commands. If you have hidden an action, you can restore it there. The footer names the command Return will run. Click Actions or press ⌘K again to pin or unpin the highlighted command, copy its link, or configure its shortcut. Configure Shortcut opens that exact command in Settings. Copy Link keeps the palette open and co",
     "hint": "Guide"
@@ -545,7 +545,7 @@
   {
     "type": "section",
     "title": "Settings",
-    "url": "/ingest/guide/#settings",
+    "url": "/ingest/guide/settings/",
     "page": "Guide",
     "keywords": "Settings ⌘, opens a window with a search field. Everything the app stores is in there with a real control: folder and app choosers instead of typed paths, pickers instead of remembered strings, live previews for templates, snippets, and splits, and drag to reorder wherever the order decides a number key. Ordinary app settings apply as you edit them. Workspace, template, and action editors use explicit Save and Cancel. Settings search filters the available results; choose a result or press Return to navigate to its control. Supported changes can be undone with ⌘Z while the window is open. Settings → Advanced exports configuration to carry to another Mac, described on the automation page . There is one row that is not a setting. On the Browsing page, Memory cards are never modified has a lock beside it instead of a switch. It is listed so that the rule is visible, not so that it can be turned off. Keywords Keywords are descriptive words or phrases, separate from the on/off review tag. Ingest builds keyword suggestions from photographs it has read. Folders record their keywords as they ",
     "hint": "Guide"
@@ -553,7 +553,7 @@
   {
     "type": "section",
     "title": "Cards and folders",
-    "url": "/ingest/guide/#sources",
+    "url": "/ingest/guide/sources/",
     "page": "Guide",
     "keywords": "Cards and folders Put a card in and it appears in the sources list. A newly inserted camera card opens in Browse when Settings → Transfers → Open a card when it is inserted is on. Cards connected before launch remain available in the sidebar. Press ⌘O to open a folder instead. Available previews load progressively while Ingest reads the source. Click the sidebar magnifier, press ⇧⌘F , or choose Find Folder in ⌘K to search folder names in a roomy palette. Results include parent paths; Escape closes the palette without changing the tree. Current, recent, and favorite folders appear immediately, with other results supplied by Spotlight. The sidebar keeps your Mac’s folder tree in place. Single-click a folder to navigate in the current Browse tab; double-click to open it in a new tab. Command-W closes the current tab before the window. Favorites, Recent, and Saved Views have collapsible sections. Use Add to Favorites from the menu or command palette. ⌘D deselects photos. Show photos in subfolders is visible beside the folder name and defaults off; when enabled, selecting a photo identifi",
     "hint": "Guide"
@@ -561,7 +561,7 @@
   {
     "type": "section",
     "title": "Browse, sort, and include subfolders",
-    "url": "/ingest/guide/#browsing",
+    "url": "/ingest/guide/browsing/",
     "page": "Guide",
     "keywords": "Browse, sort, and include subfolders Choose Grid, Preview, Split, or List from the photo-view menu. ⌘1 , ⌘2 , and ⌘3 select Grid, Preview, and Split. Press I to cycle photo information. The inspector provides Histogram, Camera Details, Caption, Keywords, and Location; choose and reorder its sections in Settings → Sidebar Information. A raw file is large and slow to develop. Many cameras also write a finished preview inside that raw file for their own screens. Ingest finds that JPEG and reads only those bytes. The embedded preview can be much smaller than the RAW file; its size and resolution depend on the camera and recording mode. Embedded previews keep ordinary browsing fast, with no import step before you can look. If a file has no usable preview or paired image, Ingest can render the selected photo in a separate helper and cache the result. That first fallback preview is slower; whole cards are not rendered in advance. Inspect expressions in close-ups, then make your own review decisions. Arrow keys move, ⇧ extends the selection, and ⌘ with an arrow moves the focus ring without d",
     "hint": "Guide"
@@ -569,7 +569,7 @@
   {
     "type": "section",
     "title": "Apple Photos, inside Ingest",
-    "url": "/ingest/guide/#apple-photos",
+    "url": "/ingest/guide/apple-photos/",
     "page": "Guide",
     "keywords": "Apple Photos, inside Ingest Choose Apple Photos in the source sidebar and connect to your System Photo Library. Ingest requests Photos read/write access when you connect or send photos, not simply when it launches. It uses the library designated as the System Photo Library in Photos; it does not open an arbitrary library file. Integration is on by default. Turn off Settings → General → Apple Photos integration to hide the Photos source, commands, send controls, and Photos actions. You can also disable it for individual workspaces in Settings → Workspaces. A workspace can use Photos only when the global switch is on. Your saved Photos review state and recipes remain available if you turn it back on. Finish an active Photos operation or import review before disabling it. Use Library, Favorites, or an ordinary album to browse. Find albums narrows the sidebar while keeping matching folders and their parents. Search photos by filename, caption, or keywords; caption and keyword search requires macOS 27. Unfiled shows photos outside ordinary albums. Unreviewed tracks what you have reviewed ",
     "hint": "Guide"
@@ -577,7 +577,7 @@
   {
     "type": "section",
     "title": "Video",
-    "url": "/ingest/guide/#video",
+    "url": "/ingest/guide/video/",
     "page": "Guide",
     "keywords": "Video Clips sit in the grid alongside the photographs with a poster frame and their length. Space plays. J , K , and L shuttle the way they do in every editor, , and . step a frame, and M mutes. ↑ and ↓ always move to the next item rather than doing something to the video, so a clip never traps you in the middle of a cull. Sony clips carry a small sidecar file with the real creation time. Ingest reads it, so clips sort into the right place among the photographs, and it copies the sidecar alongside the clip when you ingest. Back to topics ↑",
     "hint": "Guide"
@@ -585,7 +585,7 @@
   {
     "type": "section",
     "title": "Review photos and choose keepers",
-    "url": "/ingest/guide/#culling",
+    "url": "/ingest/guide/culling/",
     "page": "Guide",
     "keywords": "Review photos and choose keepers Inspect faces and focus detail while keeping the whole photograph in view. Review a set of photos Choose Review in Browse’s photo-control row, the photo context menu, or the command palette. Multiple selected photos form a fixed queue; otherwise Review uses the visible photos starting at the active photo. Videos are excluded, and marking does not remove photos from the queue. The review queue keeps the set available while you inspect a photo. The inspection area shows Faces close-ups and focus detail. Click a face or use [ and ] to zoom to it; Fit returns to the whole photo. Corrections belong to individual faces or detail. Uncertain eyes are explained in the selected face’s details, rather than repeated under every thumbnail. Sharper eye reassessment runs for the inspected photo, not the whole folder. Compare… holds a reference while the filmstrip chooses candidates; inspection and marks follow the active pane. Back to Review restores the prior photo, face, zoom, and inspection scroll. Done restores Browse or Suggestions with its selection, filters, ",
     "hint": "Guide"
@@ -593,7 +593,7 @@
   {
     "type": "section",
     "title": "Review decisions and protection",
-    "url": "/ingest/guide/#review-decisions",
+    "url": "/ingest/guide/review-decisions/",
     "page": "Guide",
     "keywords": "Review decisions and protection T tags the selected photos, or clears their tags when all are already tagged. R marks reviewed. Stars and labels stay independent. Use the visible Show: All / Tagged / Untagged / Selected controls to narrow the grid. More Filters adds capture dates, kind, and analysis. Before and After exclude the chosen day; Between includes both complete days. Protect / Unlock Photos controls editing inside Ingest. Protected photos remain viewable and copyable, and disabled editing controls explain “Protected. Unlock to edit.” Mixed selections report protected exclusions. Keyword drafts stay open if a write fails. Import… opens Import Settings. Its initial scope is Selected when photos are selected, otherwise All; choose Tagged explicitly for keepers. Display filters do not change import membership, and empty scopes stay empty. The eligible set freezes when copying starts. Protected originals remain protected; delete-copied cleanup requires verified, unprotected files. Import scope and verification → Back to topics ↑",
     "hint": "Guide"
@@ -601,7 +601,7 @@
   {
     "type": "section",
     "title": "The preview",
-    "url": "/ingest/guide/#preview",
+    "url": "/ingest/guide/preview/",
     "page": "Guide",
     "keywords": "The preview Space opens the large view, and Space again closes it. ⌘1 , ⌘2 , and ⌘3 switch between grid, preview, and both at once. Browse thumbnails beside a large photograph in Split view. Ingest 0.9.8. In the grid, hold Z over a thumbnail to show the loupe, then release to dismiss it. Hovering does not change selection. Loading or limited-resolution labels tell you when full detail is not available. The View menu can keep Grid Loupe enabled; Settings holds its size and magnification. In Preview, Z goes to 100% at the pointer, so whatever is under the cursor stays under the cursor, and Z again returns to fit. ⌥1 , ⌥2 , and ⌥4 are fixed zoom levels, and ⇧F fits. F toggles Focus mode. A pinch, a two finger drag, and a two finger double tap do the same things. The zoom is sticky as you move between photographs, which is the point: you set 100% on an eye, then arrow through five frames and compare the same eye in each. In ordinary preview mode, at 100% Ingest shows the full size JPEG from inside the raw file, whose size depends on the camera and recording mode. When a raw file's previe",
     "hint": "Guide"
@@ -609,7 +609,7 @@
   {
     "type": "section",
     "title": "Compare and survey",
-    "url": "/ingest/guide/#compare",
+    "url": "/ingest/guide/compare/",
     "page": "Guide",
     "keywords": "Compare and survey Keep Select as the reference while you inspect the next Candidate. C opens Select on the left and Candidate on the right. Candidates come from an explicit multiselection, then the current stack, then the filtered source. Left/right changes Candidate while Select stays fixed; Up makes Candidate the Select and advances, and Down swaps the pair. Promotion does not tag a photograph. Click either pane to choose the target for tag, rating, and label commands. The active border identifies that target. Linked Zoom keeps inspection aligned; turn it off to inspect each photo independently. Done or Esc returns to the preceding layout with Select selected. N opens Survey : the whole current stack, twelve frames per page, or up to six selected photographs. Double-clicking a stack in the grid or filmstrip opens this same whole-stack view. Survey arrows stay within the set. Hold B to temporarily inspect Select. Outside Compare, it uses the first tagged photograph in the current group. Releasing B restores the previous view. Back to topics ↑",
     "hint": "Guide"
@@ -617,7 +617,7 @@
   {
     "type": "section",
     "title": "Burst stacks and exposure brackets",
-    "url": "/ingest/guide/#stacks",
+    "url": "/ingest/guide/stacks/",
     "page": "Guide",
     "keywords": "Burst stacks and exposure brackets Burst stacks keep one capture sequence together. Recorded identifiers and supported Sony sequence counters take priority. When that information is unavailable, Ingest uses a conservative maximum gap between consecutive frames from an identifiable camera, including its serial number. The default gap is two seconds, adjustable in Settings. Missing or uncertain evidence leaves photos separate. Framing changes do not split a recorded burst, and bursts have no 30-frame limit. Open Browse by for a compact Sections checklist and Stacks options. Check Day, Camera, Lens, ISO, or Location to create sections; leave all unchecked for a continuous grid. Choose Exposure Brackets, Bursts, or Similar Frames under Stacks. Workspaces can save these viewing choices. Double-click a burst for its whole-frame Survey; C keeps the two-pane Select/Candidate comparison. Previous/Next Burst controls appear while inspecting a burst. For a burst, P adds the current frame as a keeper without removing existing keepers. Keep Only This Frame is a separate command. Photo Suggestions",
     "hint": "Guide"
@@ -625,7 +625,7 @@
   {
     "type": "section",
     "title": "Filters and saved views",
-    "url": "/ingest/guide/#splits",
+    "url": "/ingest/guide/splits/",
     "page": "Guide",
     "keywords": "Filters and saved views The Filter panel offers All, Tagged, and Untagged, along with ratings, colors, Unmarked, and other filters. Unmarked means no tag, stars, or color. Your saved views remain in a collapsible sidebar section. Clicking the active filter beside the folder name clears it. The counts update as you mark, which turns culling into something you can see the end of. ⌥Tab steps through the splits. Set up a filter you like and press ⇧⌘S to save it as your own split. Settings → Browsing → Filters lets you edit one, give it an icon, or hide the built-in ones you never use. Filters behave: they survive going in and out of the preview, they wrap where you expect, and marking the last photograph out of a view returns you to everything rather than leaving you in an empty room. Back to topics ↑",
     "hint": "Guide"
@@ -633,7 +633,7 @@
   {
     "type": "section",
     "title": "Overlays",
-    "url": "/ingest/guide/#overlays",
+    "url": "/ingest/guide/overlays/",
     "page": "Guide",
     "keywords": "Overlays I cycles the information panel: off, the exposure, then everything including the pixel size being displayed. That last part matters, because it tells you whether you are looking at a small preview or the full size image. Key Overlay I Camera, lens, exposure, and what size image is on screen. ⌥D Detail. Turns the image into pure edge contrast, which makes soft frames obvious. ⌥E Edges, drawn in color over the photograph. ⌥A The focus point the camera recorded, when it recorded one. Sony and Fujifilm both do; Ingest explains when the information is unavailable. ⌥F Face close-ups along the bottom, each cropped at full size so you can check the eyes without zooming. Subject close-ups and culling analysis run locally using Apple’s Vision framework. Ingest caches face and subject regions, feature prints, and assessment results for inspection and similar-photo grouping. Corrections such as Sharp Enough and Intentional Closed Eyes persist locally. No names or identities are assigned, and analysis is not sent to a server. Dark, low-contrast, and exposure-bracket frames can be unsuita",
     "hint": "Guide"
@@ -641,7 +641,7 @@
   {
     "type": "section",
     "title": "Crop and straighten",
-    "url": "/ingest/guide/#crop-straighten",
+    "url": "/ingest/guide/crop-straighten/",
     "page": "Guide",
     "keywords": "Crop and straighten Search for Crop & Straighten to open it for the selected photo. Select a writable photo and choose Crop & Straighten in Preview, the photo context menu, or ⌘K . Drag a frame corner to crop, drag inside to reposition, choose an aspect ratio, and use Straighten to adjust the angle. Save records reversible crop geometry; Cancel discards the draft. Copy Crop and Paste Crop to Selection reuse a composition after reviewing the affected photos. Back to topics ↑",
     "hint": "Guide"
@@ -649,7 +649,7 @@
   {
     "type": "section",
     "title": "Client pick lists",
-    "url": "/ingest/guide/#pick-lists",
+    "url": "/ingest/guide/pick-lists/",
     "page": "Guide",
     "keywords": "Client pick lists Open the relevant folder or Photos collection and confirm the photos currently available for review. Find Select from Pick List… in ⌘K . Choose Filenames / relative paths or Displayed image numbers . Paste the list, or choose Load File… for a saved text list. Review matched, missing, and ambiguous entries. Choose Select Matches to select uniquely matched photos. Image numbers refer to the current displayed review order, not necessarily the numeric part of a camera filename. Use filenames or relative paths when order may have changed. Matching creates a selection; it does not automatically tag, export, or send the photos. Ingest decision files are a separate use of the same sheet. Their review shows current and proposed tags, ratings, labels, and reviewed state before Apply Decisions . Protected decisions are skipped. Review matches before selecting. Missing and ambiguous entries remain visible. Back to topics ↑",
     "hint": "Guide"
@@ -657,7 +657,7 @@
   {
     "type": "section",
     "title": "RAW histogram and preview comparison",
-    "url": "/ingest/guide/#raw-histogram",
+    "url": "/ingest/guide/raw-histogram/",
     "page": "Guide",
     "keywords": "RAW histogram and preview comparison Two renderings of the same exposure; this view is separate from the sensor histogram. The inspector starts with a tone histogram of the displayed preview. In Settings → Sidebar Information, choose the sensor histogram for supported RAW files. Supported Bayer and X-Trans sensor data, including DNG files with these mosaics, is read directly with black levels subtracted. White balance, demosaic, and rendering tone curves do not affect this histogram. RGB curves remain visible by default. Use Combined / RGB / R / G / B to combine curves or isolate a channel. An individual RAW channel shows its headroom and clipped percentage. Both green photosite populations are combined, and channels are normalized so green does not dominate simply because the sensor contains more green photosites. Use Log (stops) / Linear to change the RAW scale (also available by right-clicking). The default runs from −16 stops to the white level at 0; its midpoint is −8 stops, only 0.39% of sensor saturation. JPEG charts use rendered tone values from 0 to 255, so horizontal positi",
     "hint": "Guide"
@@ -665,7 +665,7 @@
   {
     "type": "section",
     "title": "Metadata Assist",
-    "url": "/ingest/guide/#quick-entry",
+    "url": "/ingest/guide/quick-entry/",
     "page": "Guide",
     "keywords": "Metadata Assist Edit Metadata… opens Metadata Assist. Choose Edit Individual Fields… inside it for the detailed field editor. Use Changes returns that draft to the review panel; only Apply applies the reviewed changes. ⌘’ opens Metadata Assist for selected photos or the current import. Choose Keywords, Caption, or Location to begin, or type ; to see your field options, pick one (a fragment like ;lo narrows the list), then Tab to take it and fill the value or search for a place. Separate keywords with commas. ; ;lo ;capt Recognized fields appear immediately in the review panel. Correct a value, add another field, inspect existing values, or change its operation. Keywords append by default; most other fields begin with Replace. Fill Empty and other operations depend on the field. Unrecognized input and caption-code errors remain visible until resolved. Review field values and Append or Replace behavior before applying. Keyword completion and recent details Previously applied or staged values are remembered locally. Type a prefix and press Tab to fill the highlighted suggestion; arrow k",
     "hint": "Guide"
@@ -673,7 +673,7 @@
   {
     "type": "section",
     "title": "Metadata",
-    "url": "/ingest/guide/#metadata",
+    "url": "/ingest/guide/metadata/",
     "page": "Guide",
     "keywords": "Metadata Photo Info keeps Caption, Keywords, and Location close at hand. Its menu opens the full IPTC editor when you need specialized fields. Choose and reorder sidebar fields in Settings → Sidebar Information. Ingest writes supported rendered files directly and uses XMP sidecars for proprietary RAW files. Export a JPEG with metadata and GPS included for apps such as Apple Photos that may not read RAW sidecars. Use Suggest… beside Caption or Keywords for on-device Apple Intelligence suggestions on supported macOS 27 systems. Review each photo, edit the suggested text, and choose what to save. Nothing is written until you approve. Location accepts address/place search, decimal latitude and longitude, an Apple Maps link containing coordinates, or just city and state. Camera location describes where you stood and can set the GPS used by map apps. Place in the photo describes the subject location; photographing a skyline from across a river is one example where they differ. Saving only place names leaves GPS unchanged. Open the inspector with ⌘I . K opens Keywords. ⇧C goes to the captio",
     "hint": "Guide"
@@ -681,7 +681,7 @@
   {
     "type": "section",
     "title": "GPS and descriptive locations",
-    "url": "/ingest/guide/#location",
+    "url": "/ingest/guide/location/",
     "page": "Guide",
     "keywords": "GPS and descriptive locations Map coordinates and descriptive place names serve different purposes. In Metadata Assist, type ;loc , choose Map Location , and press Return. Search through Apple Maps, choose a result, and review its pin before applying GPS coordinates. Descriptive IPTC fields such as city, state, country, and the place shown in the photo are separate. Enter and review those fields when you want searchable place text. Saving place names alone does not change GPS. A saved location makes a place reusable; saving it does not itself edit photographs. For files and folders, the separate job Location command is available with ⌘L . Review its selected location, fields, and target scope before applying. ⇧⌘L removes location information from the chosen targets. Metadata on a card is staged for imported copies. Compatible apps read supported saved fields from image files or XMP sidecars. Apple Photos may need a JPEG export with metadata and GPS included when it does not read a RAW sidecar. Troubleshoot missing metadata . Address searches send your query to Apple. Saved places can",
     "hint": "Guide"
@@ -689,7 +689,7 @@
   {
     "type": "section",
     "title": "Metadata templates",
-    "url": "/ingest/guide/#presets",
+    "url": "/ingest/guide/presets/",
     "page": "Guide",
     "keywords": "Metadata templates A metadata template stores reusable field operations, such as filling empty Creator and Copyright fields or adding keywords. M opens one Apply Metadata Template sheet with template selection, any required answers, a resolved preview, and Apply. New Template and Edit Copy return to that selection. Editing a copy leaves the shared original unchanged. The preview shows each field’s operation, existing value, and resulting value. Clear, unchanged, and mixed values are identified explicitly. Keywords can add to existing values, and Fill Empty preserves values already present. Missing required answers must be completed before applying. Templates can use naming tokens and answers from workspace questions. Preview resolves them using the selected photographs. Changes to the template, inputs, or photo selection require an updated preview. Select a template in Import Settings or the workspace’s Metadata section to apply it to verified destination copies. Fields shown during import controls the visible editing fields only; it does not choose a template or change what the temp",
     "hint": "Guide"
@@ -697,7 +697,7 @@
   {
     "type": "section",
     "title": "Camera and lens details for film scans",
-    "url": "/ingest/guide/#camera-details",
+    "url": "/ingest/guide/camera-details/",
     "page": "Guide",
     "keywords": "Camera and lens details for film scans Choose Camera & Lens… in Metadata Assist. Pick saved equipment from My Gear , search the offline camera/lens catalog, or save a custom make and model. Enter known aperture, shutter speed, ISO, and focal length; leave unknown details blank. Shutter speed accepts a fraction such as 1/125 or seconds. Fill missing values preserves recorded metadata. Choose Replace recorded values when the scan describes the scanner instead of the taking camera. Review Details returns to Metadata Assist before Apply. JPEG/TIFF edits and RAW sidecars use verification and Undo. During ingest, the details go to verified copies. My Gear is saved on this Mac and does not yet sync with Ingest Field. Enter known equipment and exposure details; leave unknown information blank. Back to topics ↑",
     "hint": "Guide"
@@ -705,7 +705,7 @@
   {
     "type": "section",
     "title": "Fujifilm recipes",
-    "url": "/ingest/guide/#fujifilm-recipes",
+    "url": "/ingest/guide/fujifilm-recipes/",
     "page": "Guide",
     "keywords": "Fujifilm recipes When browsing files and folders, select a Fujifilm JPEG to see Fujifilm Recipe below Location in Photo Info. Its collapsed heading shows the detected film simulation. Expand it to read the camera’s recorded settings or saved notes. Copy, Export, Edit, and the keyword action sit above the details. Choose Edit to change the text; Save, Cancel, and Use Camera Settings stay above the editor. JPEG companions in RAW + JPEG pairs work too. If the photo already has saved notes, Ingest displays them as written. Otherwise, it prepares an unsaved draft from the recognized simulation and available white balance, tone, color, grain, and other settings. It leaves missing settings out and does not guess unknown simulations or custom recipe names. Edit or replace the entire text, then choose Save to keep it with the JPEG. Cancel restores saved notes or the detected camera settings. Use Camera Settings restores the detected recipe while editing. Viewing a recipe does not write metadata. Recipe notes share the Instructions field with the full metadata editor. On a card, Save opens a s",
     "hint": "Guide"
@@ -713,7 +713,7 @@
   {
     "type": "section",
     "title": "Adjust capture time across cameras",
-    "url": "/ingest/guide/#capture-time",
+    "url": "/ingest/guide/capture-time/",
     "page": "Guide",
     "keywords": "Adjust capture time across cameras Use Adjust Capture Time… in ⌘K , or press ⌥⌘T while browsing files. The sheet lists detected cameras, distinguishing serial numbers when available, and the photo count for each. Compare photographs of the same clock or event to work out each camera’s correction. Enter a signed offset beside that camera: +1h , -90s , or +2m30s . Leave a camera at zero to keep its times. Review the camera counts and the number of files on the write button before applying. The scope is all loaded photos for each camera with a nonzero offset, not only your selection. Open the intended folder scope first. This is a metadata write for writable files; import card originals before adjusting them. The job’s Shoot date used in naming is separate and does not rewrite capture timestamps. Back to topics ↑",
     "hint": "Guide"
@@ -721,7 +721,7 @@
   {
     "type": "section",
     "title": "Destinations",
-    "url": "/ingest/guide/#destinations",
+    "url": "/ingest/guide/destinations/",
     "page": "Guide",
     "keywords": "Destinations Favorites give you quick access to folders you use often. Add to Favorites is available in the menu and command palette; ⌃⌘1 through ⌃⌘9 open the first nine favorites. Find them by name in ⌘K as well. Ingest destinations and routing are saved with the workspace. An ingest can write to two destinations at once. The second copy is made from the first one after it has been verified, and it is checked the same way. The active workspace supplies import defaults. Open Import… to review or adjust a single job. Edit the Folders and File Names sections in Settings → Workspaces to save destinations, naming, and routing for reuse. Back to topics ↑",
     "hint": "Guide"
@@ -729,7 +729,7 @@
   {
     "type": "section",
     "title": "Renaming",
-    "url": "/ingest/guide/#renaming",
+    "url": "/ingest/guide/renaming/",
     "page": "Guide",
     "keywords": "Renaming Keep original filenames for the simplest import, or compose readable pieces in File Names . Use Add Piece to insert a date, a sequence, a photo group, or an answer from workspace questions. The live example shows the result. Advanced edits the same pattern as text: {yyyy}{mm}{dd}-{seqn} gives 20260912-7078 . The full naming reference explains tokens and saved numbering. Renaming happens during an ingest, or in place afterwards with ⌘R . ⌥⌘R re-sequences what is on screen, which is how you close the gaps in the numbering after throwing half a shoot away. Every rename records the original filename inside the file, so Undo Rename can put the old names back later, even in a folder you opened fresh. Back to topics ↑",
     "hint": "Guide"
@@ -737,7 +737,7 @@
   {
     "type": "section",
     "title": "Import and verify copies",
-    "url": "/ingest/guide/#ingesting",
+    "url": "/ingest/guide/ingesting/",
     "page": "Guide",
     "keywords": "Import and verify copies ⌘G or Import… opens Import Settings from Browse, with settings on the left and photo scope and output preview on the right. Choose a card, folder, or archive; the active workspace supplies the saved destination, names, metadata, and routing. Review the destination preview before starting. Check scope and destination paths before importing. Photos to import offers All , Tagged , Untagged , and Selected . Opening Import Settings starts at Selected when photos are selected, otherwise All. Display filters do not choose this scope, and an empty scope does not fall back to All. A project retains shared job details; a shoot identifies a session that may span several cards. New sources start with No project . Review the scope count and output paths every time. Settings cover the workspace and project, shoot details, photo groups, destinations, filenames, metadata, files, and after-import actions. The preview shows the chosen photos and final output paths. Changes for one import do not require a new workspace. Invalid destination text cannot replace a committed folder",
     "hint": "Guide"
@@ -745,7 +745,7 @@
   {
     "type": "section",
     "title": "After-import actions, Lightroom, and automation",
-    "url": "/ingest/guide/#actions",
+    "url": "/ingest/guide/actions/",
     "page": "Guide",
     "keywords": "After-import actions, Lightroom, and automation An action is a list of steps that opens files in an app, reveals them in Finder, sends them to Apple Photos, copies them elsewhere, or runs a Shortcut or script. In the workspace’s After Import section, add ordered actions and choose Photos for this action independently for each. For example, import All and open only Tagged copies in Lightroom. They are built in Settings → Automation, with a button that runs one on the current selection so you can test it without waiting for a card. The detail, including what a script gets handed, is on the automation page . Import everything; open only tagged copies Set Photos to import to All. In the workspace’s After Import section, add an action that opens files in your chosen editor. Set Photos for this action to Tagged. Review that action’s count independently of the import count. Start the reviewed import. The action works on the imported copies within its own scope. Opening files in Lightroom hands them to that app; it is not a promise that Lightroom silently completes its catalog import. Use th",
     "hint": "Guide"
@@ -753,7 +753,7 @@
   {
     "type": "section",
     "title": "Organize",
-    "url": "/ingest/guide/#organize",
+    "url": "/ingest/guide/organize/",
     "page": "Guide",
     "keywords": "Organize The inspector follows Grouping, Destination, Filenames, and Destination Preview. Source-folder subfolders are the default. Enable full paths when useful, review example filenames, then use Review Changes… to confirm Copy, Move, or Rename before execution. Choose File → Organize… in Browse, or find Organize in the photo context menu or Command Palette. It opens a separate, resizable window. Browse keeps its selection, filter, and scroll position behind it. Organize resumes the folder’s saved draft when available. Set its photo scope to All, Selected, or Filtered and choose whether to include subfolders. Use the inspector’s Action to choose copying, moving, or renaming, then add grouping levels or a recipe. Opening the editor does not change files. Add or change grouping levels, make your own groups, and move photos between them. Grouping choices do not change the original files. Review the proposed filenames and destinations before applying Copy, Move, or Rename. Existing files are preserved; conflicts must be resolved before applying changes. Memory cards must be ingested fi",
     "hint": "Guide"
@@ -761,7 +761,7 @@
   {
     "type": "section",
     "title": "Send to Decks",
-    "url": "/ingest/guide/#social-export",
+    "url": "/ingest/guide/social-export/",
     "page": "Guide",
     "keywords": "Send to Decks Select still photos in Browse or Apple Photos and choose File → Send to Decks… , search for it in ⌘K , use the photo or group context menu, or press ⇧⌘E . Photos are sent in visible order. Video selections are not supported. Choose Original files or JPEG copies . JPEG copies offer dimensions, quality, file-size, sharpening, and metadata choices, with a prepared count and size before sending. Some RAW conversions use an embedded preview or companion JPEG and may contain less detail; the sheet explains this before sending. Open in Decks for Mac uses an installed compatible Mac app. Send via iCloud makes the transfer available in Incoming Photos in Decks on your iPhone, iPad, or Mac. AirDrop or Share… uses the system sharing sheet. Decks waits for you to choose New Project or Existing Project; Later keeps the transfer in Incoming Photos. iCloud transfers require iCloud sign-in and a compatible Decks version. Ingest keeps a saved transfer queue with status, retry, and completion checks. This is an explicit photo transfer, separate from Ingest workspace settings. Transfer st",
     "hint": "Guide"
@@ -769,7 +769,7 @@
   {
     "type": "section",
     "title": "Custom questions, variables, and folder structure",
-    "url": "/ingest/guide/#workspace-variables",
+    "url": "/ingest/guide/workspaces/#workspace-variables",
     "page": "Guide",
     "keywords": "Custom questions, variables, and folder structure workspace variables",
     "hint": "Guide"
@@ -777,7 +777,7 @@
   {
     "type": "section",
     "title": "Keywords",
-    "url": "/ingest/guide/#keywords",
+    "url": "/ingest/guide/settings/#keywords",
     "page": "Guide",
     "keywords": "Keywords keywords",
     "hint": "Guide"
@@ -785,7 +785,7 @@
   {
     "type": "section",
     "title": "Sorting and filtering",
-    "url": "/ingest/guide/#photo-bar",
+    "url": "/ingest/guide/browsing/#photo-bar",
     "page": "Guide",
     "keywords": "Sorting and filtering photo bar",
     "hint": "Guide"
@@ -793,7 +793,7 @@
   {
     "type": "section",
     "title": "Send files to Apple Photos",
-    "url": "/ingest/guide/#send-to-photos",
+    "url": "/ingest/guide/apple-photos/#send-to-photos",
     "page": "Guide",
     "keywords": "Send files to Apple Photos send to photos",
     "hint": "Guide"
@@ -801,7 +801,7 @@
   {
     "type": "section",
     "title": "Keyword completion and recent details",
-    "url": "/ingest/guide/#keyword-completion",
+    "url": "/ingest/guide/quick-entry/#keyword-completion",
     "page": "Guide",
     "keywords": "Keyword completion and recent details keyword completion",
     "hint": "Guide"
@@ -809,7 +809,7 @@
   {
     "type": "section",
     "title": "Place names and map pins",
-    "url": "/ingest/guide/#map-location",
+    "url": "/ingest/guide/quick-entry/#map-location",
     "page": "Guide",
     "keywords": "Place names and map pins map location",
     "hint": "Guide"
@@ -817,7 +817,7 @@
   {
     "type": "section",
     "title": "Caption codes and copying",
-    "url": "/ingest/guide/#caption-codes",
+    "url": "/ingest/guide/quick-entry/#caption-codes",
     "page": "Guide",
     "keywords": "Caption codes and copying caption codes",
     "hint": "Guide"
@@ -825,7 +825,7 @@
   {
     "type": "section",
     "title": "What you need",
-    "url": "/ingest/support/#requirements",
+    "url": "/ingest/support/requirements/",
     "page": "Support",
     "keywords": "What you need Ingest runs on macOS 15 or later , on Apple silicon only . There is no Intel build, so an Intel Mac cannot open it. To check your Mac, open the Apple menu and choose About This Mac: the Chip line reads Apple M1 or later. Open the disk image and drag Ingest to your Applications folder. There is no account or license key. Ingest is free during the beta. The app is signed and notarized by Apple, so it opens with a double click the first time. You do not need to install anything else. The tool Ingest uses to write metadata is built in. Apple Intelligence caption and keyword suggestions require macOS 27 with Apple Intelligence enabled and the on-device model available. Manual metadata editing, RAW histograms, and preview comparison do not require Apple Intelligence. RAW sensor histograms support readable Bayer and X-Trans mosaics, including matching CFA DNGs; unsupported files use a labeled JPEG fallback. Back to topics ↑",
     "hint": "Support"
@@ -833,7 +833,7 @@
   {
     "type": "section",
     "title": "Cameras and files it reads",
-    "url": "/ingest/support/#formats",
+    "url": "/ingest/support/formats/",
     "page": "Support",
     "keywords": "Cameras and files it reads Ingest prefers an embedded camera preview or a paired JPEG / HEIF image. When a file needs RAW rendering, that slower first preview is handled separately and cached. Camera model and recording mode affect preview availability. File What happens Sony .ARW Uses available embedded previews, choosing the size needed for the current view. Fujifilm .RAF Reads the embedded JPEG where available. .JPG and .JPEG Reads the image and available embedded previews. .HEIC , .HEIF , and .HIF Opens and browses. .MP4 and .MOV Browses and plays, with a poster frame in the grid. Sony clip sidecars travel with the file when you ingest. Canon .CR2 , .CR3 ; Nikon .NEF , .NRW Embedded previews and metadata, including tested Canon CR3 files with HEIF previews. Hasselblad .3FR , camera-origin .FFF Embedded previews where available, with rendering fallback for files that need it. Scanner files and specialized multishot reconstruction are excluded. Panasonic / Lumix .RW2 ; OM System / Olympus .ORF Preview and metadata support for tested camera samples. Ricoh / Pentax .DNG , .PEF ; Leic",
     "hint": "Support"
@@ -841,7 +841,7 @@
   {
     "type": "section",
     "title": "The first hour",
-    "url": "/ingest/support/#first-run",
+    "url": "/ingest/support/first-run/",
     "page": "Support",
     "keywords": "The first hour The keys are the part worth learning, and there is a way to practice them that cannot hurt anything. Choose Help, then Open Practice Folder. Ingest builds about thirty throwaway images and opens them, and the status bar tells you which keys to try. Nothing in that folder matters, so tag, rate, label, and undo as roughly as you like. Press ? at any time for the shortcut sheet, or ⌘K to search every command by name. Tap and release ⌘ , then press and hold it again to see contextual shortcuts. The complete list lives on the shortcuts page , and the Getting started guide walks one card from insert to finished folder. Back to topics ↑",
     "hint": "Support"
@@ -849,7 +849,7 @@
   {
     "type": "section",
     "title": "Updates",
-    "url": "/ingest/support/#updates",
+    "url": "/ingest/support/updates/",
     "page": "Support",
     "keywords": "Updates Choose Ingest, then Check for Updates. Automatic checking is off until you turn it on in Settings, General. An update is only installed if it carries a signature made with my key. What each version changed is in the release notes . Update checks omit hardware profiling; the host receives normal connection information. The privacy page says exactly what does and does not leave the machine. Back to topics ↑",
     "hint": "Support"
@@ -857,7 +857,7 @@
   {
     "type": "section",
     "title": "Coming from Photo Mechanic",
-    "url": "/ingest/support/#photo-mechanic",
+    "url": "/ingest/support/photo-mechanic/",
     "page": "Support",
     "keywords": "Coming from Photo Mechanic The habits carry over. T tags, the arrow keys move, ⌘G is ingest, and {seqn} is the saved sequence counter. The naming reference lists supported brace tokens; check your existing patterns against it. Three differences worth knowing. Marking keys do not advance by default, and you can turn advancing on in Settings → Browsing. Tags are a simple on/off flag, independent of ratings and colors. The Filter panel offers All, Tagged, and Untagged, and the active filter can be cleared from the folder header. And stars and color labels use the Lightroom keys, 1 to 5 and 6 to 9 , saved in supported files or XMP sidecars so compatible editing apps can read them. Settings, Shortcuts lists every command. Click a shortcut or focus it with Tab and press Return to record a new one. Navigation keys and standard Mac editing shortcuts stay fixed; Settings explains any conflict. Back to topics ↑",
     "hint": "Support"
@@ -865,7 +865,7 @@
   {
     "type": "section",
     "title": "Memory cards",
-    "url": "/ingest/support/#cards",
+    "url": "/ingest/support/cards/",
     "page": "Support",
     "keywords": "Memory cards Insert a card and it appears in the sources list with its name and free space. By default Ingest opens it for you. That is a setting in Settings → Transfers, if you would rather it just sat in the list. Reviewing does not change your card originals. Ratings, keywords, renaming, and Finder tags are applied to copies, not to files on the card. Source files are deleted only when you explicitly request it after copies have been verified at every destination. That holds however you opened the card, including when you open a folder that happens to live on one. Metadata you add while culling is remembered and applied to the copies during ingest. If a card does not appear, check that it is mounted in Finder. Ingest looks for a DCIM folder to recognize a volume as a card. A card formatted by something other than a camera may not have one, in which case open it with ⌘O as an ordinary folder. To eject, press ⌘E . Ingest closes everything it has open on the card first, so eject does not fail with a file in use. If macOS still refuses, another app is holding the card. Pulling a card ",
     "hint": "Support"
@@ -873,7 +873,7 @@
   {
     "type": "section",
     "title": "Thumbnails are slow or missing",
-    "url": "/ingest/support/#previews",
+    "url": "/ingest/support/previews/",
     "page": "Support",
     "keywords": "Thumbnails are slow or missing Preview speed depends on the camera format, available embedded image, storage, and connection. If browsing is slow, try a local copy to distinguish file-rendering work from a slow card reader, network volume, or file provider. Thumbnails that are expensive to build are cached on disk, under 2 GB, and cleared from Settings, Advanced. Clearing the cache is safe and never touches a photograph. A photograph with no thumbnail at all is usually a raw format Ingest cannot read yet. See cameras and files it reads . Back to topics ↑",
     "hint": "Support"
@@ -881,7 +881,7 @@
   {
     "type": "section",
     "title": "Review, focus peaking, or eye results look wrong",
-    "url": "/ingest/support/#review-problems",
+    "url": "/ingest/support/review-problems/",
     "page": "Support",
     "keywords": "Review, focus peaking, or eye results look wrong Eye and sharpness assessments are assistance, not final decisions. Inspect the face or detail at a useful zoom and check the original photo. Low-contrast detail can be sharp without a focus-peaking highlight. Uncertain face results need your judgment. Review uses a fixed queue: marking a photograph does not remove it from that queue. Browse filters are separate. If expected photos are missing, check the active filter, collapsed stacks, and Subfolders. Keys depend on context. F enters Focus Mode in file Browse, while Photos browsing uses F for Favorite. A text field can also consume typing. Use ⌘K to find the action and read why it is unavailable. Review guide · Shortcut contexts . Back to topics ↑",
     "hint": "Support"
@@ -889,7 +889,7 @@
   {
     "type": "section",
     "title": "A client pick list has missing or ambiguous matches",
-    "url": "/ingest/support/#pick-list-problems",
+    "url": "/ingest/support/pick-list-problems/",
     "page": "Support",
     "keywords": "A client pick list has missing or ambiguous matches Open the intended folder or Photos collection first. Choose the correct match mode: Filenames / relative paths or Displayed image numbers. Numbers refer to the current displayed review order; they are not automatically camera filename suffixes. Use a relative path to distinguish repeated filenames in different folders, or narrow the collection. Review the missing and ambiguous counts before Select Matches. Selecting matches does not apply ratings or tags. Pick-list instructions → Back to topics ↑",
     "hint": "Support"
@@ -897,7 +897,7 @@
   {
     "type": "section",
     "title": "Lightroom or Photos does not show my keywords",
-    "url": "/ingest/support/#metadata-problems",
+    "url": "/ingest/support/metadata-problems/",
     "page": "Support",
     "keywords": "Lightroom or Photos does not show my keywords Ingest writes metadata directly into supported rendered files and uses XMP sidecars for proprietary RAW files. Apple Photos may not read RAW sidecars. Export a JPEG with metadata and GPS included, then send that JPEG to Photos when those fields need to travel with the image. Native Photos edits are available separately in the Photos workspace, with caption, keyword, and rating writes requiring macOS 27. Two things to check first. Metadata is never written to a card, so if you added keywords while culling, they are applied to the copies during ingest and you should look at the copies. And ratings and labels are written in the background a couple of seconds after you stop pressing keys, so a file read the instant you rated it may not have caught up. The writing is done by ExifTool , which is included in the app. Ingest keeps ExifTool's backup of each file until it has read the file back and confirmed the write, then removes it. If the read back does not match, the original is put back. If Settings, Advanced reports that the metadata tool is",
     "hint": "Support"
@@ -905,7 +905,7 @@
   {
     "type": "section",
     "title": "I entered a location, but there is no map pin",
-    "url": "/ingest/support/#location-problems",
+    "url": "/ingest/support/location-problems/",
     "page": "Support",
     "keywords": "I entered a location, but there is no map pin Descriptive city, state, country, and place names are different from GPS coordinates. In Metadata Assist, type ;loc , choose Map Location, and press Return. Search Apple Maps, select a result, review its pin, and apply it to the intended photos. When checking another app, open the edited copies, not card originals. Apple Photos may not read a RAW XMP sidecar; export a JPEG with metadata and GPS included if those fields must travel. GPS and descriptive locations → Back to topics ↑",
     "hint": "Support"
@@ -913,7 +913,7 @@
   {
     "type": "section",
     "title": "Fujifilm Recipe is missing or incomplete",
-    "url": "/ingest/support/#fujifilm-support",
+    "url": "/ingest/support/fujifilm-support/",
     "page": "Support",
     "keywords": "Fujifilm Recipe is missing or incomplete Select one supported Fujifilm JPEG, or a RAW + JPEG pair with a qualifying JPEG companion. The recipe section uses recorded JPEG camera settings; a RAW file alone does not qualify for this tool. Check Settings → Sidebar Information if the section is hidden. Missing settings are omitted. Ingest does not guess a custom recipe name. Previously saved notes can differ from the detected settings; Use Camera Settings restores the detected draft while editing. Copy and Export produce reference text, not a camera-installable profile. Fujifilm recipe guide → Back to topics ↑",
     "hint": "Support"
@@ -921,7 +921,7 @@
   {
     "type": "section",
     "title": "My workspace or filenames are not right",
-    "url": "/ingest/support/#workspace-problems",
+    "url": "/ingest/support/workspace-problems/",
     "page": "Support",
     "keywords": "My workspace or filenames are not right Confirm the active workspace in the window toolbar. Open at Launch is a separate choice. Open its setup and check required questions, the receiving folder, and File Names. New workspaces keep original filenames until you change that choice. Connect an external destination. If its drive was renamed, reselect the folder. Use Review & Save to inspect the examples, save the workspace, then check the actual output paths in Import Settings. For continuing group numbers, choose the same shoot across cards. A new shoot starts fresh; failed or partial imports may leave reserved-number gaps. Workspace Builder · Naming reference . Back to topics ↑",
     "hint": "Support"
@@ -929,7 +929,7 @@
   {
     "type": "section",
     "title": "A copy did not finish",
-    "url": "/ingest/support/#ingest-problems",
+    "url": "/ingest/support/ingest-problems/",
     "page": "Support",
     "keywords": "A copy did not finish Ingest copies to a temporary name, flushes it to disk, reads the copy back, compares it to the source, and only then gives it its real name. Nothing is ever overwritten. If something goes wrong part way, the files that were already copied and verified are kept and the rest are not, and the receipt records what happened. The Import button is dim The reason is printed beside it. The usual ones are no destination chosen, an empty All, Tagged, or Selected scope, a template that will not parse, or two photographs that would end up with the same name. Names collide Ingest refuses rather than quietly adding a suffix. Add {seqn} or {seq} to the template so every name is different. See collisions . Not enough space The import plan checks free space before it starts and tells you, rather than filling the disk and failing at photograph two hundred. Deleting from the card Keep Leave the card alone to preserve originals. If you choose Delete copied files, copies must verify at every destination. In a RAW-only import, cleanup also removes the intentionally excluded JPEG/HEIF ",
     "hint": "Support"
@@ -937,7 +937,7 @@
   {
     "type": "section",
     "title": "Backup strategy",
-    "url": "/ingest/support/#backup-strategy",
+    "url": "/ingest/support/backup-strategy/",
     "page": "Support",
     "keywords": "Backup strategy Use a separate physical drive for Photo Backup. Ingest’s second verified copy is one part of a backup workflow: arrange off-site protection and editor/catalog backups separately. A Lightroom catalog backup does not back up your original photographs . See 3-2-1 backup guidance for keeping originals safe across media and locations. Project folders that separate source photographs from outputs are an approach also used by Capture One Sessions . They are not mandatory standards. Back to topics ↑",
     "hint": "Support"
@@ -945,7 +945,7 @@
   {
     "type": "section",
     "title": "Lightroom, a Shortcut, or an after-import action did not run",
-    "url": "/ingest/support/#action-problems",
+    "url": "/ingest/support/action-problems/",
     "page": "Support",
     "keywords": "Lightroom, a Shortcut, or an after-import action did not run Check the completion details for skipped or failed actions. Check each action’s Photos for this action scope. Importing All does not mean an action set to Tagged receives every file. Confirm the chosen app, Shortcut, or script is available on this Mac, and review any permission prompt. Retry unfinished actions from the result when offered. Successful actions are left alone. Open an action in Settings → Automation and test it on a small disposable selection when appropriate. Opening files in an editor and importing them into that editor’s catalog are separate steps. After-import workflow · Automation reference . Back to topics ↑",
     "hint": "Support"
@@ -953,7 +953,7 @@
   {
     "type": "section",
     "title": "Permission prompts",
-    "url": "/ingest/support/#permissions",
+    "url": "/ingest/support/permissions/",
     "page": "Support",
     "keywords": "Permission prompts macOS asks before an app reads a removable volume. Allow it, or Ingest cannot see your cards. If you dismissed it, the switch is in System Settings, Privacy & Security, Files and Folders. Connecting to Apple Photos or sending files to it requests Photos read/write permission. Ingest uses your System Photo Library, not an arbitrary library file. If Connect did nothing in an older beta, update to the current release and try again. If access was denied, choose Open Photos Privacy Settings, enable Ingest, and return to the app. Settings → General controls Apple Photos integration for the app, and each workspace has its own switch. Both must be on. Turning integration off hides Photos controls and stops observation; it preserves your saved state. An action that runs a Shortcut asks for permission to control Shortcuts when needed. Back to topics ↑",
     "hint": "Support"
@@ -961,7 +961,7 @@
   {
     "type": "section",
     "title": "Apple Photos availability",
-    "url": "/ingest/support/#photos-support",
+    "url": "/ingest/support/photos-support/",
     "page": "Support",
     "keywords": "Apple Photos availability Native caption, keyword, and rating edits require macOS 27. Earlier supported versions keep Photos ratings local and provide native favorites, dates, and locations. Cloud-only media needs a working connection to Apple Photos. Offline iCloud transfers, switching System Photo Libraries, and playback across all Live Photo and video formats remain beta validation areas. Use Import History to review interrupted or uncertain imports before retrying. Back to topics ↑",
     "hint": "Support"
@@ -969,7 +969,7 @@
   {
     "type": "section",
     "title": "Photos have not appeared in Decks",
-    "url": "/ingest/support/#decks-support",
+    "url": "/ingest/support/decks-support/",
     "page": "Support",
     "keywords": "Photos have not appeared in Decks Send to Decks works with selected still photos and requires a compatible Decks receiver. For Open in Decks for Mac, check that the Mac app is installed. For iCloud, check Apple sign-in and connectivity, then review the transfer status in Ingest and Incoming Photos in Decks. Decks waits for you to choose a new or existing project. Later leaves the transfer in Incoming Photos. Cloud-only Apple Photos images may first need to download. Review the saved transfer’s status before retrying. Transfers contain independent photo copies, not Ingest workspaces or naming settings. The old built-in Social Export editor was removed in 0.9.6; old Social Export projects are not automatically converted. Send to Decks guide → Back to topics ↑",
     "hint": "Support"
@@ -977,7 +977,7 @@
   {
     "type": "section",
     "title": "Claude Second Opinion",
-    "url": "/ingest/support/#second-opinion",
+    "url": "/ingest/support/second-opinion/",
     "page": "Support",
     "keywords": "Claude Second Opinion This optional feature needs Claude Code installed and signed in to your Claude subscription. It uses your account’s connection and usage limits. It is separate from the built-in on-device checks, which do not require Claude. Review what Ask sends to Anthropic before using it. Back to topics ↑",
     "hint": "Support"
@@ -985,7 +985,7 @@
   {
     "type": "section",
     "title": "Get in touch",
-    "url": "/ingest/support/#contact",
+    "url": "/ingest/support/contact/",
     "page": "Support",
     "keywords": "Get in touch Email contact@brianrenshaw.app with your macOS version, the Ingest version from Settings, General, and your camera model. Tell me what you pressed and what happened. You never need to send me a photograph to report a problem. Back to topics ↑",
     "hint": "Support"
@@ -993,7 +993,7 @@
   {
     "type": "section",
     "title": "Credits",
-    "url": "/ingest/support/#credits",
+    "url": "/ingest/support/credits/",
     "page": "Support",
     "keywords": "Credits Metadata is written by ExifTool by Phil Harvey, copyright 2003 to 2026, used under the same terms as Perl itself. The bundled distribution includes an IPTC language-alternative compatibility patch and runs with the Perl that comes with macOS. The demonstration photographs are licensed public photographs and camera RAW samples, credited in the site’s sources file . They are not client work. Back to topics ↑",
     "hint": "Support"

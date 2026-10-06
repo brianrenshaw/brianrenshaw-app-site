@@ -193,3 +193,13 @@ html.ingest-overlay-open{overflow:hidden;overscroll-behavior:none}
 /* Keep /ingest/ feeling static on phones: vertical pan only, no sideways rubber-band. */
 html:has(body.app-ingest),body.app-ingest{touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}
 body.app-ingest{overflow-x:hidden}
+
+/* Reference pages use reading-sized type instead of landing-page headings. */
+.ingest-docs:not(.wiki-docs) h1{font-size:clamp(28px,3vw,38px);max-width:30ch;line-height:1.2}
+.ingest-docs:not(.wiki-docs) h2{font-size:25px}
+.ingest-docs:not(.wiki-docs) .intro{font-size:17px}
+.ingest-docs .guide-table td,.ingest-docs .guide-table th{white-space:normal;min-width:0;overflow-wrap:anywhere}
+.ingest-docs .guide-table td:first-child{white-space:normal;min-width:0}
+.ingest-docs .guide-table td:last-child,.ingest-docs .guide-table th:last-child{white-space:normal;min-width:0}
+.ingest-docs .guide-table kbd{display:inline-block;font-size:12px;margin:2px 0}
+@media(max-width:600px){.ingest-docs:not(.wiki-docs) h1{font-size:28px}.ingest-docs:not(.wiki-docs) h2{font-size:23px}.ingest-docs:not(.wiki-docs) .intro{font-size:16px}.ingest-docs .guide-table table{font-size:13px}.ingest-docs .guide-table td,.ingest-docs .guide-table th{padding:9px}}

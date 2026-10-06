@@ -1,6 +1,6 @@
 /* Site command palette. Progressive enhancement — navigation works without JS. */
 (() => {
-  const INDEX_URL = '/ingest/assets/search-index.json?v=098-editorial';
+  const INDEX_URL = '/ingest/assets/search-index.json?v=wiki-1';
   const DOWNLOAD = document.querySelector('a[href*="/releases/download/ingest-v"][href$=".dmg"]')?.href
     || 'https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.8/Ingest-0.9.8.dmg';
 
@@ -41,6 +41,8 @@
     let s = 0;
     if (item.title.toLowerCase().startsWith(parts[0])) s += 8;
     if (item.type === 'page') s += 3;
+    if (parts.every(p => item.title.toLowerCase().includes(p))) s += 12;
+    if (document.body.classList.contains('wiki-docs') && /\/(guide|support|shortcuts)\//.test(item.url || '')) s += 6;
     if ((item.url || '').includes(location.pathname) && location.pathname !== '/ingest/') s += 2;
     s += Math.max(0, 6 - Math.min(item.title.length / 12, 6));
     return s;

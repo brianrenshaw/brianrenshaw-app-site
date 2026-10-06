@@ -112,6 +112,8 @@ Approved with Brian on September 11, 2026.
 
 ## Ingest (October 6, 2026; release 0.9.8, build 48)
 
+Approved supporting hero line: “Your photo workflow shouldn’t feel stuck in the ’90s.” Keep “Modern photo management for Mac.” as the primary headline. The help center uses focused articles and compact reference typography.
+
 **Identity:** A native Mac photo workflow app for personal and professional photography.
 
 **Headline (exact):** Modern photo management for Mac.
@@ -405,6 +407,8 @@ All seven published claims hold at `92cae0a`:
 
 ## Ingest (October 6, 2026; release 0.9.8, build 48)
 
+Approved supporting hero line: “Your photo workflow shouldn’t feel stuck in the ’90s.” Keep “Modern photo management for Mac.” as the primary headline. The help center uses focused articles and compact reference typography.
+
 **Identity:** A native Mac photo workflow app for personal and professional photography.
 
 **Headline (exact):** Modern photo management for Mac.
@@ -436,6 +440,8 @@ All seven published claims hold at `92cae0a`:
 Earlier implementation records below are historical. This section supersedes conflicting positioning or visual choices.
 
 ## Ingest (October 6, 2026; release 0.9.8, build 48)
+
+Approved supporting hero line: “Your photo workflow shouldn’t feel stuck in the ’90s.” Keep “Modern photo management for Mac.” as the primary headline. The help center uses focused articles and compact reference typography.
 
 **Identity:** A native Mac photo workflow app for personal and professional photography.
 

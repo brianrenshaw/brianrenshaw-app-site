@@ -1,30 +1,20 @@
-/* Native topic disclosure stays usable without this optional enhancement. */
+/* Progressive help navigation; ordinary article links need no script. */
 (() => {
-  const topics = document.querySelector('.doc-topics');
-  if (!topics) return;
-  const compact = matchMedia('(max-width: 1000px)');
-  const fitNavigation = () => { topics.open = !compact.matches; };
-  fitNavigation();
-  compact.addEventListener('change', fitNavigation);
-  // On desktop the full topic list remains visible. Compact screens retain
-  // a normal native disclosure that can be opened with the keyboard.
-  topics.querySelector('summary').addEventListener('click', event => {
-    if (!compact.matches) event.preventDefault();
-  });
-  const links = [...topics.querySelectorAll('a[href^="#"]')];
-  links.forEach(link => link.addEventListener('click', () => {
-    if (compact.matches) topics.open = false;
-  }));
-  if (!('IntersectionObserver' in window)) return;
-  const observer = new IntersectionObserver(entries => {
-    const visible = entries.filter(entry => entry.isIntersecting)
-      .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-    if (!visible.length) return;
-    const href = `#${visible[0].target.id}`;
-    links.forEach(link => {
-      if (link.getAttribute('href') === href) link.setAttribute('aria-current', 'location');
-      else link.removeAttribute('aria-current');
-    });
-  }, { rootMargin: '-20px 0px -65% 0px', threshold: 0 });
-  document.querySelectorAll('.doc-content > section[id]').forEach(section => observer.observe(section));
+  const navigation = document.querySelector('.wiki-navigation');
+  if (navigation) {
+    const compact = matchMedia('(max-width: 960px)');
+    const fit = () => { navigation.open = !compact.matches; };
+    fit();
+    compact.addEventListener('change', fit);
+  }
+  // Keep links shipped in app Help menus, search engines and bookmarks useful.
+  const followLegacyAnchor = () => {
+    let id;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+    if (!id) return;
+    const entry = document.getElementById(id);
+    if (entry?.dataset.article) location.replace(entry.dataset.article);
+  };
+  followLegacyAnchor();
+  addEventListener('hashchange', followLegacyAnchor);
 })();

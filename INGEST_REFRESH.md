@@ -44,3 +44,9 @@ At Brian's request, Guide and Support now use a shared documentation layout: six
 Behavior was checked against 0.9.8 source and the capture work above, including all-loaded-camera scope for time adjustment, GPS versus descriptive place names, file/number pick-list matching, workspace preferences, and tagged-copy after-import scope. Search includes the new sections. The enhancement is optional: native topic disclosures and anchor navigation remain functional without JavaScript.
 
 Documentation validation: site and capture checks, dedicated/portfolio builds, JavaScript syntax, and diff whitespace checks passed. `21st review` of Guide, Support, docs.css, and docs.js returned zero findings. Native Chrome verified the desktop guide sidebar, capture-time anchor and search result, and compact Support disclosure plus location-topic jump.
+
+## Wiki-style documentation follow-up
+
+Brian approved the supporting hero line “Your photo workflow shouldn’t feel stuck in the ’90s.” Guide, Support and Shortcuts are now categorized directories leading to 68 focused static articles. Getting Started, Naming & Metadata, and Automation share the compact help shell. Existing anchors remain on the directories; JavaScript redirects old links to the corresponding article and no-script visitors get a normal article link. Search favors title matches and help articles in the help center.
+
+Desktop uses a sticky collapsible sidebar and breadcrumbs. Compact screens use native navigation disclosure and labeled stacked table rows, preserving keyboard shortcuts with 12px keycaps. Article headings are 26–32px. Real screenshots and feature content remain unchanged. Native Chrome verified desktop guide layout, the 393px shortcut view, legacy anchor routing, search to capture-time instructions, and no-script navigation; scripting was restored. 21st catalog returned HTTP 401; existing project primitives were reused.

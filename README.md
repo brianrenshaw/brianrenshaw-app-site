@@ -100,3 +100,5 @@ Decks's landing, support, and privacy source is in `site/decks/`; Cloudflare pub
 
 
 The October 6 Ingest redesign uses static 0.9.8 (48) Mac captures, a MacBook hero, and workflow-based Guide and problem-based Support navigation. See `INGEST_REFRESH.md` for provenance and validation.
+
+Ingest help articles are maintained in `docs/ingest/help-content.json`; the three longer references use `reference-content.json`. Run `python3 scripts/build_ingest_docs.py` after edits, then the site and dedicated-domain checks. The shared HTML frame is `help-frame.html`; generated static HTML is committed. Legacy guide/support/shortcut fragments retain linked fallbacks and progressively redirect to their articles.
