@@ -1,6 +1,6 @@
 /* Site command palette. Progressive enhancement — navigation works without JS. */
 (() => {
-  const INDEX_URL = '/ingest/assets/search-index.json?v=095-refresh';
+  const INDEX_URL = '/ingest/assets/search-index.json?v=097';
   const DOWNLOAD = document.querySelector('a[href*="/releases/download/ingest-v"][href$=".dmg"]')?.href
     || 'https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.5/Ingest-0.9.5.dmg';
 

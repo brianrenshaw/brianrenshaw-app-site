@@ -198,10 +198,10 @@
   },
   {
     "type": "section",
-    "title": "Presets",
+    "title": "Metadata templates",
     "url": "/ingest/guide/#presets",
     "page": "Guide",
-    "keywords": "presets presets",
+    "keywords": "templates presets new edit copy resolved preview creator copyright fields operation fill empty replace append",
     "hint": "Guide"
   },
   {
@@ -246,10 +246,10 @@
   },
   {
     "type": "section",
-    "title": "Workspaces",
+    "title": "Workspace Builder",
     "url": "/ingest/guide/#workspaces",
     "page": "Guide",
-    "keywords": "workspaces workspaces wedding landscapes personal headshots events destinations settings",
+    "keywords": "workspace builder new scratch guided sections questions photo groups folders file names metadata actions review save cancel",
     "hint": "Guide"
   },
   {
@@ -273,7 +273,7 @@
     "title": "Send to Decks",
     "url": "/ingest/guide/#social-export",
     "page": "Guide",
-    "keywords": "send to decks social export handoff share photos airdrop mac iphone ipad shift command e",
+    "keywords": "decks icloud incoming photos original files jpeg copies handoff share airdrop mac iphone ipad transfer retry",
     "hint": "Guide"
   },
   {
@@ -294,10 +294,10 @@
   },
   {
     "type": "section",
-    "title": "Sorting and filtering",
+    "title": "Sorting, filters, and subfolders",
     "url": "/ingest/guide/#photo-bar",
     "page": "Guide",
-    "keywords": "sorting and filtering photo bar",
+    "keywords": "sort browse by day camera lens stacks photo groups subfolders recursive include nested folders photo background canvas",
     "hint": "Guide"
   },
   {
@@ -587,10 +587,10 @@
   },
   {
     "type": "section",
-    "title": "Actions",
+    "title": "After-import actions",
     "url": "/ingest/automation/#actions",
     "page": "Automation",
-    "keywords": "actions actions",
+    "keywords": "actions tagged untagged selected all scoped matching filters Lightroom Finder verified retry after import",
     "hint": "Automation"
   },
   {
@@ -852,6 +852,14 @@
     "url": "/ingest/privacy/#metadata-assist-history",
     "page": "Privacy",
     "keywords": "metadata assist history metadata assist history",
+    "hint": "Privacy"
+  },
+  {
+    "type": "section",
+    "title": "Decks transfers and iCloud privacy",
+    "url": "/ingest/privacy/#decks-transfers",
+    "page": "Privacy",
+    "keywords": "decks icloud cloudkit private photos incoming transfer queue metadata originals receipts",
     "hint": "Privacy"
   }
 ]

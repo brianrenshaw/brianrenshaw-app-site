@@ -110,7 +110,7 @@ Approved with Brian on September 11, 2026.
 
 **Scope:** This copy describes the linked site at https://www.whatdidtheyread.com/. Its templates, copy, and publishing live in the sibling `blog-explorer` repository under `blogs/whatdidtheyread/`.
 
-## Ingest (October 5, 2026; release 0.9.5, build 41)
+## Ingest (October 6, 2026; release 0.9.7, build 47)
 
 **Identity:** A native Mac photo workflow app for personal and professional photography.
 
@@ -118,11 +118,11 @@ Approved with Brian on September 11, 2026.
 
 **Supporting copy:** Save a workspace for each kind of shoot. Review your photos, add metadata, and import into folders named the way you want.
 
-**Homepage order:** Introduction and five-shoot showcase → Workspaces → Metadata Assist → concise Review/import capabilities → supporting extras → Mac developer story → download. Keep Workspaces first and Metadata Assist second. Social Export and optional analysis remain secondary.
+**Homepage order:** Introduction and five-shoot showcase → Workspaces → Metadata Assist → concise Review/import capabilities → supporting extras → Mac developer story → download. Keep Workspaces first and Metadata Assist second. Send to Decks and optional analysis remain secondary.
 
-**Workspaces:** Saved destinations, backup, folder structures, filenames, metadata, routing, starting view, grouping, and favorites. Wedding, Landscapes, Personal, Headshots, and Events are adaptable examples, not built-in presets. Settings sections named Ingest, Organize, Browse, and Social Export configure defaults; they are not navigation tabs. Apple Photos requires both the global switch and the workspace switch.
+**Workspaces:** One isolated draft with guided or direct navigation through Workspace, Questions, Photo Groups, Folders, File Names, Browse & Review, Metadata, After Import, and Review & Save. New workspaces keep original filenames and card files, with grouping and actions off. Basic, Events, and Headshots are creation starters. The five homepage photography examples are adaptable demonstrations. Photo Groups affect names and optional keywords independently of folder creation; Browse by organizes the screen; Stacks combine related photos. Apple Photos requires both the global switch and the workspace switch.
 
-**Workflow:** Browse is central. Import… opens reviewed Import Settings. Scope starts at Selected when a selection exists, otherwise All; Tagged is an explicit choice. Display filters do not choose import membership. Organize and Social Export open independent windows and retain drafts. Review uses a fixed queue with face/detail inspection. Compare holds Select while candidates change. Canonical details live in the Guide; default keys live in Shortcuts.
+**Workflow:** Browse is central. Import… opens reviewed Import Settings. Scope starts at Selected when a selection exists, otherwise All; Tagged and Untagged are explicit choices. Display filters do not choose import membership. Each after-import action has its own scope within the imported copies. Organize opens an independent window and retains drafts. Review uses a fixed queue with face/detail inspection. Compare holds Select while candidates change. Canonical details live in the Guide; default keys live in Shortcuts.
 
 **Metadata Assist:** Structured entry and review. Type `;` to find fields, use Tab for completion, and review before Apply. GPS locations and typed IPTC place names are distinct. Apply edits writable files or sidecars; Use for Import stages details for verified copies. Copy Metadata chooses field groups and keyword merge behavior; Paste Metadata applies those choices directly. `{…}` tokens belong to naming templates. Quick Entry remains supported in the same reviewed editor. Do not make fake interactive app demos.
 
@@ -130,11 +130,11 @@ Approved with Brian on September 11, 2026.
 
 **Optional analysis:** Built-in face, sharpness, similarity, and keeper checks run locally. Apple Intelligence caption/keyword suggestions run on-device on supported systems. Claude Second Opinion is a separate opt-in integration: Ask sends requested previews, crops, measurements, and the question through the user's Claude account. Never describe all optional assistance as offline or account-free. Ingest itself needs no account. Privacy is authoritative for storage and network behavior.
 
-**Social Export:** Independent window; Send to Social Export… uses the selection, Social Export… resumes the editor. Export reviews destinations, dimensions, and names. The native default pattern is `{base}_social`; Naming & Metadata owns the token reference.
+**Send to Decks:** The built-in Social Export editor was removed in 0.9.6. Send selected still photos as original files or prepared JPEG copies to Decks for Mac, through iCloud, or using AirDrop/Share. Incoming Photos waits for a new or existing project choice. Ingest and Decks retain independent copies. iCloud requires Apple sign-in and a compatible Decks receiver; it does not sync Ingest workspace settings.
 
 **Visual direction:** Existing bright neutral/amber static HTML and CSS. Genuine dark native app captures, cursor-free and lossless at 2× density, with full-resolution links. Photography uses the existing licensed public RAW collections. Keep their provenance and archive old assets at existing URLs. Share artwork is separate branded typography, not an app screenshot.
 
-**Availability:** Free during beta, no Ingest account, macOS 15+, Apple silicon. Current download: 0.9.5 (41).
+**Availability:** Free during beta, no Ingest account, macOS 15+, Apple silicon. Current download: 0.9.7 (47).
 
 **Mac identity:** “Unapologetically Mac.” Brian is a photographer and Apple enthusiast who built the app for his own Mac workflow.
 

@@ -16,10 +16,10 @@
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
 <link rel="stylesheet" href="/ingest/assets/site.css?v=095-refresh">
-<script src="/ingest/assets/overlays.js?v=2" defer></script><script src="/ingest/assets/command-palette.js?v=095-refresh" defer></script></head>
+<script src="/ingest/assets/overlays.js?v=2" defer></script><script src="/ingest/assets/command-palette.js?v=097" defer></script></head>
 <body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" aria-label="Download Ingest" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.6/Ingest-0.9.6.dmg"><span class="nav-download-label">Download <span aria-hidden="true">↗</span></span><svg class="nav-download-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3"/></svg></a></nav></header>
+<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" aria-label="Download Ingest" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.7/Ingest-0.9.7.dmg"><span class="nav-download-label">Download <span aria-hidden="true">↗</span></span><svg class="nav-download-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3"/></svg></a></nav></header>
 <nav class="docs-nav" aria-label="Ingest documentation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/shortcuts/">Shortcuts</a><a href="/ingest/templates/">Naming &amp; metadata</a><a href="/ingest/automation/" aria-current="page">Automation</a></nav>
 <main id="main" tabindex="-1" class="family-document reference">
 <p class="eyebrow">Ingest / Automation</p>
@@ -35,7 +35,10 @@
 
 <section id="actions" class="guide-section">
 <h2>Actions</h2>
-<p>An action is a named list of steps. Choose it in your workflow settings, and it runs once the copies are on disk and verified. You can also run one from <kbd>⌘K</kbd> on whatever is selected, or from a link.</p>
+<p>An action is a named list of steps. Add it in the workspace’s <strong>After Import</strong> section or in Import Settings. It runs on verified imported copies after metadata processing and receipt persistence succeed. You can also invoke an action from <kbd>⌘K</kbd> on the current selection or from a link.</p>
+<p>Each ordered assignment has its own <strong>Photos for this action</strong>: All imported photos, Tagged, Untagged, or Advanced filters for groups, ratings, keywords, labels, file types, and destination rules. Different categories must all match; any selected value within a category can match. Preview shows the matching count. This is separate from <strong>Photos to import</strong>, which chooses what is copied.</p>
+<p>For example, import All, open Tagged copies in Lightroom Classic, and reveal Untagged copies in Finder. Empty assignments are skipped with an explanation. Different actions can intentionally share photos. Targets and substitution values are fixed when import starts.</p>
+<p>Use a file-based Lightroom action for a subset. A folder-wide Lightroom step cannot honor Tagged or other subset scopes and is rejected for them; it may also include files already in the destination folder. Successful actions are recorded and do not run again when retrying unfinished work. A failed required action prevents automatic card cleanup.</p>
 
 <p>Ingest ships with three: open the copies in Lightroom Classic, reveal them in Finder, and import them into an Apple Photos album. Edit them or delete them.</p>
 <div class="guide-table" tabindex="0" role="region" aria-label="Step types">

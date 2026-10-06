@@ -16,10 +16,10 @@
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
 <link rel="stylesheet" href="/ingest/assets/site.css?v=095-refresh">
-<script src="/ingest/assets/overlays.js?v=2" defer></script><script src="/ingest/assets/command-palette.js?v=095-refresh" defer></script></head>
+<script src="/ingest/assets/overlays.js?v=2" defer></script><script src="/ingest/assets/command-palette.js?v=097" defer></script></head>
 <body class="app-ingest ingest-docs">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" aria-label="Download Ingest" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.6/Ingest-0.9.6.dmg"><span class="nav-download-label">Download <span aria-hidden="true">↗</span></span><svg class="nav-download-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3"/></svg></a></nav></header>
+<header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" aria-label="Download Ingest" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.7/Ingest-0.9.7.dmg"><span class="nav-download-label">Download <span aria-hidden="true">↗</span></span><svg class="nav-download-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3"/></svg></a></nav></header>
 <nav class="docs-nav" aria-label="Ingest documentation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/shortcuts/" aria-current="page">Shortcuts</a><a href="/ingest/templates/">Naming &amp; metadata</a><a href="/ingest/automation/">Automation</a></nav>
 <main id="main" tabindex="-1" class="family-document reference">
 <p class="eyebrow">Ingest / Shortcuts</p>
@@ -63,7 +63,7 @@
 <tr><td><kbd>Space</kbd></td><td>Open or close the preview. On a video, play or pause.</td></tr>
 <tr><td><kbd>↩</kbd></td><td>Open or close the preview.</td></tr>
 <tr><td><kbd>Esc</kbd></td><td>Dismiss the innermost popup or editing interaction, then leave Compare or Review. Escape does not close an idle standalone editor.</td></tr>
-<tr><td><kbd>Tab</kbd></td><td>Hide or show both side panels at once.</td></tr>
+<tr><td><kbd>Tab</kbd> / <kbd>⇧Tab</kbd></td><td>Move keyboard focus to the next or previous control.</td></tr>
 <tr><td><kbd>⌥Tab</kbd></td><td>Next split. <kbd>⌥⇧Tab</kbd> goes back.</td></tr>
 <tr><td><kbd>Home</kbd> <kbd>End</kbd></td><td>First and last photograph.</td></tr>
 <tr><td><kbd>Page Up</kbd> <kbd>Page Down</kbd></td><td>Previous and next photograph.</td></tr>
@@ -83,6 +83,7 @@
 <tr><td><kbd>T</kbd></td><td>Toggle tag</td><td>Grid, preview, video</td></tr>
 <tr><td><kbd>⇧T</kbd></td><td>Tag and advance, or tag without advancing</td><td>Grid, preview, video</td></tr>
 <tr><td><kbd>U</kbd></td><td>Untag</td><td>Grid, preview, video</td></tr>
+<tr><td><kbd>X</kbd> / <kbd>⇧X</kbd></td><td>Reject or clear rejection / use the alternate advance behavior</td><td>Grid, preview, video</td></tr>
 <tr><td><kbd>R</kbd> / <kbd>⇧R</kbd></td><td>Mark Reviewed; Shift reverses the review advance preference</td><td>Files and Apple Photos</td></tr>
 <tr><td>no key</td><td>Mark Unreviewed; Protect / Unlock Photos</td><td>Files and Apple Photos</td></tr>
 <tr><td><kbd>⌫</kbd></td><td>Delete selected photos; confirmation is on by default</td><td>Grid, preview, video</td></tr>
@@ -129,7 +130,7 @@
 <tr><td><kbd>Space</kbd></td><td>Toggle the preview</td><td>Grid, preview</td></tr>
 <tr><td><kbd>⌘I</kbd></td><td>Show or hide the right sidebar</td><td></td></tr>
 <tr><td><kbd>⌥⌘S</kbd></td><td>Show or hide the left sidebar</td><td></td></tr>
-<tr><td><kbd>Tab</kbd></td><td>Hide or show both sidebars</td><td>Browse</td></tr>
+<tr><td>no default key</td><td>Hide or show both sidebars through View or the command palette</td><td>Browse</td></tr>
 <tr><td><kbd>C</kbd></td><td>Open Select/Candidate. Left/right browses candidates; Up makes Candidate the Select; Down swaps. Marking acts on the active pane; Esc returns to the previous view with Select selected.</td><td>Grid, preview</td></tr>
 <tr><td><kbd>N</kbd></td><td>Survey the whole current stack, twelve frames per page, or up to six selected photographs. Stack double-click opens the same grid.</td><td>Grid, preview</td></tr>
 <tr><td><kbd>I</kbd></td><td>Cycle the information overlay: off, basic, full</td><td>Grid, preview, split</td></tr>
@@ -290,10 +291,11 @@
 <tbody>
 <tr><td><kbd>⌘E</kbd></td><td>Eject the card</td></tr>
 <tr><td>no default key</td><td>Add the open folder to your favorites</td></tr>
+<tr><td>no default key</td><td>Include Photos in Subfolders / Show Only Current Folder. Also beside the source name and in View.</td></tr>
 <tr><td><kbd>⌃⌘1</kbd> … <kbd>⌃⌘9</kbd></td><td>Open favorite one to nine</td></tr>
 
-<tr><td><kbd>↩</kbd></td><td>Activate the default Import button when Import Settings is ready</td></tr>
-<tr><td>no key</td><td>Choose All, Tagged, or Selected in Import Settings. Browse selection and import scope are separate.</td></tr>
+<tr><td><kbd>↩</kbd></td><td>Commit the destination while editing its field; outside that field, activate Import when the reviewed plan is ready</td></tr>
+<tr><td>no key</td><td>Choose All, Tagged, Untagged, or Selected in Import Settings. Browse selection and import scope are separate.</td></tr>
 <tr><td>no key</td><td>Delete tagged, or untagged, from the card, after the copies verified</td></tr>
 </tbody>
 </table>
