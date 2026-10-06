@@ -29,11 +29,11 @@ def rewrite(text, slug):
 
 def sidebar(slug, active=None):
     collection = DATA[slug]
-    nav = '<a class="wiki-home" href="/ingest/guide/">Ingest help</a><nav aria-label="Help collections" class="wiki-collections">'
+    nav = '<a class="wiki-home" href="/ingest/guide/">Ingest help</a><nav aria-label="Help collections" class="wiki-collections"><a class="wiki-start-link" href="/ingest/getting-started/">Start here →</a>'
     for key, item in DATA.items():
         current = ' aria-current="page"' if key == slug and not active else ''
         nav += f'<a href="/ingest/{key}/"{current}>{esc(item["title"])}</a>'
-    nav += '<a href="/ingest/getting-started/">Getting started</a><a href="/ingest/templates/">Naming &amp; metadata reference</a><a href="/ingest/automation/">Automation reference</a></nav>'
+    nav += '<a href="/ingest/templates/">Naming &amp; metadata reference</a><a href="/ingest/automation/">Automation reference</a></nav>'
     nav += '<nav aria-label="Article topics">'
     articles = {a['id']: a for a in collection['articles']}
     for group in collection['groups']:
@@ -88,7 +88,7 @@ for slug, collection in DATA.items():
         cards += '</ul></section>'
     cards += '</div>'
     if slug == 'guide':
-        cards = '<div class="wiki-start"><strong>New to Ingest?</strong> <a href="/ingest/getting-started/">Start with your first folder or card →</a></div>' + cards
+        cards = '<div class="wiki-start"><strong>Start here</strong><span> Your first shoot in five steps.</span><a href="/ingest/getting-started/">Open → Review → Add details → Import → Save your setup</a></div>' + cards
     if slug == 'support':
         cards = '<div class="wiki-start"><strong>Common issues</strong><a href="/ingest/support/ingest-problems/">An import did not finish →</a><a href="/ingest/support/metadata-problems/">Metadata is missing →</a><a href="/ingest/support/photos-support/">Apple Photos needs help →</a></div>' + cards
     if slug == 'shortcuts':
@@ -124,8 +124,13 @@ known={x['url'] for x in items}
 for slug,collection in DATA.items():
     for a in collection['articles']:
         route=f'/ingest/{slug}/{a["id"]}/'
+        for item in items:
+            if item['url'] == route:
+                item.update(title=a['title'], keywords=re.sub('<[^>]+>', ' ', a['body'])[:600], hint=collection['title'])
         if route not in known:
             items.append({'type':'section','title':a['title'],'url':route,'keywords':re.sub('<[^>]+>',' ',a['body'])[:600],'hint':collection['title']})
+for item in items:
+    if item['url'] == '/ingest/getting-started/': item.update(title='Start here: your first shoot', keywords='start here getting started first import card folder review metadata Lightroom Classic workspace')
 p.write_text(json.dumps(items,ensure_ascii=False,indent=2)+'\n')
 print('Built',sum(len(c['articles']) for c in DATA.values()),'articles and three help directories.')
 

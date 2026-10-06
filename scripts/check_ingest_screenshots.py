@@ -78,6 +78,13 @@ for name, meta in (manifest | archived).items():
         errors.append(f'{name}: {error}')
 
 
+# Device artwork is tracked separately from lossless native screenshots.
+artwork = {item['output']: item for item in json.loads((ASSETS / 'hero-tour.json').read_text())['views']}
+for name, meta in artwork.items():
+    assert lossless_dimensions(ASSETS / name) == (meta['width'], meta['height']), name
+    assert hashlib.sha256((ASSETS / name).read_bytes()).hexdigest() == meta['outputSHA256'], name
+    assert hashlib.sha256((ASSETS / meta['nativeScreenshot']).read_bytes()).hexdigest() == meta['nativeScreenshotSHA256'], name
+
 class Images(HTMLParser):
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -102,6 +109,11 @@ class Images(HTMLParser):
         if tag not in ('img', 'video') or not src.startswith('/ingest/assets/') or not src.endswith(('.webp', '.jpg')):
             return
         name = src.rsplit('/', 1)[-1]
+        if name in artwork:
+            meta = artwork[name]
+            if (attrs.get('width'), attrs.get('height')) != (str(meta['width']), str(meta['height'])):
+                errors.append(f'{page}: incorrect artwork dimensions for {name}')
+            return
         if name not in manifest:
             errors.append(f'{page}: untracked or stale screenshot {name}')
             return

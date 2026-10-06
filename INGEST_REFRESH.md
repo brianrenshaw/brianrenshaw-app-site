@@ -54,3 +54,10 @@ Desktop uses a sticky collapsible sidebar and breadcrumbs. Compact screens use n
 Ingest brevity pass: homepage copy reduced by roughly half. Screenshots are static illustrations, with no enlargement links, popup script, or version captions. Detailed instructions stay in the wiki. Lead handoff with Open in Lightroom Classic. Keep exact Mac and optional Apple Intelligence/Photos compatibility wording in a short section. Footer has Support, Release notes, and Privacy only. Release notes use undated per-version pages and a native version dropdown; old anchors remain compatible.
 
 Help articles use a sticky right-side “On this page” rail for section and subsection links on wide Mac windows, with an expandable menu on smaller screens.
+
+### Manual MacBook tour and clearer help — October 6, 2026
+The hero now starts with Sources, the photo grid, and Inspector visible. Three manual tabs show the same wedding photo in the whole workflow, Focus Mode, and face inspection with focus peaking. No automatic rotation; tabs support arrow keys and mobile horizontal swipes, with all stills readable without JavaScript. The headline and download action stay stationary. The third still uses native Browse inspection tools, not the inconclusive Focused Review comparison panel.
+
+All three new native captures use 0.9.8 (48), matching the newest local Debug build and published release checked this session. Genuine captures retain Retina pixels; derived laptop artwork is recorded separately in hero-tour.json and generated with build_ingest_hero_tour.py. The selected photo embeds Artist Christian Meza and Copyright ChristianMezaMedia. Signature Edits source/license and recorded contributor names/handles are exposed in Support credits, and embedded/filename evidence is added to raw-samples.json. No author is invented for uncredited files.
+
+Long guide passages now have concise task headings linked from the sticky On this page rail. Apple Photos is shortened; the guide landing page and navigation highlight Start here, linking to the existing five-step walkthrough. Existing routes and anchor compatibility are retained.

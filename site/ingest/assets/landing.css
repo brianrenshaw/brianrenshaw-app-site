@@ -90,3 +90,19 @@ body.editorial-home{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans
 .compatibility-section ul{padding-left:20px;margin:16px 0 0}
 .compatibility-section li+li{margin-top:12px}
 .editorial-main .desktop-shot img{cursor:default}
+/* One stable laptop, three visitor-controlled still views. */
+.hero-tour{min-width:0;width:100%}
+.hero-tour-stage{touch-action:pan-y pinch-zoom}
+.hero-tour.is-enhanced .hero-tour-stage{display:grid}
+.hero-tour.is-enhanced .hero-tour-panel{grid-area:1 / 1;min-width:0}
+.hero-tour.is-enhanced .hero-tour-panel[hidden]{display:block;visibility:hidden;pointer-events:none}
+.editorial-main .hero-tour .macbook-hero{margin:0}
+.editorial-main .hero-tour-description{font-size:13px;line-height:1.5;text-align:center;margin:14px auto 0;max-width:48ch}
+.hero-tour-tabs:not([hidden]){display:flex;justify-content:center;gap:4px;margin:16px 0 0;flex-wrap:wrap}
+.hero-tour-tabs button{font:inherit;font-size:12px;font-weight:600;color:var(--muted);background:transparent;border:0;border-bottom:2px solid transparent;padding:10px 12px;min-height:44px;cursor:pointer}
+.hero-tour-tabs button[aria-selected=true]{color:var(--accent);border-bottom-color:var(--accent)}
+.hero-tour-tabs button:hover{color:var(--ink);background:var(--soft)}
+.hero-tour-tabs button:focus-visible,.hero-tour-panel:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.editorial-main .hero-photo-credit{font-size:11px;text-align:center;margin:12px 0 0}
+.hero-photo-credit a{color:var(--muted);text-underline-offset:3px}
+@media(max-width:650px){.editorial-hero>.hero-tour{order:2;margin-top:28px}.hero-tour-tabs{gap:0}.hero-tour-tabs button{font-size:11px;padding:8px}.editorial-main .hero-tour-description{font-size:12px}}

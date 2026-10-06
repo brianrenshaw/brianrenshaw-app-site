@@ -89,14 +89,6 @@
       "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
       "pngSHA256": "bcb6a32f3e39b50859e2f5b0206fbaed55ef2b3fc64cd96044c9c8ec423dbc85"
     },
-    "editorial-review-0.9.8-retina.webp": {
-      "width": 4096,
-      "height": 2140,
-      "displayWidth": 2048,
-      "displayHeight": 1070,
-      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
-      "pngSHA256": "218def79c705d9596eb67b4e03a7e5cf0edbaea8efc9513f4dfffb01b7200e6d"
-    },
     "editorial-verified-0.9.8-retina.webp": {
       "width": 1120,
       "height": 524,
@@ -184,6 +176,14 @@
       "displayHeight": 852,
       "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
       "pngSHA256": "bc74a2c518c5d8109e2e6532cd504d7aca135c602b7420261fdfdda7b273b7d5"
+    },
+    "hero-details-0.9.8-retina.webp": {
+      "width": 4096,
+      "height": 2140,
+      "displayWidth": 2048,
+      "displayHeight": 1070,
+      "source": "Ingest 0.9.8 (48), source 0c84a1a. Native Retina capture; isolated demo library; source for hero artwork. See SOURCES.md.",
+      "pngSHA256": "da0ae2082a5724ed230a061138cc894f275b2b6c2b02036339367319e623acac"
     }
   },
   "archivedImages": {
@@ -1022,6 +1022,30 @@
       "displayHeight": 812,
       "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
       "pngSHA256": "96d9d30da09a32aaf05477f3bba6e0884f35cacf7a8b0101d958405ffa1dbb7e"
+    },
+    "hero-workflow-0.9.8-retina.webp": {
+      "width": 4096,
+      "height": 2140,
+      "displayWidth": 2048,
+      "displayHeight": 1070,
+      "source": "Ingest 0.9.8 (48), source 0c84a1a. Native Retina capture; isolated demo library; source for hero artwork. See SOURCES.md.",
+      "pngSHA256": "a43e3965ea08ea642a7da7da96e02727a4c8d28babd8388ba88170a5a5394e3c"
+    },
+    "hero-focus-0.9.8-retina.webp": {
+      "width": 4096,
+      "height": 2140,
+      "displayWidth": 2048,
+      "displayHeight": 1070,
+      "source": "Ingest 0.9.8 (48), source 0c84a1a. Native Retina capture; isolated demo library; source for hero artwork. See SOURCES.md.",
+      "pngSHA256": "3b9f342499c34b735ce6b8639cfa0c7d57cc48d015fa830150d63a97182e0c5f"
+    },
+    "editorial-review-0.9.8-retina.webp": {
+      "width": 4096,
+      "height": 2140,
+      "displayWidth": 2048,
+      "displayHeight": 1070,
+      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
+      "pngSHA256": "218def79c705d9596eb67b4e03a7e5cf0edbaea8efc9513f4dfffb01b7200e6d"
     }
   },
   "archivedVideos": {

@@ -24,7 +24,9 @@
       "model": "Canon EOS 5DS R",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Christian Meza",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field"
     },
     {
       "id": "1nvnMLuFkS0rlKCcNm6KK6evrLTObhSqB",
@@ -39,7 +41,9 @@
       "model": "Canon EOS 6D",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "(c)Lori Brown Photography",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field"
     },
     {
       "id": "1f7Z5zg52d8d_eIUa5Aj2xsFWsGGEt2XG",
@@ -84,7 +88,10 @@
       "model": "Canon EOS 5D Mark III",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1JIpbxntmLjnd-6ALvDVTuBcUb1-DqW0w",
@@ -204,7 +211,9 @@
       "model": "Canon EOS 5D Mark III",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Levi_Price",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field"
     },
     {
       "id": "1ypPUlRqkYk4dP9vEW0wVa9p2FzjTJrGd",
@@ -264,7 +273,12 @@
       "model": "Canon EOS 5D Mark III",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Boketto",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1z59bCDpbo9yYcnvnGg6uXKWw0SDrsC7-",
@@ -294,7 +308,9 @@
       "model": "Canon EOS 6D",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Jennifer Allison",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field"
     },
     {
       "id": "137gKal7ywm7ocJwhUNd9fBFqDk45dMP-",
@@ -369,7 +385,9 @@
       "model": "Canon EOS 5D Mark III",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Boketto",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field"
     },
     {
       "id": "1JZsM2_dbKiw0hf3kUykoQpUAsuJOQT7O",
@@ -444,7 +462,10 @@
       "model": "DC-S5",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1-8us9UPFJ8s_oNAjxRXRj1MVuS-rsrkt",
@@ -474,7 +495,10 @@
       "model": "DC-S5",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1vxJQoE6hqW4ZaXeag5Wjd861aLvRubXK",
@@ -489,7 +513,10 @@
       "model": "DC-S5",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1q42Q2PueCeEe_IwsdN6uDhfyMfiHElf5",
@@ -504,7 +531,10 @@
       "model": "ILCE-7M4",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "15FnPiTGk5WawVFKI3pWXHAQJPeFZT6Pl",
@@ -519,7 +549,10 @@
       "model": "ILCE-1",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1vkqAKXjVuj0pZM4Nd1papW6xYwukJnab",
@@ -564,7 +597,10 @@
       "model": "ILCE-7M3",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "12afGnpx5Cl1HDZzg5M6_YX8QPq9zFuv_",
@@ -579,7 +615,10 @@
       "model": "ILCE-7M3",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1eom1drLoVYhcbgqlk7D8mp3QiorfjzWv",
@@ -594,7 +633,10 @@
       "model": "ILCE-7M3",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1w2CcZTfrYw23L9tLtavil3fcyNPMAwlA",
@@ -639,7 +681,10 @@
       "model": "ILCE-7M3",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1aLBsIPcX6CFdDPW-VJeNoPUfaTPc8YAV",
@@ -654,7 +699,10 @@
       "model": "ILCE-7M3",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1t1SUoIzS-JHgOCDjpyYluRRHoaOr_oZX",
@@ -669,7 +717,10 @@
       "model": "ILCE-7M3",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1pUufKh2yXJCYCs8T6-QeJVtyqhDAYRqw",
@@ -684,7 +735,10 @@
       "model": "ILCE-1",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1dIaV0D9Xs3iXhY4t8uKchiD2tXuqSpTn",
@@ -729,7 +783,10 @@
       "model": "ILCE-7M3",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1OBEe5P_537A4s_mVr0bhpBf8tdZnw94s",
@@ -744,7 +801,10 @@
       "model": "ILCE-7M3",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1eF3RCckA95ncm84CteIy-PBqNxwj57oN",
@@ -759,7 +819,10 @@
       "model": "ILCE-7M3",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1VRpZLQTwysAumyyRT7jfWiUCrDHG4L9l",
@@ -774,7 +837,10 @@
       "model": "DC-S5",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@RYANBREITKREUTZ"
+      ]
     },
     {
       "id": "1Ts8TJnMdfyCCKy3DM8SrM1Fl8f7-lmjq",
@@ -909,7 +975,9 @@
       "model": "ILCE-7M3",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Miguel Arge",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field"
     },
     {
       "id": "1QouaVRb3sj_SSMND7i5c_0BcnS3brBkE",
@@ -939,7 +1007,9 @@
       "model": "Canon EOS 5D Mark III",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Alex Yakovlev",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field"
     },
     {
       "id": "1ErPLmc3keeVaeWHYTnSAxSI9xa7clAah",
@@ -954,7 +1024,9 @@
       "model": "Canon EOS 5D Mark III",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Alex Yakovlev",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field"
     },
     {
       "id": "1HqCKFCZoCCg6p7EcaMYj7CjlgFTvUeg4",
@@ -1014,7 +1086,10 @@
       "model": "ILCE-7M4",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1Gsy3NUT2ejWyEUYjA4H1s8lxLGb4W9oX",
@@ -1044,7 +1119,12 @@
       "model": "Canon EOS 600D",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Aleksandr Pekhenko @alex.pekhenko",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field",
+      "sourceFilenameCredits": [
+        "@pekhenko_photo"
+      ]
     },
     {
       "id": "19xjgvAMNyD1ML-_iGluPCRpgFfBATWVP",
@@ -1104,7 +1184,10 @@
       "model": "ILCE-7M3",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1lrBGmn4FRO701erg4xo8pWlW0EysEj0F",
@@ -1119,7 +1202,9 @@
       "model": "Canon EOS 800D",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "SEDLIAKIVSKYI VOLODYMYR",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field"
     },
     {
       "id": "1e4C5kPmXTlrWFhbS1nPpSZ-NePb6j-By",
@@ -1209,7 +1294,9 @@
       "model": "Canon EOS 5D Mark III",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "DANHNGO PHOTOGRAPHER",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field"
     },
     {
       "id": "166i5k-v4voxjqURR9I3PQHdYQhmKiF07",
@@ -1284,7 +1371,10 @@
       "model": "NIKON D80",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@pekhenko_work"
+      ]
     },
     {
       "id": "16K2gt5MHXJvvVhz5xZEEm5vKGiR2QT2q",
@@ -1299,7 +1389,10 @@
       "model": "Canon EOS 60D",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@flaviosantts"
+      ]
     },
     {
       "id": "12P-6C21moAthwSU4jCAFJCxFuW7TIgCG",
@@ -1344,7 +1437,9 @@
       "model": "ILCE-7M3",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Phenry_Photography",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field"
     },
     {
       "id": "1QixQJGdbvmdkt3kNEPaFVb8pVVYfZwRG",
@@ -1359,7 +1454,9 @@
       "model": "Canon EOS 5D Mark III",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Levi_Price",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field"
     },
     {
       "id": "1TYLhj588_4mHCxK6bojE257m1W5_9l8n",
@@ -1539,7 +1636,9 @@
       "model": "Canon EOS 5D Mark III",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Alex Yakovlev",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field"
     },
     {
       "id": "1iP0k3ZrQtoe0mFlD56Rp13Uov0vbR0-O",
@@ -1599,7 +1698,10 @@
       "model": "NIKON D810",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@arwcoe"
+      ]
     },
     {
       "id": "1SZ9iJJ7QRYJUk_u0Y0_EyIJaKbN0duA-",
@@ -1659,7 +1761,10 @@
       "model": "ILCE-7RM2",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@KianMousazadeh"
+      ]
     },
     {
       "id": "16qbt8uZ8sEDgir7PAhmNwJ2sMQ9FT1me",
@@ -1689,7 +1794,12 @@
       "model": "NIKON D810",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Amir Baseri",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field",
+      "sourceFilenameCredits": [
+        "@arwcoe"
+      ]
     },
     {
       "id": "1qeHkIFKPm2zhvJxofqMJUCy-Iu8_7SxI",
@@ -1719,7 +1829,9 @@
       "model": "Canon EOS Rebel T6i",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "MATEO ESCUDERO",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field"
     },
     {
       "id": "1LCPXrTYkE3YzrwFKww_rsuf7-DoBPAkE",
@@ -1749,7 +1861,12 @@
       "model": "ILCE-7M3",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Ryan Larson",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field",
+      "sourceFilenameCredits": [
+        "@Larson_Ryan_Photography"
+      ]
     },
     {
       "id": "1Wr0PkBcTlqPJnF82LxJxTju6j2dd3Bf1",
@@ -1794,7 +1911,12 @@
       "model": "NIKON D7100",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Filipeoliveiraph",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field",
+      "sourceFilenameCredits": [
+        "@filipeoliveiraph"
+      ]
     },
     {
       "id": "1E1IXUZcJxX4JtttLlh63OAujaZvBYblY",
@@ -1839,7 +1961,9 @@
       "model": "Canon EOS 5D Mark III",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Max Ottoto",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field"
     },
     {
       "id": "16IEbe2ZKeRLHvM1iHYcV0PF_TaXTBXLu",
@@ -1884,7 +2008,12 @@
       "model": "NIKON D810",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "photographerCredit": "Amir Baseri",
+      "creditEvidence": "Embedded Artist, Creator, or By-line field",
+      "sourceFilenameCredits": [
+        "@arwco"
+      ]
     },
     {
       "id": "1v0vawfWJ8XQWNlYBwARdcEXfAIbg5fZa",
@@ -2049,7 +2178,10 @@
       "model": "Canon EOS REBEL T5i",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@hisfotografia"
+      ]
     },
     {
       "id": "1tZYamwk-9Zo68OvGdMWllUFMRlb7Blbx",
@@ -2169,7 +2301,10 @@
       "model": "ILCE-7M3",
       "license": "Signature-Edits-Free-RAW",
       "licenseUrl": "https://www.signatureedits.com/free-raw-license-terms/",
-      "source": "https://www.signatureedits.com/free-raw-photos/"
+      "source": "https://www.signatureedits.com/free-raw-photos/",
+      "sourceFilenameCredits": [
+        "@ryanbreitkreutz"
+      ]
     },
     {
       "id": "1f_DTEVec9LCzYauaT2c_2FMKF9Kq-Tn-",
