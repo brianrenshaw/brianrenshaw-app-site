@@ -69,7 +69,7 @@ def main():
     manifest = json.loads((OUTPUT / 'assets/screenshots.json').read_text())
     share = urlsplit(Metadata((OUTPUT / 'index.html').read_text()).meta['og:image']).path.removeprefix('/assets/')
     assets = list(manifest['images']) + list(manifest['videos']) + [
-        share, 'hero-macbook-0.9.8.png', 'docs.css', 'docs.js', 'search-index.json', 'command-palette.js', 'overlays.js',
+        share, 'hero-macbook-0.9.8.png', 'docs.css', 'docs.js', 'releases.js', 'search-index.json', 'command-palette.js', 'overlays.js',
         'landing.js', 'site.css', 'landing.css', 'apps.css', 'family.css', 'icon.png',
         'fonts/ibm-plex-sans.ttf', 'fonts/ia-writer-mono.ttf']
 

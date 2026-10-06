@@ -135,8 +135,13 @@ for slug, ref in references.items():
     body = re.sub(r'/ingest/(guide|support|shortcuts)/#[\w-]+', lambda m: mapping.get(m[0], m[0]), ref['body'])
     body = re.sub(r'<table\b.*?</table>', table, body, flags=re.S)
     body = body.replace('<table>', '<table role="table">').replace('<tr>', '<tr role="row">').replace('<th scope=', '<th role="columnheader" scope=').replace('<td ', '<td role="cell" ')
-    body = re.sub(r'<nav class="guide-toc"(.*?)>(.*?)</nav>', r'<details class="wiki-on-page"><summary>On this page</summary><nav\1>\2</nav></details>', body, flags=re.S)
+    body = re.sub(r'<nav class="guide-toc"(.*?)>(.*?)</nav>', '', body, flags=re.S)
     output = page('guide', html.unescape(ref['title']), '', '<article class="wiki-article">' + body + '</article>', route_override=f'/ingest/{slug}/')
     output = output.replace('href="/ingest/guide/" aria-current="page"', 'href="/ingest/guide/"')
     output = output.replace(f'href="/ingest/{slug}/">', f'href="/ingest/{slug}/" aria-current="page">')
     (SITE / slug / 'index.html').write_text(output)
+
+from ingest_doc_navigation import add_page_navigation
+for slug in [*DATA, *references]:
+    for path in (SITE / slug).rglob('index.html'):
+        path.write_text(add_page_navigation(path.read_text()))

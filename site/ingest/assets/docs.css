@@ -59,3 +59,17 @@ body.wiki-docs{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-seri
 .wiki-on-page>summary{padding:9px 0;font-size:14px;font-weight:650;cursor:pointer;min-height:44px}
 .wiki-docs .wiki-on-page .guide-toc{border:0;margin:0;padding:8px 0;gap:4px 20px}
 .wiki-docs .wiki-on-page .guide-toc a{font-size:13px}
+.release-picker{display:flex;align-items:center;gap:14px;padding-bottom:24px;margin-bottom:24px;border-bottom:1px solid var(--line)}
+.release-picker label{font-size:14px;font-weight:650}
+.release-picker select{font:inherit;font-size:14px;min-height:44px;padding:8px 36px 8px 12px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:6px;max-width:100%}
+.release-legacy{display:none}
+/* Article headings remain within reach while reading on a Mac. */
+.wiki-page-toc{position:sticky;top:24px;max-height:calc(100vh - 48px);overflow:auto;scrollbar-width:thin}
+.wiki-page-sections>summary{font-size:12px;font-weight:650;color:var(--ink);padding:8px 0;cursor:pointer}
+.wiki-page-sections nav{border-left:1px solid var(--line);margin:8px 0}
+.wiki-page-sections a{display:block;font-size:12px;line-height:1.5;color:var(--muted);text-decoration:none;padding:8px 12px;border-left:2px solid transparent;margin-left:-1px}
+.wiki-page-sections a:hover,.wiki-page-sections a[aria-current=location]{color:var(--accent);border-left-color:var(--accent);background:var(--soft)}
+.wiki-page-sections a.toc-subheading{padding-left:22px}
+@media(min-width:1201px){.wiki-layout.with-page-toc{max-width:1440px;grid-template-columns:220px minmax(0,760px) 190px;gap:36px}.wiki-page-sections>summary{list-style:none;pointer-events:none}.wiki-page-sections>summary::-webkit-details-marker{display:none}}
+@media(max-width:1200px){.wiki-page-toc{position:static;max-height:none;overflow:visible;grid-column:2;grid-row:1;margin-bottom:22px}.with-page-toc .wiki-sidebar{grid-column:1;grid-row:1 / span 2}.with-page-toc .wiki-main{grid-column:2;grid-row:2}.with-page-toc{row-gap:0}.wiki-page-sections{border:1px solid var(--line);border-radius:6px;padding:6px 14px;background:var(--surface)}.wiki-page-sections>summary{font-size:13px;min-height:40px;padding:10px 0}}
+@media(max-width:960px){.wiki-layout.with-page-toc{display:flex;flex-direction:column;gap:0}.with-page-toc .wiki-sidebar{order:0;width:100%}.with-page-toc .wiki-page-toc{order:1;width:100%}.with-page-toc .wiki-main{order:2;width:100%}}

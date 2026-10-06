@@ -92,3 +92,5 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 | 0.2.1 | 6 | September 20, 2026 | Native editing fixes, accessible shortcut recording, contextual palette Actions, and appearance polish. |
 | 0.2.0 | 5 | September 20, 2026 | The Studio design pass: Archivo throughout, sectioned inspector, two-stage ingest bar, and a completion receipt that reports what is still only on the card. |
 | 0.1.0 | 4 | September 18, 2026 | First public release. Signed, notarized, stapled. macOS 15 or later, Apple silicon only. |
+
+Release-note source is `docs/ingest/release-notes.json`, newest version first. Add release content there without dates, then run `python3 scripts/build_ingest_release_notes.py` to regenerate the version pages, latest page, dropdown, legacy anchors, and search destinations. Preserve the permanent appcast and its signed enclosure metadata.

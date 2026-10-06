@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/assets/apps.css">
 <link rel="stylesheet" href="/assets/family.css">
 <link rel="stylesheet" href="/ingest/assets/site.css?v=095-refresh">
-<script src="/ingest/assets/overlays.js?v=2" defer></script><script src="/ingest/assets/command-palette.js?v=wiki-1" defer></script><link rel="stylesheet" href="/ingest/assets/docs.css?v=wiki-1"><script src="/ingest/assets/docs.js?v=wiki-1" defer></script><noscript><style>.nav-search{display:none!important}</style></noscript></head>
+<script src="/ingest/assets/command-palette.js?v=wiki-1" defer></script><link rel="stylesheet" href="/ingest/assets/docs.css?v=wiki-1"><script src="/ingest/assets/docs.js?v=wiki-1" defer></script><noscript><style>.nav-search{display:none!important}</style></noscript></head>
 <body class="app-ingest ingest-docs wiki-docs">
 <a class="skip-link" href="#main">Skip to content</a><header class="family-header"><a class="family-brand" href="/ingest/"><img src="/ingest/assets/icon.png" width="36" height="36" alt="">Ingest</a><nav aria-label="Main navigation"><a href="/ingest/getting-started/">Getting started</a><a href="/ingest/guide/">Guide</a><a href="/ingest/support/">Support</a><button type="button" class="nav-search" data-ingest-palette aria-haspopup="dialog">Search <kbd>⌘K</kbd></button><a class="nav-download" aria-label="Download Ingest" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.8/Ingest-0.9.8.dmg"><span class="nav-download-label">Download <span aria-hidden="true">↗</span></span><svg class="nav-download-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3"/></svg></a></nav></header>
 <div class="wiki-toolbar"><a href="/ingest/guide/">Help center</a><button type="button" class="nav-search wiki-search" data-ingest-palette aria-haspopup="dialog">Search the guide and support <kbd>⌘K</kbd></button></div>
@@ -24,18 +24,4 @@
 <main id="main" tabindex="-1" class="wiki-main"><nav class="wiki-breadcrumbs" aria-label="Breadcrumb"><a href="/ingest/">Ingest</a><span aria-hidden="true">/</span><a href="/ingest/support/">Support</a><span aria-hidden="true">/</span><span aria-current="page">Lightroom or Photos does not show my keywords</span></nav><header class="wiki-heading"><h1>Lightroom or Photos does not show my keywords</h1><p></p></header><article class="wiki-article" id="metadata-problems"><p>Ingest writes metadata directly into supported rendered files and uses XMP sidecars for proprietary RAW files. Apple Photos may not read RAW sidecars. Export a JPEG with metadata and GPS included, then send that JPEG to Photos when those fields need to travel with the image. Native Photos edits are available separately in the Photos workspace, with caption, keyword, and rating writes requiring macOS 27.</p>
 <p>Two things to check first. Metadata is never written to a card, so if you added keywords while culling, they are applied to the copies during ingest and you should look at the copies. And ratings and labels are written in the background a couple of seconds after you stop pressing keys, so a file read the instant you rated it may not have caught up.</p>
 <p>The writing is done by <a href="/ingest/support/credits/">ExifTool</a>, which is included in the app. Ingest keeps ExifTool's backup of each file until it has read the file back and confirmed the write, then removes it. If the read back does not match, the original is put back.</p>
-<p>If Settings, Advanced reports that the metadata tool is not ready, turn <em>Use the built-in exiftool</em> back on. The built-in copy runs with the Perl that ships with macOS. If a future macOS removes Perl, that switch and a copy installed with Homebrew are the way back.</p></article><nav class="wiki-related" aria-label="Adjacent articles"><a href="/ingest/support/pick-list-problems/"><small>Previous topic</small>A client pick list has missing or ambiguous matches</a><a href="/ingest/support/location-problems/"><small>Next topic</small>I entered a location, but there is no map pin</a></nav><p class="wiki-updated">Applies to Ingest 0.9.8 (48) · <a href="/ingest/support/contact/">Still need help?</a></p></main></div><footer class="family-footer">
-<span>© 2026 Brian Renshaw</span>
-<nav aria-label="Footer">
-<a href="/">← Brian’s homepage</a>
-<a href="/ingest/getting-started/">Getting started</a>
-<a href="/ingest/guide/">Guide</a>
-<a href="/ingest/shortcuts/">Shortcuts</a>
-<a href="/ingest/templates/">Naming &amp; metadata</a>
-<a href="/ingest/automation/">Automation</a>
-<a href="/ingest/support/">Support</a>
-<a href="/ingest/release-notes/">Release notes</a>
-<a href="/ingest/privacy/">Privacy</a>
-<a href="mailto:contact@brianrenshaw.app">Contact</a>
-</nav>
-</footer></body></html>
+<p>If Settings, Advanced reports that the metadata tool is not ready, turn <em>Use the built-in exiftool</em> back on. The built-in copy runs with the Perl that ships with macOS. If a future macOS removes Perl, that switch and a copy installed with Homebrew are the way back.</p></article><nav class="wiki-related" aria-label="Adjacent articles"><a href="/ingest/support/pick-list-problems/"><small>Previous topic</small>A client pick list has missing or ambiguous matches</a><a href="/ingest/support/location-problems/"><small>Next topic</small>I entered a location, but there is no map pin</a></nav><p class="wiki-updated">Applies to Ingest 0.9.8 (48) · <a href="/ingest/support/contact/">Still need help?</a></p></main></div><footer class="family-footer"><span>© 2026 Brian Renshaw</span><nav aria-label="Footer"><a href="/ingest/support/">Support</a><a href="/ingest/release-notes/">Release notes</a><a href="/ingest/privacy/">Privacy</a></nav></footer></body></html>

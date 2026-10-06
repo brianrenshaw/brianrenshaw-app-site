@@ -472,3 +472,5 @@ Approved supporting hero line: “Your photo workflow shouldn’t feel stuck in 
 **Canonical references:** Getting Started owns the first-run path; Guide owns behavior; Shortcuts owns default keys and contexts; Naming & Metadata owns tokens and naming defaults; Automation owns URL schemes and actions; Support owns compatibility and troubleshooting; Privacy owns data handling. Preserve routes, anchor IDs, the Quick Start redirect, historical release entries, and the permanent Sparkle feed.
 
 Earlier implementation records below are historical. This section supersedes conflicting positioning or visual choices.
+
+Ingest brevity pass: homepage copy reduced by roughly half. Screenshots are static illustrations, with no enlargement links, popup script, or version captions. Detailed instructions stay in the wiki. Lead handoff with Open in Lightroom Classic. Keep exact Mac and optional Apple Intelligence/Photos compatibility wording in a short section. Footer has Support, Release notes, and Privacy only. Release notes use undated per-version pages and a native version dropdown; old anchors remain compatible.
