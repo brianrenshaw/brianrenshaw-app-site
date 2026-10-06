@@ -89,14 +89,6 @@
       "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
       "pngSHA256": "cd1f094ffcbccea2ada6183bd3417d5b0a05c8b8f7eeab2d9e84ed28ad31c0a9"
     },
-    "workspace-landscapes-options-dark-0.9.5-retina.webp": {
-      "width": 1962,
-      "height": 1402,
-      "displayWidth": 981,
-      "displayHeight": 701,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "b84d7fbc59d2da682de47862c8fe3fc04c699ce4d7ca903cd8af950d58201613"
-    },
     "workspace-headshots-options-dark-0.9.5-retina.webp": {
       "width": 1962,
       "height": 1402,
@@ -216,6 +208,13 @@
       "displayHeight": 670,
       "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
       "pngSHA256": "04213ff305285df8c9dd80a93955f21679967c5a92a2b522bb681fc287e6ac37"
+    },
+    "browse-by-dark-0.9.8-retina.webp": {
+      "width": 720,
+      "height": 960,
+      "displayWidth": 360,
+      "displayHeight": 480,
+      "source": "Native dark-mode NSHostingView capture of Ingest BrowseByOptions, October 6, 2026. Lossless 2x; no photograph or personal paths. See SOURCES.md."
     }
   },
   "archivedImages": {
@@ -910,6 +909,14 @@
       "displayHeight": 812,
       "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
       "pngSHA256": "d9af1a702dda7b3cf93ef661993f3fd7134e6906abefea795e00fa2091e6ca82"
+    },
+    "workspace-landscapes-options-dark-0.9.5-retina.webp": {
+      "width": 1962,
+      "height": 1402,
+      "displayWidth": 981,
+      "displayHeight": 701,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "b84d7fbc59d2da682de47862c8fe3fc04c699ce4d7ca903cd8af950d58201613"
     }
   },
   "archivedVideos": {
