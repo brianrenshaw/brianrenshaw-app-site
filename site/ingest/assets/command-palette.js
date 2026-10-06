@@ -1,8 +1,8 @@
 /* Site command palette. Progressive enhancement — navigation works without JS. */
 (() => {
-  const INDEX_URL = '/ingest/assets/search-index.json?v=097';
+  const INDEX_URL = '/ingest/assets/search-index.json?v=098-editorial';
   const DOWNLOAD = document.querySelector('a[href*="/releases/download/ingest-v"][href$=".dmg"]')?.href
-    || 'https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.5/Ingest-0.9.5.dmg';
+    || 'https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.8/Ingest-0.9.8.dmg';
 
   const isMac = /Mac|iPhone|iPad|iPod/.test(navigator.platform || '') || (navigator.userAgentData && navigator.userAgentData.platform === 'macOS');
   const modLabel = isMac ? '⌘' : 'Ctrl';

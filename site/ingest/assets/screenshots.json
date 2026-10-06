@@ -1,14 +1,6 @@
 {
-  "capture": "Native 2x dark-mode captures of signed Ingest 0.9.5 (41), using an isolated library and the existing 155 licensed public RAW photographs. See SOURCES.md and raw-samples.json.",
+  "capture": "Current homepage: genuine Ingest 0.9.8 (48) Retina stills from an isolated licensed demo library. Earlier documentation captures retain their individual provenance. See SOURCES.md.",
   "images": {
-    "hero-landscapes-split-dark-0.9.5-retina.webp": {
-      "width": 2882,
-      "height": 1592,
-      "displayWidth": 1441,
-      "displayHeight": 796,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "d7a702116163214cf6e31a18404b3c11dec090d5926807c9eb5df5cb0d270529"
-    },
     "hero-wedding-dark-0.9.5-retina.webp": {
       "width": 2882,
       "height": 1592,
@@ -25,14 +17,6 @@
       "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
       "pngSHA256": "45ae1f49e409475b13b66524d489cce76dec3f32c708c9a39498560e2aee592d"
     },
-    "workspace-wedding-options-dark-0.9.5-retina.webp": {
-      "width": 1960,
-      "height": 1400,
-      "displayWidth": 980,
-      "displayHeight": 700,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "465765235f990070faca3ef6fcc5709cfe85dba0f8f89b998e1c1b5b99175dd3"
-    },
     "workspace-wedding-setup-dark-0.9.5-retina.webp": {
       "width": 2880,
       "height": 3180,
@@ -40,78 +24,6 @@
       "displayHeight": 1590,
       "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
       "pngSHA256": "36d8a10dce8feb5972c3e40edaf89738a053356c929437cf557c26e2d1c38650"
-    },
-    "workspace-landscapes-setup-dark-0.9.5-retina.webp": {
-      "width": 2880,
-      "height": 3180,
-      "displayWidth": 1440,
-      "displayHeight": 1590,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "221c1f3dc64a1bcbe2cc3b63f94c6ba1bd8f7d08c4b61bfb975490fbb132b7b8"
-    },
-    "workspace-personal-setup-dark-0.9.5-retina.webp": {
-      "width": 2880,
-      "height": 3180,
-      "displayWidth": 1440,
-      "displayHeight": 1590,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "64981e2df5d7784281901e1ee9d20596f89dd8dbfe395bb56b94d2a2e2ed1df7"
-    },
-    "workspace-headshots-setup-dark-0.9.5-retina.webp": {
-      "width": 2880,
-      "height": 3180,
-      "displayWidth": 1440,
-      "displayHeight": 1590,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "88709282231db2894529801cd4609ab9fc5e32bf5ee6c803a959630bd8108272"
-    },
-    "workspace-events-setup-dark-0.9.5-retina.webp": {
-      "width": 2880,
-      "height": 3180,
-      "displayWidth": 1440,
-      "displayHeight": 1590,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "44fac691ba13ec3d5e21eddd98f2bb063828193d7e41edbe1eb24e380fe2c999"
-    },
-    "workspace-events-options-dark-0.9.5-retina.webp": {
-      "width": 1962,
-      "height": 1402,
-      "displayWidth": 981,
-      "displayHeight": 701,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "eb381a86b295527d0725ecfaf348f9867a4dbf6463cf50bb64e114efa8b3de2b"
-    },
-    "workspace-personal-options-dark-0.9.5-retina.webp": {
-      "width": 1962,
-      "height": 1402,
-      "displayWidth": 981,
-      "displayHeight": 701,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "cd1f094ffcbccea2ada6183bd3417d5b0a05c8b8f7eeab2d9e84ed28ad31c0a9"
-    },
-    "workspace-headshots-options-dark-0.9.5-retina.webp": {
-      "width": 1962,
-      "height": 1402,
-      "displayWidth": 981,
-      "displayHeight": 701,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "93e90135c1db3ff98f1a64a74823db8d4c3db598eea4a7b5a8edacd8f5896985"
-    },
-    "hero-personal-focus-dark-0.9.5-retina.webp": {
-      "width": 2882,
-      "height": 1592,
-      "displayWidth": 1441,
-      "displayHeight": 796,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "5d01ae770239556e3c22ddd757bc84289cc056213bf30ae6cef245468623888c"
-    },
-    "hero-headshots-grid-dark-0.9.5-retina.webp": {
-      "width": 2882,
-      "height": 1592,
-      "displayWidth": 1441,
-      "displayHeight": 796,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "cfb43c9c1c310c33f8ff60a9bf00f69331e3f3431976ecea5208f34107d1c88e"
     },
     "review-faces-dark-0.9.5-retina.webp": {
       "width": 2882,
@@ -129,14 +41,6 @@
       "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
       "pngSHA256": "66c6343f65b1b2a3515af6fac7c7e48b80d3322215fc1a9416716ade59e9184c"
     },
-    "command-workspaces-dark-0.9.5-retina.webp": {
-      "width": 2882,
-      "height": 1592,
-      "displayWidth": 1441,
-      "displayHeight": 796,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "9abe67fcfc6371fbc30551aa4c063696f29847d5c3ea55ff41d66122ecb7330e"
-    },
     "palette-dark-0.9.5-retina.webp": {
       "width": 2882,
       "height": 1592,
@@ -152,14 +56,6 @@
       "displayHeight": 796,
       "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
       "pngSHA256": "8451d7b54880114127cb5a14c69f8aca3cfe05a9e8958ea94ac4e2b45e8f36f2"
-    },
-    "metadata-assist-dark-0.9.5-retina.webp": {
-      "width": 2882,
-      "height": 1592,
-      "displayWidth": 1441,
-      "displayHeight": 796,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "e9735187cef736cfc70e34295b7c3ea341b78344eb5038ec39a2d36d1e5c1210"
     },
     "copy-metadata-dark-0.9.5-retina.webp": {
       "width": 2882,
@@ -177,30 +73,6 @@
       "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
       "pngSHA256": "beef43fda955e4646b373d6cf14753911f371a15706b0b88bef0ba71459d8b84"
     },
-    "preview-landscape-dark-0.9.5-retina.webp": {
-      "width": 2880,
-      "height": 1524,
-      "displayWidth": 1440,
-      "displayHeight": 762,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "6ff2e02df3662ab821aaf49e7005889156b39e98f27ed8b65789e3ef9a0c5183"
-    },
-    "raw-compare-dark-0.9.5-retina.webp": {
-      "width": 2880,
-      "height": 1524,
-      "displayWidth": 1440,
-      "displayHeight": 762,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "96a930a2fc4ecb1169de8c739a3628737159b23dd5667d7257f10f66e9178517"
-    },
-    "organize-dark-0.9.5-retina.webp": {
-      "width": 2360,
-      "height": 1624,
-      "displayWidth": 1180,
-      "displayHeight": 812,
-      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
-      "pngSHA256": "96d9d30da09a32aaf05477f3bba6e0884f35cacf7a8b0101d958405ffa1dbb7e"
-    },
     "shoot-details-dark-0.9.5-retina.webp": {
       "width": 1800,
       "height": 1340,
@@ -209,12 +81,109 @@
       "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
       "pngSHA256": "04213ff305285df8c9dd80a93955f21679967c5a92a2b522bb681fc287e6ac37"
     },
-    "browse-by-dark-0.9.8-retina.webp": {
-      "width": 720,
-      "height": 960,
-      "displayWidth": 360,
-      "displayHeight": 480,
-      "source": "Native dark-mode NSHostingView capture of Ingest BrowseByOptions, October 6, 2026. Lossless 2x; no photograph or personal paths. See SOURCES.md."
+    "editorial-import-0.9.8-retina.webp": {
+      "width": 1800,
+      "height": 1440,
+      "displayWidth": 900,
+      "displayHeight": 720,
+      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
+      "pngSHA256": "bcb6a32f3e39b50859e2f5b0206fbaed55ef2b3fc64cd96044c9c8ec423dbc85"
+    },
+    "editorial-review-0.9.8-retina.webp": {
+      "width": 4096,
+      "height": 2140,
+      "displayWidth": 2048,
+      "displayHeight": 1070,
+      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
+      "pngSHA256": "218def79c705d9596eb67b4e03a7e5cf0edbaea8efc9513f4dfffb01b7200e6d"
+    },
+    "editorial-verified-0.9.8-retina.webp": {
+      "width": 1120,
+      "height": 524,
+      "displayWidth": 560,
+      "displayHeight": 262,
+      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
+      "pngSHA256": "337d94700d53e8d6967db73b6379882a0eb2553280411d1ce57573c6e36dfb47"
+    },
+    "editorial-raw-0.9.8-retina.webp": {
+      "width": 4096,
+      "height": 2140,
+      "displayWidth": 2048,
+      "displayHeight": 1070,
+      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
+      "pngSHA256": "73469c9e0c17259f58ec3cecc9083a73eac42aebf2ca2c5a7e6ed0d59efcf863"
+    },
+    "editorial-builder-0.9.8-retina.webp": {
+      "width": 2320,
+      "height": 1704,
+      "displayWidth": 1160,
+      "displayHeight": 852,
+      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
+      "pngSHA256": "f25d5e43a16b4a6be92eb89303827c948b8eedddda2af87449264688596d8f3b"
+    },
+    "editorial-metadata-0.9.8-retina.webp": {
+      "width": 4096,
+      "height": 2140,
+      "displayWidth": 2048,
+      "displayHeight": 1070,
+      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
+      "pngSHA256": "41ae688cbb39b7bdf6b6a327ff64e5e0f2dca6e5d40871fe974c65767299a890"
+    },
+    "editorial-picks-0.9.8-retina.webp": {
+      "width": 1280,
+      "height": 1036,
+      "displayWidth": 640,
+      "displayHeight": 518,
+      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
+      "pngSHA256": "e464c8012bc82153a271cf956f5b116fbf500753811f003d884cb9123e48855a"
+    },
+    "editorial-film-0.9.8-retina.webp": {
+      "width": 1160,
+      "height": 1300,
+      "displayWidth": 580,
+      "displayHeight": 650,
+      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
+      "pngSHA256": "bde367e2d4662ff1b3ee57aeaa3a1457346f7691c8042113aa8eef6eaceac939"
+    },
+    "editorial-landscapes-0.9.8-retina.webp": {
+      "width": 4096,
+      "height": 2140,
+      "displayWidth": 2048,
+      "displayHeight": 1070,
+      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
+      "pngSHA256": "cd2541e535f366d05e9893efadc7aeae35b1b3141e03e894bd41d1ed7eb7fdf2"
+    },
+    "editorial-commands-0.9.8-retina.webp": {
+      "width": 4096,
+      "height": 2140,
+      "displayWidth": 2048,
+      "displayHeight": 1070,
+      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
+      "pngSHA256": "c55d72adb22620146dfc5c9ea6d2d0f45873234446963e1300185e4a0c18330b"
+    },
+    "editorial-organize-0.9.8-retina.webp": {
+      "width": 2360,
+      "height": 1624,
+      "displayWidth": 1180,
+      "displayHeight": 812,
+      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
+      "pngSHA256": "4a9c147700280f8629e5970ad2972c822490a1b69425fd219f19d36f9f6dc043"
+    },
+    "editorial-location-0.9.8-retina.webp": {
+      "width": 4096,
+      "height": 2140,
+      "displayWidth": 2048,
+      "displayHeight": 1070,
+      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
+      "pngSHA256": "aea1c62bcc4173f77121e217c3b5c00241db8447fee1fe40ea9a753767c64c0d"
+    },
+    "editorial-builder-save-0.9.8-retina.webp": {
+      "width": 2320,
+      "height": 1704,
+      "displayWidth": 1160,
+      "displayHeight": 852,
+      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
+      "pngSHA256": "bc74a2c518c5d8109e2e6532cd504d7aca135c602b7420261fdfdda7b273b7d5"
     }
   },
   "archivedImages": {
@@ -910,6 +879,70 @@
       "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
       "pngSHA256": "d9af1a702dda7b3cf93ef661993f3fd7134e6906abefea795e00fa2091e6ca82"
     },
+    "hero-landscapes-split-dark-0.9.5-retina.webp": {
+      "width": 2882,
+      "height": 1592,
+      "displayWidth": 1441,
+      "displayHeight": 796,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "d7a702116163214cf6e31a18404b3c11dec090d5926807c9eb5df5cb0d270529"
+    },
+    "workspace-wedding-options-dark-0.9.5-retina.webp": {
+      "width": 1960,
+      "height": 1400,
+      "displayWidth": 980,
+      "displayHeight": 700,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "465765235f990070faca3ef6fcc5709cfe85dba0f8f89b998e1c1b5b99175dd3"
+    },
+    "workspace-landscapes-setup-dark-0.9.5-retina.webp": {
+      "width": 2880,
+      "height": 3180,
+      "displayWidth": 1440,
+      "displayHeight": 1590,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "221c1f3dc64a1bcbe2cc3b63f94c6ba1bd8f7d08c4b61bfb975490fbb132b7b8"
+    },
+    "workspace-personal-setup-dark-0.9.5-retina.webp": {
+      "width": 2880,
+      "height": 3180,
+      "displayWidth": 1440,
+      "displayHeight": 1590,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "64981e2df5d7784281901e1ee9d20596f89dd8dbfe395bb56b94d2a2e2ed1df7"
+    },
+    "workspace-headshots-setup-dark-0.9.5-retina.webp": {
+      "width": 2880,
+      "height": 3180,
+      "displayWidth": 1440,
+      "displayHeight": 1590,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "88709282231db2894529801cd4609ab9fc5e32bf5ee6c803a959630bd8108272"
+    },
+    "workspace-events-setup-dark-0.9.5-retina.webp": {
+      "width": 2880,
+      "height": 3180,
+      "displayWidth": 1440,
+      "displayHeight": 1590,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "44fac691ba13ec3d5e21eddd98f2bb063828193d7e41edbe1eb24e380fe2c999"
+    },
+    "workspace-events-options-dark-0.9.5-retina.webp": {
+      "width": 1962,
+      "height": 1402,
+      "displayWidth": 981,
+      "displayHeight": 701,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "eb381a86b295527d0725ecfaf348f9867a4dbf6463cf50bb64e114efa8b3de2b"
+    },
+    "workspace-personal-options-dark-0.9.5-retina.webp": {
+      "width": 1962,
+      "height": 1402,
+      "displayWidth": 981,
+      "displayHeight": 701,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "cd1f094ffcbccea2ada6183bd3417d5b0a05c8b8f7eeab2d9e84ed28ad31c0a9"
+    },
     "workspace-landscapes-options-dark-0.9.5-retina.webp": {
       "width": 1962,
       "height": 1402,
@@ -917,6 +950,78 @@
       "displayHeight": 701,
       "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
       "pngSHA256": "b84d7fbc59d2da682de47862c8fe3fc04c699ce4d7ca903cd8af950d58201613"
+    },
+    "workspace-headshots-options-dark-0.9.5-retina.webp": {
+      "width": 1962,
+      "height": 1402,
+      "displayWidth": 981,
+      "displayHeight": 701,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "93e90135c1db3ff98f1a64a74823db8d4c3db598eea4a7b5a8edacd8f5896985"
+    },
+    "hero-personal-focus-dark-0.9.5-retina.webp": {
+      "width": 2882,
+      "height": 1592,
+      "displayWidth": 1441,
+      "displayHeight": 796,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "5d01ae770239556e3c22ddd757bc84289cc056213bf30ae6cef245468623888c"
+    },
+    "hero-headshots-grid-dark-0.9.5-retina.webp": {
+      "width": 2882,
+      "height": 1592,
+      "displayWidth": 1441,
+      "displayHeight": 796,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "cfb43c9c1c310c33f8ff60a9bf00f69331e3f3431976ecea5208f34107d1c88e"
+    },
+    "editorial-hero-0.9.8-retina.webp": {
+      "width": 4096,
+      "height": 2140,
+      "displayWidth": 2048,
+      "displayHeight": 1070,
+      "source": "Ingest 0.9.8 (48), local Debug build from commit 0c84a1a. Isolated demo library; native cursor-free Retina window capture. See SOURCES.md.",
+      "pngSHA256": "badf9670d58b3b304a2674e02d416ec00972516ebfa9adaef12d9aab37599e42"
+    },
+    "preview-landscape-dark-0.9.5-retina.webp": {
+      "width": 2880,
+      "height": 1524,
+      "displayWidth": 1440,
+      "displayHeight": 762,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "6ff2e02df3662ab821aaf49e7005889156b39e98f27ed8b65789e3ef9a0c5183"
+    },
+    "command-workspaces-dark-0.9.5-retina.webp": {
+      "width": 2882,
+      "height": 1592,
+      "displayWidth": 1441,
+      "displayHeight": 796,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "9abe67fcfc6371fbc30551aa4c063696f29847d5c3ea55ff41d66122ecb7330e"
+    },
+    "metadata-assist-dark-0.9.5-retina.webp": {
+      "width": 2882,
+      "height": 1592,
+      "displayWidth": 1441,
+      "displayHeight": 796,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "e9735187cef736cfc70e34295b7c3ea341b78344eb5038ec39a2d36d1e5c1210"
+    },
+    "raw-compare-dark-0.9.5-retina.webp": {
+      "width": 2880,
+      "height": 1524,
+      "displayWidth": 1440,
+      "displayHeight": 762,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "96a930a2fc4ecb1169de8c739a3628737159b23dd5667d7257f10f66e9178517"
+    },
+    "organize-dark-0.9.5-retina.webp": {
+      "width": 2360,
+      "height": 1624,
+      "displayWidth": 1180,
+      "displayHeight": 812,
+      "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
+      "pngSHA256": "96d9d30da09a32aaf05477f3bba6e0884f35cacf7a8b0101d958405ffa1dbb7e"
     }
   },
   "archivedVideos": {
@@ -959,9 +1064,7 @@
       "sha256": "814d57ee274e9d60d39e077814991466dff91c5829df73e017b532e4cece8b5e",
       "poster": "metadata-assist-gps-poster-dark-0.9.4.2-retina.webp",
       "source": "Signed Ingest 0.9.4.2 (36), isolated RAW demo. Continuous native Retina recording, leading idle time and window shadow trimmed. No retiming, overlays, reconstructed UI, or audio. See SOURCES.md."
-    }
-  },
-  "videos": {
+    },
     "metadata-assist-gps-0.9.5.mp4": {
       "width": 2882,
       "height": 1592,
@@ -982,5 +1085,6 @@
       "poster": "metadata-assist-dark-0.9.5-retina.webp",
       "source": "Signed Ingest 0.9.5 (41), isolated public RAW demo. Continuous native Retina window recording; only outer window shadow and final fractional second trimmed. No retiming, compositing, instructional overlays, or audio. See SOURCES.md."
     }
-  }
+  },
+  "videos": {}
 }

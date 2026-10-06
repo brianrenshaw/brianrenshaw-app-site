@@ -1,0 +1,38 @@
+/* Workflow navigation for the Guide and problem-first Support page. */
+body.docs-hub{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.docs-hub .family-document.doc-hub{max-width:1280px;margin:52px auto 0;padding:0 32px}
+.doc-intro{max-width:100%;padding-bottom:44px;border-bottom:1px solid var(--line)}
+.docs-hub .doc-intro h1{max-width:none;margin-bottom:18px}
+.docs-hub .doc-intro .intro{max-width:760px;margin-bottom:24px}
+.doc-tools{display:flex;align-items:center;flex-wrap:wrap;gap:16px 24px;font-size:13px;color:var(--muted)}
+.doc-tools .doc-search{font-family:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;gap:16px;min-height:44px;padding:10px 15px}
+.doc-quick-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:36px}
+.doc-quick-links>a{display:block;padding:20px 0;border-top:1px solid var(--line);text-decoration:none;min-width:0}
+.doc-quick-links strong{display:block;font-size:16px;color:var(--ink);line-height:1.4}
+.doc-quick-links>a>span{display:block;font-size:14px;line-height:1.5;margin-top:8px;color:var(--muted)}
+.doc-quick-links>a:hover strong{text-decoration:underline;text-underline-offset:4px;color:var(--accent)}
+.doc-layout{display:grid;grid-template-columns:238px minmax(0,1fr);gap:64px;align-items:start;margin-top:42px}
+.doc-sidebar{position:sticky;top:24px;max-height:calc(100vh - 48px);overflow:auto;padding-right:18px;scrollbar-width:thin;overscroll-behavior:contain}
+.doc-topics>summary{font-weight:650;font-size:15px;cursor:pointer;padding:10px 0;min-height:44px;color:var(--ink)}
+.doc-topic-group{margin:10px 0 24px}
+.docs-hub .doc-topic-group>p{font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:650;margin:0 0 8px;color:var(--muted)}
+.doc-topic-group>a{display:block;font-size:13px;line-height:1.45;padding:8px 10px;margin:1px 0;text-decoration:none;border-left:2px solid transparent;border-radius:0 4px 4px 0;color:var(--muted)}
+.doc-topic-group>a:hover,.doc-topic-group>a[aria-current="location"]{color:var(--ink);background:var(--soft);border-left-color:var(--accent)}
+.doc-sidebar-top{display:inline-block;min-height:44px;padding:10px 0;font-size:13px}
+.doc-content{min-width:0}
+.docs-hub .doc-chapter-label{font-size:12px;text-transform:uppercase;letter-spacing:.1em;font-weight:650;color:var(--accent);margin:0 0 16px;padding-top:8px}
+.docs-hub .doc-content>section{padding:0 0 38px;margin:0 0 42px;border-bottom:1px solid var(--line);scroll-margin-top:28px}
+.docs-hub .doc-content>section>h2{font-size:clamp(28px,3vw,36px);margin:0 0 22px;max-width:28ch}
+.docs-hub .doc-content h3{margin-top:30px}
+.docs-hub .doc-content p,.docs-hub .doc-content li{font-size:16px;line-height:1.8}
+.doc-content ol,.doc-content ul{padding-left:24px;margin:22px 0}
+.doc-content li{padding-left:5px;margin:10px 0}
+.doc-content ol>li::marker{color:var(--accent);font-weight:650}
+.doc-content .desktop-shot{margin:28px 0 32px}
+.doc-content .doc-section-top{display:inline-block;font-size:12px;min-height:44px;padding:10px 0;margin-top:12px;color:var(--muted)}
+.doc-content pre{overflow-x:auto;max-width:100%;padding:18px;background:var(--soft);border:1px solid var(--line);border-radius:6px}
+.docs-hub .guide-table td:last-child{white-space:normal}
+.doc-content .doc-next{margin-top:24px}
+@media(min-width:1001px){.doc-topics>summary{list-style:none;pointer-events:none}.doc-topics>summary::-webkit-details-marker{display:none}}
+@media(max-width:1000px){.docs-hub .family-document.doc-hub{padding:0 24px;margin-top:36px}.doc-layout{display:block;margin-top:28px}.doc-sidebar{position:static;max-height:none;overflow:visible;padding:0;margin-bottom:36px}.doc-topics{border:1px solid var(--line);border-radius:8px;padding:6px 18px;background:var(--surface)}.doc-topics>summary{padding:12px 0}.doc-topics nav{display:grid;grid-template-columns:1fr 1fr;gap:12px 30px}.doc-sidebar-top{display:none}.doc-quick-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 24px}.doc-intro{padding-bottom:28px}}
+@media(max-width:600px){.docs-hub .family-document.doc-hub{padding:0 20px;margin-top:30px}.doc-tools{align-items:flex-start;gap:12px 18px}.doc-tools .doc-search{width:100%;justify-content:space-between}.doc-topics nav{grid-template-columns:1fr}.doc-quick-links{gap:6px 20px}.doc-quick-links strong{font-size:15px}.doc-quick-links>a>span{font-size:13px}.docs-hub .doc-content>section{margin-bottom:32px;padding-bottom:24px}.docs-hub .doc-content>section>h2{font-size:29px}.doc-content .desktop-shot{padding:8px}.docs-hub .guide-table td{padding:12px}}

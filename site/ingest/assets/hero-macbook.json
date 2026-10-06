@@ -1,0 +1,14 @@
+{
+  "kind": "device-framed marketing artwork; not a native screenshot",
+  "appVersion": "0.9.8",
+  "appBuild": 48,
+  "nativeScreenshot": "editorial-landscapes-0.9.8-retina.webp",
+  "nativeScreenshotSHA256": "285deda877119127caf296d87d2c02fd420e14a2ddc4937778cb63cfbb4887d5",
+  "output": "hero-macbook-0.9.8.png",
+  "width": 4220,
+  "height": 2578,
+  "device": "MacBook Pro M5 16",
+  "color": "Silver",
+  "tool": "https://github.com/viticci/frames-cli",
+  "composition": "Proportional app window on a plain display background; original controls and full-resolution link preserved."
+}
