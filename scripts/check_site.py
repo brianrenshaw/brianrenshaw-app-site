@@ -79,9 +79,22 @@ else:
  ns='{http://www.andymatuschak.org/xml-namespaces/sparkle}'
  for item in ET.parse(ROOT/'ingest/appcast.xml').findall('./channel/item'):
   version=item.findtext(ns+'shortVersionString')
+  if not version:
+   errors.append('Ingest: missing release version')
+   continue
   notes=item.findtext(ns+'releaseNotesLink')
-  if notes!='https://ingestphotoapp.com/release-notes/#v'+version:
-   errors.append(f'Ingest {version}: release notes must load directly from ingestphotoapp.com')
+  full_notes=item.findtext(ns+'fullReleaseNotesLink')
+  description=item.findtext('description', '').strip()
+  expected='https://ingestphotoapp.com/release-notes/#v'+version
+  if description:
+   if not re.sub(r'<[^>]*>', '', description).strip():
+    errors.append(f'Ingest {version}: embedded release notes must contain readable text')
+   if item.find(ns+'releaseNotesLink') is not None:
+    errors.append(f'Ingest {version}: external releaseNotesLink overrides embedded notes; omit it')
+   if full_notes!=expected:
+    errors.append(f'Ingest {version}: embedded notes need a direct fullReleaseNotesLink to ingestphotoapp.com')
+  elif notes!=expected:
+   errors.append(f'Ingest {version}: provide embedded notes or a direct releaseNotesLink to ingestphotoapp.com')
   if 'v'+version not in pages[ROOT/'ingest/release-notes/index.html'].ids:
    errors.append(f'Ingest {version}: missing release notes entry')
 if not (ROOT/'walkthrough/guide/index.html').exists():errors.append('Missing Walkthrough illustrated guide')

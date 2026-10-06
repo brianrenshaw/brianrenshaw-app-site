@@ -14,7 +14,8 @@ and notarization, is in that project's `RELEASE.md`. This file covers the part t
 
 The feed path is permanent. Every shipped build has `https://brianrenshaw.app/ingest/appcast.xml` compiled into it, so
 that file must keep serving real XML permanently. `scripts/check_site.py` asserts it exists.
-Release-note links point directly to `https://ingestphotoapp.com/release-notes/#vX.Y.Z`.
+Current releases embed self-contained HTML in the feed's `description`, so Sparkle can show the changes without another network request. Omit `sparkle:releaseNotesLink` for these items because Sparkle gives that external URL precedence over the embedded description. Use `sparkle:fullReleaseNotesLink` for the complete notes at `https://ingestphotoapp.com/release-notes/#vX.Y.Z`.
+Older entries may retain a direct `sparkle:releaseNotesLink` to that same canonical page.
 Keep the old `/ingest/release-notes/` HTML available for cached appcasts; Sparkle does not follow JavaScript redirects.
 
 ## Publishing a version
@@ -28,14 +29,14 @@ Keep the old `/ingest/release-notes/` HTML available for cached appcasts; Sparkl
      --repo brianrenshaw/brianrenshaw-app-site --title "Ingest X.Y.Z" --notes "…"
    ```
 
-3. Copy `dist/updates/appcast.xml` to `site/ingest/appcast.xml`.
+3. Copy `dist/updates/appcast.xml` to `site/ingest/appcast.xml`. Check that the current item's embedded notes contain the actual changes, its full-notes link has the correct version anchor, and previous signed enclosure attributes remain unchanged.
 4. Add the release notes entry at `site/ingest/release-notes/` with `id="vX.Y.Z"`, matching the fragment the appcast links
    to, and put the new version first in `nav.release-index`.
 5. Update the version string in the two places it appears: the download links on `site/ingest/index.html` and the line in
    `README.md` that names the current download.
 6. `python3 scripts/check_site.py`, then commit and push. Pushing `main` deploys.
 7. Open the feed URL and the disk image URL in a browser, then use Check for Updates in an installed copy and confirm it
-   offers the new build and installs it.
+   offers the new build, renders the embedded changes, and installs it. Verify the full notes as well. If a local network filter blocks the custom domain, do not disable TLS or change network controls; verify published content through the trusted Cloudflare deployment URL and the retained legacy HTML route, and report the limitation.
 
 Keep `dist/updates` between releases in the native project, so earlier items stay in the feed.
 

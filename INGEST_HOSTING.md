@@ -56,9 +56,12 @@ have that URL compiled into them. The portfolio build preserves its exact
 source bytes, including signed enclosure metadata and GitHub release URLs.
 The new website also serves an unchanged copy at `/appcast.xml`; it is not a
 replacement for the installed app's feed. The old release-notes route continues serving actual HTML for cached appcasts;
-Sparkle does not follow the JavaScript redirect. New appcasts link directly to
-`https://ingestphotoapp.com/release-notes/#vVERSION`. Native app URL changes are a separate
-release task, not part of this website migration.
+Sparkle does not follow the JavaScript redirect. Current appcast items embed their
+release notes in `description` and use `sparkle:fullReleaseNotesLink` for
+`https://ingestphotoapp.com/release-notes/#vVERSION`. They omit
+`sparkle:releaseNotesLink`, which would make Sparkle fetch that URL instead of
+displaying the embedded notes. Older items may retain their direct external links.
+Native app URL changes are a separate release task, not part of this website migration.
 
 ## Checks
 
