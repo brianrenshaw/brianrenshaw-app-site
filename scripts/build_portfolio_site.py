@@ -21,7 +21,8 @@ def main():
     redirects += [("ingest", "Ingest", p.relative_to(SOURCE / "ingest").as_posix().removesuffix("index.html"),
                    INGEST + ("getting-started/" if p.parent.name == "quick-start" else
                              p.relative_to(SOURCE / "ingest").as_posix().removesuffix("index.html")))
-                  for p in (SOURCE / "ingest").rglob("index.html")]
+                  for p in (SOURCE / "ingest").rglob("index.html")
+                  if p.parent.name != "release-notes"]
     for slug, name, route, destination in redirects:
         (OUTPUT / slug / route / "index.html").write_text(f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -60,6 +61,11 @@ location.replace(destination.href);</script></body></html>
     # Existing installations depend on these exact feeds and routes.
     for feed in ("listing-namer/appcast.xml", "ingest/appcast.xml"):
         assert (OUTPUT / feed).read_bytes() == (SOURCE / feed).read_bytes()
+    # Cached appcasts still point here. Sparkle does not follow our JavaScript
+    # redirects, so this compatibility route must continue serving actual notes.
+    notes = "ingest/release-notes/index.html"
+    assert (OUTPUT / notes).read_bytes() == (SOURCE / notes).read_bytes()
+    assert "<article" in (OUTPUT / notes).read_text()
     # Historical media URLs remain byte-for-byte available to external links.
     for asset in (SOURCE / "ingest/assets").rglob("*"):
         if asset.is_file():

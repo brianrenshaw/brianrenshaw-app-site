@@ -4,6 +4,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin,urlsplit,unquote
 import json,re,sys
+import xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]/'site'
 class Page(HTMLParser):
  def __init__(self,text):
@@ -74,6 +75,15 @@ for sub in ['guide/','quick-start/','shortcuts/','templates/','automation/','rel
  if not (ROOT/'ingest'/sub/'index.html').exists():errors.append(f'Missing Ingest page {sub}')
 # Every shipped Ingest build has https://brianrenshaw.app/ingest/appcast.xml compiled into SUFeedURL.
 if not (ROOT/'ingest/appcast.xml').exists():errors.append('Missing Sparkle feed for Ingest')
+else:
+ ns='{http://www.andymatuschak.org/xml-namespaces/sparkle}'
+ for item in ET.parse(ROOT/'ingest/appcast.xml').findall('./channel/item'):
+  version=item.findtext(ns+'shortVersionString')
+  notes=item.findtext(ns+'releaseNotesLink')
+  if notes!='https://ingestphotoapp.com/release-notes/#v'+version:
+   errors.append(f'Ingest {version}: release notes must load directly from ingestphotoapp.com')
+  if 'v'+version not in pages[ROOT/'ingest/release-notes/index.html'].ids:
+   errors.append(f'Ingest {version}: missing release notes entry')
 if not (ROOT/'walkthrough/guide/index.html').exists():errors.append('Missing Walkthrough illustrated guide')
 # Walkthrough moved to /walkthrough/, but every shipped copy of the Mac app has
 # https://brianrenshaw.app/listing-namer/appcast.xml compiled into SUFeedURL, and a

@@ -12,8 +12,10 @@ and notarization, is in that project's `RELEASE.md`. This file covers the part t
 | The disk images | GitHub Release assets, tagged `ingest-vX.Y.Z` |
 | Release notes | `site/ingest/release-notes/`, one `article.release-entry` per version with `id="vX.Y.Z"` |
 
-The feed path is permanent. Every shipped build has `https://brianrenshaw.app/ingest/appcast.xml` compiled into it, and a
-static host cannot redirect, so that file must keep serving real XML for ever. `scripts/check_site.py` asserts it exists.
+The feed path is permanent. Every shipped build has `https://brianrenshaw.app/ingest/appcast.xml` compiled into it, so
+that file must keep serving real XML permanently. `scripts/check_site.py` asserts it exists.
+Release-note links point directly to `https://ingestphotoapp.com/release-notes/#vX.Y.Z`.
+Keep the old `/ingest/release-notes/` HTML available for cached appcasts; Sparkle does not follow JavaScript redirects.
 
 ## Publishing a version
 

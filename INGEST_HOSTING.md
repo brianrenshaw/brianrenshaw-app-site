@@ -46,7 +46,7 @@ preserving path and query. Always Use HTTPS is enabled for the zone.
 
 Publish and verify the new domain before publishing the portfolio redirects.
 `build_portfolio_site.py` keeps all Ingest assets at their historical URLs and
-replaces its old HTML pages with redirects that preserve query strings and
+replaces its old HTML pages (except release notes) with redirects that preserve query strings and
 fragments. Quick Start goes directly to Getting Started. The portfolio card leads directly to the new domain. The standalone Decks
 build also rewrites any Ingest navigation links to the dedicated domain.
 Old Ingest URLs are removed from the portfolio sitemap.
@@ -55,8 +55,9 @@ Old Ingest URLs are removed from the portfolio sitemap.
 have that URL compiled into them. The portfolio build preserves its exact
 source bytes, including signed enclosure metadata and GitHub release URLs.
 The new website also serves an unchanged copy at `/appcast.xml`; it is not a
-replacement for the installed app's feed. Existing release-note anchors
-continue through the old-route redirect. Native app URL changes are a separate
+replacement for the installed app's feed. The old release-notes route continues serving actual HTML for cached appcasts;
+Sparkle does not follow the JavaScript redirect. New appcasts link directly to
+`https://ingestphotoapp.com/release-notes/#vVERSION`. Native app URL changes are a separate
 release task, not part of this website migration.
 
 ## Checks
