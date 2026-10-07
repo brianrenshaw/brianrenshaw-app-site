@@ -531,7 +531,7 @@
     "title": "Workspaces and the guided builder",
     "url": "/ingest/guide/workspaces/",
     "page": "Guide",
-    "keywords": " Browse is the main workspace. File → Organize… opens its independent editor. File → Send to Decks… sends selected still photos to the separate Decks app. Both actions are available through photo context menus and the command palette. \n Choose a workspace  The window toolbar and Workspace menu share the workspace chooser. Set Open at Launch separately from your active workspace. Control-0 selects Basic; Control-1 through Control-9 select assigned workspaces. Focus Mode ( F ) hides surrounding controls without changing saved panel preferences;  ⇧F  fits the photo. \n Create a workspace  A worksp",
+    "keywords": " A workspace remembers folders, filenames, metadata, and review preferences for a kind of photography. Import and Organize have separate settings. \n Choose a workspace  Use the window toolbar or Workspace menu. Open at Launch is separate from the active workspace. Control-0 selects Basic; Control-1 through Control-9 select assigned workspaces. \n Create a workspace  Choose  New Workspace… , then  Use Workspace Builder  for guided steps or  Set Up Manually  for direct access to the same sections. Changes stay in a draft until you choose  Save Workspace . Cancel leaves your saved setup unchanged.",
     "hint": "Guide"
   },
   {
@@ -731,7 +731,7 @@
     "title": "Renaming",
     "url": "/ingest/guide/renaming/",
     "page": "Guide",
-    "keywords": " Type names and insert variables  In  Import File Names  or the separate  Organize  setup, type ordinary text and choose  Insert Variable . Type  {  to find a variable directly; choose a suggestion with Return. Variables appear as readable pieces in the same text field. Choose your own spaces and separators.   Advanced pattern  exposes the same pattern as text. Custom Import settings use this editor too. Check the resolved preview before applying names.  Choose the right date   Import Date  uses the import’s date, so photos taken over several days can share one import folder.  Today’s Date  us",
+    "keywords": " Type names and insert variables  In  Import File Names  or the separate  Organize  setup, type ordinary text and choose  Insert Variable . Type  {  to find a variable directly; choose a suggestion with Return. Variables appear as readable pieces in the same text field. Choose your own spaces and separators.   Advanced pattern  exposes the same pattern as text. Custom Import settings use this editor too. Check the resolved preview before applying names.     Choose the right date   Import Date  uses the import’s date, so photos taken over several days can share one import folder.  Today’s Date ",
     "hint": "Guide"
   },
   {
@@ -875,7 +875,7 @@
     "title": "Thumbnails are slow or missing",
     "url": "/ingest/support/previews/",
     "page": "Support",
-    "keywords": " Preview speed depends on the camera format, available embedded image, storage, and connection. If browsing is slow, try a local copy to distinguish file-rendering work from a slow card reader, network volume, or file provider. \n Thumbnails that are expensive to build are cached on disk, under 2 GB, and cleared from Settings, Advanced. Clearing the cache is safe and never touches a photograph. \n A photograph with no thumbnail at all is usually a raw format Ingest cannot read yet. See  cameras and files it reads . ",
+    "keywords": " Preview speed depends on the camera format, available embedded image, storage, and connection. If browsing is slow, try a local copy to distinguish file-rendering work from a slow card reader, network volume, or file provider. \n Thumbnails that are expensive to build are cached on disk, under 2 GB, and cleared from Settings, Advanced. Clearing the cache is safe and never touches a photograph. \n A photograph with no thumbnail at all is usually a raw format Ingest cannot read yet. See  cameras and files it reads .  Adobe preview is unavailable  Select a RAW photo from a card or folder, then run",
     "hint": "Support"
   },
   {
@@ -996,6 +996,34 @@
     "url": "/ingest/support/credits/",
     "page": "Support",
     "keywords": " Photography  The RAW photographs shown in Ingest come from  Signature Edits and its contributing photographers , used under the  Free RAW license .  Hero photographs  The wedding portrait in the workflow and detail views is credited to  Christian Meza  (ChristianMezaMedia) in the source file’s embedded metadata.  The Focus Mode landscape comes from Signature Edits, supplied as July_mReKo_002.DNG.  Recorded contributor credits  These names and handles come from the original filenames or embedded credits. Some supplied files do not identify an individual photographer; we credit the source libra",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "Share photos and folders through Messages or Email",
+    "url": "/ingest/guide/sharing/",
+    "keywords": " Share selected photos   Select the photos you want to share.  Open the photo context menu or press  ⌘K  and choose  Send Photos via Messages…  or  Send Photos via Email… .  Check the file count and total size. For multiple files, choose  Attach Files  or  Create ZIP . A single file offers Continue.  Review the draft in Messages or your email app, add recipients, and send it there.   Ingest opens a draft; it does not send the message. File-based sharing uses the selected visible photos’ primary files in their existing formats. It does not automatically turn RAW files into JPEGs or attach XMP s",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Preview RAW photos with saved Adobe edits",
+    "url": "/ingest/guide/adobe-previews/",
+    "keywords": " Use an Adobe-rendered preview to see saved edits while browsing RAW files. Adobe DNG Converter must be installed on your Mac.  Show the saved edits   Select a RAW photo from a card or folder.  Press  ⌘K  and choose  Preview with Adobe Edits .  Wait for the preview to render. If prompted, use  Choose Converter…  to select your Adobe DNG Converter installation.   Ingest uses settings saved in the file or its companion XMP/ACR data. Edits stored only inside a Lightroom catalog are not included; save the edits to the file or sidecar in your Adobe app first. Ingest creates a cached preview without",
+    "hint": "Guide"
+  },
+  {
+    "type": "section",
+    "title": "Messages or Email sharing did not work",
+    "url": "/ingest/support/sharing-problems/",
+    "keywords": " The wrong files are included  Use  Send Photos  for the selected visible photos.  Send Folder  ignores the grid selection and filter. Cards, volume roots, and sources with subfolders enabled include nested media. Check the count and size before continuing.  A draft does not open  Confirm that Messages or your email app is set up. Finish the current sharing draft before starting another from the same tab. For multiple files, retry with  Create ZIP . If preparation fails, check that the source drive is connected and the files are readable.  The attachment is too large or will not preview  File ",
+    "hint": "Support"
+  },
+  {
+    "type": "section",
+    "title": "Resume work after reconnecting a drive",
+    "url": "/ingest/support/drive-recovery/",
+    "keywords": " Reconnect and reopen the same source  Connect the original drive, confirm it appears in Finder, and reopen its photo folder in Ingest. Ingest 0.9.9 preserves tags, ratings, and Organize drafts across disconnects and reconnects using the drive and file identity. A different drive with the same name is not treated as the original.  Resume an Organize draft  Open  File → Organize…  for the folder. A saved draft can resume even if the drive’s mount path changed. Check the operation, destination, and proposed paths before applying. Ingest validates file and destination identity; if it reports a ch",
     "hint": "Support"
   }
 ]

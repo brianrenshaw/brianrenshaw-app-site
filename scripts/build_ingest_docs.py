@@ -8,9 +8,11 @@ from pathlib import Path
 import html
 import json
 import re
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'site/ingest'
+LATEST_DOWNLOAD = ET.parse(SITE / 'appcast.xml').find('./channel/item/enclosure').attrib['url']
 DATA = json.loads((ROOT / 'docs/ingest/help-content.json').read_text())
 esc = html.escape
 mapping = {}
@@ -61,6 +63,7 @@ def page(slug, title, description, body, active=None, route_override=None):
     head = head.replace('</head>', '<link rel="stylesheet" href="/ingest/assets/docs.css?v=wiki-1"><script src="/ingest/assets/docs.js?v=wiki-1" defer></script><noscript><style>.nav-search{display:none!important}</style></noscript></head>')
     header = re.search(r'<header class="family-header">.*?</header>', template, re.S)[0]
     header = header.replace(' aria-current="page"', '')
+    header = re.sub(r'https://github\.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v[^"]+/Ingest-[^"]+\.dmg', lambda _: LATEST_DOWNLOAD, header)
     footer = re.search(r'<footer\b.*?</footer>', template, re.S)[0]
     crumb = f'<nav class="wiki-breadcrumbs" aria-label="Breadcrumb"><a href="/ingest/">Ingest</a><span aria-hidden="true">/</span><a href="/ingest/{slug}/">{esc(DATA[slug]["title"])}</a>'
     if active: crumb += f'<span aria-hidden="true">/</span><span aria-current="page">{esc(title)}</span>'
@@ -114,7 +117,7 @@ for slug, collection in DATA.items():
         if i: links.append(f'<a href="/ingest/{slug}/{others[i-1]["id"]}/"><small>Previous topic</small>{esc(others[i-1]["title"])}</a>')
         if i+1<len(others): links.append(f'<a href="/ingest/{slug}/{others[i+1]["id"]}/"><small>Next topic</small>{esc(others[i+1]["title"])}</a>')
         article += '<nav class="wiki-related" aria-label="Adjacent articles">'+''.join(links)+'</nav>'
-        article += f'<p class="wiki-updated">Applies to Ingest 0.9.8.1 (49) · <a href="/ingest/support/contact/">Still need help?</a></p>'
+        article += f'<p class="wiki-updated">Applies to Ingest 0.9.9.1 (52) · <a href="/ingest/support/contact/">Still need help?</a></p>'
         dest=SITE/slug/a['id']/'index.html';dest.parent.mkdir(parents=True,exist_ok=True)
         dest.write_text(page(slug,a['title'],'',article,a['id']))
 # Search results lead straight to an article rather than a long-page fragment.

@@ -382,3 +382,13 @@ Updated homepage, workspace/import/organization/naming guides, destination guida
 Published GitHub release ingest-v0.9.8.1 and its DMG were verified available during this review. Existing release-publication commit supplies the signed permanent feed and release notes; retained without modification. All current download links point to the published 0.9.8.1 DMG.
 
 QA finding: the native Organize setup sheet clips its content horizontally at its default width in this local build. The captured sheet was rejected for publication; the website uses the intact Organize preferences screenshot instead.
+
+## Workspace Builder — October 7, 2026, Ingest 0.9.9.1 (52)
+
+Three native dark-mode SwiftUI captures replace the obsolete ten-section builder imagery. Source: `photo-importer` commit `4d84787`, the current 0.9.9.1 source. No screenshots are generated or retouched; original Retina pixels are retained in lossless WebP.
+
+- `editorial-builder-starters-0.9.9.1-retina.webp`: byte-for-byte copy of released `Resources/FeatureTour/welcome-builder.webp` (2480 × 1440), from `FeatureTourTests.testRenderWalkthroughAssets`. Events is expanded for preview; Build from scratch is still in use. The isolated empty fixture uses no personal photos or paths.
+- `editorial-builder-names-0.9.9.1-retina.webp`: `WorkspaceBuilderTests.testOctoberRoundReviewSnapshots`, `4-names-dark.png` (2480 × 1800), captured this session in `/tmp/ingest-site099-captures`. Original filename + illustrative Client answer + four-digit Photo Number, with the real question preview.
+- `editorial-builder-organize-0.9.9.1-retina.webp`: `WorkspaceBuilderTests.testEverySectionRendersAtSmallWindowSize`, `builder-NSAppearanceNameDarkAqua-3.png` (1800 × 1240). Shows where to enable independent Organize defaults, before configuration.
+
+Both snapshot tests passed against current source. PNG/WebP decoded RGBA equality was verified for the two fresh captures. No app installation, import, file organization, or changes to the user's library were performed. Capture dimensions and hashes are in `screenshots.json`; superseded images remain available under their original URLs in `archivedImages`. Tall fixture captures with temporary filesystem paths were rejected for the website. Existing hero/review/import captures remain because those demonstrated views were not changed by these releases.

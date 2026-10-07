@@ -1,5 +1,5 @@
 {
-  "capture": "Current import, naming, and organization controls: genuine Ingest 0.9.8.1 (49) Retina stills. Unchanged browsing views and earlier documentation captures retain their individual provenance. See SOURCES.md.",
+  "capture": "Workspace Builder: native Ingest 0.9.9.1 (52) captures. Unchanged review/import imagery retains its individual provenance. See SOURCES.md.",
   "images": {
     "hero-wedding-dark-0.9.5-retina.webp": {
       "width": 2882,
@@ -129,30 +129,6 @@
       "source": "Ingest 0.9.8 (48), source 0c84a1a. Native Retina capture; isolated demo library; source for hero artwork. See SOURCES.md.",
       "pngSHA256": "d5edabb252e1bf209954951ec31fd48da6eef8a8140db76c69fc1d3b15e7fcb5"
     },
-    "editorial-builder-folders-0.9.8.1-retina.webp": {
-      "width": 2320,
-      "height": 1704,
-      "displayWidth": 1160,
-      "displayHeight": 852,
-      "source": "Ingest 0.9.8.1 (49), source 838bfed. Isolated sitebuild49 demo app; native Retina capture. See SOURCES.md.",
-      "pngSHA256": "5b6e015a78d1fe05c8aabbab31ef905db6ff2069006cc609c292b3593cfa21d6"
-    },
-    "editorial-builder-organize-0.9.8.1-retina.webp": {
-      "width": 2320,
-      "height": 1704,
-      "displayWidth": 1160,
-      "displayHeight": 852,
-      "source": "Ingest 0.9.8.1 (49), source 838bfed. Isolated sitebuild49 demo app; native Retina capture. See SOURCES.md.",
-      "pngSHA256": "4f8b4e3bc645d894c3ee5762e26ad3de4e4b72dfbf1559d0e7143d712107a8b3"
-    },
-    "editorial-builder-save-0.9.8.1-retina.webp": {
-      "width": 2320,
-      "height": 1704,
-      "displayWidth": 1160,
-      "displayHeight": 852,
-      "source": "Ingest 0.9.8.1 (49), source 838bfed. Isolated sitebuild49 demo app; native Retina capture. See SOURCES.md.",
-      "pngSHA256": "c2641a41dc39cc732c9fc8c426b142670fc25a960a34d3fd0ba4116d61a2c509"
-    },
     "editorial-import-0.9.8.1-retina.webp": {
       "width": 1800,
       "height": 1440,
@@ -168,6 +144,32 @@
       "displayHeight": 262,
       "source": "Ingest 0.9.8.1 (49), source 838bfed. Isolated sitebuild49 demo app; native Retina capture. See SOURCES.md.",
       "pngSHA256": "1db3f19560789a93bd03f6772364c5af1dbffa879fc021890e080f80ee7cd312"
+    },
+    "editorial-builder-starters-0.9.9.1-retina.webp": {
+      "width": 2480,
+      "height": 1440,
+      "displayWidth": 1240,
+      "displayHeight": 720,
+      "source": "Ingest 0.9.9.1 (52), source 4d84787. Native dark-mode SwiftUI capture from isolated app tests; lossless, no resizing or retouching. See SOURCES.md.",
+      "sha256": "9656079bea4d6009c69303c3baa4d27562de0aadc5e715406dada2169bbc245d"
+    },
+    "editorial-builder-names-0.9.9.1-retina.webp": {
+      "width": 2480,
+      "height": 1800,
+      "displayWidth": 1240,
+      "displayHeight": 900,
+      "source": "Ingest 0.9.9.1 (52), source 4d84787. Native dark-mode SwiftUI capture from isolated app tests; lossless, no resizing or retouching. See SOURCES.md.",
+      "sha256": "4b1c1af7504ac6c461b1283aa8c015837d7275a5a0aab45863d185d118ad87f9",
+      "pngSHA256": "7cee9c61e2508ebadd69d4921d51ad70ba9130ab9005f7f12efb940998a5855a"
+    },
+    "editorial-builder-organize-0.9.9.1-retina.webp": {
+      "width": 1800,
+      "height": 1240,
+      "displayWidth": 900,
+      "displayHeight": 620,
+      "source": "Ingest 0.9.9.1 (52), source 4d84787. Native dark-mode SwiftUI capture from isolated app tests; lossless, no resizing or retouching. See SOURCES.md.",
+      "sha256": "c49e1970d42e6cb59041a970481749b08c2550612bd29957f379c7aa53a77291",
+      "pngSHA256": "ff8cca90d3e93d9575cef63ac50fc525167056685441b80c466ff7a13ecaae69"
     }
   },
   "archivedImages": {
@@ -1086,6 +1088,30 @@
       "displayHeight": 1590,
       "source": "Signed and notarized Ingest 0.9.5 (41), dark appearance, isolated licensed RAW demo library. Native Retina window capture; no cursor, shadow, resizing, or compositing. See SOURCES.md and raw-samples.json.",
       "pngSHA256": "36d8a10dce8feb5972c3e40edaf89738a053356c929437cf557c26e2d1c38650"
+    },
+    "editorial-builder-folders-0.9.8.1-retina.webp": {
+      "width": 2320,
+      "height": 1704,
+      "displayWidth": 1160,
+      "displayHeight": 852,
+      "source": "Ingest 0.9.8.1 (49), source 838bfed. Isolated sitebuild49 demo app; native Retina capture. See SOURCES.md.",
+      "pngSHA256": "5b6e015a78d1fe05c8aabbab31ef905db6ff2069006cc609c292b3593cfa21d6"
+    },
+    "editorial-builder-organize-0.9.8.1-retina.webp": {
+      "width": 2320,
+      "height": 1704,
+      "displayWidth": 1160,
+      "displayHeight": 852,
+      "source": "Ingest 0.9.8.1 (49), source 838bfed. Isolated sitebuild49 demo app; native Retina capture. See SOURCES.md.",
+      "pngSHA256": "4f8b4e3bc645d894c3ee5762e26ad3de4e4b72dfbf1559d0e7143d712107a8b3"
+    },
+    "editorial-builder-save-0.9.8.1-retina.webp": {
+      "width": 2320,
+      "height": 1704,
+      "displayWidth": 1160,
+      "displayHeight": 852,
+      "source": "Ingest 0.9.8.1 (49), source 838bfed. Isolated sitebuild49 demo app; native Retina capture. See SOURCES.md.",
+      "pngSHA256": "c2641a41dc39cc732c9fc8c426b142670fc25a960a34d3fd0ba4116d61a2c509"
     }
   },
   "archivedVideos": {

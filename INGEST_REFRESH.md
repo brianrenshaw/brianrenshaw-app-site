@@ -84,3 +84,13 @@ Published GitHub release ingest-v0.9.8.1 and its DMG were verified available dur
 QA finding: the native Organize setup sheet clips its content horizontally at its default width in this local build. The captured sheet was rejected for publication; the website uses the intact Organize preferences screenshot instead.
 
 Validation: 177 HTML pages and 8,931 local references passed; 21 active and 129 archived captures passed checksum and display-size checks. Dedicated Ingest and portfolio exports passed. Existing linked anchors were preserved. Renaming guide checked in desktop Chrome and a 393px mobile viewport; section navigation and text fit correctly.
+
+## Ingest 0.9.9.1 site review — October 7, 2026
+
+Reviewed native changes from `9657c2e` through `4d84787`: eight-section Workspace Builder, preview-only starter accordion, questions inserted as variables, Photo Number options, independent Organize settings, selected-photo/folder sharing, Adobe preview commands, and removable-drive recovery. Verified public GitHub releases 0.9.9 and 0.9.9.1 and fast-forwarded the website to its release-publication commit `ca01dea` before editing. The signed appcast is unchanged.
+
+Homepage now explains the starter preview, used questions, continuing photo numbers, Messages/Email drafts, saved Adobe edits, and reconnecting drives. Three obsolete builder screenshots were replaced with genuine current native view captures; the manual hero remains accurate. Capture provenance is in assets/SOURCES.md.
+
+Guide and Support now contain 72 articles, including new sharing, Adobe-preview, sharing-troubleshooting, and drive-recovery articles. Existing workspace, naming, preview, source, Organize, cards, workspace troubleshooting, Getting Started, and variable-reference instructions were reconciled. Search and both documentation sidebars expose the new articles. The generated help header now derives the download URL from the current appcast, preventing an old frame URL from reverting release links on regeneration.
+
+Validation: two native snapshot tests passed; site links/anchors/assets, screenshot manifests, Ingest and portfolio builds, retained interaction regression checks, 21st review (59 pages, no findings), and whitespace checks passed. Catalog search returned HTTP 401; existing site primitives were retained. Computer-use browser verification was unavailable because the control tool could not start its app-server. Native images were inspected directly; no claim of a new live browser or external Messages/Email/Adobe/physical-drive integration test is made.
