@@ -114,7 +114,7 @@ for slug, collection in DATA.items():
         if i: links.append(f'<a href="/ingest/{slug}/{others[i-1]["id"]}/"><small>Previous topic</small>{esc(others[i-1]["title"])}</a>')
         if i+1<len(others): links.append(f'<a href="/ingest/{slug}/{others[i+1]["id"]}/"><small>Next topic</small>{esc(others[i+1]["title"])}</a>')
         article += '<nav class="wiki-related" aria-label="Adjacent articles">'+''.join(links)+'</nav>'
-        article += f'<p class="wiki-updated">Applies to Ingest 0.9.8 (48) · <a href="/ingest/support/contact/">Still need help?</a></p>'
+        article += f'<p class="wiki-updated">Applies to Ingest 0.9.8.1 (49) · <a href="/ingest/support/contact/">Still need help?</a></p>'
         dest=SITE/slug/a['id']/'index.html';dest.parent.mkdir(parents=True,exist_ok=True)
         dest.write_text(page(slug,a['title'],'',article,a['id']))
 # Search results lead straight to an article rather than a long-page fragment.

@@ -372,3 +372,13 @@ Native capture files: hero-workflow-0.9.8-retina.webp, hero-focus-0.9.8-retina.w
 
 
 Hero refinement, October 6: use three small manual pagination dots with accessible names and 44px targets, 11px captions, and photography credits in the page footer. Focus Mode now shows 015-Mountain-Light.DNG (Signature Edits original July_mReKo_002.DNG); face detail shows 001-Wedding-Selects.CR2 at native 100% with sidebars and peaking. Fresh genuine build 48 captures reduce empty black viewer area. No automatic rotation.
+
+
+## Ingest 0.9.8.1 (49) website review
+Reviewed source 838bfed and locally rebuilt the same commit using /tmp/ingest-workspace-build. Verified native Settings version 0.9.8.1 (49). Captures use a separately identified, ad-hoc-signed copy /tmp/IngestSiteBuild49.app and isolated /tmp/ingest-site49/Library; installed Ingest was not replaced. Five published native Retina window captures cover Import Folders, Organize defaults, Review & Save, Import Settings, and Import Complete. PNG originals: /tmp/ingest-site49/captures. Lossless WebP assets retain identical RGBA pixels; manifest records dimensions and original hashes. Wedding photos are Signature Edits demo files, with existing source credits retained. Two disposable RAW imports completed and source/output SHA-256 matched. The job finished before a useful intermediate progress screenshot, so completion is illustrated; progress-bar behavior was reviewed in source. No move or rename operation was executed.
+
+Updated homepage, workspace/import/organization/naming guides, destination guidance, first-shoot instructions, token reference, and troubleshooting. Import Date is import-only; Today’s Date is task-based; Capture Date uses the earliest photo for containing folders, falling back to modification date. Rename in Place ignores destination/folder structure. Existing Organize drafts can resume independently of new workspace defaults. Five replacement illustrations preserve old assets and linked anchors. The manual MacBook hero is unchanged because these app changes do not alter those demonstrated views.
+
+Published GitHub release ingest-v0.9.8.1 and its DMG were verified available during this review. Existing release-publication commit supplies the signed permanent feed and release notes; retained without modification. All current download links point to the published 0.9.8.1 DMG.
+
+QA finding: the native Organize setup sheet clips its content horizontally at its default width in this local build. The captured sheet was rejected for publication; the website uses the intact Organize preferences screenshot instead.

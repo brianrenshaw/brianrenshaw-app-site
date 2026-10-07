@@ -723,7 +723,7 @@
     "title": "Destinations",
     "url": "/ingest/guide/destinations/",
     "page": "Guide",
-    "keywords": " Favorites give you quick access to folders you use often. Add to Favorites is available in the menu and command palette;  ⌃⌘1  through  ⌃⌘9  open the first nine favorites. Find them by name in  ⌘K  as well. Ingest destinations and routing are saved with the workspace. \n An ingest can write to two destinations at once. The second copy is made from the first one after it has been verified, and it is checked the same way. \n The active workspace supplies import defaults. Open  Import…  to review or adjust a single job. Edit the  Folders  and  File Names  sections in Settings → Workspaces to save ",
+    "keywords": " Favorites give you quick access to folders you use often. Add to Favorites is available in the menu and command palette;  ⌃⌘1  through  ⌃⌘9  open the first nine favorites. Find them by name in  ⌘K  as well. Ingest destinations and routing are saved with the workspace. \n An ingest can write to two destinations at once. The second copy is made from the first one after it has been verified, and it is checked the same way. \n The active workspace supplies import defaults. Open  Import…  to review or adjust a single job. Edit the  Import Folders  and  Import File Names  sections in Settings → Works",
     "hint": "Guide"
   },
   {
@@ -731,7 +731,7 @@
     "title": "Renaming",
     "url": "/ingest/guide/renaming/",
     "page": "Guide",
-    "keywords": " Keep original filenames for the simplest import, or compose readable pieces in  File Names . Use  Add Piece  to insert a date, a sequence, a photo group, or an answer from workspace questions. The live example shows the result.  Advanced  edits the same pattern as text:  {yyyy}{mm}{dd}-{seqn}  gives  20260912-7078 . The full  naming reference  explains tokens and saved numbering. \n Renaming happens during an ingest, or in place afterwards with  ⌘R .  ⌥⌘R  re-sequences what is on screen, which is how you close the gaps in the numbering after throwing half a shoot away. \n Every rename records t",
+    "keywords": " Type names and insert variables  In  Import File Names  or the separate  Organize  setup, type ordinary text and choose  Insert Variable . Type  {  to find a variable directly; choose a suggestion with Return. Variables appear as readable pieces in the same text field. Choose your own spaces and separators.   Advanced pattern  exposes the same pattern as text. Custom Import settings use this editor too. Check the resolved preview before applying names.  Choose the right date   Import Date  uses the import’s date, so photos taken over several days can share one import folder.  Today’s Date  us",
     "hint": "Guide"
   },
   {
@@ -755,7 +755,7 @@
     "title": "Organize",
     "url": "/ingest/guide/organize/",
     "page": "Guide",
-    "keywords": " The inspector follows Grouping, Destination, Filenames, and Destination Preview. Source-folder subfolders are the default. Enable full paths when useful, review example filenames, then use  Review Changes…  to confirm Copy, Move, or Rename before execution. \n Choose  File → Organize…  in Browse, or find Organize in the photo context menu or Command Palette. It opens a separate, resizable window. Browse keeps its selection, filter, and scroll position behind it. \n Organize resumes the folder’s saved draft when available. Set its photo scope to All, Selected, or Filtered and choose whether to i",
+    "keywords": " Choose the operation  The inspector follows Grouping, Destination, Filenames, and Destination Preview. When you choose the workspace as the starting setup, its Organize section supplies the destination, folder structure, and filenames. Enable full paths when useful, review example filenames, then use  Review Changes…  to confirm the proposed operation before execution. \n Choose  File → Organize…  in Browse, or find Organize in the photo context menu or Command Palette. It opens a separate, resizable window. Browse keeps its selection, filter, and scroll position behind it. \n Organize resumes ",
     "hint": "Guide"
   },
   {
@@ -923,7 +923,7 @@
     "title": "My workspace or filenames are not right",
     "url": "/ingest/support/workspace-problems/",
     "page": "Support",
-    "keywords": "  Confirm the active workspace in the window toolbar. Open at Launch is a separate choice.  Open its setup and check required questions, the receiving folder, and File Names. New workspaces keep original filenames until you change that choice.  Connect an external destination. If its drive was renamed, reselect the folder.  Use Review &amp; Save to inspect the examples, save the workspace, then check the actual output paths in Import Settings.   For continuing group numbers, choose the same shoot across cards. A new shoot starts fresh; failed or partial imports may leave reserved-number gaps. ",
+    "keywords": "  Confirm the active workspace in the window toolbar. Open at Launch is a separate choice.  Open its setup and check required questions, the receiving folder, and Import File Names. New workspaces keep original filenames until you change that choice.  Connect an external destination. If its drive was renamed, reselect the folder.  Use Review &amp; Save to inspect the examples, save the workspace, then check the actual output paths in Import Settings.   For continuing group numbers, choose the same shoot across cards. A new shoot starts fresh; failed or partial imports may leave reserved-number",
     "hint": "Support"
   },
   {
