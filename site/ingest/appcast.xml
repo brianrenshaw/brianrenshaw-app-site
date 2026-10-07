@@ -3,6 +3,17 @@
     <channel>
         <title>Ingest</title>
         <item>
+            <title>0.9.9.1</title>
+            <pubDate>Wed, 07 Oct 2026 19:42:25 -0400</pubDate>
+            <sparkle:version>52</sparkle:version>
+            <sparkle:shortVersionString>0.9.9.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.9.1/Ingest-0.9.9.1.dmg" length="25187010" type="application/octet-stream" sparkle:edSignature="I7WiYt+/vwttMJRb+bd+nv4+MmadE8XKQI0Kp/sucrP93AfLJgP2ggCa9hjSe2xNhFkaU2f4OUYSMmfmNht5AQ==" />
+            <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.9.1&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;The Welcome to Ingest walkthrough shows the new Workspace Builder: start from scratch or from Events, Headshots, or Real Estate, and see what each sets up before using it.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+            <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.9.1</sparkle:fullReleaseNotesLink>
+        </item>
+        <item>
             <title>0.9.9</title>
             <pubDate>Wed, 07 Oct 2026 19:20:32 -0400</pubDate>
             <sparkle:version>51</sparkle:version>
@@ -23,17 +34,6 @@
             <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.8.2/Ingest-0.9.8.2.dmg" length="24896338" type="application/octet-stream" sparkle:edSignature="tiA+pSljdIgFM+KcXBXrY046Ayn8rEX1SC9H/YsjoFhmKFC1wVujW5IsdsLLllYy+Qq3pZK28LLNWuPyaAGlDg==" />
             <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.8.2&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Fix clipped controls in Organize Photos setup, with clear Copy, Move, and Rename in Place choices and readable long folder paths.&lt;/li&gt;&lt;li&gt;Remove oversized orange focus outlines when opening dialogs or clicking controls. Keyboard navigation uses a subtle indicator around the focused option instead of the entire group.&lt;/li&gt;&lt;li&gt;Keep keyboard focus indicators independent between windows and avoid duplicate button outlines.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
             <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.8.2</sparkle:fullReleaseNotesLink>
-        </item>
-        <item>
-            <title>0.9.8.1</title>
-            <pubDate>Tue, 06 Oct 2026 22:19:57 -0400</pubDate>
-            <sparkle:version>49</sparkle:version>
-            <sparkle:shortVersionString>0.9.8.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.8.1/Ingest-0.9.8.1.dmg" length="24891315" type="application/octet-stream" sparkle:edSignature="6RKA1dR0N3byDHau+oJNZ67Bnbwqf+LgW56bBY0Na0dbFVzgMvUXwv1lKQIZmjnddOksoTavU09nQsy+paPiDA==" />
-            <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.8.1&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Set up separate Import and Organize destinations, folder structures, and filename patterns within one workspace.&lt;/li&gt;&lt;li&gt;Build folder and file names with ordinary text and readable variables. Type a brace to find variables directly, including in custom Import settings.&lt;/li&gt;&lt;li&gt;Use Import Date, Today’s Date, or Capture Date in names. Import-date folders can hold photographs taken across multiple days.&lt;/li&gt;&lt;li&gt;Choose Copy, Move, or Rename in Place when starting an Organize task, then review the proposed changes before applying them.&lt;/li&gt;&lt;li&gt;See import progress automatically, with copy and verification bars, current activity, and clear completion results. Continue browsing while an import runs.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
-            <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.8.1</sparkle:fullReleaseNotesLink>
         </item>
     </channel>
 </rss>

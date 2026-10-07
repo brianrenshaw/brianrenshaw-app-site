@@ -1,5 +1,9 @@
 [
   {
+    "version": "0.9.9.1",
+    "body": "<ul><li>The Welcome to Ingest walkthrough shows the new Workspace Builder: start from scratch or from Events, Headshots, or Real Estate, and see what each sets up before using it.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
+  },
+  {
     "version": "0.9.9",
     "body": "<ul><li>Set up a workspace faster: choose Build from scratch, Events, Headshots, or Real Estate, and see the folders, filenames, and import questions before using it.</li><li>Folder setup asks plain questions: a folder for each import, empty folders for later (such as Originals, Edits, and Final Exports), which files you usually import, and whether to make a backup.</li><li>Questions are asked only when a name uses the answer, and the builder shows exactly what you will be asked at import.</li><li>Naming variables sit on the line with your text, start with Photo Number, and include a “What do the variables mean?” reference.</li><li>Share selected photos or folders through Messages or Email, with optional ZIP attachments.</li><li>Preview RAW photos with their Adobe edits. Requires Adobe DNG Converter.</li><li>Tags, ratings, and Organize drafts survive unplugging and reconnecting a drive.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
   },
