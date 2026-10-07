@@ -78,3 +78,6 @@ Long guide passages now have concise task headings linked from the sticky On thi
 
 
 Hero refinement, October 6: use three small manual pagination dots with accessible names and 44px targets, 11px captions, and photography credits in the page footer. Focus Mode now shows 015-Mountain-Light.DNG (Signature Edits original July_mReKo_002.DNG); face detail shows 001-Wedding-Selects.CR2 at native 100% with sidebars and peaking. Fresh genuine build 48 captures reduce empty black viewer area. No automatic rotation.
+
+
+Walkthrough, October 6, 2026: reuse the Ingest/Decks Mac hardware framing and static wiki help pattern while retaining Walkthrough's charcoal and teal identity. The workspace and command bar use MacBook presentations with original screenshot links; settings and processing remain native window captures. Seventeen focused articles have grouped sidebar navigation, progressive search, and legacy fragment fallbacks. Existing product explanations and demonstration-photo captions are preserved. 21st search returned HTTP 401; no catalog component was imported.

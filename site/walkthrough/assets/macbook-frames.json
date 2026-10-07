@@ -1,0 +1,26 @@
+[
+  {
+    "file": "macbook-workspace-1.4.2.webp",
+    "width": 3806,
+    "height": 2296,
+    "source": "native-workspace-1.4.2.png",
+    "sourceSHA256": "2813077a70c34bc072d897a6cc93d6ee823afa4fad0e953b533db94d7c373fcb",
+    "device": "MacBook Pro M5 14",
+    "color": "Silver",
+    "tool": "https://github.com/viticci/frames-cli",
+    "version": "1.5.0",
+    "presentation": "Original native app window, unscaled and uncropped, centered on a neutral 3024 by 1964 display canvas."
+  },
+  {
+    "file": "macbook-commands-1.4.2.webp",
+    "width": 3806,
+    "height": 2296,
+    "source": "native-commands-1.4.2.png",
+    "sourceSHA256": "f020dac6e179b3cbda531ac0e8388211e1189bcd2d79667d10806a8709cf4b22",
+    "device": "MacBook Pro M5 14",
+    "color": "Silver",
+    "tool": "https://github.com/viticci/frames-cli",
+    "version": "1.5.0",
+    "presentation": "Original native app window, unscaled and uncropped, centered on a neutral 3024 by 1964 display canvas."
+  }
+]

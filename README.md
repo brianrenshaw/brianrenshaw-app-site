@@ -110,3 +110,19 @@ Release-note source is `docs/ingest/release-notes.json`, newest version first. A
 Decks source lives in `site/decks/`. Build with `python3 scripts/build_decks_site.py`. Commit source changes before publishing: Cloudflare automatically rebuilds from main on repository pushes. Direct deployments alone can be overwritten by an unrelated push.
 
 Edit help content in `docs/decks/articles.json` and `docs/decks/support-overview.html`, then run `python3 scripts/build_decks_docs.py`. Preserve existing support anchors. `--preview-unreleased` builds a noindex preview in `dist/decks-preview`; never deploy that directory. Aura stays gated by `site/decks/aura/.unreleased` until its release requirements are satisfied.
+
+
+## Walkthrough help and Mac presentations
+
+Edit `docs/walkthrough/articles.json` for the illustrated guides and support articles,
+`support-overview.html` for the legacy quick reference, and `help-frame.html` for the
+shared document frame. Run `python3 scripts/build_walkthrough_docs.py` to regenerate
+the committed pages and register their sitemap entries. Keep the original guide and
+support fragments working. Search enhances the static directory; all articles remain
+available without JavaScript.
+
+The landing page uses two native 1.4.2 screenshots inside MacBook frames, retaining
+full-resolution original links. Rebuild them with
+`python3 scripts/build_walkthrough_frames.py --cli /path/to/frames --assets /path/to/Frames`
+(Pillow and viticci/frames-cli v1.5.0). `site/walkthrough/assets/macbook-frames.json`
+records source hashes and the composition. No app controls are cropped or resampled.

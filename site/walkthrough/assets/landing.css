@@ -73,3 +73,16 @@
  .walkthrough-home .working-details{grid-template-columns:1fr;gap:28px;padding:40px 0}
  .walkthrough-home .walkthrough-closing{padding:44px 0 12px}
 }
+/* Native app windows presented in the same Mac hardware frames as the family sites. */
+.walkthrough-home .mac-presentation{border:0;background:transparent;padding:0;border-radius:0}
+.walkthrough-home .mac-presentation>a,.walkthrough-home .mac-presentation img{border-radius:0}
+.walkthrough-home .workspace-capture{margin:8px auto 0;max-width:1200px}
+.walkthrough-home .mac-presentation figcaption{text-align:center;max-width:76ch;margin:auto}
+.walkthrough-home .walkthrough-help{display:grid;grid-template-columns:1fr 1fr;gap:80px;padding:56px 0;border-bottom:1px solid var(--line)}
+.walkthrough-home .walkthrough-help h2{max-width:20ch}
+.walkthrough-home .walkthrough-help p{font-size:16px;line-height:1.7}
+.walkthrough-home .walkthrough-help nav{border-top:1px solid var(--line)}
+.walkthrough-home .walkthrough-help nav a{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:58px;padding:16px 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:15px}
+.walkthrough-home .walkthrough-help nav a:hover{text-decoration:underline}
+.walkthrough-home .walkthrough-help nav span{color:var(--accent)}
+@media(max-width:760px){.walkthrough-home .walkthrough-help{grid-template-columns:1fr;gap:20px;padding:40px 0}.walkthrough-home .walkthrough-help h2{max-width:none}}
