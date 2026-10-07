@@ -43,10 +43,10 @@ text(48,22,'BRIAN RENSHAW',18)
 text(48,46,'A few things I wanted to exist.',40,serif=True)
 text(48,100,'Apps, tools, and experiments built with AI.',18,'#65685f')
 # Ingest and Decks lead as a featured pair, matching the homepage, each with
-# the MacBook composition from its own site. The other nine sit in a 3x3 grid.
+# its own site hero: a MacBook for Ingest, the device trio for Decks. The other nine sit in a 3x3 grid.
 featured=[
  ('Ingest','Mac app · Free during beta','Modern photo\nmanagement for Mac.','#fffefb','#242622','#86520b','ingest/assets/icon.png','assets/featured-ingest-0.9.8.webp'),
- ('Decks','iPhone, iPad & Mac · Public beta','Give your photos the\npresentation they deserve.','#eae8e2','#242422','#242422','decks/assets/icon.png','assets/featured-decks-oct06.webp'),
+ ('Decks','iPhone, iPad & Mac · Public beta','Give your photos the\npresentation they deserve.','#eae8e2','#242422','#242422','decks/assets/icon.png','assets/featured-decks-devices-oct06.webp'),
 ]
 for i,(name,kind,tagline,bg,ink,accent,path,shot) in enumerate(featured):
     x=48+i*558;y=140;w=546;h=156
@@ -55,9 +55,9 @@ for i,(name,kind,tagline,bg,ink,accent,path,shot) in enumerate(featured):
     text(x+90,y+24,name,20,ink)
     text(x+90,y+52,kind,14,accent)
     for n,line in enumerate(tagline.split('\n')):text(x+20,y+94+n*26,line,19,ink)
-    image=Image.open(SITE/shot).convert('RGBA');width=230*SCALE
+    image=Image.open(SITE/shot).convert('RGBA');width=218*SCALE
     image=image.resize((width,round(image.height*width/image.width)),Image.Resampling.LANCZOS)
-    canvas.paste(image,((x+w-230-12)*SCALE,(y+h)*SCALE-image.height-10*SCALE),image)
+    canvas.paste(image,((x+w-218-12)*SCALE,(y+h)*SCALE-image.height-10*SCALE),image)
 projects=[
  ('Folio','iOS app','#ffdbb5','#57331f','folio/assets/icon.png',None),
  ('Who’s First?','iOS app','#bde0d2','#163f3c','whos-first/assets/icon-native.png',None),
@@ -76,4 +76,4 @@ for i,(name,kind,bg,ink,path,symbol) in enumerate(projects):
     text(x+84,y+20,name,17,ink)
     text(x+84,y+46,kind,14,ink)
 text(48,596,'brianrenshaw.app',16,'#65685f')
-canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v11.png',optimize=True)
+canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v12.png',optimize=True)

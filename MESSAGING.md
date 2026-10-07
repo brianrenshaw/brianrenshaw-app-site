@@ -4,7 +4,7 @@ Approved with Brian on September 9, 2026. Use these promises for homepage cards,
 
 ## Homepage order
 
-Since October 7, 2026, at Brian’s request, Ingest and Decks lead the page as a larger featured pair under a “For photographers” label. Each featured card shows the MacBook composition from its own site (`site/assets/featured-*.webp`, 1200px copies of the site hero images) and follows its site’s current light palette: Ingest warm white with amber, Decks stone paper with charcoal. Dark mode keeps Ingest’s charcoal and Decks’ near-black. The remaining projects follow under “More projects,” still grouped by platform.
+Since October 7, 2026, at Brian’s request, Ingest and Decks lead the page as a larger featured pair under a “For photographers” label. Each featured card shows its own site’s hero devices: Ingest’s MacBook, and Decks’ iPhone, iPad, and Mac trio (`site/assets/featured-*.webp`, built by `scripts/build_portfolio_featured.py`) and follows its site’s current light palette: Ingest warm white with amber, Decks stone paper with charcoal. Dark mode keeps Ingest’s charcoal and Decks’ near-black. The remaining projects follow under “More projects,” still grouped by platform.
 
 1. Ingest (Mac app, featured)
 2. Decks (iPhone, iPad & Mac, featured)
