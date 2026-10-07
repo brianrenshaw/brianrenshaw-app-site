@@ -3,6 +3,17 @@
     <channel>
         <title>Ingest</title>
         <item>
+            <title>0.9.8.1</title>
+            <pubDate>Tue, 06 Oct 2026 22:19:57 -0400</pubDate>
+            <sparkle:version>49</sparkle:version>
+            <sparkle:shortVersionString>0.9.8.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.8.1/Ingest-0.9.8.1.dmg" length="24891315" type="application/octet-stream" sparkle:edSignature="6RKA1dR0N3byDHau+oJNZ67Bnbwqf+LgW56bBY0Na0dbFVzgMvUXwv1lKQIZmjnddOksoTavU09nQsy+paPiDA==" />
+            <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.8.1&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Set up separate Import and Organize destinations, folder structures, and filename patterns within one workspace.&lt;/li&gt;&lt;li&gt;Build folder and file names with ordinary text and readable variables. Type a brace to find variables directly, including in custom Import settings.&lt;/li&gt;&lt;li&gt;Use Import Date, Today’s Date, or Capture Date in names. Import-date folders can hold photographs taken across multiple days.&lt;/li&gt;&lt;li&gt;Choose Copy, Move, or Rename in Place when starting an Organize task, then review the proposed changes before applying them.&lt;/li&gt;&lt;li&gt;See import progress automatically, with copy and verification bars, current activity, and clear completion results. Continue browsing while an import runs.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+            <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.8.1</sparkle:fullReleaseNotesLink>
+        </item>
+        <item>
             <title>0.9.8</title>
             <pubDate>Tue, 06 Oct 2026 16:20:45 -0400</pubDate>
             <sparkle:version>48</sparkle:version>
@@ -23,16 +34,6 @@
             <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.7/Ingest-0.9.7.dmg" length="28268667" type="application/octet-stream" sparkle:edSignature="tq5T0Ig8+gNhEgvq9Z8A9wp0kzwFm3IkyeM8rXdGxN8babuihFleS9EA0hWG67+uS+TB5fEne3B6ZEMCVIahDA==" />
             <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.7&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Build a reusable workspace step by step, or edit the same setup directly. Nine sections explain questions, photo groups, destinations, filenames, review preferences, metadata, and after-import actions, with examples and a clearer Review &amp;amp; Save screen.&lt;/li&gt;&lt;li&gt;Use named photo groups such as Cocktail Hour and Speeches to organize filenames and optional keywords while keeping every photo in one folder. Group folders are a separate choice, and shoot numbering continues across cards.&lt;/li&gt;&lt;li&gt;Preview the actual metadata changes on imported copies before copying. Missing answers block import, existing values stay untouched when appropriate, and saved templates remain separate from the fields shown in the editor.&lt;/li&gt;&lt;li&gt;Choose different photo subsets for each after-import action, such as opening only tagged copies in Lightroom while importing everything. Verified copies, metadata, receipts, and action outcomes are tracked together for safer recovery.&lt;/li&gt;&lt;li&gt;Browse with clearer macOS surfaces, contained sidebar sections, SF Symbols, larger disclosure hit targets, and fewer duplicate controls. Show photos in subfolders stays in the source bar and is also available in the View menu and command palette.&lt;/li&gt;&lt;li&gt;Choose a photo background independently of the app&amp;#x27;s appearance, with an optional override for each workspace. Ordered checklists, thumbnail-size feedback, settings search, and destination entry are easier to use.&lt;/li&gt;&lt;li&gt;Keep project and shoot details across cards, use clearer review decisions and file-operation messages, and send original or JPEG copies to Decks through a persistent iCloud transfer queue.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Workspace settings have been redesigned for this prelaunch release. Recreate custom workspaces as needed. Requires macOS 15 or later and Apple silicon; Decks transfers require a compatible Decks release.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
             <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.7</sparkle:fullReleaseNotesLink>
-        </item>
-        <item>
-            <title>0.9.6</title>
-            <pubDate>Mon, 05 Oct 2026 16:50:40 -0400</pubDate>
-            <sparkle:version>42</sparkle:version>
-            <sparkle:shortVersionString>0.9.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.6/Ingest-0.9.6.dmg" length="27187834" type="application/octet-stream" sparkle:edSignature="xm3pWJAgWZrPUsj9YW1yetDRL+9v5658p0P72078i3wTHVH1zJEzzF9UJUWhwngJ85E+UxdSXHhQ7pB4EMdPAQ==" />
-            <sparkle:releaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.6</sparkle:releaseNotesLink>
         </item>
     </channel>
 </rss>

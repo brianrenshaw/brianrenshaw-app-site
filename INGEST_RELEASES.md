@@ -52,6 +52,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.9.8.1 | 49 | October 6, 2026 | Independent Import and Organize setup, readable naming variables, and automatic import progress. |
 | 0.9.8 | 48 | October 6, 2026 | Native title-bar controls, adaptive source tabs, a new welcome, compact Browse by, Scenes removal, and closed-eye palette filtering. |
 | 0.9.7 | 47 | October 6, 2026 | Guided Workspace Builder, named photo groups, resolved metadata previews, independently scoped actions, consistent macOS controls, and Decks iCloud transfers. |
 | 0.9.6 | 42 | October 5, 2026 | Send to Decks replaces the built-in Social Export editor. |
