@@ -125,3 +125,7 @@ A Git-connected deployment from main at 944f493 replaced the direct upload with 
 ## Photo-first headline, visible video support
 
 Lead with photos in the headline and hero introduction. Keep video in search metadata, link to the video section from the examples overview, and label the existing genuine export still “Frames and layouts for video, too.” Link the section to the video guide; retain video export instructions and MP4 support. The device trio is unchanged.
+
+## Aura landing page publication
+
+The Aura navigation now opens /aura/. Publish the existing landing page with page-shape instructions (16:10, 4:3, and 3:4), without claiming the named preset menu has shipped. The prior whole-page release gate is removed; named-menu claims and capture remain deferred. Existing build logic includes the sitemap entry and portfolio legacy redirect. Aura gift preparation instructions were rechecked October 6, 2026; the existing official link remains. This is not a new hardware test.

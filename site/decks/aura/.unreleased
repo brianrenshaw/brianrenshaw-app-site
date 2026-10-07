@@ -1,4 +1,0 @@
-Named Aura sizes are in local app source, not public iOS 113 / Mac 112.
-Remove this marker only after verifying public TestFlight availability and capturing the shipped named size menu.
-The Decks production and portfolio builds exclude this route while the marker exists.
-Use build_decks_site.py --preview-unreleased for a local, noindex preview with the homepage link.
