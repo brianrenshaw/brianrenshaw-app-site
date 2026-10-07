@@ -283,38 +283,35 @@ Keep the headline and the factual claims plain. Snark rides in the section copy,
 
 **Visual direction:** The app's own palette, not the portfolio's warm paper. Navy ground `#142d4e` in light mode and `#151d2c` in dark, cream surface `#fffdf6`, Sunshine `#f7dc12` for eyebrows and links, cancellation red `#a42620`, muted `#c5d0df`, rules `#4a5c74`. Archivo at weight 900 for headings, on a smaller headline scale than the shared one because Archivo sets much heavier. Motifs are the cream slip with its Sunshine tick and the rotated red CANCELED stamp. This is the first homepage card that is dark in light mode; navy is the brand's ground in both appearances, so it is intentional here even though a dark navy card was rejected for Lankford Legends.
 
-## Decks (updated October 4, 2026)
+## Decks (updated October 6, 2026)
 
-Decks is an iPhone and iPad frames app by Brian Renshaw, a photographer. It is available in beta through https://testflight.apple.com/join/SAMjeMy5. The dedicated site is https://decksphotoapp.com/; source remains in `site/decks/`. Native source is the `codex/acros` branch in the sibling `photo-importer-acros` project.
+**Audience:** Photographers who know how they want their work presented, but face limited tools or painstaking, repeated layout work in Photoshop.
 
-**Audience:** Photographers sharing their own photographs and the stories behind them.
+**Headline:** Give your photos and videos the presentation they deserve.
 
-**Headline:** Frames for your photography.
+**Problem:** You know how you want your photos to look. Getting there can mean working around limited tools, painstakingly arranging everything in Photoshop, and repeating the same steps for your next set of photos.
 
-**Supporting line:** By a photographer, for photographers.
+**Promise:** Build your layout, add the details that matter, and save it as a template. Give your next set of photos the same care without starting over.
 
-**Primary message:** Decks helps your photos and videos look their best on Instagram and Threads. Start with a template, add text or camera details, and customize every detail.
+**Positioning:** Creative control and consistent reuse. Use StoryBrand as a lens: the photographer's desired presentation, the familiar frustration, a clear process, visible results, and a beta invitation. Series and SCRL are internal references; do not criticize competitors in public copy or imply Photoshop feature parity.
 
-**Priorities:** Simple template creation first. Choose a layout and media first, then size and frame with the user’s own photos in the preview. Camera details can go on the photo or in the caption. Captions stay with projects and are easy to copy while switching to Instagram. Saved templates work with Apple Shortcuts without opening Decks. Photos and videos use the same editing tools. Creating and editing personal templates is central to the app.
+**Page order:** Finished compositions; problem and benefits; Instagram posts/Stories/carousels, Threads, Aura, and photographs for YouTube edits; Layout Builder and repeatable templates; text/camera details; dedicated Fujifilm section; Photos Shortcuts; native iPhone/iPad/Mac; Ingest handoff; additional tools and maker invitation.
 
-**Voice:** Simplicity over cleverness, explicitly requested by Brian on October 1. Lead with getting photos and videos ready to post, useful templates, and customization. Keep sentences short and human. Avoid competitor criticism in public copy. Use descriptive headings and short, concrete explanations. No slogans, creativity claims, exaggerated promises, or gimmicky headlines. Keep advanced controls in expandable details. The previous headline and dense numbered feature sections are retired.
+**Visual direction:** Photo editorial. Light paper, charcoal system type, generous spacing, varied actual photographs and readable native controls. Still images only. Pair finished results with the tools behind them. Use original native exports and current beta interfaces in isolated demo stores; document build/source/dimensions. Preserve older asset URLs.
 
-**Visual direction:** Quiet light paper, charcoal text, system type, thin dividers. Photography and real native screenshots lead. No decorative gradients, floating cards, mock app UI, or oversized slogans. Support and privacy use the same theme. This supersedes the original dark landing-page direction; the portfolio card retains its own styling.
-
-**Examples:** Show several actual results, not just one white frame. White and black backgrounds, contrasting borders, photo blur, multi-photo layouts, and film borders should be visible. Include multiple camera-detail arrangements, using actual capture metadata. Brian explicitly requested these galleries on October 1.
-
-**Assets:** Current editor screenshots and camera arrangements use build 77 and Brian’s own photography. Earlier finished examples remain where the rendering is unchanged. Native iPhone captures and native renders are losslessly encoded at original dimensions. `site/decks/assets/SOURCES.md` and `build43-assets.json` record provenance. No archival photographs are shown in the redesigned page. Keep older assets available for existing links.
+**Availability:** Public TestFlight beta at https://testflight.apple.com/join/SAMjeMy5. App Store Connect verified iPhone/iPad build 113 and native Mac build 112 in external testing on October 6. Requires iOS/iPadOS 18+ or macOS 15+ on Apple silicon. Dedicated site: https://decksphotoapp.com/.
 
 **Factual boundaries:**
 
-- Beta for iOS and iPadOS 18 or later; do not promise a release date.
-- Choose a starting layout and media before the size, background, and frame walkthrough. Saved designs can be edited or duplicated.
-- Saved templates appear in Shortcuts as “Save photos with <template>”. Photos share-sheet use requires adding the Decks Templates shortcut; its picker lets the user choose a saved template. Do not imply installation is automatic.
-- Camera details come from actual photo metadata. Manual camera/lens information can come from My Gear. Do not advertise Fujifilm simulations or recipes until confirmed working.
-- The camera pictured in the Mamiya photograph is its subject, not its capture camera. The bridge render uses real Fujifilm X-T4 settings.
-- Photos and videos use the same frames/layouts; clips are trimmed in the editor and export as MP4. Do not imply all video contains camera metadata.
-- Exports default to 1440-pixel-wide stills. Decks saves/shares prepared files; the user posts in Instagram or Threads.
-- Optional iCloud sync is between iPhone and iPad. Do not promise Ingest/Mac sync.
+- Photos Shortcut setup is one-time and user initiated. The template actions accept still photos, including batches; do not promise video input or uninterrupted background completion of every large job.
+- Camera settings must match real source metadata. The camera pictured in a photograph is not necessarily the camera that captured it.
+- Fujifilm reads available MakerNotes from supported original JPEGs. Recipe names are entered by the photographer. Missing values stay absent. Presenting settings does not apply a simulation to image pixels.
+- Optional iCloud sync covers projects/templates and referenced media. Do not imply all caption presets, recipes, gear, or settings libraries sync.
+- Caption presets are the reusable wording/snippets feature. Distinguish rendered on-photo text from captions copied into another app.
+- Aura and YouTube are export use cases. Decks does not directly publish to these services. The YouTube example is a photograph for a video edit.
+- Ingest handoff works with supported versions and selected stills; link to Ingest's guide for current transport options.
+- GPS/contact metadata is excluded by default, with export opt-ins; it is not always stripped.
+
 
 ## September 17 implementation record
 
@@ -405,72 +402,66 @@ All seven published claims hold at `92cae0a`:
 
 **Method note.** Verifying against a checked-out release commit is better than unpacking whichever IPA happens to be on disk, and it is what should have been done the first time. Confirm `MARKETING_VERSION` and `CURRENT_PROJECT_VERSION` at that commit match the live listing before trusting it.
 
-## Ingest (October 6, 2026; release 0.9.8, build 48)
+## Ingest landing page reworked, September 22, 2026
 
-Approved supporting hero line: “Your photo workflow shouldn’t feel stuck in the ’90s.” Keep “Modern photo management for Mac.” as the primary headline. The help center uses focused articles and compact reference typography.
+Decided with Brian on September 22, 2026. Supersedes the headline, section order and hero image in the September 18 entry; the rules in that entry still hold.
 
-**Identity:** A native Mac photo workflow app for personal and professional photography.
+- **Positioning:** Ingest is the only modern Mac app that takes a shoot from the card to an organized, named, tagged folder with you making every decision. Culling-only apps and AI-first culling apps do a narrower or a different job; the page says so once, softly, and names nobody: "Culling apps help you pick; Ingest also brings the files in, tags them, and files them."
+- **Headline:** "Everything between the card and the edit. And after it." The "after it" is Organize, Social Export and Apple Photos. **Subhead:** "Import, cull, name, tag, and organize every shoot in one Mac app. Every copy is read back and checked, the card is never written to, and you make every select."
+- **Lead audience:** none. Brian is undecided between real estate, weddings and events, and hobbyists, so the hero carries the workflow promise and "Made for how you shoot" gives the three equal cards.
+- **Price:** "No account. No subscription. Free during the beta." Nothing about a price after the beta.
+- **Photo Mechanic:** still exactly one mention, in About, the approved sentence. The switching guide on the support page is linked with link text that does not name it.
+- **Page order:** hero (cull grid capture), trust strip (the four About bullets, moved up), the loop in five minutes (from the quick start), Import, Cull, Describe, Workspaces, Organize, After the cull (three cards: into the edit, Social Export, Apple Photos), Made for how you shoot (three cards), Built for the keyboard (the command bar, moved down), About (two paragraphs), Download. Existing section ids kept.
+- **Meta:** title "Ingest | Import, cull, and organize photos on your Mac"; description "Take every shoot from the card to a named, tagged, organized folder. Verified copies, keyboard culling, and you make every select."; share image the cull grid.
+- **Captures reused** from the 0.8.0 set; no new captures yet. Wanted when the next release is captured: two similar frames in Compare with a rating applied, quick entry with the legend showing, a workspace before and after, the receipt at the end of an ingest, a short screen recording of the loop for the hero.
+- **Speed:** no absolute claims. "Arrow through a card while it is still being read" replaced a draft "with no waiting".
 
-**Headline (exact):** Modern photo management for Mac.
+**Staged for the release that contains photo analysis (built September 22, 2026, unreleased):** add to Cull, in this order, only when that release ships and with its own captures. Feature names in the interface are Similar, Faces, Eyes closed, Soft, Tilted, Utility; the key is P, Keep This Frame.
 
-**Supporting copy:** Every shoot is different. Your photo workflow should fit. Import, review, add metadata, and organize your photographs. Build a workspace for the way you shoot, then keep moving with your keyboard.
+- "Ingest notices when you fired off five of the same frame and stacks them. Arrow to the one you like, press P, and move on. Nothing is rated or tagged for you."
+- "Face close-ups are instant, and an Eyes closed filter shows you the blinks before you tag."
+- "A Soft filter surfaces the frames noticeably less sharp than the shot next to them. Judged against the shot beside it, never a number in a table."
+- Trust strip bullet stays "You make the selects. Nothing rates or rejects on your behalf." The analysis is filters and stacks; say "flags" or "filters", never "AI culling", and keep the About paragraph's line that AI culling tools exist and are good at what they do.
 
-**Homepage order:** Product promise → photographer problem → Workspaces and five shoot types → repeatable questions, naming, and organization → Command-K → Review → Metadata Assist → verified imports and editor handoff → existing folders → specialist tools → separate Decks handoff → three-step start → photographer/developer story → download. The whole story is visible without opening feature dialogs. Use “a modern Mac alternative to Photo Mechanic” once in supporting copy; no universal parity or unmeasured speed claims.
+## Ingest About section rewritten, September 20, 2026
 
-**Workspaces:** One isolated draft with guided or direct navigation through Workspace, Questions, Photo Groups, Folders, File Names, Browse & Review, Metadata, After Import, and Review & Save. New workspaces keep original filenames and card files, with grouping and actions off. Basic, Events, and Headshots are creation starters. The five homepage photography examples are adaptable demonstrations. Photo Groups affect names and optional keywords independently of folder creation; Browse by organizes the screen; Stacks combine related photos. Apple Photos requires both the global switch and the workspace switch.
+The About section on the Ingest landing page was a single positioning sentence under a bullet list, so the bullets read as a detached feature inventory. It now opens with two short paragraphs and the bullets follow as the same argument.
 
-**Workflow:** Browse is central. Import… opens reviewed Import Settings. Scope starts at Selected when a selection exists, otherwise All; Tagged and Untagged are explicit choices. Display filters do not choose import membership. Each after-import action has its own scope within the imported copies. Organize opens an independent window and retains drafts. Review uses a fixed queue with face/detail inspection. Compare holds Select while candidates change. Canonical details live in the Guide; default keys live in Shortcuts.
+- The Photo Mechanic sentence changed from "I'm building Ingest as a modern alternative to Photo Mechanic" to "I built Ingest because I wanted a modern Mac app for the part of the workflow Photo Mechanic has covered for years." Still one mention, still out of titles and headlines. A draft of this sentence said "for twenty years"; the age reference was cut because raising a competitor's age is the same move as raising its price.
+- A draft also summarized file support as "current RAW support," which would have implied the universal RAW previews this document forbids. The shipped sentence names Sony ARW and Fujifilm RAF.
+- New first bullet: "You make the selects. Nothing rates or rejects on your behalf." It has no link, which the existing `.assurance-links` styling handles.
+- The Cull section gained one line, "No automatic rating or rejection. Every tag, rating, and label is one you applied," so the claim reaches someone comparing culling tools without a scroll to About. A slogan version ("Ingest doesn't decide anything for you. It tries to make deciding fast") was rejected under the standing rule against slogans and benefit lines.
+- A proposed support-page essay, "Why there's no AI culling," was not added. The face close-up strip runs Apple's Vision framework on the Mac, documented on the guide and privacy pages, so a page-length "no AI" argument would contradict them; the bullet is scoped to rating and rejecting and does not. It would also commit a 0.2.1 beta to a permanent roadmap position on a public page.
+- The beta note near the download is unchanged and remains the only place the beta is explained. A third About paragraph ending "That's who it's built for first" was dropped as a duplicate of it.
+- `python3 scripts/check_site.py` passes: 41 HTML pages, 823 local links and assets.
 
-**Metadata Assist:** Structured entry and review. Type `;` to find fields, use Tab for completion, and review before Apply. GPS locations and typed IPTC place names are distinct. Apply edits writable files or sidecars; Use for Import stages details for verified copies. Copy Metadata chooses field groups and keyword merge behavior; Paste Metadata applies those choices directly. `{…}` tokens belong to naming templates. Quick Entry remains supported in the same reviewed editor. Do not make fake interactive app demos.
+The histogram guide also covers persistent RGB/individual-channel controls and on-image clipping markers. Explain that RAW stops and JPEG tone-value axes differ; a rightward peak is not a cross-mode brightness comparison. Describe markers as regions, since they may cover several photosites and camera JPEG geometry may differ.
 
-**Supporting capabilities:** Manual culling, face inspection, comparison, loupe, histograms, reversible crops, ratings, and verified copies. ⌘K finds commands and shows contextual availability and shortcuts. Do not claim universal format support, fastest performance, or blanket parity.
+Ingest 0.6.0 adds a compact Photo Info sidebar with configurable order and visibility, address/GPS/city-state location entry, and editable on-device Apple Intelligence caption/keyword suggestions (supported macOS 27 systems). Full IPTC editing remains available on demand. This copy accompanies Ingest 0.6.0 (12).
 
-**Optional analysis:** Built-in face, sharpness, similarity, and keeper checks run locally. Apple Intelligence caption/keyword suggestions run on-device on supported systems. Claude Second Opinion is a separate opt-in integration: Ask sends requested previews, crops, measurements, and the question through the user's Claude account. Never describe all optional assistance as offline or account-free. Ingest itself needs no account. Privacy is authoritative for storage and network behavior.
+### Ingest 0.7.0: Apple Photos
 
-**Send to Decks:** The built-in Social Export editor was removed in 0.9.6. Send selected still photos as original files or prepared JPEG copies to Decks for Mac, through iCloud, or using AirDrop/Share. Incoming Photos waits for a new or existing project choice. Ingest and Decks retain independent copies. iCloud requires Apple sign-in and a compatible Decks receiver; it does not sync Ingest workspace settings.
+Apple Photos is integrated by default and can be disabled in Settings. Describe ordinary albums, the System Photo Library, reviewed JPEG-first sending, and importing rendered Photos selections into Social Export. Native caption, keyword, and rating editing requires macOS 27. Do not promise Shared Album publishing, Smart Album rule editing, continuous synchronization, or arbitrary Photos library selection. Photos operations follow the user's iCloud settings; avoid blanket claims that photographs never leave the Mac. Public screenshots use the credited public demonstration photographs, never personal photos or private album names.
 
-**Visual direction:** Light editorial homepage, charcoal system typography, restrained amber, generous spacing, and substantial screenshots alternating with explanation. Stills only; no automatic rotation or video. The hero places a genuine app window in a silver MacBook frame using Frames CLI, with an unchanged full-resolution source link. Workflow screenshots stay unframed. Existing static HTML and CSS. Genuine dark native app captures, cursor-free and lossless at 2× density, with full-resolution links. Photography uses the existing licensed public RAW collections. Keep their provenance and archive old assets at existing URLs. Share artwork is separate branded typography, not an app screenshot.
+Apple Photos roadmap: workspace-specific enable/disable is planned. Until it ships, distinguish that upcoming control from the global integration setting in 0.8.5.
 
-**Availability:** Free during beta, no Ingest account, macOS 15+, Apple silicon. Current download: 0.9.8 (48).
+Ingest site-wide follow-up: all documentation, support, privacy, and release pages use the approved bright neutral theme. Lead Command Palette messaging with access to every app action through search; workspace switching is a strong example, while Crop belongs in detailed tool documentation.
 
-**Mac identity:** “Unapologetically Mac.” Brian is a photographer and Apple enthusiast who built the app for his own Mac workflow.
 
-**Canonical references:** Getting Started owns the first-run path; Guide owns behavior; Shortcuts owns default keys and contexts; Naming & Metadata owns tokens and naming defaults; Automation owns URL schemes and actions; Support owns compatibility and troubleshooting; Privacy owns data handling. Preserve routes, anchor IDs, the Quick Start redirect, historical release entries, and the permanent Sparkle feed.
+Decks build 78, October 5, 2026: panels fit visible controls by default; manual heights are remembered per tool. This Page / All Pages stays available across tools for page layout and frame settings. Object controls still edit the selected item. Background's neutral swatch is Ivory; Replace Background belongs only to Photo/Video mode. Current native Layout, Background, Photo, and Text captures replace affected examples.
 
-Earlier implementation records below are historical. This section supersedes conflicting positioning or visual choices.
+## Decks — October 6 next pass and Aura
 
-## Ingest (October 6, 2026; release 0.9.8, build 48)
+The photographer homepage keeps its headline and frustration section. Hero eyebrow: “iPhone, iPad & Mac.” Byline: “Built by a photographer. Made for your photos.” Page/social title: “Decks · Frames for your photos.” Destination heading: “Wherever your photos go.”
 
-Approved supporting hero line: “Your photo workflow shouldn’t feel stuck in the ’90s.” Keep “Modern photo management for Mac.” as the primary headline. The help center uses focused articles and compact reference typography.
+Aura is a destination, not a competing framing app. Its homepage example is two autumn photos on a Carver-shaped page. Threads receives a single 4:5 photo. Carousel copy names Snippets as saved caption presets and the Caption Sheet as the place to track copied captions. YouTube means prepared photographs for later editing, with a saved template for consistent presentation.
 
-**Identity:** A native Mac photo workflow app for personal and professional photography.
+The dedicated `/aura/` page speaks to frame owners: bars beside vertical photos, crops cutting off the subject, and choosing the pair yourself. Lead with “Make your photos fit your Aura frame.” Explain choosing a named frame, arranging photos, saving an image, and uploading through Aura. Use “pillarboxing” once in the FAQ; no inline bold, exclamation points, “just,” “simply,” or “easy.” Keep the softer cropping FAQ. Brian confirmed his knowledge of Aura display behavior; this is owner confirmation, not a newly performed hardware test.
 
-**Headline (exact):** Modern photo management for Mac.
+The Aura page is locally implemented but gated out of production builds until named Aura sizes are in public TestFlight. iOS 113 / Mac 112 remain the latest public builds checked October 6. Do not promote local destination setup, named export sizes, shape-aware previews, or the Instagram 3:4 preset as shipped. See DECKS_REFRESH.md for the release checklist.
 
-**Supporting copy:** Every shoot is different. Your photo workflow should fit. Import, review, add metadata, and organize your photographs. Build a workspace for the way you shoot, then keep moving with your keyboard.
-
-**Homepage order:** Product promise → photographer problem → Workspaces and five shoot types → repeatable questions, naming, and organization → Command-K → Review → Metadata Assist → verified imports and editor handoff → existing folders → specialist tools → separate Decks handoff → three-step start → photographer/developer story → download. The whole story is visible without opening feature dialogs. Use “a modern Mac alternative to Photo Mechanic” once in supporting copy; no universal parity or unmeasured speed claims.
-
-**Workspaces:** One isolated draft with guided or direct navigation through Workspace, Questions, Photo Groups, Folders, File Names, Browse & Review, Metadata, After Import, and Review & Save. New workspaces keep original filenames and card files, with grouping and actions off. Basic, Events, and Headshots are creation starters. The five homepage photography examples are adaptable demonstrations. Photo Groups affect names and optional keywords independently of folder creation; Browse by organizes the screen; Stacks combine related photos. Apple Photos requires both the global switch and the workspace switch.
-
-**Workflow:** Browse is central. Import… opens reviewed Import Settings. Scope starts at Selected when a selection exists, otherwise All; Tagged and Untagged are explicit choices. Display filters do not choose import membership. Each after-import action has its own scope within the imported copies. Organize opens an independent window and retains drafts. Review uses a fixed queue with face/detail inspection. Compare holds Select while candidates change. Canonical details live in the Guide; default keys live in Shortcuts.
-
-**Metadata Assist:** Structured entry and review. Type `;` to find fields, use Tab for completion, and review before Apply. GPS locations and typed IPTC place names are distinct. Apply edits writable files or sidecars; Use for Import stages details for verified copies. Copy Metadata chooses field groups and keyword merge behavior; Paste Metadata applies those choices directly. `{…}` tokens belong to naming templates. Quick Entry remains supported in the same reviewed editor. Do not make fake interactive app demos.
-
-**Supporting capabilities:** Manual culling, face inspection, comparison, loupe, histograms, reversible crops, ratings, and verified copies. ⌘K finds commands and shows contextual availability and shortcuts. Do not claim universal format support, fastest performance, or blanket parity.
-
-**Optional analysis:** Built-in face, sharpness, similarity, and keeper checks run locally. Apple Intelligence caption/keyword suggestions run on-device on supported systems. Claude Second Opinion is a separate opt-in integration: Ask sends requested previews, crops, measurements, and the question through the user's Claude account. Never describe all optional assistance as offline or account-free. Ingest itself needs no account. Privacy is authoritative for storage and network behavior.
-
-**Send to Decks:** The built-in Social Export editor was removed in 0.9.6. Send selected still photos as original files or prepared JPEG copies to Decks for Mac, through iCloud, or using AirDrop/Share. Incoming Photos waits for a new or existing project choice. Ingest and Decks retain independent copies. iCloud requires Apple sign-in and a compatible Decks receiver; it does not sync Ingest workspace settings.
-
-**Visual direction:** Light editorial homepage, charcoal system typography, restrained amber, generous spacing, and substantial screenshots alternating with explanation. Stills only; no automatic rotation or video. The hero places a genuine app window in a silver MacBook frame using Frames CLI, with an unchanged full-resolution source link. Workflow screenshots stay unframed. Existing static HTML and CSS. Genuine dark native app captures, cursor-free and lossless at 2× density, with full-resolution links. Photography uses the existing licensed public RAW collections. Keep their provenance and archive old assets at existing URLs. Share artwork is separate branded typography, not an app screenshot.
-
-**Availability:** Free during beta, no Ingest account, macOS 15+, Apple silicon. Current download: 0.9.8 (48).
-
-**Mac identity:** “Unapologetically Mac.” Brian is a photographer and Apple enthusiast who built the app for his own Mac workflow.
-
-**Canonical references:** Getting Started owns the first-run path; Guide owns behavior; Shortcuts owns default keys and contexts; Naming & Metadata owns tokens and naming defaults; Automation owns URL schemes and actions; Support owns compatibility and troubleshooting; Privacy owns data handling. Preserve routes, anchor IDs, the Quick Start redirect, historical release entries, and the permanent Sparkle feed.
-
-Earlier implementation records below are historical. This section supersedes conflicting positioning or visual choices.
+Update, October 6, 2026: the Aura page is now published at `/aura/` with page-shape instructions (16:10, 4:3, and 3:4), and the whole-page release gate (`site/decks/aura/.unreleased`) is removed. Claims about the named preset menu and its captures stay deferred until named sizes ship. See “Aura landing page publication” in DECKS_REFRESH.md.
 
 Ingest brevity pass: homepage copy reduced by roughly half. Screenshots are static illustrations, with no enlargement links, popup script, or version captions. Detailed instructions stay in the wiki. Lead handoff with Open in Lightroom Classic. Keep exact Mac and optional Apple Intelligence/Photos compatibility wording in a short section. Footer has Support, Release notes, and Privacy only. Release notes use undated per-version pages and a native version dropdown; old anchors remain compatible.
+
+Decks StoryBrand pass: hero explains frames/layouts and repeat use; problem leads into Choose your photos → Make it yours → Save it. Use it again. Native template-reuse proof precedes destinations. Brian’s approved first-person motivation establishes empathy earlier. TestFlight explained next to the CTA with installation support. Short destination copy leads to native disclosures. Customer testimonial pending an attributed, permission-cleared quote and example.

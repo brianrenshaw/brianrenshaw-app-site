@@ -111,10 +111,34 @@
       "id": "decks-oct06-repeatable-presentation",
       "decision": "Approved October 6: light photo editorial page, still images only, genuine finished compositions paired with native iPhone/iPad/Mac controls. Lead with the presentation photographers want and the frustration of limited tools or repeatedly rebuilding layouts in Photoshop. Layout Builder/templates and consistent reuse are primary; dedicated Fujifilm section, Photos Shortcuts, destination examples, and Ingest handoff. Static HTML/CSS and native disclosures; no catalog components imported because search returned HTTP 401."
     },
+    {
+      "id": "decks-aura-oct06-next",
+      "decision": "Preserve the photographer homepage. Give Aura frame owners a dedicated plain-language page with genuine native landscape exports, no motion, and native FAQ disclosures. Use the autumn pair for Aura, a single 4:5 photo for Threads, and normalize screenshot orientation in a new lossless derivative. Mobile heroes show finished work immediately after the headline. Gate the Aura route until named sizes ship publicly."
+    },
+    {
+      "id": "ingest-oct06-editorial-098",
+      "decision": "Modern photo management for Mac. Full visible product story, light neutral editorial static HTML/CSS, system type, amber accents, authentic native 0.9.8 (48) lossless Retina stills. Mobile app image directly after headline. Preserve old routes, anchors, assets and permanent feed. No video, hero rotation or feature dialogs. Search returned HTTP 401; reuse existing primitives. Review found only six intentional local colors."
+    },
+    {
+      "id": "decks-phone-first-showcase",
+      "decision": "Lead the platform showcase with two iPhone captures (layout and camera details), followed by Mac and a genuine landscape iPad Layout Builder capture. Preserve original full-size links."
+    },
+    {
+      "id": "decks-layered-device-hero",
+      "decision": "Real Mac, landscape iPad, and foreground iPhone captures with different compositions form a static layered hero. On mobile the iPhone leads above Mac and iPad. Finished exports follow immediately; full original links and the separate platform showcase remain. Brian requested a silver MacBook hero using Frames CLI; keep the original screenshot linked and all workflow captures unframed. Desktop pairs hero copy with the laptop. Preserve native app proportions in the separately documented artwork."
+    },
     "Ingest Guide and Support: workflow and problem-based chapters, sticky desktop topics, compact native disclosure, task shortcuts and section search. Preserve anchors and no-JavaScript navigation; reuse neutral/amber tokens and genuine Mac stills.",
     "Ingest help center, October 6: replace long Guide/Support/Shortcuts manuals with 68 focused static articles and three categorized directories. Use a compact sticky sidebar, native topic disclosures, breadcrumbs, adjacent articles, direct search results, and preserved legacy anchors. Include Getting Started, templates, and automation in the same shell. Use 26–32px article headings, 12px keycaps and labeled stacked shortcut rows on narrow screens. Approved hero support line: Your photo workflow shouldn’t feel stuck in the ’90s.",
     "Ingest brevity pass: homepage copy reduced by roughly half. Screenshots are static illustrations, with no enlargement links, popup script, or version captions. Detailed instructions stay in the wiki. Lead handoff with Open in Lightroom Classic. Keep exact Mac and optional Apple Intelligence/Photos compatibility wording in a short section. Footer has Support, Release notes, and Privacy only. Release notes use undated per-version pages and a native version dropdown; old anchors remain compatible.",
     "Help articles expose heading anchors in a sticky right-hand On this page rail on wide screens and a compact disclosure on smaller screens.",
+    {
+      "id": "decks-grounded-trio",
+      "decision": "Use a shared baseline at all widths: iPhone front-left, Mac rear-center, landscape iPad front-right. Never lift the phone above the pair on mobile. Frame camera/text examples consistently and stack at narrow widths."
+    },
+    {
+      "id": "decks-storybrand-clarity",
+      "decision": "Concrete offer, three-step plan, early founder empathy and reusable-template visual proof before destination detail. Explain TestFlight and defer testimonials until permission-cleared evidence exists."
+    },
     "The Ingest MacBook hero uses three manually selected stills with labeled tabs and mobile swipes; fixed copy and CTA, no autoplay. Start here leads help navigation.",
     {
       "id": "ingest-hero-dots",

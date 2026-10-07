@@ -45,11 +45,19 @@ Behavior was checked against 0.9.8 source and the capture work above, including 
 
 Documentation validation: site and capture checks, dedicated/portfolio builds, JavaScript syntax, and diff whitespace checks passed. `21st review` of Guide, Support, docs.css, and docs.js returned zero findings. Native Chrome verified the desktop guide sidebar, capture-time anchor and search result, and compact Support disclosure plus location-topic jump.
 
+## Production publication — October 6, 2026
+
+Brian authorized publication. Published isolated checkout `/tmp/ingest-editorial-publish`, commit `bb124831fb0b570df1aa00ea852a1b3e21c79d8f`, based on release commit `3781b75`. Cloudflare production deployment `4469f952-b88f-4484-9ee6-929f31c1928c` succeeded. Guide, Support, homepage, all routes/current assets, search, metadata, redirects, 404, sitemap, and permanent feed passed the live validator. The production feed is the unchanged 0.9.8 feed from origin/main; the original working tree's old feed was not published. Unrelated local Decks edits were excluded.
+
+Local DNSFilter resolves the custom domain to its own certificate endpoint. Live validation used the independently queried public Cloudflare address via per-request curl resolution, retaining normal TLS certificate and hostname verification. No DNS or security settings changed.
+
 ## Wiki-style documentation follow-up
 
 Brian approved the supporting hero line “Your photo workflow shouldn’t feel stuck in the ’90s.” Guide, Support and Shortcuts are now categorized directories leading to 68 focused static articles. Getting Started, Naming & Metadata, and Automation share the compact help shell. Existing anchors remain on the directories; JavaScript redirects old links to the corresponding article and no-script visitors get a normal article link. Search favors title matches and help articles in the help center.
 
 Desktop uses a sticky collapsible sidebar and breadcrumbs. Compact screens use native navigation disclosure and labeled stacked table rows, preserving keyboard shortcuts with 12px keycaps. Article headings are 26–32px. Real screenshots and feature content remain unchanged. Native Chrome verified desktop guide layout, the 393px shortcut view, legacy anchor routing, search to capture-time instructions, and no-script navigation; scripting was restored. 21st catalog returned HTTP 401; existing project primitives were reused.
+
+Publication commit: `cf66b56`.
 
 Ingest brevity pass: homepage copy reduced by roughly half. Screenshots are static illustrations, with no enlargement links, popup script, or version captions. Detailed instructions stay in the wiki. Lead handoff with Open in Lightroom Classic. Keep exact Mac and optional Apple Intelligence/Photos compatibility wording in a short section. Footer has Support, Release notes, and Privacy only. Release notes use undated per-version pages and a native version dropdown; old anchors remain compatible.
 
