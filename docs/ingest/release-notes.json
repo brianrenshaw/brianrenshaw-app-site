@@ -1,5 +1,9 @@
 [
   {
+    "version": "0.9.8.2",
+    "body": "<ul><li>Fix clipped controls in Organize Photos setup, with clear Copy, Move, and Rename in Place choices and readable long folder paths.</li><li>Remove oversized orange focus outlines when opening dialogs or clicking controls. Keyboard navigation uses a subtle indicator around the focused option instead of the entire group.</li><li>Keep keyboard focus indicators independent between windows and avoid duplicate button outlines.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
+  },
+  {
     "version": "0.9.8.1",
     "body": "<ul>\n<li>Set up separate Import and Organize destinations, folder structures, and filename patterns within one workspace.</li>\n<li>Build names with ordinary text and readable variables. Type a brace to find variables directly, including in custom Import settings.</li>\n<li>Use Import Date, Today’s Date, or Capture Date. Import-date folders can hold photos taken across multiple days.</li>\n<li>Choose Copy, Move, or Rename in Place when starting an Organize task, then review the proposed changes before applying them.</li>\n<li>See import progress automatically, with copy and verification bars, current activity, and clear completion results. Continue browsing while an import runs.</li>\n</ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
   },
