@@ -42,7 +42,7 @@ location.replace(destination.href);</script></body></html>
 ''')
     # Preserve old app assets while links lead directly to the dedicated domains.
     homepage = OUTPUT / "index.html"
-    homepage.write_text(homepage.read_text().replace('href="/decks/"', f'href="{DECKS}"').replace('href="/ingest/"', f'href="{INGEST}"'))
+    homepage.write_text(homepage.read_text().replace('href="/decks/', f'href="{DECKS}').replace('href="/ingest/', f'href="{INGEST}'))
     sitemap = OUTPUT / "sitemap.xml"
     namespace = "http://www.sitemaps.org/schemas/sitemap/0.9"
     ET.register_namespace("", namespace)
@@ -52,9 +52,9 @@ location.replace(destination.href);</script></body></html>
         if loc is not None and (loc.text or "").startswith(("https://brianrenshaw.app/decks/", "https://brianrenshaw.app/ingest/")):
             tree.getroot().remove(url)
     tree.write(sitemap, encoding="UTF-8", xml_declaration=True)
-    assert 'href="/decks/"' not in homepage.read_text()
+    assert 'href="/decks/' not in homepage.read_text()
     assert "brianrenshaw.app/decks/" not in sitemap.read_text()
-    assert 'href="/ingest/"' not in homepage.read_text()
+    assert 'href="/ingest/' not in homepage.read_text()
     assert "brianrenshaw.app/ingest/" not in sitemap.read_text()
     for slug, name, route, destination in redirects:
         text = (OUTPUT / slug / route / "index.html").read_text()

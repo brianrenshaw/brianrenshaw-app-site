@@ -40,11 +40,24 @@ def icon(x,y,path=None,kind=None):
         for points in [[(12,22),(44,22)],[(12,33),(44,33)],[(23,22),(23,44)],[(34,22),(34,44)]]:
             draw.line([((x+dx)*SCALE,(y+dy)*SCALE) for dx,dy in points],fill='#365e83',width=4)
 text(48,22,'BRIAN RENSHAW',18)
-text(48,50,'A few things',42,serif=True)
-text(48,98,'I wanted to exist.',42,serif=True)
-text(48,152,'Apps, tools, and experiments built with AI.',20,'#65685f')
-# Ten projects in a 3x3 grid plus one. Four rows of cards and the footer only
-# fit inside 630px at this row height, so keep the hero above them compact.
+text(48,46,'A few things I wanted to exist.',40,serif=True)
+text(48,100,'Apps, tools, and experiments built with AI.',18,'#65685f')
+# Ingest and Decks lead as a featured pair, matching the homepage, each with
+# the MacBook composition from its own site. The other nine sit in a 3x3 grid.
+featured=[
+ ('Ingest','Mac app · Free during beta','Modern photo\nmanagement for Mac.','#fffefb','#242622','#86520b','ingest/assets/icon.png','assets/featured-ingest-0.9.8.webp'),
+ ('Decks','iPhone, iPad & Mac · Public beta','Give your photos the\npresentation they deserve.','#eae8e2','#242422','#242422','decks/assets/icon.png','assets/featured-decks-oct06.webp'),
+]
+for i,(name,kind,tagline,bg,ink,accent,path,shot) in enumerate(featured):
+    x=48+i*558;y=140;w=546;h=156
+    rect((x,y,x+w,y+h),bg,outline='#e2e0d8' if bg=='#fffefb' else None)
+    icon(x+20,y+20,path)
+    text(x+90,y+24,name,20,ink)
+    text(x+90,y+52,kind,14,accent)
+    for n,line in enumerate(tagline.split('\n')):text(x+20,y+94+n*26,line,19,ink)
+    image=Image.open(SITE/shot).convert('RGBA');width=230*SCALE
+    image=image.resize((width,round(image.height*width/image.width)),Image.Resampling.LANCZOS)
+    canvas.paste(image,((x+w-230-12)*SCALE,(y+h)*SCALE-image.height-10*SCALE),image)
 projects=[
  ('Folio','iOS app','#ffdbb5','#57331f','folio/assets/icon.png',None),
  ('Who’s First?','iOS app','#bde0d2','#163f3c','whos-first/assets/icon-native.png',None),
@@ -55,13 +68,12 @@ projects=[
  ('Lankford Legends','Blog','#ffffff','#0C2340',None,'blog'),
  ('What Did They Read?','Blog','#f2efe8','#1a1715',None,'books'),
  ('Spreadsheet Tools','Utility','#d5e6f4','#293f55',None,'utility'),
- ('Ingest','Mac app','#1b1c1e','#f5a524','ingest/assets/icon.png',None),
 ]
 for i,(name,kind,bg,ink,path,symbol) in enumerate(projects):
-    x=48+(i%3)*368;y=190+(i//3)*105
-    rect((x,y,x+348,y+88),bg)
-    icon(x+16,y+16,path,symbol)
-    text(x+84,y+24,name,18,ink)
-    text(x+84,y+50,kind,15,ink)
-text(48,608,'brianrenshaw.app',16,'#65685f')
-canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v10.png',optimize=True)
+    x=48+(i%3)*372;y=312+(i//3)*94
+    rect((x,y,x+360,y+84),bg)
+    icon(x+14,y+14,path,symbol)
+    text(x+84,y+20,name,17,ink)
+    text(x+84,y+46,kind,14,ink)
+text(48,596,'brianrenshaw.app',16,'#65685f')
+canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v11.png',optimize=True)

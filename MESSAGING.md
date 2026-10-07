@@ -4,21 +4,21 @@ Approved with Brian on September 9, 2026. Use these promises for homepage cards,
 
 ## Homepage order
 
-Grouped by platform since September 17, 2026, at Brian’s request: the iOS apps first, then the Mac app, then the blogs, then the utility.
+Since October 7, 2026, at Brian’s request, Ingest and Decks lead the page as a larger featured pair under a “For photographers” label. Each featured card shows the MacBook composition from its own site (`site/assets/featured-*.webp`, 1200px copies of the site hero images) and follows its site’s current light palette: Ingest warm white with amber, Decks stone paper with charcoal. Dark mode keeps Ingest’s charcoal and Decks’ near-black. The remaining projects follow under “More projects,” still grouped by platform.
 
-1. Folio (iOS app)
-2. Who’s First? (iOS app)
-3. Reading Habit (iOS app)
-4. Where Do We Eat (iOS app)
-5. Canceled (iOS app)
-6. Decks (iOS app)
-7. Walkthrough (Mac app)
-8. Ingest (Mac app)
+1. Ingest (Mac app, featured)
+2. Decks (iPhone, iPad & Mac, featured)
+3. Folio (iOS app)
+4. Who’s First? (iOS app)
+5. Reading Habit (iOS app)
+6. Where Do We Eat (iOS app)
+7. Canceled (iOS app)
+8. Walkthrough (Mac app)
 9. Lankford Legends (Blog)
 10. What Did They Read? (Blog)
 11. Spreadsheet Tools (Utility)
 
-Keep the visible numbers in that order. Within the iOS apps, released apps come first and the app still in development comes last; that is why Canceled is the fifth card and Decks, added September 29, 2026, is the sixth. The Mac apps sit directly after the iOS apps: Walkthrough, then Ingest, which was added on September 18, 2026. Reading Habit moved ahead of Where Do We Eat on September 16, 2026, when it reached the App Store; Where Do We Eat reached the App Store itself on September 17, 2026 and keeps card 04, so all four released iOS apps now sit ahead of Canceled.
+Featured card copy: Ingest uses “Modern photo management for Mac.” with the label “Photo workflow for Mac”; Decks uses its site headline, “Give your photos the presentation they deserve.”, with the label “Frames and layouts for photos.” Keep the visible numbers in that order. The history below describes the earlier platform-only grouping (September 17 to October 6, 2026). Within the iOS apps, released apps come first and the app still in development comes last; that is why Canceled is the fifth card and Decks, added September 29, 2026, is the sixth. The Mac apps sit directly after the iOS apps: Walkthrough, then Ingest, which was added on September 18, 2026. Reading Habit moved ahead of Where Do We Eat on September 16, 2026, when it reached the App Store; Where Do We Eat reached the App Store itself on September 17, 2026 and keeps card 04, so all four released iOS apps now sit ahead of Canceled.
 
 With eleven cards the twelfth grid slot is a dashed placeholder labeled “12 / Not yet” with the line “Reserved for the next thing I want to exist.” and a mailto link. It keeps the two-column grid even. Replace it when the next project ships.
 
@@ -220,9 +220,9 @@ Added at Brian's request as the eighth project, replacing the reserved slot. Typ
 
 **Supporting copy:** Group photos by room, arrange their order, and export numbered filenames. Use the command bar to assign rooms, apply naming presets, and reopen jobs.
 
-**Portfolio headline:** Organize photos for a property listing.
+**Portfolio headline:** Sort and name listing photos. (Matches the site headline since October 7, 2026; previously “Organize photos for a property listing.”)
 
-**Portfolio supporting copy:** Group photos by room, set their order, and export copies with numbered filenames. Save room templates and naming presets for future listings.
+**Portfolio supporting copy:** For realtors and listing assistants. Group photos by room, arrange their order, and create numbered filenames. Save room templates and naming presets for the next listing.
 
 **Card label:** Real estate photo organization
 

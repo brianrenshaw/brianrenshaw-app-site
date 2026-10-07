@@ -28,7 +28,13 @@
 .canceled .app-bottom span{font-size:13px;opacity:.85}
 @media(prefers-color-scheme:dark){.canceled{background:#151d2c;color:#fff4cd}}
 
-.ingest{background:#26272a;color:#f1efe9}.ingest .eyebrow,.ingest .app-bottom a{color:#f5a524}@media(prefers-color-scheme:dark){.ingest{background:#1b1c1e;color:#f1efe9}.ingest .eyebrow,.ingest .app-bottom a{color:#f5a524}}
+/* Ingest and Decks lead the page as a featured pair, each with a MacBook composition from its own site. */
+.portfolio-featured{display:grid;grid-template-columns:1fr 1fr;gap:22px}.section-label{grid-column:1/-1;margin:0 0 6px;color:var(--muted)}.more-label{margin:76px 0 22px}.portfolio-app.featured{padding:44px 44px 36px;min-height:0;box-shadow:0 1px 2px #0000000a,0 18px 40px -28px #0000003d}.featured h2{font-size:clamp(34px,3.3vw,44px);line-height:1.12;max-width:15ch}.featured>p:not(.eyebrow){font-size:16px;max-width:46ch;margin-bottom:28px}.featured-shot{margin:auto -12px 0}.featured-shot img{display:block;width:100%;height:auto}.featured .app-bottom{margin-top:0}.featured h2 .keep{white-space:nowrap}
+@media(max-width:700px){.portfolio-featured{grid-template-columns:1fr}.portfolio-app.featured{padding:28px}.featured-shot{margin:auto -6px 0}.more-label{margin-top:56px}}
+@media(prefers-color-scheme:dark){.portfolio-app.featured{box-shadow:none}}
 
-/* Decks uses its Acros appearance: near-black ground, ink text, in both color schemes. */
-.decks{background:#101011;color:#ececea}.decks .eyebrow,.decks .app-bottom a{color:#ececea}.decks .app-bottom{border-color:#ffffff33}.decks .app-bottom span{font-size:13px;opacity:.7}.decks .app-label img{border-radius:13px}
+/* Ingest follows its editorial site: warm white, charcoal, amber. Dark mode keeps the app's charcoal. */
+.ingest{background:#fffefb;color:#242622}.ingest .eyebrow,.ingest .app-bottom a{color:#86520b}@media(prefers-color-scheme:dark){.ingest{background:#1b1c1e;color:#f1efe9}.ingest .eyebrow,.ingest .app-bottom a{color:#f5a524}.ingest .app-bottom{border-color:#fff3}}
+
+/* Decks follows its photo-editorial site: stone paper and charcoal ink. Dark mode keeps the Acros near-black. */
+.decks{background:#eae8e2;color:#242422}.decks .eyebrow,.decks .app-bottom a{color:#242422}.decks .app-label img{border-radius:13px}@media(prefers-color-scheme:dark){.decks{background:#101011;color:#ececea}.decks .eyebrow,.decks .app-bottom a{color:#ececea}.decks .app-bottom{border-color:#ffffff33}}
