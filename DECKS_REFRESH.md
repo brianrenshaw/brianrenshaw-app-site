@@ -4,7 +4,7 @@
 
 The photographer knows the presentation they want. The obstacle is limited tools or painstakingly rebuilding the same design. Decks supplies creative control, saved designs, and a repeatable workflow.
 
-The approved headline is “Give your photos and videos the presentation they deserve.” The primary action remains “Try Decks on TestFlight”; the secondary action goes to finished examples. The homepage follows desired result → recognizable frustration → examples → build/save/reuse → specific workflows → developer introduction and beta action. Competitor positioning stays internal.
+The approved headline is “Give your photos the presentation they deserve.” The primary action remains “Try Decks on TestFlight”; the secondary action goes to finished examples. The homepage follows desired result → recognizable frustration → examples → build/save/reuse → specific workflows → developer introduction and beta action. Competitor positioning stays internal.
 
 Use light paper, charcoal system type, generous spacing, complete compositions, and genuine native screenshots. No autoplay, motion, invented app interfaces, external UI framework, or JavaScript dependency. Reuse the site's header/footer/document primitives. Native `details`/`summary` elements reveal additional features. Preserve prior routes, fragment IDs, and historical asset URLs.
 
@@ -121,3 +121,7 @@ Published help center to production deployment https://f07eda96.decks-photo-app.
 ### Deployment regression repair
 
 A Git-connected deployment from main at 944f493 replaced the direct upload with pre-refresh Decks source. Restored all refreshed source and documentation in an isolated checkout based on current origin/main, removed the unwanted hero byline, and committed the Decks changes so subsequent automatic deployments retain them. No unrelated local Ingest edits included.
+
+## Photo-first headline, visible video support
+
+Lead with photos in the headline and hero introduction. Keep video in search metadata, link to the video section from the examples overview, and label the existing genuine export still “Frames and layouts for video, too.” Link the section to the video guide; retain video export instructions and MP4 support. The device trio is unchanged.
