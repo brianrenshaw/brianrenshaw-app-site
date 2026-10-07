@@ -4,12 +4,12 @@
   "kind": "Device-framed marketing artwork using genuine unretouched native screenshots",
   "device": "MacBook Pro M5 16",
   "tool": "https://github.com/viticci/frames-cli",
-  "photo": "001-Wedding-Selects.CR2",
-  "photographer": "Christian Meza",
-  "creditEvidence": "Embedded Artist and Copyright fields; source through Signature Edits",
+  "photoSource": "Signature Edits; individual credit evidence recorded per view",
   "views": [
     {
       "view": "workflow",
+      "photo": "001-Wedding-Selects.CR2",
+      "photographerCredit": "Christian Meza; embedded Artist; Signature Edits",
       "nativeScreenshot": "hero-workflow-0.9.8-retina.webp",
       "nativeScreenshotSHA256": "e6083a1e1fa6ffd0e0465ad300b4b138f90f6c0df2a60b3457bdbe7fb0175f02",
       "output": "hero-macbook-workflow-0.9.8.webp",
@@ -19,21 +19,25 @@
     },
     {
       "view": "focus",
+      "photo": "015-Mountain-Light.DNG",
+      "photographerCredit": "Original filename: July_mReKo_002.DNG; Signature Edits",
       "nativeScreenshot": "hero-focus-0.9.8-retina.webp",
-      "nativeScreenshotSHA256": "8b40570755bb3793b7dddfd7d63207706d83ace5235a4ac2a2734812601a2f2f",
+      "nativeScreenshotSHA256": "4b266539ac0f5e7bf61ae0acd358d856a9efbb67af4ac1edc2accb229ffed59a",
       "output": "hero-macbook-focus-0.9.8.webp",
       "width": 4220,
       "height": 2578,
-      "outputSHA256": "c9154e14675715e9ed4733e9abe5d4e046a05a0c0bf54cfde8eab3676ce4c102"
+      "outputSHA256": "48ef709581f20a4bdc68b9635c7b15562964c01fc5f8ba5d1292e08c5897b5b6"
     },
     {
       "view": "details",
+      "photo": "001-Wedding-Selects.CR2",
+      "photographerCredit": "Christian Meza; embedded Artist; Signature Edits",
       "nativeScreenshot": "hero-details-0.9.8-retina.webp",
-      "nativeScreenshotSHA256": "29e8784ab5651e8bfeac63cb79f4008af84d2fc50c192744f89b35ad6bf4c7f2",
+      "nativeScreenshotSHA256": "d357666d32dcf56b55ba5f3f03403da31615a8bcf47c7ca5f637c252d6068691",
       "output": "hero-macbook-details-0.9.8.webp",
       "width": 4220,
       "height": 2578,
-      "outputSHA256": "17052eb651d6f40da843e6f15ec4b754598e33091f8a20562d43933fac4f206c"
+      "outputSHA256": "a4d66805ad9ebfbcd50c1448e9e8c8d36fd07cc9082a65bdb911aef607c32f52"
     }
   ]
 }

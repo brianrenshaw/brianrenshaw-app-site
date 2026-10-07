@@ -369,3 +369,6 @@ All three new native captures use 0.9.8 (48), matching the newest local Debug bu
 Long guide passages now have concise task headings linked from the sticky On this page rail. Apple Photos is shortened; the guide landing page and navigation highlight Start here, linking to the existing five-step walkthrough. Existing routes and anchor compatibility are retained.
 
 Native capture files: hero-workflow-0.9.8-retina.webp, hero-focus-0.9.8-retina.webp, hero-details-0.9.8-retina.webp. Each was captured with screencapture -x -o -a -l 9085 in the isolated editorial library. Details demonstrates actual green focus peaking and face crops; no assessment results were edited, overridden, or fabricated.
+
+
+Hero refinement, October 6: use three small manual pagination dots with accessible names and 44px targets, 11px captions, and photography credits in the page footer. Focus Mode now shows 015-Mountain-Light.DNG (Signature Edits original July_mReKo_002.DNG); face detail shows 001-Wedding-Selects.CR2 at native 100% with sidebars and peaking. Fresh genuine build 48 captures reduce empty black viewer area. No automatic rotation.

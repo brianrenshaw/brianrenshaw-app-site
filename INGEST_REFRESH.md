@@ -61,3 +61,6 @@ The hero now starts with Sources, the photo grid, and Inspector visible. Three m
 All three new native captures use 0.9.8 (48), matching the newest local Debug build and published release checked this session. Genuine captures retain Retina pixels; derived laptop artwork is recorded separately in hero-tour.json and generated with build_ingest_hero_tour.py. The selected photo embeds Artist Christian Meza and Copyright ChristianMezaMedia. Signature Edits source/license and recorded contributor names/handles are exposed in Support credits, and embedded/filename evidence is added to raw-samples.json. No author is invented for uncredited files.
 
 Long guide passages now have concise task headings linked from the sticky On this page rail. Apple Photos is shortened; the guide landing page and navigation highlight Start here, linking to the existing five-step walkthrough. Existing routes and anchor compatibility are retained.
+
+
+Hero refinement, October 6: use three small manual pagination dots with accessible names and 44px targets, 11px captions, and photography credits in the page footer. Focus Mode now shows 015-Mountain-Light.DNG (Signature Edits original July_mReKo_002.DNG); face detail shows 001-Wedding-Selects.CR2 at native 100% with sidebars and peaking. Fresh genuine build 48 captures reduce empty black viewer area. No automatic rotation.

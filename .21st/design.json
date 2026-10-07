@@ -33,7 +33,7 @@
   "decisions": [
     {
       "id": "native-app-assets",
-      "decision": "Native app icons are authoritative over historical website mockups. Who’s First? uses the current board palette and existing native build-18 captures. No playable web app."
+      "decision": "Native app icons are authoritative over historical website mockups. Who\u2019s First? uses the current board palette and existing native build-18 captures. No playable web app."
     },
     {
       "id": "blog-project-card",
@@ -53,11 +53,11 @@
     },
     {
       "id": "portfolio-card-order",
-      "decision": "Folio, Who’s First?, Where Do We Eat, Reading Habit, Lankford Legends, then Spreadsheet Tools. Number cards 01 through 06. Identify each as iOS app, Blog, or Utility beneath its name. No dedicated blog navigation link."
+      "decision": "Folio, Who\u2019s First?, Where Do We Eat, Reading Habit, Lankford Legends, then Spreadsheet Tools. Number cards 01 through 06. Identify each as iOS app, Blog, or Utility beneath its name. No dedicated blog navigation link."
     },
     {
       "id": "distinct-card-palette",
-      "decision": "Owner approved apricot Folio, seafoam Who’s First?, ivory/tomato Where Do We Eat, golden parchment Reading Habit, white/navy/red Lankford Legends, and pale-blue/slate Spreadsheet Tools. Preserve shared layout and dark-mode readability."
+      "decision": "Owner approved apricot Folio, seafoam Who\u2019s First?, ivory/tomato Where Do We Eat, golden parchment Reading Habit, white/navy/red Lankford Legends, and pale-blue/slate Spreadsheet Tools. Preserve shared layout and dark-mode readability."
     },
     {
       "id": "listing-namer-project",
@@ -105,17 +105,21 @@
     },
     {
       "id": "decks-native-style-comparisons",
-      "decision": "Show six native frame/background examples and four camera-detail arrangements, all rendered with build 43 IngestSocialKit and Brian’s photography. Use distinct photographs across examples: In-N-Out, baseball, fall basketball, espresso, autumn landscapes, rainbow, sunset, and food. The owner explicitly rejected repeating one photo across styles; use real EXIF. Neutral static galleries reuse existing type, spacing, and full-size links. All examples remain visible on mobile."
+      "decision": "Show six native frame/background examples and four camera-detail arrangements, all rendered with build 43 IngestSocialKit and Brian\u2019s photography. Use distinct photographs across examples: In-N-Out, baseball, fall basketball, espresso, autumn landscapes, rainbow, sunset, and food. The owner explicitly rejected repeating one photo across styles; use real EXIF. Neutral static galleries reuse existing type, spacing, and full-size links. All examples remain visible on mobile."
     },
     {
       "id": "decks-oct06-repeatable-presentation",
       "decision": "Approved October 6: light photo editorial page, still images only, genuine finished compositions paired with native iPhone/iPad/Mac controls. Lead with the presentation photographers want and the frustration of limited tools or repeatedly rebuilding layouts in Photoshop. Layout Builder/templates and consistent reuse are primary; dedicated Fujifilm section, Photos Shortcuts, destination examples, and Ingest handoff. Static HTML/CSS and native disclosures; no catalog components imported because search returned HTTP 401."
     },
     "Ingest Guide and Support: workflow and problem-based chapters, sticky desktop topics, compact native disclosure, task shortcuts and section search. Preserve anchors and no-JavaScript navigation; reuse neutral/amber tokens and genuine Mac stills.",
-    "Ingest help center, October 6: replace long Guide/Support/Shortcuts manuals with 68 focused static articles and three categorized directories. Use a compact sticky sidebar, native topic disclosures, breadcrumbs, adjacent articles, direct search results, and preserved legacy anchors. Include Getting Started, templates, and automation in the same shell. Use 26–32px article headings, 12px keycaps and labeled stacked shortcut rows on narrow screens. Approved hero support line: Your photo workflow shouldn’t feel stuck in the ’90s.",
+    "Ingest help center, October 6: replace long Guide/Support/Shortcuts manuals with 68 focused static articles and three categorized directories. Use a compact sticky sidebar, native topic disclosures, breadcrumbs, adjacent articles, direct search results, and preserved legacy anchors. Include Getting Started, templates, and automation in the same shell. Use 26\u201332px article headings, 12px keycaps and labeled stacked shortcut rows on narrow screens. Approved hero support line: Your photo workflow shouldn\u2019t feel stuck in the \u201990s.",
     "Ingest brevity pass: homepage copy reduced by roughly half. Screenshots are static illustrations, with no enlargement links, popup script, or version captions. Detailed instructions stay in the wiki. Lead handoff with Open in Lightroom Classic. Keep exact Mac and optional Apple Intelligence/Photos compatibility wording in a short section. Footer has Support, Release notes, and Privacy only. Release notes use undated per-version pages and a native version dropdown; old anchors remain compatible.",
     "Help articles expose heading anchors in a sticky right-hand On this page rail on wide screens and a compact disclosure on smaller screens.",
-    "The Ingest MacBook hero uses three manually selected stills with labeled tabs and mobile swipes; fixed copy and CTA, no autoplay. Start here leads help navigation."
+    "The Ingest MacBook hero uses three manually selected stills with labeled tabs and mobile swipes; fixed copy and CTA, no autoplay. Start here leads help navigation.",
+    {
+      "id": "ingest-hero-dots",
+      "decision": "Hero refinement, October 6: use three small manual pagination dots with accessible names and 44px targets, 11px captions, and photography credits in the page footer. Focus Mode now shows 015-Mountain-Light.DNG (Signature Edits original July_mReKo_002.DNG); face detail shows 001-Wedding-Selects.CR2 at native 100% with sidebars and peaking. Fresh genuine build 48 captures reduce empty black viewer area. No automatic rotation."
+    }
   ],
   "evidence": [
     {
