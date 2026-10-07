@@ -31,3 +31,46 @@ Frame and camera examples were rendered with the current `IngestSocialKit` using
 ## Build 78 — October 5, 2026
 
 `build78-layout`, `background`, `photo`, and `text` are unmodified native iPhone simulator captures from `testContentSizedPhotographyCaptures`, using the bundled Bridge photograph and its original metadata. They show content-sized panels, the persistent scope menu, Ivory, Color mode without Replace Background, and compact Text actions. Lossless WebP preserves original dimensions and RGB pixels; `build78-assets.json` records hashes. Other build-77 artwork remains current because its rendering has not changed.
+
+## October 6 — iOS 113 / native Mac 112
+
+The `oct06-` series uses current native Decks rendering and unmodified native interfaces. `oct06-assets.json` records original dimensions, source paths, and input/output SHA-256 hashes. Every converted image was compared against its source as RGBA pixels. Mac screenshots retain transparent window corners. The landscape iPad image retains its EXIF orientation and records both stored and displayed dimensions. Full-size links remain available; no historical assets were removed.
+
+`scripts/render_decks_refresh.swift` documents the photo and layout settings. The ten frame/camera subjects and original-file mappings are those listed above. Additional examples use `Mamiya.jpg` and `Coastline.jpg` (paired composition), `Example26.jpg` (Story), `Example29.jpg` (Aura), `Mamiya.jpg` (YouTube edit), `Example24.jpg`/`Example27.jpg` (Threads), and `Coastline.jpg` (three panorama panels). Coffee, Burger, and Example29 demonstrate the same saved Everyday Frame template. `oct06-shortcut-original.webp` is the unchanged Coffee photograph; its matching finished design is `oct06-reuse-1.webp`.
+
+The Fuji composition imports Brian's original `~/Downloads/Decks/DSCF0205.JPG`, rather than a converted tutorial copy. Its MakerNotes report Classic Negative, dynamic range 100, highlights -1, shadows -1, and color 0. No recipe name was invented. `oct06-fuji-controls.webp` is the native Mac field-selection sheet for that imported photograph.
+
+Phone camera/layout/text captures came from `/tmp/decks-site-phone-final.xcresult`, `SocialQuickArrangeUITests.testContentSizedPhotographyCaptures`, using the real bundled Bridge photograph. The iPad editor came from that same capture test in `/tmp/decks-site-ipad-final.xcresult`; the dark capture succeeded before an unrelated simulator relaunch failure. The final iPad Layout Builder capture came from the passing `SocialWorkspaceUITests.testIPadLayoutBuilderUsesLargePreviewAndKeepsChoicesOnRotation` run in `/tmp/decks-website-ipad-photography.xcresult`, showing Brian's Burger photograph. Earlier captures containing simulator stock photos were rejected.
+
+`oct06-shortcut-setup.webp` comes from the passing native `IngestSocialUITests.testStarterShortcutFileIsAvailable` in `/tmp/decks-website-shortcuts-setup.xcresult`. It shows Decks's genuine one-time setup, not a reconstructed Apple Shortcuts interface. The surrounding original/result images illustrate the workflow; they are not screenshots of a completed Apple Photos share-sheet run. See `DECKS_REFRESH.md` for the remaining end-to-end check and the obsolete export-width assertion in the existing native acceptance test.
+
+Mac workspace and Template Builder images were captured at native 2× resolution from an isolated probe store. The workspace pairs Mamiya and Coastline. Template Builder shows Brian's native bundled Louisville night photograph. Ingest Send to Decks was captured from 0.9.7 with six copied photographs in a separate test library; the receiver is the actual Decks Mac new/existing-project chooser for that package.
+
+`oct06-video-still.webp` is a frame at one second from `framed-video.mp4`, actually exported through Decks's `SocialVideoExporter`. The input is a short slow zoom made from Brian's `scripps_pierre-184935.jpg`; it is labeled as a sample clip made from a photograph. `oct06-video-poster.webp` is retained as a renderer preview but is not the homepage's video evidence. `social-oct06.png` is a 1200 × 630 layout of real Decks exports, reproducible with `scripts/build_decks_social.py`.
+
+## October 6 next pass — Aura and screenshot orientation
+
+Historical `oct06-` URLs above are retained byte for byte. The new assets use `oct06-next-` names. `render_decks_refresh.swift --aura-pass` ran against an isolated `git archive` of IngestSocialKit at `9546540`, the released renderer baseline, rather than concurrent unshipped destination changes. Native PNG/project output is in `/tmp/decks-next-assets`; the reproducible packaging script is `scripts/build_decks_aura_assets.py`.
+
+- `aura-pair`: Example24/Example27, side-by-side with narrow white margins; 1280 × 800, Carver shape. This one export appears in the homepage, Aura hero, and paired-layout example.
+- `aura-soft`: Example26, fit within its own blurred background; 1280 × 800.
+- `aura-full`: Coastline, native fill crop with no margins; 1600 × 1200.
+- `aura-thin`: Sunset, native fill crop and 0.018 margins; 1600 × 1200.
+- `threads-single`: Example29, white 4:5 page; 1080 × 1350.
+- `ipad-builder-upright`: the original `oct06-ipad-builder.webp` has stored dimensions 1640 × 2360 and EXIF orientation 8. The derivative applies that orientation to pixel positions, producing 2360 × 1640 with no orientation tag. Its decoded pixels exactly match the EXIF-normalized original. No UI content was retouched; the historical file remains untouched.
+
+Every new WebP was verified pixel-identical to its native source (or orientation-normalized source). `oct06-assets.json` records hashes, dimensions, project-source hashes, and transformations. The named frame-menu screenshot and shape-aware Layout Builder recapture are deferred until those interfaces ship publicly. No local unreleased UI is represented as a shipped screenshot.
+
+`social-oct06-next.png` is the new 1200 × 630 share artwork, with “Frames for your photos.” beside the Decks name and unchanged native compositions. `build_decks_social.py` now generates this version; `social-oct06.png` remains the historical artwork.
+
+## Device presentations — October 6, 2026
+
+`oct06-framed-{phone,ipad,builder,mac}.webp` use the existing genuine isolated-library native captures, framed with [Federico Viticci’s Apple Frames CLI](https://github.com/viticci/frames-cli), v1.5.0, commit `2a62a0c9b77d3d8582f5d1a41d97a80677664e0f`, and its Apple Frames 4.0.2 asset pack. These are hardware presentations, not new captures or new release evidence. Hardware artwork is supplied by Apple Frames; the CLI is MIT licensed, copyright Federico Viticci (2026).
+
+The iPhone uses an explicit iPhone 17 Pro Silver frame rather than the CLI’s newer automatic default. The iPad uses the matching 1640×2360 opening (and its landscape equivalent). The Mac window is centered at its original 2640×1760 pixel size on a neutral 3024×1964 background inside a MacBook frame: this is not represented as a full-desktop capture. No screenshot is stretched or resampled. The phone’s hardware mask trims screen corners. The builder uses the previously normalized upright derivative. All outputs are lossless WebP, with dimensions, source and artwork hashes, CLI version/commit, and orientation recorded in `oct06-assets.json`. Historical assets and full-size original links remain available.
+
+Rebuild with `python3 scripts/build_decks_device_frames.py --cli /path/to/frames --assets /path/to/Frames`.
+
+`oct06-framed-phone-camera.webp` adds a second iPhone presentation from the historical `oct06-phone-camera.webp`, using the same explicit iPhone 17 Pro Silver frame and lossless process. The platform showcase reuses the genuine landscape `oct06-framed-builder.webp` for iPad; the portrait iPad asset remains available at its historical URL.
+
+`oct06-framed-phone-text.webp` wraps the genuine Text-tool capture in the same iPhone 17 Pro Silver bezel. Screenshot pixels and full-size original URL remain unchanged. This capture shows Add Text/Add Logo entry actions, not an expanded text editor.

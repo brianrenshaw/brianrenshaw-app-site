@@ -104,3 +104,9 @@ The October 6 Ingest redesign uses static 0.9.8 (48) Mac captures, a MacBook her
 Ingest help articles are maintained in `docs/ingest/help-content.json`; the three longer references use `reference-content.json`. Run `python3 scripts/build_ingest_docs.py` after edits, then the site and dedicated-domain checks. The shared HTML frame is `help-frame.html`; generated static HTML is committed. Legacy guide/support/shortcut fragments retain linked fallbacks and progressively redirect to their articles.
 
 Release-note source is `docs/ingest/release-notes.json`, newest version first. Add release content there without dates, then run `python3 scripts/build_ingest_release_notes.py` to regenerate the version pages, latest page, dropdown, legacy anchors, and search destinations. Preserve the permanent appcast and its signed enclosure metadata.
+
+## Decks updates
+
+Decks source lives in `site/decks/`. Build with `python3 scripts/build_decks_site.py`. Commit source changes before publishing: Cloudflare automatically rebuilds from main on repository pushes. Direct deployments alone can be overwritten by an unrelated push.
+
+Edit help content in `docs/decks/articles.json` and `docs/decks/support-overview.html`, then run `python3 scripts/build_decks_docs.py`. Preserve existing support anchors. `--preview-unreleased` builds a noindex preview in `dist/decks-preview`; never deploy that directory. Aura stays gated by `site/decks/aura/.unreleased` until its release requirements are satisfied.

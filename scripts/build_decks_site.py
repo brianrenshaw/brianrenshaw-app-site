@@ -2,6 +2,7 @@
 """Build the standalone Decks website from its portfolio source pages."""
 
 from html.parser import HTMLParser
+import argparse
 from pathlib import Path
 from urllib.parse import unquote, urljoin, urlsplit
 import shutil
@@ -33,9 +34,20 @@ class Page(HTMLParser):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--preview-unreleased", action="store_true", help="Include draft routes in dist/decks-preview with noindex metadata")
+    args = parser.parse_args()
+    global OUTPUT
+    if args.preview_unreleased:
+        OUTPUT = ROOT / "dist/decks-preview"
     if OUTPUT.exists():
         shutil.rmtree(OUTPUT)
     shutil.copytree(SOURCE, OUTPUT)
+    for marker in OUTPUT.rglob(".unreleased"):
+        if args.preview_unreleased:
+            marker.unlink()
+        else:
+            shutil.rmtree(marker.parent)
     for name in ("apps.css", "family.css"):
         shutil.copy2(ROOT / "site/assets" / name, OUTPUT / "assets" / name)
     for path in OUTPUT.rglob("*.html"):
@@ -45,6 +57,11 @@ def main():
         text = text.replace("https://brianrenshaw.app/decks/", ORIGIN + "/")
         text = text.replace('href="/ingest/', 'href="https://ingestphotoapp.com/')
         text = text.replace('"/decks/', '"/')
+        if (OUTPUT / "aura/index.html").exists():
+            text = text.replace('data-aura-nav href="/support/#aura"', 'data-aura-nav href="/aura/"')
+            text = text.replace("<!-- aura-page-link -->", '<a class="text-link" href="/aura/">Using an Aura frame? See how →</a>')
+        if args.preview_unreleased:
+            text = text.replace("</head>", '<meta name="robots" content="noindex, nofollow"></head>')
         path.write_text(text)
     routes = sorted("/" + p.relative_to(OUTPUT).as_posix().removesuffix("index.html")
                     for p in OUTPUT.rglob("index.html"))
@@ -54,6 +71,8 @@ def main():
         "".join(f"  <url><loc>{ORIGIN}{route}</loc></url>\n" for route in routes) +
         "</urlset>\n")
     (OUTPUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {ORIGIN}/sitemap.xml\n")
+    if args.preview_unreleased:
+        (OUTPUT / "robots.txt").write_text("User-agent: *\nDisallow: /\n")
     (OUTPUT / "_redirects").write_text("/decks / 301\n/decks/ / 301\n/decks/* /:splat 301\n")
     pages = {path: Page(path.read_text()) for path in OUTPUT.rglob("*.html")}
     errors = []

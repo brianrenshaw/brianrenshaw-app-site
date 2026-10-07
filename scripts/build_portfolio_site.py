@@ -16,8 +16,11 @@ def main():
     if OUTPUT.exists():
         shutil.rmtree(OUTPUT)
     shutil.copytree(SOURCE, OUTPUT)
+    for marker in (OUTPUT / "decks").rglob(".unreleased"):
+        shutil.rmtree(marker.parent)
     redirects = [("decks", "Decks", route, DECKS + route)
-                 for route in ("", "support/", "privacy/")]
+                 for route in sorted(p.relative_to(OUTPUT / "decks").as_posix().removesuffix("index.html")
+                                     for p in (OUTPUT / "decks").rglob("index.html"))]
     redirects += [("ingest", "Ingest", p.relative_to(SOURCE / "ingest").as_posix().removesuffix("index.html"),
                    INGEST + ("getting-started/" if p.parent.name == "quick-start" else
                              p.relative_to(SOURCE / "ingest").as_posix().removesuffix("index.html")))

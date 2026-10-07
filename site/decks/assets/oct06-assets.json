@@ -1,0 +1,539 @@
+{
+  "date": "2026-10-06",
+  "renderer": "current IngestSocialKit, matching builds 113/112",
+  "images": [
+    {
+      "file": "oct06-aura.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 675,
+      "source": "/tmp/decks-site-assets/aura.png",
+      "sha256": "b477a04a700fa0e8ee16b639c229b86047d02b07dc3f2f0aae21b36d802ff88b",
+      "sourceSha256": "6afd3e228797a1857ad589c5877b538823798f76ad3aacbe6f040981f586fa37"
+    },
+    {
+      "file": "oct06-camera-below.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 1350,
+      "source": "/tmp/decks-site-assets/camera-below.png",
+      "sha256": "e8d8ca99e9c7b28b1c33555f7d4628bc47eef3830c7f25432965e36358daf054",
+      "sourceSha256": "63f10eb310190a7d1c8198fadd6dc71e8e0eb39806795942f18b0b5f5c006b52"
+    },
+    {
+      "file": "oct06-camera-beside.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 720,
+      "source": "/tmp/decks-site-assets/camera-beside.png",
+      "sha256": "a57c05ec0c2b5b5c99ef41f04f9aab8ad6d3f50407f3d12c72a80c2a995ee624",
+      "sourceSha256": "41e3fbf4e587ce48b9039f5cd78b1c63c983f53cabf89959db5900b1c805051c"
+    },
+    {
+      "file": "oct06-camera-on-photo.webp",
+      "kind": "native-render",
+      "width": 800,
+      "height": 533,
+      "source": "/tmp/decks-site-assets/camera-on-photo.png",
+      "sha256": "3934d0312d645547eab5237df03dc6a7b6ac4d6a730ff34e7d8b0ee6906d5dac",
+      "sourceSha256": "2c9b3bd7bf9600a848fe75579285614ba492b1a636ab24776bd9ca8aa93cde7d"
+    },
+    {
+      "file": "oct06-camera-per-photo.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 1350,
+      "source": "/tmp/decks-site-assets/camera-per-photo.png",
+      "sha256": "2ef12431090bdf9de825e42ce380c3914962354c7523bd367e77931043a358b2",
+      "sourceSha256": "a4fca7ca5e5976f0dfbf99caa669f37502f11b5f7fa320f8551570937cca6f86"
+    },
+    {
+      "file": "oct06-frame-black-border.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 1350,
+      "source": "/tmp/decks-site-assets/frame-black-border.png",
+      "sha256": "f75323ab336e3d4d33b48c4726f0eb533e69d6f5f8eb41015e3a9038c785747b",
+      "sourceSha256": "92ec67ae9d679322c34e3f3388af73cf060a887a5b55e9ecca32cc3bfc167f9c"
+    },
+    {
+      "file": "oct06-frame-black.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 1350,
+      "source": "/tmp/decks-site-assets/frame-black.png",
+      "sha256": "f2eaa1c5317ccc02c0eaa7517c2c4191443f7690d58db313c488d359d8ee5e2f",
+      "sourceSha256": "8dd3f20d89006d9cc55b0eb522a7aba7db7cbc2ae250661dfbef83b0fc52170e"
+    },
+    {
+      "file": "oct06-frame-blur-pair.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 1350,
+      "source": "/tmp/decks-site-assets/frame-blur-pair.png",
+      "sha256": "8e915eeac7fcced8e6de3b416c9fc5b1bb29e9359c0eba06e2c18ddf4b32e4a7",
+      "sourceSha256": "d99e9182648c49bcc3a45b843c34e2ae1fb568f6ef5dcc2343cef671f4f0b061"
+    },
+    {
+      "file": "oct06-frame-blur.webp",
+      "kind": "native-render",
+      "width": 1061,
+      "height": 1326,
+      "source": "/tmp/decks-site-assets/frame-blur.png",
+      "sha256": "60b3a060fa2316397aebd612b5c5dbbdd66526acc8b2379c88367c6dc3bcb602",
+      "sourceSha256": "a1f50fc4841dd62a0c82d0034bb79c8c0edc34956187d9bccc9b14c5ee5ebe0c"
+    },
+    {
+      "file": "oct06-frame-film.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 1350,
+      "source": "/tmp/decks-site-assets/frame-film.png",
+      "sha256": "913b2e2f449c217efe79d034f7ff0b7f6b2d23efeca9461fba4fc51d4aa0349e",
+      "sourceSha256": "3e39ccf1022a8b2683c1bc5e1c3ffa27b6883f09098476375772f709820c8ee5"
+    },
+    {
+      "file": "oct06-frame-white.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 1350,
+      "source": "/tmp/decks-site-assets/frame-white.png",
+      "sha256": "dcc5dd09a93d28fd009cbcbac7f2950c20866a9c033d08f6685055ada0d407de",
+      "sourceSha256": "2806d8aaa0f4d9940ac4ff27f3b922bbef8f987c2be9e1d0c3e93ad0d7638cb7"
+    },
+    {
+      "file": "oct06-fuji.webp",
+      "kind": "native-render",
+      "width": 1200,
+      "height": 1500,
+      "source": "/tmp/decks-site-assets/fuji.png",
+      "sha256": "eb164f6f4a25d82628feb272f6de21444ca2b12ebea5faab4f1c09183afc6067",
+      "sourceSha256": "3ea19c6f72aa93ea3cd290335e854c923ae1e080f78061e8c8725ea550901427"
+    },
+    {
+      "file": "oct06-hero-pair.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 1350,
+      "source": "/tmp/decks-site-assets/hero-pair.png",
+      "sha256": "1030d4c4651e5dd424fdb0977124f0c50bbd1f34440c03c1d0d4e7b5976438ba",
+      "sourceSha256": "24d3a82e3a496be4f4c61f1d2d7c655d855f7293fa1e0293d53a90218e0f421f"
+    },
+    {
+      "file": "oct06-panorama-1.webp",
+      "kind": "native-render",
+      "width": 733,
+      "height": 916,
+      "source": "/tmp/decks-site-assets/panorama-1.png",
+      "sha256": "c83fb936ece610265a929a36589bc025cfd149db8f073f635a2b4406cd3f07aa",
+      "sourceSha256": "114d468400431a14a48271af0d5667b1617f13dbf5683185bb114be63f312cf8"
+    },
+    {
+      "file": "oct06-panorama-2.webp",
+      "kind": "native-render",
+      "width": 733,
+      "height": 916,
+      "source": "/tmp/decks-site-assets/panorama-2.png",
+      "sha256": "5dfc523ff670cb385baa85a9ba604be8e979dee6ef85fa8195ebf7017890e042",
+      "sourceSha256": "5c5b33328cce94bd529140bc5328c485bffd4f954f0543f0a92b00536aff3246"
+    },
+    {
+      "file": "oct06-panorama-3.webp",
+      "kind": "native-render",
+      "width": 733,
+      "height": 916,
+      "source": "/tmp/decks-site-assets/panorama-3.png",
+      "sha256": "2ee1766e23ded4a6b52b3e4092d1d47e0f589813af5c3b5ed4e3c72e4d81d410",
+      "sourceSha256": "71cf6baeb54eddde43a62dfb4608d1855373f3924a919fd393ebe6f0e99b0223"
+    },
+    {
+      "file": "oct06-reuse-1.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 1350,
+      "source": "/tmp/decks-site-assets/reuse-1.png",
+      "sha256": "6775a7dd5e198a5b5cd32a8a54cc844224f48be486644963b35902e3802de8ff",
+      "sourceSha256": "f46a57853dd7c003f66ec84e6c4017b1f1ea1106a46055c749ed2e6a84cbd001"
+    },
+    {
+      "file": "oct06-reuse-2.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 1350,
+      "source": "/tmp/decks-site-assets/reuse-2.png",
+      "sha256": "dcc5dd09a93d28fd009cbcbac7f2950c20866a9c033d08f6685055ada0d407de",
+      "sourceSha256": "2806d8aaa0f4d9940ac4ff27f3b922bbef8f987c2be9e1d0c3e93ad0d7638cb7"
+    },
+    {
+      "file": "oct06-reuse-3.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 1350,
+      "source": "/tmp/decks-site-assets/reuse-3.png",
+      "sha256": "02c4592c57811a6820b7c6a616036d01be3f1d074650906dd07f99f91dc8ca1e",
+      "sourceSha256": "aab6c75f96fa8afe59552b5dc1c8cdcfaa758d56c26ddf370aded469af414b6e"
+    },
+    {
+      "file": "oct06-story.webp",
+      "kind": "native-render",
+      "width": 909,
+      "height": 1616,
+      "source": "/tmp/decks-site-assets/story.png",
+      "sha256": "2e7ce809c0101a03c0d0d093ea9170a876f594c51ee546070bde719abf0642a8",
+      "sourceSha256": "21532e9b07a4c0812c8b263ab1bfe610dc69fbfa5dda663aeb62953586ddd686"
+    },
+    {
+      "file": "oct06-threads.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 720,
+      "source": "/tmp/decks-site-assets/threads.png",
+      "sha256": "271cd10366af5bfac92996ba2cb98f033475d138214d883d933831ffcd874092",
+      "sourceSha256": "c15a132fe6d51df3877dad82300ee3db2b8cd173e4c1b348a02f9ae6f6c76b88"
+    },
+    {
+      "file": "oct06-video-poster.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 1350,
+      "source": "/tmp/decks-site-assets/video-poster.png",
+      "sha256": "279ab5a72e4f59d212cae129f0582913011d1d6c45916c7d8ddc555ef9d122a2",
+      "sourceSha256": "f0913b74e634c00359ce7f1779a4cc6f751f97a37990ce923b3a5ddd41529cb7"
+    },
+    {
+      "file": "oct06-youtube.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 608,
+      "source": "/tmp/decks-site-assets/youtube.png",
+      "sha256": "cccd66aee8fdd7c0471645d3ed9e96e982d4a24dfc35b44e049df6a4068a434b",
+      "sourceSha256": "3c8b7c3901e8075d2f558973bc9bc90dfe9c832e567f1c0355a6c45acb466ab8"
+    },
+    {
+      "file": "oct06-phone-camera.webp",
+      "kind": "native-iPhone",
+      "width": 1206,
+      "height": 2622,
+      "source": "/tmp/decks-site-assets/phone-camera.png",
+      "sha256": "aff394ffbf67ee6817c9dbdcdf295909b022aedeea8e0819474f4cb0a95a1670",
+      "sourceSha256": "fad743ab1e4f37646bc8ff76e7121c478b94096d11084903ba8a9864fa7159ff"
+    },
+    {
+      "file": "oct06-phone-layout.webp",
+      "kind": "native-iPhone",
+      "width": 1206,
+      "height": 2622,
+      "source": "/tmp/decks-site-assets/phone-layout.png",
+      "sha256": "b6b01fa9c6388cb5945d3279e6b9d2498f48fec1621b4688e9b118dfe4ff02b8",
+      "sourceSha256": "963cdb352e35730f4ea0e79b31c919773fdc10510c0d798ee3343a34efce64d7"
+    },
+    {
+      "file": "oct06-phone-text.webp",
+      "kind": "native-iPhone",
+      "width": 1206,
+      "height": 2622,
+      "source": "/tmp/decks-site-assets/phone-text.png",
+      "sha256": "7fd02025cab225d79d6b7c0bda0fb262b11eccd6e5427f9d8979a5b22ccfb687",
+      "sourceSha256": "c1a2b9dbf5b1c44e25e8377983e70341a4d2d9c8547b543905cc84d59d34a79d"
+    },
+    {
+      "file": "oct06-fuji-controls.webp",
+      "kind": "native-Mac",
+      "width": 920,
+      "height": 1210,
+      "source": "/tmp/decks-site-assets/fuji-controls.png",
+      "sha256": "d9542800bc66191853d90c73b6070b89c47c67f10b131198c78f119d6454fa52",
+      "sourceSha256": "2d8220df9a4660aa03bd534154ae431e2955436fef8a1bd2476a45d6e35c55ce"
+    },
+    {
+      "file": "oct06-mac.webp",
+      "kind": "native-Mac",
+      "width": 2640,
+      "height": 1760,
+      "source": "/tmp/decks-site-assets/mac.png",
+      "sha256": "8931712713f822e497dbd6e9447c1fe41a5f5b18144dfcb22826d937af87982c",
+      "sourceSha256": "641d3762eadc45446e46ad6b6836cc29c1eda96c765ddc090de5b5c6077e0e6c"
+    },
+    {
+      "file": "oct06-ingest-send.webp",
+      "kind": "native-Ingest-Mac",
+      "width": 1180,
+      "height": 1300,
+      "source": "/tmp/decks-site-assets/ingest-send.png",
+      "sha256": "ce9e145b9df43af47f570040b2bd97ca8e74a17aa2fe6695b3ce0e4c811ef826",
+      "sourceSha256": "5209a5d4adc769544bc53a76605ca993c6854b7d0d1ea32f25efdbe06705fbb8"
+    },
+    {
+      "file": "oct06-incoming.webp",
+      "kind": "native-Mac",
+      "width": 1300,
+      "height": 574,
+      "source": "/tmp/decks-site-assets/incoming.png",
+      "sha256": "706effc43cbf69ee63efba469e3378d016dd6fa934bef8ecd22eac3f75a98f50",
+      "sourceSha256": "78563e10e71f657563b6fb85f97e94756bc7d1fdbaa8006ced722b4cf97c0b15"
+    },
+    {
+      "file": "oct06-video-still.webp",
+      "kind": "native-video-export-frame",
+      "width": 1080,
+      "height": 1350,
+      "source": "/tmp/decks-site-assets/video-still.png",
+      "sha256": "7eb57ca7a6f542c779704e32abb336ed18857d79285144834da744f2fdebe57d",
+      "sourceSha256": "a6174c2e0e1c176102e8ffc1a0e4d579991cc3371f4fdc972500f27b331818ab"
+    },
+    {
+      "file": "oct06-ipad-editor.webp",
+      "kind": "native-iPad",
+      "width": 1640,
+      "height": 2360,
+      "source": "/tmp/decks-site-assets/ipad-editor.png",
+      "sha256": "dd5d261d3e370554e40dddfbd2bc0fa26f00b65791a8a4916fbeb3c662cf1c72",
+      "sourceSha256": "ced82d21d258f857fd1c364abbfc9345503a9f352d7da148afb88db7393ac5ff"
+    },
+    {
+      "file": "oct06-mac-template-builder.webp",
+      "kind": "native-Mac",
+      "width": 2640,
+      "height": 1760,
+      "source": "/tmp/decks-site-assets/mac-template-builder.png",
+      "sha256": "362aa4866185ddd91f1085413f29bb94304aa5d7155d9cfbe518afc755efc2a4",
+      "sourceSha256": "986aa59dcb0908578bae604662c99d3fe5a85a1ad1bcf629e4aa8f8a159b3a16"
+    },
+    {
+      "file": "oct06-shortcut-setup.webp",
+      "kind": "native-iPhone",
+      "width": 1206,
+      "height": 2622,
+      "source": "/tmp/decks-site-assets/shortcut-setup.png",
+      "sha256": "a7ed85996e41db84321f47f4be104b9b9de741084b5524d5ac873c7d65111094",
+      "sourceSha256": "a2e45e3265a46ba2292001e13c09b023d0f3d9debc64eaaf662961b536442624"
+    },
+    {
+      "file": "oct06-shortcut-original.webp",
+      "kind": "photograph",
+      "width": 1466,
+      "height": 2200,
+      "source": "/Users/brianrenshaw/Projects/photo-importer-acros/Social/Resources/Tutorial/Coffee.jpg",
+      "sha256": "1a6f60f8211407f7cc8fe58e14196b0e557417aa553a4eba6932ff70d35edbab",
+      "sourceSha256": "9e504ea7a863a1a3b3b563dc65cc8523ad91d83b68e70794ef2a7a0f4da237ae"
+    },
+    {
+      "file": "oct06-ipad-builder.webp",
+      "kind": "native-iPad",
+      "width": 1640,
+      "height": 2360,
+      "orientation": 8,
+      "displayWidth": 2360,
+      "displayHeight": 1640,
+      "source": "/tmp/decks-website-ipad-photography-shots/0CB3E5B1-CB34-4DF5-BC71-BD21F49E272F.png",
+      "sha256": "ae0704af30b46022262eb1f920a6525fde17517a89f761eeca0dc1774b7da9d4",
+      "sourceSha256": "88408e6eac71bb447655a26b3c34e3c12cc4da54b102424c48f02b0e5238c5e0"
+    },
+    {
+      "file": "oct06-next-aura-pair.webp",
+      "kind": "native-render",
+      "width": 1280,
+      "height": 800,
+      "source": "/tmp/decks-next-assets/aura-pair.png",
+      "sourceSha256": "4cb3590cc0d7de02beda25f45ed558fe18229c5281648b93f76e77e432fa433a",
+      "sha256": "83dbb1de5a4cf8e84026acf6fdab6821c831804a6ace66801729d2735c42e261",
+      "rendererCommit": "9546540",
+      "transformation": "Lossless WebP encoding of native render",
+      "projectSha256": "10883bb715de6d7e6fec7ac0aafe467882b50ac3ae7432902b3be90f1e695059",
+      "projectSource": "/tmp/decks-next-assets/aura-pair.json"
+    },
+    {
+      "file": "oct06-next-aura-soft.webp",
+      "kind": "native-render",
+      "width": 1280,
+      "height": 800,
+      "source": "/tmp/decks-next-assets/aura-soft.png",
+      "sourceSha256": "cacbfbde022d0b1c439cdb7bea7285ee0c342fd4af9faed4992f6d2735d5423b",
+      "sha256": "4f4adff322d61745cc1afc873a26a0424d94c92109dab223dca10690e721db22",
+      "rendererCommit": "9546540",
+      "transformation": "Lossless WebP encoding of native render",
+      "projectSha256": "cb6e99609379c207073f7b06df8795a5cf44ebfb39db355e1c6fb23cd18defbb",
+      "projectSource": "/tmp/decks-next-assets/aura-soft.json"
+    },
+    {
+      "file": "oct06-next-aura-full.webp",
+      "kind": "native-render",
+      "width": 1600,
+      "height": 1200,
+      "source": "/tmp/decks-next-assets/aura-full.png",
+      "sourceSha256": "a5b6eb5614331082c96de0f0cf492cddcfe8e6f1e94a5a62bda49b2ac5e87d57",
+      "sha256": "e1e77f6d9df02ff941ff5bf8d4df48ec8a7f273e72f56fc62ebf5830d71c4ed5",
+      "rendererCommit": "9546540",
+      "transformation": "Lossless WebP encoding of native render",
+      "projectSha256": "22147b4424e726bb8c90091d74a35f5273a99a026271fabe42c8a41462100e26",
+      "projectSource": "/tmp/decks-next-assets/aura-full.json"
+    },
+    {
+      "file": "oct06-next-aura-thin.webp",
+      "kind": "native-render",
+      "width": 1600,
+      "height": 1200,
+      "source": "/tmp/decks-next-assets/aura-thin.png",
+      "sourceSha256": "daf4abecbea7c1cb9da3be20ee17818e6b16a7a9c3c21488e4b384142ecda613",
+      "sha256": "bcb8614ec7db3468ab3982098189fb7bddb79e02b2b16fe57f47d1a567cd96fc",
+      "rendererCommit": "9546540",
+      "transformation": "Lossless WebP encoding of native render",
+      "projectSha256": "7abf429b5527005ff3d4945ca57ba137c3ef3d70a94e4b9436c9667936485581",
+      "projectSource": "/tmp/decks-next-assets/aura-thin.json"
+    },
+    {
+      "file": "oct06-next-threads-single.webp",
+      "kind": "native-render",
+      "width": 1080,
+      "height": 1350,
+      "source": "/tmp/decks-next-assets/threads-single.png",
+      "sourceSha256": "57ce67b62ddc9368d4165f4c2d5896d560610837fc36b4e5d5e7d93c9c063811",
+      "sha256": "c7b90752f95cf2c1b7926ed00f9d1bbaf9ccc30653010304d51316ecb9254ab1",
+      "rendererCommit": "9546540",
+      "transformation": "Lossless WebP encoding of native render",
+      "projectSha256": "c0fb3ab47d3b80964125f593f3a5b8b76d65343a2a430bfc3e309c9d1a6da592",
+      "projectSource": "/tmp/decks-next-assets/threads-single.json"
+    },
+    {
+      "file": "oct06-next-ipad-builder-upright.webp",
+      "kind": "native-capture",
+      "width": 2360,
+      "height": 1640,
+      "source": "site/decks/assets/oct06-ipad-builder.webp",
+      "sourceSha256": "ae0704af30b46022262eb1f920a6525fde17517a89f761eeca0dc1774b7da9d4",
+      "sha256": "665d99d3cf48a444452cba31303f634710a7a3020c556a7af48eeb594a905f21",
+      "rendererCommit": "9546540",
+      "transformation": "EXIF orientation applied to pixel coordinates; orientation removed; lossless encoding",
+      "originalWidth": 1640,
+      "originalHeight": 2360,
+      "originalOrientation": 8,
+      "orientation": 1
+    },
+    {
+      "file": "social-oct06-next.png",
+      "kind": "share-artwork",
+      "width": 1200,
+      "height": 630,
+      "source": "scripts/build_decks_social.py",
+      "sourceSha256": "29f97b2c2afb03f6ea592ab2f9c219f03dc5d413f58c9ebdfee8d9b2efa014b1",
+      "sha256": "2d676e29c9af22cf0bc7cb8c797858ea4e38a62c0991fa418f5b4dd1af29d741",
+      "compositions": [
+        "oct06-frame-blur.webp",
+        "oct06-hero-pair.webp",
+        "oct06-frame-black.webp"
+      ],
+      "transformation": "Paper canvas, typography, icon, and resized genuine native compositions; no reconstructed UI"
+    },
+    {
+      "file": "oct06-framed-phone.webp",
+      "kind": "native-screenshot-device-presentation",
+      "width": 1350,
+      "height": 2760,
+      "source": "oct06-phone-layout.webp",
+      "sourceSha256": "b6b01fa9c6388cb5945d3279e6b9d2498f48fec1621b4688e9b118dfe4ff02b8",
+      "sha256": "a090004700eae4bde30a58ac70f93c8038681ec1611f22d17c92eaa6099c1177",
+      "framingTool": "https://github.com/viticci/frames-cli",
+      "framingVersion": "frames v1.5.0",
+      "framingCommit": "2a62a0c9b77d3d8582f5d1a41d97a80677664e0f",
+      "device": "iPhone 17 Pro Portrait",
+      "color": "Silver",
+      "orientation": "upright input; no rotation or screenshot resampling",
+      "presentation": "Original capture with device bezel and hardware mask.",
+      "screenPadding": null,
+      "frameAssetSha256": "ced13db777b54caeb2c4d5371f66fd17bafc72bbcece6c42444d2878b03bacde"
+    },
+    {
+      "file": "oct06-framed-phone-camera.webp",
+      "kind": "native-screenshot-device-presentation",
+      "width": 1350,
+      "height": 2760,
+      "source": "oct06-phone-camera.webp",
+      "sourceSha256": "aff394ffbf67ee6817c9dbdcdf295909b022aedeea8e0819474f4cb0a95a1670",
+      "sha256": "327ced31ca3fc3d69dc16277d13cf5e8a1f6774d8fc7078c1a2021d397c35af7",
+      "framingTool": "https://github.com/viticci/frames-cli",
+      "framingVersion": "frames v1.5.0",
+      "framingCommit": "2a62a0c9b77d3d8582f5d1a41d97a80677664e0f",
+      "device": "iPhone 17 Pro Portrait",
+      "color": "Silver",
+      "orientation": "upright input; no rotation or screenshot resampling",
+      "presentation": "Original capture with device bezel and hardware mask.",
+      "screenPadding": null,
+      "frameAssetSha256": "ced13db777b54caeb2c4d5371f66fd17bafc72bbcece6c42444d2878b03bacde"
+    },
+    {
+      "file": "oct06-framed-phone-text.webp",
+      "kind": "native-screenshot-device-presentation",
+      "width": 1350,
+      "height": 2760,
+      "source": "oct06-phone-text.webp",
+      "sourceSha256": "7fd02025cab225d79d6b7c0bda0fb262b11eccd6e5427f9d8979a5b22ccfb687",
+      "sha256": "1783e3f7147c92a8a69dff5e782c6ee65e9ef04a95f0ae7c15a17a4a5c74bd43",
+      "framingTool": "https://github.com/viticci/frames-cli",
+      "framingVersion": "frames v1.5.0",
+      "framingCommit": "2a62a0c9b77d3d8582f5d1a41d97a80677664e0f",
+      "device": "iPhone 17 Pro Portrait",
+      "color": "Silver",
+      "orientation": "upright input; no rotation or screenshot resampling",
+      "presentation": "Original capture with device bezel and hardware mask.",
+      "screenPadding": null,
+      "frameAssetSha256": "ced13db777b54caeb2c4d5371f66fd17bafc72bbcece6c42444d2878b03bacde"
+    },
+    {
+      "file": "oct06-framed-ipad.webp",
+      "kind": "native-screenshot-device-presentation",
+      "width": 1921,
+      "height": 2640,
+      "source": "oct06-ipad-editor.webp",
+      "sourceSha256": "dd5d261d3e370554e40dddfbd2bc0fa26f00b65791a8a4916fbeb3c662cf1c72",
+      "sha256": "2f87f8c717ee1fa54c08ebb3fed2500306c9d7b30b0dc2dfbce475d335a75dc6",
+      "framingTool": "https://github.com/viticci/frames-cli",
+      "framingVersion": "frames v1.5.0",
+      "framingCommit": "2a62a0c9b77d3d8582f5d1a41d97a80677664e0f",
+      "device": "iPad Air 2020 Portrait",
+      "color": null,
+      "orientation": "upright input; no rotation or screenshot resampling",
+      "presentation": "Original capture with device bezel and hardware mask.",
+      "screenPadding": null,
+      "frameAssetSha256": "0577843be4adcfcac4ffb3edba7966a22af6cdfce93fa5d56a2d2ab8b26b1a5b"
+    },
+    {
+      "file": "oct06-framed-builder.webp",
+      "kind": "native-screenshot-device-presentation",
+      "width": 2640,
+      "height": 1920,
+      "source": "oct06-next-ipad-builder-upright.webp",
+      "sourceSha256": "665d99d3cf48a444452cba31303f634710a7a3020c556a7af48eeb594a905f21",
+      "sha256": "173ef82337b1df8d786a94651c29043eb65008294fe00f9354b3ff5e0b30021a",
+      "framingTool": "https://github.com/viticci/frames-cli",
+      "framingVersion": "frames v1.5.0",
+      "framingCommit": "2a62a0c9b77d3d8582f5d1a41d97a80677664e0f",
+      "device": "iPad Air 2020 Landscape",
+      "color": null,
+      "orientation": "upright input; no rotation or screenshot resampling",
+      "presentation": "Original capture with device bezel and hardware mask.",
+      "screenPadding": null,
+      "frameAssetSha256": "556cdfee0c56dcff992a21897f519416bad0af135dd1a645cb13746d5b29f2b7"
+    },
+    {
+      "file": "oct06-framed-mac.webp",
+      "kind": "native-screenshot-device-presentation",
+      "width": 3860,
+      "height": 2540,
+      "source": "oct06-mac.webp",
+      "sourceSha256": "8931712713f822e497dbd6e9447c1fe41a5f5b18144dfcb22826d937af87982c",
+      "sha256": "1ccc4f5d4d78f252eca7118ec60bb655d563a7b904cf22913fc8cde033883eb8",
+      "framingTool": "https://github.com/viticci/frames-cli",
+      "framingVersion": "frames v1.5.0",
+      "framingCommit": "2a62a0c9b77d3d8582f5d1a41d97a80677664e0f",
+      "device": "MacBook Pro M5 14",
+      "color": "Silver",
+      "orientation": "upright input; no rotation or screenshot resampling",
+      "presentation": "Native window centered on a neutral 3024x1964 screen canvas at original pixel size.",
+      "screenPadding": [
+        192,
+        102
+      ],
+      "frameAssetSha256": "051582700627c8f03bf552ec2bf2c7118b2fbab145444f7876f77188fe2a6276"
+    }
+  ]
+}
