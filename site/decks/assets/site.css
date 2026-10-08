@@ -128,3 +128,15 @@ ol.benefits{list-style:none;padding:0}
 
 /* Keep the new Mac introduction and complete native capture comfortably separated. */
 .mac-workspace-intro{max-width:76ch;margin:36px 0 28px}.mac-workspace-intro h3{font-size:26px;margin-bottom:12px}#platforms>.controls-detail{margin-bottom:36px}
+.smart-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:56px 28px;padding:0;margin:44px 0 0;list-style:none}
+.smart-steps li{min-width:0}
+.smart-shots{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:16px;margin-bottom:22px}
+.smart-shots .native-shot img{max-width:250px}
+.smart-steps .small-number{margin-bottom:8px}.smart-steps h3{font-size:19px;margin:0 0 8px}.smart-steps p{font-size:15px;margin:0}
+.smart-ipad,.smart-results{margin-top:72px}.smart-ipad h3,.smart-results h3{font-size:22px;margin:0 0 8px}.smart-ipad>p{margin:0 0 24px}
+.smart-ipad-shots{display:grid;grid-template-columns:1fr 1fr;gap:32px}.smart-ipad-shots figcaption{font-size:13px;margin-top:12px}
+.smart-results .aura-layouts{margin-top:20px}
+.decks-aura #smart-layout>.controls-detail{margin-top:36px}
+@media(max-width:1000px){.smart-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.smart-ipad-shots{grid-template-columns:1fr;gap:28px}.smart-ipad,.smart-results{margin-top:56px}}
+@media(max-width:560px){.smart-steps{grid-template-columns:1fr;gap:44px}.smart-shots .native-shot img{max-width:220px}}

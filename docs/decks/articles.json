@@ -97,6 +97,13 @@
         "steps": [
           "In Settings → Destinations, choose Add a Photo Frame. Select your Aura model and orientation.",
           "Return to Layout Builder, choose that frame in the size menu, then choose Smart Layout. Select the photos you want to prepare together."
+        ],
+        "shots": [
+          [
+            "oct08-smart-framed-phone-1-frame.webp",
+            "oct08-smart-phone-1-frame.webp",
+            "Choose your Aura frame in Layout Builder. Smart Layout appears first."
+          ]
         ]
       },
       {
@@ -105,22 +112,59 @@
           "For a landscape frame, vertical photos are paired two to a page and horizontal photos get their own pages. An unmatched vertical photo gets a soft background. Square photos get their own pages.",
           "For an upright frame, horizontal photos are stacked in pairs and vertical photos get their own pages.",
           "Within each group, Decks starts in capture-date order when dates are available. This is an arrangement by photo shape, not face recognition or subject matching."
+        ],
+        "shots": [
+          [
+            "oct08-smart-framed-phone-3-groups.webp",
+            "oct08-smart-phone-3-groups.webp",
+            "Smart Layout groups four vertical photos into two pairs and gives the horizontal photo its own page."
+          ]
         ]
       },
       {
         "heading": "Choose the pairs and their look",
         "steps": [
           "Tap two photos in the pairing group to swap them, or hold a photo and drag it onto another. You choose which photos belong together.",
-          "Choose White or Black for the pair background. For individual pages, choose White Border, Black Border, or Fill. Fill crops the photo to cover the screen; check faces and edges.",
+          "Choose White or Black for the pair background. For individual pages, choose White Border, Black Border, or Fill. A black border blends into the frame’s own black edge, so the photo looks like part of the frame; a white border or soft background reads as a background behind the photo. Fill crops the photo to cover the screen; check faces and edges.",
           "Create the project and review the crop on each page in the editor. You can continue editing the result."
+        ],
+        "shots": [
+          [
+            "oct08-smart-framed-phone-4-swap-selected.webp",
+            "oct08-smart-phone-4-swap-selected.webp",
+            "Tap a photo to select it."
+          ],
+          [
+            "oct08-smart-framed-phone-5-swapped.webp",
+            "oct08-smart-phone-5-swapped.webp",
+            "Tap another photo to swap them."
+          ],
+          [
+            "oct08-smart-framed-phone-6-styles.webp",
+            "oct08-smart-phone-6-styles.webp",
+            "The preview shows the horizontal photo with Black Border, the starting look."
+          ]
         ]
       },
       {
-        "heading": "Export and upload through Aura",
+        "heading": "Share to Aura",
         "steps": [
-          "Export the finished pages as images to Photos. Upload those files using the Aura app and check its crop preview.",
-          "A paired Decks page is one exported image, so the two photographs stay together rather than being left to Aura’s automatic pairing. Decks does not connect to your Aura account.",
+          "In the editor, tap Export, then tap Share and choose Aura. Aura uploads the pages to your frame in the background, so you don’t have to open the Aura app.",
+          "Prefer to keep a copy first? Tap Save to Photos, then add the images in the Aura app whenever you like.",
+          "A paired Decks page is one exported image, so the two photos stay together instead of being left to Aura’s automatic pairing. Decks doesn’t sign in to your Aura account.",
           "Save a design you like as a template. To sort another mixed batch by its photo shapes, start Smart Layout again."
+        ],
+        "shots": [
+          [
+            "oct08-smart-framed-phone-8-editor-single.webp",
+            "oct08-smart-phone-8-editor-single.webp",
+            "In the editor, tap Export at the top right, then Share."
+          ],
+          [
+            "oct08-smart-framed-phone-share-aura.webp",
+            "oct08-smart-phone-share-aura.webp",
+            "Choose Aura in the share sheet. Suggested contacts are blurred in this screenshot."
+          ]
         ]
       }
     ],
@@ -137,7 +181,7 @@
         "steps": [
           "Review Vertical Pairs and Horizontal Photos for a landscape frame, or Horizontal Pairs and Vertical Photos for a portrait frame. An unmatched photo in the pairing group uses a soft background.",
           "Click two photos to swap them, or drag one onto another. Choose White or Black for pairs and White Border, Black Border, or Fill for individual pages.",
-          "Create the project, review its pages, and use File → Export to save images to Photos or a folder. Upload through Aura. The same grouping and crop considerations above apply on Mac."
+          "Create the project, review its pages, and use File → Export to save images to Photos or a folder, then add them in the Aura app. The same grouping and crop considerations above apply on Mac."
         ]
       }
     ],
@@ -146,7 +190,14 @@
       "build132-mac-builder.png",
       "Smart Layout appears first when you choose a digital frame."
     ],
-    "source": "SocialSmartLayout.swift, SocialSmartGroups.swift, DecksLayoutBuilder.swift, SocialSmartLayoutTests.swift at 95a303f; native Mac inspection."
+    "source": "SocialSmartLayout.swift, SocialSmartGroups.swift, DecksLayoutBuilder.swift, SocialSmartLayoutTests.swift at 95a303f; native Mac inspection.",
+    "ipadShots": [
+      [
+        "oct08-smart-framed-pad-5-swapped.webp",
+        "oct08-smart-pad-5-swapped.webp",
+        "On iPad in landscape, Smart Layout opens over Layout Builder with the preview beside your photo groups."
+      ]
+    ]
   },
   {
     "slug": "blank",

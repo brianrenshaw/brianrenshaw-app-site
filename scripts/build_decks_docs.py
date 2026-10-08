@@ -23,7 +23,7 @@ def nav(current):
 def shell(title,description,route,body,current=''):
  canonical='https://brianrenshaw.app'+route
  return f'''<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(title)} — Decks Help</title><meta name="description" content="{e(description,quote=True)}"><link rel="canonical" href="{canonical}"><meta property="og:type" content="website"><meta property="og:title" content="{e(title,quote=True)} — Decks Help"><meta property="og:description" content="{e(description,quote=True)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="https://brianrenshaw.app/decks/assets/social-oct06-next.png"><link rel="icon" href="/decks/assets/icon.png"><link rel="stylesheet" href="/assets/apps.css"><link rel="stylesheet" href="/assets/family.css"><link rel="stylesheet" href="/decks/assets/site.css?v=oct06-help"><link rel="stylesheet" href="/decks/assets/docs.css?v=1"><script src="/decks/assets/docs.js?v=1" defer></script></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(title)} — Decks Help</title><meta name="description" content="{e(description,quote=True)}"><link rel="canonical" href="{canonical}"><meta property="og:type" content="website"><meta property="og:title" content="{e(title,quote=True)} — Decks Help"><meta property="og:description" content="{e(description,quote=True)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="https://brianrenshaw.app/decks/assets/social-oct06-next.png"><link rel="icon" href="/decks/assets/icon.png"><link rel="stylesheet" href="/assets/apps.css"><link rel="stylesheet" href="/assets/family.css"><link rel="stylesheet" href="/decks/assets/site.css?v=oct08-smart-steps"><link rel="stylesheet" href="/decks/assets/docs.css?v=2"><script src="/decks/assets/docs.js?v=1" defer></script></head>
 <body class="app-decks wiki-docs"><a class="skip-link" href="#main">Skip to content</a><header class="family-header"><a class="family-brand" href="/decks/"><img src="/decks/assets/icon.png" width="36" height="36" alt="">Decks</a><nav aria-label="Main navigation"><a href="/decks/">Overview</a><a href="/decks/support/">Help center</a><a href="/decks/guide/install/">Getting started</a><a href="https://testflight.apple.com/join/SAMjeMy5">Try the beta ↗</a></nav></header><div class="wiki-toolbar"><a href="/decks/support/">Decks help · iPhone, iPad &amp; Mac</a><a href="/decks/support/#find-topic">Find a topic</a></div><div class="wiki-layout">{nav(current)}<main id="main" tabindex="-1" class="wiki-main">{body}<p class="wiki-updated">Updated October 7, 2026 · Public beta guide. Screens and available controls can vary by device and window size.</p></main></div><footer class="family-footer"><span>© 2026 Brian Renshaw</span><nav aria-label="Footer"><a href="/decks/support/">Help center</a><a href="/decks/privacy/">Privacy</a><a href="mailto:contact@brianrenshaw.app">Contact</a></nav></footer></body></html>'''
 def write(route,text):
  p=ROOT/'site'/route.removeprefix('/');p.mkdir(parents=True,exist_ok=True);(p/'index.html').write_text(text)
@@ -31,14 +31,18 @@ def shot(info):
  if not info:return ''
  asset,original,caption=info;w,h=dimensions[asset]
  return f'<figure class="help-shot"><a href="/decks/assets/{original}" aria-label="View original screenshot: {e(caption,quote=True)}"><img src="/decks/assets/{asset}" width="{w}" height="{h}" loading="lazy" alt="{e(caption,quote=True)}"></a><figcaption>{e(caption)} <a href="/decks/assets/{original}">View full size ↗</a></figcaption></figure>'
+def shots(infos):
+ if len(infos)<2:return ''.join(shot(info) for info in infos)
+ return '<div class="help-shot-row">'+''.join(shot(info) for info in infos)+'</div>'
 for i,a in enumerate(articles):
  body=f'<nav class="wiki-breadcrumbs" aria-label="Breadcrumb"><a href="/decks/support/">Decks help</a><span aria-hidden="true">/</span><span>{e(a["group"])}</span></nav><header class="wiki-heading"><h1>{e(a["title"])}</h1><p>{e(a["summary"])}</p></header>'
  body+='<nav class="platform-links" aria-label="Platform instructions"><a href="#iphone">iPhone</a><a href="#ipad">iPad</a><a href="#mac">Mac</a></nav>'
  body+='<article class="wiki-article">'
  if a.get('sections'):
   body+='<h2 id="iphone">iPhone</h2><p>Start with the steps below. Editing tools appear beneath the canvas; tap the active tool to hide or show its controls.</p><h2 id="ipad">iPad</h2><p>Use the same task steps. The sidebar gives you access to Layout Builder, Templates, and Projects. In a wide editor window, controls can sit alongside the canvas; narrower windows use the compact panel. A missing control may be inside a collapsed section or the page’s options.</p>'
+  body+=shots(a.get('ipadShots',[]))
   for j,sec in enumerate(a['sections']):
-   body+=f'<h3 id="step-{j+1}">{e(sec["heading"])}</h3><ol>'+''.join(f'<li>{e(t)}</li>' for t in sec['steps'])+'</ol>'
+   body+=f'<h3 id="step-{j+1}">{e(sec["heading"])}</h3><ol>'+''.join(f'<li>{e(t)}</li>' for t in sec['steps'])+'</ol>'+shots(sec.get('shots',[]))
  else:
   body+='<h2 id="iphone">iPhone</h2><p>Follow the workflow below on your iPhone. Use the Mac notes for desktop-specific controls.</p><h2 id="ipad">iPad</h2><p>The same workflow applies on iPad. Editing controls may appear beside the canvas in a wide window instead of below it.</p>'+a['body']
  body+='<h2 id="mac">Mac</h2>'
