@@ -120,7 +120,7 @@
     "title": "Cards and folders",
     "url": "/ingest/shortcuts/sources/",
     "page": "Shortcuts",
-    "keywords": " \n \n   Keys  Command   \n \n   ⌘E   Eject the card  \n  no default key  Add the open folder to your favorites  \n  no default key  Include Photos in Subfolders / Show Only Current Folder. Also beside the source name and in View.  \n   ⌃⌘1  …  ⌃⌘9   Open favorite one to nine  \n\n   ↩   Commit the destination while editing its field; outside that field, activate Import when the reviewed plan is ready  \n  no key  Choose All, Tagged, Untagged, or Selected in Import Settings. Browse selection and import scope are separate.  \n  no key  Delete tagged, or untagged, from the card, after the copies verified  ",
+    "keywords": " \n \n   Keys  Command   \n \n   ⌘E   Eject the card  \n  no default key  Add the open folder to your favorites  \n  no default key  Include Photos in Subfolders / Show Only Current Folder. Also beside the source name and in View.  \n   ⌃⌘1  …  ⌃⌘9   Open favorite one to nine  \n   ⇧⌘]   ⇧⌘[   Next and previous source tab  \n   ⌘O   ⇧⌘F   Open a folder, or find one. In Ingest these choose the import source;  ↑   ↓  move through the source list.  \n\n   ↩   Commit the destination while editing its field; outside that field, activate Import when the reviewed plan is ready  \n  no key  Choose All, Tagged, Un",
     "hint": "Keyboard shortcuts"
   },
   {
@@ -136,7 +136,7 @@
     "title": "App",
     "url": "/ingest/shortcuts/app/",
     "page": "Shortcuts",
-    "keywords": " \n \n   Keys  Command   \n \n   ⌘K   The Command Palette  \n   ?   The shortcut sheet  \n  hold  ⌘   An overlay of the keys that work where you are  \n   ⌘,   Settings  \n  no key  Open the practice folder, to drill the keys on throwaway images  \n \n \n ",
+    "keywords": " \n \n   Keys  Command   \n \n   ⌘K   The Command Palette  \n   ?   The shortcut sheet  \n  hold  ⌘   An overlay of the keys that work where you are  \n   ⌘,   Settings  \n   ⌃↩   Open the right-click menu for the focused folder, photo, group, or tab  \n   ⌘↩   Confirm a dialog, even while typing in a multi-line field  \n   ⌘[   Back, in the Workspace Builder and the welcome walkthrough  \n  no key  Open the practice folder, to drill the keys on throwaway images  \n \n \n ",
     "hint": "Keyboard shortcuts"
   },
   {

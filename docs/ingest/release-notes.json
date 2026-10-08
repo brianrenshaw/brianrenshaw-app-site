@@ -1,5 +1,9 @@
 [
   {
+    "version": "0.9.9.2",
+    "body": "<ul><li>Press ⌘Return to confirm any dialog, even while typing in a multi-line field. Dialogs open with the cursor in their first field.</li><li>Press ⌃Return to open the right-click menu for whatever has focus: a sidebar folder, a photo, an Organize group, or a tab.</li><li>In Ingest, ⌘O, Find Folder (⇧⌘F), and the Open Card, Favorite, and Recent commands choose the import source. Use ↑ and ↓ to move through the source list.</li><li>Switch source tabs with ⇧⌘] and ⇧⌘[. The command palette can also open new tabs, move tabs, open Filters, clear all filters, open any Settings page, stop an import after the current file, and create Organize groups.</li><li>Go to Inspector (⌥⌘3) puts the keyboard on the first control, and Escape returns to the photos.</li><li>Fixed: ⇧⌘E (Send to Decks) did nothing while a text field had focus. Custom shortcuts on the Workspace menu now work.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
+  },
+  {
     "version": "0.9.9.1",
     "body": "<ul><li>The Welcome to Ingest walkthrough shows the new Workspace Builder: start from scratch or from Events, Headshots, or Real Estate, and see what each sets up before using it.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
   },
