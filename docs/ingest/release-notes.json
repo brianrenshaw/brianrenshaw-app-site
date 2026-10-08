@@ -1,5 +1,9 @@
 [
   {
+    "version": "0.9.9.3",
+    "body": "<ul><li>Return moves to the next page of the Welcome to Ingest walkthrough again.</li><li>Import Settings opens with the cursor in Save to, so you can type a destination right away.</li><li>Go to Inspector (⌥⌘3) shows which control has the keyboard.</li><li>Return in a field such as New group name adds the name instead of starting the import, wherever the cursor came from.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
+  },
+  {
     "version": "0.9.9.2",
     "body": "<ul><li>Press ⌘Return to confirm any dialog, even while typing in a multi-line field. Dialogs open with the cursor in their first field.</li><li>Press ⌃Return to open the right-click menu for whatever has focus: a sidebar folder, a photo, an Organize group, or a tab.</li><li>In Ingest, ⌘O, Find Folder (⇧⌘F), and the Open Card, Favorite, and Recent commands choose the import source. Use ↑ and ↓ to move through the source list.</li><li>Switch source tabs with ⇧⌘] and ⇧⌘[. The command palette can also open new tabs, move tabs, open Filters, clear all filters, open any Settings page, stop an import after the current file, and create Organize groups.</li><li>Go to Inspector (⌥⌘3) puts the keyboard on the first control, and Escape returns to the photos.</li><li>Fixed: ⇧⌘E (Send to Decks) did nothing while a text field had focus. Custom shortcuts on the Workspace menu now work.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
   },
