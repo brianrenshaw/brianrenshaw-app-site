@@ -41,7 +41,7 @@ def icon(x,y,path=None,kind=None):
             draw.line([((x+dx)*SCALE,(y+dy)*SCALE) for dx,dy in points],fill='#365e83',width=4)
 text(48,22,'BRIAN RENSHAW',18)
 text(48,46,'Apps and tools by Brian Renshaw.',40,serif=True)
-text(48,100,'Apps, tools, and experiments built with AI.',18,'#65685f')
+text(48,100,'Apps and projects for photography, reading, good meals, baseball, and everyday tasks.',18,'#65685f')
 # Ingest and Decks lead as a featured pair, matching the homepage, each with
 # its own site hero: a MacBook for Ingest, the device trio for Decks. The other nine sit in a 3x3 grid.
 featured=[
@@ -63,7 +63,7 @@ projects=[
  ('Who’s First?','iOS app','#bde0d2','#163f3c','whos-first/assets/icon-native.png',None),
  ('Reading Habit','iOS app','#f2dfae','#363127','reading-habit/assets/icon-native.png',None),
  ('Where Do We Eat','iOS app','#fff3df','#482b25','where-do-we-eat/assets/app-icon.png',None),
- ('Canceled','iOS app','#142d4e','#fffdf6','canceled/assets/icon.png',None),
+ ('Canceled','iOS app','#e4e9f0','#142d4e','canceled/assets/icon.png',None),
  ('Walkthrough','Mac app','#d5eeeb','#183b3b','walkthrough/assets/icon-1.4.1.png',None),
  ('Lankford Legends','Blog','#ffffff','#0C2340',None,'blog'),
  ('What Did They Read?','Blog','#f2efe8','#1a1715',None,'books'),
@@ -76,4 +76,4 @@ for i,(name,kind,bg,ink,path,symbol) in enumerate(projects):
     text(x+84,y+20,name,17,ink)
     text(x+84,y+46,kind,14,ink)
 text(48,596,'brianrenshaw.app',16,'#65685f')
-canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v13.png',optimize=True)
+canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v14.png',optimize=True)
