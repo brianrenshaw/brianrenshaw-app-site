@@ -100,7 +100,7 @@
         ],
         "shots": [
           [
-            "oct08-smart-framed-phone-1-frame.webp",
+            "oct08-smart-spot-phone-1-frame.webp",
             "oct08-smart-phone-1-frame.webp",
             "Choose your Aura frame in Layout Builder. Smart Layout appears first."
           ]
@@ -115,7 +115,7 @@
         ],
         "shots": [
           [
-            "oct08-smart-framed-phone-3-groups.webp",
+            "oct08-smart-spot-phone-3-groups.webp",
             "oct08-smart-phone-3-groups.webp",
             "Smart Layout groups four vertical photos into two pairs and gives the horizontal photo its own page."
           ]
@@ -130,17 +130,17 @@
         ],
         "shots": [
           [
-            "oct08-smart-framed-phone-4-swap-selected.webp",
+            "oct08-smart-spot-phone-4-swap-selected.webp",
             "oct08-smart-phone-4-swap-selected.webp",
             "Tap a photo to select it."
           ],
           [
-            "oct08-smart-framed-phone-5-swapped.webp",
+            "oct08-smart-spot-phone-5-swapped.webp",
             "oct08-smart-phone-5-swapped.webp",
             "Tap another photo to swap them."
           ],
           [
-            "oct08-smart-framed-phone-6-styles.webp",
+            "oct08-smart-spot-phone-6-styles.webp",
             "oct08-smart-phone-6-styles.webp",
             "The preview shows the horizontal photo with Black Border, the starting look."
           ]
@@ -156,12 +156,12 @@
         ],
         "shots": [
           [
-            "oct08-smart-framed-phone-8-editor-single.webp",
+            "oct08-smart-spot-phone-8-editor-single.webp",
             "oct08-smart-phone-8-editor-single.webp",
             "In the editor, tap Export at the top right, then Share."
           ],
           [
-            "oct08-smart-framed-phone-share-aura.webp",
+            "oct08-smart-spot-phone-share-aura.webp",
             "oct08-smart-phone-share-aura.webp",
             "Choose Aura in the share sheet. Suggested contacts are blurred in this screenshot."
           ]
@@ -193,7 +193,7 @@
     "source": "SocialSmartLayout.swift, SocialSmartGroups.swift, DecksLayoutBuilder.swift, SocialSmartLayoutTests.swift at 95a303f; native Mac inspection.",
     "ipadShots": [
       [
-        "oct08-smart-framed-pad-5-swapped.webp",
+        "oct08-smart-spot-pad-5-swapped.webp",
         "oct08-smart-pad-5-swapped.webp",
         "On iPad in landscape, Smart Layout opens over Layout Builder with the preview beside your photo groups."
       ]
