@@ -125,3 +125,6 @@ ol.benefits{list-style:none;padding:0}
 .destination-details summary{font-size:13px;line-height:1.5;cursor:pointer;padding:8px 0;text-decoration:underline;text-underline-offset:3px}
 .decks-home .destination-details p{font-size:14px;line-height:1.6;margin:8px 0 0}
 .destination-details summary:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+
+/* Keep the new Mac introduction and complete native capture comfortably separated. */
+.mac-workspace-intro{max-width:76ch;margin:36px 0 28px}.mac-workspace-intro h3{font-size:26px;margin-bottom:12px}#platforms>.controls-detail{margin-bottom:36px}

@@ -129,3 +129,11 @@ Lead with photos in the headline and hero introduction. Keep video in search met
 ## Aura landing page publication
 
 The Aura navigation now opens /aura/. Publish the existing landing page with page-shape instructions (16:10, 4:3, and 3:4), without claiming the named preset menu has shipped. The prior whole-page release gate is removed; named-menu claims and capture remain deferred. Existing build logic includes the sitemap entry and portfolio legacy redirect. Aura gift preparation instructions were rechecked October 6, 2026; the existing official link remains. This is not a new hardware test.
+
+## Build 132 / Mac workflow refresh — October 7, 2026
+
+The user’s “Build 32” request was resolved to current iOS build 132 (source 95a303f and installed Mac build 132), whose Smart Layout features match the request. Read-only App Store Connect verification confirmed iOS 132 and Mac 125 VALID and IN_BETA_TESTING externally; named destinations and Smart Layout shipped on both. The native Mac app was inspected through CUA. Captures show its built-in sample layouts and frame menu, not private library photographs. Original PNGs and lossless WebP derivatives retain all pixels; hashes, dimensions, build and provenance are in oct06-assets.json. Historical assets remain.
+
+Homepage and Aura messaging explain mixed-batch grouping, choosing pairs, odd-photo soft backgrounds, upright frames, and uploading finished files through Aura. New Smart Layout and Mac automation guides join 21 existing guides. Existing task guides now use separate current iPhone/iPad and Mac help sections from source; named destinations, guided Mac Layout Builder, page sequence templates, shortcuts, and expanded settings sync replace stale instructions. Privacy text now reflects default-on optional sync and supported settings, retaining GPS/contact exclusion by default.
+
+No new hardware Aura test or cross-device acceptance is claimed. An isolated Debug capture attempt could not open its test storage; it was closed without importing media. The two new native screenshots use built-in previews/settings only. Seven existing SocialSmartLayoutTests passed against current source, including pairing, squares, odd photos, orientation, swaps and page styles. 21st catalog search returned HTTP 401; existing static sections and disclosures were reused, and review reported zero findings.

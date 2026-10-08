@@ -74,3 +74,7 @@ Rebuild with `python3 scripts/build_decks_device_frames.py --cli /path/to/frames
 `oct06-framed-phone-camera.webp` adds a second iPhone presentation from the historical `oct06-phone-camera.webp`, using the same explicit iPhone 17 Pro Silver frame and lossless process. The platform showcase reuses the genuine landscape `oct06-framed-builder.webp` for iPad; the portrait iPad asset remains available at its historical URL.
 
 `oct06-framed-phone-text.webp` wraps the genuine Text-tool capture in the same iPhone 17 Pro Silver bezel. Screenshot pixels and full-size original URL remain unchanged. This capture shows Add Text/Add Logo entry actions, not an expanded text editor.
+
+### Build 132 native Mac captures
+
+`build132-mac-builder.png` and `build132-mac-frame-menu.png` were captured through CUA from installed Decks build 132. They contain built-in preview photography and the named frame menu only. WebP versions are lossless, upright, full-window derivatives with no resampling; originals remain linked. The equivalent named destinations and Smart Layout entry are public in Mac TestFlight 125. Dimensions and SHA-256 hashes are recorded in oct06-assets.json.

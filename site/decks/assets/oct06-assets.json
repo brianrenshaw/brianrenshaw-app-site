@@ -534,6 +534,50 @@
         102
       ],
       "frameAssetSha256": "051582700627c8f03bf552ec2bf2c7118b2fbab145444f7876f77188fe2a6276"
+    },
+    {
+      "file": "build132-mac-builder.png",
+      "width": 2480,
+      "height": 1784,
+      "sha256": "7ac10b6dc97b2bb6ed4e2aed0beb081f024737eb52999c1768cf4cd9951ec6e5",
+      "kind": "native-screenshot",
+      "source": "Installed /Applications/Decks.app build 132, CUA screenshot; Layout Builder built-in sample previews and destination menu only; no user library media imported.",
+      "orientation": "upright; full window; original pixels; no cropping or resampling",
+      "sourceCommit": "95a303fc005e0e32fb238027672fc0d5fcf82e17",
+      "publicMacBuild": "125 has the same frame layouts and named destinations; later installed build capture"
+    },
+    {
+      "file": "build132-mac-builder.webp",
+      "width": 2480,
+      "height": 1784,
+      "sha256": "81f895bca0fa79ad4e99a44325114bb7339e8cc41ba62594a757035703da0cdb",
+      "kind": "native-screenshot",
+      "source": "Installed /Applications/Decks.app build 132, CUA screenshot; Layout Builder built-in sample previews and destination menu only; no user library media imported.",
+      "orientation": "upright; full window; original pixels; no cropping or resampling",
+      "sourceCommit": "95a303fc005e0e32fb238027672fc0d5fcf82e17",
+      "publicMacBuild": "125 has the same frame layouts and named destinations; later installed build capture"
+    },
+    {
+      "file": "build132-mac-frame-menu.png",
+      "width": 1040,
+      "height": 1120,
+      "sha256": "4d83c136cccb722e8466c303395874903c88886dbbe945ab3ce7508a340f697d",
+      "kind": "native-screenshot",
+      "source": "Installed /Applications/Decks.app build 132, CUA screenshot; Layout Builder built-in sample previews and destination menu only; no user library media imported.",
+      "orientation": "upright; full window; original pixels; no cropping or resampling",
+      "sourceCommit": "95a303fc005e0e32fb238027672fc0d5fcf82e17",
+      "publicMacBuild": "125 has the same frame layouts and named destinations; later installed build capture"
+    },
+    {
+      "file": "build132-mac-frame-menu.webp",
+      "width": 1040,
+      "height": 1120,
+      "sha256": "45b14bc37493d38eaf110ecd03df6ab71382df0572fe65d18d6f06de7407123f",
+      "kind": "native-screenshot",
+      "source": "Installed /Applications/Decks.app build 132, CUA screenshot; Layout Builder built-in sample previews and destination menu only; no user library media imported.",
+      "orientation": "upright; full window; original pixels; no cropping or resampling",
+      "sourceCommit": "95a303fc005e0e32fb238027672fc0d5fcf82e17",
+      "publicMacBuild": "125 has the same frame layouts and named destinations; later installed build capture"
     }
   ]
 }

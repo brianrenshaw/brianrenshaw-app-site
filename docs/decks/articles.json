@@ -1,23 +1,32 @@
 [
   {
     "slug": "templates",
-    "title": "Your first layout",
-    "summary": "Choose a layout and walk through the options.",
+    "title": "Start with Layout Builder",
+    "summary": "Build a reusable design around your own photos.",
     "group": "Getting Started",
     "sections": [
       {
         "heading": "Choose a starting layout",
         "steps": [
-          "Open Layout Builder. Choose One Photo, Two Photos, a collage, Panorama, Strip, Contact Sheet, or another starting layout.",
-          "Choose your photos first. Swipe through their previews as you adjust the design.",
-          "Choose a size, background, and frame. Use This Page or All Pages to control which pages change.",
+          "On Home, open Layout Builder. Choose the destination and page orientation, then pick One Photo, Two Photos, a collage, Panorama, Strip, Contact Sheet, or another starting layout.",
+          "Choose your photos. Swipe through their previews as you adjust the design.",
+          "Choose a background and frame. Use This Page or All Pages to control which pages change.",
           "Add optional camera details, then tap Create Project. You can fine-tune everything in the editor."
+        ]
+      },
+      {
+        "heading": "Your destinations",
+        "steps": [
+          "Setup narrows the size picker to the destinations you choose. Skip Setup opens the full catalog with a 3:4 starting canvas.",
+          "Use the destination selector above Layout Builder to preview another size. This does not change your saved default.",
+          "Choose Vertical or Horizontal below the destination to orient the whole page. Photo frames use the orientation you selected for that frame; Stories, TV, and square pages already have a fixed shape. Strip and Contact Sheet keep their Native Size.",
+          "Settings → Destinations lets you add destinations and photo frames. Run Setup Again revisits your choices; skipping it restores the full catalog."
         ]
       },
       {
         "heading": "Two-photo arrangements",
         "steps": [
-          "After selecting photos, choose Side by Side or Stacked on the size screen.",
+          "After selecting photos, choose Side by Side or Stacked above the layout preview.",
           "Your chosen arrangement stays selected when you change page shape or go Back and Next. In the editor, open Layout to change it later."
         ]
       },
@@ -29,13 +38,115 @@
         ]
       }
     ],
-    "mac": "Use File → Import Photos and Videos… to create a project from files, or open Templates to begin with a saved design. In the editor, use Layout in the inspector to set the shape and arrangement. Mac uses its own workspace; the phone’s step-by-step Layout Builder screens are not the Mac import flow.",
     "shot": [
       "oct06-framed-builder.webp",
       "oct06-next-ipad-builder-upright.webp",
       "Landscape iPad Layout Builder with photo preview and page-size controls."
     ],
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksApp.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "macSections": [
+      {
+        "heading": "Choose a starting layout",
+        "steps": [
+          "Click Layout Builder in the sidebar, or press ⌘1. Choose a size from the menu at the top, then click One Photo, Two Photos, Panorama, Strip, Contact Sheet, or another starting layout.",
+          "Choose your photos from your Photos library and click Continue, or click Choose Files… to pick files in Finder.",
+          "Choose a background and frame. With more than one photo, choose All Photos or This Photo to decide which photos change. Use the arrows under the preview to see each page.",
+          "Turn on optional camera details in Finishing Touches, then click Create Project. You can fine-tune everything in the editor."
+        ]
+      },
+      {
+        "heading": "Your destinations",
+        "steps": [
+          "Setup narrows the size menu to the destinations you choose. Skip Setup shows every size instead.",
+          "Use the size menu at the top of Layout Builder to try another size. This does not change your saved default. Custom Size… makes any shape between 1:10 and 10:1.",
+          "Choose Vertical or Horizontal beside the size menu to orient the whole page. Stories, TV, and square pages already have a fixed shape. Strip and Contact Sheet keep their Native Size.",
+          "Edit Destinations… in the size menu opens Decks ▸ Settings… ▸ Destinations. Add destinations and photo frames, choose a default, or Run Setup Again…, then click Save Changes."
+        ]
+      },
+      {
+        "heading": "Two-photo arrangements",
+        "steps": [
+          "For Two Photos, choose Side by Side or Stacked above the background choices in the walkthrough.",
+          "Your arrangement stays selected when you go Back and Next. In the editor, open Layout and turn Vertical Pair on or off to change it later."
+        ]
+      },
+      {
+        "heading": "Arrange your starting layouts",
+        "steps": [
+          "Drag a layout card in Layout Builder to a new position. Decks remembers that order on your other devices.",
+          "Or Control-click a layout and choose Move Earlier or Move Later."
+        ]
+      }
+    ],
+    "extraShots": [
+      [
+        "build132-mac-builder.webp",
+        "build132-mac-builder.png",
+        "Mac Layout Builder with a frame destination and Smart Layout."
+      ]
+    ]
+  },
+  {
+    "slug": "smart-layout",
+    "title": "Smart Layout for Aura frames",
+    "summary": "Turn a mixed batch into paired portraits and individual landscapes, then choose who appears together.",
+    "group": "Getting Started",
+    "sections": [
+      {
+        "heading": "Choose your frame",
+        "steps": [
+          "In Settings → Destinations, choose Add a Photo Frame. Select your Aura model and orientation.",
+          "Return to Layout Builder, choose that frame in the size menu, then choose Smart Layout. Select the photos you want to prepare together."
+        ]
+      },
+      {
+        "heading": "Review the automatic arrangement",
+        "steps": [
+          "For a landscape frame, vertical photos are paired two to a page and horizontal photos get their own pages. An unmatched vertical photo gets a soft background. Square photos get their own pages.",
+          "For an upright frame, horizontal photos are stacked in pairs and vertical photos get their own pages.",
+          "Within each group, Decks starts in capture-date order when dates are available. This is an arrangement by photo shape, not face recognition or subject matching."
+        ]
+      },
+      {
+        "heading": "Choose the pairs and their look",
+        "steps": [
+          "Tap two photos in the pairing group to swap them, or hold a photo and drag it onto another. You choose which photos belong together.",
+          "Choose White or Black for the pair background. For individual pages, choose White Border, Black Border, or Fill. Fill crops the photo to cover the screen; check faces and edges.",
+          "Create the project and review the crop on each page in the editor. You can continue editing the result."
+        ]
+      },
+      {
+        "heading": "Export and upload through Aura",
+        "steps": [
+          "Export the finished pages as images to Photos. Upload those files using the Aura app and check its crop preview.",
+          "A paired Decks page is one exported image, so the two photographs stay together rather than being left to Aura’s automatic pairing. Decks does not connect to your Aura account.",
+          "Save a design you like as a template. To sort another mixed batch by its photo shapes, start Smart Layout again."
+        ]
+      }
+    ],
+    "macSections": [
+      {
+        "heading": "Start a mixed batch",
+        "steps": [
+          "Open Decks → Settings → Destinations → Add a Photo Frame. Select your frame and orientation, click Done, then Save Changes.",
+          "Open Layout Builder (⌘1), choose the frame from the page-size menu, and click Smart Layout. Choose Apple Photos or Files to select your photos."
+        ]
+      },
+      {
+        "heading": "Review, swap, and finish",
+        "steps": [
+          "Review Vertical Pairs and Horizontal Photos for a landscape frame, or Horizontal Pairs and Vertical Photos for a portrait frame. An unmatched photo in the pairing group uses a soft background.",
+          "Click two photos to swap them, or drag one onto another. Choose White or Black for pairs and White Border, Black Border, or Fill for individual pages.",
+          "Create the project, review its pages, and use File → Export to save images to Photos or a folder. Upload through Aura. The same grouping and crop considerations above apply on Mac."
+        ]
+      }
+    ],
+    "shot": [
+      "build132-mac-builder.webp",
+      "build132-mac-builder.png",
+      "Smart Layout appears first when you choose a digital frame."
+    ],
+    "source": "SocialSmartLayout.swift, SocialSmartGroups.swift, DecksLayoutBuilder.swift, SocialSmartLayoutTests.swift at 95a303f; native Mac inspection."
   },
   {
     "slug": "blank",
@@ -66,9 +177,34 @@
         ]
       }
     ],
-    "mac": "Choose File → Import Photos and Videos… (Command-O). For an open project, use File → Add Photos and Videos… (Shift-Command-O), or File → Add from Photos Library…. Set New Project Template in Decks → Settings → General to choose the default design.",
     "shot": null,
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksApp.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "macSections": [
+      {
+        "heading": "Add photos or videos",
+        "steps": [
+          "Choose File ▸ Import Photos and Videos… (⌘O), drag files from Finder onto the Decks window, or paste them with ⌘V.",
+          "To use your Photos library, click Photos in the sidebar, select photos or clips, and click the Add button. Decks opens a project using your New Project Template.",
+          "Open Layout in the inspector to choose the page size and arrangement. Open Frame and choose None if you want a borderless start, then add styling when you need it.",
+          "File ▸ New Blank Project starts with an empty page instead."
+        ]
+      },
+      {
+        "heading": "Choose your defaults",
+        "steps": [
+          "In Decks ▸ Settings… ▸ General, choose the New Project Template used for imports and pasted photos. You can also Control-click a template and choose Set as Default.",
+          "Editing a project does not change that default. You can skip the walkthrough without losing the look you prefer."
+        ]
+      },
+      {
+        "heading": "Add more later",
+        "steps": [
+          "With a project open, choose File ▸ Add Photos and Videos… (⇧⌘O) or Add from Photos Library…, or drag files onto the editor. Each new photo gets its own page at the end.",
+          "To lay out new photos like a saved design, choose File ▸ Add Pages from Template… instead.",
+          "Videos come from clips you choose to import. Adding a still photo does not turn it into a moving video."
+        ]
+      }
+    ]
   },
   {
     "slug": "gestures",
@@ -106,13 +242,12 @@
         ]
       }
     ],
-    "mac": "Select a page in the filmstrip and use the inspector to adjust it. Command-I toggles the inspector; Command-0 fits the canvas. The Navigate menu contains page navigation commands. Command-K opens the Command Palette. Use Edit → Undo (Command-Z) and Redo (Shift-Command-Z) to reverse changes. Touch gestures described below apply to iPhone and iPad.",
     "shot": [
       "oct06-framed-phone.webp",
       "oct06-phone-layout.webp",
       "The iPhone editor with page, layout, and tool controls."
     ],
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksApp.swift; release 9546540",
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
     "extraShots": [
       [
         "oct06-framed-ipad.webp",
@@ -124,6 +259,44 @@
         "oct06-mac.webp",
         "The Mac workspace with page filmstrip and inspector."
       ]
+    ],
+    "macSections": [
+      {
+        "heading": "Browse and select",
+        "steps": [
+          "Double-click a project to open it. Press ← or → to change pages, or Home and End for the first and last page. You can also click a page in the strip under the canvas.",
+          "Click a photo, text, or camera details on the canvas to select it. An outline shows your selection without adding a border to the exported artwork. Drag to move it; in a fixed layout, dragging a photo moves it inside its frame.",
+          "⌘-click or ⇧-click to select several items, then drag them together or press Delete to remove them. Option-arrow keys nudge the selection a little at a time.",
+          "Drag the small square at the lower-right corner of selected text or a freeform photo to resize it.",
+          "Press Esc to leave the selection. Press it again to fit the canvas, and once more to return to Projects."
+        ]
+      },
+      {
+        "heading": "Zoom and view",
+        "steps": [
+          "Press ⌘= to zoom in, ⌘- to zoom out, and ⌘0 to fit the page. Press Z to switch between the whole page and a closer look.",
+          "Press Tab or ⌘I to hide the inspector and give the page more room; press it again to bring the controls back. On a video page, Space previews the clip and plays or pauses it.",
+          "Control-click the canvas for Add Text, Duplicate Selection, Undo, Redo, and Fit Canvas."
+        ]
+      },
+      {
+        "heading": "Find your tools",
+        "steps": [
+          "The inspector on the right has Layout, Frame, Photo, Text, Camera, and Caption. Click a tool to see its controls. The ⓘ button opens Photo Details for the selected photo.",
+          "The All Pages or This Page menu under the tools decides whether Layout and Frame changes apply to every page or only this one. Photo, Text, and Camera controls edit the selected item.",
+          "Photo ▸ Crop sets Fit or Fill, Zoom, and position, and offers Center, Move to New Page, Move to Page, and Replace Photo…. Freeform photos also show Freeform Layer controls for size, rotation, and order.",
+          "Press ⌘K for the command palette. Type part of a command’s name, then press Return. Pin the commands you use most with ⇧⌘P.",
+          "Menus show each keyboard shortcut. Change them in Help ▸ Keyboard Shortcuts… (⌘/). Control-click the toolbar to customize its buttons. Click the project name in the toolbar to rename it."
+        ]
+      },
+      {
+        "heading": "Return to your library",
+        "steps": [
+          "Click Back to Projects in the toolbar, or press ⌘[. Decks keeps your changes; reopen the project in Projects to continue.",
+          "⌘1 through ⌘5 go to Layout Builder, Projects, Templates, Photos, and Recent Activity.",
+          "Keep projects side by side in separate windows: choose File ▸ New Window (⇧⌘N), or Control-click a project and choose Open in New Window."
+        ]
+      }
     ]
   },
   {
@@ -156,9 +329,32 @@
         ]
       }
     ],
-    "mac": "Open Frame in the editor’s inspector. Border and background are separate choices: changing the background does not remove the border. Select the page scope before changing layout or frame settings, and use Edit → Undo if you change more pages than intended.",
     "shot": null,
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksApp.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "macSections": [
+      {
+        "heading": "Choose a border",
+        "steps": [
+          "In the walkthrough’s Frame step, or Frame ▸ Border in the inspector, choose None, Plain, or Film where supported.",
+          "Plain gives you border color and width. In the walkthrough, choose Auto, White, Black, or Custom, then set Frame Thickness. None removes the frame.",
+          "Change the background separately from the border. In the walkthrough, choose Black, White, Blur, or Custom Color. In the editor, Frame ▸ Background offers Automatic, Color, or Image, Choose Background Photo…, and Blur, Brightness, Saturation, and Scale."
+        ]
+      },
+      {
+        "heading": "Film edges",
+        "steps": [
+          "Choose Film, then pick a Stock and Format and adjust the border Width. Film is a frame choice; Strip and Contact Sheet remain layouts.",
+          "Type Edge Text to replace the stock lettering with your own words."
+        ]
+      },
+      {
+        "heading": "Add depth",
+        "steps": [
+          "Gallery Print offers a shadow during the walkthrough. Turn on Shadow and adjust Shadow Strength to lift the photo from the background.",
+          "In the editor, open Frame ▸ Depth for Shadow, Shadow Blur, and Shadow Opacity, or turn on Outline."
+        ]
+      }
+    ]
   },
   {
     "slug": "camera",
@@ -199,13 +395,39 @@
         ]
       }
     ],
-    "mac": "Select a photograph and open Camera in the inspector. Enable Camera Details, choose the fields, then adjust appearance and placement. Manage film-camera information in Decks → Settings → My Gear and saved Fujifilm recipes in Settings → Recipes. A multi-photo page can have separate details for each photograph. Shot with Halide appears only for eligible single-photo pages whose original software metadata identifies Halide.",
     "shot": [
       "oct06-framed-phone-camera.webp",
       "oct06-phone-camera.webp",
       "Camera Details controls on iPhone."
     ],
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksApp.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "macSections": [
+      {
+        "heading": "Add camera details",
+        "steps": [
+          "Turn on Camera Details in the walkthrough’s Finishing Touches and choose fields such as Camera, Lens, and Shutter · Aperture · ISO. Or open Camera in the inspector and turn on Camera Details for the current photo.",
+          "Use Apply To to place details on the Selected Photo, All Photos on Page, or one Shared Page card.",
+          "Each line of the card has its own field in Camera. Edit the wording there."
+        ]
+      },
+      {
+        "heading": "Position and remove",
+        "steps": [
+          "Drag the details into place on the canvas, or set X, Y, and Width in Camera. Option-arrow keys nudge them.",
+          "Align to Page or Photo lines the card up for you.",
+          "Remove Card takes the details off the page. Undo (⌘Z) brings them back."
+        ]
+      },
+      {
+        "heading": "When details are missing",
+        "steps": [
+          "Decks can only read the metadata included in the imported file. Screenshots and photos saved by other apps may be missing camera or exposure information.",
+          "Try the original photo, or click ⓘ in the inspector. Under Edit Photo Details, choose a category and type the values, or choose Apply Saved Gear.",
+          "Save cameras, lenses, film, and processing in Decks ▸ Settings… ▸ My Gear. Match EXIF Names uses your names for every photo with that EXIF wording.",
+          "Save your Fujifilm recipes in Settings ▸ Recipes, then choose the Camera category in Photo Details and use Apply Film Recipe. Applying a recipe adds information; it does not change the photo’s colors."
+        ]
+      }
+    ]
   },
   {
     "slug": "text",
@@ -230,13 +452,31 @@
         ]
       }
     ],
-    "mac": "Choose Edit → Add Text (Shift-Command-T), then select the text and use the Text inspector to change its appearance. Check the resolved wording when changing photographs. Canvas text becomes part of the image; Caption is separate posting text.",
     "shot": [
       "oct06-framed-phone-text.webp",
       "oct06-phone-text.webp",
       "Add Text and Add Logo entry actions on iPhone."
     ],
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksApp.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "macSections": [
+      {
+        "heading": "Add text or a logo",
+        "steps": [
+          "Choose Edit ▸ Add Text (⇧⌘T), or open Text in the inspector and click Add Text. Type in the text box there, then click Text Style… to change its appearance.",
+          "Set X, Y, Width, and Alignment, or use Align to Page or Photo. Duplicate (⌘D) and Remove are in the same section.",
+          "Click Add Logo… to place an image file, such as your logo, on the page.",
+          "Text on the canvas becomes part of the exported image. Use Caption for posting text that you want to copy separately."
+        ]
+      },
+      {
+        "heading": "Reuse photo information",
+        "steps": [
+          "Camera details fill in from each photo’s metadata. Edit any line in Camera when you want different wording.",
+          "Set up your own cameras, lenses, and film in Decks ▸ Settings… ▸ My Gear so they fill in the same way every time.",
+          "Check the details when changing photos. An image without the requested metadata cannot fill that value automatically."
+        ]
+      }
+    ]
   },
   {
     "slug": "reset",
@@ -260,9 +500,26 @@
         ]
       }
     ],
-    "mac": "Use the inspector’s reset controls for individual adjustments. Edit → Undo (Command-Z) reverses an edit; Edit → Redo (Shift-Command-Z) reapplies it. A reset restores the template baseline rather than defining a new one.",
     "shot": null,
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksApp.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "macSections": [
+      {
+        "heading": "Change or reset an adjustment",
+        "steps": [
+          "Drag a slider to change a value, or type an exact value in the field beside it and press Return.",
+          "In Layout ▸ Guides, Reset Page clears this page’s own changes so it follows the All Pages settings again.",
+          "Edit ▸ Reset Layout… returns every page to how it was before your first layout change in this session. You can undo it.",
+          "In the walkthrough, Reset beside Frame Thickness or Shadow Strength returns that slider to the layout’s starting value."
+        ]
+      },
+      {
+        "heading": "Undo a change",
+        "steps": [
+          "Choose Edit ▸ Undo (⌘Z) to reverse an edit, including a reset. Redo (⇧⌘Z) reapplies a change you have undone. Both are in the toolbar, too.",
+          "Reset only what you need; other edits stay in place."
+        ]
+      }
+    ]
   },
   {
     "slug": "panorama",
@@ -286,9 +543,25 @@
         ]
       }
     ],
-    "mac": "Open Layout in the inspector and use the panorama splitting action for the selected photo. Review the resulting pages in the filmstrip, then choose File → Export… and keep the files in panel order when posting.",
     "shot": null,
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksApp.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "macSections": [
+      {
+        "heading": "Set up the panels",
+        "steps": [
+          "Choose Panorama in Layout Builder and pick your photo. Set the number of linked panels, from 2 to 6.",
+          "In an existing project, select a photo and choose Edit ▸ Split Panorama into 3 Pages, or click the same button in Layout.",
+          "Panels stay together when you select, duplicate, or delete pages in the page strip."
+        ]
+      },
+      {
+        "heading": "Export and post in order",
+        "steps": [
+          "Choose File ▸ Export…. Each panel becomes its own image, in order.",
+          "In Threads or Instagram, select the exported images in their panel order to build the carousel. Decks prepares the files; you choose and publish the post in the destination app."
+        ]
+      }
+    ]
   },
   {
     "slug": "save-template",
@@ -297,9 +570,18 @@
     "group": "Save & Share",
     "sections": [
       {
+        "heading": "Save a sequence of designs",
+        "steps": [
+          "In Arrange Pages, tap Select and choose the pages you want. Save as Template preserves those designs in project order.",
+          "A single-photo page followed by a two-photo page becomes one reusable two-page template. Add → Add Pages from Template repeats the sequence with your new photos, using this project’s size.",
+          "Use Duplicate Page in the page menu, or Duplicate Pages in Arrange Pages, to copy photos and edits within the current project. Panorama panels stay together.",
+          "Apply Template to Project changes the existing project’s layouts. Add Pages from Template appends new pages while keeping the current pages."
+        ]
+      },
+      {
         "heading": "Start in Templates",
         "steps": [
-          "Open Templates → Create Template. Build the layout with the preview photos, then set its background, frames, text, and optional camera details.",
+          "Open Home → Templates → Create Template. Build the layout with the preview photos, then set its background, frames, text, and optional camera details.",
           "Use Template Preview to try your own photos, show empty photo slots, or preview a repeating batch.",
           "Save and name the template. Preview photos and their photo details are not saved as template content."
         ]
@@ -307,7 +589,7 @@
       {
         "heading": "Save from a project",
         "steps": [
-          "In Export, tap Save as Template. Name the design and choose whether to include text wording. Photos and crops stay with the project.",
+          "In Export, tap Save as Template. Choose pages to include, name the design, and choose whether to include text wording. Photos and crops stay with the project.",
           "Your template appears in Templates. Tap Use from Photos in Export for shortcut setup instructions."
         ]
       },
@@ -320,18 +602,44 @@
         ]
       }
     ],
-    "mac": "Choose File → Save as Template… (Shift-Command-S) from your design. File → Create Template (Option-Command-N) starts a template draft. Open Templates in the library to manage designs. A template draft is a reusable design; save it and use it with photographs before exporting finished pages.",
     "shot": [
       "oct06-mac-template-builder.webp",
       "oct06-mac-template-builder.webp",
       "Template Builder in the native Mac app."
     ],
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksApp.swift; release 9546540",
-    "macSteps": [
-      "Finish your layout, then choose File → Save as Template… (Shift-Command-S).",
-      "Name the template and review the saving choices. Open Templates in the library to find the saved design.",
-      "To start a design directly, choose File → Create Template (Option-Command-N). Save the template draft when it is ready.",
-      "Use the saved template with a new set of photographs, check text and photo-specific details, then export the finished pages. A template draft itself is not a finished photo project."
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "macSections": [
+      {
+        "heading": "Save a sequence of designs",
+        "steps": [
+          "⌘-click or ⇧-click pages in the page strip, then Control-click one and choose Save 2 Pages as Template… (the number matches your selection). Decks keeps those designs in project order.",
+          "A single-photo page followed by a two-photo page becomes one reusable two-page template. File ▸ Add Pages from Template… repeats the sequence with your new photos, using this project’s size.",
+          "Control-click a page and choose Duplicate Page to copy photos and edits within the project, or press ⌘D when no text is selected. Panorama panels stay together.",
+          "The Templates menu in the toolbar applies a saved template to this project’s pages. Add Pages from Template… adds new pages while keeping the current ones."
+        ]
+      },
+      {
+        "heading": "Start in Templates",
+        "steps": [
+          "Click Templates in the sidebar, then Create Template (⌥⌘N). Build the layout with the preview photos, then set its background, frames, text, and optional camera details.",
+          "Click Save Template in the toolbar and name it. Preview photos and their photo details are not saved as template content."
+        ]
+      },
+      {
+        "heading": "Save from a project",
+        "steps": [
+          "Choose File ▸ Save as Template… (⇧⌘S). Choose pages to include, name the design, and choose whether to Include Text Wording. Photos and crops stay with the project.",
+          "If a template already has that name, choose Replace Template or Keep Both. Your template appears in Templates."
+        ]
+      },
+      {
+        "heading": "Use and manage saved templates",
+        "steps": [
+          "In Templates, click Use Template to start a project with new photos, or Edit Template to change the design. To rename it, edit the name at the top of the window, then click Save Template.",
+          "Control-click a template to Favorite it, Set as Default, Export Template…, Duplicate, or Delete…. Favorites appear first.",
+          "Click Import Template… to add a template file someone shared, or double-click the file in Finder."
+        ]
+      }
     ]
   },
   {
@@ -354,22 +662,46 @@
         "steps": [
           "Copy Caption copies the finished wording only. More → Copy with Project Link also includes a link back to Decks.",
           "Use Copy Next in All Captions to copy the next prepared caption. Switch to the app where you’re posting and paste it.",
-          "Return to All Captions for the next page. Copied captions are grouped separately, and pages without captions appear under Needs a Caption.",
-          "The More menu lets you arrange pages and reset copied status. You can also reach a project’s All Captions from Recent."
+          "Return to the All Captions for the next page. Copied captions are grouped separately, and pages without captions appear under Needs a Caption.",
+          "The More menu lets you arrange pages and reset copied status. You can also reach a project’s All Captions from Projects."
         ]
       },
       {
-        "heading": "Reuse a caption with Snippets",
+        "heading": "Save captions to Apple Notes",
         "steps": [
-          "Save frequently used wording as a caption preset (Snippet). Insert photo variables when you want the information to update for each photograph.",
-          "Apply the saved preset to another caption, then review the resolved wording. Applying a preset replaces the caption; Undo restores it.",
-          "Caption wording inside a project or template travels with that item. The separate caption-preset library is local."
+          "From the Caption screen, open Caption More → Share Markdown, then choose Notes in the share sheet. You can also use Copy Caption and paste the text into a note.",
+          "To automate notes for an existing project, connect Decks’ Get Project Captions action to Create Note in Apple Shortcuts. Render Project can provide the finished images for your workflow."
         ]
       }
     ],
-    "mac": "Use Caption in the editor’s inspector to prepare the current page’s posting text. Copy the resolved caption, then paste it in the destination app. A copied caption is separate from the exported photograph.",
     "shot": null,
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksApp.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "macSections": [
+      {
+        "heading": "Write a caption",
+        "steps": [
+          "Open Caption in the inspector to write for the current page. Add Alt Text to describe the image for people using screen readers.",
+          "Under Include Photo Details, choose details such as camera or lens to add. Insert Selected Fujifilm Details adds your Fujifilm information.",
+          "Save wording you reuse with Save Caption Preset, then choose it from Caption Presets on another page.",
+          "Captions are separate from text printed on the image. Exporting an image does not paste its caption into another app for you."
+        ]
+      },
+      {
+        "heading": "Copy as you post",
+        "steps": [
+          "Copy Captions copies the captions for every page, in page order. Copy Markdown copies them as Markdown.",
+          "Switch to the app where you’re posting and paste."
+        ]
+      },
+      {
+        "heading": "Save captions to Apple Notes",
+        "steps": [
+          "Click Copy Markdown in Caption, then paste the text into a note.",
+          "Or choose File ▸ Run Workflow…, set Destination to Apple Notes, and click Prepare Workflow. Share the prepared files, or use Copy Text beside each document.",
+          "In Apple Shortcuts, Decks’ Get Project Captions action can pass a project’s captions to Create Note."
+        ]
+      }
+    ]
   },
   {
     "slug": "export",
@@ -409,16 +741,40 @@
         ]
       }
     ],
-    "mac": "Choose File → Export… (Shift-Command-E). Set Format, Image Width, JPEG Quality, Include Location, and Filename Pattern. Expand Video for Video Width when needed. Choose Save to Photos or Export to Folder…. Finished files can be opened with Reveal in Finder or shared. Use Retry Unfinished Output after a failed or canceled run. Continue in Background closes the sheet while the job continues; keep Decks running.",
     "shot": null,
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksApp.swift; release 9546540",
-    "macSteps": [
-      "Choose File → Export… (Shift-Command-E) from the project.",
-      "Choose JPEG or PNG and set Image Width. Adjust JPEG Quality when using JPEG. Review Include Location and Filename Pattern.",
-      "For a project with video, expand Video and set Video Width.",
-      "Choose Save to Photos, or Export to Folder… and select a destination folder. Allow Photos saving access if requested.",
-      "Use Reveal in Finder or the share control after files finish. Keep Decks running; Continue in Background closes the sheet while processing continues.",
-      "After an interrupted run, check the output and use Retry Unfinished Output when offered."
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "macSections": [
+      {
+        "heading": "Save or share",
+        "steps": [
+          "Choose File ▸ Export… (⇧⌘E), or click Export in the toolbar. Decks exports every page of the project as designed.",
+          "Choose JPEG or PNG and an Image Width in pixels. JPEG Quality controls compression; projects with video use the Video Width under Video.",
+          "Click Save to Photos, or Export to Folder… to choose a folder. When it finishes, click Reveal in Finder or Share.",
+          "Click Continue in Background to keep working while a large export runs."
+        ]
+      },
+      {
+        "heading": "Metadata and filenames",
+        "steps": [
+          "Turn Include Location on or off to choose whether location is kept in the exported file’s metadata.",
+          "Use Filename Pattern to control the names of exported files."
+        ]
+      },
+      {
+        "heading": "Keep a project in Projects",
+        "steps": [
+          "Exporting on your Mac leaves the project in Projects. Archive it yourself when you’re done: Control-click it and choose Archive.",
+          "After your first finished export, Decks offers once to save the design as a template. Choose Not Now to skip it."
+        ]
+      },
+      {
+        "heading": "If an export is interrupted",
+        "steps": [
+          "If an export fails or you cancel it, click Retry Unfinished Output. Finished files are kept and not repeated.",
+          "Recent Activity in the sidebar (⌘5) lists exports with Cancel, Retry, and Reveal Output. If Decks quits during an export, retry it there.",
+          "For a memory error, try a smaller Image Width or less crop zoom, then retry. If saving to Photos is refused, allow Photos access in System Settings, or export to a folder instead."
+        ]
+      }
     ]
   },
   {
@@ -443,9 +799,25 @@
         ]
       }
     ],
-    "mac": "Export a Contact Sheet design through File → Export…. For a separate overview of a project’s pages, choose File → Export Proof Sheet…. These are different outputs; a proof sheet is not required to save a contact-sheet design.",
     "shot": null,
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksApp.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "macSections": [
+      {
+        "heading": "A Contact Sheet is your design",
+        "steps": [
+          "Choose Contact Sheet in Layout Builder to arrange multiple photos together on a page. Keep its film edges, switch to Plain, or choose None.",
+          "Choose File ▸ Export… to save the sheet as you designed it. Each sheet becomes an image. Removing the film border does not change this."
+        ]
+      },
+      {
+        "heading": "A Proof Sheet is an export option",
+        "steps": [
+          "For any project, choose File ▸ Export Proof Sheet… to make a compact overview of its pages.",
+          "Choose the Paper, Look, and Film, add a Title or Camera, and choose whether to Use Original Photos and show Filenames. Then click Export JPEG… or Export PDF….",
+          "You do not need to make a proof sheet to export a Contact Sheet layout. Its layout is already the sheet."
+        ]
+      }
+    ]
   },
   {
     "slug": "library",
@@ -456,7 +828,7 @@
       {
         "heading": "Find a project",
         "steps": [
-          "Projects lists projects by last activity. Tap one to continue editing; returning Home saves your changes.",
+          "Home → Projects lists projects by last activity. Tap one to continue editing; returning Home saves your changes.",
           "Use the project filter in Projects to switch between All Projects, Archive, and Recently Deleted.",
           "Use a project’s actions to rename it, open its All Captions, or manage its place in the library. Pin projects you want to keep out of automatic cleanup."
         ]
@@ -464,27 +836,53 @@
       {
         "heading": "Understand cleanup",
         "steps": [
-          "Exported projects can move to Archive automatically. Inactive projects archive after 7 days and move to Projectsly Deleted after 30 days; pinned projects stay put.",
+          "Exported projects can move to Archive automatically. Inactive projects archive after 7 days and move to Recently Deleted after 30 days; pinned projects stay put.",
           "Restore a project from Archive or Recently Deleted when you need it again. Deleted projects are permanently removed after 30 days by default; change the period in Settings, including Never. Original and exported photos are never deleted.",
           "Project cleanup does not delete your original photos or the images you exported to Photos."
         ]
       }
     ],
-    "mac": "Open Projects in the library or choose Navigate → Go to Projects (Command-1). Check Archive when an exported project is no longer in the main list. Use Decks → Settings → Storage to inspect storage. Preserve original media outside Decks; a template is not a backup of photographs.",
     "shot": null,
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksApp.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "macSections": [
+      {
+        "heading": "Find a project",
+        "steps": [
+          "Click Projects in the sidebar (⌘2). Switch between grid and list at the top, and use Search Projects to find one by name.",
+          "Double-click a project, or select it and press Return, to continue editing.",
+          "Control-click a project to Open in New Window, Duplicate, Keep Project, Archive, or Move to Recently Deleted.",
+          "Incoming Photos, at the top of Projects, keeps photos sent from Ingest or Shortcuts until you choose a new or existing project."
+        ]
+      },
+      {
+        "heading": "Archive and restore",
+        "steps": [
+          "Archived and Recently Deleted are in the sidebar’s Library section. Control-click a project there to Unarchive or Restore it.",
+          "Decks on iPhone and iPad archives inactive projects after 7 days and moves them to Recently Deleted after 30; with iCloud sync, you’ll see those changes here. Keep Project keeps a project out of that cleanup.",
+          "In Recently Deleted, Delete Permanently… removes a project right away.",
+          "Permanently deleting a project also deletes Decks’ copies of its photos and videos, here, on your other devices and in iCloud, unless another project or template uses them. Your Photos library and exported images are untouched."
+        ]
+      },
+      {
+        "heading": "Free up space",
+        "steps": [
+          "Decks ▸ Settings… ▸ Storage shows how much space Decks uses on this Mac.",
+          "Free Up Space… removes local copies that are safe in iCloud. Opening or exporting a project downloads them again. Media from permanently deleted projects is removed automatically."
+        ]
+      }
+    ]
   },
   {
     "slug": "sync",
-    "title": "Projects and templates with iCloud",
-    "summary": "Keep projects and templates available across your devices.",
+    "title": "Sync & Shortcuts",
+    "summary": "Continue on iPad or reuse a template from Photos.",
     "group": "Your Library",
     "sections": [
       {
         "heading": "Sync across Mac, iPhone, and iPad",
         "steps": [
-          "Open Settings → iCloud and turn on Sync with iCloud on your devices using the same private iCloud account.",
-          "Sync includes projects, templates, and the photo copies those projects need. Use Sync Now and check the status message if a change hasn’t appeared yet.",
+          "Decks syncs through your private iCloud account on every device signed in to the same Apple Account. It’s on unless you turn it off in Settings → iCloud.",
+          "Sync includes projects, templates, your settings (destinations, favorites, My Gear, recipes, and presets), and the photo copies those projects need. Appearance stays on each device. Use Sync Now and check the status message if a change hasn’t appeared yet.",
           "Let sync finish before continuing the same project on another device."
         ]
       },
@@ -492,14 +890,35 @@
         "heading": "Use a template from Photos",
         "steps": [
           "Save a reusable template first. Then open the Photos & Shortcuts guide below for the Decks Templates shortcut or manual setup.",
-          "Save Photos with Template produces finished images without adding a project. Use Create Project from Photos when you want to edit the result in Decks.",
+          "In Apple Photos, select your photos, tap Share → Decks Templates, and choose a saved template. Finished copies return to Photos without adding an editable project.",
+          "After setup, small photo batches can run without opening Decks. More than eight photos, video, or a Photos permission request may bring the app forward.",
+          "For a custom shortcut, connect Shortcut Input to Apply Template, then Save to Photo Album or Share. Save Photos with Template combines processing and saving. Use Create Project from Photos when you want to edit the result in Decks.",
           "For an interrupted automation, open Settings → Recent Activity to inspect the run and retry where available."
         ]
       }
     ],
-    "mac": "Open Decks → Settings → General and enable Sync Decks with iCloud. Use the same Apple account on each device. Check the status message and use Sync Now. Pause Downloads and Resume Downloads appear when applicable. For Mac automation, open Settings → Automation; the app documents a Select Photos → Apply Template → Save File or Save to Photo Album workflow.",
     "shot": null,
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksApp.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "macSections": [
+      {
+        "heading": "Sync across Mac, iPhone, and iPad",
+        "steps": [
+          "iCloud sync is on by default. Use the same Apple Account on each device. To keep work on this Mac only, turn off Decks ▸ Settings… ▸ General ▸ Sync Decks with iCloud.",
+          "Sync includes projects, templates, and the photo copies those projects need, plus settings such as destinations, favorites, My Gear, Fujifilm recipes, caption and workflow presets, Layout Builder order, and keyboard shortcuts on your other Macs. Appearance stays separate on each device.",
+          "The bottom of each window shows sync status. Click Sync Now in Settings ▸ General if a change hasn’t appeared yet.",
+          "Let sync finish before continuing the same project on another device."
+        ]
+      },
+      {
+        "heading": "Use a template from Photos",
+        "steps": [
+          "Save a reusable template first. Then, in the Shortcuts app, add Select Photos, Decks’ Apply Template, and Save to Photo Album or Save File.",
+          "Apply Template returns finished copies without adding an editable project. Save Photos with Template saves straight to Photos. Use Create Project from Photos when you want to edit the result in Decks.",
+          "Before a shortcut saves to Photos, click Allow Saving to Photos in Decks ▸ Settings… ▸ General.",
+          "For Terminal, AppleScript, and folder access, see Automate on your Mac."
+        ]
+      }
+    ]
   },
   {
     "slug": "install",
@@ -508,25 +927,74 @@
     "group": "Getting Started",
     "body": "<p><strong>Requirements:</strong> iOS or iPadOS 18 or later; macOS 15 or later on Apple silicon.</p><p>TestFlight is Apple’s app for installing and updating beta apps. You do not need a beta version of iOS, iPadOS, or macOS to use Decks; your device just needs to meet the requirements listed here.</p>\n<ol><li>Install <a href=\"https://apps.apple.com/app/testflight/id899247664\">TestFlight from the App Store</a> on the iPhone, iPad, or Mac where you want to use Decks.</li><li>On that device, open the <a href=\"https://testflight.apple.com/join/SAMjeMy5\">Decks public beta invitation</a> and choose View in TestFlight.</li><li>Accept the invitation if prompted, then choose Install for Decks.</li><li>Open Decks and choose your photographs to get started. Return to TestFlight for new builds and beta feedback.</li></ol>\n<p>If the invitation opens in a browser after you install TestFlight, open the invitation again on the same device. If TestFlight reports that the beta is full or unavailable, email <a href=\"mailto:contact@brianrenshaw.app\">contact@brianrenshaw.app</a>. See <a href=\"https://testflight.apple.com/\">Apple’s TestFlight instructions</a> for installation help.</p>",
     "mac": "Install TestFlight on your Mac, then open the public invitation on that Mac. The Decks Mac beta requires macOS 15 or later and Apple silicon.",
-    "source": "site/decks/support/index.html; Social/Mac/DecksSettings.swift; DecksHandoffReceiver.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132."
   },
   {
     "slug": "fujifilm",
-    "title": "Fujifilm simulations and recipes",
-    "summary": "Show recorded settings and supply your own recipe name.",
+    "title": "Fujifilm simulations & recipes",
+    "summary": "Show the settings behind your photo and reuse your recipes.",
     "group": "Make It Yours",
-    "body": "<p>Decks reads supported Fujifilm MakerNotes from original JPEGs. If those notes remain in the file, the Camera tool can show its recorded film simulation and available recipe settings. Edited or converted copies may no longer contain that information; RAF, HEIC, and PNG files are not read by the Fujifilm JPEG decoder.</p>\n<p>Open Fujifilm Details to choose the fields included on your photograph or in a caption. Use Edit Photo Details to supply or override values, and save your own recipes and presentation presets for reuse. A recipe name is something you enter or apply from a saved recipe; Decks does not infer a named recipe from EXIF.</p>\n<p>These features display information. They do not apply film-simulation processing to your photograph. Missing settings remain absent until you provide them.</p>",
-    "mac": "Manage saved recipes in Decks → Settings → Recipes. Select a photo and use Camera controls to choose the information displayed. This presents metadata; it does not apply a film-simulation effect.",
-    "source": "site/decks/support/index.html; Social/Mac/DecksSettings.swift; DecksHandoffReceiver.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "sections": [
+      {
+        "heading": "Show recorded simulation details",
+        "steps": [
+          "Available recorded settings depend on the original file. Use supported original Fujifilm JPEGs; edited or shared copies may have lost this metadata.",
+          "Import an original Fujifilm photo. Open Camera in the editor and find Fujifilm Film Simulation. Automatic visibility shows these controls when the photo contains Fujifilm information.",
+          "Enable the Fujifilm card to put details on the page. Open Details to choose the fields to include, then use Text Style to adjust their appearance.",
+          "If controls are hidden, check Settings → Fujifilm → Fujifilm Details. Missing metadata can be entered through Details → Edit Photo Details."
+        ]
+      },
+      {
+        "heading": "Save and use a recipe",
+        "steps": [
+          "Open Settings → Fujifilm Recipes and save your recipe with a name and the settings you want to remember.",
+          "Back in the editor’s Fujifilm Details, choose Apply Saved Recipe. Review the included information for that photo.",
+          "Use in Caption inserts the recipe information into your posting text. Recipe details describe the photo; they do not apply a color filter or alter its original EXIF.",
+          "Recipe names come from you. Decks cannot recover a photographer’s custom recipe name from the camera metadata."
+        ]
+      }
+    ],
+    "macSections": [
+      {
+        "heading": "Show recorded simulation details",
+        "steps": [
+          "Available recorded settings depend on the original file. Use supported original Fujifilm JPEGs; edited or shared copies may have lost this metadata.",
+          "Import an original Fujifilm photo. Open Camera in the inspector and find Fujifilm Film Simulation. Automatic visibility shows these controls when the photo contains Fujifilm information.",
+          "Turn on Fujifilm Film Simulation to put details on the page. Click Details to choose the fields to include, then use Text Style to adjust their appearance.",
+          "If controls are hidden, check Decks ▸ Settings… ▸ General ▸ Fujifilm Details. Missing metadata can be entered through Details ▸ Edit Photo Details…."
+        ]
+      },
+      {
+        "heading": "Save and use a recipe",
+        "steps": [
+          "Open Decks ▸ Settings… ▸ Recipes, click Add, and give your recipe a name and the settings you want to remember. Click Save.",
+          "Back in the editor, click Details beside the film simulation and choose Apply Saved Recipe…. Review the included information for that photo.",
+          "Use in Caption inserts the recipe information into your posting text. Presets ▸ Save as Default Preset… remembers the chosen fields and text style for new Fujifilm cards.",
+          "Recipe details describe the photo; they do not apply a color filter or alter its original EXIF.",
+          "Recipe names come from you. Decks cannot recover a photographer’s custom recipe name from the camera metadata."
+        ]
+      }
+    ]
   },
   {
     "slug": "shortcuts",
     "title": "Apply templates from Photos",
     "summary": "Use one template with one photograph or a batch.",
     "group": "Save & Share",
-    "body": "<ol><li>Save a template in Decks.</li><li>On iPhone or iPad, open Settings → Photos &amp; Shortcuts and add the Decks Templates shortcut.</li><li>Select one or multiple still photos in Apple Photos. Open Share, choose Decks Templates, and choose your saved template.</li><li>Allow the requested photo access. The shortcut applies the design and saves finished copies to Photos.</li></ol>\n<p>After setup, the usual template workflow runs without opening Decks. Keep the Photos input connected to Shortcut Input when editing the shortcut. This walkthrough covers still photographs. The Apply Template action returns finished images to the next shortcut action; follow it with Save to Photo Album or Share. Save Photos with Template also accepts videos and may continue processing in Decks.</p>\n<p>Saved templates are also available through Decks actions in Shortcuts. You can use them in your own shortcuts, including ones you invoke with Siri or the Action button. Larger jobs or permissions may ask you to continue in the app. If a template is missing, reopen the shortcut and select an available saved template.</p>",
-    "mac": "In Shortcuts on Mac, combine Select Photos, Decks’ Apply Template action, and Save File or Save to Photo Album. Choose a saved template in the action. The iPhone/iPad share-sheet setup below is a separate starting route. For file-based unattended workflows, check Decks → Settings → Automation and allow the required folders.",
-    "source": "site/decks/support/index.html; Social/Mac/DecksSettings.swift; DecksHandoffReceiver.swift; release 9546540"
+    "body": "<ol><li>Save a template in Decks.</li><li>On iPhone or iPad, open Settings → Photos &amp; Shortcuts and add the Decks Templates shortcut.</li><li>Select one or multiple still photos in Apple Photos. Open Share, choose Decks Templates, and choose your saved template.</li><li>Allow the requested photo access. The shortcut applies the design and saves finished copies to Photos.</li></ol>\n<p>After setup, the usual template workflow runs without opening Decks. Keep the Photos input connected to Shortcut Input when editing the shortcut. This walkthrough covers still photographs. The Apply Template action returns finished images to the next shortcut action; follow it with Save to Photo Album or Share. Save Photos with Template also accepts videos and may continue processing in Decks.</p>\n<p>Saved templates are also available through Decks actions in Shortcuts. You can use them in your own shortcuts, including ones you invoke with Siri or the Action button. More than eight photos, video, or a Photos permission request may bring Decks forward. If a template is missing, reopen the shortcut and select an available saved template.</p>",
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "macSections": [
+      {
+        "heading": "Use a template from Photos",
+        "steps": [
+          "Save a reusable template first. Then, in the Shortcuts app, add Select Photos, Decks’ Apply Template, and Save to Photo Album or Save File.",
+          "Apply Template returns finished copies without adding an editable project. Save Photos with Template saves straight to Photos. Use Create Project from Photos when you want to edit the result in Decks.",
+          "Before a shortcut saves to Photos, click Allow Saving to Photos in Decks ▸ Settings… ▸ General.",
+          "For Terminal, AppleScript, and folder access, see Automate on your Mac."
+        ]
+      }
+    ]
   },
   {
     "slug": "ingest",
@@ -535,16 +1003,71 @@
     "group": "Save & Share",
     "body": "<p>In Ingest, select still photographs and choose Send to Decks. Receive them in Decks for Mac, or use the supported sharing options for iPhone and iPad. Decks offers a new project or an existing project as the destination. Incoming Photos holds deferred and supported iCloud handoffs until you are ready.</p>\n<p>Your Ingest originals stay in place. Use an Ingest version that supports your chosen handoff. See the <a href=\"/ingest/guide/#social-export\">Ingest handoff guide</a> for current options.</p>",
     "mac": "Select photos in Ingest and choose Send to Decks. In the receiving window, choose New Project or Existing Project, select the project when needed, then choose Add Photos. Later keeps the batch for another time. If preparation fails, use Retry rather than resending the same batch immediately.",
-    "source": "site/decks/support/index.html; Social/Mac/DecksSettings.swift; DecksHandoffReceiver.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132."
   },
   {
     "slug": "destinations",
-    "title": "Instagram, Threads, Aura, and YouTube",
-    "summary": "Prepare finished files for the place you share.",
+    "title": "Instagram, Threads, frames & video",
+    "summary": "Choose a layout for the place your photos will go.",
     "group": "Save & Share",
-    "body": "<h2 id=\"social\">Instagram and Threads</h2><ol><li>Set the page shape in Layout: a portrait page for a feed post, a tall 9:16 page for a Story, or multiple pages for a carousel.</li><li>Arrange each page and review the crop. Keep text away from areas the destination app may cover with controls.</li><li>Export your finished images, then select them in order in the destination app. Copy captions separately from Caption.</li></ol><h2 id=\"aura\">Aura Frames</h2><p>Decks creates finished image files that you upload through the Aura app. It does not connect to your Aura account. You can prepare a single photograph, a pair, or a composition with a background and border.</p>\n<ol><li><strong>Match the frame’s shape.</strong> Set your page to landscape 16:10 for Carver or Carver Mat. For Aspen, Walden, and Ink, use landscape 4:3 or portrait 3:4 to match how the frame is positioned. In builds without named Aura choices, use these ratios in the layout controls.</li><li><strong>Arrange your photographs.</strong> Try two vertical photos side by side, a single photo with a soft background, or a thin border. Review the crop and keep text large enough to read from across the room.</li><li><strong>Save and upload.</strong> Export the composition as an image, save it to Photos, then select that finished image in the Aura app. The two photos in a paired Decks export are already combined into one file.</li><li><strong>Use it again.</strong> Save the design as a Decks template and apply it to your next photographs.</li></ol>\n<p>If the image does not fit as expected, check the Decks page ratio, the frame’s orientation, and the crop in Aura. Keep your original photographs so you can adjust the composition later.</p><h2 id=\"youtube\">Photographs for YouTube edits</h2><p>Use a 16:9 page when you want a landscape composition for an edit. Save a template to keep successive photographs consistent, export the files, and import them into your video editor. Decks does not upload to YouTube.</p>",
-    "mac": "The destination uses your exported files, not a direct connection to Decks. Set the page ratio in Layout, then use File → Export… → Export to Folder… or Save to Photos.",
-    "source": "site/decks/support/index.html; Social/Mac/DecksSettings.swift; DecksHandoffReceiver.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "sections": [
+      {
+        "heading": "Instagram & Threads",
+        "steps": [
+          "In Layout Builder, choose Instagram post, Instagram stories, or Threads above the layouts. Then pick a layout and select your photos.",
+          "Keep a consistent background and frame across a series. Panorama can split a photograph into ordered carousel panels.",
+          "Export to Photos, select the finished images in order in Instagram or Threads, and paste the caption you prepared in Decks."
+        ]
+      },
+      {
+        "heading": "Aura & other digital frames",
+        "steps": [
+          "In Settings → Destinations, choose Add a Photo Frame. Select the model and orientation to add its size to Layout Builder.",
+          "With the frame chosen on Home, choose Smart Layout for a mixed batch: vertical photos pair up, horizontal photos get a page each, and one step lets you swap pairs and pick each group’s look. Or pick one of four layouts that avoid empty bars: Two Side by Side, Soft Background, Full Screen, or Thin Border. An upright frame stacks two horizontal photos instead. If your photos suit another layout better, the walkthrough suggests it. More Layouts, under the four, shows the rest.",
+          "Export the finished images to Photos. Add them in the Aura app or your frame’s usual uploader, then review that app’s crop preview."
+        ]
+      },
+      {
+        "heading": "Photos in videos",
+        "steps": [
+          "Choose Video (YouTube, Vimeo, etc.) for a 16:9 page, or match your editing project’s shape. A background can give portrait photos room inside a wide video.",
+          "Add a title, photo credit, or camera details in Decks. Check that the text will be readable when the image appears in the video.",
+          "Export JPEG or PNG pages at a suitable width, then import them into your video editor. Set the duration and transitions there. A still image export is not a finished video."
+        ]
+      }
+    ],
+    "macSections": [
+      {
+        "heading": "Instagram & Threads",
+        "steps": [
+          "In Layout Builder, choose Instagram post, Instagram stories, or Threads from the size menu. Then click a layout and choose your photos.",
+          "Keep a consistent background and frame across a series. Panorama can split a photograph into ordered carousel panels.",
+          "Export to Photos or a folder. In Instagram or Threads, select the finished images in order and paste the caption you copied from Caption."
+        ]
+      },
+      {
+        "heading": "Aura & other digital frames",
+        "steps": [
+          "Choose Decks ▸ Settings… ▸ Destinations and click Add a Photo Frame…. Check your model and orientation, click Done, then click Save Changes to add its size to Layout Builder.",
+          "With the frame chosen in Layout Builder, choose Smart Layout for a mixed batch: vertical photos pair up, horizontal photos get a page each, and one step lets you swap pairs and pick each group’s look. Or pick one of four layouts that avoid empty bars: Two Side by Side, Soft Background, Full Screen, or Thin Border. An upright frame stacks two horizontal photos instead. If your photos suit another layout better, the walkthrough suggests it. More Layouts shows the rest. Save the result as a template for future batches.",
+          "Export the finished images to Photos or a folder. Add them in the Aura app or your frame’s usual uploader, then review that app’s crop preview."
+        ]
+      },
+      {
+        "heading": "Photos in videos",
+        "steps": [
+          "Choose Video (YouTube, Vimeo, etc.) from the size menu for a 16:9 page, or Custom Size… to match your editing project’s shape. A background can give portrait photos room inside a wide video.",
+          "Add a title, photo credit, or camera details in Decks. Check that the text will be readable when the image appears in the video.",
+          "Export JPEG or PNG pages at a suitable Image Width, then import them into your video editor. Set the duration and transitions there. A still image export is not a finished video."
+        ]
+      }
+    ],
+    "shot": [
+      "build132-mac-frame-menu.webp",
+      "build132-mac-frame-menu.png",
+      "Choose a frame model and its orientation in Destinations."
+    ]
   },
   {
     "slug": "video",
@@ -553,7 +1076,7 @@
     "group": "Make It Yours",
     "body": "<h2 id=\"workflow\">Make a video composition</h2><ol><li>Import an actual video clip through Add Photos &amp; Videos. A still photograph remains a still unless you bring in moving media.</li><li>Select the clip and open Photo to find the clip controls. Adjust the trim and review playback before export.</li><li>Use Layout and Frame for the page’s arrangement and background. Add text or other design details as needed.</li><li>Open Export and review the video output settings. Video pages export as MP4; still pages export as image files.</li></ol><p>A project can contain both photo and video pages. Check the output type for each page. For a long or high-resolution clip, allow processing to finish before closing the app.</p>",
     "mac": "Import clips through File → Import Photos and Videos…. Select the clip in your page and use the inspector for its controls. File → Export… includes a Video disclosure with Video Width. Save to Photos or export to a folder.",
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksExport.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132."
   },
   {
     "slug": "troubleshooting",
@@ -562,6 +1085,54 @@
     "group": "Your Library",
     "body": "<h2 id=\"missing-project\">A project disappeared after export</h2><p>Check Archive. Archive Project After Export can move a saved project out of the main list. On iPhone and iPad, check Settings → Project Cleanup and pin projects you want to keep. Restoring a project is different from recovering a missing original photograph.</p><h2 id=\"metadata\">Camera or Fujifilm details are missing</h2><p>Try the original file. Screenshots and edited copies may not contain camera metadata. Fujifilm decoding requires supported original JPEG MakerNotes; a recipe name is supplied by you. Use My Gear or Photo Details for information you know.</p><h2 id=\"export\">An export failed or may have saved twice</h2><p>Check Photos or the destination folder before retrying an uncertain save. Use Retry Failed on iPhone/iPad or Retry Unfinished Output on Mac when offered. Try fewer pages or a smaller export width after a memory error. Keep Decks running until processing finishes.</p><h2 id=\"permission\">Decks cannot save to Photos</h2><p>Allow the requested Photos access, or review Decks’ Photos permission in the device’s privacy settings. On Mac, Decks → Settings → General includes Allow Saving to Photos. Export to a folder if you do not want to grant Photos saving access.</p><h2 id=\"sync\">A project or template has not synced</h2><p>Confirm the same Apple account and that optional Decks iCloud sync is enabled on both devices. Check status, allow media to download, and use Sync Now. Resume paused downloads on Mac when appropriate. Separate local presets are not a complete synced settings library.</p><h2 id=\"shortcut\">A shortcut cannot find my template</h2><p>Open Decks and confirm the template is saved. Reopen the shortcut’s action and select an available template. Check that input photos reach Apply Template and that its output connects to Save to Photo Album or Save File.</p><h2 id=\"feedback\">Send a useful report</h2><p>Use Send Beta Feedback in TestFlight, or email <a href=\"mailto:contact@brianrenshaw.app\">contact@brianrenshaw.app</a>. Include your platform, OS version, Decks build, the steps you took, and what you expected. Attach only photographs and metadata you are comfortable sharing.</p>",
     "mac": "Use Recent Activity to inspect processing jobs. Check Settings → Automation folder access when a file-based workflow fails. Do not assume a missing result means the operation never wrote a file; inspect the destination before retrying.",
-    "source": "Social/App/SocialLearning.swift; Social/Mac/DecksSettings.swift; DecksExport.swift; release 9546540"
+    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132."
+  },
+  {
+    "slug": "automation",
+    "title": "Automate on your Mac",
+    "summary": "Shortcuts, AppleScript, and the decks command-line tool.",
+    "group": "Your Library",
+    "body": "<p>On iPhone and iPad, use Decks actions in Apple Shortcuts. See the <a href=\"/decks/guide/shortcuts/\">Photos and Shortcuts guide</a>. The command-line tool, AppleScript, and folder permissions below are Mac features.</p>",
+    "macSections": [
+      {
+        "heading": "Allow folders first",
+        "steps": [
+          "Open Decks ▸ Settings… ▸ Automation and click Allow Folder… for each folder automation reads from or writes to. Remove takes a folder away.",
+          "Files outside an allowed folder return an error instead of opening a window. Shortcuts, AppleScript, and the command-line tool use the same processing and export rules as the app."
+        ]
+      },
+      {
+        "heading": "Use the command-line tool",
+        "steps": [
+          "Settings ▸ Automation shows where the decks tool is inside the app. Add its Helpers folder to your shell’s PATH, then run decks --help.",
+          "decks templates and decks projects list names with their IDs. decks apply --template ID --output FOLDER followed by files renders them with that template; decks create adds --name and keeps an editable project.",
+          "decks render --project ID --output FOLDER exports a saved project. Add --photos to save to Photos, or --async to return the job right away and check it with decks status --job ID.",
+          "Results are JSON. The first time, macOS asks to let your terminal control Decks; allow it in System Settings ▸ Privacy & Security ▸ Automation."
+        ]
+      },
+      {
+        "heading": "Use AppleScript",
+        "steps": [
+          "Try tell application \"Decks\" to list templates. Results are JSON with stable IDs.",
+          "apply template, create project, and render project start jobs; job status, cancel job, and retry job follow them. open project and project captions work with a project’s ID.",
+          "Open Decks’ dictionary in Script Editor for each command’s parameters."
+        ]
+      },
+      {
+        "heading": "Use Shortcuts",
+        "steps": [
+          "Decks adds Apply Template, Save Photos with Template, Save Photos and Keep Project, Create Project from Photos, Render Project, Get Project Captions, Open Project, and Add to Incoming Photos to the Shortcuts app.",
+          "A typical shortcut is Select Photos, then Apply Template, then Save File or Save to Photo Album."
+        ]
+      },
+      {
+        "heading": "Follow your jobs",
+        "steps": [
+          "Recent Activity in the sidebar lists command-line and AppleScript jobs alongside your exports, with Cancel, Retry, and Reveal Output.",
+          "Jobs run without opening an editor window. If Decks quits during a job, Retry resumes its saved work."
+        ]
+      }
+    ],
+    "source": "DecksHelpContent.swift at 95a303f"
   }
 ]

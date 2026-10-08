@@ -465,3 +465,9 @@ Update, October 6, 2026: the Aura page is now published at `/aura/` with page-sh
 Ingest brevity pass: homepage copy reduced by roughly half. Screenshots are static illustrations, with no enlargement links, popup script, or version captions. Detailed instructions stay in the wiki. Lead handoff with Open in Lightroom Classic. Keep exact Mac and optional Apple Intelligence/Photos compatibility wording in a short section. Footer has Support, Release notes, and Privacy only. Release notes use undated per-version pages and a native version dropdown; old anchors remain compatible.
 
 Decks StoryBrand pass: hero explains frames/layouts and repeat use; problem leads into Choose your photos → Make it yours → Save it. Use it again. Native template-reuse proof precedes destinations. Brian’s approved first-person motivation establishes empathy earlier. TestFlight explained next to the CTA with installation support. Short destination copy leads to native disclosures. Customer testimonial pending an attributed, permission-cleared quote and example.
+
+## Decks build 132 website update
+
+Keep the photo-first headline, device trio, and visible video support. Smart Layout’s promise is a whole mixed batch prepared for a digital frame without hand-building every page: vertical pairs plus individual landscapes for a sideways frame, with the arrangement reversed for an upright frame. People choose their own pairs by swapping; an exported pair stays together as one image in Aura. Describe grouping by orientation, not AI subject matching. Explain upload through Aura, never an Aura account connection.
+
+Show the native Mac Layout Builder and named frame destinations. Guide users through platform-specific controls; shared outcomes do not mean identical interfaces. iCloud is optional but on by default, with supported settings now included alongside projects, templates, and referenced media. Do not restore personal-photo captions or the removed founder quote.
