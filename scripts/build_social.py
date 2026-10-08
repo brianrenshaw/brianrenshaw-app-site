@@ -40,7 +40,7 @@ def icon(x,y,path=None,kind=None):
         for points in [[(12,22),(44,22)],[(12,33),(44,33)],[(23,22),(23,44)],[(34,22),(34,44)]]:
             draw.line([((x+dx)*SCALE,(y+dy)*SCALE) for dx,dy in points],fill='#365e83',width=4)
 text(48,22,'BRIAN RENSHAW',18)
-text(48,46,'A few things I wanted to exist.',40,serif=True)
+text(48,46,'Apps and tools by Brian Renshaw.',40,serif=True)
 text(48,100,'Apps, tools, and experiments built with AI.',18,'#65685f')
 # Ingest and Decks lead as a featured pair, matching the homepage, each with
 # its own site hero: a MacBook for Ingest, the device trio for Decks. The other nine sit in a 3x3 grid.
@@ -76,4 +76,4 @@ for i,(name,kind,bg,ink,path,symbol) in enumerate(projects):
     text(x+84,y+20,name,17,ink)
     text(x+84,y+46,kind,14,ink)
 text(48,596,'brianrenshaw.app',16,'#65685f')
-canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v12.png',optimize=True)
+canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v13.png',optimize=True)

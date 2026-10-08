@@ -83,4 +83,4 @@ The goal is a clear explanation of useful software. Readers can decide whether t
 - Does the heading name the subject, and does the caption explain the screenshot?
 - Can any slogan, invented frustration, repetition, or unsupported promise be removed?
 
-This philosophy governs new Walkthrough copy. Older messaging examples should not preserve a gimmicky tone simply because they were previously approved.
+This philosophy governs new Walkthrough copy and, under the October 8 shared editorial direction in MESSAGING.md, applies across all product sites. Older messaging examples should not preserve a gimmicky tone simply because they were previously approved.

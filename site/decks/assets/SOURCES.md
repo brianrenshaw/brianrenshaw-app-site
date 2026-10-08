@@ -78,3 +78,7 @@ Rebuild with `python3 scripts/build_decks_device_frames.py --cli /path/to/frames
 ### Build 132 native Mac captures
 
 `build132-mac-builder.png` and `build132-mac-frame-menu.png` were captured through CUA from installed Decks build 132. They contain built-in preview photography and the named frame menu only. WebP versions are lossless, upright, full-window derivatives with no resampling; originals remain linked. The equivalent named destinations and Smart Layout entry are public in Mac TestFlight 125. Dimensions and SHA-256 hashes are recorded in oct06-assets.json.
+
+## October 8 YouTube example
+
+`oct08-youtube-autumn-soft.png` and its lossless WebP use the user-supplied `/Users/brianrenshaw/Downloads/09141.jpg`. Rendered with IngestSocialKit at commit 95a303fc005e0e32fb238027672fc0d5fcf82e17 through SocialRenderService in an isolated DemoStore. The 1920×1080 composition fits the entire upright photo, with a soft photo background and thin white border, and adds no text. Source and output hashes are in oct06-assets.json. `scripts/render_decks_youtube.swift` preserves the native rendering recipe.

@@ -11,7 +11,7 @@ One static website for Reading Habit, Where Do We Eat, Who’s First?, and Folio
 
 ## App messaging
 
-Read [MESSAGING.md](MESSAGING.md) for each app’s purpose and copy priorities before changing app descriptions. For Walkthrough, also read [WALKTHROUGH_MESSAGING_PHILOSOPHY.md](WALKTHROUGH_MESSAGING_PHILOSOPHY.md): explain the tools and workflow directly, without slogans or exaggerated promises. The messaging guide also points to app-folder references for future native and App Store work.
+Read [MESSAGING.md](MESSAGING.md) for each app’s purpose and copy priorities before changing app descriptions. The shared editorial standard applies to every site: concrete explanations, no slogan fragments or invented customer scenarios. Also read [WALKTHROUGH_MESSAGING_PHILOSOPHY.md](WALKTHROUGH_MESSAGING_PHILOSOPHY.md): explain the tools and workflow directly, without slogans or exaggerated promises. The messaging guide also points to app-folder references for future native and App Store work.
 
 ## Local preview and checks
 

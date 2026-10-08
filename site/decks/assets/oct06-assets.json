@@ -578,6 +578,34 @@
       "orientation": "upright; full window; original pixels; no cropping or resampling",
       "sourceCommit": "95a303fc005e0e32fb238027672fc0d5fcf82e17",
       "publicMacBuild": "125 has the same frame layouts and named destinations; later installed build capture"
+    },
+    {
+      "file": "oct08-youtube-autumn-soft.png",
+      "kind": "native-render",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "7d94f001542daf86b6b2e9e473e8243f29c78140440e1742bad782e4b13d101c",
+      "source": "/Users/brianrenshaw/Downloads/09141.jpg",
+      "sourceSha256": "f55fbfdd009a6f186551b0a726721f14255a957f633d325a21ea60d97b6ae118",
+      "renderer": "IngestSocialKit SocialRenderService; isolated DemoStore",
+      "transformation": "16:9 photo-blur background, fit entire photograph, thin white border, no overlay text; lossless encoding",
+      "projectSha256": "25690ed3dbe8c2a8fd67831eedd664e5b5d9ada1e827c49fd20b567e5cfab127",
+      "sourceCommit": "95a303fc005e0e32fb238027672fc0d5fcf82e17",
+      "orientation": "upright native rendering; full source photograph fitted without cropping"
+    },
+    {
+      "file": "oct08-youtube-autumn-soft.webp",
+      "kind": "native-render",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "e4b1cde1bee53d3864a93b32edc447f3b5108ad7f844165f913bcb5682ae508c",
+      "source": "/Users/brianrenshaw/Downloads/09141.jpg",
+      "sourceSha256": "f55fbfdd009a6f186551b0a726721f14255a957f633d325a21ea60d97b6ae118",
+      "renderer": "IngestSocialKit SocialRenderService; isolated DemoStore",
+      "transformation": "16:9 photo-blur background, fit entire photograph, thin white border, no overlay text; lossless encoding",
+      "projectSha256": "25690ed3dbe8c2a8fd67831eedd664e5b5d9ada1e827c49fd20b567e5cfab127",
+      "sourceCommit": "95a303fc005e0e32fb238027672fc0d5fcf82e17",
+      "orientation": "upright native rendering; full source photograph fitted without cropping"
     }
   ]
 }

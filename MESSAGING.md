@@ -2,6 +2,14 @@
 
 Approved with Brian on September 9, 2026. Use these promises for homepage cards, app landing pages, search/social descriptions, and future app copy. The customer’s goal comes first; features support that goal.
 
+## Shared editorial standard — October 8, 2026
+
+Applies to brianrenshaw.app and every product site, including Ingest, Decks, Walkthrough, and future projects. This direction supersedes older slogan examples in this document. Explain what the app does, how someone uses it, and why the result is useful. Use ordinary sentences and concrete verbs. A short heading should identify the feature or outcome, not merely create a rhythm.
+
+Avoid paired slogan fragments, invented customer scenarios, dramatic contrasts, vague ownership promises, and generic enthusiasm. Do not turn a feature into “Your photos. Your way.” or manufacture a weekend story to introduce orientation handling. Say “Reuse folder structures and naming rules” or “Smart Layout pairs vertical photos and gives horizontal photos their own pages.” Keep factual product distinctions and limitations. Use vertical and horizontal when describing photo orientation.
+
+Preserve approved product positioning and genuine app examples; this is not a ban on warmth or every short heading. Walkthrough’s existing explanation-first philosophy is the model across sites. Read the finished page for repetition, including captions, disclosures, and social artwork. Do not make Brian identify each instance of the same writing problem.
+
 ## Homepage order
 
 Since October 7, 2026, at Brian’s request, Ingest and Decks lead the page as a larger featured pair under a “For photographers” label. Each featured card shows its own site’s hero devices: Ingest’s MacBook, and Decks’ iPhone, iPad, and Mac trio (`site/assets/featured-*.webp`, built by `scripts/build_portfolio_featured.py`) and follows its site’s current light palette: Ingest warm white with amber, Decks stone paper with charcoal. Dark mode keeps Ingest’s charcoal and Decks’ near-black. The remaining projects follow under “More projects,” still grouped by platform.
@@ -468,6 +476,10 @@ Decks StoryBrand pass: hero explains frames/layouts and repeat use; problem lead
 
 ## Decks build 132 website update
 
-Keep the photo-first headline, device trio, and visible video support. Smart Layout’s promise is a whole mixed batch prepared for a digital frame without hand-building every page: vertical pairs plus individual landscapes for a sideways frame, with the arrangement reversed for an upright frame. People choose their own pairs by swapping; an exported pair stays together as one image in Aura. Describe grouping by orientation, not AI subject matching. Explain upload through Aura, never an Aura account connection.
+Keep the photo-first headline, device trio, and visible video support. Smart Layout’s promise is a whole mixed batch prepared for a digital frame without hand-building every page: vertical pairs plus individual horizontal photos for a sideways frame, with the arrangement reversed for an upright frame. People choose their own pairs by swapping; an exported pair stays together as one image in Aura. Describe grouping by orientation, not AI subject matching. Explain upload through Aura, never an Aura account connection.
 
 Show the native Mac Layout Builder and named frame destinations. Guide users through platform-specific controls; shared outcomes do not mean identical interfaces. iCloud is optional but on by default, with supported settings now included alongside projects, templates, and referenced media. Do not restore personal-photo captions or the removed founder quote.
+
+## October 8 copy direction
+
+Use direct descriptions of what Decks does. Avoid paired slogan fragments such as “A whole batch. Each photo in its place.” and invented setups about a weekend’s photos. Use vertical/horizontal for photo orientation so readers do not confuse portrait and landscape with subject matter. Remove the hero’s secondary “See what you can make” action; retain the Examples navigation link and anchor.
