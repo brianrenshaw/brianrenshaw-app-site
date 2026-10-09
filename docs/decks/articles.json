@@ -9,15 +9,15 @@
         "heading": "Choose a destination and layout",
         "steps": [
           "Open Home. On iPhone, Home is the first tab in the bar at the bottom, beside Templates and Projects. On iPad, it is in the sidebar.",
-          "Tap a destination at the top of Home, such as Post 3:4, Post 4:5, Story, Threads, or Video. Each one shows its page shape beside the name. Tap More (…) for every destination. Choosing one here does not change your saved default.",
+          "Tap a destination at the top of Home, such as IG Post, IG Post 4:5, IG Story, Threads, or Video. Each one shows its page shape beside the name; a photo frame shows its own name, such as Aura Walden. Tap … for every destination. Choosing one here does not change your saved default.",
           "Where the page can turn, choose Vertical or Horizontal below the destinations. Stories, TV, and square pages already have a fixed shape.",
           "Home lists Favorites, Smart layouts, Layouts, and Camera Details Designs. Each row scrolls sideways, and each card shows sample pages in the page’s own shape.",
           "Tap a layout, such as One Photo, Two Photos, Four Photos, Gallery Print, Panorama, Strip, or Contact Sheet, then choose your photos."
         ],
         "shots": [
           [
-            "build148-framed-phone-home.webp",
-            "build148-phone-home.webp",
+            "build154-framed-phone-home.webp",
+            "build154-phone-home.webp",
             "Home on iPhone: destination choices, smart layouts, and layouts."
           ]
         ]
@@ -35,13 +35,13 @@
         ],
         "shots": [
           [
-            "build148-framed-phone-pages.webp",
-            "build148-phone-pages.webp",
+            "build154-framed-phone-pages.webp",
+            "build154-phone-pages.webp",
             "Every page on one screen, with the page strip and tools."
           ],
           [
-            "build148-framed-phone-layout-panel.webp",
-            "build148-phone-layout-panel.webp",
+            "build154-framed-phone-layout-panel.webp",
+            "build154-phone-layout-panel.webp",
             "The Layout panel with Photos per Page."
           ]
         ]
@@ -55,8 +55,8 @@
         ],
         "shots": [
           [
-            "build148-framed-phone-split.webp",
-            "build148-phone-split.webp",
+            "build154-framed-phone-split.webp",
+            "build154-phone-split.webp",
             "Select a shared page to split it or join it with the next page."
           ]
         ]
@@ -78,8 +78,8 @@
       }
     ],
     "shot": [
-      "build148-framed-mac-home.webp",
-      "build148-mac-home.webp",
+      "build154-framed-mac-home.webp",
+      "build154-mac-home.webp",
       "Home on Mac."
     ],
     "source": "Decks source 42c30ae (build 148): SocialHome.swift (destination chips, Home sections, context menus), SocialStartFlow.swift (pagesScreen, toolSections, photosPerPage, pagesStrip, pageActions), SocialStartPage.swift, Mac/DecksLayoutBuilder.swift, Mac/DecksRootView.swift, Mac/DecksHelpContent.swift. Removed screenshots of the pre-148 start screens (oct06-framed-builder, build132-mac-builder). NEEDS-SHOT: iPhone Home with destination chips, Smart layouts and Layouts rows. NEEDS-SHOT: iPhone start screen after choosing photos, with the page strip, “5 photos · 3 pages” title and the Layout panel open showing Photos per Page. NEEDS-SHOT: Mac Home and the Mac one-screen start with Split Page and Join with Next.",
@@ -127,8 +127,8 @@
     ],
     "ipadShots": [
       [
-        "build148-framed-pad-home.webp",
-        "build148-pad-home.webp",
+        "build154-framed-pad-home.webp",
+        "build154-pad-home.webp",
         "Home on iPad, with your library in the sidebar."
       ]
     ]
@@ -142,14 +142,14 @@
       {
         "heading": "Choose your frame",
         "steps": [
-          "In Settings → Destinations, choose Add a Photo Frame. Select your Aura model and orientation.",
-          "On Home, tap your frame at the top. Home shows Frame layouts sized for it: Smart Layout first, then Two Side by Side (Two Stacked on an upright frame), Soft Background, Full Screen, and Thin Border. More Layouts shows the rest; Fewer Layouts hides them again.",
+          "In Settings → Destinations, choose Add a Photo Frame. Select your Aura model and orientation. On Home, the Vertical and Horizontal switch turns a frame that can stand either way.",
+          "On Home, tap your frame at the top. Home shows Frame layouts sized for it: Smart Layout first, then Fill Frame, Two Side by Side (Two Stacked on an upright frame), Soft Background, and Thin Border. The usual layouts follow in their own Layouts row, sized for the frame.",
           "Tap Smart Layout and select the photos you want to prepare together."
         ],
         "shots": [
           [
-            "build148-aura-framed-pad-1-frame.webp",
-            "build148-aura-pad-1-frame.webp",
+            "build154-aura-framed-pad-1-frame.webp",
+            "build154-aura-pad-1-frame.webp",
             "Aura Carver chosen on Home, with Smart Layout first under Frame layouts."
           ]
         ]
@@ -164,8 +164,8 @@
         ],
         "shots": [
           [
-            "build148-aura-framed-pad-3-groups.webp",
-            "build148-aura-pad-3-groups.webp",
+            "build154-aura-framed-pad-3-groups.webp",
+            "build154-aura-pad-3-groups.webp",
             "The Layout panel shows the vertical pairs and the horizontal photo."
           ]
         ]
@@ -174,19 +174,19 @@
         "heading": "Choose the pairs and their look",
         "steps": [
           "Tap Layout in the tools at the bottom. Under Vertical Pairs (Horizontal Pairs on an upright frame), tap two photos to swap them, or drag one onto another. You choose which photos belong together.",
-          "Choose White or Black for the pair background. Under Horizontal Photos (Vertical Photos on an upright frame), choose White Border, Black Border, or Fill for the individual pages. A black border blends into the frame’s own black edge, so the photo looks like part of the frame; a white border or soft background reads as a background behind the photo. Fill crops the photo a little to cover the screen; check faces and edges.",
+          "Choose White or Black for the pair background. Under Horizontal Photos (Vertical Photos on an upright frame), individual pages start as Fill Frame, which crops the photo a little so there are no bars; check faces and edges. Choose White Border or Black Border to show the whole photo instead. A black border blends into the frame’s own black edge, so the photo looks like part of the frame; a white border or soft background reads as a background behind the photo.",
           "If your photos suit another frame layout better, Layout suggests it. Choose Use to switch, or Keep to stay with Smart Layout.",
           "Tap Create and review the crop on each page in the editor. You can continue editing the result."
         ],
         "shots": [
           [
-            "build148-aura-framed-pad-4-swap-selected.webp",
-            "build148-aura-pad-4-swap-selected.webp",
+            "build154-aura-framed-pad-4-swap-selected.webp",
+            "build154-aura-pad-4-swap-selected.webp",
             "Tap a photo to move it."
           ],
           [
-            "build148-aura-framed-pad-5-swapped.webp",
-            "build148-aura-pad-5-swapped.webp",
+            "build154-aura-framed-pad-5-swapped.webp",
+            "build154-aura-pad-5-swapped.webp",
             "Tap another photo to swap them."
           ]
         ]
@@ -220,14 +220,14 @@
         "heading": "Start a mixed batch",
         "steps": [
           "Open Decks ▸ Settings… ▸ Destinations ▸ Add a Photo Frame…. Select your frame and orientation, click Done, then Save Changes.",
-          "Open Home (⌘1) and choose the frame from the size menu. Frame layouts lists Smart Layout first. Click it, then choose your photos from Photos and click Continue, or click Choose Files…."
+          "Open Home (⌘1) and choose the frame from the size menu; Vertical and Horizontal beside it turn a frame that can stand either way. Frame layouts lists Smart Layout first, then Fill Frame. Click it, then choose your photos from Photos and click Continue, or click Choose Files…."
         ]
       },
       {
         "heading": "Review, swap, and finish",
         "steps": [
           "Open Layout in the panel on the right. It shows Vertical Pairs and Horizontal Photos for a landscape frame, or Horizontal Pairs and Vertical Photos for an upright frame. An unmatched photo in the pairing group uses a soft background.",
-          "Click two photos to swap them, or drag one onto another. Choose White or Black for pairs and White Border, Black Border, or Fill for individual pages.",
+          "Click two photos to swap them, or drag one onto another. Choose White or Black for pairs. Individual pages start as Fill Frame; choose White Border or Black Border to show the whole photo.",
           "Click Create Project, review the pages, and use File ▸ Export… to save images to Photos or a folder. Then add them in the Aura app. The same grouping and crop considerations apply on Mac."
         ]
       },
@@ -239,7 +239,7 @@
       }
     ],
     "shot": null,
-    "source": "Decks source 42c30ae (build 148): SocialHome.swift (Frame layouts, More Layouts / Fewer Layouts), SocialStartFlow.swift (Layout panel hosts SocialSmartGroups for frame-smart; frameSuggestionRow), SocialSmartGroups.swift, SocialFrameStarts.swift, SocialSmartLayout.swift, Mac/DecksLayoutBuilder.swift. Removed screenshots of the old Smart Layout step screens and the pre-148 start screen (oct08-smart-*-1-frame, 3-groups, 4-swap-selected, 5-swapped, 6-styles, 8-editor-single, pad-5-swapped, build132-mac-builder). NEEDS-SHOT: iPhone Home with an Aura frame selected, showing Frame layouts with Smart Layout first. NEEDS-SHOT: iPhone start screen for Smart Layout with the Layout panel open on Vertical Pairs and Horizontal Photos. NEEDS-SHOT: iPad landscape start screen with the Layout panel beside the pages. NEEDS-SHOT: Mac Smart Layout start with the Layout panel."
+    "source": "Decks source 42c30ae (build 148): SocialHome.swift (Frame layouts and Layouts rows; build 152 removed More Layouts), SocialStartFlow.swift (Layout panel hosts SocialSmartGroups for frame-smart; frameSuggestionRow), SocialSmartGroups.swift, SocialFrameStarts.swift, SocialSmartLayout.swift, Mac/DecksLayoutBuilder.swift. Removed screenshots of the old Smart Layout step screens and the pre-148 start screen (oct08-smart-*-1-frame, 3-groups, 4-swap-selected, 5-swapped, 6-styles, 8-editor-single, pad-5-swapped, build132-mac-builder). NEEDS-SHOT: iPhone Home with an Aura frame selected, showing Frame layouts with Smart Layout first. NEEDS-SHOT: iPhone start screen for Smart Layout with the Layout panel open on Vertical Pairs and Horizontal Photos. NEEDS-SHOT: iPad landscape start screen with the Layout panel beside the pages. NEEDS-SHOT: Mac Smart Layout start with the Layout panel."
   },
   {
     "slug": "smart-layout-builder",
@@ -849,9 +849,16 @@
       {
         "heading": "Set up the panels",
         "steps": [
-          "Choose Panorama on Home and add your photo. In the start screen’s Layout tool, set Panels to the number of linked panels, from 2 to 6.",
+          "Choose a panorama on Home and add your photo. With Threads chosen, Home leads with Full-Screen Panorama (slides the shape of the phone screen), Tall Panorama (9:16 slides), and Panorama (4:5, shown whole in the feed). Decks gives the photo as many panels as its width needs, from 2 to 6; change the number with Panels in the start screen’s Layout tool.",
           "In the editor, open Layout and tap Preview Panorama to see adjacent rounded panels in a horizontally scrolling preview, like a Threads carousel.",
-          "In an existing project, the editor’s options also offer Split Photo into Panorama Panels."
+          "In an existing project, the editor’s options also offer Split Photo into Panorama Panels. Layout’s panel shapes include TH, the phone screen’s shape for Threads’ full-screen viewer; the feed shows 3:4."
+        ],
+        "shots": [
+          [
+            "build154-framed-phone-threads.webp",
+            "build154-phone-threads.webp",
+            "With Threads chosen, Home leads with Full-Screen Panorama, Tall Panorama, and Panorama."
+          ]
         ]
       },
       {
@@ -868,8 +875,9 @@
       {
         "heading": "Set up the panels",
         "steps": [
-          "Choose Panorama on Home and pick your photo. In the Layout panel, set the number of linked panels, from 2 to 6.",
+          "Choose a panorama on Home and pick your photo. With Threads chosen, Home leads with Full-Screen Panorama, Tall Panorama (9:16), and Panorama (4:5). Decks gives the photo as many panels as its width needs, from 2 to 6; change the number with Panels in the Layout panel.",
           "In an existing project, select a photo and choose Edit ▸ Split Panorama into 3 Pages, or click the same button in Layout.",
+          "Select a panel and use the inspector’s Panorama section to change Panels, Panel Shape (TH is the phone screen’s shape for Threads’ full-screen viewer; the feed shows 3:4), Match Photo, or Whole Photo as Last Page.",
           "Panels stay together when you select, duplicate, or delete pages in the page strip."
         ]
       },
@@ -880,6 +888,13 @@
           "In Threads or Instagram, select the exported images in their panel order to build the carousel. Decks prepares the files; you choose and publish the post in the destination app."
         ]
       }
+    ],
+    "ipadShots": [
+      [
+        "build154-framed-pad-threads.webp",
+        "build154-pad-threads.webp",
+        "Panoramas for Threads on iPad."
+      ]
     ]
   },
   {
@@ -1040,7 +1055,7 @@
         "steps": [
           "Open Export in the editor. Pages saves each page as designed; choose all pages or the current page where offered.",
           "Open Export Settings to choose width in pixels, JPEG or PNG, sharpening, and other output settings. JPEG also has quality and file-size controls; projects with video offer video output options.",
-          "Review the previews, then tap Save to Photos or Share. Allow Photos access when requested so Decks can save the result."
+          "Review the previews, then tap Save to Photos or Share. Share sends pages as photos and clips as videos, so photo apps such as Aura appear in the list. Allow Photos access when requested so Decks can save the result."
         ]
       },
       {
@@ -1337,12 +1352,12 @@
     "title": "Instagram, Threads, frames & video",
     "summary": "Choose a layout for the place your photos will go.",
     "group": "Save & Share",
-    "source": "Decks source 42c30ae (build 148): SocialDestinations.swift (Kit shortName: Story, Post 4:5, Square, Threads, Video, TV), SocialHome.swift (destination chips, Frame layouts, More Layouts), SocialStartFlow.swift (frameSuggestionRow), Mac/DecksHelpContent.swift, Mac/DecksDestinations.swift. Kept build132-mac-frame-menu: the Add a Photo Frame sheet is unchanged.",
+    "source": "Decks source 42c30ae (build 148): SocialDestinations.swift (Kit shortName: IG Post, IG Post 4:5, IG Square, IG Story, Threads, Video, TV, frame name), SocialHome.swift (destination chips, Frame layouts, Layouts row), SocialStartFlow.swift (frameSuggestionRow), Mac/DecksHelpContent.swift, Mac/DecksDestinations.swift. Kept build132-mac-frame-menu: the Add a Photo Frame sheet is unchanged.",
     "sections": [
       {
         "heading": "Instagram & Threads",
         "steps": [
-          "On Home, tap a destination at the top: Post 3:4 or Post 4:5 for an Instagram post, Story for Instagram stories, or Threads. Then pick a layout and select your photos.",
+          "On Home, tap a destination at the top: IG Post or IG Post 4:5 for an Instagram post, IG Story for Instagram stories, or Threads. Threads leads with Panoramas for Threads: Full-Screen Panorama, Tall Panorama, and Panorama. Then pick a layout and select your photos.",
           "Keep a consistent background and frame across a series. Panorama can split a photograph into ordered carousel panels.",
           "Export to Photos, select the finished images in order in Instagram or Threads, and paste the caption you prepared in Decks."
         ]
@@ -1351,14 +1366,14 @@
         "heading": "Aura & other digital frames",
         "steps": [
           "In Settings → Destinations, choose Add a Photo Frame. Select the model and orientation to add its size to Home.",
-          "With the frame chosen on Home, Frame layouts lists Smart Layout first for a mixed batch: vertical photos pair up and horizontal photos get a page each. In the start screen’s Layout tool, you can swap pairs and pick each group’s look. Or pick one of four layouts that avoid empty bars: Two Side by Side, Soft Background, Full Screen, or Thin Border. An upright frame stacks two horizontal photos instead. If your photos suit another layout better, Layout suggests it. More Layouts, under the four, shows the rest.",
-          "Export the finished images to Photos. Add them in the Aura app or your frame’s usual uploader, then review that app’s crop preview."
+          "With the frame chosen on Home, Frame layouts lists Smart Layout first for a mixed batch: vertical photos pair up and horizontal photos get a page each. In the start screen’s Layout tool, you can swap pairs and pick each group’s look. Smart Layout’s single pages start as Fill Frame. Or pick another layout that avoids empty bars: Fill Frame, Two Side by Side, Soft Background, or Thin Border. An upright frame stacks two horizontal photos instead. If your photos suit another layout better, Layout suggests it. The Layouts row under them has the rest.",
+          "Tap Share and choose Aura, or save to Photos and add them in the Aura app or your frame’s usual uploader. Review that app’s crop preview."
         ]
       },
       {
         "heading": "Photos in videos",
         "steps": [
-          "Choose Video for a 16:9 page, or match your editing project’s shape. Tap More (…) at the top of Home to see every destination. A background can give vertical photos room inside a wide video.",
+          "Choose Video for a 16:9 page, or match your editing project’s shape. Tap … at the top of Home to see every destination. A background can give vertical photos room inside a wide video.",
           "Add a title, photo credit, or camera details in Decks. Check that the text will be readable when the image appears in the video.",
           "Export JPEG or PNG pages at a suitable width, then import them into your video editor. Set the duration and transitions there. A still image export is not a finished video."
         ]
@@ -1368,7 +1383,7 @@
       {
         "heading": "Instagram & Threads",
         "steps": [
-          "On Home, choose Instagram post, Instagram stories, or Threads from the size menu. Then click a layout and choose your photos.",
+          "On Home, choose IG Post, IG Story, or Threads from the size menu. Threads leads with Panoramas for Threads: Full-Screen Panorama, Tall Panorama, and Panorama. Then click a layout and choose your photos.",
           "Keep a consistent background and frame across a series. Panorama can split a photograph into ordered carousel panels.",
           "Export to Photos or a folder. In Instagram or Threads, select the finished images in order and paste the caption you copied from Caption."
         ]
@@ -1377,14 +1392,14 @@
         "heading": "Aura & other digital frames",
         "steps": [
           "Choose Decks ▸ Settings… ▸ Destinations and click Add a Photo Frame…. Check your model and orientation, click Done, then click Save Changes to add its size to Home.",
-          "With the frame chosen on Home, Frame layouts lists Smart Layout first for a mixed batch: vertical photos pair up and horizontal photos get a page each, and the Layout panel lets you swap pairs and pick each group’s look. Or pick one of four layouts that avoid empty bars: Two Side by Side, Soft Background, Full Screen, or Thin Border. An upright frame stacks two horizontal photos instead. If your photos suit another layout better, Layout suggests it. More Layouts shows the rest. Save the result as a template for future batches.",
-          "Export the finished images to Photos or a folder. Add them in the Aura app or your frame’s usual uploader, then review that app’s crop preview."
+          "With the frame chosen on Home, Frame layouts lists Smart Layout first for a mixed batch: vertical photos pair up and horizontal photos get a page each, and the Layout panel lets you swap pairs and pick each group’s look. Smart Layout’s single pages start as Fill Frame. Or pick another layout that avoids empty bars: Fill Frame, Two Side by Side, Soft Background, or Thin Border. An upright frame stacks two horizontal photos instead. If your photos suit another layout better, Layout suggests it. The Layouts row under them has the rest. Save the result as a template for future batches.",
+          "Export the finished images to Photos or a folder, or share them. Add them in the Aura app or your frame’s usual uploader, then review that app’s crop preview."
         ]
       },
       {
         "heading": "Photos in videos",
         "steps": [
-          "Choose Video (YouTube, Vimeo, etc.) from the size menu for a 16:9 page, or Custom Size… to match your editing project’s shape. A background can give vertical photos room inside a wide video.",
+          "Choose Video from the size menu for a 16:9 page, or Custom Size… to match your editing project’s shape. A background can give vertical photos room inside a wide video.",
           "Add a title, photo credit, or camera details in Decks. Check that the text will be readable when the image appears in the video.",
           "Export JPEG or PNG pages at a suitable Image Width, then import them into your video editor. Set the duration and transitions there. A still image export is not a finished video."
         ]
