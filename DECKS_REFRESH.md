@@ -143,3 +143,21 @@ No new hardware Aura test or cross-device acceptance is claimed. An isolated Deb
 Replaced the YouTube example with the supplied 09141.jpg, rendered by current IngestSocialKit in an isolated store. The complete photograph fits within a 1920×1080 page with a soft photo background with a thin white frame and no added slogan. Native PNG and lossless WebP have versioned URLs; historical assets remain. The renderer recipe is scripts/render_decks_youtube.swift and asset hashes/provenance are in oct06-assets.json.
 
 Removed the hero “See what you can make” action; Examples navigation and anchors remain. Replaced slogan fragments with feature descriptions throughout the homepage and clarified Smart Layout orientation as vertical/horizontal on both homepage and Aura page. Shared editorial direction is now recorded in MESSAGING.md for every site.
+
+## Build 148 refresh — October 9, 2026
+
+Brian asked for a comprehensive update to match the Decks builds since 132. Native source: `photo-importer-details` at `42c30ae` (build 148, branch `codex/camera-details`). A read-only App Store Connect check showed iOS 132 and Mac 125 as the newest external TestFlight builds; 133–148 were device installs only. Brian chose to publish the build 148 description anyway and to say nothing about Decks Pro.
+
+- **Homepage:** device trio, steps, smart layouts for any destination, Home and templates, camera details with the seven designs, a new `#date-stamp` section, the Fujifilm recipe in the card, platforms, and the extra feature notes. Every earlier anchor is kept.
+- **Aura page:** Home in place of Layout Builder; the step carousel now uses build 148 iPad captures of the pages screen and Layout panel. The share-sheet step and the exported examples are unchanged.
+- **Help center:** all 23 guides checked against build 148 source and in-app help, and two new guides added, `date-stamp` and `smart-layout-builder`. The support quick reference has a `#date-stamp` block. Sources are in `docs/decks/VALIDATION.md`.
+- **Privacy:** applied the native Date Stamp draft (`docs/social/date-stamp-privacy-draft.md`), adding a “Date stamps and places” section (`#date-stamps`), Apple Maps, and favorite places plus the last stamp style in sync. The draft’s “Layout Builder order” became “the order of layouts on Home”.
+- **Portfolio:** updated the card copy and image (`featured-decks-devices-build148.webp`) and rebuilt `social-projects-v15.png`. The Decks share card is `social-build148.png`.
+- **Assets:** provenance is in `assets/SOURCES.md` (“Build 148 refresh”) and `oct06-assets.json`.
+  - The captures came from new XCTest website tests run on fresh simulators seeded only with tutorial photos, plus Mac window captures from an isolated Debug store.
+  - Native renders come from `scripts/render_decks_build148.swift`.
+  - Device bezels reuse the existing Apple Frames output, because frames-cli could not be installed this time.
+
+Test changes were made only in a scratch clone of the app repo: `SocialWebsiteBuild148UITests.swift`, and fixes to `testSmartLayoutWebsiteCaptures` for the build 147 pages screen. They were not committed to the app repo. The iPhone Aura capture still cannot reach the All Destinations chip.
+
+App-side mismatch to fix: the iOS in-app help and the introduction’s last button still say “Layout Builder” (`SocialHelpContentPhone.swift`, `SocialIntroduction.swift`).

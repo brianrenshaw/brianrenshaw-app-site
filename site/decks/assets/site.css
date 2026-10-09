@@ -158,3 +158,18 @@ ol.benefits{list-style:none;padding:0}
 .step-carousel{position:relative}
 .step-carousel.is-carousel .step-carousel-controls{position:absolute;left:0;right:0;margin:0}
 .smart-steps.is-carousel .smart-shots{margin-bottom:60px}
+.capture-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin:40px 0 0;align-items:start}
+.capture-row figure{margin:0;text-align:center}
+.capture-row a{display:block;width:fit-content;max-width:100%;margin:auto}
+.capture-row img{display:block;width:100%;max-width:280px;height:auto}
+.capture-row figcaption{margin-top:14px}
+.design-strip{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:40px}
+.stamp-results{margin-top:40px}
+@media(max-width:760px){.capture-row{grid-template-columns:1fr 1fr;gap:20px}.design-strip{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.capture-row{grid-template-columns:1fr}.capture-row img{max-width:260px}}
+.decks-home .designs-heading{margin:64px 0 10px}
+.smart-steps-wide{grid-template-columns:repeat(2,minmax(0,1fr));gap:64px 40px}
+.smart-steps-wide .smart-shots .native-shot img{max-width:100%}
+@media(max-width:760px){.smart-steps-wide{grid-template-columns:1fr}}
+.smart-steps-wide .smart-shots .native-shot img{max-height:560px;width:auto;margin:0 auto}
+@media(max-width:560px){.smart-steps-wide .smart-shots .native-shot img{max-height:300px}}

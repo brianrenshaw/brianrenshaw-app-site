@@ -28,12 +28,12 @@ save(Image.open(SITE / 'ingest/assets/hero-macbook-workflow-0.9.8.webp').convert
 # decksphotoapp.com (aspect 1.55; Mac 86% wide at left 7%, bottom 3%; iPad 50%
 # at right 0; iPhone 23% at left 0; later devices sit in front).
 canvas = Image.new('RGBA', (2400, round(2400 / 1.55)))
-for name, share, left, right, bottom in [('oct06-framed-mac.webp', .86, .07, None, .03),
-                                          ('oct06-framed-builder.webp', .50, None, 0, 0),
-                                          ('oct06-framed-phone-camera.webp', .23, 0, None, 0)]:
+for name, share, left, right, bottom in [('build148-framed-mac-home.webp', .86, .07, None, .03),
+                                          ('build148-framed-pad-layout-panel.webp', .50, None, 0, 0),
+                                          ('build148-framed-phone-details-card.webp', .23, 0, None, 0)]:
     device = Image.open(SITE / 'decks/assets' / name).convert('RGBA')
     width = round(canvas.width * share)
     device = device.resize((width, round(device.height * width / device.width)), Image.Resampling.LANCZOS)
     x = round(canvas.width * left) if left is not None else canvas.width - width - round(canvas.width * right)
     canvas.alpha_composite(device, (x, canvas.height - device.height - round(canvas.height * bottom)))
-save(canvas, 'featured-decks-devices-oct06.webp')
+save(canvas, 'featured-decks-devices-build148.webp')

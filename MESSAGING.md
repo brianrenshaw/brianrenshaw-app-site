@@ -297,7 +297,7 @@ Keep the headline and the factual claims plain. Snark rides in the section copy,
 
 **Audience:** Photographers who know how they want their work presented, but face limited tools or painstaking, repeated layout work in Photoshop.
 
-**Headline:** Give your photos and videos the presentation they deserve.
+**Headline:** Give your photos the presentation they deserve. (Photo-first since October 6; video stays visible in its own section.)
 
 **Problem:** You know how you want your photos to look. Getting there can mean working around limited tools, painstakingly arranging everything in Photoshop, and repeating the same steps for your next set of photos.
 
@@ -309,7 +309,7 @@ Keep the headline and the factual claims plain. Snark rides in the section copy,
 
 **Visual direction:** Photo editorial. Light paper, charcoal system type, generous spacing, varied actual photographs and readable native controls. Still images only. Pair finished results with the tools behind them. Use original native exports and current beta interfaces in isolated demo stores; document build/source/dimensions. Preserve older asset URLs.
 
-**Availability:** Public TestFlight beta at https://testflight.apple.com/join/SAMjeMy5. App Store Connect verified iPhone/iPad build 113 and native Mac build 112 in external testing on October 6. Requires iOS/iPadOS 18+ or macOS 15+ on Apple silicon. Dedicated site: https://decksphotoapp.com/.
+**Availability:** Public TestFlight beta at https://testflight.apple.com/join/SAMjeMy5. Since October 9 the site describes build 148. A read-only App Store Connect check that day showed iOS 132 and Mac 125 as the newest builds with external testers; builds 133–148 had only been installed on Brian’s own devices. Brian chose to publish the build 148 description anyway. Recheck before relying on this line. Requires iOS/iPadOS 18+ or macOS 15+ on Apple silicon. Dedicated site: https://decksphotoapp.com/.
 
 **Factual boundaries:**
 
@@ -485,3 +485,13 @@ Show the native Mac Layout Builder and named frame destinations. Guide users thr
 ## October 8 copy direction
 
 Use direct descriptions of what Decks does. Avoid paired slogan fragments such as “A whole batch. Each photo in its place.” and invented setups about a weekend’s photos. Use vertical/horizontal for photo orientation so readers do not confuse portrait and landscape with subject matter. Remove the hero’s secondary “See what you can make” action; retain the Examples navigation link and anchor.
+
+## Decks build 148 website update — October 9, 2026
+
+Home replaces “Layout Builder” on every platform; never use the old name. Describe the flow as: choose a layout on Home, choose photos, review every page on one screen (Layout, Frame, and Camera tools; Photos per Page; Split Page and Join with Next), then Create. Smart layouts (Singles & Pairs, Singles & Threes, Singles & Fours, Build Your Own) work for any page shape; the Aura frame Smart Layout is one case of them. Describe grouping by photo shape and the 10-minute option, not subject matching.
+
+Camera details are one card with Placement (Under, Above, Side, On Photo, Free), Shows, a Fujifilm Recipe section, and Style. The seven designs are Gear Band, Wall Label, Spec Sheet, Film Strip, Corner Mark, Spine, and Details List. Do not describe camera styles, presets, or a Mats row.
+
+Date Stamp factual limits: a custom date or place changes only the stamp, never the photo or its saved date and location. Place names come from the photo’s own location through Apple Maps. Decks asks for location only when someone taps Current Location, and does not store or track it. The styles are Film, Digital, Clean, and Typewriter.
+
+Pricing: say nothing about Decks Pro, trials, or which features are paid. Brian decided this on October 9. Film is listed as a style without comment; examples and screenshots use Digital, Clean, or Typewriter. “Free while in beta” on the Aura page stays.

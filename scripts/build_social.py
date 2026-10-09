@@ -46,7 +46,7 @@ text(48,100,'Apps and projects for photography, reading, good meals, baseball, a
 # its own site hero: a MacBook for Ingest, the device trio for Decks. The other nine sit in a 3x3 grid.
 featured=[
  ('Ingest','Mac app · Free during beta','Modern photo\nmanagement for Mac.','#fffefb','#242622','#86520b','ingest/assets/icon.png','assets/featured-ingest-0.9.8.webp'),
- ('Decks','iPhone, iPad & Mac · Public beta','Give your photos the\npresentation they deserve.','#eae8e2','#242422','#242422','decks/assets/icon.png','assets/featured-decks-devices-oct06.webp'),
+ ('Decks','iPhone, iPad & Mac · Public beta','Give your photos the\npresentation they deserve.','#eae8e2','#242422','#242422','decks/assets/icon.png','assets/featured-decks-devices-build148.webp'),
 ]
 for i,(name,kind,tagline,bg,ink,accent,path,shot) in enumerate(featured):
     x=48+i*558;y=140;w=546;h=156
@@ -76,4 +76,4 @@ for i,(name,kind,bg,ink,path,symbol) in enumerate(projects):
     text(x+84,y+20,name,17,ink)
     text(x+84,y+46,kind,14,ink)
 text(48,596,'brianrenshaw.app',16,'#65685f')
-canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v14.png',optimize=True)
+canvas.resize((1200,630),Image.Resampling.LANCZOS).save(SITE/'assets/social-projects-v15.png',optimize=True)

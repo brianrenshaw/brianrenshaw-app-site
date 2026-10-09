@@ -1,170 +1,217 @@
 [
   {
     "slug": "templates",
-    "title": "Start with Layout Builder",
-    "summary": "Build a reusable design around your own photos.",
+    "title": "Start from Home",
+    "summary": "Choose a destination and a layout, then your photos, and adjust the pages before you create the project.",
     "group": "Getting Started",
     "sections": [
       {
-        "heading": "Choose a starting layout",
+        "heading": "Choose a destination and layout",
         "steps": [
-          "On Home, open Layout Builder. Choose the destination and page orientation, then pick One Photo, Two Photos, a collage, Panorama, Strip, Contact Sheet, or another starting layout.",
-          "Choose your photos. Swipe through their previews as you adjust the design.",
-          "Choose a background and frame. Use This Page or All Pages to control which pages change.",
-          "Add optional camera details, then tap Create Project. You can fine-tune everything in the editor."
+          "Open Home. On iPhone, Home is the first tab in the bar at the bottom, beside Templates and Projects. On iPad, it is in the sidebar.",
+          "Tap a destination at the top of Home, such as Post 3:4, Post 4:5, Story, Threads, or Video. Each one shows its page shape beside the name. Tap More (…) for every destination. Choosing one here does not change your saved default.",
+          "Where the page can turn, choose Vertical or Horizontal below the destinations. Stories, TV, and square pages already have a fixed shape.",
+          "Home lists Favorites, Smart layouts, Layouts, and Camera Details Designs. Each row scrolls sideways, and each card shows sample pages in the page’s own shape.",
+          "Tap a layout, such as One Photo, Two Photos, Four Photos, Gallery Print, Panorama, Strip, or Contact Sheet, then choose your photos."
+        ],
+        "shots": [
+          [
+            "build148-framed-phone-home.webp",
+            "build148-phone-home.webp",
+            "Home on iPhone: destination choices, smart layouts, and layouts."
+          ]
+        ]
+      },
+      {
+        "heading": "Adjust the pages before you create",
+        "steps": [
+          "Decks shows your pages right away. The current page is large, a strip below shows every page, and the title shows the count, such as 5 photos · 3 pages.",
+          "Tap a page in the strip to see it. Tap Change Photos to pick a different set.",
+          "Use the tools at the bottom: Layout, Frame, and Camera. Each opens a panel over the pages; tap the tool again or Close to hide it. On a wide iPad, the panel sits beside the pages.",
+          "Layout switches to another layout, with smart layouts first. It also holds Photos per Page for one-photo and smart layouts, Photo Arrangement (Side by Side or Stacked) for two-photo layouts, and Panels for a panorama.",
+          "Frame sets the Border and Background, and Depth for Gallery Print. Camera turns on Camera Details and chooses which details show.",
+          "With more than one photo, choose All Photos or This Photo (All Pages or This Page for layouts with several photos) to decide what your change applies to.",
+          "Tap Create to open the project in the editor. You can change everything there."
+        ],
+        "shots": [
+          [
+            "build148-framed-phone-pages.webp",
+            "build148-phone-pages.webp",
+            "Every page on one screen, with the page strip and tools."
+          ],
+          [
+            "build148-framed-phone-layout-panel.webp",
+            "build148-phone-layout-panel.webp",
+            "The Layout panel with Photos per Page."
+          ]
+        ]
+      },
+      {
+        "heading": "Put photos on shared pages",
+        "steps": [
+          "In Layout, Photos per Page offers One, 2, 3, or Grid of 4. With 2 or 3, choose Stacked or Side by Side. Photos shaped across the page share a page; photos shaped like the page keep a page each.",
+          "Turn on Only if taken within 10 minutes to share a page only between photos taken close together.",
+          "Under the pages, Split Page gives each photo on the current page its own page. Join with Next puts the current page’s photos with the next page’s. You can also drag a page in the strip onto another page to join them. A page holds up to four photos."
+        ],
+        "shots": [
+          [
+            "build148-framed-phone-split.webp",
+            "build148-phone-split.webp",
+            "Select a shared page to split it or join it with the next page."
+          ]
         ]
       },
       {
         "heading": "Your destinations",
         "steps": [
-          "Setup narrows the size picker to the destinations you choose. Skip Setup opens the full catalog with a 3:4 starting canvas.",
-          "Use the destination selector above Layout Builder to preview another size. This does not change your saved default.",
-          "Choose Vertical or Horizontal below the destination to orient the whole page. Photo frames use the orientation you selected for that frame; Stories, TV, and square pages already have a fixed shape. Strip and Contact Sheet keep their Native Size.",
-          "Settings → Destinations lets you add destinations and photo frames. Run Setup Again revisits your choices; skipping it restores the full catalog."
+          "Setup chooses which destinations appear at the top of Home. Skip Setup opens the full catalog with a 3:4 starting canvas.",
+          "Settings → Destinations lets you add destinations and photo frames. Run Setup Again revisits your choices.",
+          "Settings → Start Page chooses whether Decks opens to Home, Templates, or Projects."
         ]
       },
       {
-        "heading": "Two-photo arrangements",
+        "heading": "Arrange your layouts",
         "steps": [
-          "After selecting photos, choose Side by Side or Stacked above the layout preview.",
-          "Your chosen arrangement stays selected when you change page shape or go Back and Next. In the editor, open Layout to change it later."
-        ]
-      },
-      {
-        "heading": "Arrange your starting layouts",
-        "steps": [
-          "Hold a layout card on Home, then drag it into your preferred position. Decks remembers that order.",
-          "Tap the ⓘ beside Start for a quick reminder of the walkthrough options."
+          "Touch and hold a card in Layouts, then drag it to a new position, or choose Move Earlier or Move Later. Decks remembers that order on your other devices.",
+          "Choose Favorite in the same menu to add a layout to Favorites at the top of Home. Remove Favorite takes it off."
         ]
       }
     ],
     "shot": [
-      "oct06-framed-builder.webp",
-      "oct06-next-ipad-builder-upright.webp",
-      "Landscape iPad Layout Builder with photo preview and page-size controls."
+      "build148-framed-mac-home.webp",
+      "build148-mac-home.webp",
+      "Home on Mac."
     ],
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "source": "Decks source 42c30ae (build 148): SocialHome.swift (destination chips, Home sections, context menus), SocialStartFlow.swift (pagesScreen, toolSections, photosPerPage, pagesStrip, pageActions), SocialStartPage.swift, Mac/DecksLayoutBuilder.swift, Mac/DecksRootView.swift, Mac/DecksHelpContent.swift. Removed screenshots of the pre-148 start screens (oct06-framed-builder, build132-mac-builder). NEEDS-SHOT: iPhone Home with destination chips, Smart layouts and Layouts rows. NEEDS-SHOT: iPhone start screen after choosing photos, with the page strip, “5 photos · 3 pages” title and the Layout panel open showing Photos per Page. NEEDS-SHOT: Mac Home and the Mac one-screen start with Split Page and Join with Next.",
     "macSections": [
       {
-        "heading": "Choose a starting layout",
+        "heading": "Choose a destination and layout",
         "steps": [
-          "Click Layout Builder in the sidebar, or press ⌘1. Choose a size from the menu at the top, then click One Photo, Two Photos, Panorama, Strip, Contact Sheet, or another starting layout.",
-          "Choose your photos from your Photos library and click Continue, or click Choose Files… to pick files in Finder.",
-          "Choose a background and frame. With more than one photo, choose All Photos or This Photo to decide which photos change. Use the arrows under the preview to see each page.",
-          "Turn on optional camera details in Finishing Touches, then click Create Project. You can fine-tune everything in the editor."
+          "Click Home in the sidebar, or press ⌘1. Choose a size from the menu at the top, and Vertical or Horizontal beside it. Changing the size here does not change your saved default.",
+          "Home lists Favorites, Smart layouts, Layouts, and Camera Details Designs. Click a layout, or Control-click it and choose Use This Layout.",
+          "Choose your photos from your Photos library and click Continue, or click Choose Files… to pick files in Finder."
+        ]
+      },
+      {
+        "heading": "Adjust the pages before you create",
+        "steps": [
+          "Decks shows the current page large, with Page 1 of 3 and arrows below it, and a strip of every page. The bar at the bottom shows the count, such as 5 photos · 3 pages.",
+          "Choose Layout, Frame, or Camera at the top of the panel on the right. Layout changes the layout, Photos per Page, and Photo Arrangement. Frame sets the Border, Background, and Depth. Camera turns on Camera Details and chooses the details.",
+          "With more than one photo, Frame and Camera offer All Photos or This Photo (All Pages or This Page) to decide what your change applies to.",
+          "On shared pages, Split Page and Join with Next sit under the strip. Drag a page onto another to join them.",
+          "Click Create Project to open the project in the editor, or Cancel to go back to Home."
         ]
       },
       {
         "heading": "Your destinations",
         "steps": [
           "Setup narrows the size menu to the destinations you choose. Skip Setup shows every size instead.",
-          "Use the size menu at the top of Layout Builder to try another size. This does not change your saved default. Custom Size… makes any shape between 1:10 and 10:1.",
-          "Choose Vertical or Horizontal beside the size menu to orient the whole page. Stories, TV, and square pages already have a fixed shape. Strip and Contact Sheet keep their Native Size.",
+          "Use the size menu at the top of Home to try another size. Custom Size… makes any shape between 1:10 and 10:1.",
           "Edit Destinations… in the size menu opens Decks ▸ Settings… ▸ Destinations. Add destinations and photo frames, choose a default, or Run Setup Again…, then click Save Changes."
         ]
       },
       {
         "heading": "Two-photo arrangements",
         "steps": [
-          "For Two Photos, choose Side by Side or Stacked above the background choices in the walkthrough.",
-          "Your arrangement stays selected when you go Back and Next. In the editor, open Layout and turn Vertical Pair on or off to change it later."
+          "For Two Photos, choose Side by Side or Stacked under Photo Arrangement in the Layout panel.",
+          "In the editor, open Layout and turn Vertical Pair on or off to change it later."
         ]
       },
       {
         "heading": "Arrange your starting layouts",
         "steps": [
-          "Drag a layout card in Layout Builder to a new position. Decks remembers that order on your other devices.",
-          "Or Control-click a layout and choose Move Earlier or Move Later."
+          "Drag a card in Layouts to a new position, or Control-click it and choose Move Earlier or Move Later. Decks remembers that order on your other devices.",
+          "Control-click a layout and choose Favorite to add it to Favorites at the top of Home."
         ]
       }
     ],
-    "extraShots": [
+    "ipadShots": [
       [
-        "build132-mac-builder.webp",
-        "build132-mac-builder.png",
-        "Mac Layout Builder with a frame destination and Smart Layout."
+        "build148-framed-pad-home.webp",
+        "build148-pad-home.webp",
+        "Home on iPad, with your library in the sidebar."
       ]
     ]
   },
   {
     "slug": "smart-layout",
     "title": "Smart Layout for Aura frames",
-    "summary": "Prepare vertical and horizontal photos together, then choose which photos appear in each pair.",
+    "summary": "Prepare vertical and horizontal photos together for a digital frame, then choose which photos appear in each pair.",
     "group": "Getting Started",
     "sections": [
       {
         "heading": "Choose your frame",
         "steps": [
           "In Settings → Destinations, choose Add a Photo Frame. Select your Aura model and orientation.",
-          "Return to Layout Builder, choose that frame in the size menu, then choose Smart Layout. Select the photos you want to prepare together."
+          "On Home, tap your frame at the top. Home shows Frame layouts sized for it: Smart Layout first, then Two Side by Side (Two Stacked on an upright frame), Soft Background, Full Screen, and Thin Border. More Layouts shows the rest; Fewer Layouts hides them again.",
+          "Tap Smart Layout and select the photos you want to prepare together."
         ],
         "shots": [
           [
-            "oct08-smart-spot-phone-1-frame.webp",
-            "oct08-smart-phone-1-frame.webp",
-            "Choose your Aura frame in Layout Builder. Smart Layout appears first."
+            "build148-aura-framed-pad-1-frame.webp",
+            "build148-aura-pad-1-frame.webp",
+            "Aura Carver chosen on Home, with Smart Layout first under Frame layouts."
           ]
         ]
       },
       {
         "heading": "Review the automatic arrangement",
         "steps": [
+          "Decks shows the pages right away, with a strip of every page below.",
           "For a landscape frame, vertical photos are paired two to a page and horizontal photos get their own pages. An unmatched vertical photo gets a soft background. Square photos get their own pages.",
           "For an upright frame, horizontal photos are stacked in pairs and vertical photos get their own pages.",
           "Within each group, Decks starts in capture-date order when dates are available. This is an arrangement by photo shape, not face recognition or subject matching."
         ],
         "shots": [
           [
-            "oct08-smart-spot-phone-3-groups.webp",
-            "oct08-smart-phone-3-groups.webp",
-            "Smart Layout groups four vertical photos into two pairs and gives the horizontal photo its own page."
+            "build148-aura-framed-pad-3-groups.webp",
+            "build148-aura-pad-3-groups.webp",
+            "The Layout panel shows the vertical pairs and the horizontal photo."
           ]
         ]
       },
       {
         "heading": "Choose the pairs and their look",
         "steps": [
-          "Tap two photos in the pairing group to swap them, or hold a photo and drag it onto another. You choose which photos belong together.",
-          "Choose White or Black for the pair background. For individual pages, choose White Border, Black Border, or Fill. A black border blends into the frame’s own black edge, so the photo looks like part of the frame; a white border or soft background reads as a background behind the photo. Fill crops the photo to cover the screen; check faces and edges.",
-          "Create the project and review the crop on each page in the editor. You can continue editing the result."
+          "Tap Layout in the tools at the bottom. Under Vertical Pairs (Horizontal Pairs on an upright frame), tap two photos to swap them, or drag one onto another. You choose which photos belong together.",
+          "Choose White or Black for the pair background. Under Horizontal Photos (Vertical Photos on an upright frame), choose White Border, Black Border, or Fill for the individual pages. A black border blends into the frame’s own black edge, so the photo looks like part of the frame; a white border or soft background reads as a background behind the photo. Fill crops the photo a little to cover the screen; check faces and edges.",
+          "If your photos suit another frame layout better, Layout suggests it. Choose Use to switch, or Keep to stay with Smart Layout.",
+          "Tap Create and review the crop on each page in the editor. You can continue editing the result."
         ],
         "shots": [
           [
-            "oct08-smart-spot-phone-4-swap-selected.webp",
-            "oct08-smart-phone-4-swap-selected.webp",
-            "Tap a photo to select it."
+            "build148-aura-framed-pad-4-swap-selected.webp",
+            "build148-aura-pad-4-swap-selected.webp",
+            "Tap a photo to move it."
           ],
           [
-            "oct08-smart-spot-phone-5-swapped.webp",
-            "oct08-smart-phone-5-swapped.webp",
+            "build148-aura-framed-pad-5-swapped.webp",
+            "build148-aura-pad-5-swapped.webp",
             "Tap another photo to swap them."
-          ],
-          [
-            "oct08-smart-spot-phone-6-styles.webp",
-            "oct08-smart-phone-6-styles.webp",
-            "The preview shows the horizontal photo with Black Border, the starting look."
           ]
         ]
       },
       {
         "heading": "Share to Aura",
         "steps": [
-          "In the editor, tap Export, then tap Share and choose Aura. Aura uploads the pages to your frame in the background, so you don’t have to open the Aura app.",
-          "Prefer to keep a copy first? Tap Save to Photos, then add the images in the Aura app whenever you like.",
-          "A paired Decks page is one exported image, so the two photos stay together instead of being left to Aura’s automatic pairing. Decks doesn’t sign in to your Aura account.",
-          "Save a design you like as a template. To sort another mixed batch by its photo shapes, start Smart Layout again."
+          "In the editor, tap Export, then tap Share and choose Aura. The Aura app uploads the pages to your frame.",
+          "To keep a copy first, tap Save to Photos, then add the images in the Aura app.",
+          "A paired Decks page is one exported image, so the two photos stay together instead of being left to Aura’s automatic pairing. Decks does not sign in to your Aura account.",
+          "Save a design you like as a template. To sort another mixed batch by photo shape, start Smart Layout again."
         ],
         "shots": [
-          [
-            "oct08-smart-spot-phone-8-editor-single.webp",
-            "oct08-smart-phone-8-editor-single.webp",
-            "In the editor, tap Export at the top right, then Share."
-          ],
           [
             "oct08-smart-spot-phone-share-aura.webp",
             "oct08-smart-phone-share-aura.webp",
             "Choose Aura in the share sheet. Suggested contacts are blurred in this screenshot."
           ]
+        ]
+      },
+      {
+        "heading": "Smart layouts for other destinations",
+        "steps": [
+          "For any other destination, Home’s Smart layouts row offers Singles & Pairs, Singles & Threes, and Singles & Fours. Photos shaped like the page get a page each; photos shaped across it share a page, two, three, or four at a time.",
+          "Build Your Own, at the end of that row, makes a smart layout with your own rules. See Build your own smart layout."
         ]
       }
     ],
@@ -172,43 +219,121 @@
       {
         "heading": "Start a mixed batch",
         "steps": [
-          "Open Decks → Settings → Destinations → Add a Photo Frame. Select your frame and orientation, click Done, then Save Changes.",
-          "Open Layout Builder (⌘1), choose the frame from the page-size menu, and click Smart Layout. Choose Apple Photos or Files to select your photos."
+          "Open Decks ▸ Settings… ▸ Destinations ▸ Add a Photo Frame…. Select your frame and orientation, click Done, then Save Changes.",
+          "Open Home (⌘1) and choose the frame from the size menu. Frame layouts lists Smart Layout first. Click it, then choose your photos from Photos and click Continue, or click Choose Files…."
         ]
       },
       {
         "heading": "Review, swap, and finish",
         "steps": [
-          "Review Vertical Pairs and Horizontal Photos for a landscape frame, or Horizontal Pairs and Vertical Photos for a portrait frame. An unmatched photo in the pairing group uses a soft background.",
+          "Open Layout in the panel on the right. It shows Vertical Pairs and Horizontal Photos for a landscape frame, or Horizontal Pairs and Vertical Photos for an upright frame. An unmatched photo in the pairing group uses a soft background.",
           "Click two photos to swap them, or drag one onto another. Choose White or Black for pairs and White Border, Black Border, or Fill for individual pages.",
-          "Create the project, review its pages, and use File → Export to save images to Photos or a folder, then add them in the Aura app. The same grouping and crop considerations above apply on Mac."
+          "Click Create Project, review the pages, and use File ▸ Export… to save images to Photos or a folder. Then add them in the Aura app. The same grouping and crop considerations apply on Mac."
+        ]
+      },
+      {
+        "heading": "Smart layouts for other destinations",
+        "steps": [
+          "For other sizes, Home’s Smart layouts row offers Singles & Pairs, Singles & Threes, and Singles & Fours. Click Build Your Own to make your own rules."
+        ]
+      }
+    ],
+    "shot": null,
+    "source": "Decks source 42c30ae (build 148): SocialHome.swift (Frame layouts, More Layouts / Fewer Layouts), SocialStartFlow.swift (Layout panel hosts SocialSmartGroups for frame-smart; frameSuggestionRow), SocialSmartGroups.swift, SocialFrameStarts.swift, SocialSmartLayout.swift, Mac/DecksLayoutBuilder.swift. Removed screenshots of the old Smart Layout step screens and the pre-148 start screen (oct08-smart-*-1-frame, 3-groups, 4-swap-selected, 5-swapped, 6-styles, 8-editor-single, pad-5-swapped, build132-mac-builder). NEEDS-SHOT: iPhone Home with an Aura frame selected, showing Frame layouts with Smart Layout first. NEEDS-SHOT: iPhone start screen for Smart Layout with the Layout panel open on Vertical Pairs and Horizontal Photos. NEEDS-SHOT: iPad landscape start screen with the Layout panel beside the pages. NEEDS-SHOT: Mac Smart Layout start with the Layout panel."
+  },
+  {
+    "slug": "smart-layout-builder",
+    "title": "Build your own smart layout",
+    "summary": "Choose which photos get their own page and which share one, then save the rules as a template.",
+    "group": "Make It Yours",
+    "sections": [
+      {
+        "heading": "Open the builder",
+        "steps": [
+          "On Home, scroll to the end of Smart layouts and tap Build Your Own.",
+          "Or open Templates and tap Smart Layout. On iPad, Templates also has New Smart Layout in the toolbar.",
+          "To change a smart layout you saved, touch and hold it in Templates and choose Edit Smart Layout. Your changes keep its page shape."
+        ]
+      },
+      {
+        "heading": "Set the rules",
+        "steps": [
+          "Page chooses the page shape from your destinations, as on Home.",
+          "Under Photos, the photos shaped like the page get their own page. For the photos shaped across it, choose how they share a page: Stacked, 2; Stacked, 3; Side by Side, 2; Side by Side, 3; or Grid of 4. Square photos get their own page.",
+          "Turn on Only if taken within 10 minutes to share a page only between photos taken close together."
+        ]
+      },
+      {
+        "heading": "Choose the look and camera details",
+        "steps": [
+          "Under Look, choose a Background (Photo Blur, White, or Black) and a Border (None, Auto, White, or Black).",
+          "Turn on Use for New Photos to make this smart layout the default for Add Photos & Videos and Photos → Share → Decks.",
+          "Turn on Camera Details and choose which details show. For a saved smart layout, choose the details later in the editor’s Camera tool."
+        ]
+      },
+      {
+        "heading": "Preview and save",
+        "steps": [
+          "The pages at the top change as you choose. Preview With switches between Samples and My Photos. My Photos asks you to pick photos; Choose Others picks a different set. Your photos are used only for the preview.",
+          "Tap Save and name the smart layout. Decks suggests a name that describes the rules, such as Singles & Threes.",
+          "Your smart layout appears under Smart Layouts in Templates. Tap it and choose Use Template to lay out new photos, or mark it as a favorite to show it in Favorites on Home."
+        ],
+        "shots": [
+          [
+            "build148-framed-phone-builder.webp",
+            "build148-phone-builder.webp",
+            "Preview a smart layout with your own photos."
+          ],
+          [
+            "build148-framed-phone-templates.webp",
+            "build148-phone-templates.webp",
+            "A saved smart layout in Templates."
+          ]
         ]
       }
     ],
     "shot": [
-      "build132-mac-builder.webp",
-      "build132-mac-builder.png",
-      "Smart Layout appears first when you choose a digital frame."
+      "build148-framed-mac-smart-builder.webp",
+      "build148-mac-smart-builder.webp",
+      "New Smart Layout on Mac."
     ],
-    "source": "SocialSmartLayout.swift, SocialSmartGroups.swift, DecksLayoutBuilder.swift, SocialSmartLayoutTests.swift at 95a303f; native Mac inspection.",
-    "ipadShots": [
-      [
-        "oct08-smart-spot-pad-5-swapped.webp",
-        "oct08-smart-pad-5-swapped.webp",
-        "On iPad in landscape, Smart Layout opens over Layout Builder with the preview beside your photo groups."
-      ]
+    "source": "Decks source 42c30ae (build 148): SocialSmartLayoutBuilder.swift (Page, Photos, Look, Camera Details sections; Preview With Samples | My Photos; Choose Others; Save naming alert), SocialHome.swift (Build Your Own card, Edit Smart Layout context menu), SocialTemplateGallery.swift (Smart Layout / New Smart Layout, Smart Layouts section), Mac/DecksSmartLayoutBuilder.swift, Mac/DecksLibrary.swift, Mac/DecksLayoutBuilder.swift. NEEDS-SHOT: iPhone New Smart Layout builder showing the sample pages, Preview With, and the Photos rules. NEEDS-SHOT: Mac New Smart Layout builder.",
+    "macSections": [
+      {
+        "heading": "Open the builder",
+        "steps": [
+          "On Home, click Build Your Own at the end of Smart layouts. Or click Templates in the sidebar (⌘3), then New Smart Layout.",
+          "To change one you saved, Control-click it in Templates and choose Edit Smart Layout."
+        ]
+      },
+      {
+        "heading": "Set the rules and look",
+        "steps": [
+          "Page chooses the page shape from your destinations.",
+          "Under Photos, the photos shaped like the page get their own page. Choose how the others share a page: Stacked, 2; Stacked, 3; Side by Side, 2; Side by Side, 3; or Grid of 4. Square photos get their own page. Only if taken within 10 minutes limits sharing to photos taken close together.",
+          "Under Look, choose a Background and Border. Use for New Photos makes this smart layout your New Project Template.",
+          "Turn on Camera Details and choose which details show."
+        ]
+      },
+      {
+        "heading": "Preview and save",
+        "steps": [
+          "Preview With switches the pages at the top between Samples and My Photos. Choose Others picks a different set of your photos. The copies are for the preview only and are removed when the builder closes.",
+          "Click Save… and name the smart layout, or click Cancel to close without saving. It appears under Smart Layouts in Templates."
+        ]
+      }
     ]
   },
   {
     "slug": "blank",
     "title": "Start with your photos",
-    "summary": "Skip the walkthrough and build as you go.",
+    "summary": "Skip the layouts and build as you go.",
     "group": "Getting Started",
     "sections": [
       {
         "heading": "Add photos or videos",
         "steps": [
-          "Tap Add Photos & Videos at the bottom of Home. It’s available in Layout Builder, Templates, and Projects.",
+          "On iPhone, tap the round + button beside the tab bar (Add Photos & Videos). On iPad, tap Add Photos & Videos in the toolbar. It is available on Home, Templates, and Projects.",
           "Select your photos or clips, then confirm your selection. Decks opens a project using your New Project Defaults.",
           "Open Layout to choose the page shape and arrangement. Open Frame to choose None if you want a borderless start, then add styling when you need it."
         ]
@@ -217,7 +342,7 @@
         "heading": "Choose your defaults",
         "steps": [
           "In Settings → New Project Defaults, choose the template and layout used for this route and for Photos → Share → Decks.",
-          "Editing a project does not change those defaults. You can skip the walkthrough without losing the look you prefer."
+          "Editing a project does not change those defaults. A smart layout with Use for New Photos on becomes the default template."
         ]
       },
       {
@@ -229,7 +354,7 @@
       }
     ],
     "shot": null,
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "source": "Decks source 42c30ae (build 148): SocialHomeChrome.swift (floating tab bar with Add Photos & Videos), SocialHome.swift (iPad toolbar, New Project Defaults), SocialSmartLayoutBuilder.swift (Use for New Photos), Mac/DecksHelpContent.swift.",
     "macSections": [
       {
         "heading": "Add photos or videos",
@@ -244,7 +369,7 @@
         "heading": "Choose your defaults",
         "steps": [
           "In Decks ▸ Settings… ▸ General, choose the New Project Template used for imports and pasted photos. You can also Control-click a template and choose Set as Default.",
-          "Editing a project does not change that default. You can skip the walkthrough without losing the look you prefer."
+          "Editing a project does not change that default."
         ]
       },
       {
@@ -269,6 +394,7 @@
           "Swipe left or right from the empty canvas margin to change pages. Swipe up from that margin to arrange pages; swipe down to hide details. Customize these actions in Settings → Editor → Gestures, or Gestures in the page menu. Pinch to look closer, then tap Fit to return to the whole page.",
           "Tap a photo, text, logo, or camera details to select it. A blue dashed outline identifies your selection without adding a border to the exported artwork. Drag to move it. Tap Done to return to browsing. In Freeform, pinch and rotate a selected photo. Photo opens its Crop section; switch to Layer for placement and effects.",
           "Use Select Item for small or overlapping objects. Select text, then tap Edit Text to write. Dragging a fixed-layout photo adjusts it inside its frame; Photo → Position → Move Freely converts just that page to Freeform.",
+          "With Snap to Guides on in Project Options, dragged text, logos, camera details, and Freeform photos line up with the page, photos, borders, and other items. A blue guide shows what they caught.",
           "Tap Arrange beside the canvas to place the photo left, right, top, or bottom alongside its text and camera details. Cards grow to fit with room around them. Changing the photo or page shape updates the arrangement. Undo restores the whole change.",
           "Tap Done to leave the selection and browse again. Open the page indicator for Previous, Next, and Arrange Pages."
         ]
@@ -276,9 +402,9 @@
       {
         "heading": "Find your tools",
         "steps": [
-          "The bottom tool strip opens Layout, Frame, Photo, Text, Camera, and Caption. Tap the current drawer’s tool again to hide or show it; tap another tool to switch its controls. Tap a section’s chevron to reveal more controls.",
+          "The bottom tool strip opens Layout, Frame, Photo, Text, Camera, Stamp, and Caption. Tap the current drawer’s tool again to hide or show it; tap another tool to switch its controls. Tap a section’s chevron to reveal more controls.",
           "Details initially fit the controls in each tool. Drag the handle to choose a height for that tool; the photo continuously fits the space above it. Reset panel sizes in Settings → Editor. Tap the active tool to hide its controls and give the photo more room; tap it again to return.",
-          "This Page or All Pages stays beside the details handle across editing tools and remembers your choice as you select objects or browse pages. It controls page layout and frame settings; Photo, Text, and Camera controls edit their selected item.",
+          "This Page or All Pages stays beside the details handle across editing tools and remembers your choice as you select objects or browse pages. It controls page layout and frame settings; Photo, Text, Camera, and Stamp controls edit their selected item.",
           "Hold a tool to rearrange, remove, or add tools. Settings → Editor → Reset Tool Strip restores the original tools.",
           "Canvas controls start hidden to give the photo more room. Tap the small Show Controls button at the top right to open the icon rail; the chevron hides it again. The sidebar keeps selection, arrangement, and other object actions. Open Photo in the bottom tool strip for crop, sizing, position, replacement, layers, and clip controls.",
           "Open Photo and choose Shape for Original, square, or portrait ratios. Switch Orientation turns the shape sideways. This changes only that photo inside its slot; Layout changes the page.",
@@ -289,34 +415,19 @@
         "heading": "Return Home",
         "steps": [
           "Tap Home in the editor to save and return to Projects. Reopen the project there to keep editing.",
-          "Saving a reusable template takes you to Templates. Leaving a starting-layout walkthrough returns to the tab you came from."
+          "Saving a reusable template takes you to Templates. Leaving the start screen before you tap Create returns to Home."
         ]
       }
     ],
-    "shot": [
-      "oct06-framed-phone.webp",
-      "oct06-phone-layout.webp",
-      "The iPhone editor with page, layout, and tool controls."
-    ],
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
-    "extraShots": [
-      [
-        "oct06-framed-ipad.webp",
-        "oct06-ipad-editor.webp",
-        "The iPad workspace with a photo composition and layout panel."
-      ],
-      [
-        "oct06-mac.webp",
-        "oct06-mac.webp",
-        "The Mac workspace with page filmstrip and inspector."
-      ]
-    ],
+    "shot": null,
+    "source": "Decks source 42c30ae (build 148): SocialTool.swift (defaultStrip adds Stamp), SocialEditor.swift (Snap to Guides), SocialStartFlow.swift (Home button on the start screen), Mac/DecksInspector.swift, Mac/DecksApp.swift (Go to Home ⌘1), Mac/DecksHelpContent.swift. Removed editor screenshots whose tool strip predates Stamp (oct06-framed-phone, oct06-framed-ipad, oct06-mac). NEEDS-SHOT: iPhone editor with the seven-tool strip (Layout, Frame, Photo, Text, Camera, Stamp, Caption). NEEDS-SHOT: iPad editor workspace. NEEDS-SHOT: Mac editor with the seven-tool inspector.",
     "macSections": [
       {
         "heading": "Browse and select",
         "steps": [
           "Double-click a project to open it. Press ← or → to change pages, or Home and End for the first and last page. You can also click a page in the strip under the canvas.",
           "Click a photo, text, or camera details on the canvas to select it. An outline shows your selection without adding a border to the exported artwork. Drag to move it; in a fixed layout, dragging a photo moves it inside its frame.",
+          "With Snap to Guides on (Layout ▸ Guides in the inspector), dragged text, logos, camera details, and Freeform photos line up with the page, photos, borders, and other items, and a blue guide shows what they caught. A logo’s center can lock onto a photo’s border line or into a corner where two borders meet.",
           "⌘-click or ⇧-click to select several items, then drag them together or press Delete to remove them. Option-arrow keys nudge the selection a little at a time.",
           "Drag the small square at the lower-right corner of selected text or a freeform photo to resize it.",
           "Press Esc to leave the selection. Press it again to fit the canvas, and once more to return to Projects."
@@ -333,8 +444,8 @@
       {
         "heading": "Find your tools",
         "steps": [
-          "The inspector on the right has Layout, Frame, Photo, Text, Camera, and Caption. Click a tool to see its controls. The ⓘ button opens Photo Details for the selected photo.",
-          "The All Pages or This Page menu under the tools decides whether Layout and Frame changes apply to every page or only this one. Photo, Text, and Camera controls edit the selected item.",
+          "The inspector on the right has Layout, Frame, Photo, Text, Camera, Stamp, and Caption. Click a tool to see its controls. The ⓘ button opens Photo Details for the selected photo.",
+          "The All Pages or This Page menu under the tools decides whether Layout and Frame changes apply to every page or only this one. Photo, Text, and Camera controls edit the selected item. Stamp has its own Apply to menu.",
           "Photo ▸ Crop sets Fit or Fill, Zoom, and position, and offers Center, Move to New Page, Move to Page, and Replace Photo…. Freeform photos also show Freeform Layer controls for size, rotation, and order.",
           "Press ⌘K for the command palette. Type part of a command’s name, then press Return. Pin the commands you use most with ⇧⌘P.",
           "Menus show each keyboard shortcut. Change them in Help ▸ Keyboard Shortcuts… (⌘/). Control-click the toolbar to customize its buttons. Click the project name in the toolbar to rename it."
@@ -344,7 +455,7 @@
         "heading": "Return to your library",
         "steps": [
           "Click Back to Projects in the toolbar, or press ⌘[. Decks keeps your changes; reopen the project in Projects to continue.",
-          "⌘1 through ⌘5 go to Layout Builder, Projects, Templates, Photos, and Recent Activity.",
+          "⌘1 through ⌘5 go to Home, Projects, Templates, Photos, and Recent Activity.",
           "Keep projects side by side in separate windows: choose File ▸ New Window (⇧⌘N), or Control-click a project and choose Open in New Window."
         ]
       }
@@ -359,7 +470,7 @@
       {
         "heading": "Choose a border",
         "steps": [
-          "In the walkthrough’s frame step, or the editor’s Frame controls, choose None, Plain, or Film where supported.",
+          "Before you create a project, open Frame in the start screen’s tools. In the editor, open Frame. Choose None, Plain, or Film where supported.",
           "Plain gives you border color and thickness. None removes the frame. Switching styles remembers your settings so you can compare them.",
           "Change the background separately from the border. Background → Color includes White, Black, Ivory, colors sampled from the selected photo, and a custom picker. Choose Photo or Video to replace the background image or clip."
         ]
@@ -375,20 +486,20 @@
       {
         "heading": "Add depth",
         "steps": [
-          "Gallery Print offers a shadow during the walkthrough. Turn it on and adjust its strength to lift the photo from the background.",
+          "Gallery Print offers a shadow before you create the project. In the start screen’s Frame tool, turn on Shadow under Depth and adjust Shadow Strength to lift the photo from the background.",
           "In the editor, open Frame → Depth to adjust the shadow. Double-tap an adjustment slider or use its Reset control to return to the template’s starting value."
         ]
       }
     ],
     "shot": null,
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "source": "Decks source 42c30ae (build 148): SocialStartFlow.swift (Frame tool: Border, Depth, Background), SocialStarts.swift (background titles), Mac/DecksLayoutBuilder.swift (frameSections), Mac/DecksInspector.swift.",
     "macSections": [
       {
         "heading": "Choose a border",
         "steps": [
-          "In the walkthrough’s Frame step, or Frame ▸ Border in the inspector, choose None, Plain, or Film where supported.",
-          "Plain gives you border color and width. In the walkthrough, choose Auto, White, Black, or Custom, then set Frame Thickness. None removes the frame.",
-          "Change the background separately from the border. In the walkthrough, choose Black, White, Blur, or Custom Color. In the editor, Frame ▸ Background offers Automatic, Color, or Image, Choose Background Photo…, and Blur, Brightness, Saturation, and Scale."
+          "In the start screen’s Frame tool, or Frame ▸ Border in the editor’s inspector, choose None, Plain, or Film where supported.",
+          "Plain gives you border color and width. On the start screen, choose Auto, White, Black, or Custom, then set Frame Thickness. None removes the frame.",
+          "Change the background separately from the border. On the start screen, choose Black, White, Photo Blur, or Custom Color. In the editor, Frame ▸ Background offers Automatic, Color, or Image, Choose Background Photo…, and Blur, Brightness, Saturation, and Scale."
         ]
       },
       {
@@ -401,7 +512,7 @@
       {
         "heading": "Add depth",
         "steps": [
-          "Gallery Print offers a shadow during the walkthrough. Turn on Shadow and adjust Shadow Strength to lift the photo from the background.",
+          "Gallery Print offers a shadow before you create the project. In the start screen’s Frame tool, turn on Shadow and adjust Shadow Strength to lift the photo from the background.",
           "In the editor, open Frame ▸ Depth for Shadow, Shadow Blur, and Shadow Opacity, or turn on Outline."
         ]
       }
@@ -410,30 +521,69 @@
   {
     "slug": "camera",
     "title": "Camera details & Halide credits",
-    "summary": "Add, style, move, or remove photo information.",
+    "summary": "Add camera details to a photo, choose where they sit, and style them.",
     "group": "Make It Yours",
     "sections": [
       {
         "heading": "Add camera details",
         "steps": [
-          "Enable camera details at the end of a template walkthrough, or open Camera in the editor to add them to the current photo.",
-          "Choose a detail design and the fields you want to show, such as camera, lens, shutter speed, aperture, or ISO.",
-          "Use the Camera Details library for reusable detail designs. These stay separate from the full-page templates in Templates."
+          "Before you create a project, open Camera in the start screen’s tools and turn on Camera Details. In the editor, open Camera and switch Camera Details on for the selected photo.",
+          "Or start from a Camera Details Design on Home: Gear Band, Wall Label, Spec Sheet, Film Strip, Corner Mark, Spine, or Details List. Each is a finished page built around the camera and exposure.",
+          "To restyle pages you already have, open Templates in the editor (Templates… in the page menu at the top on iPhone, or Templates in the toolbar on iPad). Under Designs, choose This Page or All Pages, then tap a design. Your photos and words stay; the page takes the design’s look."
+        ],
+        "shots": [
+          [
+            "build148-framed-phone-designs.webp",
+            "build148-phone-designs.webp",
+            "Camera details designs on Home."
+          ]
         ]
       },
       {
-        "heading": "Edit the look",
+        "heading": "Choose where the details sit",
         "steps": [
-          "Select the details to change their appearance, spacing, size, and background using the Camera controls.",
+          "Placement puts the details Under, Above, or to the Side of the photo (Left or Right), On Photo, or Free. Under, Above, and Side place the details in the page margin, and the photo moves to make room.",
+          "Drag the details anywhere. Drop them in a margin to snap them there, or leave them where you drop them on the photo.",
+          "If there isn’t room beside a small photo, the details sit on it, and the panel says why. Try a smaller Size. Details on a film border, a panorama, or a Freeform page also sit on the photo.",
+          "Size sets how large the details are."
+        ],
+        "shots": [
+          [
+            "build148-framed-phone-details-card.webp",
+            "build148-phone-details-card.webp",
+            "The camera details card: Styles, Placement, Size, and Shows."
+          ]
+        ]
+      },
+      {
+        "heading": "Choose what they show",
+        "steps": [
+          "Shows lists the lines on the card. Switch a line on or off, or reorder the lines. More Details… opens the photo’s full list, where you can add or edit any detail.",
+          "For Fujifilm photos, turn on Fujifilm Recipe to add the recorded film simulation and settings. Choose Card, Line, Dials, or Film Box for how they look. Settings the photo does not record are listed under Not Recorded on This Photo; tap Add to enter a value you know.",
+          "If the photo also has a separate Fujifilm card from an earlier version, Move into Camera Details shows that recipe with the camera details, in their look and place."
+        ]
+      },
+      {
+        "heading": "Style and saved styles",
+        "steps": [
+          "Open Style for Arrangement, Type, Ink, and Background. Type uses the design’s own fonts by Default; Fonts… lets you choose any family, with open-source families listed first. Ink is Auto, Light, or Dark.",
+          "Background is the Look’s Own, None, or a Plate with its own color, opacity, and corners.",
+          "On a 9:16 page, Keep Inside Stories Safe Area keeps the details clear of the areas Instagram draws over. New details on a Story page start with it on.",
+          "Styles, at the top of the panel, lists your saved styles. Tap one to use it on the selected details. Save Style saves how these details look and where they sit, for any page.",
+          "Details from earlier versions keep their own controls. Use the New Camera Details converts them to the current card."
+        ]
+      },
+      {
+        "heading": "Halide credits",
+        "steps": [
           "For a Shot with Halide credit, tap it to open its controls. Change its wording, adjust its spacing and width, or remove its background.",
           "The Halide logo and text move as a group, so you don’t need to line them up separately."
         ]
       },
       {
-        "heading": "Position and remove",
+        "heading": "Remove details",
         "steps": [
-          "Drag the details into place. With Snap to Guides on, their center can lock across a visible border’s centerline while still moving along the border. An alignment guide shows the target.",
-          "The same snapping works for grouped Halide credits. Turn Snap to Guides off in the editor’s options for unrestricted movement.",
+          "Switch Camera Details off, or choose Remove Details from the Camera panel’s actions.",
           "Removing the last camera card recenters a single photo when no text or logo remains. Undo restores both the card and its arrangement."
         ]
       },
@@ -442,30 +592,34 @@
         "steps": [
           "Decks can only read the metadata included in the imported file. Screenshots and photos saved by other apps may be missing camera or exposure information.",
           "Try the original photo, or use Settings → My Gear & Places and Custom Variables for information you want to supply yourself.",
-          "Save your Fujifilm recipes in Settings → Fujifilm Recipes, then apply one in Photo Details. Film Simulation offers a list of choices. A saved recipe supplies its name and a separate Full Settings detail even when automatic detection is unavailable. Applying a recipe adds information; it does not change the photo’s colors."
+          "Save your Fujifilm recipes in Settings → Fujifilm Recipes, then apply one in Photo Details. A saved recipe supplies its name and settings even when automatic detection is unavailable. Applying a recipe adds information; it does not change the photo’s colors."
         ]
       }
     ],
-    "shot": [
-      "oct06-framed-phone-camera.webp",
-      "oct06-phone-camera.webp",
-      "Camera Details controls on iPhone."
-    ],
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "shot": null,
+    "source": "Decks source 42c30ae (build 148): SocialDetailsEditor.swift (Styles, Placement Under/Above/Side/On Photo/Free, Size, Shows, More Details…, Fujifilm Recipe with Card/Line/Dials/Film Box, Not Recorded on This Photo, Style: Arrangement, Type Default/Fonts…, Ink, Background Look’s Own/None/Plate, Keep Inside Stories Safe Area), SocialMetadataInspector.swift, SocialFujiInspector.swift (Move into Camera Details), SocialDetailDesignStarts.swift, SocialTemplatePicker.swift (Designs, Apply To This Page/All Pages), Mac/DecksInspector.swift, Mac/DecksEditor.swift (Apply Design), Mac/DecksWorkspace.swift. Removed the old camera card screenshot (oct06-framed-phone-camera). NEEDS-SHOT: iPhone Camera panel with the camera details card showing Styles, Placement, Size, and Shows. NEEDS-SHOT: iPhone editor Templates sheet with the Designs row and This Page / All Pages. NEEDS-SHOT: Mac Camera inspector with the card editor.",
     "macSections": [
       {
         "heading": "Add camera details",
         "steps": [
-          "Turn on Camera Details in the walkthrough’s Finishing Touches and choose fields such as Camera, Lens, and Shutter · Aperture · ISO. Or open Camera in the inspector and turn on Camera Details for the current photo.",
-          "Use Apply To to place details on the Selected Photo, All Photos on Page, or one Shared Page card.",
-          "Each line of the card has its own field in Camera. Edit the wording there."
+          "Before you create a project, choose Camera at the top of the start screen’s panel and turn on Camera Details. In the editor, open Camera in the inspector and turn on Camera Details for the current photo.",
+          "Use Apply To to place the same details on the Selected Photo, All Photos on Page, or one Shared Page card.",
+          "To restyle pages with a Camera Details Design, Control-click a page in the page strip and choose Apply Design or Apply Design to All Pages. The Templates menu in the toolbar also lists the designs under Apply Design to This Page."
         ]
       },
       {
-        "heading": "Position and remove",
+        "heading": "Placement, size, and style",
         "steps": [
-          "Drag the details into place on the canvas, or set X, Y, and Width in Camera. Option-arrow keys nudge them.",
-          "Align to Page or Photo lines the card up for you.",
+          "Placement puts the details Under, Above, or to the Side of the photo (Left or Right), On Photo, or Free. Under, Above, and Side place the details in the page margin.",
+          "Drag the details on the canvas; drop them in a margin to snap them there. Arrow keys nudge them.",
+          "Shows lists the lines on the card. Turn lines on or off, reorder them, or click More Details… to add or edit a detail.",
+          "For Fujifilm photos, turn on Fujifilm Recipe and choose Card, Line, Dials, or Film Box. Settings the photo does not record are listed under Not Recorded on This Photo.",
+          "Open Style for Arrangement, Type (Default or Fonts…, open-source families first), Ink, Background (Look’s Own, None, or Plate), and Keep Inside Stories Safe Area on 9:16 pages. Styles lists your saved styles; Save Style keeps the current look for any page."
+        ]
+      },
+      {
+        "heading": "Remove details",
+        "steps": [
           "Remove Card takes the details off the page. Undo (⌘Z) brings them back."
         ]
       },
@@ -476,6 +630,121 @@
           "Try the original photo, or click ⓘ in the inspector. Under Edit Photo Details, choose a category and type the values, or choose Apply Saved Gear.",
           "Save cameras, lenses, film, and processing in Decks ▸ Settings… ▸ My Gear. Match EXIF Names uses your names for every photo with that EXIF wording.",
           "Save your Fujifilm recipes in Settings ▸ Recipes, then choose the Camera category in Photo Details and use Apply Film Recipe. Applying a recipe adds information; it does not change the photo’s colors."
+        ]
+      }
+    ],
+    "ipadShots": [
+      [
+        "build148-framed-pad-details-card.webp",
+        "build148-pad-details-card.webp",
+        "Camera details on iPad, with the controls beside the canvas."
+      ]
+    ]
+  },
+  {
+    "slug": "date-stamp",
+    "title": "Add a date stamp",
+    "summary": "Print the date, time, place, or a short note on a photo.",
+    "group": "Make It Yours",
+    "sections": [
+      {
+        "heading": "Turn on the stamp",
+        "steps": [
+          "Select a photo and tap Stamp in the tool strip, between Camera and Caption. Switch Stamp on. The stamp sits in the photo’s bottom-right corner, inside its frame.",
+          "Set All Lines picks one style for every line: Film, Digital, Clean, or Typewriter. Film has the orange glow of a film camera’s date imprint and starts a little translucent. Each line can also have its own style.",
+          "Use the menu at the top of the panel to choose what your changes apply to: This Photo, This Page, Selected Pages, or All Photos. Only the setting you change is applied; each photo keeps the rest. In Arrange, select pages and tap Edit Stamps to change only those pages.",
+          "New stamps start with the last style you used."
+        ],
+        "shots": [
+          [
+            "build148-framed-phone-stamp.webp",
+            "build148-phone-stamp.webp",
+            "The Stamp panel: styles and the lines on the stamp."
+          ]
+        ]
+      },
+      {
+        "heading": "Choose the lines",
+        "steps": [
+          "Below the styles is a list of lines: Date, Time, Place, and Note. Each shows what it prints on this photo. Tap the circle beside a line to show or hide it.",
+          "Tap a line in the list, or the line on the photo, to open its own editor: its style, Color, Size, Opacity, Shadow, and Background. Reset puts that line back as it started. Tap Stamp at the top of the editor to return to the list.",
+          "Drag a line on the photo to move it on its own, or use its Horizontal and Vertical sliders. Back to Stack puts it with the other lines again.",
+          "Horizontal and Vertical run from one corner of the photo to the other. Tap a slider’s number to type a value.",
+          "Note prints a few words you type. With several photos chosen, the same note goes on each one."
+        ]
+      },
+      {
+        "heading": "Dates and times",
+        "steps": [
+          "Decks stamps the date the photo was taken (Capture Date). Choose Custom Date to stamp a different one, such as the date of a scanned print.",
+          "Only the stamp changes. Your photo and its saved date stay the same.",
+          "In the Date line’s editor, Order sets Y M D, M D Y, or D M Y.",
+          "Time prints the time the photo was taken. If a photo has no capture date, choose Custom Date to stamp one."
+        ],
+        "shots": [
+          [
+            "build148-framed-phone-stamp-date.webp",
+            "build148-phone-stamp-date.webp",
+            "The Date line: capture date or a custom date, and the date order."
+          ]
+        ]
+      },
+      {
+        "heading": "Places",
+        "steps": [
+          "Turn on Place to print where the photo was taken. Decks reads the location saved in the photo, then asks Apple Maps for a name such as “Louisville, KY.” Only the photo’s coordinates are sent.",
+          "In Place’s editor, Show chooses how much prints: a landmark, the city, the city and state, or the country, each written as it reads for that photo.",
+          "Tap the place to open the place editor. Type a name, or choose Look Up on the Map to search or move the pin. Use the Photo’s Own Place goes back to the name from the photo.",
+          "Decks asks for your location only if you tap Current Location on the map, to center it where you are. Your location is not tracked or stored.",
+          "Turn on Save as Favorite to reuse a name, such as Home, with one tap; favorites appear under Place. A favorite with a spot on the map can also use Name Every Photo Taken Here.",
+          "Edit or forget favorites in Settings → Favorite Places. Favorite places sync through iCloud and never change your photos.",
+          "If a photo has no location saved, type a name or look the place up. Location may have been off for Camera, or it was removed when the photo was shared.",
+          "Exported photos keep their GPS location only if you turn on Include Location when exporting. The stamp shows only the place name."
+        ]
+      },
+      {
+        "heading": "Position and remove",
+        "steps": [
+          "Under Position, choose a Corner: Bottom Right, Bottom Left, Bottom Center, Top Right, or Top Left.",
+          "Drag the stamp anywhere on the page, even off the photo. Near a corner, it snaps back in. Snap to Corner returns a moved stamp to its corner.",
+          "Sideways on Vertical Photos runs the date down the left edge of vertical photos.",
+          "To take a stamp off, switch Stamp off, or select the stamp on the page and choose Remove Stamp."
+        ]
+      }
+    ],
+    "shot": null,
+    "source": "Decks source 42c30ae (build 148): SocialStampInspector.swift (Stamp switch, Set All Lines, line list, per-line editor with Size, Opacity, Shadow, Background, Horizontal, Vertical, Reset, Back to Stack, Capture Date / Custom Date, Order, Show, Corner, Snap to Corner, Sideways on Vertical Photos, Stamp Changes scope), SocialStampEditing.swift (This Photo / This Page / Selected Pages / All Photos; last style synced), SocialPlaceEditor.swift, SocialPlacesList.swift, SocialArrangeFrames.swift (Edit Stamps), SocialCanvas.swift (Remove Stamp), SocialTool.swift, Mac/DecksStampInspector.swift, Mac/DecksInspector.swift, Mac/DecksEditor.swift, Mac/DecksSettings.swift, SocialHelpContentPhone.swift and Mac/DecksHelpContent.swift (stamp topic). NEEDS-SHOT: iPhone editor with the Stamp panel open, showing Set All Lines and the Date/Time/Place/Note list on a photo with a Film stamp. NEEDS-SHOT: iPhone Place editor with Save as Favorite and Look Up on the Map. NEEDS-SHOT: Mac Stamp inspector (Date Stamp section).",
+    "macSections": [
+      {
+        "heading": "Turn on the stamp",
+        "steps": [
+          "Click a photo, click Stamp in the inspector, and switch Stamp on in the Date Stamp section. The stamp sits in the photo’s bottom-right corner, inside its frame. Drag it anywhere on the page; near a corner it snaps back in. Arrow keys nudge it.",
+          "Set All Lines picks one style for every line: Film, Digital, Clean, or Typewriter. Each line can also have its own style.",
+          "Use Apply to at the top of the Date Stamp section to change This Photo, This Page, or All Photos at once. Select several pages in the page strip to change only those. Only the setting you change is applied; each photo keeps the rest."
+        ]
+      },
+      {
+        "heading": "Choose the lines",
+        "steps": [
+          "The list shows Date, Time, Place, and Note, with what each prints on this photo. The checkbox shows or hides a line.",
+          "Click Edit…, or click the line on the photo, to open its own editor: Style, Color, Size, Opacity, Shadow, Background, Horizontal, and Vertical. Reset puts that line back as it started. Click Stamp at the top to return to the list.",
+          "Drag a line to move it on its own; Back to Stack puts it with the others. Click a slider’s number to type a value."
+        ]
+      },
+      {
+        "heading": "Dates and places",
+        "steps": [
+          "Date uses Capture Date. Choose Custom Date to stamp a different one. Only the stamp changes; your photo and its saved date stay the same. Order sets Y M D, M D Y, or D M Y.",
+          "Place prints a name from the photo’s saved location, looked up with Apple Maps. Only the photo’s coordinates are sent. Show chooses how much of the name prints.",
+          "Click Edit Place… to type a name or look it up on the map. Turn on Save as Favorite to reuse a name, then choose it from the menu beside Place. Edit favorites in Decks ▸ Settings… ▸ Favorite Places.",
+          "Decks asks for your location only if you click Current Location on the map. Exported photos keep their GPS location only if you turn on Include Location when exporting."
+        ]
+      },
+      {
+        "heading": "Position and remove",
+        "steps": [
+          "Open Position for Corner, Snap to Corner, and Sideways on Vertical Photos.",
+          "To take a stamp off, turn Stamp off, or select the stamp and press Delete. Control-click it and choose Remove Stamp to do the same."
         ]
       }
     ]
@@ -491,6 +760,8 @@
         "steps": [
           "Use Text in the editor or the add menu to place text on the page. Tap the text to select it, then tap Edit Text to change its wording. Adjust its appearance in the text controls.",
           "Manage reusable logos in Settings → My Logos. Use the editor’s Logo tool to place one in a design.",
+          "To hold a logo on a photo’s corner, tap a Photo Corner button under Position, or drag the logo onto the corner of the photo’s border. It follows the photo when you move it, and the photo shrinks a little, evenly on both sides, so the whole logo stays inside the page margins. Drag the logo anywhere to let it go.",
+          "With Snap to Guides on in Project Options, dragged text and logos line up with the page, photos, borders, and other items. A blue guide shows what they caught.",
           "Text on the canvas becomes part of the exported image. Use Caption for posting text that you want to copy separately."
         ]
       },
@@ -503,19 +774,16 @@
         ]
       }
     ],
-    "shot": [
-      "oct06-framed-phone-text.webp",
-      "oct06-phone-text.webp",
-      "Add Text and Add Logo entry actions on iPhone."
-    ],
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "shot": null,
+    "source": "Decks source 42c30ae (build 148): SocialEditorAlign.swift (Photo Corner), SocialLayerTouches.swift, SocialHelpContentPhone.swift and Mac/DecksHelpContent.swift (logo corner and snapping), Mac/DecksInspector.swift (Horizontal, Vertical, Width), docs/social/parity.md. Removed the iPhone Text tool screenshot whose tool strip predates Stamp (oct06-framed-phone-text). NEEDS-SHOT: iPhone Text tool with a logo selected, showing the Photo Corner buttons.",
     "macSections": [
       {
         "heading": "Add text or a logo",
         "steps": [
           "Choose Edit ▸ Add Text (⇧⌘T), or open Text in the inspector and click Add Text. Type in the text box there, then click Text Style… to change its appearance.",
-          "Set X, Y, Width, and Alignment, or use Align to Page or Photo. Duplicate (⌘D) and Remove are in the same section.",
+          "Set Horizontal, Vertical, Width, and Alignment, or use Align to Page or Photo. Duplicate (⌘D) and Remove are in the same section.",
           "Click Add Logo… to place an image file, such as your logo, on the page.",
+          "To hold a logo on a photo’s corner, click a Photo Corner button in the inspector, or drag the logo onto a corner where two borders meet. It follows the photo when you move it, and the photo shrinks a little, evenly on both sides, so the whole logo stays inside the page margins. Drag the logo anywhere to let it go.",
           "Text on the canvas becomes part of the exported image. Use Caption for posting text that you want to copy separately."
         ]
       },
@@ -552,7 +820,7 @@
       }
     ],
     "shot": null,
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "source": "Decks source 42c30ae (build 148): Mac/DecksLayoutBuilder.swift (start screen Reset), Mac/DecksInspector.swift, SocialHelpContentPhone.swift.",
     "macSections": [
       {
         "heading": "Change or reset an adjustment",
@@ -560,7 +828,7 @@
           "Drag a slider to change a value, or type an exact value in the field beside it and press Return.",
           "In Layout ▸ Guides, Reset Page clears this page’s own changes so it follows the All Pages settings again.",
           "Edit ▸ Reset Layout… returns every page to how it was before your first layout change in this session. You can undo it.",
-          "In the walkthrough, Reset beside Frame Thickness or Shadow Strength returns that slider to the layout’s starting value."
+          "On the start screen, Reset beside Frame Thickness or Shadow Strength returns that slider to the layout’s starting value."
         ]
       },
       {
@@ -581,8 +849,8 @@
       {
         "heading": "Set up the panels",
         "steps": [
-          "Choose Panorama in Layout Builder. Pick the panel size and number of panels, then add your photo.",
-          "Use Preview Panorama to see adjacent rounded panels in a horizontally scrolling preview, like a Threads carousel.",
+          "Choose Panorama on Home and add your photo. In the start screen’s Layout tool, set Panels to the number of linked panels, from 2 to 6.",
+          "In the editor, open Layout and tap Preview Panorama to see adjacent rounded panels in a horizontally scrolling preview, like a Threads carousel.",
           "In an existing project, the editor’s options also offer Split Photo into Panorama Panels."
         ]
       },
@@ -595,12 +863,12 @@
       }
     ],
     "shot": null,
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "source": "Decks source 42c30ae (build 148): SocialStartFlow.swift (Panels stepper), SocialInspector.swift and SocialRatioChip.swift (Preview Panorama), SocialEditor.swift (Split Photo into Panorama Panels), Mac/DecksLayoutBuilder.swift, Mac/DecksHelpContent.swift.",
     "macSections": [
       {
         "heading": "Set up the panels",
         "steps": [
-          "Choose Panorama in Layout Builder and pick your photo. Set the number of linked panels, from 2 to 6.",
+          "Choose Panorama on Home and pick your photo. In the Layout panel, set the number of linked panels, from 2 to 6.",
           "In an existing project, select a photo and choose Edit ▸ Split Panorama into 3 Pages, or click the same button in Layout.",
           "Panels stay together when you select, duplicate, or delete pages in the page strip."
         ]
@@ -632,33 +900,39 @@
       {
         "heading": "Start in Templates",
         "steps": [
-          "Open Home → Templates → Create Template. Build the layout with the preview photos, then set its background, frames, text, and optional camera details.",
+          "Open Templates and tap Create Template. Build the layout with the preview photos, then set its background, frames, text, and optional camera details.",
           "Use Template Preview to try your own photos, show empty photo slots, or preview a repeating batch.",
-          "Save and name the template. Preview photos and their photo details are not saved as template content."
+          "Save and name the template. Preview photos and their photo details are not saved as template content.",
+          "To make a template that groups photos by shape, tap Smart Layout instead. See Build your own smart layout."
+        ],
+        "shots": [
+          [
+            "build148-framed-phone-templates.webp",
+            "build148-phone-templates.webp",
+            "The Templates tab with Smart Layouts."
+          ]
         ]
       },
       {
         "heading": "Save from a project",
         "steps": [
           "In Export, tap Save as Template. Choose pages to include, name the design, and choose whether to include text wording. Photos and crops stay with the project.",
+          "Under Photos per Page, choose One per Page, or Group to let photos shaped across the page share one: 2, 3, or Grid of 4, Stacked or Side by Side. By Shape groups any of them; Shape + Time shares a page only between photos taken within 10 minutes of each other. A preview shows how the photos fall.",
+          "With Group and more than one page selected, every page uses one page’s design, such as “Every page uses Page 1’s design.”",
           "Your template appears in Templates. Tap Use from Photos in Export for shortcut setup instructions."
         ]
       },
       {
         "heading": "Use and manage saved templates",
         "steps": [
-          "Tap a template in Templates, then choose Use Template to add a new set of photos, or Edit Template to change the design.",
-          "Use Template Options to rename, duplicate, share, delete, or make it your default. Mark favorites to keep preferred designs handy.",
-          "Tap Import Template in Templates to open a shared template file. Camera-detail templates belong in the Camera Details library."
+          "Templates lists Favorites, Smart Layouts, and Your Templates. Tap a template, then choose Use Template to add a new set of photos, or Edit Template to change the design.",
+          "Use Template Options to rename, duplicate, share, delete, or use it as your default. Mark favorites to show them first in Templates and in Favorites on Home.",
+          "Tap Import Template in Templates to open a shared template file."
         ]
       }
     ],
-    "shot": [
-      "oct06-mac-template-builder.webp",
-      "oct06-mac-template-builder.webp",
-      "Template Builder in the native Mac app."
-    ],
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "shot": null,
+    "source": "Decks source 42c30ae (build 148): SocialSaveTemplate.swift and SocialGroupingEditor.swift (Photos per Page: One per Page / Group, By Shape / Shape + Time, “Every page uses Page N’s design.”), SocialTemplateGallery.swift (Create Template, Smart Layout, Favorites / Smart Layouts / Your Templates), Mac/DecksSaveTemplate.swift, Mac/DecksLibrary.swift. Removed the Mac template builder screenshot whose inspector predates Stamp (oct06-mac-template-builder). NEEDS-SHOT: iPhone Save Template sheet with Photos per Page set to Group and its page preview. NEEDS-SHOT: iPhone Templates tab with Smart Layouts and Your Templates.",
     "macSections": [
       {
         "heading": "Save a sequence of designs",
@@ -672,7 +946,7 @@
       {
         "heading": "Start in Templates",
         "steps": [
-          "Click Templates in the sidebar, then Create Template (⌥⌘N). Build the layout with the preview photos, then set its background, frames, text, and optional camera details.",
+          "Click Templates in the sidebar (⌘3), then Create Template (⌥⌘N). Build the layout with the preview photos, then set its background, frames, text, and optional camera details. New Smart Layout opens the smart layout builder instead.",
           "Click Save Template in the toolbar and name it. Preview photos and their photo details are not saved as template content."
         ]
       },
@@ -680,13 +954,14 @@
         "heading": "Save from a project",
         "steps": [
           "Choose File ▸ Save as Template… (⇧⌘S). Choose pages to include, name the design, and choose whether to Include Text Wording. Photos and crops stay with the project.",
+          "Under Photos per Page, choose One per Page or Group, then how photos share a page and whether to group By Shape or Shape + Time. With Group, every page uses one page’s design.",
           "If a template already has that name, choose Replace Template or Keep Both. Your template appears in Templates."
         ]
       },
       {
         "heading": "Use and manage saved templates",
         "steps": [
-          "In Templates, click Use Template to start a project with new photos, or Edit Template to change the design. To rename it, edit the name at the top of the window, then click Save Template.",
+          "Templates lists Favorites, Smart Layouts, and Your Templates. Click Use Template to start a project with new photos, or Edit Template (Edit Smart Layout for a smart layout) to change the design. To rename a template, edit the name at the top of the window, then click Save Template.",
           "Control-click a template to Favorite it, Set as Default, Export Template…, Duplicate, or Delete…. Favorites appear first.",
           "Click Import Template… to add a template file someone shared, or double-click the file in Finder."
         ]
@@ -726,7 +1001,7 @@
       }
     ],
     "shot": null,
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "source": "Decks source 42c30ae (build 148): reviewed against SocialHelpContentPhone.swift / DecksHelpContent.swift; no build 148 changes to this task.",
     "macSections": [
       {
         "heading": "Write a caption",
@@ -793,7 +1068,7 @@
       }
     ],
     "shot": null,
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "source": "Decks source 42c30ae (build 148): reviewed against SocialHelpContentPhone.swift / DecksHelpContent.swift; no build 148 changes to this task.",
     "macSections": [
       {
         "heading": "Save or share",
@@ -837,7 +1112,7 @@
       {
         "heading": "A Contact Sheet is your design",
         "steps": [
-          "Choose Contact Sheet in Layout Builder to arrange multiple photos together on a page. Keep its film edges, switch to Plain, or choose None.",
+          "Choose Contact Sheet on Home to arrange multiple photos together on a page. Keep its film edges, switch to Plain, or choose None.",
           "Open Export to save the sheet as you designed it. You’ll see Your Contact Sheet; each sheet becomes an image. Removing the film border does not change this behavior."
         ]
       },
@@ -851,12 +1126,12 @@
       }
     ],
     "shot": null,
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "source": "Decks source 42c30ae (build 148): SocialDesignedStarts.swift, Mac/DecksHelpContent.swift.",
     "macSections": [
       {
         "heading": "A Contact Sheet is your design",
         "steps": [
-          "Choose Contact Sheet in Layout Builder to arrange multiple photos together on a page. Keep its film edges, switch to Plain, or choose None.",
+          "Choose Contact Sheet on Home to arrange multiple photos together on a page. Keep its film edges, switch to Plain, or choose None.",
           "Choose File ▸ Export… to save the sheet as you designed it. Each sheet becomes an image. Removing the film border does not change this."
         ]
       },
@@ -879,7 +1154,7 @@
       {
         "heading": "Find a project",
         "steps": [
-          "Home → Projects lists projects by last activity. Tap one to continue editing; returning Home saves your changes.",
+          "Projects lists projects by last activity. On iPhone it is the third tab at the bottom; on iPad it is in the sidebar. Tap a project to continue editing; returning Home saves your changes.",
           "Use the project filter in Projects to switch between All Projects, Archive, and Recently Deleted.",
           "Use a project’s actions to rename it, open its All Captions, or manage its place in the library. Pin projects you want to keep out of automatic cleanup."
         ]
@@ -894,7 +1169,7 @@
       }
     ],
     "shot": null,
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "source": "Decks source 42c30ae (build 148): SocialHome.swift, SocialHomeChrome.swift (Home · Templates · Projects tabs), Mac/DecksRootView.swift.",
     "macSections": [
       {
         "heading": "Find a project",
@@ -933,7 +1208,7 @@
         "heading": "Sync across Mac, iPhone, and iPad",
         "steps": [
           "Decks syncs through your private iCloud account on every device signed in to the same Apple Account. It’s on unless you turn it off in Settings → iCloud.",
-          "Sync includes projects, templates, your settings (destinations, favorites, My Gear, recipes, and presets), and the photo copies those projects need. Appearance stays on each device. Use Sync Now and check the status message if a change hasn’t appeared yet.",
+          "Sync includes projects, templates, the photo copies those projects need, and your settings: destinations, favorites, favorite places, My Gear, recipes, presets, the last date stamp style you used, and the order of layouts on Home. Appearance stays on each device. Use Sync Now and check the status message if a change hasn’t appeared yet.",
           "Let sync finish before continuing the same project on another device."
         ]
       },
@@ -949,13 +1224,13 @@
       }
     ],
     "shot": null,
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "source": "Decks source 42c30ae (build 148): SocialHome.swift (Settings → iCloud), SocialPlaceEditor.swift and SocialPlacesList.swift (favorite places sync), SocialStampEditing.swift (last stamp style synced), Mac/DecksHelpContent.swift.",
     "macSections": [
       {
         "heading": "Sync across Mac, iPhone, and iPad",
         "steps": [
           "iCloud sync is on by default. Use the same Apple Account on each device. To keep work on this Mac only, turn off Decks ▸ Settings… ▸ General ▸ Sync Decks with iCloud.",
-          "Sync includes projects, templates, and the photo copies those projects need, plus settings such as destinations, favorites, My Gear, Fujifilm recipes, caption and workflow presets, Layout Builder order, and keyboard shortcuts on your other Macs. Appearance stays separate on each device.",
+          "Sync includes projects, templates, and the photo copies those projects need, plus settings such as destinations, favorites, favorite places, My Gear, Fujifilm recipes, caption and workflow presets, the last date stamp style, the order of layouts on Home, and keyboard shortcuts on your other Macs. Appearance stays separate on each device.",
           "The bottom of each window shows sync status. Click Sync Now in Settings ▸ General if a change hasn’t appeared yet.",
           "Let sync finish before continuing the same project on another device."
         ]
@@ -978,30 +1253,31 @@
     "group": "Getting Started",
     "body": "<p><strong>Requirements:</strong> iOS or iPadOS 18 or later; macOS 15 or later on Apple silicon.</p><p>TestFlight is Apple’s app for installing and updating beta apps. You do not need a beta version of iOS, iPadOS, or macOS to use Decks; your device just needs to meet the requirements listed here.</p>\n<ol><li>Install <a href=\"https://apps.apple.com/app/testflight/id899247664\">TestFlight from the App Store</a> on the iPhone, iPad, or Mac where you want to use Decks.</li><li>On that device, open the <a href=\"https://testflight.apple.com/join/SAMjeMy5\">Decks public beta invitation</a> and choose View in TestFlight.</li><li>Accept the invitation if prompted, then choose Install for Decks.</li><li>Open Decks and choose your photographs to get started. Return to TestFlight for new builds and beta feedback.</li></ol>\n<p>If the invitation opens in a browser after you install TestFlight, open the invitation again on the same device. If TestFlight reports that the beta is full or unavailable, email <a href=\"mailto:contact@brianrenshaw.app\">contact@brianrenshaw.app</a>. See <a href=\"https://testflight.apple.com/\">Apple’s TestFlight instructions</a> for installation help.</p>",
     "mac": "Install TestFlight on your Mac, then open the public invitation on that Mac. The Decks Mac beta requires macOS 15 or later and Apple silicon.",
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132."
+    "source": "Decks source 42c30ae (build 148): reviewed against SocialHelpContentPhone.swift / DecksHelpContent.swift; no build 148 changes to this task."
   },
   {
     "slug": "fujifilm",
     "title": "Fujifilm simulations & recipes",
     "summary": "Show the settings behind your photo and reuse your recipes.",
     "group": "Make It Yours",
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "source": "Decks source 42c30ae (build 148): SocialDetailsEditor.swift (Fujifilm Recipe, Card / Line / Dials / Film Box, Not Recorded on This Photo), SocialFujiInspector.swift (Fujifilm Film Simulation for cards without a design, Move into Camera Details, Apply Saved Recipe…, Use in Caption), SocialHome.swift (Settings → Fujifilm), Mac/DecksInspector.swift. The hardcoded oct06-fuji-controls screenshot in build_decks_docs.py still matches the Fujifilm Details sheet. NEEDS-SHOT: iPhone Camera panel with Fujifilm Recipe on and the Recipe Look choices.",
     "sections": [
       {
         "heading": "Show recorded simulation details",
         "steps": [
-          "Available recorded settings depend on the original file. Use supported original Fujifilm JPEGs; edited or shared copies may have lost this metadata.",
-          "Import an original Fujifilm photo. Open Camera in the editor and find Fujifilm Film Simulation. Automatic visibility shows these controls when the photo contains Fujifilm information.",
-          "Enable the Fujifilm card to put details on the page. Open Details to choose the fields to include, then use Text Style to adjust their appearance.",
-          "If controls are hidden, check Settings → Fujifilm → Fujifilm Details. Missing metadata can be entered through Details → Edit Photo Details."
+          "Decks reads available Fujifilm MakerNotes from supported original JPEGs. Edited or shared copies may have lost this metadata.",
+          "Import an original Fujifilm photo, open Camera in the editor, and switch Camera Details on. Turn on Fujifilm Recipe to add the recorded film simulation and settings to the card, then choose Card, Line, Dials, or Film Box.",
+          "Settings the photo does not record are listed under Not Recorded on This Photo. Decks does not guess them. Tap Add to enter a value you know.",
+          "Without camera details, Fujifilm Film Simulation adds a separate Fujifilm card. Open Details to choose the fields to include, then use Text Style to adjust their appearance. An older separate card offers Move into Camera Details.",
+          "If Fujifilm controls are hidden, check Settings → Fujifilm → Fujifilm Details. Automatic shows them when a photo contains Fujifilm information."
         ]
       },
       {
         "heading": "Save and use a recipe",
         "steps": [
           "Open Settings → Fujifilm Recipes and save your recipe with a name and the settings you want to remember.",
-          "Back in the editor’s Fujifilm Details, choose Apply Saved Recipe. Review the included information for that photo.",
-          "Use in Caption inserts the recipe information into your posting text. Recipe details describe the photo; they do not apply a color filter or alter its original EXIF.",
+          "In the editor’s Fujifilm Details, choose Apply Saved Recipe…. Review the included information for that photo.",
+          "Use in Caption inserts the recipe information into your posting text. Recipe details describe the photo; showing them does not apply a film simulation or change the photo’s colors or its original EXIF.",
           "Recipe names come from you. Decks cannot recover a photographer’s custom recipe name from the camera metadata."
         ]
       }
@@ -1010,9 +1286,9 @@
       {
         "heading": "Show recorded simulation details",
         "steps": [
-          "Available recorded settings depend on the original file. Use supported original Fujifilm JPEGs; edited or shared copies may have lost this metadata.",
-          "Import an original Fujifilm photo. Open Camera in the inspector and find Fujifilm Film Simulation. Automatic visibility shows these controls when the photo contains Fujifilm information.",
-          "Turn on Fujifilm Film Simulation to put details on the page. Click Details to choose the fields to include, then use Text Style to adjust their appearance.",
+          "Decks reads available Fujifilm MakerNotes from supported original JPEGs. Edited or shared copies may have lost this metadata.",
+          "Import an original Fujifilm photo, open Camera in the inspector, and turn on Camera Details. Turn on Fujifilm Recipe to add the recorded film simulation and settings, then choose Card, Line, Dials, or Film Box. Settings the photo does not record are listed under Not Recorded on This Photo.",
+          "Without camera details, turn on Fujifilm Film Simulation for a separate Fujifilm card. Click Details to choose the fields to include, then use Text Style to adjust their appearance. An older separate card offers Move into Camera Details.",
           "If controls are hidden, check Decks ▸ Settings… ▸ General ▸ Fujifilm Details. Missing metadata can be entered through Details ▸ Edit Photo Details…."
         ]
       },
@@ -1022,7 +1298,7 @@
           "Open Decks ▸ Settings… ▸ Recipes, click Add, and give your recipe a name and the settings you want to remember. Click Save.",
           "Back in the editor, click Details beside the film simulation and choose Apply Saved Recipe…. Review the included information for that photo.",
           "Use in Caption inserts the recipe information into your posting text. Presets ▸ Save as Default Preset… remembers the chosen fields and text style for new Fujifilm cards.",
-          "Recipe details describe the photo; they do not apply a color filter or alter its original EXIF.",
+          "Recipe details describe the photo; showing them does not apply a film simulation or change the photo’s colors or its original EXIF.",
           "Recipe names come from you. Decks cannot recover a photographer’s custom recipe name from the camera metadata."
         ]
       }
@@ -1034,7 +1310,7 @@
     "summary": "Use one template with one photograph or a batch.",
     "group": "Save & Share",
     "body": "<ol><li>Save a template in Decks.</li><li>On iPhone or iPad, open Settings → Photos &amp; Shortcuts and add the Decks Templates shortcut.</li><li>Select one or multiple still photos in Apple Photos. Open Share, choose Decks Templates, and choose your saved template.</li><li>Allow the requested photo access. The shortcut applies the design and saves finished copies to Photos.</li></ol>\n<p>After setup, the usual template workflow runs without opening Decks. Keep the Photos input connected to Shortcut Input when editing the shortcut. This walkthrough covers still photographs. The Apply Template action returns finished images to the next shortcut action; follow it with Save to Photo Album or Share. Save Photos with Template also accepts videos and may continue processing in Decks.</p>\n<p>Saved templates are also available through Decks actions in Shortcuts. You can use them in your own shortcuts, including ones you invoke with Siri or the Action button. More than eight photos, video, or a Photos permission request may bring Decks forward. If a template is missing, reopen the shortcut and select an available saved template.</p>",
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "source": "Decks source 42c30ae (build 148): reviewed against SocialHelpContentPhone.swift / DecksHelpContent.swift; no build 148 changes to this task.",
     "macSections": [
       {
         "heading": "Use a template from Photos",
@@ -1054,19 +1330,19 @@
     "group": "Save & Share",
     "body": "<p>In Ingest, select still photographs and choose Send to Decks. Receive them in Decks for Mac, or use the supported sharing options for iPhone and iPad. Decks offers a new project or an existing project as the destination. Incoming Photos holds deferred and supported iCloud handoffs until you are ready.</p>\n<p>Your Ingest originals stay in place. Use an Ingest version that supports your chosen handoff. See the <a href=\"/ingest/guide/#social-export\">Ingest handoff guide</a> for current options.</p>",
     "mac": "Select photos in Ingest and choose Send to Decks. In the receiving window, choose New Project or Existing Project, select the project when needed, then choose Add Photos. Later keeps the batch for another time. If preparation fails, use Retry rather than resending the same batch immediately.",
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132."
+    "source": "Decks source 42c30ae (build 148): reviewed against SocialHelpContentPhone.swift / DecksHelpContent.swift; no build 148 changes to this task."
   },
   {
     "slug": "destinations",
     "title": "Instagram, Threads, frames & video",
     "summary": "Choose a layout for the place your photos will go.",
     "group": "Save & Share",
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132.",
+    "source": "Decks source 42c30ae (build 148): SocialDestinations.swift (Kit shortName: Story, Post 4:5, Square, Threads, Video, TV), SocialHome.swift (destination chips, Frame layouts, More Layouts), SocialStartFlow.swift (frameSuggestionRow), Mac/DecksHelpContent.swift, Mac/DecksDestinations.swift. Kept build132-mac-frame-menu: the Add a Photo Frame sheet is unchanged.",
     "sections": [
       {
         "heading": "Instagram & Threads",
         "steps": [
-          "In Layout Builder, choose Instagram post, Instagram stories, or Threads above the layouts. Then pick a layout and select your photos.",
+          "On Home, tap a destination at the top: Post 3:4 or Post 4:5 for an Instagram post, Story for Instagram stories, or Threads. Then pick a layout and select your photos.",
           "Keep a consistent background and frame across a series. Panorama can split a photograph into ordered carousel panels.",
           "Export to Photos, select the finished images in order in Instagram or Threads, and paste the caption you prepared in Decks."
         ]
@@ -1074,15 +1350,15 @@
       {
         "heading": "Aura & other digital frames",
         "steps": [
-          "In Settings → Destinations, choose Add a Photo Frame. Select the model and orientation to add its size to Layout Builder.",
-          "With the frame chosen on Home, choose Smart Layout for a mixed batch: vertical photos pair up, horizontal photos get a page each, and one step lets you swap pairs and pick each group’s look. Or pick one of four layouts that avoid empty bars: Two Side by Side, Soft Background, Full Screen, or Thin Border. An upright frame stacks two horizontal photos instead. If your photos suit another layout better, the walkthrough suggests it. More Layouts, under the four, shows the rest.",
+          "In Settings → Destinations, choose Add a Photo Frame. Select the model and orientation to add its size to Home.",
+          "With the frame chosen on Home, Frame layouts lists Smart Layout first for a mixed batch: vertical photos pair up and horizontal photos get a page each. In the start screen’s Layout tool, you can swap pairs and pick each group’s look. Or pick one of four layouts that avoid empty bars: Two Side by Side, Soft Background, Full Screen, or Thin Border. An upright frame stacks two horizontal photos instead. If your photos suit another layout better, Layout suggests it. More Layouts, under the four, shows the rest.",
           "Export the finished images to Photos. Add them in the Aura app or your frame’s usual uploader, then review that app’s crop preview."
         ]
       },
       {
         "heading": "Photos in videos",
         "steps": [
-          "Choose Video (YouTube, Vimeo, etc.) for a 16:9 page, or match your editing project’s shape. A background can give portrait photos room inside a wide video.",
+          "Choose Video for a 16:9 page, or match your editing project’s shape. Tap More (…) at the top of Home to see every destination. A background can give vertical photos room inside a wide video.",
           "Add a title, photo credit, or camera details in Decks. Check that the text will be readable when the image appears in the video.",
           "Export JPEG or PNG pages at a suitable width, then import them into your video editor. Set the duration and transitions there. A still image export is not a finished video."
         ]
@@ -1092,7 +1368,7 @@
       {
         "heading": "Instagram & Threads",
         "steps": [
-          "In Layout Builder, choose Instagram post, Instagram stories, or Threads from the size menu. Then click a layout and choose your photos.",
+          "On Home, choose Instagram post, Instagram stories, or Threads from the size menu. Then click a layout and choose your photos.",
           "Keep a consistent background and frame across a series. Panorama can split a photograph into ordered carousel panels.",
           "Export to Photos or a folder. In Instagram or Threads, select the finished images in order and paste the caption you copied from Caption."
         ]
@@ -1100,15 +1376,15 @@
       {
         "heading": "Aura & other digital frames",
         "steps": [
-          "Choose Decks ▸ Settings… ▸ Destinations and click Add a Photo Frame…. Check your model and orientation, click Done, then click Save Changes to add its size to Layout Builder.",
-          "With the frame chosen in Layout Builder, choose Smart Layout for a mixed batch: vertical photos pair up, horizontal photos get a page each, and one step lets you swap pairs and pick each group’s look. Or pick one of four layouts that avoid empty bars: Two Side by Side, Soft Background, Full Screen, or Thin Border. An upright frame stacks two horizontal photos instead. If your photos suit another layout better, the walkthrough suggests it. More Layouts shows the rest. Save the result as a template for future batches.",
+          "Choose Decks ▸ Settings… ▸ Destinations and click Add a Photo Frame…. Check your model and orientation, click Done, then click Save Changes to add its size to Home.",
+          "With the frame chosen on Home, Frame layouts lists Smart Layout first for a mixed batch: vertical photos pair up and horizontal photos get a page each, and the Layout panel lets you swap pairs and pick each group’s look. Or pick one of four layouts that avoid empty bars: Two Side by Side, Soft Background, Full Screen, or Thin Border. An upright frame stacks two horizontal photos instead. If your photos suit another layout better, Layout suggests it. More Layouts shows the rest. Save the result as a template for future batches.",
           "Export the finished images to Photos or a folder. Add them in the Aura app or your frame’s usual uploader, then review that app’s crop preview."
         ]
       },
       {
         "heading": "Photos in videos",
         "steps": [
-          "Choose Video (YouTube, Vimeo, etc.) from the size menu for a 16:9 page, or Custom Size… to match your editing project’s shape. A background can give portrait photos room inside a wide video.",
+          "Choose Video (YouTube, Vimeo, etc.) from the size menu for a 16:9 page, or Custom Size… to match your editing project’s shape. A background can give vertical photos room inside a wide video.",
           "Add a title, photo credit, or camera details in Decks. Check that the text will be readable when the image appears in the video.",
           "Export JPEG or PNG pages at a suitable Image Width, then import them into your video editor. Set the duration and transitions there. A still image export is not a finished video."
         ]
@@ -1127,16 +1403,16 @@
     "group": "Make It Yours",
     "body": "<h2 id=\"workflow\">Make a video composition</h2><ol><li>Import an actual video clip through Add Photos &amp; Videos. A still photograph remains a still unless you bring in moving media.</li><li>Select the clip and open Photo to find the clip controls. Adjust the trim and review playback before export.</li><li>Use Layout and Frame for the page’s arrangement and background. Add text or other design details as needed.</li><li>Open Export and review the video output settings. Video pages export as MP4; still pages export as image files.</li></ol><p>A project can contain both photo and video pages. Check the output type for each page. For a long or high-resolution clip, allow processing to finish before closing the app.</p>",
     "mac": "Import clips through File → Import Photos and Videos…. Select the clip in your page and use the inspector for its controls. File → Export… includes a Video disclosure with Video Width. Save to Photos or export to a folder.",
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132."
+    "source": "Decks source 42c30ae (build 148): reviewed against SocialHelpContentPhone.swift / DecksHelpContent.swift; no build 148 changes to this task."
   },
   {
     "slug": "troubleshooting",
     "title": "Troubleshooting and feedback",
     "summary": "Missing photos, metadata, exports, templates, and sync.",
     "group": "Your Library",
-    "body": "<h2 id=\"missing-project\">A project disappeared after export</h2><p>Check Archive. Archive Project After Export can move a saved project out of the main list. On iPhone and iPad, check Settings → Project Cleanup and pin projects you want to keep. Restoring a project is different from recovering a missing original photograph.</p><h2 id=\"metadata\">Camera or Fujifilm details are missing</h2><p>Try the original file. Screenshots and edited copies may not contain camera metadata. Fujifilm decoding requires supported original JPEG MakerNotes; a recipe name is supplied by you. Use My Gear or Photo Details for information you know.</p><h2 id=\"export\">An export failed or may have saved twice</h2><p>Check Photos or the destination folder before retrying an uncertain save. Use Retry Failed on iPhone/iPad or Retry Unfinished Output on Mac when offered. Try fewer pages or a smaller export width after a memory error. Keep Decks running until processing finishes.</p><h2 id=\"permission\">Decks cannot save to Photos</h2><p>Allow the requested Photos access, or review Decks’ Photos permission in the device’s privacy settings. On Mac, Decks → Settings → General includes Allow Saving to Photos. Export to a folder if you do not want to grant Photos saving access.</p><h2 id=\"sync\">A project or template has not synced</h2><p>Confirm the same Apple account and that optional Decks iCloud sync is enabled on both devices. Check status, allow media to download, and use Sync Now. Resume paused downloads on Mac when appropriate. Separate local presets are not a complete synced settings library.</p><h2 id=\"shortcut\">A shortcut cannot find my template</h2><p>Open Decks and confirm the template is saved. Reopen the shortcut’s action and select an available template. Check that input photos reach Apply Template and that its output connects to Save to Photo Album or Save File.</p><h2 id=\"feedback\">Send a useful report</h2><p>Use Send Beta Feedback in TestFlight, or email <a href=\"mailto:contact@brianrenshaw.app\">contact@brianrenshaw.app</a>. Include your platform, OS version, Decks build, the steps you took, and what you expected. Attach only photographs and metadata you are comfortable sharing.</p>",
+    "body": "<h2 id=\"missing-project\">A project disappeared after export</h2><p>Check Archive. Archive Project After Export can move a saved project out of the main list. On iPhone and iPad, check Settings → Project Cleanup and pin projects you want to keep. Restoring a project is different from recovering a missing original photograph.</p><h2 id=\"metadata\">Camera or Fujifilm details are missing</h2><p>Try the original file. Screenshots and edited copies may not contain camera metadata. Fujifilm decoding requires supported original JPEG MakerNotes; a recipe name is supplied by you. Use My Gear or Photo Details for information you know.</p><h2 id=\"export\">An export failed or may have saved twice</h2><p>Check Photos or the destination folder before retrying an uncertain save. Use Retry Failed on iPhone/iPad or Retry Unfinished Output on Mac when offered. Try fewer pages or a smaller export width after a memory error. Keep Decks running until processing finishes.</p><h2 id=\"permission\">Decks cannot save to Photos</h2><p>Allow the requested Photos access, or review Decks’ Photos permission in the device’s privacy settings. On Mac, Decks → Settings → General includes Allow Saving to Photos. Export to a folder if you do not want to grant Photos saving access.</p><h2 id=\"sync\">A project or template has not synced</h2><p>Confirm the same Apple Account and that Decks iCloud sync is on for both devices. Check the sync status, let media finish downloading, and use Sync Now. Resume paused downloads when appropriate. Sync covers projects, templates, and settings such as destinations, favorites, favorite places, My Gear, Fujifilm recipes, and caption presets. Appearance stays separate on each device.</p><h2 id=\"photos-browser\">The Photos list changed while I was choosing</h2><p>When photos are added to or removed from Photos while you choose, Decks refreshes the list in place and keeps your scroll position and your picks. If a photo you picked is edited in Photos, Decks shows the newer version and you choose it again.</p><h2 id=\"shortcut\">A shortcut cannot find my template</h2><p>Open Decks and confirm the template is saved. Reopen the shortcut’s action and select an available template. Check that input photos reach Apply Template and that its output connects to Save to Photo Album or Save File.</p><h2 id=\"feedback\">Send a useful report</h2><p>Use Send Beta Feedback in TestFlight, or email <a href=\"mailto:contact@brianrenshaw.app\">contact@brianrenshaw.app</a>. Include your platform, OS version, Decks build, the steps you took, and what you expected. Attach only photographs and metadata you are comfortable sharing.</p>",
     "mac": "Use Recent Activity to inspect processing jobs. Check Settings → Automation folder access when a file-based workflow fails. Do not assume a missing result means the operation never wrote a file; inspect the destination before retrying.",
-    "source": "Decks source 95a303f: SocialHelpContentPhone.swift / DecksHelpContent.swift; retained specialized guide content reviewed against build 132."
+    "source": "Decks source 42c30ae (build 148): SocialLibraryBrowser.swift (refresh in place, keepPicks), SocialHome.swift (Settings → iCloud), Mac/DecksHelpContent.swift (sync list)."
   },
   {
     "slug": "automation",
@@ -1184,6 +1460,6 @@
         ]
       }
     ],
-    "source": "DecksHelpContent.swift at 95a303f"
+    "source": "DecksHelpContent.swift at 42c30ae (build 148); unchanged since 95a303f."
   }
 ]
