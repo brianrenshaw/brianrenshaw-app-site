@@ -495,3 +495,7 @@ Camera details are one card with Placement (Under, Above, Side, On Photo, Free),
 Date Stamp factual limits: a custom date or place changes only the stamp, never the photo or its saved date and location. Place names come from the photo’s own location through Apple Maps. Decks asks for location only when someone taps Current Location, and does not store or track it. The styles are Film, Digital, Clean, and Typewriter.
 
 Pricing: say nothing about Decks Pro, trials, or which features are paid. Brian decided this on October 9. Film is listed as a style without comment; examples and screenshots use Digital, Clean, or Typewriter. “Free while in beta” on the Aura page stays.
+
+## Aura page brevity — October 9, 2026
+
+The Aura page is short on purpose: problem in one sentence, a six-step plan with one line per step, the result, one call to action. Do not add notes under sections, a tips list, or more than five FAQs. Steps use iPhone captures with the control in question spotlighted. Text on example compositions sits in the margin, not on the photo, and uses a plain line rather than a slogan.

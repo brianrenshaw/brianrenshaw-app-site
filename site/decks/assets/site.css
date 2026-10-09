@@ -173,3 +173,7 @@ ol.benefits{list-style:none;padding:0}
 @media(max-width:760px){.smart-steps-wide{grid-template-columns:1fr}}
 .smart-steps-wide .smart-shots .native-shot img{max-height:560px;width:auto;margin:0 auto}
 @media(max-width:560px){.smart-steps-wide .smart-shots .native-shot img{max-height:300px}}
+/* Aura page: six iPhone steps, three across on wide screens. */
+.decks-aura .smart-steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:56px 40px}.decks-aura .smart-shots .native-shot img{max-width:260px}
+@media(max-width:1000px){.decks-aura .smart-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.decks-aura .smart-steps{grid-template-columns:1fr}}

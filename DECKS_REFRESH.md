@@ -161,3 +161,9 @@ Brian asked for a comprehensive update to match the Decks builds since 132. Nati
 Test changes were made only in a scratch clone of the app repo: `SocialWebsiteBuild148UITests.swift`, and fixes to `testSmartLayoutWebsiteCaptures` for the build 147 pages screen. They were not committed to the app repo. The iPhone Aura capture still cannot reach the All Destinations chip.
 
 App-side mismatch to fix: the iOS in-app help and the introduction’s last button still say “Layout Builder” (`SocialHelpContentPhone.swift`, `SocialIntroduction.swift`).
+
+## Aura page brevity pass and Story example — October 9, 2026
+
+Brian found the Aura page far too wordy and asked for StoryBrand simplicity. The page went from about 1,620 visible words to about 520. It is now: hero, a one-sentence problem, one six-step iPhone slideshow (merging the old three-step list and the seven-step iPad Smart Layout list), four real exports, the frame table, five FAQs, and the closing call to action. The tips section, the trailing notes, the Mac frame-menu disclosure and five FAQs were removed. Every step is now an iPhone capture with the relevant control spotlighted; the iPad step captures are no longer used on the page. The iPhone All Destinations blocker is fixed in the capture test (it scrolls the pill row).
+
+The homepage Instagram Stories example had “October, in color.” in Helvetica on the photo. It is re-rendered as `oct09-story` with “Saturday at the park.” in Georgia Italic, centered in the margin below the photo.
