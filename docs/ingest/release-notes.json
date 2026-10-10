@@ -1,5 +1,9 @@
 [
   {
+    "version": "0.9.9.4",
+    "body": "<ul><li>Folders you add in the Finder, on an external drive, or on a memory card appear in the sidebar right away, without quitting Ingest. Renamed and deleted folders update too.</li><li>A folder that gets its first subfolder shows its disclosure arrow, and a collapsed folder lists what was added while it was closed.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
+  },
+  {
     "version": "0.9.9.3",
     "body": "<ul><li>Return moves to the next page of the Welcome to Ingest walkthrough again.</li><li>Import Settings opens with the cursor in Save to, so you can type a destination right away.</li><li>Go to Inspector (⌥⌘3) shows which control has the keyboard.</li><li>Return in a field such as New group name adds the name instead of starting the import, wherever the cursor came from.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
   },

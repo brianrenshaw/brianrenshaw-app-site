@@ -3,6 +3,17 @@
     <channel>
         <title>Ingest</title>
         <item>
+            <title>0.9.9.4</title>
+            <pubDate>Fri, 09 Oct 2026 20:44:53 -0400</pubDate>
+            <sparkle:version>55</sparkle:version>
+            <sparkle:shortVersionString>0.9.9.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.9.4/Ingest-0.9.9.4.dmg" length="25251090" type="application/octet-stream" sparkle:edSignature="sng61KWedITMMaaV0MrGcV91A4hJu8SYE7zPPX9AnYROtAbXuwo1NDAU1yQRg9Q2NwVSwdabW/VU7oMAcAwJCg==" />
+            <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.9.4&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Folders you add in the Finder, on an external drive, or on a memory card appear in the sidebar right away, without quitting Ingest. Renamed and deleted folders update too.&lt;/li&gt;&lt;li&gt;A folder that gets its first subfolder shows its disclosure arrow, and a collapsed folder lists what was added while it was closed.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+            <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.9.4</sparkle:fullReleaseNotesLink>
+        </item>
+        <item>
             <title>0.9.9.3</title>
             <pubDate>Wed, 07 Oct 2026 22:55:54 -0400</pubDate>
             <sparkle:version>54</sparkle:version>
@@ -23,17 +34,6 @@
             <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.9.2/Ingest-0.9.9.2.dmg" length="25247980" type="application/octet-stream" sparkle:edSignature="ppyA55kcfZmdLXUiZ1jzAmPDQx/9TGrnJtHRgFw1pFXzGwLcK9RsxQTlWDxMo1YNmPONRqEuindVOZ7niCEAAQ==" />
             <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.9.2&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Press ⌘Return to confirm any dialog, even while typing in a multi-line field. Dialogs open with the cursor in their first field.&lt;/li&gt;&lt;li&gt;Press ⌃Return to open the right-click menu for whatever has focus: a sidebar folder, a photo, an Organize group, or a tab.&lt;/li&gt;&lt;li&gt;In Ingest, ⌘O, Find Folder (⇧⌘F), and the Open Card, Favorite, and Recent commands choose the import source. Use ↑ and ↓ to move through the source list.&lt;/li&gt;&lt;li&gt;Switch source tabs with ⇧⌘] and ⇧⌘[. The command palette can also open new tabs, move tabs, open Filters, clear all filters, open any Settings page, stop an import after the current file, and create Organize groups.&lt;/li&gt;&lt;li&gt;Go to Inspector (⌥⌘3) puts the keyboard on the first control, and Escape returns to the photos.&lt;/li&gt;&lt;li&gt;Fixed: ⇧⌘E (Send to Decks) did nothing while a text field had focus. Custom shortcuts on the Workspace menu now work.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
             <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.9.2</sparkle:fullReleaseNotesLink>
-        </item>
-        <item>
-            <title>0.9.9.1</title>
-            <pubDate>Wed, 07 Oct 2026 19:42:25 -0400</pubDate>
-            <sparkle:version>52</sparkle:version>
-            <sparkle:shortVersionString>0.9.9.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.9.1/Ingest-0.9.9.1.dmg" length="25187010" type="application/octet-stream" sparkle:edSignature="I7WiYt+/vwttMJRb+bd+nv4+MmadE8XKQI0Kp/sucrP93AfLJgP2ggCa9hjSe2xNhFkaU2f4OUYSMmfmNht5AQ==" />
-            <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.9.1&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;The Welcome to Ingest walkthrough shows the new Workspace Builder: start from scratch or from Events, Headshots, or Real Estate, and see what each sets up before using it.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
-            <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.9.1</sparkle:fullReleaseNotesLink>
         </item>
     </channel>
 </rss>
