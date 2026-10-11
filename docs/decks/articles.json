@@ -49,7 +49,8 @@
       {
         "heading": "Put photos on shared pages",
         "steps": [
-          "In Layout, Photos per Page offers One, 2, 3, or Grid of 4. With 2 or 3, choose Stacked or Side by Side. Photos shaped across the page share a page; photos shaped like the page keep a page each.",
+          "In Layout, Photos per Page offers One, 2, 3, or Grid of 4. Photos shaped across the page share a page; photos shaped like the page keep a page each.",
+          "Every smart layout opens on its Layout screen as soon as you choose photos. Check the groups: tap two photos to swap them, or tap a photo and then a photo on another page to move it there. Give It Its Own Page puts it on a page by itself. Below the groups, choose Stacked or Side by Side and the background for every page.",
           "Turn on Only if taken within 10 minutes to share a page only between photos taken close together.",
           "Under the pages, Split Page gives each photo on the current page its own page. Join with Next puts the current page’s photos with the next page’s. You can also drag a page in the strip onto another page to join them. A page holds up to four photos."
         ],
@@ -173,7 +174,7 @@
       {
         "heading": "Choose the pairs and their look",
         "steps": [
-          "Tap Layout in the tools at the bottom. Under Vertical Pairs (Horizontal Pairs on an upright frame), tap two photos to swap them, or drag one onto another. You choose which photos belong together.",
+          "The Layout panel opens on its own after you choose photos. Under Vertical Pairs (Horizontal Pairs on an upright frame), tap two photos to swap them, or drag one onto another. You choose which photos belong together.",
           "Choose White or Black for the pair background. Under Horizontal Photos (Vertical Photos on an upright frame), individual pages start as Fill Frame, which crops the photo a little so there are no bars; check faces and edges. Choose White Border or Black Border to show the whole photo instead. A black border blends into the frame’s own black edge, so the photo looks like part of the frame; a white border or soft background reads as a background behind the photo.",
           "If your photos suit another frame layout better, Layout suggests it. Choose Use to switch, or Keep to stay with Smart Layout.",
           "Tap Create and review the crop on each page in the editor. You can continue editing the result."

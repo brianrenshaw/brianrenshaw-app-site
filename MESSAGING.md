@@ -309,7 +309,7 @@ Keep the headline and the factual claims plain. Snark rides in the section copy,
 
 **Visual direction:** Photo editorial. Light paper, charcoal system type, generous spacing, varied actual photographs and readable native controls. Still images only. Pair finished results with the tools behind them. Use original native exports and current beta interfaces in isolated demo stores; document build/source/dimensions. Preserve older asset URLs.
 
-**Availability:** Public TestFlight beta at https://testflight.apple.com/join/SAMjeMy5. Since October 9 the site describes build 148. A read-only App Store Connect check that day showed iOS 132 and Mac 125 as the newest builds with external testers; builds 133–148 had only been installed on Brian’s own devices. Brian chose to publish the build 148 description anyway. Recheck before relying on this line. Requires iOS/iPadOS 18+ or macOS 15+ on Apple silicon. Dedicated site: https://decksphotoapp.com/.
+**Availability:** Public TestFlight beta at https://testflight.apple.com/join/SAMjeMy5. Since October 11, 2026 the site describes build 159 (iOS and Mac uploaded to TestFlight that day): every smart layout opens on its Layout screen, a four-screen first-run tour, and Share → Aura for pages. Recheck before relying on this line. Requires iOS/iPadOS 18+ or macOS 15+ on Apple silicon. Dedicated site: https://decksphotoapp.com/.
 
 **Factual boundaries:**
 
