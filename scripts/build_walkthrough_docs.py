@@ -41,10 +41,10 @@ def page(title, description, route, body):
     frame = frame.replace('class="app-listing-namer"','class="app-listing-namer wiki-docs"')
     frame = frame.replace('>Support</a>', '>Help center</a>')
     layout = '<div class="wiki-toolbar"><a href="/walkthrough/support/">Walkthrough help · Mac</a><a href="/walkthrough/support/#find-topic">Find a topic</a></div>'
-    layout += '<div class="wiki-layout">'+sidebar(route)+'<main id="main" tabindex="-1" class="wiki-main">'+body+'<p class="wiki-updated">Guide for Walkthrough 1.4.2 · Updated October 6, 2026. Screenshots use demonstration data with repeated photographs.</p></main></div>'
+    layout += '<div class="wiki-layout">'+sidebar(route)+'<main id="main" tabindex="-1" class="wiki-main">'+body+'<p class="wiki-updated">Guide for Walkthrough 1.4.4 · Updated October 14, 2026. Screenshots use demonstration data with repeated photographs.</p></main></div>'
     dest = ROOT / 'site' / route.strip('/') / 'index.html'
     dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text(frame.replace('{{CONTENT}}', layout))
+    dest.write_text('\n'.join(line.rstrip() for line in frame.replace('{{CONTENT}}', layout).splitlines()) + '\n')
 
 def directory():
     out = '<section id="find-topic"><h2>Find a topic</h2><div class="help-search" hidden><label for="topic-search">Search guides and support</label><input id="topic-search" type="search" placeholder="Try rooms, filenames, copy, or updates" aria-controls="topic-directory"><p id="search-status" role="status" aria-live="polite"></p></div><div id="topic-directory" class="wiki-directory">'
