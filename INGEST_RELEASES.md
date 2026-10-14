@@ -52,6 +52,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.9.9.6 | 57 | October 13, 2026 | Plain Workspace Builder with labeled rows and real buttons, videos to another location, Continue the last project, plus the unpublished 0.9.9.5 changes (import tabs, Finder-style sidebar keys, ⌘L place search, card metadata held for copies). |
 | 0.9.8.1 | 49 | October 6, 2026 | Independent Import and Organize setup, readable naming variables, and automatic import progress. |
 | 0.9.8 | 48 | October 6, 2026 | Native title-bar controls, adaptive source tabs, a new welcome, compact Browse by, Scenes removal, and closed-eye palette filtering. |
 | 0.9.7 | 47 | October 6, 2026 | Guided Workspace Builder, named photo groups, resolved metadata previews, independently scoped actions, consistent macOS controls, and Decks iCloud transfers. |
