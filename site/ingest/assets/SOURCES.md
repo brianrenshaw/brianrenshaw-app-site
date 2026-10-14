@@ -383,6 +383,15 @@ Published GitHub release ingest-v0.9.8.1 and its DMG were verified available dur
 
 QA finding: the native Organize setup sheet clips its content horizontally at its default width in this local build. The captured sheet was rejected for publication; the website uses the intact Organize preferences screenshot instead.
 
+## Plain Workspace Builder and Import Settings — October 13, 2026, Ingest 0.9.9.6 (57)
+
+Four native dark-mode SwiftUI captures replace the 0.9.9.1 builder images and the 0.9.8.1 Import Settings image. Source: `photo-importer` commit `d032839`. No screenshots are generated or retouched; original Retina pixels are retained in lossless WebP. The replaced images stay in `archivedImages`.
+
+- `editorial-builder-starters-0.9.9.6-retina.webp`: byte-for-byte copy of the app's `Resources/FeatureTour/welcome-builder.webp` (2480 × 1440), from `FeatureTourTests.testRenderWalkthroughAssets`. Events is previewed beside the Start from row. Isolated test library; no personal photos or paths.
+- `editorial-builder-names-0.9.9.6-retina.webp`: `WorkspaceBuilderTests.testPlainRoundSnapshots`, `plain-2-import-file-names.png` (2360 × 1640). Original filename + illustrative Client answer + four-digit Photo Number.
+- `editorial-builder-organize-0.9.9.6-retina.webp`: the same test, `plain-3-organize.png` (2360 × 1640), with Organize set up to make a dated folder.
+- `editorial-import-0.9.9.6-retina.webp`: `FeatureTourTests.testRenderWalkthroughAssets`, `site-import-settings.png` (1800 × 1440). The real Import Settings sheet over the six credited Paul Jarvis demonstration photographs (Lorem Picsum IDs 10–14 and 16, re-downloaded October 13 at 1600 × 1000), importing to a neutral `/Users/Shared/Ingest Demo/Photos` folder made for the capture and removed afterward. Nothing was imported.
+
 ## Workspace Builder — October 7, 2026, Ingest 0.9.9.1 (52)
 
 Three native dark-mode SwiftUI captures replace the obsolete ten-section builder imagery. Source: `photo-importer` commit `4d84787`, the current 0.9.9.1 source. No screenshots are generated or retouched; original Retina pixels are retained in lossless WebP.

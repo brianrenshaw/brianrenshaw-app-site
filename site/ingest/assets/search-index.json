@@ -531,7 +531,7 @@
     "title": "Workspaces and the guided builder",
     "url": "/ingest/guide/workspaces/",
     "page": "Guide",
-    "keywords": " A workspace remembers folders, filenames, metadata, and review preferences for a kind of photography. Import and Organize have separate settings. \n Choose a workspace  Use the window toolbar or Workspace menu. Open at Launch is separate from the active workspace. Control-0 selects Basic; Control-1 through Control-9 select assigned workspaces. \n Create a workspace  Choose  New Workspace… , then  Use Workspace Builder  for guided steps or  Set Up Manually  for direct access to the same sections. Changes stay in a draft until you choose  Save Workspace . Cancel leaves your saved setup unchanged.",
+    "keywords": " A workspace remembers folders, filenames, metadata, and review preferences for a kind of photography. Import and Organize have separate settings. \n Choose a workspace  Use the window toolbar or Workspace menu. Open at Launch is separate from the active workspace. Control-0 selects Basic; Control-1 through Control-9 select assigned workspaces. \n Create a workspace  Choose  New Workspace… . The builder opens on its first step; Next and Back walk the steps, and the sidebar jumps to any of them. Each step is a few short groups of settings, and hovering a setting explains it. Changes stay in a dra",
     "hint": "Guide"
   },
   {
