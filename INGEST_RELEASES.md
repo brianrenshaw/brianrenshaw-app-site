@@ -52,6 +52,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.9.9.7.2 | 60 | October 15, 2026 | Open in Lightroom and Lightroom Classic from the right-click menu, File menu, and palette, ready as after-import actions; apps get photos without sidecars. |
 | 0.9.9.7 | 58 | October 14, 2026 | Fixes the Project menu showing no projects when any project was saved by an earlier version. |
 | 0.9.9.6 | 57 | October 13, 2026 | Plain Workspace Builder with labeled rows and real buttons, videos to another location, Continue the last project, plus the unpublished 0.9.9.5 changes (import tabs, Finder-style sidebar keys, ⌘L place search, card metadata held for copies). |
 | 0.9.8.1 | 49 | October 6, 2026 | Independent Import and Organize setup, readable naming variables, and automatic import progress. |

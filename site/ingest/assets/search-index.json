@@ -747,7 +747,7 @@
     "title": "After-import actions, Lightroom, and automation",
     "url": "/ingest/guide/actions/",
     "page": "Guide",
-    "keywords": " An action is a list of steps that opens files in an app, reveals them in Finder, sends them to Apple Photos, copies them elsewhere, or runs a Shortcut or script. In the workspace’s  After Import  section, add ordered actions and choose  Photos for this action  independently for each. For example, import All and open only Tagged copies in Lightroom. \n They are built in Settings → Automation, with a button that runs one on the current selection so you can test it without waiting for a card. The detail, including what a script gets handed, is on the  automation page . \n Import everything; open o",
+    "keywords": " An action is a list of steps that opens files in an app, reveals them in Finder, sends them to Apple Photos, copies them elsewhere, or runs a Shortcut or script. In the workspace’s  After Import  section, add ordered actions and choose  Photos for this action  independently for each. For example, import All and open only Tagged copies in Lightroom. \n To hand off photos at any time, right-click them and choose  Open in Lightroom  or  Open in Lightroom Classic , also in the File menu and the command palette. Lightroom opens its Add Photos screen with them selected; ratings and labels are saved ",
     "hint": "Guide"
   },
   {

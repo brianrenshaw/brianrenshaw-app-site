@@ -1,5 +1,9 @@
 [
   {
+    "version": "0.9.9.7.2",
+    "body": "<p>New:</p><ul><li>Open in Lightroom. Right-click photos and choose <strong>Open in Lightroom</strong> or <strong>Open in Lightroom Classic</strong>. It's also in the File menu and the command palette. Lightroom opens its Add Photos screen (Classic opens its import window) with your photos selected. Ratings and labels are saved first, so they come along. Each item appears only when that app is installed.</li><li>Both Lightroom apps are ready as after-import actions, so you can pick them in the Workspace Builder or on the import screen and send only Tagged photos or a photo group.</li></ul><p>Changed:</p><ul><li>Opening photos in an app now hands over the photos only. Their XMP sidecars stay beside them, as they already did after an import.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
+  },
+  {
     "version": "0.9.9.7",
     "body": "<p>Fixed:</p><ul><li>The Project menu in Import settings could show no projects at all, even right after you made one. Projects saved by earlier versions of Ingest couldn't be read, and one unreadable project hid every other. Those projects open again, and a project that can't be read now leaves only itself out of the menu.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
   },
