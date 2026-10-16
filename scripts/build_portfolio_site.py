@@ -10,6 +10,7 @@ SOURCE = ROOT / "site"
 OUTPUT = ROOT / "dist/portfolio"
 DECKS = "https://decksphotoapp.com/"
 INGEST = "https://ingestphotoapp.com/"
+NEARABOUT = "https://nearaboutapp.com/"
 
 
 def main():
@@ -26,6 +27,9 @@ def main():
                              p.relative_to(SOURCE / "ingest").as_posix().removesuffix("index.html")))
                   for p in (SOURCE / "ingest").rglob("index.html")
                   if p.parent.name != "release-notes"]
+    redirects += [("nearabout", "Nearabout", p.relative_to(SOURCE / "nearabout").as_posix().removesuffix("index.html"),
+                   NEARABOUT + p.relative_to(SOURCE / "nearabout").as_posix().removesuffix("index.html"))
+                  for p in (SOURCE / "nearabout").rglob("index.html")]
     for slug, name, route, destination in redirects:
         (OUTPUT / slug / route / "index.html").write_text(f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -49,7 +53,7 @@ location.replace(destination.href);</script></body></html>
     tree = ET.parse(sitemap)
     for url in list(tree.getroot()):
         loc = url.find(f"{{{namespace}}}loc")
-        if loc is not None and (loc.text or "").startswith(("https://brianrenshaw.app/decks/", "https://brianrenshaw.app/ingest/")):
+        if loc is not None and (loc.text or "").startswith(("https://brianrenshaw.app/decks/", "https://brianrenshaw.app/ingest/", "https://brianrenshaw.app/nearabout/")):
             tree.getroot().remove(url)
     tree.write(sitemap, encoding="UTF-8", xml_declaration=True)
     assert 'href="/decks/' not in homepage.read_text()
@@ -73,7 +77,7 @@ location.replace(destination.href);</script></body></html>
     for asset in (SOURCE / "ingest/assets").rglob("*"):
         if asset.is_file():
             assert (OUTPUT / asset.relative_to(SOURCE)).read_bytes() == asset.read_bytes()
-    print("PASS: portfolio export, Decks/Ingest redirects, sitemap, archived assets, and permanent app feeds")
+    print("PASS: portfolio export, Decks/Ingest/Nearabout redirects, sitemap, archived assets, and permanent app feeds")
 
 
 if __name__ == "__main__":

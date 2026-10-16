@@ -6,9 +6,10 @@ Build and validate with `python3 scripts/build_nearabout_site.py`. Cloudflare Pa
 uses this repository, production branch `main`, no framework, repository root,
 that build command, and output directory `dist/nearabout`.
 
-Intended project: `nearabout-app`. Primary domain: `nearaboutapp.com`.
-Attach both apex and `www` through Pages Custom domains. The generated `_redirects`
-permanently redirects www to the apex and preserves paths. Registration remains
+Cloudflare project: `nearabout-app` (`nearabout-app.pages.dev`). Primary domain: `nearaboutapp.com`.
+Attach both apex and `www` through Pages Custom domains. Configure the www-to-apex
+redirect in Cloudflare Redirect Rules, preserving paths and query strings.
+Pages `_redirects` only supports relative source paths. Registration remains
 at Hover. Import existing DNS records and verify DNSSEC before replacing Hover's
 nameservers with the nameservers assigned to this Cloudflare zone.
 
@@ -70,3 +71,14 @@ The page groups them into four short situations so it stays simple.
 
 Starting points are general: current location or any chosen address. Houses and
 schools are examples only, never the defining audience or scope of nearby lists.
+
+## Deployment record
+
+Created the Git-connected Cloudflare Pages project on October 16, 2026.
+Production follows `main`; build output is `dist/nearabout`. Registered apex and
+www custom domains with Pages and changed their imported parking records to
+proxied CNAMEs targeting `nearabout-app.pages.dev`. Hover nameservers were changed
+to `anna.ns.cloudflare.com` and `cesar.ns.cloudflare.com`; Cloudflare confirmed
+the zone active. No MX records or DNSSEC delegation existed during migration.
+The portfolio export redirects Nearabout pages to the dedicated domain, preserving
+query strings and anchors.

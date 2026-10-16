@@ -44,7 +44,7 @@ def main():
     routes = sorted('/' + p.relative_to(OUTPUT).as_posix().removesuffix('index.html') for p in pages)
     (OUTPUT / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'<url><loc>{ORIGIN}{r}</loc></url>\n' for r in routes) + '</urlset>\n')
     (OUTPUT / 'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {ORIGIN}/sitemap.xml\n')
-    (OUTPUT / '_redirects').write_text('https://www.nearaboutapp.com/* https://nearaboutapp.com/:splat 301\n/nearabout / 301\n/nearabout/ / 301\n/nearabout/* /:splat 301\n')
+    (OUTPUT / '_redirects').write_text('/nearabout / 301\n/nearabout/ / 301\n/nearabout/* /:splat 301\n')
     (OUTPUT / '_headers').write_text('/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n')
     if errors:
         sys.exit('\n'.join(errors))
