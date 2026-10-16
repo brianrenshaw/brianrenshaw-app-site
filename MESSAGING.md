@@ -218,39 +218,41 @@ Priority clarification: the latest Cardinals Daily is the primary feature, the l
 
 Added at Brian's request as the eighth project, replacing the reserved slot. Type: Mac app. Headline: “Give every listing photo its place.” Lead with organizing real estate shoots and consistent delivery filenames while preserving JPG quality. Support keyboard grouping, ordering, presets, and local jobs with practical copy. Availability must say Mac preview until a notarized release is ready. Current requirements: macOS 14+, Apple silicon and Intel. No account is required. Do not describe address search or update checking as offline. The download is Developer ID signed but not yet notarized; disclose that macOS may block it.
 
-### Walkthrough (September 20, 2026, current)
+### Walkthrough (October 15, 2026, current)
 
 **Writing philosophy:** Read [Walkthrough’s messaging philosophy](WALKTHROUGH_MESSAGING_PHILOSOPHY.md). Explain capabilities and interactions directly. This replaces the earlier StoryBrand framing, invented frustrations, slogans, and guarantees about MLS upload order.
 
-**Audience:** Realtors and listing assistants organizing JPG/JPEG listing photos on a Mac.
+**Audience:** Real estate photographers, realtors, and listing assistants preparing JPG/JPEG listing photos on a Mac.
 
-**Purpose:** Group photos by room, arrange rooms and photos, preview filenames, and export numbered files. The command bar finds actions, rooms, presets, templates, and recent jobs.
+**Purpose:** Prepare listing photos: organize rooms and photo order, draw property outlines, add markers and nearby places, crop and straighten images, and process numbered filenames. The command bar finds actions, rooms, presets, templates, and recent jobs.
 
-**Headline:** Sort and name listing photos.
+**Headline:** Prepare photos for a property listing.
 
-**Supporting copy:** Group photos by room, arrange their order, and export numbered filenames. Use the command bar to assign rooms, apply naming presets, and reopen jobs.
+**Supporting copy:** Group photos by room and give them consistent filenames. Draw property outlines on aerial photos, add labels and nearby places, and crop images for delivery.
 
-**Portfolio headline:** Sort and name listing photos. (Matches the site headline since October 7, 2026; previously “Organize photos for a property listing.”)
+**Portfolio headline:** Prepare photos for a property listing.
 
-**Portfolio supporting copy:** For realtors and listing assistants. Group photos by room, arrange their order, and create numbered filenames. Save room templates and naming presets for the next listing.
+**Portfolio supporting copy:** Organize listing photos, draw property outlines, add nearby places, and crop images. Create numbered filenames for delivery, with reusable room templates and naming presets.
 
-**Card label:** Real estate photo organization
+**Card label:** Real estate photo preparation
 
-**Content priorities:** Explain grouping and ordering first, then command-bar actions, reusable naming presets and room templates, and export review. Describe settings-file sharing and saved local jobs separately. Headings name capabilities; screenshot captions explain what is shown.
+**Content priorities:** Make outlines, markers, nearby places, and cropping visible alongside grouping, ordering, reusable presets, and processing. Describe settings-file sharing and saved local jobs separately. Headings name capabilities; screenshot captions explain what is shown.
 
-**Landing page:** Workspace screenshot; grouping, ordering, and exclusions; command bar; naming presets and room templates; export review; settings sharing and saved jobs; download. Preserve real screenshots, supported formats, system requirements, and exact export behavior.
+**Landing page:** Workspace screenshot; property outline example; markers and nearby places; cropping and originals; grouping and ordering; command bar; naming presets and room templates; processing; local jobs; download. Preserve real screenshots, supported formats, system requirements, and exact export behavior.
 
 **Upload order:** Numbered filenames support sorting by name. Tell users to sort exported files by name before selecting them and check final order in the MLS or website after uploading. Do not guarantee that any receiving service preserves order or that the first upload is correct.
 
-**Export:** Rename only changes filenames in their existing folders. Copy keeps the source files. Move relocates files. Copy and Move can use a flat output or numbered room folders. Review filenames, paths, and naming warnings before confirming. JPG bytes are preserved without re-encoding; export does not publish a listing.
+**Export:** Rename only changes filenames in their existing folders. Copy keeps the source files. Move relocates files. Copy and Move can use a flat output or numbered room folders. Review filenames, paths, and naming warnings before confirming. Rename only, Copy, and Move preserve JPG bytes without re-encoding. Saving an outline or crop renders a new JPG; do not extend byte-preservation claims to editing. Outlines add an included copy; crops replace the original in the active job and exclude the source. Neither operation deletes the original. Processing does not publish a listing.
 
 **Settings sharing:** Export tags, naming presets, and templates to a settings file that someone else can import with Merge or Replace. Do not call this sync or imply that it shares photos, saved jobs, or a live configuration.
 
 **Saved jobs:** Organization is stored in the local app library. Reopening a job restores room assignments, photo order, and naming choices on that Mac. Do not imply cross-device job history.
 
-**Availability:** Current download: Walkthrough 1.4.1. macOS 14 or later, Apple silicon and Intel, no account required. Do not copy Ingest’s beta status, RAW support, or system requirements. Historical release notes remain historical; preserve the original Listing Namer update feed and redirects.
+**Availability:** Current download: Walkthrough 1.5.0 (16). macOS 14 or later, Apple silicon and Intel, no account required. Do not copy Ingest’s beta status, RAW support, or system requirements. Historical release notes remain historical; preserve the original Listing Namer update feed and redirects.
 
 **Visual direction:** Dark charcoal with the native teal accent, house-and-number icon, bundled Archivo, and genuine native screenshots using demonstration data. Use a wide workspace screenshot and alternating explanatory sections. Keep layout styles scoped to the landing page and document layouts intact.
+
+**Photo examples:** Use ordinary residential properties for the outline workflow. Boundaries in demonstration photos are illustrative. Use licensed photographs and genuine output from Walkthrough. Nearby-place searches and travel estimates use Apple Maps and require a network connection. Do not imply automatic parcel lookup or guaranteed travel times.
 
 ## Canceled (September 17, 2026)
 

@@ -41,13 +41,13 @@ def page(title, description, route, body):
     frame = frame.replace('class="app-listing-namer"','class="app-listing-namer wiki-docs"')
     frame = frame.replace('>Support</a>', '>Help center</a>')
     layout = '<div class="wiki-toolbar"><a href="/walkthrough/support/">Walkthrough help · Mac</a><a href="/walkthrough/support/#find-topic">Find a topic</a></div>'
-    layout += '<div class="wiki-layout">'+sidebar(route)+'<main id="main" tabindex="-1" class="wiki-main">'+body+'<p class="wiki-updated">Guide for Walkthrough 1.5.0 · Updated October 15, 2026. Screenshots use demonstration data with repeated photographs.</p></main></div>'
+    layout += '<div class="wiki-layout">'+sidebar(route)+'<main id="main" tabindex="-1" class="wiki-main">'+body+'<p class="wiki-updated">Guide for Walkthrough 1.5.0 · Updated October 15, 2026. Images use demonstration data; some workspace photographs repeat.</p></main></div>'
     dest = ROOT / 'site' / route.strip('/') / 'index.html'
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text('\n'.join(line.rstrip() for line in frame.replace('{{CONTENT}}', layout).splitlines()) + '\n')
 
 def directory():
-    out = '<section id="find-topic"><h2>Find a topic</h2><div class="help-search" hidden><label for="topic-search">Search guides and support</label><input id="topic-search" type="search" placeholder="Try rooms, filenames, copy, or updates" aria-controls="topic-directory"><p id="search-status" role="status" aria-live="polite"></p></div><div id="topic-directory" class="wiki-directory">'
+    out = '<section id="find-topic"><h2>Find a topic</h2><div class="help-search" hidden><label for="topic-search">Search guides and support</label><input id="topic-search" type="search" placeholder="Try outlines, crop, nearby places, or filenames" aria-controls="topic-directory"><p id="search-status" role="status" aria-live="polite"></p></div><div id="topic-directory" class="wiki-directory">'
     for group in GROUPS:
         out += f'<section class="help-collection"><h2>{e(group)}</h2><ul>'
         for a in ARTICLES:
@@ -76,8 +76,8 @@ for i,a in enumerate(ARTICLES):
     body += '<nav class="wiki-related" aria-label="Related articles">'+''.join(f'<a href="{url(b)}"><small>Continue reading</small>{e(b["title"])}</a>' for b in related)+'</nav>'
     page(a['title'],a['summary'],url(a),body)
 for kind,title in [('guide','Walkthrough guide'),('support','Walkthrough help and support')]:
-    description = 'Open a listing, group and order its photos, and review numbered filenames before processing.'
-    body = f'<header class="wiki-heading"><h1>{title}</h1><p>{description}</p></header><div class="wiki-start"><strong>Start with your first listing</strong><a href="/walkthrough/guide/workspace/">Open a folder and assign rooms →</a><a href="/walkthrough/guide/export/">Review filenames and process photos →</a></div>'+directory()
+    description = 'Organize listing photos, draw property outlines, add nearby places, crop images, and prepare numbered files for delivery.'
+    body = f'<header class="wiki-heading"><h1>{title}</h1><p>{description}</p></header><div class="wiki-start"><strong>Prepare your listing photos</strong><a href="/walkthrough/guide/workspace/">Open a folder and assign rooms →</a><a href="/walkthrough/guide/property-outlines/">Outline a property on an aerial photo →</a><a href="/walkthrough/guide/export/">Review filenames and process photos →</a></div>'+directory()
     if kind == 'guide':
         body += '<section class="legacy-topics"><h2>Guide reference links</h2>'
         for a in ARTICLES:

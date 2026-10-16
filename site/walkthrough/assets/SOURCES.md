@@ -40,3 +40,9 @@ Captures use `screencapture -x -o -a -l WINDOW_ID` without `-C`. The workspace a
 All `native-*-1.4.2.png` captures are original, unretouched PNG screenshots of the updated app in Dark appearance, captured September 26, 2026 with `NativeWorkspaceTests.testWebsiteDarkScreenshots`. The fictional listing uses an isolated library and the existing credited demonstration-photo set. No photo processing is confirmed during capture. Workspace images are captured at 1440 × 900 points, settings at the native settings size, and dialogs at their native sheet sizes; HTML width/height attributes preserve the original 2× pixel dimensions.
 
 The five-step guide shows Open, Group, Order, Name, and Process Photos. The workspace and Process Photos screenshots are also bundled in the app. The 1.4.1 screenshots remain archived, while current pages reference this dark capture set.
+
+## Walkthrough 1.5.0 property outline example, October 15, 2026
+
+`property-outline-1.5.0.jpg` is the unretouched 3000 × 1688 JPG saved by Walkthrough's Save Outline action, using a fresh Debug build of native commit `44571c6`, version 1.5.0 (16). The website copies that output without resizing or re-encoding. The four-point boundary and approximate-lines caption were created in the actual outline editor in an isolated `/tmp/walkthrough-site-150/Library` job. The boundary is illustrative, not parcel data. No client photographs or personal library records are used.
+
+Source photograph: Victoria Railing, [a bird's eye view of a house from above](https://unsplash.com/photos/a-birds-eye-view-of-a-house-from-above-7S6P6ekzftM), free under the [Unsplash License](https://unsplash.com/license). Retrieved from `https://images.unsplash.com/photo-1676490782920-b9094267ea4a?auto=format&fm=jpg&q=95&w=3000`. The ordinary residential example follows Brian's direction for the website. The previous 1.4.2 workspace images remain genuine illustrations of the unchanged organization and processing workflows.

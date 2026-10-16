@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Walkthrough privacy</title>
-<meta name="description" content="How Walkthrough handles local photos, address search, and software updates.">
+<meta name="description" content="How Walkthrough handles local photos and edits, Apple Maps place searches and travel estimates, and software updates.">
 <link rel="canonical" href="https://brianrenshaw.app/walkthrough/privacy/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Walkthrough privacy">
-<meta property="og:description" content="How Walkthrough handles local photos, address search, and software updates.">
+<meta property="og:description" content="How Walkthrough handles local photos and edits, Apple Maps place searches and travel estimates, and software updates.">
 <meta property="og:url" content="https://brianrenshaw.app/walkthrough/privacy/">
 <meta property="og:image" content="https://brianrenshaw.app/walkthrough/assets/native-workspace-1.4.2.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -32,11 +32,14 @@
 <main id="main" tabindex="-1" class="family-document">
 <p class="eyebrow">Walkthrough / Privacy</p>
 <h1>Your photo work stays on your Mac.</h1>
-<p>Last updated September 17, 2026. Applies to Walkthrough 1.2.2.</p>
+<p>Last updated October 15, 2026. Applies to Walkthrough 1.5.0.</p>
 <h2>Photos and job information</h2>
-<p>Walkthrough reads the local folders you open. It stores photo references, original and exported filename mappings, addresses, groups, tags, templates, preferences, and job history in its private local library. It does not upload your photographs or job library to a Walkthrough server. Export writes only the photographs you choose to deliver.</p>
-<h2>Address search</h2>
-<p>When you type in address search, the app sends the search text to Apple’s MapKit service to retrieve suggestions and address details. You can enter structured address fields manually instead. Apple processes these requests under its own privacy terms.</p>
+<p>Walkthrough reads the local folders you open. It stores photo references, filename mappings, listing addresses and coordinates, groups, tags, templates, preferences, and job history in its private local library. Saved outline points, markers, crop settings, and nearby-place lists are also stored locally. It does not upload your photographs or job library to a Walkthrough server.</p>
+<p>Saving an outline or crop renders a JPG copy in the photo folder. Re-editing rewrites that copy using the original image. Renaming, copying, and moving photos work on the files included in the job.</p>
+<h2>Apple Maps searches and travel estimates</h2>
+<p>Address search sends the text you enter to Apple’s MapKit service for suggestions and address details. You can enter structured address fields manually instead.</p>
+<p>Using Find Place or Nearby Places sends place-search text and, when available, the listing’s location to Apple Maps. The app may look up coordinates from the listing address. Driving and walking estimates send the listing and destination coordinates to Apple’s routing service. These features require a network connection. Photo pixels and outline drawings are not part of these search or routing requests.</p>
+<p>Selected places, coordinates, and travel estimates are saved with the local job. Apple processes requests under its own privacy terms. Drawing an outline, adding a manual label, and cropping a photo are local operations.</p>
 <h2>Software updates</h2>
 <p>Checking for updates uses Sparkle to request an update feed from brianrenshaw.app, hosted by GitHub Pages. Downloads are hosted on GitHub Releases. These hosting providers receive normal connection information such as your IP address and request metadata. Walkthrough disables Sparkle system-profile reporting. Automatic checks are optional. Your photographs, listing addresses, and job records are not included in update requests.</p>
 <h2>No advertising or analytics</h2>

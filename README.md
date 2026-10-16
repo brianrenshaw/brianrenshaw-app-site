@@ -46,7 +46,7 @@ Two blogs are linked from homepage cards without local pages: Lankford Legends (
 
 Spreadsheet Tools lives at `/spreadsheet-tools/`. Its React source remains in the sibling `spreadsheet-webapp` repository (`brianrenshaw/spreadsheet-tools` on GitHub). Run that project's `scripts/sync-website.py` to rebuild and copy generated files here, then commit and push this repository. Keep the utility link at the bottom of the portfolio. See that project's `WEBSITE_MIGRATION.md` for the complete workflow.
 
-Walkthrough (formerly Listing Namer) is at `/walkthrough/`, with `guide/`, `support/`, `privacy/`, and `release-notes/`. Its native source is in the private sibling `real-estate-photos-renamer` project / `brianrenshaw/listing-namer` repository. Public DMGs are GitHub Release assets in this website repository; they are not committed into `site/`. See `LISTING_NAMER_RELEASES.md` for the release handoff. The current download is signed and notarized Walkthrough 1.4.1, build 12.
+Walkthrough (formerly Listing Namer) is at `/walkthrough/`, with `guide/`, `support/`, `privacy/`, and `release-notes/`. Its native source is in the private sibling `real-estate-photos-renamer` project / `brianrenshaw/listing-namer` repository. Public DMGs are GitHub Release assets in this website repository; they are not committed into `site/`. See `LISTING_NAMER_RELEASES.md` for the release handoff. The current download is signed and notarized Walkthrough 1.5.0, build 16.
 
 ### Do not delete the `folio-privacy` Pages repository
 
@@ -61,7 +61,7 @@ Walkthrough moved from `/listing-namer/` to `/walkthrough/` on September 17, 202
 
 `scripts/check_site.py` asserts the feed and all five stubs exist, so this cannot be removed by accident.
 
-Release notes are published at `/walkthrough/release-notes/`, with links in the native app’s Help menu and Settings. Public copy explains grouping listing photos by room, arranging their order, and exporting numbered filenames, for realtors and listing assistants. Avoid guarantees about how an MLS or website orders uploads. Read the Walkthrough section of `MESSAGING.md` before changing it, including the rule against describing settings export as “sync.”
+Release notes are published at `/walkthrough/release-notes/`, with links in the native app’s Help menu and Settings. Public copy explains organizing listing photos, drawing property outlines, adding markers and nearby places, cropping images, and preparing numbered filenames, for real estate photographers, realtors, and listing assistants. Avoid guarantees about how an MLS or website orders uploads. Read the Walkthrough section of `MESSAGING.md` before changing it, including the rule against describing settings export as “sync.”
 
 Canceled is at `/canceled/`, a landing page only. The app is in development for iPhone and iPad, is not on TestFlight, and has nothing to download, so the page states status and offers no call to action. Its native source is in the sibling `canceled-app` project. Add `support/` and `privacy/` when it reaches TestFlight, and add `canceled` to the required-routes list in `scripts/check_site.py` at the same time. Page assets under `site/canceled/assets/` are copied from that project; its Archivo woff2 is the same file already bundled for Where Do We Eat.
 

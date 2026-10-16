@@ -1,0 +1,15 @@
+{
+  "nativeCommit": "44571c6",
+  "nativeVersion": "1.5.0 (16)",
+  "method": "Saved with the native Save Outline action in an isolated demonstration library; output copied unchanged.",
+  "images": {
+    "property-outline-1.5.0.jpg": {
+      "width": 3000,
+      "height": 1688,
+      "sha256": "1370f4c07b1dbd37959e747ed3b79305a3ac152b39911a1936fac41429ecd882",
+      "source": "https://unsplash.com/photos/a-birds-eye-view-of-a-house-from-above-7S6P6ekzftM",
+      "photographer": "Victoria Railing",
+      "boundary": "Illustrative, manually drawn in Walkthrough; not parcel data."
+    }
+  }
+}
