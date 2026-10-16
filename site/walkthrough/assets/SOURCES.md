@@ -41,8 +41,19 @@ All `native-*-1.4.2.png` captures are original, unretouched PNG screenshots of t
 
 The five-step guide shows Open, Group, Order, Name, and Process Photos. The workspace and Process Photos screenshots are also bundled in the app. The 1.4.1 screenshots remain archived, while current pages reference this dark capture set.
 
-## Walkthrough 1.5.0 property outline example, October 15, 2026
+## Archived Walkthrough 1.5.0 stock outline example, October 15, 2026
 
 `property-outline-1.5.0.jpg` is the unretouched 3000 × 1688 JPG saved by Walkthrough's Save Outline action, using a fresh Debug build of native commit `44571c6`, version 1.5.0 (16). The website copies that output without resizing or re-encoding. The four-point boundary and approximate-lines caption were created in the actual outline editor in an isolated `/tmp/walkthrough-site-150/Library` job. The boundary is illustrative, not parcel data. No client photographs or personal library records are used.
 
-Source photograph: Victoria Railing, [a bird's eye view of a house from above](https://unsplash.com/photos/a-birds-eye-view-of-a-house-from-above-7S6P6ekzftM), free under the [Unsplash License](https://unsplash.com/license). Retrieved from `https://images.unsplash.com/photo-1676490782920-b9094267ea4a?auto=format&fm=jpg&q=95&w=3000`. The ordinary residential example follows Brian's direction for the website. The previous 1.4.2 workspace images remain genuine illustrations of the unchanged organization and processing workflows.
+Source photograph: Victoria Railing, [a bird's eye view of a house from above](https://unsplash.com/photos/a-birds-eye-view-of-a-house-from-above-7S6P6ekzftM), free under the [Unsplash License](https://unsplash.com/license). Retrieved from `https://images.unsplash.com/photo-1676490782920-b9094267ea4a?auto=format&fm=jpg&q=95&w=3000`. Superseded on the homepage and guide by Brian's supplied photographs below. The previous 1.4.2 workspace images remain genuine illustrations of the unchanged organization and processing workflows.
+
+## Walkthrough 1.5.0 supplied outline assets, October 15, 2026
+
+Brian supplied the original drone photograph, outlined result, and native editor screenshot for the website. The homepage compares the two photographs; the property outline guide shows the editor and finished result.
+
+- `buckeye-drone-original-1.5.0.jpg`: unchanged `02313_10514_Buckeye_Trace_Drone.jpg`, 5280 × 3956.
+- `buckeye-drone-outline-1.5.0.jpg`: unchanged `02313_10514_Buckeye_Trace_Drone outline.jpg`, 5280 × 3956. The supplied yellow boundary and surrounding-photo treatment are preserved.
+- The matching `-1600.webp` files are 1600-pixel-wide display derivatives, encoded at quality 90 with the ICC profile preserved. Each photo links to its unchanged full-resolution JPG.
+- `buckeye-outline-editor-1.5.0.webp`: lossless encoding of `CleanShot 2026-10-15 at 9.22.13 PM@2x.png`, 4078 × 2372. Decoded RGBA pixels and ICC profile match the supplied PNG exactly; no resizing, cropping, or UI reconstruction.
+
+`buckeye-outline-1.5.0.json` records the source filenames, dimensions, processing, and SHA-256 hashes. These assets replace the stock outline example on current pages.

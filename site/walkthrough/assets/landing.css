@@ -26,6 +26,9 @@
 .walkthrough-home .outline-intro{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;margin-bottom:24px}
 .walkthrough-home .outline-intro h2{max-width:20ch}
 .walkthrough-home .outline-intro p{font-size:16px;line-height:1.7}
+.walkthrough-home .outline-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.walkthrough-home .outline-comparison figcaption strong{display:block;color:var(--ink);font-size:14px;margin-bottom:4px}
+.walkthrough-home .outline-feature>.text-link{margin-top:12px}
 .walkthrough-home .desktop-shot{padding:8px;background:var(--surface);border:1px solid var(--line);border-radius:12px;min-width:0}
 .walkthrough-home .desktop-shot>a{display:block;border-radius:6px}
 .walkthrough-home .desktop-shot img{border-radius:6px;max-width:var(--capture-width,100%);margin-inline:auto}
@@ -62,6 +65,7 @@
 @media(max-width:760px){
  .walkthrough-home .outline-feature{padding:40px 0}
  .walkthrough-home .outline-intro{grid-template-columns:1fr;gap:8px}
+ .walkthrough-home .outline-comparison{grid-template-columns:1fr;gap:16px}
  .walkthrough-home .family-header{gap:8px 20px;padding-block:14px}
  .walkthrough-home .family-header nav{gap:16px}
  .walkthrough-home .family-header nav a{font-size:12px}

@@ -1,0 +1,41 @@
+{
+  "providedBy": "Brian Renshaw",
+  "providedOn": "2026-10-15",
+  "images": {
+    "buckeye-drone-original-1.5.0.jpg": {
+      "source": "02313_10514_Buckeye_Trace_Drone.jpg",
+      "width": 5280,
+      "height": 3956,
+      "sha256": "43491988a4ea8d22645e0faa9f4a36c7d650089d9a5e7d45d7aca02dfff5b080",
+      "processing": "Unchanged supplied JPG."
+    },
+    "buckeye-drone-original-1.5.0-1600.webp": {
+      "source": "02313_10514_Buckeye_Trace_Drone.jpg",
+      "width": 1600,
+      "height": 1199,
+      "sha256": "60542e5e8f80ff36fafe0882ff2b4256a0bbf1c9815b28506364daedfa6bdcf2",
+      "processing": "1600px-wide WebP at quality 90 for page display; original JPG linked at full resolution."
+    },
+    "buckeye-drone-outline-1.5.0.jpg": {
+      "source": "02313_10514_Buckeye_Trace_Drone outline.jpg",
+      "width": 5280,
+      "height": 3956,
+      "sha256": "f1d92337ba757c9ce7a223502dd48bba535259db0472048e63d28235377300de",
+      "processing": "Unchanged supplied JPG."
+    },
+    "buckeye-drone-outline-1.5.0-1600.webp": {
+      "source": "02313_10514_Buckeye_Trace_Drone outline.jpg",
+      "width": 1600,
+      "height": 1199,
+      "sha256": "e94d3b8846b818d7fe805a50f1e09d9a26a0a57fe0bd41b1e4596dde8efa3f3e",
+      "processing": "1600px-wide WebP at quality 90 for page display; original JPG linked at full resolution."
+    },
+    "buckeye-outline-editor-1.5.0.webp": {
+      "source": "CleanShot 2026-10-15 at 9.22.13 PM@2x.png",
+      "width": 4078,
+      "height": 2372,
+      "sha256": "b1abb54d3f5375f8f1242b8a8cdaa359f75e139e616fab5a3a52997e1c3508c1",
+      "processing": "Lossless WebP with exact RGBA pixels and ICC profile verified against the supplied PNG. No crop or resize."
+    }
+  }
+}
