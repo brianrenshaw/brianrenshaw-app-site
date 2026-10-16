@@ -17,7 +17,7 @@
 <link href="assets/app-icon.png?v=work-lunch-1" rel="icon" type="image/png"/>
 <link href="assets/app-icon.png?v=work-lunch-1" rel="apple-touch-icon"/>
 <link href="style.css" rel="stylesheet"/>
-<link href="/assets/family.css" rel="stylesheet"/></head>
+<link href="/assets/family.css" rel="stylesheet"/><link href="/assets/product-preview.css" rel="stylesheet"/><script defer="" src="/assets/product-preview.js"></script></head>
 <body class="app-where-do-we-eat">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
@@ -98,7 +98,7 @@
 </article>
 </div>
 </section>
-<section class="screenshot-gallery" aria-labelledby="screens-title">
+<section aria-labelledby="screens-title" class="screenshot-gallery" data-product-preview="">
 <div class="showcase-copy">
 <p class="eyebrow">Preferences and companions</p>
 <h2 id="screens-title">Get suggestions based on your preferences.</h2>
@@ -108,20 +108,20 @@
 <p>A friend has a place they’d rather skip? Add it to their do-not-recommend list. It stays out of the suggestions whenever they’re joining.</p>
 <a class="rule-link" href="guide/#deciding">See how deciding works <span aria-hidden="true">→</span></a>
 </div>
-<div class="showcase-tabs" aria-label="Explore choosing and remembering" hidden>
-<button id="choose-tab" type="button" aria-controls="choose-panel">Choose together</button>
-<button id="remember-tab" type="button" aria-controls="remember-panel">Remember the meal</button>
+<div aria-label="Explore choosing and remembering" class="showcase-tabs" data-preview-tabs="" hidden="">
+<button aria-controls="choose-panel" id="choose-tab" type="button">Choose together</button>
+<button aria-controls="remember-panel" id="remember-tab" type="button">Remember the meal</button>
 </div>
 </div>
-<div class="showcase-screens">
-<figure id="choose-panel" class="showcase-panel">
+<div class="showcase-screens" data-preview-stage="">
+<figure class="showcase-panel" data-preview-panel="" id="choose-panel">
 <figcaption><strong>Three choices for this group.</strong><span>Suggestions from your saved places, shaped by the context and who’s coming.</span></figcaption>
-<a href="assets/work-lunch-choices.png" aria-label="View full-size sample choices screenshot"><img src="assets/work-lunch-choices.png" width="1320" height="2868" loading="lazy" alt="Three lunch recommendations from the fictional Work Lunch collection for Alex Morgan and Jamie Chen."/></a>
+<a aria-label="View full-size sample choices screenshot" href="assets/work-lunch-choices.png"><img alt="Three lunch recommendations from the fictional Work Lunch collection for Alex Morgan and Jamie Chen." height="2868" loading="lazy" src="assets/work-lunch-choices.png" width="1320"/></a>
 <p class="sample-label">Work Lunch · sample data · select image to enlarge</p>
 </figure>
-<figure id="remember-panel" class="showcase-panel">
+<figure class="showcase-panel" data-preview-panel="" id="remember-panel">
 <figcaption><strong>Past meals and companions.</strong><span>Find past visits by their people, places, and context. Keep the details for next time.</span></figcaption>
-<a href="assets/work-lunch-log.png" aria-label="View full-size sample meal log screenshot"><img src="assets/work-lunch-log.png" width="1320" height="2868" loading="lazy" alt="Log of three sample lunches at Juniper Kitchen, Market Table, and Cedar &amp; Lime, with red Work Lunch context markers."/></a>
+<a aria-label="View full-size sample meal log screenshot" href="assets/work-lunch-log.png"><img alt="Log of three sample lunches at Juniper Kitchen, Market Table, and Cedar &amp; Lime, with red Work Lunch context markers." height="2868" loading="lazy" src="assets/work-lunch-log.png" width="1320"/></a>
 <p class="sample-label">Work Lunch · sample data · select image to enlarge</p>
 </figure>
 </div>
@@ -212,6 +212,5 @@
 </div>
 </section>
 </main>
-
-<footer class="family-footer"><span>© 2026 Brian Renshaw</span><nav aria-label="Footer"><a class="portfolio-home-link" href="/">← Brian’s homepage</a><a href="/where-do-we-eat/guide/">Guide</a><a href="/where-do-we-eat/support/">Support</a><a href="/where-do-we-eat/privacy/">Privacy</a><a href="mailto:contact@brianrenshaw.app">Contact</a></nav></footer><script src="showcase.js" defer></script></body>
+<footer class="family-footer"><span>© 2026 Brian Renshaw</span><nav aria-label="Footer"><a class="portfolio-home-link" href="/">← Brian’s homepage</a><a href="/where-do-we-eat/guide/">Guide</a><a href="/where-do-we-eat/support/">Support</a><a href="/where-do-we-eat/privacy/">Privacy</a><a href="mailto:contact@brianrenshaw.app">Contact</a></nav></footer></body>
 </html>

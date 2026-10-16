@@ -1,0 +1,106 @@
+/* Shared interaction behavior; each product retains its typography and palette. */
+[data-product-preview] { min-width: 0; }
+[data-preview-tabs][hidden] { display: none !important; }
+.preview-tabs { display: flex; flex-wrap: wrap; gap: 4px 20px; border-bottom: 1px solid var(--line, currentColor); margin-bottom: 28px; }
+.preview-tabs button { min-height: 48px; padding: 12px 2px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: inherit; font: inherit; font-size: 14px; cursor: pointer; transition: color 140ms, border-color 140ms; }
+.preview-tabs button[aria-selected="true"] { border-bottom-color: var(--accent, currentColor); font-weight: 650; }
+.preview-tabs button:hover { color: var(--accent, currentColor); }
+[data-preview-tabs] button:focus-visible, [data-preview-panel]:focus-visible { outline: 2px solid var(--accent, currentColor); outline-offset: 5px; }
+.preview-enhanced [data-preview-stage] { display: grid; isolation: isolate; }
+.preview-enhanced [data-preview-panel] { grid-area: 1 / 1; min-width: 0; }
+/* Reserve the tallest panel's space, including before its images load. Hidden
+   panels are also inert, aria-hidden and visibility:hidden, never focusable. */
+.preview-enhanced [data-preview-panel][hidden] { display: block !important; visibility: hidden; pointer-events: none; }
+.preview-enhanced [data-preview-panel][aria-hidden="true"] { pointer-events: none; }
+[data-preview-panel] img { display: block; max-width: 100%; height: auto; }
+.preview-enhanced .preview-fallback-title { display: none; }
+[data-preview-swipe] [data-preview-stage] { touch-action: pan-y pinch-zoom; }
+@media (prefers-reduced-motion: reduce) {
+  [data-product-preview] *, [data-product-preview] *::before, [data-product-preview] *::after { animation: none !important; transition: none !important; }
+}
+
+/* Decks: complete exports at a useful size, with native devices kept separate. */
+.composition-preview { border-block: 1px solid var(--line); padding: 48px 0; margin-bottom: 36px; display: grid; grid-template-columns: .85fr 1.15fr; gap: 48px; align-items: center; }
+.composition-heading h2 { font-size: clamp(32px, 3.6vw, 48px); line-height: 1.12; letter-spacing: -.035em; }
+.composition-heading p:not(.eyebrow) { max-width: 32ch; color: var(--muted); line-height: 1.7; }
+.composition-preview figure { margin: 0; text-align: center; }
+.composition-preview figure a { display: block; width: fit-content; max-width: 100%; margin: auto; }
+.composition-preview figure img { width: auto; height: 440px; max-width: 100%; object-fit: contain; }
+.composition-preview figcaption { margin-top: 16px; font-size: 14px; }
+.platform-preview .platform-phones { margin: 0 auto; }
+.platform-preview .platform-phones img { max-height: 500px; width: auto; margin: auto; }
+.platform-preview .platform-phones .native-shot img { max-width: 100%; }
+.platform-preview .platform-ipad { margin: 0; }
+.platform-preview .native-shot img { max-height: 500px; width: auto; object-fit: contain; margin: auto; }
+.platform-preview .mac-workspace-intro { margin: 24px 0; }
+.platform-preview .mac-workspace-intro p { font-size: 15px; }
+.platform-preview [data-preview-panel] { padding-bottom: 20px; }
+.platform-preview [data-preview-panel] + [data-preview-panel] { margin-top: 32px; }
+.platform-preview.preview-enhanced [data-preview-panel] { margin-top: 0; }
+.app-decks .primary-action, .app-decks .text-link { transition: background-color 140ms, color 140ms; }
+
+/* Ingest: compact chapter selection, with detail available in native disclosures. */
+.workflow-preview.preview-enhanced { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 48px; align-items: start; }
+.workflow-tabs { position: sticky; top: 24px; }
+.workflow-tabs button { display: flex; align-items: baseline; gap: 13px; width: 100%; min-height: 88px; padding: 20px 12px 20px 0; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--muted); text-align: left; cursor: pointer; font: inherit; transition: color 140ms, border-color 140ms; }
+.workflow-tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.workflow-tabs button strong { display: block; font-size: 16px; font-weight: 600; }
+.workflow-tabs button small { display: block; font-size: 13px; line-height: 1.5; margin-top: 6px; }
+.workflow-number { font: 11px ui-monospace, monospace; color: var(--accent); }
+.workflow-arrow { margin-left: auto; opacity: 0; transform: translateX(-4px); transition: opacity 140ms, transform 140ms; }
+[aria-selected="true"] .workflow-arrow { opacity: 1; transform: translateX(0); }
+.workflow-panel { scroll-margin-top: 24px; padding-bottom: 24px; }
+.workflow-panel + .workflow-panel { margin-top: 48px; }
+.preview-enhanced .workflow-panel { margin-top: 0; }
+.editorial-main .workflow-panel h3 { font-size: clamp(25px, 3vw, 34px); }
+.workflow-panel .chapter-heading { margin-bottom: 24px; }
+.editorial-main .workflow-panel .chapter-heading p, .editorial-main .workflow-panel p { font-size: 16px; }
+.workflow-panel .desktop-shot { margin-top: 24px; }
+.workflow-panel > .desktop-shot img { width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; box-shadow: none; }
+.workflow-panel .decks-example { max-width: 310px; margin: 24px auto 0; }
+.workflow-details { margin-top: 26px; border-block: 1px solid var(--line); padding: 16px 0; }
+.workflow-details summary { cursor: pointer; font-size: 14px; font-weight: 600; min-height: 44px; display: flex; align-items: center; gap: 12px; }
+.workflow-details summary::before { content: '+'; color: var(--accent); font-size: 22px; font-weight: 400; }
+.workflow-details[open] summary::before { content: '−'; }
+.workflow-details summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.workflow-details .shoot-types { grid-template-columns: 1fr 1fr; margin-top: 24px; padding-top: 20px; }
+.editorial-main .workflow-details h3 { font-size: 19px; }
+.editorial-main .workflow-details p { font-size: 14px; }
+.workflow-details .three-up { grid-template-columns: 1fr; gap: 16px; }
+.workflow-details .feature-split { grid-template-columns: 1fr; gap: 20px; }
+.editorial-home .primary-action { transition: background-color 140ms; }
+
+/* Small apps keep their own type, colors, and native screenshot treatments. */
+.reading-preview .preview-tabs { justify-content: center; gap: 0 16px; }
+.reading-preview .preview-tabs button { font-size: 13px; }
+.reading-preview .figure { margin: 0; }
+.reading-preview [data-preview-panel] + [data-preview-panel] { margin-top: 32px; }
+.reading-preview.preview-enhanced [data-preview-panel] { margin-top: 0; }
+.mode-preview .wf-mode { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 64px; padding: 32px 0; border: 0; background: transparent; }
+.mode-preview .wf-mode .mode-label, .mode-preview .wf-mode h3, .mode-preview .wf-mode p { grid-column: 1; }
+.mode-preview .wf-mode .mode-label { align-self: end; }
+.mode-preview .wf-mode h3 { margin: 12px 0 16px; font-size: 38px; }
+.mode-preview .wf-mode p { align-self: start; max-width: 32ch; }
+.mode-preview .wf-mode figure { grid-column: 2; grid-row: 1 / 5; margin: 0; }
+.mode-preview .wf-mode img { max-height: 460px; width: auto; max-width: 100%; margin: auto; }
+.mode-preview .wf-mode { grid-template-rows: 1fr auto 1fr; }
+.screenshot-gallery.preview-enhanced .showcase-panel { border-top: 0; }
+.screenshot-gallery .showcase-tabs button:focus-visible { outline-offset: -5px; }
+@media (max-width: 760px) {
+  .composition-preview { grid-template-columns: 1fr; gap: 16px; padding-block: 32px; }
+  .composition-heading h2 { max-width: 17ch; }
+  .composition-preview figure img { height: 380px; }
+  .platform-preview .platform-phones { gap: 18px; }
+  .workflow-preview.preview-enhanced { grid-template-columns: 1fr; gap: 28px; }
+  .workflow-tabs { position: static; display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
+  .workflow-tabs button { padding: 14px 0; gap: 8px; min-height: 94px; }
+  .workflow-tabs button strong { font-size: 14px; }
+  .workflow-tabs button small { font-size: 12px; }
+  .workflow-arrow { display: none; }
+  .mode-preview .wf-mode { grid-template-columns: 1fr; gap: 0; }
+  .mode-preview .wf-mode figure { grid-column: 1; grid-row: auto; margin-top: 20px; }
+  .mode-preview .wf-mode p { max-width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .app-decks .primary-action, .app-decks .text-link, .editorial-home .primary-action { transition: none; }
+}

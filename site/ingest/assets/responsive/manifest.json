@@ -1,0 +1,100 @@
+{
+  "original_bytes": 23003525,
+  "fallback_bytes": 715160,
+  "distinct_images": 16,
+  "quality": 90,
+  "images": {
+    "ingest/assets/decks-presentation-20261006.png": [
+      "ingest/assets/responsive/decks-presentation-20261006-5b67f8671e-480.webp",
+      "ingest/assets/responsive/decks-presentation-20261006-5b67f8671e-960.webp",
+      "ingest/assets/responsive/decks-presentation-20261006-5b67f8671e-1080.webp"
+    ],
+    "ingest/assets/editorial-builder-names-0.9.9.6-retina.webp": [
+      "ingest/assets/responsive/editorial-builder-names-0.9.9.6-retina-0e4f6ade29-480.webp",
+      "ingest/assets/responsive/editorial-builder-names-0.9.9.6-retina-0e4f6ade29-960.webp",
+      "ingest/assets/responsive/editorial-builder-names-0.9.9.6-retina-0e4f6ade29-1600.webp",
+      "ingest/assets/responsive/editorial-builder-names-0.9.9.6-retina-0e4f6ade29-2360.webp"
+    ],
+    "ingest/assets/editorial-builder-organize-0.9.9.6-retina.webp": [
+      "ingest/assets/responsive/editorial-builder-organize-0.9.9.6-retina-543899a77c-480.webp",
+      "ingest/assets/responsive/editorial-builder-organize-0.9.9.6-retina-543899a77c-960.webp",
+      "ingest/assets/responsive/editorial-builder-organize-0.9.9.6-retina-543899a77c-1600.webp",
+      "ingest/assets/responsive/editorial-builder-organize-0.9.9.6-retina-543899a77c-2360.webp"
+    ],
+    "ingest/assets/editorial-builder-starters-0.9.9.6-retina.webp": [
+      "ingest/assets/responsive/editorial-builder-starters-0.9.9.6-retina-51272964d9-480.webp",
+      "ingest/assets/responsive/editorial-builder-starters-0.9.9.6-retina-51272964d9-960.webp",
+      "ingest/assets/responsive/editorial-builder-starters-0.9.9.6-retina-51272964d9-1600.webp",
+      "ingest/assets/responsive/editorial-builder-starters-0.9.9.6-retina-51272964d9-2400.webp"
+    ],
+    "ingest/assets/editorial-commands-0.9.8-retina.webp": [
+      "ingest/assets/responsive/editorial-commands-0.9.8-retina-ab5e0afaca-480.webp",
+      "ingest/assets/responsive/editorial-commands-0.9.8-retina-ab5e0afaca-960.webp",
+      "ingest/assets/responsive/editorial-commands-0.9.8-retina-ab5e0afaca-1600.webp",
+      "ingest/assets/responsive/editorial-commands-0.9.8-retina-ab5e0afaca-2400.webp"
+    ],
+    "ingest/assets/editorial-film-0.9.8-retina.webp": [
+      "ingest/assets/responsive/editorial-film-0.9.8-retina-1bc8eeb063-480.webp",
+      "ingest/assets/responsive/editorial-film-0.9.8-retina-1bc8eeb063-960.webp",
+      "ingest/assets/responsive/editorial-film-0.9.8-retina-1bc8eeb063-1160.webp"
+    ],
+    "ingest/assets/editorial-import-0.9.9.6-retina.webp": [
+      "ingest/assets/responsive/editorial-import-0.9.9.6-retina-50263c9626-480.webp",
+      "ingest/assets/responsive/editorial-import-0.9.9.6-retina-50263c9626-960.webp",
+      "ingest/assets/responsive/editorial-import-0.9.9.6-retina-50263c9626-1600.webp",
+      "ingest/assets/responsive/editorial-import-0.9.9.6-retina-50263c9626-1800.webp"
+    ],
+    "ingest/assets/editorial-location-0.9.8-retina.webp": [
+      "ingest/assets/responsive/editorial-location-0.9.8-retina-5f66a62ab5-480.webp",
+      "ingest/assets/responsive/editorial-location-0.9.8-retina-5f66a62ab5-960.webp",
+      "ingest/assets/responsive/editorial-location-0.9.8-retina-5f66a62ab5-1600.webp",
+      "ingest/assets/responsive/editorial-location-0.9.8-retina-5f66a62ab5-2400.webp"
+    ],
+    "ingest/assets/editorial-metadata-0.9.8-retina.webp": [
+      "ingest/assets/responsive/editorial-metadata-0.9.8-retina-f8de91c862-480.webp",
+      "ingest/assets/responsive/editorial-metadata-0.9.8-retina-f8de91c862-960.webp",
+      "ingest/assets/responsive/editorial-metadata-0.9.8-retina-f8de91c862-1600.webp",
+      "ingest/assets/responsive/editorial-metadata-0.9.8-retina-f8de91c862-2400.webp"
+    ],
+    "ingest/assets/editorial-picks-0.9.8-retina.webp": [
+      "ingest/assets/responsive/editorial-picks-0.9.8-retina-9526553bc9-480.webp",
+      "ingest/assets/responsive/editorial-picks-0.9.8-retina-9526553bc9-960.webp",
+      "ingest/assets/responsive/editorial-picks-0.9.8-retina-9526553bc9-1280.webp"
+    ],
+    "ingest/assets/editorial-raw-0.9.8-retina.webp": [
+      "ingest/assets/responsive/editorial-raw-0.9.8-retina-bbe599fce9-480.webp",
+      "ingest/assets/responsive/editorial-raw-0.9.8-retina-bbe599fce9-960.webp",
+      "ingest/assets/responsive/editorial-raw-0.9.8-retina-bbe599fce9-1600.webp",
+      "ingest/assets/responsive/editorial-raw-0.9.8-retina-bbe599fce9-2400.webp"
+    ],
+    "ingest/assets/editorial-verified-0.9.8.1-retina.webp": [
+      "ingest/assets/responsive/editorial-verified-0.9.8.1-retina-a994b704da-480.webp",
+      "ingest/assets/responsive/editorial-verified-0.9.8.1-retina-a994b704da-960.webp",
+      "ingest/assets/responsive/editorial-verified-0.9.8.1-retina-a994b704da-1120.webp"
+    ],
+    "ingest/assets/hero-details-0.9.8-retina.webp": [
+      "ingest/assets/responsive/hero-details-0.9.8-retina-d357666d32-480.webp",
+      "ingest/assets/responsive/hero-details-0.9.8-retina-d357666d32-960.webp",
+      "ingest/assets/responsive/hero-details-0.9.8-retina-d357666d32-1600.webp",
+      "ingest/assets/responsive/hero-details-0.9.8-retina-d357666d32-2400.webp"
+    ],
+    "ingest/assets/hero-macbook-details-0.9.8.webp": [
+      "ingest/assets/responsive/hero-macbook-details-0.9.8-a4d66805ad-480.webp",
+      "ingest/assets/responsive/hero-macbook-details-0.9.8-a4d66805ad-960.webp",
+      "ingest/assets/responsive/hero-macbook-details-0.9.8-a4d66805ad-1600.webp",
+      "ingest/assets/responsive/hero-macbook-details-0.9.8-a4d66805ad-2400.webp"
+    ],
+    "ingest/assets/hero-macbook-focus-0.9.8.webp": [
+      "ingest/assets/responsive/hero-macbook-focus-0.9.8-48ef709581-480.webp",
+      "ingest/assets/responsive/hero-macbook-focus-0.9.8-48ef709581-960.webp",
+      "ingest/assets/responsive/hero-macbook-focus-0.9.8-48ef709581-1600.webp",
+      "ingest/assets/responsive/hero-macbook-focus-0.9.8-48ef709581-2400.webp"
+    ],
+    "ingest/assets/hero-macbook-workflow-0.9.8.webp": [
+      "ingest/assets/responsive/hero-macbook-workflow-0.9.8-f94e75d0b6-480.webp",
+      "ingest/assets/responsive/hero-macbook-workflow-0.9.8-f94e75d0b6-960.webp",
+      "ingest/assets/responsive/hero-macbook-workflow-0.9.8-f94e75d0b6-1600.webp",
+      "ingest/assets/responsive/hero-macbook-workflow-0.9.8-f94e75d0b6-2400.webp"
+    ]
+  }
+}

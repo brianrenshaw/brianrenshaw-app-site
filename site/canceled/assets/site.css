@@ -52,3 +52,20 @@ body.app-canceled{color-scheme:dark;--bg:#142d4e;--surface:#fffdf6;--ink:#fffdf6
 .app-canceled .closing{border-top:1px solid var(--line);padding-top:44px}
 
 @media(max-width:760px){.app-canceled .app-hero,.reveal-split{grid-template-columns:1fr;gap:28px}.reveal-split{padding-bottom:48px}.rule-slip{padding:24px;margin:44px 0}.app-canceled h1{font-size:clamp(38px,10vw,58px)}}
+
+/* Clearly labeled fictional choices explain the rule without collecting data. */
+.decision-example { border-top:1px solid #142d4e30; margin-top:24px; padding-top:24px; }
+.decision-example[hidden] { display:none; }
+.rule-slip .example-label { font-size:11px; letter-spacing:.06em; text-transform:uppercase; font-weight:700; }
+.rule-slip .example-help { font-size:14px; }
+.example-choices { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:22px 0; }
+.example-choices button { min-height:52px; padding:12px; background:transparent; color:var(--slip-ink); border:1px solid var(--slip-secondary); border-radius:6px; font:inherit; font-size:13px; font-weight:600; cursor:pointer; transition:background-color 140ms,color 140ms; }
+.example-choices button[aria-pressed="true"] { background:var(--slip-ink); color:var(--surface); }
+.example-outcome { min-height:110px; padding:18px 0; }
+.example-outcome strong { display:block; font-family:Archivo,sans-serif; font-weight:800; font-size:24px; line-height:1.2; transform-origin:left center; }
+.example-outcome span { display:block; font-size:14px; color:var(--slip-secondary); margin-top:12px; }
+.example-outcome.is-canceled strong { color:var(--stamp); }
+.example-reset { min-height:44px; padding:8px 0; border:0; background:transparent; color:var(--slip-secondary); font:inherit; font-size:13px; text-decoration:underline; text-underline-offset:4px; cursor:pointer; }
+.decision-example button:focus-visible { outline:2px solid var(--stamp); outline-offset:3px; }
+@media(max-width:420px) { .example-choices { grid-template-columns:1fr; } }
+@media(prefers-reduced-motion:reduce) { .example-choices button { transition:none; } }

@@ -304,3 +304,16 @@ html { scroll-behavior:auto }
  .sequence-room h2 { font-size:23px }
  .sequence-filename strong { font-size:11px }
 }
+
+/* Visitor-controlled comparisons and a labeled filename illustration. */
+.comparison-control { flex-wrap:wrap; }
+.comparison-presets { display:flex; flex-wrap:wrap; gap:6px; width:100%; }
+.comparison-presets button, .naming-controls button { min-height:44px; padding:10px 14px; font:inherit; font-size:12px; color:var(--ink); border:1px solid var(--line); background:transparent; cursor:pointer; transition:background-color 140ms,color 140ms; }
+.comparison-presets button[aria-pressed="true"], .naming-controls button[aria-pressed="true"] { background:var(--accent); color:var(--on-accent); border-color:var(--accent); }
+.comparison-presets button:focus-visible, .naming-controls button:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+.naming-controls { display:flex; flex-wrap:wrap; gap:6px; padding:0 0 20px; }
+.naming-controls[hidden] { display:none; }
+.listing-sequence[data-naming="camera"] .sequence-filename strong { visibility:hidden; }
+.listing-sequence[data-naming="camera"] .source-name { color:var(--ink); }
+.listing-sequence[data-naming="named"] .sequence-filename strong { color:var(--accent); }
+@media(prefers-reduced-motion:reduce) { .comparison-presets button, .naming-controls button { transition:none; } }

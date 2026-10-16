@@ -1,0 +1,258 @@
+{
+  "original_bytes": 51562502,
+  "fallback_bytes": 6973564,
+  "distinct_images": 50,
+  "quality": 90,
+  "images": {
+    "decks/assets/build148-design-gear-band.webp": [
+      "decks/assets/responsive/build148-design-gear-band-50cabe96d6-480.webp",
+      "decks/assets/responsive/build148-design-gear-band-50cabe96d6-960.webp",
+      "decks/assets/responsive/build148-design-gear-band-50cabe96d6-1080.webp"
+    ],
+    "decks/assets/build148-design-spec-sheet.webp": [
+      "decks/assets/responsive/build148-design-spec-sheet-5a0cc730c7-480.webp",
+      "decks/assets/responsive/build148-design-spec-sheet-5a0cc730c7-960.webp",
+      "decks/assets/responsive/build148-design-spec-sheet-5a0cc730c7-1080.webp"
+    ],
+    "decks/assets/build148-design-spine.webp": [
+      "decks/assets/responsive/build148-design-spine-0277c4a36a-480.webp",
+      "decks/assets/responsive/build148-design-spine-0277c4a36a-960.webp",
+      "decks/assets/responsive/build148-design-spine-0277c4a36a-1034.webp"
+    ],
+    "decks/assets/build148-design-wall-label.webp": [
+      "decks/assets/responsive/build148-design-wall-label-1be63d6484-480.webp",
+      "decks/assets/responsive/build148-design-wall-label-1be63d6484-960.webp",
+      "decks/assets/responsive/build148-design-wall-label-1be63d6484-1080.webp"
+    ],
+    "decks/assets/build148-framed-pad-details-card.webp": [
+      "decks/assets/responsive/build148-framed-pad-details-card-9ea91891ae-480.webp",
+      "decks/assets/responsive/build148-framed-pad-details-card-9ea91891ae-960.webp",
+      "decks/assets/responsive/build148-framed-pad-details-card-9ea91891ae-1600.webp",
+      "decks/assets/responsive/build148-framed-pad-details-card-9ea91891ae-2400.webp"
+    ],
+    "decks/assets/build148-framed-phone-builder.webp": [
+      "decks/assets/responsive/build148-framed-phone-builder-cfa82fc341-480.webp",
+      "decks/assets/responsive/build148-framed-phone-builder-cfa82fc341-960.webp",
+      "decks/assets/responsive/build148-framed-phone-builder-cfa82fc341-1350.webp"
+    ],
+    "decks/assets/build148-framed-phone-designs.webp": [
+      "decks/assets/responsive/build148-framed-phone-designs-75e1f1f069-480.webp",
+      "decks/assets/responsive/build148-framed-phone-designs-75e1f1f069-960.webp",
+      "decks/assets/responsive/build148-framed-phone-designs-75e1f1f069-1350.webp"
+    ],
+    "decks/assets/build148-framed-phone-details-card.webp": [
+      "decks/assets/responsive/build148-framed-phone-details-card-a5b88b62f4-480.webp",
+      "decks/assets/responsive/build148-framed-phone-details-card-a5b88b62f4-960.webp",
+      "decks/assets/responsive/build148-framed-phone-details-card-a5b88b62f4-1350.webp"
+    ],
+    "decks/assets/build148-framed-phone-stamp-date.webp": [
+      "decks/assets/responsive/build148-framed-phone-stamp-date-78ae002cb8-480.webp",
+      "decks/assets/responsive/build148-framed-phone-stamp-date-78ae002cb8-960.webp",
+      "decks/assets/responsive/build148-framed-phone-stamp-date-78ae002cb8-1350.webp"
+    ],
+    "decks/assets/build148-framed-phone-stamp.webp": [
+      "decks/assets/responsive/build148-framed-phone-stamp-50ea273bb5-480.webp",
+      "decks/assets/responsive/build148-framed-phone-stamp-50ea273bb5-960.webp",
+      "decks/assets/responsive/build148-framed-phone-stamp-50ea273bb5-1350.webp"
+    ],
+    "decks/assets/build148-framed-phone-templates.webp": [
+      "decks/assets/responsive/build148-framed-phone-templates-772bf8b2fd-480.webp",
+      "decks/assets/responsive/build148-framed-phone-templates-772bf8b2fd-960.webp",
+      "decks/assets/responsive/build148-framed-phone-templates-772bf8b2fd-1350.webp"
+    ],
+    "decks/assets/build148-mac-smart-builder.webp": [
+      "decks/assets/responsive/build148-mac-smart-builder-f2131dd5fe-480.webp",
+      "decks/assets/responsive/build148-mac-smart-builder-f2131dd5fe-960.webp",
+      "decks/assets/responsive/build148-mac-smart-builder-f2131dd5fe-1600.webp",
+      "decks/assets/responsive/build148-mac-smart-builder-f2131dd5fe-2400.webp"
+    ],
+    "decks/assets/build148-stamp-clean.webp": [
+      "decks/assets/responsive/build148-stamp-clean-abe4ab2ec4-480.webp",
+      "decks/assets/responsive/build148-stamp-clean-abe4ab2ec4-960.webp",
+      "decks/assets/responsive/build148-stamp-clean-abe4ab2ec4-1080.webp"
+    ],
+    "decks/assets/build148-stamp-digital.webp": [
+      "decks/assets/responsive/build148-stamp-digital-0cb22adfdc-480.webp",
+      "decks/assets/responsive/build148-stamp-digital-0cb22adfdc-960.webp",
+      "decks/assets/responsive/build148-stamp-digital-0cb22adfdc-1061.webp"
+    ],
+    "decks/assets/build148-stamp-typewriter-sideways.webp": [
+      "decks/assets/responsive/build148-stamp-typewriter-sideways-a656878aea-480.webp",
+      "decks/assets/responsive/build148-stamp-typewriter-sideways-a656878aea-960.webp",
+      "decks/assets/responsive/build148-stamp-typewriter-sideways-a656878aea-1080.webp"
+    ],
+    "decks/assets/build154-framed-mac-home.webp": [
+      "decks/assets/responsive/build154-framed-mac-home-2d20b3fe00-480.webp",
+      "decks/assets/responsive/build154-framed-mac-home-2d20b3fe00-960.webp",
+      "decks/assets/responsive/build154-framed-mac-home-2d20b3fe00-1600.webp",
+      "decks/assets/responsive/build154-framed-mac-home-2d20b3fe00-2400.webp"
+    ],
+    "decks/assets/build154-framed-pad-home.webp": [
+      "decks/assets/responsive/build154-framed-pad-home-96c4bb744e-480.webp",
+      "decks/assets/responsive/build154-framed-pad-home-96c4bb744e-960.webp",
+      "decks/assets/responsive/build154-framed-pad-home-96c4bb744e-1600.webp",
+      "decks/assets/responsive/build154-framed-pad-home-96c4bb744e-2400.webp"
+    ],
+    "decks/assets/build154-framed-pad-layout-panel.webp": [
+      "decks/assets/responsive/build154-framed-pad-layout-panel-25aa202f5e-480.webp",
+      "decks/assets/responsive/build154-framed-pad-layout-panel-25aa202f5e-960.webp",
+      "decks/assets/responsive/build154-framed-pad-layout-panel-25aa202f5e-1600.webp",
+      "decks/assets/responsive/build154-framed-pad-layout-panel-25aa202f5e-2400.webp"
+    ],
+    "decks/assets/build154-framed-phone-home.webp": [
+      "decks/assets/responsive/build154-framed-phone-home-a2507dba5f-480.webp",
+      "decks/assets/responsive/build154-framed-phone-home-a2507dba5f-960.webp",
+      "decks/assets/responsive/build154-framed-phone-home-a2507dba5f-1350.webp"
+    ],
+    "decks/assets/build154-framed-phone-pages.webp": [
+      "decks/assets/responsive/build154-framed-phone-pages-5cf4782a71-480.webp",
+      "decks/assets/responsive/build154-framed-phone-pages-5cf4782a71-960.webp",
+      "decks/assets/responsive/build154-framed-phone-pages-5cf4782a71-1350.webp"
+    ],
+    "decks/assets/build159-framed-phone-layout-groups.webp": [
+      "decks/assets/responsive/build159-framed-phone-layout-groups-c87a0d18aa-480.webp",
+      "decks/assets/responsive/build159-framed-phone-layout-groups-c87a0d18aa-960.webp",
+      "decks/assets/responsive/build159-framed-phone-layout-groups-c87a0d18aa-1350.webp"
+    ],
+    "decks/assets/build159-framed-phone-tour-2.webp": [
+      "decks/assets/responsive/build159-framed-phone-tour-2-bacaeb50bd-480.webp",
+      "decks/assets/responsive/build159-framed-phone-tour-2-bacaeb50bd-960.webp",
+      "decks/assets/responsive/build159-framed-phone-tour-2-bacaeb50bd-1350.webp"
+    ],
+    "decks/assets/build159-framed-phone-tour-3.webp": [
+      "decks/assets/responsive/build159-framed-phone-tour-3-a625342435-480.webp",
+      "decks/assets/responsive/build159-framed-phone-tour-3-a625342435-960.webp",
+      "decks/assets/responsive/build159-framed-phone-tour-3-a625342435-1350.webp"
+    ],
+    "decks/assets/build159-framed-phone-tour-4.webp": [
+      "decks/assets/responsive/build159-framed-phone-tour-4-6b2e49f218-480.webp",
+      "decks/assets/responsive/build159-framed-phone-tour-4-6b2e49f218-960.webp",
+      "decks/assets/responsive/build159-framed-phone-tour-4-6b2e49f218-1350.webp"
+    ],
+    "decks/assets/oct06-camera-below.webp": [
+      "decks/assets/responsive/oct06-camera-below-e8d8ca99e9-480.webp",
+      "decks/assets/responsive/oct06-camera-below-e8d8ca99e9-960.webp",
+      "decks/assets/responsive/oct06-camera-below-e8d8ca99e9-1080.webp"
+    ],
+    "decks/assets/oct06-camera-beside.webp": [
+      "decks/assets/responsive/oct06-camera-beside-a57c05ec0c-480.webp",
+      "decks/assets/responsive/oct06-camera-beside-a57c05ec0c-960.webp",
+      "decks/assets/responsive/oct06-camera-beside-a57c05ec0c-1080.webp"
+    ],
+    "decks/assets/oct06-camera-on-photo.webp": [
+      "decks/assets/responsive/oct06-camera-on-photo-3934d0312d-480.webp",
+      "decks/assets/responsive/oct06-camera-on-photo-3934d0312d-800.webp"
+    ],
+    "decks/assets/oct06-camera-per-photo.webp": [
+      "decks/assets/responsive/oct06-camera-per-photo-2ef1243109-480.webp",
+      "decks/assets/responsive/oct06-camera-per-photo-2ef1243109-960.webp",
+      "decks/assets/responsive/oct06-camera-per-photo-2ef1243109-1080.webp"
+    ],
+    "decks/assets/oct06-frame-black-border.webp": [
+      "decks/assets/responsive/oct06-frame-black-border-f75323ab33-480.webp",
+      "decks/assets/responsive/oct06-frame-black-border-f75323ab33-960.webp",
+      "decks/assets/responsive/oct06-frame-black-border-f75323ab33-1080.webp"
+    ],
+    "decks/assets/oct06-frame-blur-pair.webp": [
+      "decks/assets/responsive/oct06-frame-blur-pair-8e915eeac7-480.webp",
+      "decks/assets/responsive/oct06-frame-blur-pair-8e915eeac7-960.webp",
+      "decks/assets/responsive/oct06-frame-blur-pair-8e915eeac7-1080.webp"
+    ],
+    "decks/assets/oct06-frame-blur.webp": [
+      "decks/assets/responsive/oct06-frame-blur-60b3a060fa-480.webp",
+      "decks/assets/responsive/oct06-frame-blur-60b3a060fa-960.webp",
+      "decks/assets/responsive/oct06-frame-blur-60b3a060fa-1061.webp"
+    ],
+    "decks/assets/oct06-frame-film.webp": [
+      "decks/assets/responsive/oct06-frame-film-913b2e2f44-480.webp",
+      "decks/assets/responsive/oct06-frame-film-913b2e2f44-960.webp",
+      "decks/assets/responsive/oct06-frame-film-913b2e2f44-1080.webp"
+    ],
+    "decks/assets/oct06-frame-white.webp": [
+      "decks/assets/responsive/oct06-frame-white-dcc5dd09a9-480.webp",
+      "decks/assets/responsive/oct06-frame-white-dcc5dd09a9-960.webp",
+      "decks/assets/responsive/oct06-frame-white-dcc5dd09a9-1080.webp"
+    ],
+    "decks/assets/oct06-fuji-controls.webp": [
+      "decks/assets/responsive/oct06-fuji-controls-d9542800bc-480.webp",
+      "decks/assets/responsive/oct06-fuji-controls-d9542800bc-920.webp"
+    ],
+    "decks/assets/oct06-hero-pair.webp": [
+      "decks/assets/responsive/oct06-hero-pair-1030d4c465-480.webp",
+      "decks/assets/responsive/oct06-hero-pair-1030d4c465-960.webp",
+      "decks/assets/responsive/oct06-hero-pair-1030d4c465-1080.webp"
+    ],
+    "decks/assets/oct06-incoming.webp": [
+      "decks/assets/responsive/oct06-incoming-706effc43c-480.webp",
+      "decks/assets/responsive/oct06-incoming-706effc43c-960.webp",
+      "decks/assets/responsive/oct06-incoming-706effc43c-1300.webp"
+    ],
+    "decks/assets/oct06-ingest-send.webp": [
+      "decks/assets/responsive/oct06-ingest-send-ce9e145b9d-480.webp",
+      "decks/assets/responsive/oct06-ingest-send-ce9e145b9d-960.webp",
+      "decks/assets/responsive/oct06-ingest-send-ce9e145b9d-1180.webp"
+    ],
+    "decks/assets/oct06-next-aura-pair.webp": [
+      "decks/assets/responsive/oct06-next-aura-pair-83dbb1de5a-480.webp",
+      "decks/assets/responsive/oct06-next-aura-pair-83dbb1de5a-960.webp",
+      "decks/assets/responsive/oct06-next-aura-pair-83dbb1de5a-1280.webp"
+    ],
+    "decks/assets/oct06-next-threads-single.webp": [
+      "decks/assets/responsive/oct06-next-threads-single-c7b90752f9-480.webp",
+      "decks/assets/responsive/oct06-next-threads-single-c7b90752f9-960.webp",
+      "decks/assets/responsive/oct06-next-threads-single-c7b90752f9-1080.webp"
+    ],
+    "decks/assets/oct06-panorama-1.webp": [
+      "decks/assets/responsive/oct06-panorama-1-c83fb936ec-480.webp",
+      "decks/assets/responsive/oct06-panorama-1-c83fb936ec-733.webp"
+    ],
+    "decks/assets/oct06-panorama-2.webp": [
+      "decks/assets/responsive/oct06-panorama-2-5dfc523ff6-480.webp",
+      "decks/assets/responsive/oct06-panorama-2-5dfc523ff6-733.webp"
+    ],
+    "decks/assets/oct06-panorama-3.webp": [
+      "decks/assets/responsive/oct06-panorama-3-2ee1766e23-480.webp",
+      "decks/assets/responsive/oct06-panorama-3-2ee1766e23-733.webp"
+    ],
+    "decks/assets/oct06-reuse-1.webp": [
+      "decks/assets/responsive/oct06-reuse-1-6775a7dd5e-480.webp",
+      "decks/assets/responsive/oct06-reuse-1-6775a7dd5e-960.webp",
+      "decks/assets/responsive/oct06-reuse-1-6775a7dd5e-1080.webp"
+    ],
+    "decks/assets/oct06-reuse-2.webp": [
+      "decks/assets/responsive/oct06-reuse-2-dcc5dd09a9-480.webp",
+      "decks/assets/responsive/oct06-reuse-2-dcc5dd09a9-960.webp",
+      "decks/assets/responsive/oct06-reuse-2-dcc5dd09a9-1080.webp"
+    ],
+    "decks/assets/oct06-reuse-3.webp": [
+      "decks/assets/responsive/oct06-reuse-3-02c4592c57-480.webp",
+      "decks/assets/responsive/oct06-reuse-3-02c4592c57-960.webp",
+      "decks/assets/responsive/oct06-reuse-3-02c4592c57-1080.webp"
+    ],
+    "decks/assets/oct06-shortcut-original.webp": [
+      "decks/assets/responsive/oct06-shortcut-original-1a6f60f821-480.webp",
+      "decks/assets/responsive/oct06-shortcut-original-1a6f60f821-960.webp",
+      "decks/assets/responsive/oct06-shortcut-original-1a6f60f821-1466.webp"
+    ],
+    "decks/assets/oct06-shortcut-setup.webp": [
+      "decks/assets/responsive/oct06-shortcut-setup-a7ed85996e-480.webp",
+      "decks/assets/responsive/oct06-shortcut-setup-a7ed85996e-960.webp",
+      "decks/assets/responsive/oct06-shortcut-setup-a7ed85996e-1206.webp"
+    ],
+    "decks/assets/oct06-video-still.webp": [
+      "decks/assets/responsive/oct06-video-still-7eb57ca7a6-480.webp",
+      "decks/assets/responsive/oct06-video-still-7eb57ca7a6-960.webp",
+      "decks/assets/responsive/oct06-video-still-7eb57ca7a6-1080.webp"
+    ],
+    "decks/assets/oct08-youtube-autumn-soft.webp": [
+      "decks/assets/responsive/oct08-youtube-autumn-soft-e4b1cde1be-480.webp",
+      "decks/assets/responsive/oct08-youtube-autumn-soft-e4b1cde1be-960.webp",
+      "decks/assets/responsive/oct08-youtube-autumn-soft-e4b1cde1be-1600.webp",
+      "decks/assets/responsive/oct08-youtube-autumn-soft-e4b1cde1be-1920.webp"
+    ],
+    "decks/assets/oct09-story.webp": [
+      "decks/assets/responsive/oct09-story-b984aeeb4e-480.webp",
+      "decks/assets/responsive/oct09-story-b984aeeb4e-909.webp"
+    ]
+  }
+}

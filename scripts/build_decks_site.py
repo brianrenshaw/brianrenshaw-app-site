@@ -31,6 +31,8 @@ class Page(HTMLParser):
         for attr in ("href", "src", "poster"):
             if attrs.get(attr):
                 self.refs.append(attrs[attr])
+        if attrs.get("srcset"):
+            self.refs.extend(item.strip().split()[0] for item in attrs["srcset"].split(','))
 
 
 def main():
@@ -48,7 +50,7 @@ def main():
             marker.unlink()
         else:
             shutil.rmtree(marker.parent)
-    for name in ("apps.css", "family.css"):
+    for name in ("apps.css", "family.css", "product-preview.css", "product-preview.js"):
         shutil.copy2(ROOT / "site/assets" / name, OUTPUT / "assets" / name)
     for path in OUTPUT.rglob("*.html"):
         text = path.read_text()
@@ -56,7 +58,8 @@ def main():
         text = text.replace('href="/"', 'href="https://brianrenshaw.app/"')
         text = text.replace("https://brianrenshaw.app/decks/", ORIGIN + "/")
         text = text.replace('href="/ingest/', 'href="https://ingestphotoapp.com/')
-        text = text.replace('"/decks/', '"/')
+        # Rewrite every candidate in responsive srcset attributes as well.
+        text = text.replace('/decks/', '/')
         if (OUTPUT / "aura/index.html").exists():
             text = text.replace('data-aura-nav href="/support/#aura"', 'data-aura-nav href="/aura/"')
             text = text.replace("<!-- aura-page-link -->", '<a class="text-link" href="/aura/">Using an Aura frame? See how →</a>')

@@ -152,6 +152,10 @@
     {
       "id": "walkthrough-oct16-organization-first",
       "decision": "October 16, explicit follow-up: organization and renaming before MLS upload are Walkthrough’s primary purpose. Keep the large Newsreader typography and photography Brian liked. Lead with room numbers and filename transformations on a photographic sequence, then organization, naming/processing, and optional finishing touches. Move the supplied drone comparison into the supporting finishing-tools section. Both photographers and agents remain equally important. Keep every feature and preserve original assets, guides, legacy anchors, and the update feed."
+    },
+    {
+      "id": "product-previews-oct16-mobbin",
+      "decision": "Approved October 16: implement the Mobbin review with visitor-controlled real-image previews for Decks compositions/platforms, an Ingest workflow tour, and smaller app previews. Use short state transitions, stable media space, keyboard tabs, hash-revealed panels, no autoplay, reduced motion, and fully readable no-JavaScript content. Preserve each palette, genuine assets, all historical anchors, and release/feed contracts. Walkthrough adds comparison endpoints and illustrative filename switching; Canceled has a clearly labeled fictional mutual-choice example. Use responsive display derivatives while preserving original assets. 21st search returned HTTP 401; reuse static project primitives."
     }
   ],
   "evidence": [

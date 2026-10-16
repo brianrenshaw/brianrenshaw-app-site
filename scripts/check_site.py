@@ -17,6 +17,9 @@ class Page(HTMLParser):
   if tag=='link' and a.get('rel')=='canonical':self.canonical.append(a.get('href'))
   for attr in ['href','src','poster']:
    if a.get(attr):self.refs.append((tag,attr,a[attr]))
+  if a.get('srcset'):
+   for candidate in a['srcset'].split(','):
+    self.refs.append((tag,'srcset',candidate.strip().split()[0]))
 pages={p:Page(p.read_text()) for p in ROOT.rglob('*.html')};errors=[];links=0
 for p,page in pages.items():
  rel=p.relative_to(ROOT).as_posix();url='https://brianrenshaw.app/'+rel

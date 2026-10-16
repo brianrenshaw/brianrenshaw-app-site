@@ -19,9 +19,11 @@ videos = catalog.get('videos', {})
 seen_videos = set()
 archived_videos = catalog.get('archivedVideos', {})
 assert not videos.keys() & archived_videos.keys()
+responsive = json.loads((ASSETS / 'responsive/manifest.json').read_text())['images']
+display_sources = { '/' + variant: '/' + source for source, variants in responsive.items() for variant in variants }
 
 
-def lossless_dimensions(path):
+def lossless_dimensions(path, allow_display_derivative=False):
     data = path.read_bytes()
     assert data[:4] == b'RIFF' and data[8:12] == b'WEBP', 'not WebP'
     offset = 12
@@ -29,7 +31,10 @@ def lossless_dimensions(path):
         kind = data[offset:offset + 4]
         size = struct.unpack_from('<I', data, offset + 4)[0]
         payload = data[offset + 8:offset + 8 + size]
-        assert kind != b'VP8 ', 'lossy encoding'
+        if kind == b'VP8 ':
+            assert allow_display_derivative, 'lossy encoding'
+            assert payload[3:6] == b'\x9d\x01\x2a', 'invalid lossy header'
+            return struct.unpack_from('<H', payload, 6)[0] & 0x3fff, struct.unpack_from('<H', payload, 8)[0] & 0x3fff
         if kind == b'VP8L':
             assert payload[0] == 0x2f, 'invalid lossless header'
             bits = int.from_bytes(payload[1:5], 'little')
@@ -85,10 +90,32 @@ for name, meta in artwork.items():
     assert hashlib.sha256((ASSETS / name).read_bytes()).hexdigest() == meta['outputSHA256'], name
     assert hashlib.sha256((ASSETS / meta['nativeScreenshot']).read_bytes()).hexdigest() == meta['nativeScreenshotSHA256'], name
 
+# Display derivatives are explicitly separate from untouched native captures.
+for source, variants in responsive.items():
+    original = ROOT / source
+    digest = hashlib.sha256(original.read_bytes()).hexdigest()[:10]
+    if original.suffix == '.png':
+        dimensions = struct.unpack_from('>II', original.read_bytes(), 16)
+    else:
+        dimensions = lossless_dimensions(original)
+    for variant in variants:
+        path = ROOT / variant
+        try:
+            width = int(path.stem.rsplit('-', 1)[-1])
+            assert f'-{digest}-' in path.name, 'original checksum changed'
+            assert width <= dimensions[0], 'derivative must not upscale'
+            assert lossless_dimensions(path, True) == (width, round(dimensions[1] * width / dimensions[0])), 'incorrect derivative dimensions'
+        except (AssertionError, OSError, ValueError) as error:
+            errors.append(f'{variant}: {error}')
+
 class Images(HTMLParser):
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         src = attrs.get('src', '')
+        if src in display_sources:
+            if attrs.get('data-display-source') != display_sources[src]:
+                errors.append(f'{page}: incorrect original for responsive image {src}')
+            src = display_sources[src]
         if tag == 'source' and src.startswith('/ingest/assets/'):
             name = src.rsplit('/', 1)[-1]
             if name not in videos:
