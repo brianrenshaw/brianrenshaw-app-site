@@ -1,0 +1,34 @@
+[
+  {
+    "file": "iphone-list.webp",
+    "source": "build23-iphone-initial/E8A7D057-F3EE-4E40-8346-BE80AA62829C.png",
+    "sourceSHA256": "d1ac759a9bedb2e2029a03b34677e56ba0b4ef2f19591eca4423627945486c19",
+    "width": 1206,
+    "height": 2622,
+    "crop": null,
+    "encoding": "Lossless WebP; EXIF orientation applied; no resampling"
+  },
+  {
+    "file": "ipad-list.webp",
+    "source": "redesign-ipad-final-images/99002A4D-354D-42E9-933A-EDB533D49569.png",
+    "sourceSHA256": "1d445e8bc87b75ac5322a7adb8f80c6f5846898e0a1d94b478e37cb95a6a4e90",
+    "width": 2420,
+    "height": 1668,
+    "crop": null,
+    "encoding": "Lossless WebP; EXIF orientation applied; no resampling"
+  },
+  {
+    "file": "mac-list.webp",
+    "source": "mac-drag-during.png",
+    "sourceSHA256": "877694a989d86a7299f389db5a663e6e26389851de5573d62044b65590170d2c",
+    "width": 2489,
+    "height": 1590,
+    "crop": [
+      805,
+      505,
+      3294,
+      2095
+    ],
+    "encoding": "Lossless WebP; EXIF orientation applied; no resampling"
+  }
+]

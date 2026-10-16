@@ -2,6 +2,10 @@
 
 Canonical website: https://brianrenshaw.app/
 
+Nearabout source is in `site/nearabout/`, with its own Cloudflare build at
+`python3 scripts/build_nearabout_site.py`. See [NEARABOUT_HOSTING.md](NEARABOUT_HOSTING.md)
+for domain setup, availability, image provenance, and the owner's copy direction.
+
 Decks is live at https://decksphotoapp.com/ on Cloudflare Pages, with its
 dedicated deployment built using
 `python3 scripts/build_decks_site.py`. See [DECKS_HOSTING.md](DECKS_HOSTING.md)

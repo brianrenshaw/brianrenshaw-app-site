@@ -507,3 +507,13 @@ Pricing: say nothing about Decks Pro, trials, or which features are paid. Brian 
 ## Aura page brevity — October 9, 2026
 
 The Aura page is short on purpose: problem in one sentence, a six-step plan with one line per step, the result, one call to action. Do not add notes under sections, a tips list, or more than five FAQs. Steps use iPhone captures with the control in question spotlighted. Text on example compositions sits in the margin, not on the photo, and uses a plain line rather than a slogan.
+# Nearabout
+
+Nearabout helps people keep places to try and share personal recommendations.
+Lead with remembering a place someone mentioned and having thoughtful suggestions
+ready for a friend. Lists, personal notes, and sharing are primary. Travel estimates
+and route planning are supporting options, not the product's main story.
+
+The owner explicitly rejects marketing slogans and all-caps tagline sequences.
+Use natural sentences, specific human moments, and understated emotion. See
+`NEARABOUT_HOSTING.md` for the full direction and verified beta availability.
