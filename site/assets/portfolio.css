@@ -1,20 +1,99 @@
-
-:root{color-scheme:light;--ink:#282b28;--paper:#f7f6f2;--muted:#65685f;--line:#b9bcb166}body{background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-underline-offset:5px}.portfolio-header,main,.portfolio-footer{max-width:1220px;margin:auto;padding:0 clamp(20px,4vw,50px)}.portfolio-header{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:30px;padding-bottom:26px;border-bottom:1px solid var(--line)}.wordmark{font-size:17px;font-weight:650;text-decoration:none;letter-spacing:-.03em}.wordmark span{display:block;font-size:12px;font-weight:400;letter-spacing:0;color:var(--muted)}.portfolio-header nav{display:flex;gap:28px;font-size:13px}.portfolio-intro{padding:86px 0 72px}.eyebrow{font-size:11px;font-weight:600;letter-spacing:.13em;text-transform:uppercase}.portfolio-intro h1{font-family:Georgia,serif;font-size:clamp(42px,5.5vw,72px);font-weight:400;letter-spacing:-.045em;line-height:1.09;margin:24px 0}.portfolio-intro>p:last-child{font-size:19px;line-height:1.65;color:var(--muted)}.portfolio-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.portfolio-app{padding:36px;display:flex;flex-direction:column;min-width:0;border:1px solid #00000008;min-height:370px}.app-label{display:flex;align-items:center;gap:14px;font-weight:600;font-size:16px;margin-bottom:38px}.app-label img{border-radius:13px;width:54px;height:54px;object-fit:contain}.portfolio-app .eyebrow{font-size:10px;margin:0 0 14px;opacity:.8}.portfolio-app h2{font-size:32px;letter-spacing:-.03em;line-height:1.2;font-weight:500;margin:0 0 14px;max-width:16ch}.portfolio-app h2 a{text-decoration:none}.portfolio-app h2 a:hover{text-decoration:underline}.portfolio-app h2 .card-arrow{display:inline-block;width:.7em;height:.7em;margin-left:.2em;vertical-align:baseline;flex-shrink:0}.portfolio-app>p:not(.eyebrow){font-size:15px;max-width:42ch;opacity:.85;margin:0 0 30px}.app-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:11px;margin-top:auto;padding-top:22px;border-top:1px solid #0002}.app-bottom a{font-size:13px}.reading-habit{background:#f2dfae;color:#363127}.reading-habit h2{font-family:Georgia,serif}.where-do-we-eat{background:#fff3df;color:#482b25}.where-do-we-eat h2{font-weight:650}.chooser{background:#bde0d2;color:#163f3c}.folio{background:#ffdbb5;color:#57331f}.about{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:90px 0}.about .eyebrow{grid-column:1/-1}.about h2{font-family:Georgia,serif;font-size:38px;line-height:1.15;font-weight:400;margin:0}.about div{max-width:42ch;color:var(--muted)}.about p{margin-top:0}.about a{font-size:14px;color:var(--ink)}.portfolio-footer{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:24px;padding-bottom:32px;font-size:12px;color:var(--muted)}
-@media(max-width:700px){.portfolio-header{align-items:flex-start}.portfolio-header nav{gap:16px;font-size:12px}.portfolio-intro{padding:48px 0 36px}.portfolio-grid{grid-template-columns:1fr}.portfolio-app{padding:28px;min-height:330px}.app-label{margin-bottom:28px}.about{grid-template-columns:1fr;padding:56px 0}.about .eyebrow{grid-column:auto}.portfolio-footer{flex-wrap:wrap}.portfolio-intro>p:last-child{font-size:17px}}
-@media(prefers-color-scheme:dark){:root{color-scheme:dark;--paper:#20231f;--ink:#f0eee5;--muted:#b2b7aa;--line:#b9bcb144}.reading-habit{background:#343126;color:#eee3c9}.where-do-we-eat{background:#392d29;color:#f5d9ce}.chooser{background:#293b35;color:#d8e8e0}.folio{background:#3b3025;color:#f3e0c7}.app-bottom{border-color:#fff3}}
-
-.portfolio-header nav{flex-wrap:wrap}@media(max-width:700px){.portfolio-header{flex-wrap:wrap}}
-
-
-
+/* Portfolio layout. App palettes below stay aligned with their product sites. */
+:root {
+  color-scheme: light;
+  --ink: #282b28;
+  --paper: #f7f6f2;
+  --muted: #65685f;
+  --line: #b9bcb166;
+}
+body { background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; }
+a { color: inherit; text-underline-offset: 5px; }
+[hidden] { display: none !important; }
+.portfolio-header, main, .portfolio-footer { max-width: 1220px; margin: auto; padding-inline: clamp(20px, 4vw, 50px); }
+.portfolio-header { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-block: 26px; border-bottom: 1px solid var(--line); }
+.wordmark { font-size: 17px; font-weight: 650; text-decoration: none; letter-spacing: -.03em; }
+.wordmark span { display: block; font-size: 12px; font-weight: 400; letter-spacing: 0; color: var(--muted); }
+.portfolio-header nav { display: flex; flex-wrap: wrap; gap: 24px; font-size: 13px; }
+.portfolio-header nav a { padding-block: 10px; text-decoration: none; }
+.portfolio-header nav a:hover { text-decoration: underline; }
+.eyebrow { font-size: 10px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; }
+.portfolio-intro { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: center; padding-block: 72px 80px; }
+.portfolio-intro .eyebrow { color: var(--muted); margin: 0 0 22px; }
+.portfolio-intro h1 { font-family: Georgia, serif; font-size: clamp(42px, 4.8vw, 62px); font-weight: 400; letter-spacing: -.05em; line-height: 1.04; margin: 0; }
+.intro-note { max-width: 37ch; padding-top: 25px; }
+.intro-note > p:first-child { font-size: 19px; line-height: 1.65; margin: 0 0 24px; color: var(--muted); }
+.intro-link { display: inline-flex; gap: 40px; align-items: center; min-height: 44px; font-size: 14px; font-weight: 500; text-decoration: none; border-bottom: 1px solid var(--ink); }
+.intro-link span { font-size: 21px; }
+.intro-link:hover { gap: 48px; }
+.intro-platforms { font-size: 11px; color: var(--muted); margin: 24px 0 0; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; padding-top: 25px; margin-bottom: 28px; border-top: 1px solid var(--line); }
+.section-heading .eyebrow { color: var(--muted); margin: 0 0 12px; }
+.section-heading h2 { font-family: Georgia, serif; font-weight: 400; font-size: clamp(30px, 3.5vw, 40px); line-height: 1.15; letter-spacing: -.035em; margin: 0; }
+.section-heading > p { max-width: 32ch; color: var(--muted); font-size: 13px; margin: 0 0 3px; }
+.portfolio-featured, .portfolio-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.portfolio-app { padding: 30px; display: flex; flex-direction: column; min-width: 0; border: 1px solid #00000008; scroll-margin-top: 24px; }
+.app-label { display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 16px; margin-bottom: 28px; }
+.app-label img { border-radius: 11px; width: 46px; height: 46px; object-fit: contain; flex-shrink: 0; }
+.project-identity { min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.project-type { font-size: 11px; font-weight: 400; letter-spacing: .01em; }
+.portfolio-app .eyebrow { margin: 0 0 12px; }
+.portfolio-app h3 { font-size: 28px; letter-spacing: -.03em; line-height: 1.2; font-weight: 500; margin: 0 0 16px; max-width: 22ch; }
+.portfolio-app h3 a { text-decoration: none; }
+.portfolio-app h3 a:hover { text-decoration: underline; }
+.card-arrow { display: inline-block; width: .7em; height: .7em; margin-left: .2em; vertical-align: baseline; }
+.portfolio-app > p:not(.eyebrow) { font-size: 14px; max-width: 48ch; opacity: .9; margin: 0 0 28px; }
+.app-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 16px; margin-top: auto; padding-top: 14px; border-top: 1px solid #0002; }
+.app-bottom a, .app-bottom span { font-size: 12px; padding-block: 8px; }
+.app-bottom > a:only-child { margin-left: auto; }
+.portfolio-app.featured { padding: 30px; }
+.featured .app-label { margin-bottom: 12px; }
+.featured-shot { margin: 0 -10px 24px; aspect-ratio: 1.65; display: flex; align-items: center; }
+.featured-shot img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.featured h3 { font-size: clamp(28px, 2.9vw, 36px); line-height: 1.15; max-width: 22ch; }
+.featured h3 .keep { white-space: nowrap; }
+.featured > p:not(.eyebrow) { font-size: 15px; }
+.more-projects { margin-top: 72px; }
+.project-browser { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 25px; }
+.project-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.project-filters button { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; border: 1px solid var(--line); border-radius: 24px; padding: 8px 16px; background: transparent; color: var(--ink); font: inherit; font-size: 12px; cursor: pointer; }
+.project-filters button span { font-size: 10px; opacity: .75; font-variant-numeric: tabular-nums; }
+.project-filters button:hover { border-color: var(--ink); }
+.project-filters button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.project-count { margin: 0; font-size: 11px; color: var(--muted); white-space: nowrap; }
+.reading-habit { background: #f2dfae; color: #363127; }
+.reading-habit h3 { font-family: Georgia, serif; }
+.where-do-we-eat { background: #fff3df; color: #482b25; }
+.where-do-we-eat h3 { font-weight: 650; }
+.chooser { background: #bde0d2; color: #163f3c; }
+.folio { background: #ffdbb5; color: #57331f; }
+.spreadsheet-utility { grid-column: 1/-1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 44px; }
+.spreadsheet-utility .app-label, .spreadsheet-utility .eyebrow, .spreadsheet-utility .app-bottom { grid-column: 1/-1; }
+.spreadsheet-utility h3 { max-width: none; }
+.spreadsheet-utility .app-bottom { margin-top: 8px; }
+.about { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 48px; border-top: 1px solid var(--line); padding-block: 40px 70px; margin-top: 72px; }
+.about .eyebrow { grid-column: 1/-1; margin: 0 0 8px; color: var(--muted); }
+.about h2 { font-family: Georgia, serif; font-size: 38px; letter-spacing: -.03em; line-height: 1.15; font-weight: 400; margin: 0; }
+.about div { max-width: 42ch; color: var(--muted); }
+.about p { margin-top: 0; }
+.about a { display: inline-block; min-height: 44px; padding-block: 8px; font-size: 14px; color: var(--ink); }
+.portfolio-footer { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; gap: 12px 24px; border-top: 1px solid var(--line); padding-block: 24px 32px; font-size: 12px; color: var(--muted); }
+.portfolio-footer a { padding-block: 8px; }
+@media (prefers-color-scheme: dark) {
+  :root { color-scheme: dark; --paper: #20231f; --ink: #f0eee5; --muted: #b2b7aa; --line: #b9bcb144; }
+  .reading-habit { background: #343126; color: #eee3c9; }
+  .where-do-we-eat { background: #392d29; color: #f5d9ce; }
+  .chooser { background: #293b35; color: #d8e8e0; }
+  .folio { background: #3b3025; color: #f3e0c7; }
+  .app-bottom { border-color: #fff3; }
+}
 .lankford-legends{background:#fff;color:#0C2340;scroll-margin-top:24px}
 .lankford-legends .eyebrow,.lankford-legends .app-bottom a{color:#C41E3A}
 @media(prefers-color-scheme:dark){.lankford-legends{background:#0C2340;color:#fff}.lankford-legends .eyebrow,.lankford-legends .app-bottom a{color:#fff}}
 
-.project-identity{min-width:0;display:flex;flex-direction:column;gap:2px}.project-type{font-size:11px;font-weight:400;letter-spacing:.03em}.app-label img{flex-shrink:0}.spreadsheet-utility{background:#d5e6f4;color:#293f55;scroll-margin-top:24px}@media(prefers-color-scheme:dark){.spreadsheet-utility{background:#243747;color:#deecf7}}
+.spreadsheet-utility{background:#d5e6f4;color:#293f55;scroll-margin-top:24px}@media(prefers-color-scheme:dark){.spreadsheet-utility{background:#243747;color:#deecf7}}
 
 .what-did-they-read{background:#f2efe8;color:#1a1715;scroll-margin-top:24px}
-.what-did-they-read h2{font-family:Georgia,serif;font-weight:400;letter-spacing:-.02em}
+.what-did-they-read h3{font-family:Georgia,serif;font-weight:400;letter-spacing:-.02em}
 .what-did-they-read .eyebrow,.what-did-they-read .app-bottom a{color:#8c2b18}
 @media(prefers-color-scheme:dark){.what-did-they-read{background:#2a2622;color:#f2efe8}.what-did-they-read .eyebrow,.what-did-they-read .app-bottom a{color:#e8a08e}}
 .folio .eyebrow,.folio .app-bottom a{color:#943b00}.where-do-we-eat .eyebrow,.where-do-we-eat .app-bottom a{color:#b52b17}.portfolio-app .eyebrow{opacity:1}@media(prefers-color-scheme:dark){.folio .eyebrow,.folio .app-bottom a{color:#ffb570}.where-do-we-eat .eyebrow,.where-do-we-eat .app-bottom a{color:#ffab98}}
@@ -27,22 +106,43 @@
 .canceled .app-bottom span{font-size:13px;opacity:.85}
 @media(prefers-color-scheme:dark){.canceled{background:#151d2c;color:#fff4cd}.canceled .eyebrow,.canceled .app-bottom a{color:#f7dc12}.canceled .app-bottom{border-color:#ffffff40}}
 
-/* Ingest and Decks lead the page as a featured pair, each with a MacBook composition from its own site. */
-.portfolio-featured{display:grid;grid-template-columns:1fr 1fr;gap:22px}.section-label{grid-column:1/-1;margin:0 0 6px;color:var(--muted)}.more-label{margin:76px 0 22px}.portfolio-app.featured{padding:44px 44px 36px;min-height:0;box-shadow:0 1px 2px #0000000a,0 18px 40px -28px #0000003d}.featured h2{font-size:clamp(34px,3.3vw,44px);line-height:1.12;max-width:15ch}.featured>p:not(.eyebrow){font-size:16px;max-width:46ch;margin-bottom:28px}.featured-shot{margin:auto -12px 0}.featured-shot img{display:block;width:100%;height:auto}.featured .app-bottom{margin-top:0}.featured h2 .keep{white-space:nowrap}
-@media(max-width:700px){.portfolio-featured{grid-template-columns:1fr}.portfolio-app.featured{padding:28px}.featured-shot{margin:auto -6px 0}.more-label{margin-top:56px}}
-@media(prefers-color-scheme:dark){.portfolio-app.featured{box-shadow:none}}
-
 /* Ingest follows its editorial site: warm white, charcoal, amber. Dark mode keeps the app's charcoal. */
 .ingest{background:#fffefb;color:#242622}.ingest .eyebrow,.ingest .app-bottom a{color:#86520b}@media(prefers-color-scheme:dark){.ingest{background:#1b1c1e;color:#f1efe9}.ingest .eyebrow,.ingest .app-bottom a{color:#f5a524}.ingest .app-bottom{border-color:#fff3}}
 
 /* Decks follows its photo-editorial site: stone paper and charcoal ink. Dark mode keeps the Acros near-black. */
 .decks{background:#eae8e2;color:#242422}.decks .eyebrow,.decks .app-bottom a{color:#242422}.decks .app-label img{border-radius:13px}@media(prefers-color-scheme:dark){.decks{background:#101011;color:#ececea}.decks .eyebrow,.decks .app-bottom a{color:#ececea}.decks .app-bottom{border-color:#ffffff33}}
 
-/* Spreadsheet Tools closes the grid as a full-width strip: headline on the left, description on the right. */
-.spreadsheet-utility{grid-column:1/-1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:44px;align-content:start}.spreadsheet-utility .app-label,.spreadsheet-utility .eyebrow,.spreadsheet-utility .app-bottom{grid-column:1/-1}.spreadsheet-utility h2{max-width:none}.spreadsheet-utility>p:not(.eyebrow){margin:0;padding-top:4px}.spreadsheet-utility .app-bottom{margin-top:30px}
 
-/* A card with a single link keeps it on the right, where the other cards' arrow links sit. */
-.app-bottom>a:only-child{margin-left:auto}
-
-/* Phones: smaller headlines in the secondary grid so Ingest and Decks stay the largest, and cards size to their content. */
-@media(max-width:700px){.portfolio-grid .portfolio-app{min-height:0}.portfolio-grid .portfolio-app h2{font-size:26px}.portfolio-grid .app-label{margin-bottom:22px}.portfolio-grid .portfolio-app>p:not(.eyebrow){margin-bottom:24px}.spreadsheet-utility{grid-template-columns:1fr}.spreadsheet-utility>p:not(.eyebrow){padding-top:0}.spreadsheet-utility .app-bottom{margin-top:0}}
+@media (max-width: 760px) {
+  .portfolio-intro { gap: 24px; padding-block: 52px 56px; }
+  .intro-note > p:first-child { font-size: 16px; }
+  .portfolio-app, .portfolio-app.featured { padding: 24px; }
+  .featured h3 { font-size: 29px; }
+  .project-count { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (max-width: 600px) {
+  .portfolio-header { align-items: flex-start; flex-wrap: wrap; gap: 14px; padding-block: 20px; }
+  .portfolio-header nav { gap: 20px; font-size: 12px; }
+  .portfolio-intro { grid-template-columns: 1fr; gap: 24px; padding-block: 44px 48px; }
+  .portfolio-intro h1 { font-size: clamp(36px, 8.5vw, 50px); }
+  .intro-note { padding-top: 0; max-width: 38ch; }
+  .intro-note > p:first-child { font-size: 17px; margin-bottom: 14px; }
+  .intro-platforms { margin-top: 16px; }
+  .section-heading { display: block; padding-top: 22px; margin-bottom: 22px; }
+  .section-heading > p { margin-top: 12px; }
+  .portfolio-featured, .portfolio-grid { grid-template-columns: 1fr; gap: 18px; }
+  .portfolio-app h3 { font-size: 26px; }
+  .featured h3 { font-size: 31px; }
+  .featured-shot { margin-bottom: 20px; }
+  .more-projects, .about { margin-top: 48px; }
+  .project-filters { gap: 8px; }
+  .project-filters button { padding-inline: 13px; gap: 9px; }
+  .spreadsheet-utility { grid-template-columns: 1fr; }
+  .spreadsheet-utility .app-bottom { margin-top: 0; }
+  .about { grid-template-columns: 1fr; padding-block: 30px 44px; gap: 18px; }
+  .about h2 { font-size: 34px; }
+}
+@media (max-width: 360px) {
+  .portfolio-intro h1 { font-size: 36px; }
+  .featured h3 { font-size: 28px; }
+}

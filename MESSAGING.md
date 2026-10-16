@@ -32,6 +32,10 @@ Since October 8, 2026, there is no dashed placeholder card. Spreadsheet Tools, t
 
 Since October 8, 2026, at Brian’s request, the homepage intro, About section, and share image do not present AI as how the projects are made. The intro reads “Apps and projects for photography, reading, good meals, baseball, and everyday tasks.” Product copy may still name AI where it describes what a product does, such as Folio opening files saved from AI chats.
 
+## Homepage presentation — October 16, 2026
+
+The Mobbin-informed homepage retains “Apps and tools by Brian Renshaw.” and the approved interests sentence. Brian rejected “I’m Brian. I make apps.”; keep the straightforward portfolio headline. Ingest and Decks keep their exact product headlines and existing availability labels, with shorter supporting summaries. Large native device compositions precede their descriptions. “More projects” filters only the nine secondary projects; Ingest and Decks remain featured above it. All eleven projects retain their existing order and links.
+
 ## Approved messages
 
 ### Reading Habit

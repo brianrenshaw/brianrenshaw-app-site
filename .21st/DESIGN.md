@@ -97,3 +97,15 @@ Brian requested a distinctive redesign with StoryBrand messaging and all feature
 ## Walkthrough, October 16: organization and renaming first
 
 October 16, explicit follow-up: organization and renaming before MLS upload are Walkthrough’s primary purpose. Keep the large Newsreader typography and photography Brian liked. Lead with room numbers and filename transformations on a photographic sequence, then organization, naming/processing, and optional finishing touches. Move the supplied drone comparison into the supporting finishing-tools section. Both photographers and agents remain equally important. Keep every feature and preserve original assets, guides, legacy anchors, and the update feed. The existing static HTML/CSS primitives and comparison controller are reused. The hero’s example set combines the already licensed interior fixtures and Brian’s supplied original drone photo; it is labeled as an example, not a single real listing or reconstructed app screen.
+
+
+### Portfolio refresh from Mobbin — October 16, 2026
+
+The homepage keeps warm paper, Georgia headings, system body type, the approved app colors, and the existing project order. The existing “Apps and tools by Brian Renshaw.” introduction leads into image-first Ingest and Decks cards. Brian rejected “I’m Brian. I make apps.”; preserve the straightforward portfolio headline. The nine remaining projects have optional All, iPhone & iPad, Mac, and Web filters; all content stays visible without JavaScript. Existing project anchors reveal their card even after filtering. Preserve keyboard focus, pressed states, live result counts, and the complete native device images.
+
+References inspected on Mobbin:
+- [Unseen Studio](https://mobbin.com/sites/sections/79d328bc-800b-4830-9de1-7ef8fd2dd00f): selected-project grid and compact category controls.
+- [Fiasco](https://mobbin.com/sites/sections/4ed7c118-a866-41fa-824c-32a24323c927): image-led project summaries, restrained typography, and space between projects.
+- [Riverside](https://mobbin.com/sites/sections/601ce269-1efe-407c-9fb5-7272f7504f43): showing related apps across devices.
+
+References informed layout only; no reference artwork or catalog component was imported. The 21st search returned HTTP 401. Existing static HTML/CSS, local device compositions, and shared accessibility styles are reused.
