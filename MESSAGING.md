@@ -226,9 +226,11 @@ Added at Brian's request as the eighth project, replacing the reserved slot. Typ
 
 **Purpose:** Organize and rename listing photos before uploading to the MLS. Brian explicitly ranked room organization, photo order, and consistent filenames first. Property outlines, markers, nearby places, cropping, and straightening are supporting finishing tools. The command bar finds actions, rooms, presets, templates, and recent jobs.
 
-**Headline:** Every photo in order. Every file named.
+**Headline:** Organize and rename listing photos.
 
-**Supporting copy:** Organize rooms, set the photo order, and rename the whole set before uploading to the MLS. Walkthrough brings the final prep together on your Mac.
+**Supporting copy:** Prepare your photo folder for the MLS. Group photos by room, set their order, and preview filenames before renaming the set.
+
+**Heading style:** Brian rejected paired slogans such as “A room for every photo. An order for the whole home.” Use direct action or feature headings throughout the page: “Group and order photos by room,” “Rename the whole photo set,” and “Add property outlines, labels, and crops.” Keep the large typography, but avoid poetic phrasing, forced parallel sentences, and vague outcome fragments. StoryBrand informs the page structure, not a slogan-writing style.
 
 **Portfolio headline:** Organize and rename listing photos.
 

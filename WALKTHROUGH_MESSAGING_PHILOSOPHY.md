@@ -6,9 +6,9 @@ Updated October 16, 2026 from Brian’s request for StoryBrand messaging with al
 
 The customer has a photo folder that needs room organization, a deliberate photo order, and useful filenames before MLS upload or client delivery. Walkthrough guides that work; the app’s feature inventory is supporting evidence.
 
-Primary promise: **Every photo in order. Every file named.**
+Primary heading: **Organize and rename listing photos.**
 
-Supporting copy: Organize rooms, set the photo order, and rename the whole set before uploading to the MLS. Walkthrough brings the final prep together on your Mac.
+Supporting copy: Prepare your photo folder for the MLS. Group photos by room, set their order, and preview filenames before renaming the set.
 
 Use [StoryBrand’s customer-as-hero framework](https://storybrand.com/downloads/your-brand-is-not-the-hero.pdf) to organize the story, without exposing framework labels to website visitors.
 
@@ -56,7 +56,7 @@ Nearby-place searches and travel estimates use Apple Maps. Property outlines are
 
 Use the listing-folio direction: warm paper, deep green, Newsreader headings, Archivo body copy, real photography, and precise rules and spacing. Keep the native teal house icon. Large typography and photography lead, as Brian requested. Room order and filename transformations must be visible in the main visual. The app screenshots explain the work. The drone comparison supports the finishing-tools section rather than defining the product.
 
-Short outcome headings are appropriate. Supporting copy must explain what users can do. Avoid repetitive slogan fragments and unnecessary technical details in the main story. Put deeper instructions in the guides.
+Headings state the action or feature directly. Brian rejected “A room for every photo. An order for the whole home.” Use “Group and order photos by room” instead. Apply the same standard to the hero and every section: no paired slogans, poetic phrasing, or vague outcome fragments. StoryBrand shapes the sequence of information, not the tone of the headings. Keep the large typography. Supporting copy explains what users can do; deeper instructions stay in the guides.
 
 The before/after interaction must work with a pointer and keyboard. Keep the finished image and original links usable without JavaScript. Motion should be restrained and respect reduced-motion preferences.
 
