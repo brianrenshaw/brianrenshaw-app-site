@@ -37,7 +37,9 @@ Reference: https://storybrand.com/downloads/your-brand-is-not-the-hero.pdf
 
 Visual direction: a restrained street atlas with paper, forest green, vermilion,
 Newsreader headings, a fictional decorative map, and genuine device captures.
-Static HTML/CSS; no framework, runtime JavaScript, remote fonts, or analytics.
+Static HTML/CSS; no framework, application JavaScript, or remote fonts.
+Cloudflare injects its Web Analytics beacon on the custom domain; the website
+privacy section discloses performance and page-view measurement.
 21st catalog search returned HTTP 401, so no catalog components were imported.
 21st review found only intentional local palette values.
 
@@ -82,3 +84,10 @@ to `anna.ns.cloudflare.com` and `cesar.ns.cloudflare.com`; Cloudflare confirmed
 the zone active. No MX records or DNSSEC delegation existed during migration.
 The portfolio export redirects Nearabout pages to the dedicated domain, preserving
 query strings and anchors.
+
+Cloudflare Redirect Rule `Nearabout www to main domain` matches
+`http.host eq "www.nearaboutapp.com"` and returns a 301 to
+`concat("https://nearaboutapp.com", http.request.uri.path)`, preserving query strings.
+Verified both HTTP and HTTPS, nested paths, and query strings. Apex HTTP redirects
+to HTTPS. Both custom-domain certificates are active. Live HTML, screenshots,
+stylesheet, font, social image, robots, and sitemap were fetched successfully.
