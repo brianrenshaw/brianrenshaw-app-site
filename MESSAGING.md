@@ -220,25 +220,25 @@ Added at Brian's request as the eighth project, replacing the reserved slot. Typ
 
 ### Walkthrough (October 16, 2026, current)
 
-**Writing philosophy:** Brian requested a stronger StoryBrand story with all features still visible. Read [Walkthrough’s messaging philosophy](WALKTHROUGH_MESSAGING_PHILOSOPHY.md). Lead with the customer’s desired handoff, acknowledge the remaining preparation work, offer a three-step plan, and prove the result with actual photos and app captures. Keep claims concrete; do not invent testimonials, time savings, sales results, or MLS guarantees. This supersedes the previous instruction to replace StoryBrand framing.
+**Writing philosophy:** Brian requested a stronger StoryBrand story with all features still visible. Read [Walkthrough’s messaging philosophy](WALKTHROUGH_MESSAGING_PHILOSOPHY.md). Lead with organizing and renaming a photo folder before MLS upload, acknowledge the remaining preparation work, offer a three-step plan, and prove the result with actual photos and app captures. Keep claims concrete; do not invent testimonials, time savings, sales results, or MLS guarantees. This supersedes the previous instruction to replace StoryBrand framing.
 
 **Audience:** Real estate photographers and real estate agents equally, as Brian specified on October 16. Listing assistants can use the same workflow. The common goal is a prepared set of JPG/JPEG listing photos to hand off or upload.
 
-**Purpose:** Prepare listing photos: organize rooms and photo order, draw property outlines, add markers and nearby places, crop and straighten images, and process numbered filenames. The command bar finds actions, rooms, presets, templates, and recent jobs.
+**Purpose:** Organize and rename listing photos before uploading to the MLS. Brian explicitly ranked room organization, photo order, and consistent filenames first. Property outlines, markers, nearby places, cropping, and straightening are supporting finishing tools. The command bar finds actions, rooms, presets, templates, and recent jobs.
 
-**Headline:** Listing photos, ready to share.
+**Headline:** Every photo in order. Every file named.
 
-**Supporting copy:** Put the rooms in order, make the property clear, and deliver consistently named files. Walkthrough brings the final steps together on your Mac.
+**Supporting copy:** Organize rooms, set the photo order, and rename the whole set before uploading to the MLS. Walkthrough brings the final prep together on your Mac.
 
-**Portfolio headline:** Listing photos, ready to share.
+**Portfolio headline:** Organize and rename listing photos.
 
-**Portfolio supporting copy:** Put rooms in order, outline the property, and prepare consistently named photos for a client handoff or listing upload. Built for photographers and real estate agents on Mac.
+**Portfolio supporting copy:** Group photos by room, arrange the set, and rename every file before uploading to the MLS. Add final details such as crops and property outlines. Built for photographers and real estate agents on Mac.
 
 **Card label:** Real estate photo preparation
 
-**Content priorities:** Make outlines, markers, nearby places, and cropping visible alongside grouping, ordering, reusable presets, and processing. Describe settings-file sharing and saved local jobs separately. Headings name capabilities; screenshot captions explain what is shown.
+**Content priorities:** Organization and renaming are the primary offer. Lead with room grouping, photo order, reusable naming presets, templates, and processing. Keep outlines, markers, nearby places, and cropping visible as optional finishing touches. Describe settings-file sharing and saved local jobs separately. Headings name capabilities; screenshot captions explain what is shown.
 
-**Landing page:** Outcome with a genuine before/after comparison; remaining preparation work; Open → Prepare → Deliver plan; three illustrated workflow chapters; complete feature index; practical FAQs; download. Keep all capabilities visible in the index and link to the detailed guides. Preserve genuine screenshots, supported formats, requirements, and export distinctions.
+**Landing page:** Large outcome typography with a photographic sequence showing room numbers and original-to-output filenames; remaining folder-preparation work; Organize → Name → Finish plan; organization chapter; naming/processing chapter; finishing tools with the supplied drone comparison; complete feature index; practical FAQs; download. Keep all capabilities visible in the index and link to the detailed guides. Preserve genuine screenshots, supported formats, requirements, and export distinctions.
 
 **Upload order:** Numbered filenames support sorting by name. Tell users to sort exported files by name before selecting them and check final order in the MLS or website after uploading. Do not guarantee that any receiving service preserves order or that the first upload is correct.
 
@@ -250,7 +250,7 @@ Added at Brian's request as the eighth project, replacing the reserved slot. Typ
 
 **Availability:** Current download: Walkthrough 1.5.0 (16). macOS 14 or later, Apple silicon and Intel, no account required. Do not copy Ingest’s beta status, RAW support, or system requirements. Historical release notes remain historical; preserve the original Listing Namer update feed and redirects.
 
-**Visual direction:** Listing folio: warm paper, deep green derived from the native teal identity, locally hosted Newsreader headings and Archivo body type. Use an interactive genuine drone comparison, ruled editorial sections, a dark green outline chapter, and clear filename examples. Motion is a short staggered entrance with reduced-motion support. Landing styles are loaded only on the homepage; illustrated guides retain their document layout. Original image links and historical anchors remain available.
+**Visual direction:** Listing folio: warm paper, deep green derived from the native teal identity, locally hosted Newsreader headings and Archivo body type. Keep the large typography and photography Brian liked. Lead with a clearly labeled example photo sequence and useful filename transformations. Place the interactive genuine drone comparison in the supporting dark green finishing-tools chapter. Use ruled editorial sections and clear filename examples. Motion is a short staggered entrance with reduced-motion support. Landing styles are loaded only on the homepage; illustrated guides retain their document layout. Original image links and historical anchors remain available.
 
 **Photo examples:** Use ordinary residential properties for the outline workflow. Boundaries in demonstration photos are illustrative. Use licensed photographs and genuine output from Walkthrough. Nearby-place searches and travel estimates use Apple Maps and require a network connection. Do not imply automatic parcel lookup or guaranteed travel times.
 

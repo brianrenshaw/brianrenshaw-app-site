@@ -148,6 +148,10 @@
     {
       "id": "walkthrough-oct16-listing-folio",
       "decision": "October 16: Brian requested a distinctive redesign with StoryBrand messaging and every feature visible, speaking equally to photographers and agents. Implement the recommended listing-folio direction: warm paper and deep green, locally hosted Newsreader and Archivo, genuine drone comparison in the hero, Open/Prepare/Deliver story, three workflow chapters, complete feature index, practical FAQ, and direct Mac download. Preserve native image pixels, original links, legacy anchors, guides, and the update feed. Catalog search/generation returned HTTP 401; implementation uses custom static HTML/CSS and existing project assets."
+    },
+    {
+      "id": "walkthrough-oct16-organization-first",
+      "decision": "October 16, explicit follow-up: organization and renaming before MLS upload are Walkthrough’s primary purpose. Keep the large Newsreader typography and photography Brian liked. Lead with room numbers and filename transformations on a photographic sequence, then organization, naming/processing, and optional finishing touches. Move the supplied drone comparison into the supporting finishing-tools section. Both photographers and agents remain equally important. Keep every feature and preserve original assets, guides, legacy anchors, and the update feed."
     }
   ],
   "evidence": [

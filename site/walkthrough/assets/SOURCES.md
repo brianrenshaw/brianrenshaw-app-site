@@ -61,3 +61,9 @@ Brian supplied the original drone photograph, outlined result, and native editor
 ## October 16, 2026 homepage typography
 
 `fonts/newsreader.woff` is a WOFF encoding of the variable Newsreader typeface from the [Google Fonts source repository](https://github.com/google/fonts/tree/main/ofl/newsreader), downloaded as the original TTF and compressed with fontTools without subsetting. `fonts/OFL-newsreader.txt` contains its SIL Open Font License. Archivo is reused from the site’s existing local font. The redesigned homepage reuses the supplied Buckeye photos and native captures above; it introduces no generated photography or reconstructed app UI.
+
+## October 16, 2026 organization and naming sequence
+
+`listing-kitchen-1000.webp` and `listing-living-room-1000.webp` reuse the existing licensed native-review fixtures `Studio_01.jpg` and `Studio_02.jpg`. These are the Lisa Anna kitchen and Bailey Alexander landscape living-room photographs credited above, respectively. They are encoded with `cwebp -q 90 -resize 1000 0 -metadata icc`, preserving the full compositions at 1000 × 667 pixels. The hero also uses Brian’s supplied original drone display derivative.
+
+The HTML labels this as an example photo sequence with illustrative filenames and a fictional address. These photos are not represented as one real listing or a native app capture. Room numbers and filename transformations are HTML text, separate from the photographs. Native screenshots remain unmodified; the supplied outline comparison is now in the supporting finishing-tools section.
