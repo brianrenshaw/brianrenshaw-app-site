@@ -8,7 +8,7 @@ Applies to brianrenshaw.app and every product site, including Ingest, Decks, Wal
 
 Avoid paired slogan fragments, invented customer scenarios, dramatic contrasts, vague ownership promises, and generic enthusiasm. Do not turn a feature into “Your photos. Your way.” or manufacture a weekend story to introduce orientation handling. Say “Reuse folder structures and naming rules” or “Smart Layout pairs vertical photos and gives horizontal photos their own pages.” Keep factual product distinctions and limitations. Use vertical and horizontal when describing photo orientation.
 
-Preserve approved product positioning and genuine app examples; this is not a ban on warmth or every short heading. Walkthrough’s existing explanation-first philosophy is the model across sites. Read the finished page for repetition, including captions, disclosures, and social artwork. Do not make Brian identify each instance of the same writing problem.
+Preserve approved product positioning and genuine app examples; this is not a ban on warmth or every short heading. Walkthrough’s October 16 update uses a customer-led StoryBrand structure while retaining this factual standard. Its newer product-specific direction takes precedence over older headline and section-order examples. Read the finished page for repetition, including captions, disclosures, and social artwork. Do not make Brian identify each instance of the same writing problem.
 
 ## Homepage order
 
@@ -218,27 +218,27 @@ Priority clarification: the latest Cardinals Daily is the primary feature, the l
 
 Added at Brian's request as the eighth project, replacing the reserved slot. Type: Mac app. Headline: “Give every listing photo its place.” Lead with organizing real estate shoots and consistent delivery filenames while preserving JPG quality. Support keyboard grouping, ordering, presets, and local jobs with practical copy. Availability must say Mac preview until a notarized release is ready. Current requirements: macOS 14+, Apple silicon and Intel. No account is required. Do not describe address search or update checking as offline. The download is Developer ID signed but not yet notarized; disclose that macOS may block it.
 
-### Walkthrough (October 15, 2026, current)
+### Walkthrough (October 16, 2026, current)
 
-**Writing philosophy:** Read [Walkthrough’s messaging philosophy](WALKTHROUGH_MESSAGING_PHILOSOPHY.md). Explain capabilities and interactions directly. This replaces the earlier StoryBrand framing, invented frustrations, slogans, and guarantees about MLS upload order.
+**Writing philosophy:** Brian requested a stronger StoryBrand story with all features still visible. Read [Walkthrough’s messaging philosophy](WALKTHROUGH_MESSAGING_PHILOSOPHY.md). Lead with the customer’s desired handoff, acknowledge the remaining preparation work, offer a three-step plan, and prove the result with actual photos and app captures. Keep claims concrete; do not invent testimonials, time savings, sales results, or MLS guarantees. This supersedes the previous instruction to replace StoryBrand framing.
 
-**Audience:** Real estate photographers, realtors, and listing assistants preparing JPG/JPEG listing photos on a Mac.
+**Audience:** Real estate photographers and real estate agents equally, as Brian specified on October 16. Listing assistants can use the same workflow. The common goal is a prepared set of JPG/JPEG listing photos to hand off or upload.
 
 **Purpose:** Prepare listing photos: organize rooms and photo order, draw property outlines, add markers and nearby places, crop and straighten images, and process numbered filenames. The command bar finds actions, rooms, presets, templates, and recent jobs.
 
-**Headline:** Prepare photos for a property listing.
+**Headline:** Listing photos, ready to share.
 
-**Supporting copy:** Group photos by room and give them consistent filenames. Draw property outlines on aerial photos, add labels and nearby places, and crop images for delivery.
+**Supporting copy:** Put the rooms in order, make the property clear, and deliver consistently named files. Walkthrough brings the final steps together on your Mac.
 
-**Portfolio headline:** Prepare photos for a property listing.
+**Portfolio headline:** Listing photos, ready to share.
 
-**Portfolio supporting copy:** Organize listing photos, draw property outlines, add nearby places, and crop images. Create numbered filenames for delivery, with reusable room templates and naming presets.
+**Portfolio supporting copy:** Put rooms in order, outline the property, and prepare consistently named photos for a client handoff or listing upload. Built for photographers and real estate agents on Mac.
 
 **Card label:** Real estate photo preparation
 
 **Content priorities:** Make outlines, markers, nearby places, and cropping visible alongside grouping, ordering, reusable presets, and processing. Describe settings-file sharing and saved local jobs separately. Headings name capabilities; screenshot captions explain what is shown.
 
-**Landing page:** Workspace screenshot; property outline example; markers and nearby places; cropping and originals; grouping and ordering; command bar; naming presets and room templates; processing; local jobs; download. Preserve real screenshots, supported formats, system requirements, and exact export behavior.
+**Landing page:** Outcome with a genuine before/after comparison; remaining preparation work; Open → Prepare → Deliver plan; three illustrated workflow chapters; complete feature index; practical FAQs; download. Keep all capabilities visible in the index and link to the detailed guides. Preserve genuine screenshots, supported formats, requirements, and export distinctions.
 
 **Upload order:** Numbered filenames support sorting by name. Tell users to sort exported files by name before selecting them and check final order in the MLS or website after uploading. Do not guarantee that any receiving service preserves order or that the first upload is correct.
 
@@ -250,7 +250,7 @@ Added at Brian's request as the eighth project, replacing the reserved slot. Typ
 
 **Availability:** Current download: Walkthrough 1.5.0 (16). macOS 14 or later, Apple silicon and Intel, no account required. Do not copy Ingest’s beta status, RAW support, or system requirements. Historical release notes remain historical; preserve the original Listing Namer update feed and redirects.
 
-**Visual direction:** Dark charcoal with the native teal accent, house-and-number icon, bundled Archivo, and genuine native screenshots using demonstration data. Use a wide workspace screenshot and alternating explanatory sections. Keep layout styles scoped to the landing page and document layouts intact.
+**Visual direction:** Listing folio: warm paper, deep green derived from the native teal identity, locally hosted Newsreader headings and Archivo body type. Use an interactive genuine drone comparison, ruled editorial sections, a dark green outline chapter, and clear filename examples. Motion is a short staggered entrance with reduced-motion support. Landing styles are loaded only on the homepage; illustrated guides retain their document layout. Original image links and historical anchors remain available.
 
 **Photo examples:** Use ordinary residential properties for the outline workflow. Boundaries in demonstration photos are illustrative. Use licensed photographs and genuine output from Walkthrough. Nearby-place searches and travel estimates use Apple Maps and require a network connection. Do not imply automatic parcel lookup or guaranteed travel times.
 

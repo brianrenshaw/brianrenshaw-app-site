@@ -144,7 +144,11 @@
       "id": "ingest-hero-dots",
       "decision": "Hero refinement, October 6: use three small manual pagination dots with accessible names and 44px targets, 11px captions, and photography credits in the page footer. Focus Mode now shows 015-Mountain-Light.DNG (Signature Edits original July_mReKo_002.DNG); face detail shows 001-Wedding-Selects.CR2 at native 100% with sidebars and peaking. Fresh genuine build 48 captures reduce empty black viewer area. No automatic rotation."
     },
-    "Walkthrough October 6: existing charcoal/teal palette, native workspace and command screenshots in MacBook frames, static wiki articles with sidebar and progressive search, original image links and legacy fragments preserved."
+    "Walkthrough October 6: existing charcoal/teal palette, native workspace and command screenshots in MacBook frames, static wiki articles with sidebar and progressive search, original image links and legacy fragments preserved.",
+    {
+      "id": "walkthrough-oct16-listing-folio",
+      "decision": "October 16: Brian requested a distinctive redesign with StoryBrand messaging and every feature visible, speaking equally to photographers and agents. Implement the recommended listing-folio direction: warm paper and deep green, locally hosted Newsreader and Archivo, genuine drone comparison in the hero, Open/Prepare/Deliver story, three workflow chapters, complete feature index, practical FAQ, and direct Mac download. Preserve native image pixels, original links, legacy anchors, guides, and the update feed. Catalog search/generation returned HTTP 401; implementation uses custom static HTML/CSS and existing project assets."
+    }
   ],
   "evidence": [
     {

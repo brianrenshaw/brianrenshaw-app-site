@@ -1,159 +1,216 @@
-<!doctype html>
-<html lang="en">
-<head>
+<!doctype html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Walkthrough | Prepare photos for a property listing</title>
-<meta name="description" content="Organize listing photos, draw property outlines, add markers and nearby places, and crop images. Prepare numbered files for delivery with Walkthrough for Mac.">
+<title>Walkthrough | Listing photos, ready to share</title>
+<meta name="description" content="Put rooms in order, make the property clear, and deliver consistently named photos. Walkthrough helps real estate photographers and agents prepare listing photos on a Mac.">
 <link rel="canonical" href="https://brianrenshaw.app/walkthrough/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Walkthrough | Prepare photos for a property listing">
-<meta property="og:description" content="Organize listing photos, draw property outlines, add markers and nearby places, and crop images. Prepare numbered files for delivery with Walkthrough for Mac.">
+<meta property="og:title" content="Walkthrough | Listing photos, ready to share">
+<meta property="og:description" content="Put rooms in order, make the property clear, and deliver consistently named photos. Walkthrough helps real estate photographers and agents prepare listing photos on a Mac.">
 <meta property="og:url" content="https://brianrenshaw.app/walkthrough/">
-<meta property="og:image" content="https://brianrenshaw.app/walkthrough/assets/native-workspace-1.4.2.png">
-<meta property="og:image:alt" content="Walkthrough showing listing photos grouped by room, with room order and filename previews">
+<meta property="og:image" content="https://brianrenshaw.app/walkthrough/assets/buckeye-drone-outline-1.5.0-1600.webp">
+<meta property="og:image:alt" content="A property outlined in yellow on an aerial photo, with the surroundings softened in Walkthrough">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/walkthrough/assets/icon-1.4.1.png">
-<link rel="stylesheet" href="/assets/apps.css">
-<link rel="stylesheet" href="/assets/family.css">
-<link rel="stylesheet" href="/walkthrough/assets/site.css?v=1.4.1">
-<link rel="stylesheet" href="/walkthrough/assets/landing.css">
-</head>
-<body class="app-listing-namer walkthrough-home">
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="family-header">
-<a class="family-brand" href="/walkthrough/">
-<img src="/walkthrough/assets/icon-1.4.1.png" width="1024" height="1024" alt="">Walkthrough</a>
-<nav aria-label="Main navigation">
-<a class="portfolio-home-link" href="/">← Brian’s homepage</a>
-<a href="/walkthrough/release-notes/">Release notes</a>
-<a href="/walkthrough/guide/">Guide</a>
-<a href="/walkthrough/support/">Help center</a>
+<link rel="preload" href="/walkthrough/assets/fonts/newsreader.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="/walkthrough/assets/landing.css?v=20261016">
+<script src="/walkthrough/assets/landing.js?v=20261016" defer></script>
+</head><body class="walkthrough-home"><a class="skip" href="#main">Skip to content</a>
+<header class="header wrap"><a class="brand" href="#main"><img src="/walkthrough/assets/icon-1.4.1.png" width="36" height="36" alt="">Walkthrough</a>
+<nav aria-label="Main navigation"><a href="#plan">How it works</a><a href="#features">All features</a><a href="/walkthrough/guide/">Guide</a><a class="nav-download" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.5.0/Walkthrough-1.5.0.dmg">Download <span aria-hidden="true">↗</span></a>
 </nav>
 </header>
-<main id="main" tabindex="-1" class="app-landing">
-<section class="walkthrough-hero" aria-labelledby="hero-title">
-<p class="eyebrow">For real estate photographers, realtors, and listing assistants · Mac</p>
-<h1 id="hero-title">Prepare photos for a property listing.</h1>
-<p class="intro">Group photos by room and give them consistent filenames. Draw property outlines on aerial photos, add labels and nearby places, and crop images for delivery.</p>
-<div class="actions">
-<a class="primary-action" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.5.0/Walkthrough-1.5.0.dmg">Download for Mac <span aria-hidden="true">↗</span></a>
-<a class="secondary-action" href="#outlines">How it works <span aria-hidden="true">↓</span></a>
+<main id="main" tabindex="-1">
+<section class="hero wrap" aria-label="Prepare your listing photos">
+<div class="hero-copy">
+<p class="eyebrow">For photographers &amp; real estate agents</p>
+<h1 id="hero-title">Listing photos,<br><em>ready to share.</em></h1>
+<p class="intro">Put the rooms in order, make the property clear, and deliver consistently named files. Walkthrough brings the final steps together on your Mac.</p>
+<div class="actions"><a class="button" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.5.0/Walkthrough-1.5.0.dmg">Download for Mac <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#plan">See how it works <span aria-hidden="true">↓</span></a>
 </div>
-<div class="hero-details">
-<p>macOS 14+ · Apple silicon and Intel · <a href="/walkthrough/release-notes/#v1.5.0">Version 1.5.0</a></p>
-<p>No account required.</p>
+<p class="requirements">macOS 14+ · Apple silicon &amp; Intel · No account required</p>
 </div>
-<nav class="feature-links" aria-label="Explore Walkthrough features"><a href="#outlines">Property outlines</a><a href="#markers">Markers and nearby places</a><a href="#crop">Crop and straighten</a><a href="#organize">Sort and name</a></nav>
-</section>
-
-<figure class="desktop-shot mac-presentation workspace-capture">
-<a href="/walkthrough/assets/native-workspace-1.4.2.png" aria-label="View the Walkthrough workspace screenshot at full resolution">
-<img style="--capture-width:1903px" src="/walkthrough/assets/macbook-workspace-1.4.2.webp" width="3806" height="2296" fetchpriority="high" alt="Walkthrough’s contact sheet with ordered rooms in the sidebar, photos grouped by room, and a filename preview in the inspector">
-</a>
-<figcaption>Room groups, photo order, and filename previews. Shown in a MacBook frame with demonstration photos. Select the image to view the original screenshot.</figcaption>
+<div class="hero-visual">
+<div class="photo-heading"><span>THE LISTING, IN FOCUS</span><span>01 / PROPERTY OUTLINES</span>
+</div>
+<figure class="comparison">
+<div class="compare-photos"><img class="original" src="/walkthrough/assets/buckeye-drone-original-1.5.0-1600.webp" decoding="async" width="1600" height="1199" alt="Original drone photo of a home, lawn, and pond"><img class="outlined" src="/walkthrough/assets/buckeye-drone-outline-1.5.0-1600.webp" fetchpriority="high" decoding="async" width="1600" height="1199" alt="The same property outlined in yellow, with the surroundings darkened and softened"><span class="compare-divider" aria-hidden="true"><span>↔</span></span><span class="photo-label before">Original</span><span class="photo-label after">With Walkthrough</span>
+</div><figcaption><span>Property outline, saved in Walkthrough.</span><span class="original-links"><a href="/walkthrough/assets/buckeye-drone-original-1.5.0.jpg">Original ↗</a><a href="/walkthrough/assets/buckeye-drone-outline-1.5.0.jpg">Outlined ↗</a></span></figcaption>
+<div class="comparison-control" hidden><label for="compare-range">Compare the original and outlined photo</label><input id="compare-range" type="range" min="0" max="100" value="28" aria-label="Compare original and outlined photo">
+</div>
 </figure>
-
-<section class="outline-feature" id="outlines" aria-labelledby="outlines-title">
-<div class="outline-intro"><div><p class="eyebrow">Property outlines</p><h2 id="outlines-title">Show the property on an aerial photo.</h2></div><div><p>Click around the lot to draw an outline. Choose the line color and style, tint the inside, or make the surrounding area black and white, darker, or blurred.</p><p>Save an outlined copy alongside the original. Reopen it to adjust the line or styling later.</p><a class="text-link" href="/walkthrough/guide/property-outlines/">How to outline a property <span aria-hidden="true">→</span></a></div></div>
-<div class="outline-comparison">
-<figure class="desktop-shot"><a href="/walkthrough/assets/buckeye-drone-original-1.5.0.jpg" aria-label="View the original drone photo at full resolution"><img src="/walkthrough/assets/buckeye-drone-original-1.5.0-1600.webp" width="1600" height="1199" loading="lazy" alt="Original aerial photo of a home, driveway, lawn, and pond surrounded by neighboring properties"></a><figcaption><strong>Original photo</strong> Before adding a property outline.</figcaption></figure>
-<figure class="desktop-shot"><a href="/walkthrough/assets/buckeye-drone-outline-1.5.0.jpg" aria-label="View the outlined drone photo at full resolution"><img src="/walkthrough/assets/buckeye-drone-outline-1.5.0-1600.webp" width="1600" height="1199" loading="lazy" alt="The same aerial photo with a yellow outline around the home, driveway, lawn, and pond, with the surrounding area softened and darkened"></a><figcaption><strong>With a property outline</strong> A yellow boundary and softer surroundings bring the property into focus.</figcaption></figure>
 </div>
-<a class="text-link" href="/walkthrough/guide/property-outlines/#outline-editor">See the outline editor <span aria-hidden="true">→</span></a>
 </section>
-
-<section class="working-details" id="markers" aria-label="Markers and nearby places">
-<article><p class="eyebrow">Markers</p><h2>Add labels, pins, and arrows.</h2><p>Mark the home, label a feature, or point toward something outside the frame. Move and resize markers on the photo, rotate arrows, and add a compass with an adjustable north direction.</p><p>Use Find Place to search Apple Maps and add a place name with an estimated drive or walk time.</p><a class="text-link" href="/walkthrough/guide/markers/">How photo markers work <span aria-hidden="true">→</span></a></article>
-<article><p class="eyebrow">Nearby places</p><h2>Include what’s near the listing.</h2><p>Paste a list of places and search near the listing address. Review the matches and Apple Maps travel estimates, then copy the list as text.</p><p>With an outline open, add the places to the photo as one card or separate labels. Choose driving or walking times and optional distances.</p><a class="text-link" href="/walkthrough/guide/nearby-places/">Build a nearby-places list <span aria-hidden="true">→</span></a></article>
-</section>
-
-<section class="working-details" id="crop" aria-labelledby="crop-title">
-<article><p class="eyebrow">Crop and straighten</p><h2 id="crop-title">Adjust the framing before delivery.</h2><p>Choose an aspect ratio, adjust the crop, and straighten the photo. Rotate in quarter turns or flip it horizontally.</p><a class="text-link" href="/walkthrough/guide/crop/">How to crop a photo <span aria-hidden="true">→</span></a></article>
-<article><h2>Keep the original photo.</h2><p>Saving a crop creates a new JPG that takes the original’s place in the job. The original moves to Excluded and stays on disk. Select the cropped copy to edit it again using the original image.</p><p>Outlines and crops render new images. Rename, Copy, and Move preserve the image data of the files you process.</p></article>
-</section>
-
-<section class="organize-section" id="organize" aria-labelledby="organize-title">
-<div class="section-heading"><p class="eyebrow">Organize a listing</p><h2 id="organize-title">Group photos and choose their order.</h2></div>
-<div class="organize-details">
-<article><h3>Assign photos to rooms</h3><p>Open a photo folder, select photos, and press <kbd>G</kbd> to choose a room or create one. You can also drag photos onto rooms in the sidebar.</p></article>
-<article><h3>Arrange rooms and photos</h3><p>Reorder the rooms, then arrange the photos within each room. The filename previews update to reflect that sequence.</p></article>
-<article><h3>Choose what to include</h3><p>Exclude photos from a job to leave them out of the numbering and processing. The original files stay on disk, and you can include them again later.</p></article>
+<div class="audience-strip wrap"><span>A clear handoff for photographers.</span><span>A prepared photo set for agents.</span><span>One place for the final details.</span>
 </div>
-<a class="text-link" href="/walkthrough/guide/workspace/">Read the workspace guide <span aria-hidden="true">→</span></a>
-</section>
-
-<section class="walkthrough-feature" id="commands" aria-labelledby="commands-title">
-<div class="feature-copy">
-<p class="eyebrow">Command bar</p>
-<h2 id="commands-title">Find actions with <kbd>⌘K</kbd>.</h2>
-<p>Search for a command, room, naming preset, template, or recent job. Use the arrow keys to select a result and Return to run it.</p>
-<p>For example, choose Add to Group to assign selected photos, or Change Group Name to rename their room. Renaming a group updates its label and filename previews.</p>
-<a class="text-link" href="/walkthrough/guide/palette/">Read the command bar guide <span aria-hidden="true">→</span></a>
+<section class="problem wrap">
+<p class="eyebrow">THE LAST PART OF THE JOB</p>
+<div>
+<h2>You have the photos.<br>There’s still a listing to prepare.</h2>
+<p>Rooms to arrange. A property line to explain. Images to crop and filenames to clean up. Getting those details right is part of a professional handoff.</p>
+<p>Walkthrough gives that work a home. Bring your JPGs, prepare the set, and review exactly what you’re delivering.</p>
 </div>
-<figure class="desktop-shot mac-presentation">
-<a href="/walkthrough/assets/native-commands-1.4.2.png" aria-label="View the command bar screenshot at full resolution"><img style="--capture-width:1903px" src="/walkthrough/assets/macbook-commands-1.4.2.webp" width="3806" height="2296" loading="lazy" alt="Walkthrough’s command bar showing Add to Group, Change Group Name, photo ordering, and processing commands"></a>
-<figcaption>Search commands, rooms, and presets from the current job. Select the MacBook presentation to view the original screenshot.</figcaption>
+</section>
+<section class="plan-section" id="plan">
+<div class="wrap">
+<div class="section-top">
+<p class="eyebrow">A SIMPLE PLAN</p>
+<h2>Open. Prepare. Deliver.</h2>
+</div>
+<ol class="plan">
+<li><span class="step">01</span>
+<h3>Open your photo folder.</h3>
+<p>Start with JPGs from the shoot or the photos your photographer delivered. Add the listing address.</p></li>
+<li><span class="step">02</span>
+<h3>Prepare the listing.</h3>
+<p>Arrange the rooms and photos. Add an outline, labels, nearby places, or a crop wherever the photo needs it.</p></li>
+<li><span class="step">03</span>
+<h3>Deliver a clear set.</h3>
+<p>Review the filenames, then rename, copy, or move the files. They’re ready for your handoff or upload.</p></li>
+</ol>
+</div>
+</section>
+<section class="chapter wrap" id="organize">
+<div class="chapter-copy">
+<p class="eyebrow">01 / GIVE THE PHOTOS AN ORDER</p>
+<h2 id="organize-title">Help the next person<br>walk through the home.</h2>
+<p>Start at the front door. Move room by room. Group your photos and arrange them in the order that makes sense for this property.</p>
+<p>Room templates give you a starting point for the next listing. Adjust the order whenever the home calls for something different.</p><a class="text-link" href="/walkthrough/guide/workspace/">Explore the workspace <span aria-hidden="true">↗</span></a>
+</div>
+<figure class="app-shot"><a href="/walkthrough/assets/native-workspace-1.4.2.png"><img src="/walkthrough/assets/macbook-workspace-1.4.2.webp" width="3806" height="2296" loading="lazy" alt="The native Walkthrough workspace with photos grouped by room on a MacBook"></a><figcaption>Room groups, photo order, and filename previews in one workspace.</figcaption>
 </figure>
 </section>
-
-<section class="walkthrough-feature reverse-feature" id="naming" aria-labelledby="naming-title">
-<div class="feature-copy">
-<p class="eyebrow">Presets and templates</p>
-<h2 id="naming-title">Save naming presets and room templates.</h2>
-<p>A naming preset defines what goes into each filename, such as the listing address, room number, room name, and photo number.</p>
-<p>A room template saves an ordered set of rooms to apply to another listing. Edit the groups for each property without rebuilding your usual order.</p>
-<a class="text-link" href="/walkthrough/guide/presets/">Read about naming presets <span aria-hidden="true">→</span></a>
+<section class="context-section" id="outlines">
+<div class="wrap chapter">
+<div class="chapter-copy">
+<p class="eyebrow">02 / MAKE THE PROPERTY CLEAR</p>
+<h2 id="outlines-title">Show the whole property.<br>Make the boundary clear.</h2>
+<p>An aerial photo shows the neighborhood. A property outline helps explain the area included in the listing. Draw the boundary, choose a line style, and bring the property into focus.</p>
+<p>Add a pin, a label, or an arrow to explain a detail. Nearby-place lists give the location more context, with Apple Maps travel estimates.</p><a class="text-link" href="/walkthrough/guide/property-outlines/">See how outlines work <span aria-hidden="true">↗</span></a>
+<p class="small-note">You draw the boundary. Walkthrough does not look up or verify parcel lines.</p>
 </div>
-<figure class="desktop-shot">
-<a href="/walkthrough/assets/native-presets-1.4.2.png" aria-label="View the naming preset screenshot at full resolution"><img style="--capture-width:1440px" src="/walkthrough/assets/native-presets-1.4.2.png" width="2880" height="1800" loading="lazy" alt="The Standard naming preset with address, group number, room name, and photo number blocks, plus a filename preview"></a>
-<figcaption>The Standard preset combines the listing address, room number, room name, and photo number.</figcaption>
+<figure class="editor-shot"><a href="/walkthrough/assets/buckeye-outline-editor-1.5.0.webp"><img src="/walkthrough/assets/buckeye-outline-editor-1.5.0.webp" width="4078" height="2372" loading="lazy" alt="Walkthrough’s real outline editor with editable boundary points and style controls"></a><figcaption>Your outline. Your styling. An edited copy with the original kept.</figcaption>
 </figure>
-</section>
-
-<section class="walkthrough-feature export-feature" id="export" aria-labelledby="export-title">
-<div class="feature-copy">
-<p class="eyebrow">Process Photos</p>
-<h2 id="export-title">Review filenames before processing photos.</h2>
-<p>Choose Process X Photos at the bottom of the inspector to review all included photos in the job, regardless of the selected room or photos.</p>
-<p>Check each filename and destination, then choose Rename only, Copy, or Move. Copy keeps your source files, Move relocates them, and Rename only changes names in their current folders.</p>
-<p>For Copy or Move, choose a single output folder or numbered folders for each room. Processing preserves the JPG image data without re-encoding it.</p>
-<p>Sort processed files by name before selecting them for upload. Check the final photo order in the MLS or website after uploading.</p>
-<a class="text-link" href="/walkthrough/guide/export/">Read about processing options <span aria-hidden="true">→</span></a>
 </div>
-<figure class="desktop-shot">
-<a href="/walkthrough/assets/native-process-1.4.2.png" aria-label="View the Process Photos review screenshot at full resolution"><img style="--capture-width:860px" src="/walkthrough/assets/native-process-1.4.2.png" width="1720" height="1320" loading="lazy" alt="Process Photos review showing Rename only, original and destination filenames, and naming warnings"></a>
-<figcaption>Process Photos opens with Rename only selected. Review paths and naming warnings before confirming.</figcaption>
-</figure>
 </section>
-
-<section class="working-details" aria-label="Settings and saved jobs">
-<article><h2>Share naming settings</h2><p>Export your tags, naming presets, and room templates to a settings file. Another person can import that file to use the same setup. Photos and job history are not included.</p><a class="text-link" href="/walkthrough/guide/settings-files/">How settings files work <span aria-hidden="true">→</span></a></article>
-<article><h2>Reopen saved jobs</h2><p>Walkthrough saves room assignments, photo order, and naming choices in its local library. Reopen a recent job to continue. Organization history stays on this Mac.</p><a class="text-link" href="/walkthrough/guide/jobs/">How saved jobs work <span aria-hidden="true">→</span></a></article>
+<section class="chapter wrap delivery" id="export">
+<div class="chapter-copy">
+<p class="eyebrow">03 / FINISH THE HANDOFF</p>
+<h2 id="export-title">Files that make sense<br>when they leave your Mac.</h2>
+<p>Give every photo a consistent name using the address, room, and photo number. Preview the results before you process the set.</p>
+<p>Rename files in place, copy them for delivery, or move them into a new folder. Keep a flat set or create numbered folders for each room.</p><a class="text-link" href="/walkthrough/guide/export/">Review your delivery options <span aria-hidden="true">↗</span></a>
+<p class="small-note">Numbered names support sorting by name. Check the final order after uploading to your MLS or website.</p>
+</div>
+<div class="delivery-art">
+<div class="file-label"><span>FROM CAMERA NAMES</span><span>TO A NAMED SET</span>
+</div>
+<div class="filename"><span>DSC_0231.jpg</span><span aria-hidden="true">↘</span><strong>123-Oak-St_01_Entry-01.jpg</strong>
+</div>
+<div class="filename"><span>DSC_0232.jpg</span><span aria-hidden="true">↘</span><strong>123-Oak-St_01_Entry-02.jpg</strong>
+</div>
+<div class="filename"><span>DSC_0240.jpg</span><span aria-hidden="true">↘</span><strong>123-Oak-St_02_Kitchen-01.jpg</strong>
+</div>
+<p>Example filenames. Your address, room names, and format are up to you.</p>
+</div>
 </section>
-
-<section class="walkthrough-help" aria-labelledby="help-title">
-<div><p class="eyebrow">Help and support</p><h2 id="help-title">Guides to preparing listing photos.</h2><p>Find instructions for property outlines, markers, nearby places, crops, and your photo delivery workflow.</p></div>
-<nav aria-label="Popular help topics"><a href="/walkthrough/guide/property-outlines/">Draw a property outline <span aria-hidden="true">→</span></a><a href="/walkthrough/guide/nearby-places/">Add nearby places <span aria-hidden="true">→</span></a><a href="/walkthrough/guide/workspace/">Organize your first listing <span aria-hidden="true">→</span></a><a href="/walkthrough/guide/export/">Rename, copy, or move photos <span aria-hidden="true">→</span></a><a href="/walkthrough/support/">Browse all help and support <span aria-hidden="true">→</span></a></nav>
+<section class="feature-section wrap" id="features">
+<div class="section-top">
+<p class="eyebrow">THE COMPLETE TOOLSET</p>
+<h2>All the details.<br>One listing workflow.</h2>
+<p>Use the tools each listing needs. Save your setup for the next one.</p>
+</div>
+<div class="feature-index">
+<article class="feature-item"><span class="feature-number">01</span>
+<div>
+<h3>Rooms &amp; photo order</h3>
+<p>Group photos by room, arrange the rooms, and drag photos into the sequence you want.</p><a href="/walkthrough/guide/workspace/">Read the guide <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+<article class="feature-item"><span class="feature-number">02</span>
+<div>
+<h3>Property outlines</h3>
+<p>Draw and refine a boundary. Style the line, tint the property, or soften the area outside it.</p><a href="/walkthrough/guide/property-outlines/">Read the guide <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+<article class="feature-item"><span class="feature-number">03</span>
+<div>
+<h3 id="markers">Labels, pins &amp; arrows</h3>
+<p>Mark the home, call out a feature, point beyond the frame, or add a compass.</p><a href="/walkthrough/guide/markers/">Read the guide <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+<article class="feature-item"><span class="feature-number">04</span>
+<div>
+<h3>Nearby places</h3>
+<p>Search Apple Maps for places and estimated drive or walk times. Copy the list or add it to a photo.</p><a href="/walkthrough/guide/nearby-places/">Read the guide <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+<article class="feature-item"><span class="feature-number">05</span>
+<div><span id="crop-title"></span>
+<h3 id="crop">Crop &amp; straighten</h3>
+<p>Choose an aspect ratio, straighten a horizon, rotate, or flip. Save an edited JPG and keep the original.</p><a href="/walkthrough/guide/crop/">Read the guide <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+<article class="feature-item"><span class="feature-number">06</span>
+<div><span id="naming-title"></span>
+<h3 id="naming">Names &amp; room templates</h3>
+<p>Build filenames from the address, room, and photo number. Reuse naming presets and room orders.</p><a href="/walkthrough/guide/presets/">Naming presets ↗</a><a class="related-guide" href="/walkthrough/guide/templates/">Room templates ↗</a>
+</div>
+</article>
+<article class="feature-item"><span class="feature-number">07</span>
+<div>
+<h3>Rename, copy, or move</h3>
+<p>Preview filenames and destinations. Keep one output folder or create numbered folders for each room.</p><a href="/walkthrough/guide/export/">Read the guide <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+<article class="feature-item"><span class="feature-number">08</span>
+<div>
+<span id="commands-title"></span><h3 id="commands">Keyboard commands</h3>
+<p>Press ⌘K to find actions, rooms, presets, templates, and recent jobs.</p><a href="/walkthrough/guide/palette/">Read the guide <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+<article class="feature-item"><span class="feature-number">09</span>
+<div>
+<h3>Saved jobs &amp; shared settings</h3>
+<p>Reopen jobs on your Mac. Export naming settings and templates for someone else to import.</p><a href="/walkthrough/guide/jobs/">Saved jobs ↗</a><a class="related-guide" href="/walkthrough/guide/settings-files/">Sharing settings ↗</a>
+</div>
+</article>
+</div>
 </section>
-<section class="walkthrough-closing" aria-labelledby="download-title">
-<div><p class="eyebrow">Walkthrough 1.5.0</p><h2 id="download-title">Download Walkthrough for Mac.</h2><p class="quiet">macOS 14+ · Apple silicon and Intel · No account required</p></div>
-<div class="actions">
-<a class="primary-action" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.5.0/Walkthrough-1.5.0.dmg">Download for Mac <span aria-hidden="true">↗</span></a>
-<a class="secondary-action" href="/walkthrough/guide/">Read the guide <span aria-hidden="true">→</span></a>
+<section class="faq-section wrap" id="questions">
+<div>
+<p class="eyebrow">BEFORE YOU START</p>
+<h2 id="help-title">A few practical details.</h2>
+</div>
+<div class="faqs">
+<details><summary>Is this for photographers or real estate agents?</summary>
+<p>Both. Photographers can prepare a consistent client delivery. Agents can organize and annotate the JPGs they receive before uploading them to a listing.</p>
+</details>
+<details><summary>Does Walkthrough change my original photos?</summary>
+<p>Outlines and crops create edited JPGs and keep the source file. Rename only changes filenames, Copy leaves source files in place, and Move relocates files. Those three processing actions preserve the JPG image data.</p>
+</details>
+<details><summary>What can I open, and what Mac do I need?</summary>
+<p>Walkthrough works with JPG and JPEG files on macOS 14 or later, on Apple silicon and Intel Macs. No account is required.</p>
+</details>
+<details><summary>Does it publish to the MLS or find property lines?</summary>
+<p>Walkthrough prepares the files; you upload them to your MLS or website. Property outlines are drawn by you. It does not look up or verify parcel boundaries.</p>
+</details>
+<details><summary>Can I reuse my setup or share it with someone?</summary>
+<p>Save naming presets and room templates for later jobs. Export settings to a file another person can import. Saved jobs stay on your Mac; settings sharing does not sync photos or job history.</p>
+</details>
+</div>
+</section>
+<section class="closing" id="download">
+<div class="wrap">
+<p class="eyebrow">YOUR NEXT LISTING</p>
+<h2 id="download-title">Make the handoff<br><em>feel finished.</em></h2>
+<p>Ordered rooms. A clear property. Files ready to share.</p>
+<div class="actions"><a class="button" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.5.0/Walkthrough-1.5.0.dmg">Download for Mac <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#plan">See how it works <span aria-hidden="true">↓</span></a>
+</div>
+<p class="requirements">macOS 14+ · Apple silicon &amp; Intel · No account required</p><a class="release-link" href="/walkthrough/release-notes/#v1.5.0">Walkthrough 1.5.0 · What’s new ↗</a>
 </div>
 </section>
 </main>
-<footer class="family-footer">
-<span>© 2026 Brian Renshaw</span>
-<nav aria-label="Footer">
-<a href="/">← Brian’s homepage</a>
-<a href="/walkthrough/release-notes/">Release notes</a>
-<a href="/walkthrough/guide/">Guide</a>
-<a href="/walkthrough/support/">Help center</a>
-<a href="/walkthrough/privacy/">Privacy</a>
-<a href="mailto:contact@brianrenshaw.app">Contact</a>
-</nav>
-</footer>
-</body>
-</html>
+<footer class="footer wrap"><a class="brand" href="#main"><img src="/walkthrough/assets/icon-1.4.1.png" width="32" height="32" alt="">Walkthrough</a>
+<p>Made by <a href="/">Brian Renshaw</a></p>
+<nav aria-label="Footer"><a href="/walkthrough/guide/">Guide</a><a href="/walkthrough/support/">Support</a><a href="/walkthrough/privacy/">Privacy</a><a href="/walkthrough/release-notes/">Release notes</a><a href="mailto:contact@brianrenshaw.app">Contact</a>
+</nav></footer></body></html>

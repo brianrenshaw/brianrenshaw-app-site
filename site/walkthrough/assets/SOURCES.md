@@ -57,3 +57,7 @@ Brian supplied the original drone photograph, outlined result, and native editor
 - `buckeye-outline-editor-1.5.0.webp`: lossless encoding of `CleanShot 2026-10-15 at 9.22.13 PM@2x.png`, 4078 × 2372. Decoded RGBA pixels and ICC profile match the supplied PNG exactly; no resizing, cropping, or UI reconstruction.
 
 `buckeye-outline-1.5.0.json` records the source filenames, dimensions, processing, and SHA-256 hashes. These assets replace the stock outline example on current pages.
+
+## October 16, 2026 homepage typography
+
+`fonts/newsreader.woff` is a WOFF encoding of the variable Newsreader typeface from the [Google Fonts source repository](https://github.com/google/fonts/tree/main/ofl/newsreader), downloaded as the original TTF and compressed with fontTools without subsetting. `fonts/OFL-newsreader.txt` contains its SIL Open Font License. Archivo is reused from the site’s existing local font. The redesigned homepage reuses the supplied Buckeye photos and native captures above; it introduces no generated photography or reconstructed app UI.

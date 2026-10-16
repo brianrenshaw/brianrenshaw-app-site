@@ -11,7 +11,7 @@ One static website for Reading Habit, Where Do We Eat, Who’s First?, and Folio
 
 ## App messaging
 
-Read [MESSAGING.md](MESSAGING.md) for each app’s purpose and copy priorities before changing app descriptions. The shared editorial standard applies to every site: concrete explanations, no slogan fragments or invented customer scenarios. Also read [WALKTHROUGH_MESSAGING_PHILOSOPHY.md](WALKTHROUGH_MESSAGING_PHILOSOPHY.md): explain the tools and workflow directly, without slogans or exaggerated promises. The messaging guide also points to app-folder references for future native and App Store work.
+Read [MESSAGING.md](MESSAGING.md) for each app’s purpose and copy priorities before changing app descriptions. The shared editorial standard applies to every site: concrete explanations, no slogan fragments or invented customer scenarios. Also read [WALKTHROUGH_MESSAGING_PHILOSOPHY.md](WALKTHROUGH_MESSAGING_PHILOSOPHY.md): Walkthrough’s October 16 refresh uses a StoryBrand customer journey with concrete feature evidence and no exaggerated promises. The messaging guide also points to app-folder references for future native and App Store work.
 
 ## Local preview and checks
 
@@ -126,3 +126,5 @@ full-resolution original links. Rebuild them with
 `python3 scripts/build_walkthrough_frames.py --cli /path/to/frames --assets /path/to/Frames`
 (Pillow and viticci/frames-cli v1.5.0). `site/walkthrough/assets/macbook-frames.json`
 records source hashes and the composition. No app controls are cropped or resampled.
+
+Walkthrough’s October 16 homepage uses a warm paper/deep green listing-folio layout, local Newsreader and Archivo type, and Brian’s drone before/after comparison. `landing.js` progressively enables pointer and keyboard comparison; without JavaScript, the finished image and original-file links remain visible. All nine feature groups are listed below the three-step customer story. Landing styles remain separate from the illustrated help pages.
