@@ -11,7 +11,7 @@
   function filterProjects(category) {
     let count = 0;
     for (const project of projects) {
-      project.hidden = category !== 'all' && project.dataset.category !== category;
+      project.hidden = category !== 'all' && !project.dataset.category.split(/\s+/).includes(category);
       if (!project.hidden) count += 1;
     }
     for (const button of buttons) {
