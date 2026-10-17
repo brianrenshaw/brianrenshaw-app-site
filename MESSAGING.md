@@ -529,3 +529,9 @@ lookup and travel information are central value.
 The owner explicitly rejects marketing slogans and all-caps tagline sequences.
 Use natural sentences, specific human moments, and understated emotion. See
 `NEARABOUT_HOSTING.md` for the full direction and verified beta availability.
+
+Nearabout brevity and visual pass: keep the hero to three short sentences. Give
+list lookup/sharing and route planning equal visual space. Use everyday headings
+(vacation, places to eat, nearby, errands, bar crawl, afternoon out) with one short
+sentence each. Avoid repeated feature explanations and a separate Notes comparison
+essay; the automatic distances, times, and map links explain the advantage.

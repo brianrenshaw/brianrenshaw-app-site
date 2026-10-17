@@ -112,3 +112,12 @@ References informed layout only; no reference artwork or catalog component was i
 
 
 Product-site interactions, October 16, 2026: Brian approved the Mobbin review for implementation. Decks uses real finished exports in manual Layouts / Frames / Camera details previews and a separate native device selector. Ingest groups Workspaces, Browse, Metadata, and Decks handoff into a manual tour, keeping original anchors and optional detail in native disclosures. Folio leads with the open report; Reading Habit, Who’s First, and Where Do We Eat use restrained native screenshot selectors. Who’s First uses genuine stills because no native recordings are available; it does not simulate a playable game. Walkthrough adds explicit comparison endpoints and camera-name / delivery-name illustration controls. Canceled has a clearly labeled fictional two-person example; availability remains in development. Shared static controls support keyboard navigation, stable panel space, hash-based discovery, no-JavaScript content, and reduced motion, with no autoplay. Decks and Ingest display responsive derivatives while retaining every original asset. Mobbin references: Canva c200353a-9c45-4797-9c4d-719011bd9b90, Ditto 74f2a8a6-5b4f-4590-8ae1-7a9ae2231aa5, Intercom 2de43fba-7f76-45c1-8142-711354c9fed8, and Vizcom 998ec837-65e9-49f7-84f6-bcd40fbf480e. 21st search returned HTTP 401; existing project primitives were reused.
+
+## Nearabout: concise use cases
+
+Retain the real iPhone/iPad/Mac hero and warm atlas palette. Give list assembly and
+route planning two equal panels with original line illustrations. Six short use
+cases use a small icon, everyday heading, and one sentence. Mobbin references
+visually inspected: [PamPam](https://mobbin.com/sites/sections/87af6fec-e544-4910-b28b-95a9911ce971)
+for compact map examples and [Loom](https://mobbin.com/sites/sections/bec81b83-e31b-4f4c-80fe-300d7087905e)
+for illustration/heading/description hierarchy. No reference images published.
