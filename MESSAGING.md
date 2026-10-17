@@ -513,8 +513,10 @@ Nearabout helps people catalog their places and recommendations to share with
 others and make plans. Lead with the care in sending someone your list, introducing
 them to places you recommend, and planning time together. Do not position Nearabout
 as a personal favorites app or lead with remembering new places to try. Vacation
-research is still a use case. Lists, context, sharing, and plans are primary; travel
-estimates and route planning support those purposes.
+research is still a use case. Place lists and route planning are two important,
+related but distinct uses. Give each clear space: catalog and share recommendations;
+work out the order and timing of stops. A list can become a route, but neither
+requires the other. Do not demote the route planner to a minor supporting feature.
 
 The owner explicitly rejects marketing slogans and all-caps tagline sequences.
 Use natural sentences, specific human moments, and understated emotion. See

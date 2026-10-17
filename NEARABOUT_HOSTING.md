@@ -19,20 +19,24 @@ Cloudflare reference: https://developers.cloudflare.com/pages/configuration/cust
 
 The owner clarified that Nearabout is for cataloging your places to share with
 others and make plans. It is not positioned as a personal favorites app for saving
-new discoveries. Vacation research remains a use case. Routes support the plans.
+new discoveries. Vacation research remains a use case. Route planning is equally
+important: lists and routes are related but distinct uses, useful together or on
+their own. Never describe routes as merely optional supporting utility.
 The owner explicitly rejected slogan copy, including “Keep the recommendation.
 Skip the hunt.” and “Good places deserve a place of their own.” Do not restore
 those phrases or imitate that style with all-caps labels and punchy abstractions.
 
 Write like a person: sending a friend your recommendations, showing someone around,
 and putting together plans. The homepage opens with “I’ll send you my list.” and
-explains gathering places, adding context, sharing, and planning immediately below.
-Plain three-step instructions follow the personal reason to use the app.
+introduces both sharing recommendations and planning a route immediately below.
+Two matching sections explain sharing a list and ordering route stops. They replace
+the sharing-only three-step sequence to keep the page short and give both uses room.
 
 StoryBrand informs the structure, not the vocabulary: the visitor knows places they
 want to share or visit together; putting those recommendations into something useful
-takes effort; Nearabout helps them make a list with context and map links, then share
-it or make plans from it. Avoid exaggerated stakes, fabricated testimonials,
+takes effort. A separate need is working out the order and timing of multiple stops.
+Nearabout helps with both, without requiring someone to share a list before planning
+a route or turn every recommendation list into a route. Avoid exaggerated stakes, fabricated testimonials,
 guaranteed time savings, and a long feature inventory.
 Reference: https://storybrand.com/downloads/your-brand-is-not-the-hero.pdf
 
