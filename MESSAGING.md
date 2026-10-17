@@ -532,6 +532,8 @@ Use natural sentences, specific human moments, and understated emotion. See
 
 Nearabout brevity and visual pass: keep the hero to three short sentences. Give
 list lookup/sharing and route planning equal visual space. Use everyday headings
-(vacation, places to eat, nearby, errands, bar crawl, afternoon out) with one short
+(vacation, places to eat, nearby, errands, restaurant tour, afternoon out) with one short
 sentence each. Avoid repeated feature explanations and a separate Notes comparison
 essay; the automatic distances, times, and map links explain the advantage.
+
+Use a restaurant tour, not a bar crawl, for the group outing example.
