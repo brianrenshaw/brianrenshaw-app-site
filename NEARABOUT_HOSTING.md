@@ -29,8 +29,13 @@ those phrases or imitate that style with all-caps labels and punchy abstractions
 Write like a person: sending a friend your recommendations, showing someone around,
 and putting together plans. The homepage opens with “I’ll send you my list.” and
 introduces both sharing recommendations and planning a route immediately below.
-Two matching sections explain sharing a list and ordering route stops. They replace
-the sharing-only three-step sequence to keep the page short and give both uses room.
+Two matching sections explain searching a list of places and ordering route stops.
+The first names the work Nearabout does: location lookups, addresses, driving/walking
+estimates, distances, and Apple Maps/Google Maps links. Estimates in the list are
+from one chosen starting point; the route planner estimates the journey between
+stops. A short Notes paragraph explains that Nearabout assembles the details and
+can send the finished list to Notes. Notes is a possible destination, not a competitor
+whose capabilities we make sweeping claims about.
 
 StoryBrand informs the structure, not the vocabulary: the visitor knows places they
 want to share or visit together; putting those recommendations into something useful

@@ -518,6 +518,14 @@ related but distinct uses. Give each clear space: catalog and share recommendati
 work out the order and timing of stops. A list can become a route, but neither
 requires the other. Do not demote the route planner to a minor supporting feature.
 
+Explain why someone would use Nearabout instead of assembling a note by hand:
+type or paste multiple names, addresses, or categories; search and verify matches;
+Nearabout gathers addresses and Apple/Google Maps links, and calculates driving and
+walking estimates and distances from the chosen starting point. The useful list can
+be copied, shared, or sent to Notes. The route planner separately orders the journey
+between stops. Do not reduce this to storing favorites, notes, or lists: the automatic
+lookup and travel information are central value.
+
 The owner explicitly rejects marketing slogans and all-caps tagline sequences.
 Use natural sentences, specific human moments, and understated emotion. See
 `NEARABOUT_HOSTING.md` for the full direction and verified beta availability.
