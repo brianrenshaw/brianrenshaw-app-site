@@ -509,10 +509,12 @@ Pricing: say nothing about Decks Pro, trials, or which features are paid. Brian 
 The Aura page is short on purpose: problem in one sentence, a six-step plan with one line per step, the result, one call to action. Do not add notes under sections, a tips list, or more than five FAQs. Steps use iPhone captures with the control in question spotlighted. Text on example compositions sits in the margin, not on the photo, and uses a plain line rather than a slogan.
 # Nearabout
 
-Nearabout helps people keep places to try and share personal recommendations.
-Lead with remembering a place someone mentioned and having thoughtful suggestions
-ready for a friend. Lists, personal notes, and sharing are primary. Travel estimates
-and route planning are supporting options, not the product's main story.
+Nearabout helps people catalog their places and recommendations to share with
+others and make plans. Lead with the care in sending someone your list, introducing
+them to places you recommend, and planning time together. Do not position Nearabout
+as a personal favorites app or lead with remembering new places to try. Vacation
+research is still a use case. Lists, context, sharing, and plans are primary; travel
+estimates and route planning support those purposes.
 
 The owner explicitly rejects marketing slogans and all-caps tagline sequences.
 Use natural sentences, specific human moments, and understated emotion. See

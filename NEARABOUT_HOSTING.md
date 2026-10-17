@@ -17,22 +17,23 @@ Cloudflare reference: https://developers.cloudflare.com/pages/configuration/cust
 
 ## Message and design
 
-The owner clarified that Nearabout is primarily for making personal lists of
-places to try and sharing recommendations. Routes are optional supporting utility.
+The owner clarified that Nearabout is for cataloging your places to share with
+others and make plans. It is not positioned as a personal favorites app for saving
+new discoveries. Vacation research remains a use case. Routes support the plans.
 The owner explicitly rejected slogan copy, including “Keep the recommendation.
 Skip the hunt.” and “Good places deserve a place of their own.” Do not restore
 those phrases or imitate that style with all-caps labels and punchy abstractions.
 
-Write like a person: remembering a restaurant someone mentioned, looking forward
-to trying it, and sending thoughtful recommendations to a friend. The homepage
-opens with “Remember that place you wanted to try?” and explains what the app does
-in the paragraph immediately below. Plain three-step instructions follow the
-personal reason to use the app. Routes appear last among the supporting uses.
+Write like a person: sending a friend your recommendations, showing someone around,
+and putting together plans. The homepage opens with “I’ll send you my list.” and
+explains gathering places, adding context, sharing, and planning immediately below.
+Plain three-step instructions follow the personal reason to use the app.
 
-StoryBrand informs the structure, not the vocabulary: the visitor wants to remember
-and share places; recommendations are easy to lose; Nearabout helps them collect
-places, add context, and share a usable list. Avoid exaggerated stakes, fabricated
-testimonials, guaranteed time savings, and a long feature inventory.
+StoryBrand informs the structure, not the vocabulary: the visitor knows places they
+want to share or visit together; putting those recommendations into something useful
+takes effort; Nearabout helps them make a list with context and map links, then share
+it or make plans from it. Avoid exaggerated stakes, fabricated testimonials,
+guaranteed time savings, and a long feature inventory.
 Reference: https://storybrand.com/downloads/your-brand-is-not-the-hero.pdf
 
 Visual direction: a restrained street atlas with paper, forest green, vermilion,
