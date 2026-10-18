@@ -55,15 +55,21 @@ privacy section discloses performance and page-view measurement.
 
 ## Availability
 
-On October 16, 2026 the public invitation at
-https://testflight.apple.com/join/prASAccF said it was not accepting new testers.
-The site therefore says coming soon and offers “Check TestFlight availability.”
-Recheck Apple's public page before changing this to “Join the beta.” Do not
-equate internal TestFlight processing with availability to public visitors.
+On October 18, 2026 the public invitation at https://testflight.apple.com/join/prASAccF
+showed the join steps, so the site invites visitors to the beta. Version 1.0 was prepared
+for App Store review the same day, with the Unlimited Lists one-time purchase. The site says
+"coming to the App Store" until Apple approves it; then replace the TestFlight calls to action
+with https://apps.apple.com/app/id6823391953 and remove the beta wording, as was done for
+Where Do We Eat. Do not link the App Store page before the release is live.
+
+Pricing copy: free with three saved lists, unlimited places per list; Unlimited Lists is a
+one-time purchase across iPhone, iPad, and Mac, not a subscription. The price is shown by the
+App Store, so the site does not state it.
 
 Product claims were checked against the sibling `NearMe/README.md` and
 `App/Views/HelpGuideView.swift`: saved lists and private iCloud, notes and groups,
-export formats, the one-time Notes Shortcut, seven-stop routes, and OS requirements.
+export formats, the one-time Notes Shortcut, routes with no stop limit (since build 48),
+the purchase and restore flow, and OS requirements.
 
 ## Validation
 
