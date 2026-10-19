@@ -1,0 +1,422 @@
+{
+ "originals": "/Users/brianrenshaw/Downloads/Decks",
+ "note": "Originals are referenced in place and never copied or modified. Brian can swap any file name here.",
+ "posts": [
+  {
+   "n": 1,
+   "slug": "what-decks-is",
+   "channel": "ig-feed",
+   "size": [
+    1080,
+    1350
+   ],
+   "renders": [
+    {
+     "id": "hero",
+     "photos": [
+      "DSCF3213.jpg"
+     ],
+     "ratio": [
+      4,
+      5
+     ],
+     "background": "white",
+     "border": 0.012,
+     "borderColor": "white"
+    },
+    {
+     "id": "set-1",
+     "photos": [
+      "fuji_5063.jpg"
+     ],
+     "ratio": [
+      4,
+      5
+     ],
+     "background": "white",
+     "border": 0.012,
+     "borderColor": "white"
+    },
+    {
+     "id": "set-2",
+     "photos": [
+      "james_coffee-104920.jpg"
+     ],
+     "ratio": [
+      4,
+      5
+     ],
+     "background": "white",
+     "border": 0.012,
+     "borderColor": "white"
+    },
+    {
+     "id": "set-3",
+     "photos": [
+      "DSCF3219.jpg"
+     ],
+     "ratio": [
+      4,
+      5
+     ],
+     "background": "white",
+     "border": 0.012,
+     "borderColor": "white"
+    }
+   ],
+   "captures": [
+    "home-ig-post",
+    "pages-layout-panel"
+   ]
+  },
+  {
+   "n": 2,
+   "slug": "smart-layout",
+   "channel": "ig-feed",
+   "size": [
+    1080,
+    1350
+   ],
+   "renders": [
+    {
+     "id": "smart",
+     "smartLayout": "singles-and-pairs",
+     "photos": [
+      "DSCF3198.jpg",
+      "DSCF3213.jpg",
+      "DSCF3202.jpg",
+      "DSCF3219.jpg",
+      "09149.jpg",
+      "09131.jpg"
+     ],
+     "ratio": [
+      4,
+      5
+     ],
+     "note": "export every page the Smart Layout makes"
+    }
+   ],
+   "seed": [
+    "DSCF3198.jpg",
+    "DSCF3213.jpg",
+    "DSCF3202.jpg",
+    "DSCF3219.jpg",
+    "09149.jpg",
+    "09131.jpg"
+   ],
+   "captures": [
+    "smart-pages-strip",
+    "smart-split-join"
+   ]
+  },
+  {
+   "n": 3,
+   "slug": "borders",
+   "channel": "ig-feed",
+   "size": [
+    1080,
+    1350
+   ],
+   "renders": [
+    {
+     "id": "fill-frame",
+     "photos": [
+      "fuji_5063.jpg"
+     ],
+     "ratio": [
+      4,
+      5
+     ],
+     "fit": "fill",
+     "border": 0
+    },
+    {
+     "id": "white-border",
+     "photos": [
+      "fuji_5063.jpg"
+     ],
+     "ratio": [
+      4,
+      5
+     ],
+     "background": "white",
+     "border": 0.012,
+     "borderColor": "white"
+    },
+    {
+     "id": "black-border",
+     "photos": [
+      "fuji_5063.jpg"
+     ],
+     "ratio": [
+      4,
+      5
+     ],
+     "background": "black",
+     "border": 0.012,
+     "borderColor": "black"
+    },
+    {
+     "id": "depth",
+     "photos": [
+      "fuji_5063.jpg"
+     ],
+     "ratio": [
+      4,
+      5
+     ],
+     "background": "white",
+     "border": 0.012,
+     "borderColor": "white",
+     "depth": true
+    }
+   ],
+   "seed": [
+    "fuji_5063.jpg"
+   ],
+   "captures": [
+    "frame-panel"
+   ]
+  },
+  {
+   "n": 4,
+   "slug": "templates",
+   "channel": "ig-feed",
+   "size": [
+    1080,
+    1350
+   ],
+   "renders": [
+    {
+     "id": "template",
+     "template": "one saved template applied to each photo",
+     "photos": [
+      "05033.jpg",
+      "_DSC1199 1.jpg",
+      "_DSC1228.jpg"
+     ],
+     "ratio": [
+      4,
+      5
+     ],
+     "background": "black",
+     "border": 0.012,
+     "borderColor": "white",
+     "details": true,
+     "lensRename": "Sigma 105mm f2.8 Macro"
+    }
+   ],
+   "seed": [
+    "05033.jpg",
+    "_DSC1199 1.jpg",
+    "_DSC1228.jpg"
+   ],
+   "captures": [
+    "save-as-template",
+    "templates-tab"
+   ]
+  },
+  {
+   "n": 5,
+   "slug": "instagram-panorama",
+   "channel": "ig-feed",
+   "size": [
+    1080,
+    1350
+   ],
+   "renders": [
+    {
+     "id": "pano",
+     "panorama": "instagram",
+     "photos": [
+      "scripps_pierre-184916.jpg"
+     ],
+     "panelRatio": [
+      4,
+      5
+     ],
+     "note": "export every panel; panel count is the app's choice"
+    }
+   ],
+   "seed": [
+    "scripps_pierre-184916.jpg"
+   ],
+   "captures": [
+    "panorama-editor"
+   ]
+  },
+  {
+   "n": 6,
+   "slug": "threads-panorama",
+   "channel": "threads",
+   "size": [
+    1080,
+    2340
+   ],
+   "renders": [
+    {
+     "id": "threads-pano",
+     "panorama": "threads-full",
+     "photos": [
+      "coronado-101105.jpg"
+     ],
+     "panelRatio": [
+      9,
+      19.5
+     ]
+    }
+   ],
+   "seed": [
+    "coronado-101105.jpg"
+   ],
+   "captures": [
+    "home-threads"
+   ]
+  },
+  {
+   "n": 7,
+   "slug": "stories",
+   "channel": "ig-story",
+   "size": [
+    1080,
+    1920
+   ],
+   "renders": [
+    {
+     "id": "story",
+     "photos": [
+      "DSC07096.jpg"
+     ],
+     "ratio": [
+      9,
+      16
+     ],
+     "background": "blur",
+     "border": 0.012,
+     "borderColor": "white"
+    }
+   ],
+   "seed": [
+    "DSC07096.jpg"
+   ],
+   "captures": [
+    "home-ig-story",
+    "story-editor-background"
+   ]
+  },
+  {
+   "n": 8,
+   "slug": "camera-details",
+   "channel": "ig-feed",
+   "size": [
+    1080,
+    1350
+   ],
+   "renders": [
+    {
+     "id": "wall-label",
+     "photos": [
+      "DSC02887.jpg"
+     ],
+     "ratio": [
+      4,
+      5
+     ],
+     "details": "Wall Label",
+     "lensRename": "Sigma 105mm f2.8 Macro"
+    },
+    {
+     "id": "gear-band",
+     "photos": [
+      "DSC07995-2.jpg"
+     ],
+     "ratio": [
+      4,
+      5
+     ],
+     "details": "Gear Band",
+     "lensRename": "Sigma 105mm f2.8 Macro"
+    },
+    {
+     "id": "fuji-recipe",
+     "photos": [
+      "DSCF0205.JPG"
+     ],
+     "ratio": [
+      4,
+      5
+     ],
+     "details": "Film Box",
+     "recipeName": "Classic Negative"
+    }
+   ],
+   "seed": [
+    "DSC02887.jpg",
+    "DSCF0205.JPG"
+   ],
+   "captures": [
+    "camera-panel",
+    "lens-rename"
+   ]
+  },
+  {
+   "n": 9,
+   "slug": "date-stamp",
+   "channel": "ig-story",
+   "size": [
+    1080,
+    1920
+   ],
+   "renders": [
+    {
+     "id": "stamped",
+     "photos": [
+      "fuji_5924.jpg"
+     ],
+     "ratio": [
+      9,
+      16
+     ],
+     "background": "white",
+     "border": 0.012,
+     "stamp": {
+      "style": "Digital",
+      "lines": [
+       "date",
+       "place"
+      ],
+      "place": "St. Louis"
+     }
+    }
+   ],
+   "seed": [
+    "fuji_5924.jpg"
+   ],
+   "captures": [
+    "stamp-panel",
+    "place-editor"
+   ]
+  },
+  {
+   "n": 10,
+   "slug": "devices",
+   "channel": "threads",
+   "size": [
+    1080,
+    1350
+   ],
+   "renders": [],
+   "seed": [
+    "4155-07.jpg",
+    "4155-09.jpg",
+    "4156-04.jpg",
+    "06979.JPG"
+   ],
+   "captures": [
+    "devices-iphone",
+    "devices-ipad",
+    "devices-mac"
+   ]
+  }
+ ]
+}

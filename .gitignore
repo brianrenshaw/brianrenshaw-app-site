@@ -2,3 +2,9 @@
 __pycache__/
 social/instagram/
 dist/
+social/decks/renders/
+social/decks/captures/
+social/decks/post-*/
+
+# Local Cloudflare deployment state
+.wrangler/
