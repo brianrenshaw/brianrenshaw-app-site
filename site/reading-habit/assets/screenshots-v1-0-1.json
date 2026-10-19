@@ -1,0 +1,49 @@
+{
+  "version": "1.0.1 (12)",
+  "captured": "2026-10-19",
+  "status": "Submitted for App Review; not yet live",
+  "images": [
+    {
+      "file": "v1-0-1-phone-journal.webp",
+      "source": "/Users/brianrenshaw/Projects/book-tracker/build/appstore12/screenshots-final/shots/phone/1-journal.png",
+      "width": 1206,
+      "height": 2622,
+      "sha256": "262fd63d4cb0a7ec1f51e5009c69d5daf1baa8472820fc73d5bc4b4df6403c79"
+    },
+    {
+      "file": "v1-0-1-phone-book.webp",
+      "source": "/Users/brianrenshaw/Projects/book-tracker/build/appstore12/screenshots-final/shots/phone/2-book.png",
+      "width": 1206,
+      "height": 2622,
+      "sha256": "271be7919fd2042f8bf6dc001ad347e9129cb24e21945249687d9902dd0e4443"
+    },
+    {
+      "file": "v1-0-1-phone-stats.webp",
+      "source": "/Users/brianrenshaw/Projects/book-tracker/build/appstore12/screenshots-final/shots/phone/3-stats.png",
+      "width": 1206,
+      "height": 2622,
+      "sha256": "b59d44264f9dbf38f27436957a4c21f5fe057ca75b0b745e6ce31c5c4a5c4ce3"
+    },
+    {
+      "file": "v1-0-1-phone-recommendations.webp",
+      "source": "/Users/brianrenshaw/Projects/book-tracker/build/appstore12/screenshots-final/shots/phone/4-recommendations.png",
+      "width": 1206,
+      "height": 2622,
+      "sha256": "e26162f438a8b2dfdbba6cc1343e4b00cb142d4955fd51682952c775e29fbe06"
+    },
+    {
+      "file": "v1-0-1-phone-library.webp",
+      "source": "/Users/brianrenshaw/Projects/book-tracker/build/appstore12/screenshots-final/shots/phone/5-library.png",
+      "width": 1206,
+      "height": 2622,
+      "sha256": "9752335ce1e5b7822775aecd926a855c154f63f4fa0f10bf7d0dfec164849e7e"
+    },
+    {
+      "file": "v1-0-1-ipad-stats.webp",
+      "source": "/Users/brianrenshaw/Projects/book-tracker/build/appstore12/screenshots-final/shots/ipad/3-stats.png",
+      "width": 2064,
+      "height": 2752,
+      "sha256": "dfde79df639dc5be5ed0860031ea4a83e84b68e79ef2fbffdb425884a5d96bc3"
+    }
+  ]
+}

@@ -163,8 +163,8 @@ p{margin:0;text-wrap:pretty}
 
 /* ───────────────────────────────────────────────────────────────────────────
    Device figures.
-   Real captures from the shipping 1.0 app, taken on an iPhone 17 Pro Max
-   simulator from the sample store library. The frame is drawn here; the
+   Real captures from the submitted 1.0.1 (12) app, taken on a dedicated
+   iPhone 17 Pro simulator with an isolated sample library. The frame is drawn here; the
    status bar belongs to the screenshot.
    ─────────────────────────────────────────────────────────────────────────── */
 .figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:13px}
