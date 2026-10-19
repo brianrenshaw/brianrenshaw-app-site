@@ -23,3 +23,13 @@ visible in the original map captures.
 
 All WebP screenshots retain their original decoded pixel dimensions and use
 lossless encoding. The Mac derivative is a window crop, not a reconstructed UI.
+
+## Version 1.0 website refresh — October 19, 2026
+
+The active `*-list-v1.webp` images use genuine build 54 App Store captures from
+`NearMe/build/appstore54/raw/`: `iphone/2-list.png`, `ipad/2-list.png`, and
+`mac-selected/2-list.png`. These show the current list UI; the build 58 changes
+concern route planning. All three retain their full dimensions and decoded RGB
+pixels in lossless WebP. The iPad is shown in portrait orientation. Earlier
+images remain at their original URLs. `social-v1.png` uses the updated phone
+capture, with the established share-card composition.

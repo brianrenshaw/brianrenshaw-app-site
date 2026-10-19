@@ -30,5 +30,35 @@
       2095
     ],
     "encoding": "Lossless WebP; EXIF orientation applied; no resampling"
+  },
+  {
+    "file": "iphone-list-v1.webp",
+    "source": "build/appstore54/raw/iphone/2-list.png",
+    "sourceSHA256": "81e8e340ac4e45295bdc480422ea1b94939b8396670073005f1207730c3f0cb6",
+    "width": 1320,
+    "height": 2868,
+    "crop": null,
+    "encoding": "Lossless WebP; original dimensions; no resampling",
+    "build": 54
+  },
+  {
+    "file": "ipad-list-v1.webp",
+    "source": "build/appstore54/raw/ipad/2-list.png",
+    "sourceSHA256": "724c7b71033aca4dd194f1afe6a4cf3dafd5d9040c9bf21e3be002f112a1cffa",
+    "width": 2064,
+    "height": 2752,
+    "crop": null,
+    "encoding": "Lossless WebP; original dimensions; no resampling",
+    "build": 54
+  },
+  {
+    "file": "mac-list-v1.webp",
+    "source": "build/appstore54/raw/mac-selected/2-list.png",
+    "sourceSHA256": "11742637492d54bb40b4f3fb872b96c6efaf4561fdcf8e2800c7dc1756c5023a",
+    "width": 2880,
+    "height": 1800,
+    "crop": null,
+    "encoding": "Lossless WebP; original dimensions; no resampling",
+    "build": 54
   }
 ]

@@ -107,3 +107,14 @@ Cloudflare Redirect Rule `Nearabout www to main domain` matches
 Verified both HTTP and HTTPS, nested paths, and query strings. Apex HTTP redirects
 to HTTPS. Both custom-domain certificates are active. Live HTML, screenshots,
 stylesheet, font, social image, robots, and sitemap were fetched successfully.
+
+## October 19, 2026 refresh
+
+Build 1.0 (58) is processed and available to internal testers on both platforms.
+iOS/iPadOS and Mac are both available for external testing, verified through
+App Store Connect on October 19. Keep the TestFlight CTA until an App Store release is verified live.
+The homepage and support page state this availability. Support now explains
+on-demand Your order checks, larger-route notices, countdowns, cancellation,
+and saved estimates. The portfolio card now says Available in TestFlight.
+Current list images use the genuine build 54 App Store captures; build 58 changes
+route planning. Versioned images, CSS, and share artwork preserve earlier URLs.
