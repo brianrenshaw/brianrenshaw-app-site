@@ -81,3 +81,7 @@ primary domain with permanent redirects, preserving `/support/?test=1`.
 
 References: [Pages custom domains](https://developers.cloudflare.com/pages/configuration/custom-domains/),
 [redirect-only domains](https://developers.cloudflare.com/fundamentals/manage-domains/redirect-domain/).
+
+## October 19, 2026 release preparation
+
+Both iOS 1.0 (171) and Mac 1.0 (170) are WAITING_FOR_REVIEW, verified live. Keep TestFlight calls to action until the app is approved and publicly available. The landing page and help now explain the five-batch free allowance, Pro, trial, restore, and TestFlight purchase limitations. On public release, replace beta calls to action with https://apps.apple.com/app/id6817408326 and update the install guide, support source, portfolio status, and generated help pages together. Do not advertise the deferred Smart Layout pricing proposal.

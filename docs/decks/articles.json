@@ -1265,11 +1265,11 @@
   {
     "slug": "install",
     "title": "Install Decks and get started",
-    "summary": "Join the public beta on iPhone, iPad, or Mac.",
+    "summary": "App Store release coming soon. Try Decks through TestFlight on iPhone, iPad, or Mac.",
     "group": "Getting Started",
-    "body": "<p><strong>Requirements:</strong> iOS or iPadOS 18 or later; macOS 15 or later on Apple silicon.</p><p>TestFlight is Apple’s app for installing and updating beta apps. You do not need a beta version of iOS, iPadOS, or macOS to use Decks; your device just needs to meet the requirements listed here.</p>\n<ol><li>Install <a href=\"https://apps.apple.com/app/testflight/id899247664\">TestFlight from the App Store</a> on the iPhone, iPad, or Mac where you want to use Decks.</li><li>On that device, open the <a href=\"https://testflight.apple.com/join/SAMjeMy5\">Decks public beta invitation</a> and choose View in TestFlight.</li><li>Accept the invitation if prompted, then choose Install for Decks.</li><li>Open Decks and choose your photographs to get started. Return to TestFlight for new builds and beta feedback.</li></ol>\n<p>If the invitation opens in a browser after you install TestFlight, open the invitation again on the same device. If TestFlight reports that the beta is full or unavailable, email <a href=\"mailto:contact@brianrenshaw.app\">contact@brianrenshaw.app</a>. See <a href=\"https://testflight.apple.com/\">Apple’s TestFlight instructions</a> for installation help.</p>",
+    "body": "<p>Decks 1.0 for iPhone, iPad, and Mac is awaiting App Store review. Until it is released, use the TestFlight beta below.</p><p><strong>Requirements:</strong> iOS or iPadOS 18 or later; macOS 15 or later on Apple silicon.</p><p>TestFlight is Apple’s app for installing and updating beta apps. You do not need a beta version of iOS, iPadOS, or macOS to use Decks; your device just needs to meet the requirements listed here.</p>\n<ol><li>Install <a href=\"https://apps.apple.com/app/testflight/id899247664\">TestFlight from the App Store</a> on the iPhone, iPad, or Mac where you want to use Decks.</li><li>On that device, open the <a href=\"https://testflight.apple.com/join/SAMjeMy5\">Decks public beta invitation</a> and choose View in TestFlight.</li><li>Accept the invitation if prompted, then choose Install for Decks.</li><li>Open Decks and choose your photographs to get started. Return to TestFlight for new builds and beta feedback.</li></ol>\n<p>If the invitation opens in a browser after you install TestFlight, open the invitation again on the same device. If TestFlight reports that the beta is full or unavailable, email <a href=\"mailto:contact@brianrenshaw.app\">contact@brianrenshaw.app</a>. See <a href=\"https://testflight.apple.com/\">Apple’s TestFlight instructions</a> for installation help.</p><p>TestFlight purchases are free tests and do not carry over to the App Store version. <a href=\"/decks/guide/decks-pro/\">Read about free exports and Decks Pro</a>.</p>",
     "mac": "Install TestFlight on your Mac, then open the public invitation on that Mac. The Decks Mac beta requires macOS 15 or later and Apple silicon.",
-    "source": "Decks source 42c30ae (build 148): reviewed against SocialHelpContentPhone.swift / DecksHelpContent.swift; no build 148 changes to this task."
+    "source": "App Store Connect status verified October 19, 2026: iOS 171 and Mac 170 WAITING_FOR_REVIEW. TestFlight invitation remains open."
   },
   {
     "slug": "fujifilm",
@@ -1477,5 +1477,75 @@
       }
     ],
     "source": "DecksHelpContent.swift at 42c30ae (build 148); unchanged since 95a303f."
+  },
+  {
+    "slug": "decks-pro",
+    "title": "Free exports and Decks Pro",
+    "summary": "Understand the free allowance, the seven-day trial, and purchase restoration.",
+    "group": "Save & Share",
+    "sections": [
+      {
+        "heading": "Five free export batches each month",
+        "steps": [
+          "Use every editing tool and preview Pro features for free. Export five batches each calendar month at full quality with no watermark. Smart Layouts can use this allowance.",
+          "One photograph or all pages in a carousel counts as one batch. Exporting again after edits counts as another batch. Sharing existing output and retrying the same batch do not count again. Saving an editable project does not use an export."
+        ]
+      },
+      {
+        "heading": "Choose Decks Pro",
+        "steps": [
+          "Open Settings → Decks Pro to see the current price for monthly, annual, and lifetime access. Each option unlocks unlimited exports and exporting camera details, Fujifilm recipes, and Film date stamps.",
+          "The optional seven-day trial starts when you choose it. It does not enroll you in a subscription and never charges automatically.",
+          "Monthly and annual subscriptions renew automatically unless canceled through your Apple Account. Lifetime access is a one-time purchase; buying it does not cancel an existing subscription."
+        ]
+      },
+      {
+        "heading": "Restore a purchase",
+        "steps": [
+          "Use the same Apple Account that made the purchase, then open Settings → Decks Pro → Restore Purchases.",
+          "Use subscription management in Decks Pro or your Apple Account settings to manage or cancel a subscription. If access does not return, contact support with your device and Decks version. Do not send payment details."
+        ]
+      },
+      {
+        "heading": "Purchases during the beta",
+        "steps": [
+          "Purchases made in TestFlight are free tests. They do not charge you and do not carry over to the App Store version.",
+          "The App Store release is coming soon. Check the price shown by Apple before confirming a purchase in the released app."
+        ]
+      }
+    ],
+    "macSections": [
+      {
+        "heading": "Five free export batches each month",
+        "steps": [
+          "Use every editing tool and preview Pro features for free. Export five batches each calendar month at full quality with no watermark. Smart Layouts can use this allowance.",
+          "One photograph or all pages in a carousel counts as one batch. Exporting again after edits counts as another batch. Sharing existing output and retrying the same batch do not count again. Saving an editable project does not use an export."
+        ]
+      },
+      {
+        "heading": "Choose Decks Pro",
+        "steps": [
+          "Open Settings → Decks Pro to see the current price for monthly, annual, and lifetime access. Each option unlocks unlimited exports and exporting camera details, Fujifilm recipes, and Film date stamps.",
+          "The optional seven-day trial starts when you choose it. It does not enroll you in a subscription and never charges automatically.",
+          "Monthly and annual subscriptions renew automatically unless canceled through your Apple Account. Lifetime access is a one-time purchase; buying it does not cancel an existing subscription."
+        ]
+      },
+      {
+        "heading": "Restore a purchase",
+        "steps": [
+          "Use the same Apple Account that made the purchase, then open Settings → Decks Pro → Restore Purchases.",
+          "Use subscription management in Decks Pro or your Apple Account settings to manage or cancel a subscription. If access does not return, contact support with your device and Decks version. Do not send payment details."
+        ]
+      },
+      {
+        "heading": "Purchases during the beta",
+        "steps": [
+          "Purchases made in TestFlight are free tests. They do not charge you and do not carry over to the App Store version.",
+          "The App Store release is coming soon. Check the price shown by Apple before confirming a purchase in the released app."
+        ]
+      }
+    ],
+    "shot": null,
+    "source": "Decks App Store 1.0 metadata and SocialAccessController; reviewed October 19, 2026. Deferred Smart Layout pricing proposal is not implemented."
   }
 ]
