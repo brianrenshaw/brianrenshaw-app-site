@@ -1,0 +1,9 @@
+iA Writer Duo by Information Architects Inc.
+Based on IBM Plex by IBM Corp.
+
+Unmodified static font files from:
+https://github.com/iaolo/iA-Fonts/tree/c6588670c71e9ac628acc27b72cde4bf12726b7f/iA%20Writer%20Duo
+
+Redistributed under the SIL Open Font License 1.1; see iA-Writer-Duo-LICENSE.txt.
+The upstream README separately asks other text editors not to bundle these fonts.
+Top Drawer includes the unchanged font files with their supplied OFL license and attribution.

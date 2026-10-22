@@ -2,7 +2,7 @@
 """Create responsive homepage images without changing any native originals.
 
 Requires Pillow, as do the repository's existing image build scripts.
-Run after changing Decks or Ingest homepage captures.
+Run after changing Decks, Ingest, or Valet Notes homepage captures.
 """
 from concurrent.futures import ThreadPoolExecutor
 from hashlib import sha256
@@ -40,7 +40,7 @@ def build(source):
 
 
 def main():
-    for slug in ('decks', 'ingest'):
+    for slug in ('decks', 'ingest', 'valetnotes'):
         page = SITE / slug / 'index.html'
         html = page.read_text()
         tags = []
@@ -67,7 +67,7 @@ def main():
             width, height = int(attrs['width']), int(attrs['height'])
             display = 320 if height > width * 1.6 else 450 if height > width * 1.1 else 1200
             if 'hero-macbook' in source.name: display = 740
-            if 'framed-mac-home' in source.name: display = 680
+            if 'framed-mac-home' in source.name or 'framed-mac-drawer' in source.name: display = 680
             attrs['sizes'] = f'(max-width: 650px) min(calc(100vw - 40px), {display}px), {display}px'
             attrs['decoding'] = 'async'
             replacement = '<img ' + ' '.join(f'{key}="{escape(value or "", quote=True)}"' for key, value in attrs.items()) + '>'

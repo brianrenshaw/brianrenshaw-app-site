@@ -40,6 +40,7 @@ GitHub Actions validates links, anchors, local assets, canonical addresses and A
 | Folio | `/folio/` | `support/`, `privacy/` |
 | Canceled | `/canceled/` | none yet |
 | Decks | `/decks/` | `support/`, `privacy/` |
+| Valet Notes | `/valetnotes/` | `support/`, `privacy/` |
 | Ingest | `/ingest/` | `quick-start/`, `guide/`, `shortcuts/`, `templates/`, `automation/`, `support/`, `privacy/`, `release-notes/` |
 
 Support email remains contact@brianrenshaw.app. Keep app-specific privacy policies accurate; don’t substitute a generic portfolio policy. Existing policy language was preserved, and Reading Habit’s new policy reflects its local implementation (private iCloud, Open Library/Apple cover lookups, user-selected link resolution and imports).
@@ -68,6 +69,8 @@ Walkthrough moved from `/listing-namer/` to `/walkthrough/` on September 17, 202
 Release notes are published at `/walkthrough/release-notes/`, with links in the native app’s Help menu and Settings. Public copy leads with organizing and renaming listing photos before MLS upload, for real estate photographers and agents equally. Property outlines, markers, nearby places, and cropping support that final preparation workflow. Avoid guarantees about how an MLS or website orders uploads. Read the Walkthrough section of `MESSAGING.md` before changing it, including the rule against describing settings export as “sync.”
 
 Canceled is at `/canceled/`, a landing page only. The app is in development for iPhone and iPad, is not on TestFlight, and has nothing to download, so the page states status and offers no call to action. Its native source is in the sibling `canceled-app` project. Add `support/` and `privacy/` when it reaches TestFlight, and add `canceled` to the required-routes list in `scripts/check_site.py` at the same time. Page assets under `site/canceled/assets/` are copied from that project; its Archivo woff2 is the same file already bundled for Where Do We Eat.
+
+Valet Notes is at `/valetnotes/`, with `support/` and `privacy/`. Its native source is the sibling `top-drawer` project (App Store Connect record 6824751025). The public TestFlight invite, https://testflight.apple.com/join/5q8jNw2F, covers iPhone and iPad; the Mac app is in private testing, so the page says so. Screenshots are rebuilt with `python3 scripts/build_valetnotes_assets.py` and `python3 scripts/build_product_previews.py`; capture steps and provenance are in `site/valetnotes/assets/SOURCES.md`. Read the Valet Notes section of `MESSAGING.md` before changing copy.
 
 Ingest and Decks lead the homepage as a larger featured pair; the remaining grid is grouped by platform: iOS apps, then the Mac app, then the blogs, then the utility. See `MESSAGING.md` for the numbered order. The featured card images come from `python3 scripts/build_portfolio_featured.py`: Ingest’s MacBook and Decks’ iPhone, iPad, and Mac trio, arranged as on each site. The share image `assets/social-projects-v14.png` shows the featured pair with those images above a 3x3 grid of the other nine projects; rebuild it with `python3 scripts/build_social.py` and bump the filename plus both metadata URLs when the artwork changes.
 

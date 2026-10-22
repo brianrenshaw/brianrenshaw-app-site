@@ -1,0 +1,133 @@
+{
+  "images": [
+    {
+      "file": "phone-writing.webp",
+      "kind": "native-screenshot",
+      "width": 1206,
+      "height": 2622,
+      "source": "2C5DBF27-5324-43D4-B759-F8102B9C27DB.png",
+      "sourceSha256": "ce5761c80bc0916ede7a3472d62680b0adf4c95c2df55851a4b925af78655fe7",
+      "sha256": "48934e78b5ffd997cc1db399380fd20a725206d8f836d890b9f49e37d0b29a53",
+      "sourceCommit": "0bbc42f",
+      "test": "WebsiteCaptureUITests.testWebsiteCaptures (capture-only test in an exported copy of the source)",
+      "device": "iPhone 17 Pro (simulator, iOS 27.0)",
+      "transformation": "lossless WebP; decoded pixels equal the upright capture"
+    },
+    {
+      "file": "framed-phone-writing.webp",
+      "kind": "native-screenshot-device-presentation",
+      "width": 1350,
+      "height": 2760,
+      "sha256": "61b34f22f39ae8b074b6bd6bd1289e610eca3cceea5ece4c7568f972bc577cfc",
+      "device": "iPhone 17 Pro Portrait Silver",
+      "frameBase": "decks/assets/oct06-framed-phone-camera.webp",
+      "frameBaseSha256": "327ced31ca3fc3d69dc16277d13cf5e8a1f6774d8fc7078c1a2021d397c35af7",
+      "presentation": "Apple Frames bezel reused from the Decks site: the screen pixels that matched oct06-phone-camera.webp exactly (98.7% of the screen) were replaced; bezel pixels kept. No resampling."
+    },
+    {
+      "file": "phone-commands.webp",
+      "kind": "native-screenshot",
+      "width": 1206,
+      "height": 2622,
+      "source": "342C5BA3-3CED-4C41-8996-41BB662E1B2E.png",
+      "sourceSha256": "8305d72ce308c3a2fc8ffa62ada0de3c1538fad548411c586daa7158a5bdcab9",
+      "sha256": "3776c0501693d94a34c99bef0df6203ac125d467621d973aeef1218c78a912ab",
+      "sourceCommit": "0bbc42f",
+      "test": "WebsiteCaptureUITests.testWebsiteCaptures (capture-only test in an exported copy of the source)",
+      "device": "iPhone 17 Pro (simulator, iOS 27.0)",
+      "transformation": "lossless WebP; decoded pixels equal the upright capture"
+    },
+    {
+      "file": "framed-phone-commands.webp",
+      "kind": "native-screenshot-device-presentation",
+      "width": 1350,
+      "height": 2760,
+      "sha256": "386599be28bc62d9a49304d88d5c7c867a0671683c63a30a596d4a5e192025b1",
+      "device": "iPhone 17 Pro Portrait Silver",
+      "frameBase": "decks/assets/oct06-framed-phone-camera.webp",
+      "frameBaseSha256": "327ced31ca3fc3d69dc16277d13cf5e8a1f6774d8fc7078c1a2021d397c35af7",
+      "presentation": "Apple Frames bezel reused from the Decks site: the screen pixels that matched oct06-phone-camera.webp exactly (98.7% of the screen) were replaced; bezel pixels kept. No resampling."
+    },
+    {
+      "file": "phone-send-tasks.webp",
+      "kind": "native-screenshot",
+      "width": 1206,
+      "height": 2622,
+      "source": "2A7593ED-B95F-4968-B4AE-618DF2AE3EAE.png",
+      "sourceSha256": "0d1668bfaee4c1ed2e01f131f3b820a5109974534af2dca5df271710d175168f",
+      "sha256": "1b3f8f226abcd7904cb3c438a3424977db201d5aaaf58b499f82be0520d792f4",
+      "sourceCommit": "0bbc42f",
+      "test": "WebsiteCaptureUITests.testWebsiteCaptures (capture-only test in an exported copy of the source)",
+      "device": "iPhone 17 Pro (simulator, iOS 27.0)",
+      "transformation": "lossless WebP; decoded pixels equal the upright capture"
+    },
+    {
+      "file": "framed-phone-send-tasks.webp",
+      "kind": "native-screenshot-device-presentation",
+      "width": 1350,
+      "height": 2760,
+      "sha256": "baf7ebc82ed24de2c2ca3bb2292cb853aaf36c7a90936afcc510281e73d222c3",
+      "device": "iPhone 17 Pro Portrait Silver",
+      "frameBase": "decks/assets/oct06-framed-phone-camera.webp",
+      "frameBaseSha256": "327ced31ca3fc3d69dc16277d13cf5e8a1f6774d8fc7078c1a2021d397c35af7",
+      "presentation": "Apple Frames bezel reused from the Decks site: the screen pixels that matched oct06-phone-camera.webp exactly (98.7% of the screen) were replaced; bezel pixels kept. No resampling."
+    },
+    {
+      "file": "pad-writing.webp",
+      "kind": "native-screenshot",
+      "width": 2360,
+      "height": 1640,
+      "source": "445F8F6D-29EE-4169-9DBE-63501D52BA07.png",
+      "sourceSha256": "03a609135f331dc8c9cbfec74d59eceb86a2616612b25af518a3df22aa745bff",
+      "sha256": "9bd82898d423c1f3f66e806353b322d0042169a748469c1ae98b98570ffe9612",
+      "sourceCommit": "0bbc42f",
+      "test": "WebsiteCaptureUITests.testWebsiteCaptures (capture-only test in an exported copy of the source)",
+      "device": "iPad Air 11-inch M4 (simulator, iOS 27.0), landscape",
+      "transformation": "lossless WebP; decoded pixels equal the upright capture; rotated 90 degrees to upright"
+    },
+    {
+      "file": "framed-pad-writing.webp",
+      "kind": "native-screenshot-device-presentation",
+      "width": 2640,
+      "height": 1920,
+      "sha256": "baeff4b8d7859e96fd88348fe4e9e65d321545ecbd2fcfbbd81c521614490234",
+      "device": "iPad Air 2020 Landscape",
+      "frameBase": "decks/assets/oct06-framed-builder.webp",
+      "frameBaseSha256": "173ef82337b1df8d786a94651c29043eb65008294fe00f9354b3ff5e0b30021a",
+      "presentation": "Apple Frames bezel reused from the Decks site: the screen pixels that matched oct06-next-ipad-builder-upright.webp exactly (99.9% of the screen) were replaced; bezel pixels kept. No resampling."
+    },
+    {
+      "file": "mac-drawer.webp",
+      "kind": "native-screenshot",
+      "width": 4112,
+      "height": 980,
+      "source": "mac-drawer.png",
+      "sourceSha256": "3c78cbf78a48ea108f2ccd2b5f500d2cb4591d655230372e6a9c44a75f46a245",
+      "sha256": "ff82c719e098314d2f625bee7a04098dce9fd3ca2a43eeff9626e9e4aedee6be",
+      "sourceCommit": "0bbc42f",
+      "device": "Mac (Apple silicon), TopDrawerMac Debug build, 2056-point-wide display",
+      "test": "screencapture -x -o -l <window> of a separate instance launched with TOP_DRAWER_DATA_DIR and -appearanceTheme classic",
+      "transformation": "lossless WebP; decoded pixels equal the window capture"
+    },
+    {
+      "file": "mac-drawer-first-spaces.webp",
+      "kind": "native-screenshot-crop",
+      "width": 2056,
+      "height": 980,
+      "source": "mac-drawer.webp",
+      "sha256": "0ec08fa3184ec28738ba0d6e120b701ac20b8e100a45b5efa0776d10514b4cda",
+      "transformation": "left half of mac-drawer.webp, spaces 1 and 2; no resampling"
+    },
+    {
+      "file": "framed-mac-drawer.webp",
+      "kind": "native-screenshot-device-presentation",
+      "width": 3860,
+      "height": 2540,
+      "sha256": "1e1cef38248f9d1f10d7f32ba3d590b46e5e5d049dd10e61461e5432fcd98c21",
+      "device": "MacBook Pro M5 14 Silver",
+      "frameBase": "decks/assets/oct06-framed-mac.webp",
+      "frameBaseSha256": "1ccc4f5d4d78f252eca7118ec60bb655d563a7b904cf22913fc8cde033883eb8",
+      "presentation": "Apple Frames bezel reused from the Decks site: the screen pixels that matched oct06-mac.webp exactly (99.6% of the screen) were replaced; bezel pixels kept. The drawer was scaled from 4112 to 3024 pixels wide to fit this screen and placed below the menu bar area on a plain green desktop; no other interface was added."
+    }
+  ]
+}

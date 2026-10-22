@@ -149,3 +149,5 @@ a { color: inherit; text-underline-offset: 5px; }
 
 .nearabout{background:#e8ecdf;color:#233e35}.nearabout .eyebrow,.nearabout .app-bottom a{color:#a8452e}
 @media(prefers-color-scheme:dark){.nearabout{background:#233e35;color:#f5f2e9}.nearabout .eyebrow,.nearabout .app-bottom a{color:#edb29d}}
+.valetnotes{background:#eee3cc;color:#292e29}.valetnotes .eyebrow,.valetnotes .app-bottom a{color:#755b2f}
+@media(prefers-color-scheme:dark){.valetnotes{background:#302e26;color:#f1eee5}.valetnotes .eyebrow,.valetnotes .app-bottom a{color:#d1b781}}

@@ -16,15 +16,17 @@ Since October 7, 2026, at Brian’s request, Ingest and Decks lead the page as a
 
 1. Ingest (Mac app, featured)
 2. Decks (iPhone, iPad & Mac, featured)
-3. Folio (iOS app)
-4. Who’s First? (iOS app)
-5. Reading Habit (iOS app)
-6. Where Do We Eat (iOS app)
-7. Canceled (iOS app)
-8. Walkthrough (Mac app)
-9. Lankford Legends (Blog)
-10. What Did They Read? (Blog)
-11. Spreadsheet Tools (Utility)
+3. Nearabout (iPhone, iPad & Mac)
+4. Valet Notes (iPhone, iPad & Mac)
+5. Folio (iOS app)
+6. Who’s First? (iOS app)
+7. Reading Habit (iOS app)
+8. Where Do We Eat (iOS app)
+9. Canceled (iOS app)
+10. Walkthrough (Mac app)
+11. Lankford Legends (Blog)
+12. What Did They Read? (Blog)
+13. Spreadsheet Tools (Utility)
 
 Featured card copy: Ingest uses “Modern photo management for Mac.” with the label “Photo workflow for Mac”; Decks uses its site headline, “Give your photos the presentation they deserve.”, with the label “Frames and layouts for photos.” Its supporting copy names destinations: “Create frames and layouts for your photos, ready for Instagram, Threads, Aura and other digital photo frames, and more. Add text and camera details, save your style as a template, and use it again.” Decks prepares the files; never say it posts or uploads to these services. Keep the visible numbers in that order. The history below describes the earlier platform-only grouping (September 17 to October 6, 2026). Within the iOS apps, released apps come first and the app still in development comes last; that is why Canceled is the fifth card and Decks, added September 29, 2026, is the sixth. The Mac apps sit directly after the iOS apps: Walkthrough, then Ingest, which was added on September 18, 2026. Reading Habit moved ahead of Where Do We Eat on September 16, 2026, when it reached the App Store; Where Do We Eat reached the App Store itself on September 17, 2026 and keeps card 04, so all four released iOS apps now sit ahead of Canceled.
 
@@ -537,3 +539,22 @@ sentence each. Avoid repeated feature explanations and a separate Notes comparis
 essay; the automatic distances, times, and map links explain the advantage.
 
 Use a restaurant tour, not a bar crawl, for the group outing example.
+
+## Valet Notes (October 22, 2026)
+
+Added at Brian's request at `/valetnotes/`, following the Decks layout with iPhone, iPad, and Mac screenshots in device frames. Native source is the sibling `top-drawer` project. The homepage card is 04, after Nearabout, because both are TestFlight apps for iPhone, iPad, and Mac. With ten regular cards in "More projects," Spreadsheet Tools keeps spanning both columns.
+
+**Audience:** People who write quick notes on iPhone, iPad, and Mac and file them later.
+
+**Problem:** Some writing only needs to last a day or two, and filing each note takes longer than writing it.
+
+**Headline:** Park your notes until you know where they go. The valet idea is the product: notes wait in a space until they are sent on or archived.
+
+**Plan:** Write it down. Leave it parked. Send it on.
+
+**Card label:** Quick notes
+
+**Priorities, in order:** Quick writing in named, colored spaces. Sending a note to the app where it belongs, or archiving it. The Mac drawer. Then archiving, the share extension, widgets, and Shortcuts as short supporting details.
+
+**Factual boundaries:** The public TestFlight beta is iPhone and iPad only; the Mac app is in private testing. Send to Drafts and Send tasks archive the sent text only after the other app confirms the save; Apple Notes, Obsidian, and Quick Draft keep the note. Quick Draft needs Quick Draft Pro. Automatic archiving defaults to 14 days and can be 7, 30, or off. Do not promise sync speed: physical cross-device iCloud acceptance was still open in the app's `VALIDATION.md` on October 22, 2026. Do not describe the archive as a backup.
+
