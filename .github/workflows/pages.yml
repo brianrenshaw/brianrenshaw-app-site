@@ -24,6 +24,10 @@ jobs:
       - run: python3 scripts/build_portfolio_site.py
       - run: python3 scripts/check_ingest_screenshots.py
       - run: node scripts/check_ingest_interactions.cjs
+      - uses: actions/upload-pages-artifact@v5
+        if: github.event_name != 'pull_request'
+        with:
+          path: dist/portfolio
   deploy:
     if: github.event_name != 'pull_request'
     needs: check
@@ -35,11 +39,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
-      - run: python3 scripts/build_portfolio_site.py
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist/portfolio
-      - uses: actions/deploy-pages@v4
+      - uses: actions/deploy-pages@v5
         id: deployment
