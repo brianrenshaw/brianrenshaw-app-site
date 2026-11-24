@@ -15,7 +15,7 @@
   <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/png" href="/codeshot/assets/icon.png">
   <link rel="stylesheet" href="/assets/family.css">
-  <link rel="stylesheet" href="/codeshot/assets/site.css">
+  <link rel="stylesheet" href="/codeshot/assets/site.css?v=2">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -42,24 +42,40 @@
     </section>
     <div class="workflow">
       <section aria-labelledby="capture">
-        <h2 id="capture">From capture to paste</h2>
+        <h2 id="capture">Capture Palette</h2>
+        <figure class="app-screen">
+          <a href="/codeshot/assets/capture-palette-011.webp" aria-label="Open the full-size Capture Palette screenshot">
+            <img src="/codeshot/assets/capture-palette-011.webp" width="1040" height="866" loading="lazy" decoding="async" alt="The Capture Palette shows six numbered choices. Area, scrolling, and window captures are grouped under Copy to Clipboard and With a Note.">
+          </a>
+        </figure>
         <ol>
-          <li><strong>Choose a capture.</strong> Open CodeShot from the menu bar or use your shortcut. Pick an area, window, or scrolling capture.</li>
+          <li><strong>Choose a capture.</strong> Open the palette from the menu bar or with your shortcut. Press a number, or use the arrow keys and Return.</li>
           <li><strong>Add a note if you need one.</strong> Choose “With a Note,” type your instructions, and press <kbd>⌘</kbd> <kbd>Return</kbd>. A quick capture copies immediately.</li>
           <li><strong>Paste into your agent.</strong> It gets the file path, image dimensions, and any available app, window, or browser details. If your agent runs in a web chat, attach the PNG so it can see the image.</li>
         </ol>
       </section>
+      <section aria-labelledby="settings">
+        <h2 id="settings">Settings</h2>
+        <figure class="app-screen">
+          <a href="/codeshot/assets/settings-011.webp" aria-label="Open the full-size CodeShot Settings screenshot">
+            <img src="/codeshot/assets/settings-011.webp" width="1020" height="1444" loading="lazy" decoding="async" alt="CodeShot Settings shows the palette shortcut, individual shortcuts, screenshot folder, app and browser context options, and macOS permissions.">
+          </a>
+        </figure>
+        <p>Use one shortcut for the whole palette or set a different shortcut for each capture. Choose where PNGs go and which details get copied with the path.</p>
+      </section>
+    </div>
+    <div class="workflow">
       <section aria-labelledby="history">
         <h2 id="history">Working with several screenshots</h2>
         <p>CodeShot works best with a clipboard manager when you have several things to point out. Take each screenshot, copy its note, then open your clipboard history and paste the entries you want into the same conversation.</p>
         <p>I use <a href="https://manual.raycast.com/clipboard-history">Raycast’s Clipboard History</a>. <a href="https://www.alfredapp.com/help/features/clipboard/">Alfred’s Powerpack</a> has clipboard history too, and <a href="https://github.com/TermiT/Flycut">Flycut</a> is a simple clipboard manager I used for years.</p>
       </section>
+      <section aria-labelledby="install">
+        <h2 id="install">Installing and updating</h2>
+        <p>Open the downloaded disk image and drag CodeShot to Applications. On first launch, choose your screenshot folder and allow Screen Recording. Accessibility enables auto-scroll and browser URL capture.</p>
+        <p>To update, quit CodeShot from the menu bar and replace it with the latest download. Runs on Apple silicon and Intel Macs. <a href="https://github.com/brianrenshaw/code-shot/releases">Release notes</a></p>
+      </section>
     </div>
-    <section class="installation" aria-labelledby="install">
-      <h2 id="install">Installing and updating</h2>
-      <p>Open the downloaded disk image and drag CodeShot to Applications. On first launch, choose your screenshot folder and allow Screen Recording. Accessibility enables auto-scroll and browser URL capture.</p>
-      <p>To update, quit CodeShot from the menu bar and replace it with the latest download. Runs on Apple silicon and Intel Macs. <a href="https://github.com/brianrenshaw/code-shot/releases">Release notes</a></p>
-    </section>
   </main>
   <footer class="family-footer">
     <span>CodeShot by Brian Renshaw</span>
