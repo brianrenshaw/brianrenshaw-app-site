@@ -28,6 +28,9 @@ body.app-robot-health{color-scheme:light;--bg:#f2f3f6;--surface:#fff;--ink:#1111
 .rh-phones img:nth-child(2){margin-top:44px}
 
 .section{border-top:1px solid var(--line);padding:64px 0}
+.rh-ways{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:28px}
+.rh-ways .rh-feature{padding:26px}
+.rh-ways h3{margin-top:0;font-size:22px}
 .rh-features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:28px}
 .rh-feature{background:var(--surface);border-radius:24px;padding:20px 20px 22px}
 .rh-feature img{display:block;width:100%;height:auto;border-radius:18px;margin-bottom:6px}
@@ -46,4 +49,4 @@ body.app-robot-health{color-scheme:light;--bg:#f2f3f6;--surface:#fff;--ink:#1111
 .app-robot-health .document .updated{color:var(--muted);font-size:14px}
 
 @media(max-width:900px){.rh-hero{grid-template-columns:1fr;padding:40px 0;gap:28px}.rh-features{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:600px){.app-robot-health .family-header{flex-wrap:wrap;gap:12px}.app-robot-health .family-header nav{gap:16px}.rh-features{grid-template-columns:1fr}.rh-panel{padding:28px 22px}.section{padding:48px 0}}
+@media(max-width:600px){.rh-ways{grid-template-columns:1fr}.app-robot-health .family-header{flex-wrap:wrap;gap:12px}.app-robot-health .family-header nav{gap:16px}.rh-features{grid-template-columns:1fr}.rh-panel{padding:28px 22px}.section{padding:48px 0}}
