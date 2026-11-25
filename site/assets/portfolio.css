@@ -153,3 +153,5 @@ a { color: inherit; text-underline-offset: 5px; }
 @media(prefers-color-scheme:dark){.valetnotes{background:#302e26;color:#f1eee5}.valetnotes .eyebrow,.valetnotes .app-bottom a{color:#d1b781}}
 
 .codeshot{background:#252e32;color:#fff4dd}.codeshot .eyebrow,.codeshot .app-bottom a{color:#ff9a78}.codeshot .app-bottom{border-color:#fff4dd40}
+
+.robot-health{background:#14201a;color:#f2f2f4}.robot-health .eyebrow,.robot-health .app-bottom a{color:#34c26f}.robot-health .app-bottom{border-color:#f2f2f440}
