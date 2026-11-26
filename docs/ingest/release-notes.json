@@ -1,5 +1,9 @@
 [
   {
+    "version": "0.9.9.8",
+    "body": "<p>Changed:</p><ul><li>Sharper exports. Photos sent to a layout and exported at a smaller size keep their fine detail, using the same high-quality resizing as Decks. On-screen previews stay as fast as before.</li><li>Basic import starts with where to save, with a plain folder chooser. Projects are optional, and the detailed folder and file settings are under <strong>Folder and File Options</strong> when you need them.</li><li>Source tabs look like connected tabs, and the selected one is easier to see. Reordering and overflow work as before.</li><li>When no photos are tagged, the import offers <strong>Import All Photos Instead</strong> before you review and confirm.</li></ul><p>Fixed:</p><ul><li>Metadata Assist asks you to confirm an incomplete address (like “222 Odenton Maryland”) again, instead of saving it as a job question. Newer versions of Apple Intelligence on macOS 27.2 had started slipping it through.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
+  },
+  {
     "version": "0.9.9.7.2",
     "body": "<p>New:</p><ul><li>Open in Lightroom. Right-click photos and choose <strong>Open in Lightroom</strong> or <strong>Open in Lightroom Classic</strong>. It's also in the File menu and the command palette. Lightroom opens its Add Photos screen (Classic opens its import window) with your photos selected. Ratings and labels are saved first, so they come along. Each item appears only when that app is installed.</li><li>Both Lightroom apps are ready as after-import actions, so you can pick them in the Workspace Builder or on the import screen and send only Tagged photos or a photo group.</li></ul><p>Changed:</p><ul><li>Opening photos in an app now hands over the photos only. Their XMP sidecars stay beside them, as they already did after an import.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
   },
