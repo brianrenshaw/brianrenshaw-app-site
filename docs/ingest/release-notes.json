@@ -1,5 +1,9 @@
 [
   {
+    "version": "0.9.9.10",
+    "body": "<ul><li>Fixed the Workspace menu in Import Photos. You can select any saved workspace, and a single checkmark shows which one is active.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
+  },
+  {
     "version": "0.9.9.9",
     "body": "<ul><li>Import from a card with ⌘G. Choose a folder on your SSD, then click a photo to see its final path and optional backup before copying. Save the setup as a workspace for the next card.</li><li>Browse folders in the current tab. Command-click a folder to open a second tab. The tab bar appears when you need it, and reopening Ingest brings back only the last active source.</li><li>Copy, Move, Rename, and Organize use the same folder and file naming controls. Import rules, photo groups, and actions open from Options.</li><li>Manage metadata templates in Settings → Metadata → Templates. Review the changes before applying a template. Metadata Assist keeps Fields and Quick Entry together.</li><li>Press F1–F4 to show all, selected, tagged, or untagged photos. Rotate with ⌘[ and ⌘], and go back or forward with ⌥⌘[ and ⌥⌘].</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
   },

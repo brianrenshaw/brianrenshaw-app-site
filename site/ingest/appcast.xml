@@ -3,6 +3,17 @@
     <channel>
         <title>Ingest</title>
         <item>
+            <title>0.9.9.10</title>
+            <pubDate>Thu, 26 Nov 2026 22:00:57 -0600</pubDate>
+            <sparkle:version>64</sparkle:version>
+            <sparkle:shortVersionString>0.9.9.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.9.10/Ingest-0.9.9.10.dmg" length="25628572" type="application/octet-stream" sparkle:edSignature="vUOOD/ShBgfS7XKWkPDBbbTROqcxws+d2Wng27s/wL5wnwj4XkOkRry+n/VLfpfnc10faz88NGfkG4oPZUORAQ==" />
+            <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.9.10&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Fixed the Workspace menu in Import Photos. You can select any saved workspace, and a single checkmark shows which one is active.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+            <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.9.10</sparkle:fullReleaseNotesLink>
+        </item>
+        <item>
             <title>0.9.9.9</title>
             <pubDate>Thu, 26 Nov 2026 21:13:26 -0600</pubDate>
             <sparkle:version>63</sparkle:version>
@@ -23,17 +34,6 @@
             <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.9.8/Ingest-0.9.9.8.dmg" length="25330645" type="application/octet-stream" sparkle:edSignature="4NQpNfS069zjQzO0LfzzL9F7Jqi3p9eYH9pT7YJvSSx1wQVWD0MCf+CE/aTuQbxo0Ynl/2bIs2OdLjGVXEqwAg==" />
             <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.9.8&lt;/h2&gt;&lt;p&gt;Changed:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Sharper exports. Photos sent to a layout and exported at a smaller size keep their fine detail, using the same high-quality resizing as Decks. On-screen previews stay as fast as before.&lt;/li&gt;&lt;li&gt;Basic import starts with where to save, with a plain folder chooser. Projects are optional, and the detailed folder and file settings are under Folder and File Options when you need them.&lt;/li&gt;&lt;li&gt;Source tabs look like connected tabs, and the selected one is easier to see. Reordering and overflow work as before.&lt;/li&gt;&lt;li&gt;When no photos are tagged, the import offers Import All Photos Instead before you review and confirm.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fixed:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Metadata Assist asks you to confirm an incomplete address (like &amp;quot;222 Odenton Maryland&amp;quot;) again, instead of saving it as a job question. Newer versions of Apple Intelligence on macOS 27.2 had started slipping it through.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
             <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.9.8</sparkle:fullReleaseNotesLink>
-        </item>
-        <item>
-            <title>0.9.9.7.2</title>
-            <pubDate>Thu, 15 Oct 2026 05:13:51 -0400</pubDate>
-            <sparkle:version>60</sparkle:version>
-            <sparkle:shortVersionString>0.9.9.7.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.9.7.2/Ingest-0.9.9.7.2.dmg" length="25315650" type="application/octet-stream" sparkle:edSignature="wKTtQY27YRrnYurfQjbhgOgjakGoJGjDhyJrp4YpbNhU045At1C8dvRpns4trmxO4Cjxx49DqUSedupLRfHbAQ==" />
-            <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.9.7.2&lt;/h2&gt;&lt;p&gt;New:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Open in Lightroom. Right-click photos and choose Open in Lightroom or Open in Lightroom Classic. It&amp;#x27;s also in the File menu and the command palette. Lightroom opens its Add Photos screen (Classic opens its import window) with your photos selected. Ratings and labels are saved first, so they come along. Each item appears only when that app is installed.&lt;/li&gt;&lt;li&gt;Both Lightroom apps are ready as after-import actions, so you can pick them in the Workspace Builder or on the import screen and send only Tagged photos or a photo group.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Changed:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Opening photos in an app now hands over the photos only. Their XMP sidecars stay beside them, as they already did after an import.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
-            <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.9.7.2</sparkle:fullReleaseNotesLink>
         </item>
     </channel>
 </rss>
