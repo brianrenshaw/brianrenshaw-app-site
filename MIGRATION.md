@@ -54,6 +54,8 @@ Use `appStoreVersionLocalizations` for marketing/support, `appInfoLocalizations`
 
 ## DNS and rollback
 
+Superseded November 27, 2026: brianrenshaw.app now uses Cloudflare nameservers and Cloudflare Pages; see HOSTING.md. The September record follows.
+
 Hover nameservers remain `ns1.hover.com` and `ns2.hover.com`. Four apex A records: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`. The www CNAME is `brianrenshaw.github.io`. Preserve the `_github-pages-challenge-brianrenshaw` TXT verification record and the existing MX `10 mx.hover.com.cust.hostedemail.com`.
 
 Before migration, apex and www resolved to Hover's `216.40.34.41`. No existing app site depended on this domain. Existing GitHub Pages app URLs remain the fallback until HTTPS works. Revert individual website/redirect commits to restore prior content. Confirm old policy/support pages work before reverting Apple URLs.

@@ -25,9 +25,9 @@ the shared styles. Portfolio links stay on `brianrenshaw.app`; Ingest links lead
 | Build output directory | `dist/decks` |
 | Custom domain | `decksphotoapp.com` |
 
-GitHub Pages deploys `dist/portfolio/`, generated from `site/` by
-`python3 scripts/build_portfolio_site.py`. Its custom domain
-must remain `brianrenshaw.app`. The dedicated Decks build is also checked in CI.
+The portfolio at `brianrenshaw.app` is the Cloudflare Pages project `brianrenshaw-app`, built with
+`python3 scripts/build_portfolio_site.py` (GitHub Pages until November 27, 2026; see HOSTING.md).
+The dedicated Decks build is also checked in CI.
 
 ## Domains
 
@@ -59,13 +59,13 @@ hostname, especially `.app`, which browsers require to work over HTTPS.
 The real Decks source stays at `site/decks/`. The portfolio export changes
 the homepage's Decks links to the dedicated domain, replaces the three old
 Decks pages in the generated output with redirect stubs preserving queries
-and fragments, and removes old Decks URLs from the portfolio sitemap. The
-redirects use JavaScript with a link and no-JavaScript refresh fallback because
-GitHub Pages cannot send a server-side 301 for these paths. Decks assets stay
+and fragments, and removes old Decks URLs from the portfolio sitemap. Since November 27, 2026, Cloudflare Pages answers these routes with
+server-side 301s from the generated `_redirects` file; the JavaScript stubs with
+a no-JavaScript refresh fallback remain in the output as a fallback. Decks assets stay
 available at their old addresses, including the portfolio card's app icon.
 
-Always publish the generated `dist/portfolio/` artifact to GitHub Pages;
-publishing `site/` directly would restore the old Decks pages.
+Always publish the generated `dist/portfolio/` output (the `brianrenshaw-app`
+Pages project does this); publishing `site/` directly would restore the old Decks pages.
 Update app and App Store website/support/privacy URLs as a separate release
 task; old installed apps must still reach the existing support/privacy routes.
 

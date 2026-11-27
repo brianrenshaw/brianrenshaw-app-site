@@ -29,8 +29,8 @@ SPA fallback. `/ingest/*` redirects to the equivalent root route, and
 
 The existing GitHub integration is already authorized for this repository.
 Do not expand its repository access. Cloudflare deploys this site and Decks
-independently from the same source repository; GitHub Pages continues to serve
-the generated `dist/portfolio/` export at `brianrenshaw.app`.
+independently from the same source repository. Since November 27, 2026, the
+portfolio at `brianrenshaw.app` is also on Cloudflare Pages; see HOSTING.md.
 
 ## DNS
 

@@ -28,7 +28,7 @@ python3 -m http.server 8080 --directory site
 
 Open http://localhost:8080/. Links are root-relative because production is served from the custom domain root. The default GitHub project URL is not a supported preview without that domain; use the local server.
 
-GitHub Actions validates links, anchors, local assets, canonical addresses and American spelling before exporting `site/` to `dist/portfolio/` and deploying that artifact to Pages on pushes to main. The export points Decks and Ingest links and old HTML routes to their dedicated domains; their source stays in `site/decks/` and `site/ingest/` for separate Cloudflare builds. Historical assets and permanent appcast feeds stay at their original URLs. Pull requests validate without deploying. No build framework, package installation, analytics, or external font dependency is needed.
+GitHub Actions validates links, anchors, local assets, canonical addresses and American spelling on pushes and pull requests. Cloudflare Pages builds `site/` into `dist/portfolio/` and serves it at brianrenshaw.app; see [HOSTING.md](HOSTING.md) for every site. The export points Decks and Ingest links and old HTML routes to their dedicated domains; their source stays in `site/decks/` and `site/ingest/` for separate Cloudflare builds. Historical assets and permanent appcast feeds stay at their original URLs. No build framework, package installation, analytics, or external font dependency is needed.
 
 ## Routes
 
