@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smooshed for Mac | JPEG compression, measured</title>
+<meta name="description" content="Smooshed makes smaller JPEGs on your Mac. Compare its file sizes and image quality with JPEGmini Pro, MozJPEG, and libjpeg-turbo on the same 100 photographs.">
+<link rel="canonical" href="https://brianrenshaw.app/smooshed/">
+<meta property="og:title" content="Smooshed for Mac">
+<meta property="og:description" content="A little rock for a big folder of JPEGs. See how four compressors handled the same 100 photos.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://brianrenshaw.app/smooshed/">
+<meta property="og:image" content="https://brianrenshaw.app/smooshed/assets/window.webp">
+<meta property="og:image:alt" content="Smooshed’s illustrated rock resting on a stack of photo prints.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/rock.png" type="image/png">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap"><nav aria-label="Site navigation"><a href="/">Brian Renshaw Apps</a><a href="#benchmark">Compression results</a></nav></header>
+<main id="main">
+<div class="cover"><div class="wrap hero">
+<h1><img src="assets/wordmark.webp" width="1250" height="208" alt="Smooshed"></h1>
+<div class="spread">
+<img class="stone" src="assets/paperweight.webp" width="1127" height="551" alt="A determined little rock in a red headband squashes a stack of photo prints.">
+<div class="intro"><p class="lead">Smaller JPEGs for the next delivery.</p>
+<p>I built Smooshed for my photography workflow. Drop in a finished shoot and it writes smaller copies on your Mac, keeping the original dimensions and folder structure.</p>
+<a class="jump" href="#benchmark">Compare the files</a></div>
+</div></div></div>
+<section id="benchmark" class="wrap detail" aria-labelledby="bench-heading">
+<h2 id="bench-heading">One hundred photos.<br>Four compressors.</h2>
+<p class="summary" id="finding">Smooshed cut the batch from 108.41 MB to 62.96 MB. JPEGmini Pro finished at 62.00 MB. MozJPEG made the smallest files at the tested settings, and libjpeg-turbo had the highest median image score.</p>
+<table><caption>DIV2K validation set · 100 JPEGs · 108.41 MB before compression</caption>
+<thead><tr><th scope="col">Compressor</th><th scope="col" class="output">Output size</th><th scope="col" class="numeric">Space saved</th><th scope="col" class="numeric">Median image score</th></tr></thead>
+<tbody>
+<tr class="ours"><th scope="row">Smooshed Compact</th><td>62.96 MB<span class="bar" aria-hidden="true" style="--w:58.07%"></span></td><td class="numeric">41.9%</td><td class="numeric">80.87</td></tr>
+<tr><th scope="row">JPEGmini Pro</th><td>62.00 MB<span class="bar" aria-hidden="true" style="--w:57.19%"></span></td><td class="numeric">42.8%</td><td class="numeric">80.27</td></tr>
+<tr><th scope="row">MozJPEG Q85</th><td>50.67 MB<span class="bar" aria-hidden="true" style="--w:46.74%"></span></td><td class="numeric">53.3%</td><td class="numeric">80.16</td></tr>
+<tr><th scope="row">libjpeg-turbo Q85</th><td>60.52 MB<span class="bar" aria-hidden="true" style="--w:55.83%"></span></td><td class="numeric">44.2%</td><td class="numeric">82.74</td></tr>
+</tbody></table>
+<p class="meta">Size is the total across the set. The image score is SSIMULACRA2, measured against each input JPEG. Higher scores mean a closer perceptual match to the input. The bars show each output as a share of the original bytes.</p>
+<details><summary>Test settings and per-photo results</summary>
+<p>All 100 DIV2K validation images (0801–0900) were converted to full-resolution JPEGs once. Input quality rotated through 85, 92, and 97, with 4:2:0 and 4:4:4 chroma sampling alternating. Every tool received the same prepared photos.</p>
+<p>Smooshed 1.0 used Compact, the Mac app’s automatic setting. JPEGmini Pro 4.5.0 used its original-dimensions output from the earlier test. MozJPEG 4.1.5 and libjpeg-turbo 3.2.1 encoded the same decoded RGB pixels at quality 85, 4:2:0, with progressive scans and optimized coding. Different settings change the size and score. The score is an automated estimate of image similarity.</p>
+<p>Some of these photos were used to tune Compact’s size prediction. The separate shoot-by-shoot check below estimates how that prediction travels to new work.</p>
+<p><a href="assets/div2k-results.csv" download>Download the per-photo measurements (CSV)</a> · <a href="https://data.vision.ee.ethz.ch/cvl/DIV2K/">DIV2K dataset</a></p>
+</details></section>
+<section class="real detail" aria-labelledby="shoot-heading"><div class="wrap">
+<div><h2 id="shoot-heading">How close does a new shoot come to JPEGmini?</h2>
+<p>On 707 AutoHDR exports, the typical estimated file size was within 4.2% of JPEGmini Pro. For camera originals the gap grew to 10.2%. These figures measure file size.</p></div>
+<div><table><caption>Estimated size gap when a shoot is held out</caption><thead><tr><th scope="col">Photo group</th><th scope="col" class="numeric">Photos</th><th scope="col" class="numeric">Median gap</th></tr></thead>
+<tbody><tr><th scope="row">AutoHDR exports</th><td class="numeric">707</td><td class="numeric">4.2%</td></tr>
+<tr><th scope="row">Editor exports</th><td class="numeric">180</td><td class="numeric">9.3%</td></tr>
+<tr><th scope="row">Camera originals</th><td class="numeric">205</td><td class="numeric">10.2%</td></tr>
+<tr><th scope="row">Public test photos</th><td class="numeric">375</td><td class="numeric">12.8%</td></tr></tbody></table>
+<p class="small">Each shoot or test set was left out of training in turn. We adjusted its predicted sizes by the measured difference between target and written size, then compared those estimates with JPEGmini’s files. The median gap counts differences in either direction.</p></div>
+</div></section>
+<section class="wrap workflow detail" aria-labelledby="workflow-heading">
+<div><h2 id="workflow-heading">Pick a folder for this one batch.</h2>
+<p>Click <strong>Choose for This Batch…</strong> before dropping the photos. The smaller copies go to that folder, and the next shoot goes back to your usual destination.</p>
+<p>For Lightroom Classic, choose Smooshed under <strong>After Export</strong>. It optimizes the exported JPEGs in place. The library originals stay where they are.</p>
+<p class="small">Personal Mac app · macOS 27</p></div>
+<figure><img src="assets/window.webp" width="1064" height="784" loading="lazy" alt="Smooshed’s Mac window with Add Photos and Choose for This Batch controls."></figure>
+</section>
+</main>
+<footer><div class="wrap"><span>Made by Brian Renshaw</span><a href="/">All projects</a></div></footer>
+</body></html>
