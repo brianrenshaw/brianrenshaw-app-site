@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Smooshed</title>
+        <item>
+            <title>1.0.1</title>
+            <pubDate>Thu, 26 Nov 2026 21:12:56 -0600</pubDate>
+            <link>https://brianrenshaw.app/smooshed/</link>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://brianrenshaw.app/smooshed/releases/Smooshed-1.0.1.dmg" length="10475619" type="application/octet-stream" sparkle:edSignature="uIb682Y/H9Rzy38EJ4DwBUGfNhuO/3C95OVJ2dwnFqGtchlJi28m/GJ19YS+RUlIBUgBH7BK70Rfx25/O11NCQ=="/>
+        </item>
+    </channel>
+</rss>
