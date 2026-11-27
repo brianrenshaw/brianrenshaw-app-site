@@ -3,6 +3,17 @@
     <channel>
         <title>Ingest</title>
         <item>
+            <title>0.9.9.9</title>
+            <pubDate>Thu, 26 Nov 2026 21:13:26 -0600</pubDate>
+            <sparkle:version>63</sparkle:version>
+            <sparkle:shortVersionString>0.9.9.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.9.9/Ingest-0.9.9.9.dmg" length="25629353" type="application/octet-stream" sparkle:edSignature="jmazAkZNqzRTqPdVnzoetcnDdCUKoW5f9h6oTq7a8dahY9lMFoByJY3FyKoy9I+B8FYSh1Bhk8YgkPV01GCpCw==" />
+            <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.9.9&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Import from a card with ⌘G. Choose a folder on your SSD, then click a photo to see its final path and optional backup before copying. Save the setup as a workspace for the next card.&lt;/li&gt;&lt;li&gt;Browse folders in the current tab. Command-click a folder to open a second tab. The tab bar appears when you need it, and reopening Ingest brings back only the last active source.&lt;/li&gt;&lt;li&gt;Copy, Move, Rename, and Organize use the same folder and file naming controls. Import rules, photo groups, and actions open from Options.&lt;/li&gt;&lt;li&gt;Manage metadata templates in Settings → Metadata → Templates. Review the changes before applying a template. Metadata Assist keeps Fields and Quick Entry together.&lt;/li&gt;&lt;li&gt;Press F1–F4 to show all, selected, tagged, or untagged photos. Rotate with ⌘[ and ⌘], and go back or forward with ⌥⌘[ and ⌥⌘].&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+            <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.9.9</sparkle:fullReleaseNotesLink>
+        </item>
+        <item>
             <title>0.9.9.8</title>
             <pubDate>Thu, 26 Nov 2026 06:44:54 -0600</pubDate>
             <sparkle:version>62</sparkle:version>
@@ -23,17 +34,6 @@
             <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.9.7.2/Ingest-0.9.9.7.2.dmg" length="25315650" type="application/octet-stream" sparkle:edSignature="wKTtQY27YRrnYurfQjbhgOgjakGoJGjDhyJrp4YpbNhU045At1C8dvRpns4trmxO4Cjxx49DqUSedupLRfHbAQ==" />
             <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.9.7.2&lt;/h2&gt;&lt;p&gt;New:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Open in Lightroom. Right-click photos and choose Open in Lightroom or Open in Lightroom Classic. It&amp;#x27;s also in the File menu and the command palette. Lightroom opens its Add Photos screen (Classic opens its import window) with your photos selected. Ratings and labels are saved first, so they come along. Each item appears only when that app is installed.&lt;/li&gt;&lt;li&gt;Both Lightroom apps are ready as after-import actions, so you can pick them in the Workspace Builder or on the import screen and send only Tagged photos or a photo group.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Changed:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Opening photos in an app now hands over the photos only. Their XMP sidecars stay beside them, as they already did after an import.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
             <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.9.7.2</sparkle:fullReleaseNotesLink>
-        </item>
-        <item>
-            <title>0.9.9.7</title>
-            <pubDate>Wed, 14 Oct 2026 20:46:11 -0400</pubDate>
-            <sparkle:version>58</sparkle:version>
-            <sparkle:shortVersionString>0.9.9.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.9.7/Ingest-0.9.9.7.dmg" length="25303106" type="application/octet-stream" sparkle:edSignature="mna9XXrpAz9/B3mTbn+ofHQHEjXmIwUSC602dMZM6UhEE9ZXvBr+0I0cmUsbaGVdcft3A1DJa1BdEIeF9/4sAQ==" />
-            <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.9.7&lt;/h2&gt;&lt;p&gt;Fixed:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The Project menu in Import settings could show no projects at all, even right after you made one. Projects saved by earlier versions of Ingest couldn&amp;#x27;t be read, and one unreadable project hid every other. Those projects open again, and a project that can&amp;#x27;t be read now leaves only itself out of the menu.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
-            <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.9.7</sparkle:fullReleaseNotesLink>
         </item>
     </channel>
 </rss>

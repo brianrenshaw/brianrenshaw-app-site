@@ -56,7 +56,7 @@
     "title": "Moving",
     "url": "/ingest/shortcuts/navigate/",
     "page": "Shortcuts",
-    "keywords": " \n \n   Keys  Command   \n \n   →   ←   Next and previous photograph  \n   Home   End   First and last photograph  \n   ⌘[   ⌘]   Back and forward through the sources you have opened  \n   ⌥⌘1   Put the keyboard in the sources list.  Esc  or  ←  returns to the photographs.  \n   ⌥⌘2   Put the keyboard back on the photographs  \n   ⌥⌘3   Put the keyboard in the inspector  \n \n \n \n In the sources list,  ↑  and  ↓  move,  ↩  or  →  opens, and typing the first letters of a name jumps to it. ",
+    "keywords": " \n \n   Keys  Command   \n \n   →   ←   Next and previous photograph  \n   Home   End   First and last photograph  \n   ⌥⌘[   ⌥⌘]   Back and forward through the sources you have opened  \n   ⌥⌘1   Put the keyboard in the sources list.  Esc  or  ←  returns to the photographs.  \n   ⌥⌘2   Put the keyboard back on the photographs  \n   ⌥⌘3   Put the keyboard in the inspector  \n \n \n \n In the sources list,  ↑  and  ↓  move,  ↩  or  →  opens, and typing the first letters of a name jumps to it. ",
     "hint": "Keyboard shortcuts"
   },
   {
@@ -64,7 +64,7 @@
     "title": "Views and overlays",
     "url": "/ingest/shortcuts/view/",
     "page": "Shortcuts",
-    "keywords": "  Review  has no assigned key by default. Open it from the photo-control row or  ⌘K . It keeps a fixed queue: marking a photo does not remove it. In Review,  [  and  ]  inspect faces when face inspection is active; elsewhere they navigate groups. In Compare, arrows and marks follow the comparison context described below. \n \n \n   Keys  Command  Where   \n \n   ⌘1   ⌘2   ⌘3   Grid, preview, split    \n   Space   Toggle the preview  Grid, preview  \n   ⌘I   Show or hide the right sidebar    \n   ⌥⌘S   Show or hide the left sidebar    \n  no default key  Hide or show both sidebars through View or the co",
+    "keywords": "  Review  has no assigned key by default. Open it from the photo-control row or  ⌘K . It keeps a fixed queue: marking a photo does not remove it. In Review,  [  and  ]  inspect faces when face inspection is active; elsewhere they navigate groups. In Compare, arrows and marks follow the comparison context described below. \n \n \n   Keys  Command  Where   \n \n   F1 – F4   Show all, selected, tagged, or untagged photos  Browse  \n   ⌘1   ⌘2   ⌘3   Grid, preview, split    \n   Space   Toggle the preview  Grid, preview  \n   ⌘I   Show or hide the right sidebar    \n   ⌥⌘S   Show or hide the left sidebar  ",
     "hint": "Keyboard shortcuts"
   },
   {
@@ -104,7 +104,7 @@
     "title": "Files and ingest",
     "url": "/ingest/shortcuts/file/",
     "page": "Shortcuts",
-    "keywords": "  ⇧⌘E  opens  Send to Decks…  for selected still photos. Choose Decks for Mac or system sharing to iPhone or iPad; choose a new or existing project in the receiving app. Browse keeps  ⌘E  for Eject. Composition and export shortcuts belong to Decks. \n \n \n   Keys  Command   \n \n   ⇧⌘E   Send to Decks…  \n   ⌘E   Eject a card in Browse  \n   ⌘O   Open a folder  \n   ⌘G   Open Import Settings    no default key  Review the selection or visible photo queue; configurable in Settings     ⌘W   Close the current Browse tab, or the focused idle editor window  \n   ⌘Y   Copy to a folder, without the rest of th",
+    "keywords": "  ⇧⌘E  opens  Send to Decks…  for selected still photos. Choose Decks for Mac or system sharing to iPhone or iPad; choose a new or existing project in the receiving app. Browse keeps  ⌘E  for Eject. Composition and export shortcuts belong to Decks. \n \n \n   Keys  Command   \n \n   ⇧⌘E   Send to Decks…  \n   ⌘E   Eject a card in Browse  \n   ⌘O   Open a folder  \n   ⌘G   Open Import Settings    no default key  Review the selection or visible photo queue; configurable in Settings     ⇧⌘W   Close Window  \n   ⌃⌥⌘W   Close Other Tabs, keeping any with pending work  \n   ⌘W   Close the current tab, or clos",
     "hint": "Keyboard shortcuts"
   },
   {
@@ -120,7 +120,7 @@
     "title": "Cards and folders",
     "url": "/ingest/shortcuts/sources/",
     "page": "Shortcuts",
-    "keywords": " \n \n   Keys  Command   \n \n   ⌘E   Eject the card  \n  no default key  Add the open folder to your favorites  \n  no default key  Include Photos in Subfolders / Show Only Current Folder. Also beside the source name and in View.  \n   ⌃⌘1  …  ⌃⌘9   Open favorite one to nine  \n   ⇧⌘]   ⇧⌘[   Next and previous source tab  \n   ⌘O   ⇧⌘F   Open a folder, or find one. In Ingest these choose the import source;  ↑   ↓  move through the source list.  \n\n   ↩   Commit the destination while editing its field; outside that field, activate Import when the reviewed plan is ready  \n  no key  Choose All, Tagged, Un",
+    "keywords": " \n \n   Keys  Command   \n \n   ⌘1 – ⌘9   Choose a favorite destination in Import. Add Option to choose the backup.  \n   ⌘E   Eject the card  \n  no default key  Add the open folder to your favorites  \n  no default key  Include Photos in Subfolders / Show Only Current Folder. Also beside the source name and in View.  \n   ⌃⌘1  …  ⌃⌘9   Open favorite one to nine  \n   ⌘N   Open a new tab  \n   ⌥⇧⌘←   ⌥⇧⌘→   Move the current tab left or right  \n   ⇧⌘]   ⇧⌘[   Next and previous source tab  \n   ⌘O   ⇧⌘F   Open a folder, or find one. In Ingest these choose the import source;  ↑   ↓  move through the sourc",
     "hint": "Keyboard shortcuts"
   },
   {
@@ -667,7 +667,7 @@
     "title": "Metadata Assist",
     "url": "/ingest/guide/quick-entry/",
     "page": "Guide",
-    "keywords": "  Edit Metadata…  opens Metadata Assist. Choose  Edit Individual Fields…  inside it for the detailed field editor.  Use Changes  returns that draft to the review panel; only  Apply  applies the reviewed changes. \n\n Choose fields   ⌘’  opens Metadata Assist for selected photos or the current import. Choose Keywords, Caption, or Location to begin, or type  ;  to see your field options, pick one (a fragment like  ;lo  narrows the list), then  Tab  to take it and fill the value or search for a place. Separate keywords with commas. \n  ;\n;lo\n;capt  \n Review changes  Recognized fields appear immediat",
+    "keywords": "  Edit Metadata…  opens Metadata Assist. Use  Fields  to edit a value, or  Quick Entry  to type several at once. Choose  Add Field → All Fields…  for the full IPTC list. Edit reusable templates in  Settings → Metadata → Templates . \n\n Choose fields   ⌘’  opens Metadata Assist for selected photos or the current import. Choose Keywords, Caption, or Location to begin, or type  ;  to see your field options, pick one (a fragment like  ;lo  narrows the list), then  Tab  to take it and fill the value or search for a place. Separate keywords with commas. \n  ;\n;lo\n;capt  \n Review changes  Recognized fi",
     "hint": "Guide"
   },
   {
@@ -739,7 +739,7 @@
     "title": "Import and verify copies",
     "url": "/ingest/guide/ingesting/",
     "page": "Guide",
-    "keywords": "  ⌘G  or  Import…  opens Import Settings from Browse, with settings on the left and photo scope and output preview on the right. Choose a card, folder, or archive; the active workspace supplies the saved destination, names, metadata, and routing. Review the destination preview before starting. \n   Check scope and destination paths before importing.  \n Choose the photos   Photos to import  offers  All ,  Tagged ,  Untagged , and  Selected . Opening Import Settings starts at Selected when photos are selected, otherwise All. Display filters do not choose this scope, and an empty scope does not fa",
+    "keywords": " Open the card in Browse and press  ⌘G . Choose a workspace, then use  Save To → Folder  to choose a folder on your SSD. Set  Backup  for a second verified copy. Click a photo to see its final paths before importing. To use the same setup for another card, choose  Save as New Workspace…  in the Workspace menu. \n   Check scope and destination paths before importing.  \n Choose the photos   Photos to import  offers  All ,  Tagged ,  Untagged , and  Selected . Opening Import Settings starts at Selected when photos are selected, otherwise All. Display filters do not choose this scope, and an empty ",
     "hint": "Guide"
   },
   {
@@ -755,7 +755,7 @@
     "title": "Organize",
     "url": "/ingest/guide/organize/",
     "page": "Guide",
-    "keywords": " Choose the operation  The inspector follows Grouping, Destination, Filenames, and Destination Preview. When you choose the workspace as the starting setup, its Organize section supplies the destination, folder structure, and filenames. Enable full paths when useful, review example filenames, then use  Review Changes…  to confirm the proposed operation before execution. \n Choose  File → Organize…  in Browse, or find Organize in the photo context menu or Command Palette. It opens a separate, resizable window. Browse keeps its selection, filter, and scroll position behind it. \n Organize resumes ",
+    "keywords": " Choose the operation  Open Organize for a folder and choose Copy, Move, or Rename. Set your grouping, destination under  Save To , and  File Names . Check the folder preview and choose  Review Changes…  before applying the plan. \n Choose  File → Organize…  in Browse, or find Organize in the photo context menu or Command Palette. It opens a separate, resizable window. Browse keeps its selection, filter, and scroll position behind it. \n Organize resumes the folder’s saved draft when available. Set its photo scope to All, Selected, or Filtered and choose whether to include subfolders. For a new ",
     "hint": "Guide"
   },
   {
@@ -947,7 +947,7 @@
     "title": "Lightroom, a Shortcut, or an after-import action did not run",
     "url": "/ingest/support/action-problems/",
     "page": "Support",
-    "keywords": "  Check the completion details for skipped or failed actions.  Check each action’s Photos for this action scope. Importing All does not mean an action set to Tagged receives every file.  Confirm the chosen app, Shortcut, or script is available on this Mac, and review any permission prompt.  Retry unfinished actions from the result when offered. Successful actions are left alone.   Open an action in Settings → Automation and test it on a small disposable selection when appropriate. Opening files in an editor and importing them into that editor’s catalog are separate steps.  After-import workflo",
+    "keywords": "  Check the completion details for skipped or failed actions.  Check each action’s Photos for this action scope. Importing All does not mean an action set to Tagged receives every file.  Confirm the chosen app, Shortcut, or script is available on this Mac, and review any permission prompt.  Retry unfinished actions from the result when offered. Successful actions are left alone.   Open an action in Settings → Actions and test it on a small disposable selection when appropriate. Opening files in an editor and importing them into that editor’s catalog are separate steps.  After-import workflow  ",
     "hint": "Support"
   },
   {

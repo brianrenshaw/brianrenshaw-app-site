@@ -52,6 +52,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.9.9.9 | 63 | November 26, 2026 | Card-to-SSD import previews, single-tab restoration, revised file dialogs, metadata templates, and Photo Mechanic view keys. |
 | 0.9.9.8 | 62 | November 26, 2026 | Sharper layout exports, a simpler Basic import that starts with where to save, clearer source tabs, Import All Photos Instead for empty tagged imports, and incomplete addresses caught again in Metadata Assist. |
 | 0.9.9.7.2 | 60 | October 15, 2026 | Open in Lightroom and Lightroom Classic from the right-click menu, File menu, and palette, ready as after-import actions; apps get photos without sidecars. |
 | 0.9.9.7 | 58 | October 14, 2026 | Fixes the Project menu showing no projects when any project was saved by an earlier version. |
