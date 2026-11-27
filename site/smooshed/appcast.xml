@@ -3,13 +3,15 @@
     <channel>
         <title>Smooshed</title>
         <item>
-            <title>1.0.1</title>
-            <pubDate>Thu, 26 Nov 2026 21:12:56 -0600</pubDate>
+            <title>1.0.2</title>
+            <pubDate>Thu, 26 Nov 2026 22:05:02 -0600</pubDate>
             <link>https://brianrenshaw.app/smooshed/</link>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://brianrenshaw.app/smooshed/releases/Smooshed-1.0.1.dmg" length="10475619" type="application/octet-stream" sparkle:edSignature="uIb682Y/H9Rzy38EJ4DwBUGfNhuO/3C95OVJ2dwnFqGtchlJi28m/GJ19YS+RUlIBUgBH7BK70Rfx25/O11NCQ=="/>
+            <description><![CDATA[<ul><li>Click <b>Compress Photos…</b> to choose JPEGs or folders. The picker starts compression when you click <b>Compress</b>.</li><li>The window shows where copies will be saved. Use <b>Change Folder for This Batch…</b> to choose a different folder once.</li><li>The Mac icon now shows Smooshed’s rock pressing a stack of photo prints.</li></ul>
+]]></description>
+            <enclosure url="https://brianrenshaw.app/smooshed/releases/Smooshed-1.0.2.dmg" length="12610233" type="application/octet-stream" sparkle:edSignature="Fq+rIkt8cv4RgzBIMAkrvash/Jrg8veKkNn2F+GtxhUXgjPwr2fl4Rg1ejgDwme1FKyEZZKa1pCiirX/q8BpCQ=="/>
         </item>
     </channel>
 </rss>
