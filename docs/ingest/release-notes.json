@@ -1,5 +1,9 @@
 [
   {
+    "version": "0.9.9.12",
+    "body": "<p>Removed:</p><ul><li>Ask Claude and the Apple Intelligence caption, keyword and template suggestions. Nothing about your photos is sent to an AI service. Face, eye, focus and similar-shot checks still run on your Mac.</li></ul><p>Safer card cleanup:</p><ul><li>Ingest deletes an original from the card only when its copy is still there and unchanged. If a copy went missing or an action rewrote it after import, the original stays on the card.</li><li>Deleting photos from a memory card always asks first, because it can’t be undone.</li><li>After a crash during import, the next launch removes the half-copied files it left behind.</li></ul><p>Fixed:</p><ul><li>Organize puts originals in the Trash under their own names, so Put Back restores them. On a disk with no Trash, the original stays where it was and the result says so.</li><li>Copy and Move now ask your workspace’s shoot questions before naming files.</li><li>Saving in the Workspace Builder keeps changes you made elsewhere while it was open.</li><li>Links that change files ask before they run.</li><li>Delete All on a large card no longer pauses the app while it checks the files.</li></ul><p>Also:</p><ul><li>The Help menu points to ingestphotoapp.com and adds Privacy Policy. About Ingest lists the open-source components and their licenses.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
+  },
+  {
     "version": "0.9.9.11",
     "body": "<ul><li>When you browse during import, the destination folder opens in the current tab. Thumbnails appear as photos arrive.</li><li>A small progress popover opens in the bottom-right corner when an import starts. It shows how many files have been copied and verified. Click the status to reopen it at any time during the import.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
   },

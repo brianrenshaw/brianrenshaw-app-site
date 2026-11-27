@@ -3,6 +3,17 @@
     <channel>
         <title>Ingest</title>
         <item>
+            <title>0.9.9.12</title>
+            <pubDate>Fri, 27 Nov 2026 14:03:08 -0600</pubDate>
+            <sparkle:version>66</sparkle:version>
+            <sparkle:shortVersionString>0.9.9.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.9.12/Ingest-0.9.9.12.dmg" length="25197963" type="application/octet-stream" sparkle:edSignature="7BD7u+MVz7E2Hg89lvJy7lRLF/t1NcYZ3Tueeauyyh2ZTeVzPmEaiK5SlCUltqnPColirsVs2d1WwxeYx4y2CQ==" />
+            <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.9.12&lt;/h2&gt;&lt;p&gt;Removed:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Ask Claude and the Apple Intelligence caption, keyword and template suggestions. Nothing about your photos is sent to an AI service. Face, eye, focus and similar-shot checks still run on your Mac.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Safer card cleanup:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Ingest deletes an original from the card only when its copy is still there and unchanged. If a copy went missing or an action rewrote it after import, the original stays on the card.&lt;/li&gt;&lt;li&gt;Deleting photos from a memory card always asks first, because it can’t be undone.&lt;/li&gt;&lt;li&gt;After a crash during import, the next launch removes the half-copied files it left behind.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fixed:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Organize puts originals in the Trash under their own names, so Put Back restores them. On a disk with no Trash, the original stays where it was and the result says so.&lt;/li&gt;&lt;li&gt;Copy and Move now ask your workspace’s shoot questions before naming files.&lt;/li&gt;&lt;li&gt;Saving in the Workspace Builder keeps changes you made elsewhere while it was open.&lt;/li&gt;&lt;li&gt;Links that change files ask before they run.&lt;/li&gt;&lt;li&gt;Delete All on a large card no longer pauses the app while it checks the files.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Also:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The Help menu points to ingestphotoapp.com and adds Privacy Policy. About Ingest lists the open-source components and their licenses.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+            <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.9.12</sparkle:fullReleaseNotesLink>
+        </item>
+        <item>
             <title>0.9.9.11</title>
             <pubDate>Fri, 27 Nov 2026 06:29:32 -0600</pubDate>
             <sparkle:version>65</sparkle:version>
@@ -23,17 +34,6 @@
             <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.9.10/Ingest-0.9.9.10.dmg" length="25628572" type="application/octet-stream" sparkle:edSignature="vUOOD/ShBgfS7XKWkPDBbbTROqcxws+d2Wng27s/wL5wnwj4XkOkRry+n/VLfpfnc10faz88NGfkG4oPZUORAQ==" />
             <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.9.10&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Fixed the Workspace menu in Import Photos. You can select any saved workspace, and a single checkmark shows which one is active.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
             <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.9.10</sparkle:fullReleaseNotesLink>
-        </item>
-        <item>
-            <title>0.9.9.9</title>
-            <pubDate>Thu, 26 Nov 2026 21:13:26 -0600</pubDate>
-            <sparkle:version>63</sparkle:version>
-            <sparkle:shortVersionString>0.9.9.9</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.9.9/Ingest-0.9.9.9.dmg" length="25629353" type="application/octet-stream" sparkle:edSignature="jmazAkZNqzRTqPdVnzoetcnDdCUKoW5f9h6oTq7a8dahY9lMFoByJY3FyKoy9I+B8FYSh1Bhk8YgkPV01GCpCw==" />
-            <description sparkle:format="html">&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;meta name="color-scheme" content="light dark"&gt;&lt;style&gt;body{font:13px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;margin:18px}h2{font-size:18px}ul{padding-left:22px}li{margin-bottom:12px}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Ingest 0.9.9.9&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Import from a card with ⌘G. Choose a folder on your SSD, then click a photo to see its final path and optional backup before copying. Save the setup as a workspace for the next card.&lt;/li&gt;&lt;li&gt;Browse folders in the current tab. Command-click a folder to open a second tab. The tab bar appears when you need it, and reopening Ingest brings back only the last active source.&lt;/li&gt;&lt;li&gt;Copy, Move, Rename, and Organize use the same folder and file naming controls. Import rules, photo groups, and actions open from Options.&lt;/li&gt;&lt;li&gt;Manage metadata templates in Settings → Metadata → Templates. Review the changes before applying a template. Metadata Assist keeps Fields and Quick Entry together.&lt;/li&gt;&lt;li&gt;Press F1–F4 to show all, selected, tagged, or untagged photos. Rotate with ⌘[ and ⌘], and go back or forward with ⌥⌘[ and ⌥⌘].&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Requires macOS 15 or later and an Apple silicon Mac.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
-            <sparkle:fullReleaseNotesLink>https://ingestphotoapp.com/release-notes/#v0.9.9.9</sparkle:fullReleaseNotesLink>
         </item>
     </channel>
 </rss>

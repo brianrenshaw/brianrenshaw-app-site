@@ -27,10 +27,13 @@ def main():
                              p.relative_to(SOURCE / "ingest").as_posix().removesuffix("index.html")))
                   for p in (SOURCE / "ingest").rglob("index.html")
                   if p.parent.name != "release-notes"]
+    # Retired Ingest help articles keep their old brianrenshaw.app routes working.
+    redirects += [("ingest", "Ingest", "support/second-opinion/", INGEST + "support/")]
     redirects += [("nearabout", "Nearabout", p.relative_to(SOURCE / "nearabout").as_posix().removesuffix("index.html"),
                    NEARABOUT + p.relative_to(SOURCE / "nearabout").as_posix().removesuffix("index.html"))
                   for p in (SOURCE / "nearabout").rglob("index.html")]
     for slug, name, route, destination in redirects:
+        (OUTPUT / slug / route).mkdir(parents=True, exist_ok=True)
         (OUTPUT / slug / route / "index.html").write_text(f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">

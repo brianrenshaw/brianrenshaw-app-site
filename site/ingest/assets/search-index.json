@@ -368,22 +368,6 @@
   },
   {
     "type": "section",
-    "title": "Photo suggestions",
-    "url": "/ingest/privacy/#photo-suggestions",
-    "page": "Privacy",
-    "keywords": "photo suggestions photo suggestions",
-    "hint": "Privacy"
-  },
-  {
-    "type": "section",
-    "title": "Optional Claude Second Opinion",
-    "url": "/ingest/privacy/#second-opinion",
-    "page": "Privacy",
-    "keywords": "optional claude second opinion second opinion",
-    "hint": "Privacy"
-  },
-  {
-    "type": "section",
     "title": "Address search",
     "url": "/ingest/privacy/#address-search",
     "page": "Privacy",
@@ -675,7 +659,7 @@
     "title": "Metadata",
     "url": "/ingest/guide/metadata/",
     "page": "Guide",
-    "keywords": " Photo Info keeps Caption, Keywords, and Location close at hand. Its menu opens the full IPTC editor when you need specialized fields. Choose and reorder sidebar fields in Settings → Sidebar Information. Ingest writes supported rendered files directly and uses XMP sidecars for proprietary RAW files. Export a JPEG with metadata and GPS included for apps such as Apple Photos that may not read RAW sidecars. \n Use  Suggest…  beside Caption or Keywords for on-device Apple Intelligence suggestions on supported macOS 27 systems. Review each photo, edit the suggested text, and choose what to save. Not",
+    "keywords": " Photo Info keeps Caption, Keywords, and Location close at hand. Its menu opens the full IPTC editor when you need specialized fields. Choose and reorder sidebar fields in Settings → Sidebar Information. Ingest writes supported rendered files directly and uses XMP sidecars for proprietary RAW files. Export a JPEG with metadata and GPS included for apps such as Apple Photos that may not read RAW sidecars. \n  Location  accepts address/place search, decimal latitude and longitude, an Apple Maps link containing coordinates, or just city and state. Camera location describes where you stood and can ",
     "hint": "Guide"
   },
   {
@@ -827,7 +811,7 @@
     "title": "What you need",
     "url": "/ingest/support/requirements/",
     "page": "Support",
-    "keywords": " Requires macOS 15 Sequoia or later and a Mac with Apple silicon (M1 or newer). Intel Macs are not supported.    Apple Intelligence is optional.  Text-based metadata assistance requires macOS 26 or later; suggestions generated from photographs require macOS 27.   Apple Photos:  Editing captions, keywords, and native star ratings requires macOS 27. Other browsing and review features work on earlier supported versions.   To check your Mac, choose Apple menu → About This Mac. To install, open the disk image and drag Ingest to Applications. ",
+    "keywords": " Requires macOS 15 Sequoia or later and a Mac with Apple silicon (M1 or newer). Intel Macs are not supported.   Apple Photos:  Editing captions, keywords, and native star ratings requires macOS 27. Other browsing and review features work on earlier supported versions.  To check your Mac, choose Apple menu → About This Mac. To install, open the disk image and drag Ingest to Applications. ",
     "hint": "Support"
   },
   {
@@ -972,14 +956,6 @@
     "url": "/ingest/support/decks-support/",
     "page": "Support",
     "keywords": " Send to Decks works with selected still photos and requires a compatible Decks receiver. For Open in Decks for Mac, check that the Mac app is installed. For iCloud, check Apple sign-in and connectivity, then review the transfer status in Ingest and Incoming Photos in Decks.  Decks waits for you to choose a new or existing project. Later leaves the transfer in Incoming Photos. Cloud-only Apple Photos images may first need to download. Review the saved transfer’s status before retrying.  Transfers contain independent photo copies, not Ingest workspaces or naming settings. The old built-in Socia",
-    "hint": "Support"
-  },
-  {
-    "type": "section",
-    "title": "Claude Second Opinion",
-    "url": "/ingest/support/second-opinion/",
-    "page": "Support",
-    "keywords": " This optional feature needs Claude Code installed and signed in to your Claude subscription. It uses your account’s connection and usage limits. It is separate from the built-in on-device checks, which do not require Claude.  Review what Ask sends to Anthropic  before using it. ",
     "hint": "Support"
   },
   {

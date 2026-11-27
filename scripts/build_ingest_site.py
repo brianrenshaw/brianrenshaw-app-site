@@ -61,7 +61,9 @@ def main():
     (OUTPUT / 'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {ORIGIN}/sitemap.xml\n')
     (OUTPUT / '_redirects').write_text(
         '/ingest / 301\n/ingest/ / 301\n/ingest/* /:splat 301\n'
-        '/quick-start /getting-started/ 301\n/quick-start/ /getting-started/ 301\n')
+        '/quick-start /getting-started/ 301\n/quick-start/ /getting-started/ 301\n'
+        # Retired help articles (Claude Second Opinion was removed in 0.9.9.12).
+        '/support/second-opinion /support/ 301\n/support/second-opinion/ /support/ 301\n')
     # A real 404 prevents Pages' SPA fallback from serving the homepage for typos.
     (OUTPUT / '404.html').write_text('''<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">

@@ -52,6 +52,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.9.9.12 | 66 | November 27, 2026 | Removed Ask Claude and the Apple Intelligence suggestions; card cleanup deletes an original only when its copy is still there and unchanged; Organize trashes originals under their own names. |
 | 0.9.9.11 | 65 | November 27, 2026 | Browse the receiving folder in the current tab and follow copy and verification progress in the footer popover. |
 | 0.9.9.10 | 64 | November 26, 2026 | Fixed disabled workspace choices in Import Photos. |
 | 0.9.9.9 | 63 | November 26, 2026 | Card-to-SSD import previews, single-tab restoration, revised file dialogs, metadata templates, and Photo Mechanic view keys. |
