@@ -1,5 +1,9 @@
 [
   {
+    "version": "0.9.9.11",
+    "body": "<ul><li>When you browse during import, the destination folder opens in the current tab. Thumbnails appear as photos arrive.</li><li>A small progress popover opens in the bottom-right corner when an import starts. It shows how many files have been copied and verified. Click the status to reopen it at any time during the import.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
+  },
+  {
     "version": "0.9.9.10",
     "body": "<ul><li>Fixed the Workspace menu in Import Photos. You can select any saved workspace, and a single checkmark shows which one is active.</li></ul><p>Requires macOS 15 or later and an Apple silicon Mac.</p>"
   },

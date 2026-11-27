@@ -52,6 +52,7 @@ Anchor ids under `/ingest/` are a contract: the app's Help menu, the appcast, an
 
 | Version | Build | Date | Notes |
 | --- | --- | --- | --- |
+| 0.9.9.11 | 65 | November 27, 2026 | Browse the receiving folder in the current tab and follow copy and verification progress in the footer popover. |
 | 0.9.9.10 | 64 | November 26, 2026 | Fixed disabled workspace choices in Import Photos. |
 | 0.9.9.9 | 63 | November 26, 2026 | Card-to-SSD import previews, single-tab restoration, revised file dialogs, metadata templates, and Photo Mechanic view keys. |
 | 0.9.9.8 | 62 | November 26, 2026 | Sharper layout exports, a simpler Basic import that starts with where to save, clearer source tabs, Import All Photos Instead for empty tagged imports, and incomplete addresses caught again in Metadata Assist. |
