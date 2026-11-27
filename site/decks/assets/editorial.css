@@ -1,95 +1,109 @@
-/* Two editions of the same site: a photographer's contact sheet and a frame guide. */
-.studio, .frame-story {
-  --gutter: clamp(20px, 5vw, 82px);
-  --paper: #f7f2e6;
-  --charcoal: #20211e;
-  --orange: #ffb689;
+/* Landing pages use the photographs' colors; the help center keeps its own shell. */
+:is(.studio,.frame-story) {
+  --edge: max(clamp(22px,5vw,84px),calc((100vw - 1420px)/2));
+  --paper: #f7f6f1;
+  --ink: #202320;
+  --body-copy: #484d46;
 }
-body.studio { background: var(--charcoal); }
-body.frame-story { background: #f4e8d6; }
-.app-decks:is(.studio,.frame-story) .app-landing { width: 100%; max-width: none; padding: 0; margin: 0; }
-.mast, .lead-line, .contact-sheet, .gift-spread, .workbench, .frame-lead, .frame-plan,
-.studio main > .section, .frame-story main > .section {
-  padding-inline: max(var(--gutter), calc((100vw - 1420px) / 2));
+body:is(.studio,.frame-story) {background: var(--paper); color: var(--ink)}
+.app-decks:is(.studio,.frame-story) .app-landing {max-width: none; width: 100%; padding: 0; margin: 0}
+.mast {display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 15px var(--edge); color: white; background: #101715}
+.mast a {color: inherit; text-decoration: none; white-space: nowrap; flex-shrink: 0}
+.mast nav {display: flex; align-items: center; gap: clamp(14px,2.4vw,40px); font-size: 14px}
+.mast nav a {padding-block: 10px}
+.mast nav a:hover,.arrow:hover {text-decoration: underline; text-underline-offset: 4px}
+.mast nav .mast-install {padding: 7px 16px; border-radius: 20px; background: #fff; color: #191d19; font-weight: 650}
+.wordmark {display: inline-flex; align-items: center; gap: 8px; font: 650 29px/1 system-ui; letter-spacing: -.07em}
+.wordmark img {border-radius: 7px; width: 29px}
+.studio .mast {position: absolute; inset: 0 0 auto; z-index: 2; background: linear-gradient(#09121bd9,transparent)}
+.coastal-cover {position: relative; isolation: isolate; min-height: clamp(650px,89svh,920px); display: flex; align-items: end; padding: 130px var(--edge) clamp(46px,6vw,94px); color: white; background: #243e4e}
+.coast-photo,.coastal-cover::after {position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1}
+.coast-photo {object-fit: cover; object-position: 55% 46%}
+.coastal-cover::after {content: ''; background: linear-gradient(90deg,#071723b5,transparent 83%),linear-gradient(0deg,#031622df,transparent 78%)}
+.cover-copy {width: 49%; max-width: 690px}
+.studio .cover-copy h1,.frame-story .frame-intro h1 {font: 600 clamp(50px,6.1vw,100px)/.98 system-ui,sans-serif; letter-spacing: -.045em; margin: 0 0 22px; max-width: 13ch; text-wrap: balance}
+.studio .cover-copy h1,.studio .cover-copy p {color: white}
+.studio .cover-copy p,.frame-story .frame-intro p {font-size: clamp(16px,1.35vw,20px); line-height: 1.48; max-width: 42ch}
+.cover-actions {display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px}
+.cover-actions > a:last-child {color: white; text-underline-offset: 4px; font-size: 15px}
+.coast-proof {position: absolute; width: min(44%,790px); right: var(--edge); top: 20%; transform: rotate(-3deg)}
+.panels {display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1%; align-items: center}
+.panels img {display: block; width: 100%; border: 4px solid #faf9f5; box-shadow: 0 9px 25px #09100f55}
+.panels img:first-child {transform: translateY(7%)}
+.panels img:last-child {transform: translateY(-7%)}
+.studio .coast-proof p {color: white; text-shadow: 0 1px 5px #152320; margin: 18px 0 0; text-align: right; font-size: 12px}
+.template-demo,.gift-spread,.crop-story,.frame-lead {display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.12fr); gap: clamp(28px,6vw,110px); align-items: center; padding: clamp(52px,7vw,110px) var(--edge)}
+:is(.studio,.frame-story) main h2 {font: 580 clamp(32px,3.7vw,62px)/1.04 system-ui,sans-serif; letter-spacing: -.04em}
+.template-demo {background: #ebece5}
+.template-copy {max-width: 460px}
+.light-table {min-width: 0}
+.print-stage figure {margin: 0}
+.print-stage img {display: block; width: auto; max-width: 100%; max-height: clamp(290px,35vw,460px); margin: auto; box-shadow: 0 9px 23px #262c202f}
+.photo-picker,.frame-select {display: flex; flex-wrap: wrap; gap: 0; justify-content: center; border: none; margin: 20px 0 0}
+.photo-picker button,.frame-select button {background: transparent; color: var(--ink); border: none; border-bottom: 2px solid transparent; cursor: pointer; padding: 10px 13px; font: 500 14px/1.4 system-ui; min-height: 44px}
+.photo-picker button[aria-selected="true"],.frame-select button[aria-selected="true"] {border-color: currentColor; font-weight: 700}
+.gift-spread {grid-template-columns: 1.2fr 1fr; background: #e1d1ba}
+.gift-spread img {width: 100%; display: block; border: 13px solid #37312a; box-shadow: 3px 11px 18px #49331e42}
+.arrow {color: inherit; display: inline-block; padding: 8px 0; text-underline-offset: 5px; font-weight: 600}
+.workbench,.studio main > .section,.frame-story main > .section,.frame-plan {padding: clamp(44px,6vw,90px) var(--edge)}
+.tool-row {border-top: 1px solid #c0c4ba}
+.tool-row:last-child {border-bottom: 1px solid #c0c4ba}
+.tool-row > summary {display: flex; justify-content: space-between; gap: 16px; cursor: pointer; padding: 17px 0; font-size: clamp(17px,1.6vw,25px);list-style: none}
+.tool-row > summary::-webkit-details-marker {display: none}
+.tool-row > summary::after {content: '+'}
+.tool-row[open] > summary::after {content: '−'}
+.tool-row > section {padding-block: 30px; margin: 0}
+.example-prints,.aura-layouts {display: grid; gap: 18px}
+.example-prints {grid-template-columns: repeat(3,1fr)}
+.example-prints figure,.crop-story figure,.frame-demo figure {margin: 0}
+.frame-story .mast {background: #e5dbc9; color: #24251d}
+.frame-story .mast-install {background: #20231c; color: white}
+.frame-lead {background: radial-gradient(ellipse at 79% 12%,#fff8e7 4%,transparent 47%),linear-gradient(158deg,#ede4d4 40%,#dbcbb4 76%,#c9b79b); min-height: min(720px,82svh); grid-template-columns: .91fr 1.15fr}
+.frame-story .frame-intro h1 {color: #292d22; max-width: 12ch}
+.frame-intro small {display: block; color: var(--body-copy); margin-top: 8px}
+.frame-demo {min-width: 0}
+.frame-bezel {aspect-ratio: 16/10; border: clamp(10px,1.4vw,24px) solid #373530; background: #ece6da; box-sizing: content-box; border-radius: 4px; box-shadow: inset 0 0 0 2px #161815, 0 2px 1px #787268, 7px 15px 20px #48321445}
+.frame-demo .frame-bezel img {width: 100%; height: 100%; display: block; object-fit: contain}
+.frame-demo .sample-zoom img {object-fit: cover}
+.frame-story .frame-demo figcaption {text-align: center; font-size: 14px; color: #39392f}
+.frame-select {margin-top: 4px}
+.crop-story {grid-template-columns: 1fr 1.18fr; background: #fffefa}
+.crop-story h2 {max-width: 15ch}
+.crop-story figure img {display: block; max-height: 440px; margin: auto; object-fit: contain}
+.crop-story figcaption {text-align: center}
+.frame-plan {background: #293828}
+.frame-story .frame-plan :is(h2,h3,p,.arrow),.frame-plan li::marker {color: #f7f7ed}
+.frame-plan ol {display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 5vw; list-style: decimal inside; padding: 0}
+.frame-plan li {border-top: 1px solid #82907e; padding-top: 16px}
+.frame-plan h3 {display: inline}
+.frame-plan li p {margin-top: 10px}
+.frame-story #layouts .aura-layouts {grid-template-columns: repeat(4,minmax(0,1fr))}
+.frame-story #frames,.decks-home .decks-closing {background: #ecece4}
+.frame-story .aura-frames {width: 100%}
+@media(max-width:760px){
+  .mast {padding-block: 10px}
+  .mast nav {gap: 13px; font-size: 13px}
+  .mast nav a[href$="/support/"] {display: none}
+  .mast nav .mast-install {padding: 7px 10px}
+  .wordmark {font-size: 23px; gap: 5px}
+  .wordmark img {width: 24px}
+  .coastal-cover {display: grid; align-content: end; gap: 26px; padding-top: 100px; min-height: 80svh}
+  .coast-proof {position: static; width: min(85%,430px); justify-self: end; margin-right: 1vw}
+  .coast-proof .panels img {border-width: 2px}
+  .studio .coast-proof p {font-size: 11px}
+  .cover-copy {width: 100%}
+  .studio .cover-copy h1,.frame-story .frame-intro h1 {font-size: clamp(43px,9vw,65px)}
+  .template-demo,.gift-spread,.frame-lead,.crop-story,.frame-plan ol {grid-template-columns: 1fr; gap: 24px}
+  .frame-lead {padding-block: 34px}
+  .gift-spread img {border-width: 9px}
+  .template-copy p {margin: 0}
+  .frame-story #layouts .aura-layouts {grid-template-columns: 1fr 1fr}
+  .photo-picker button,.frame-select button {padding-inline: 10px}
 }
-.mast { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 15px; }
-.studio .mast { color: var(--paper); border-bottom: 1px solid #494942; }
-.frame-story .mast { border-bottom: 1px solid #b9a991; }
-.mast a { color: inherit; text-decoration: none; }
-.mast nav { display: flex; align-items: center; gap: clamp(12px,3vw,46px); font-size: 14px; }
-.mast nav a { padding-block: 10px; }
-.mast nav a:hover, .arrow:hover { text-decoration: underline; }
-.wordmark { display: inline-flex; align-items: center; gap: 8px; font: 650 30px/1 system-ui; letter-spacing: -.075em; }
-.wordmark img { border-radius: 8px; width: 32px; }
-.decks-home .kicker { font: 600 12px/1.4 ui-monospace,monospace; text-transform: uppercase; letter-spacing: .08em; margin: 0 0 16px; color: inherit; }
-.studio-lead { color: var(--paper); }
-.lead-line { display: grid; grid-template-columns: 1.8fr 1fr; align-items: end; gap: 6vw; padding-block: clamp(42px,5vw,90px); }
-.studio .lead-line h1 { font: 500 clamp(76px,9.3vw,156px)/.89 Georgia,serif; letter-spacing: -.062em; color: var(--paper); margin: 0; max-width: 10ch; }
-.studio .lead-line .kicker { color: var(--orange); }
-.studio .lead-line p:not(.kicker) { color: #e2dfd6; max-width: 40ch; }
-.contact-sheet { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: clamp(12px,3vw,50px); padding-bottom: 40px; }
-.contact-sheet figure { margin: 0; min-width: 0; }
-.contact-sheet figure a { display: grid; place-items: center; height: clamp(215px,24vw,390px); padding: 16px; background: #53574c; }
-.contact-sheet figure:nth-child(2) a { background: #bc815e; }
-.contact-sheet figure:nth-child(3) a { background: #aba295; }
-.contact-sheet img { width: 100%; height: 100%; min-height: 0; object-fit: contain; }
-.studio .contact-sheet figcaption { color: #dfdfd4; font: 13px/1.5 ui-monospace,monospace; }
-.gift-spread { background: #e6ad82; display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 7vw; padding-block: clamp(36px,6vw,94px); }
-.gift-spread img { width: 100%; display: block; border: 12px solid #41372e; }
-.gift-spread p, .frame-plan p { color: #453b32; }
-.gift-spread h2, .workbench > h2, .frame-plan h2, .frame-story main > .section h2 { font: 400 clamp(36px,4.2vw,68px)/1.03 Georgia,serif; letter-spacing: -.055em; }
-.arrow { color: inherit; display: inline-block; font-weight: 650; text-underline-offset: 5px; padding: 8px 0; }
-.workbench, .studio main > .section { background: var(--paper); padding-block: clamp(44px,6vw,90px); }
-.tool-row { border-top: 1px solid #b5b1a5; }
-.tool-row:last-child { border-bottom: 1px solid #b5b1a5; }
-.tool-row > summary { display: flex; justify-content: space-between; gap: 16px; cursor: pointer; padding: 16px 0; font-size: clamp(18px,2vw,28px); list-style: none; }
-.tool-row > summary::-webkit-details-marker { display: none; }
-.tool-row > summary::after { content: '+'; }
-.tool-row[open] > summary::after { content: '−'; }
-.tool-row > section { padding-block: 30px; margin: 0; }
-.studio .family-footer { color: var(--paper); }
-.studio .family-footer a { color: inherit; }
-.frame-lead { display: grid; grid-template-columns: 1fr 1.18fr; gap: clamp(30px,5vw,86px); align-items: center; padding-block: clamp(42px,6vw,100px); background: #173e36; }
-.frame-story .frame-intro h1 { font: 500 clamp(48px,5.8vw,96px)/.97 Georgia,serif; color: #fff4dc; letter-spacing: -.061em; margin: 0 0 24px; }
-.frame-intro h1 em { color: #ffb99a; font-weight: 400; }
-.frame-story .frame-intro p { color: #f1eada; max-width: 48ch; }
-.frame-story .frame-intro .kicker { color: #ffbf9b; }
-.frame-intro small { display: block; margin-top: 8px; color: #d9e3d9; }
-.frame-demo { min-width: 0; }
-.frame-demo figure { margin: 0; }
-.frame-bezel { aspect-ratio: 16/10; background: #eee4d4; border: clamp(9px,1.4vw,22px) solid #2b2725; box-sizing: content-box; box-shadow: 0 12px 24px #0a211c66; }
-.frame-demo .frame-bezel img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.frame-demo .sample-zoom img { object-fit: cover; }
-.frame-story .frame-demo figcaption { color: #ebecdf; text-align: center; font-size: 14px; }
-.frame-select { color: #fff5df; justify-content: center; border: none; margin: 18px 0 0; gap: 4px; }
-.frame-select button { padding: 8px 14px; min-height: 42px; border: 1px solid #79958a; border-radius: 100px; color: inherit; }
-.frame-select button:hover, .frame-select button:focus-visible { color: white; outline-color: white; }
-.frame-select button[aria-selected="true"] { border: 1px solid #ffe8c6; background: #ffe8c6; color: #26382e; }
-.frame-plan { padding-block: clamp(40px,6vw,88px); background: #f3c1a2; }
-.frame-plan ol { display: grid; grid-template-columns: repeat(3,1fr); gap: clamp(24px,4vw,68px); list-style: decimal inside; padding: 0; }
-.frame-plan li { padding-top: 16px; border-top: 1px solid #a77e64; }
-.frame-plan li::marker { font: italic 22px Georgia,serif; }
-.frame-plan h3 { display: inline; }
-.frame-plan li p { margin-top: 10px; }
-.frame-story main > .section { padding-block: clamp(40px,5vw,76px); }
-.frame-story #layouts .aura-layouts { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 20px; }
-.frame-story #frames, .frame-story .decks-closing { background: #e5dbca; }
-.frame-story .aura-frames { width: 100%; }
-@media (max-width: 820px) {
-  .frame-lead { grid-template-columns: 1fr; }
-
-  .frame-story #layouts .aura-layouts { grid-template-columns: 1fr 1fr; }
+@media(max-width:370px){
+  .mast {padding-inline: 12px}
+  .mast nav {gap: 9px}
 }
-@media (max-width: 650px) {
-  .mast nav { font-size: 12px; }
-  .wordmark { font-size: 25px; }
-  .lead-line, .gift-spread, .frame-plan ol { grid-template-columns: 1fr; gap: 24px; }
-  .studio .lead-line h1 { font-size: clamp(70px,17vw,98px); }
-  .contact-sheet { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px 12px; }
-  .contact-sheet figure:first-child { grid-column: 1/-1; }
-  .contact-sheet figure a { height: 180px; padding: 10px; }
-  .contact-sheet figure:first-child a { height: 270px; }
-  .studio .contact-sheet figcaption { font-size: 11px; margin-top: 6px; }
-  .frame-plan ol { margin-block: 22px; }
-  .frame-story #layouts .aura-layouts { gap: 24px 12px; }
+@media(max-width:370px){
+  .studio .mast nav a[href="#pricing"],.frame-story .mast nav a:first-child {display: none}
 }
