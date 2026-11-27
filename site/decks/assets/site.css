@@ -177,3 +177,30 @@ ol.benefits{list-style:none;padding:0}
 .decks-aura .smart-steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:56px 40px}.decks-aura .smart-shots .native-shot img{max-width:260px}
 @media(max-width:1000px){.decks-aura .smart-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.decks-aura .smart-steps{grid-template-columns:1fr}}
+
+/* App Store release, November 27, 2026: official badge, plan cards, and pricing questions. */
+.app-store-badge{display:inline-block;line-height:0;border-radius:9px}
+.app-store-badge img{display:block;width:auto;height:54px}
+.app-store-badge:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.plan{padding:28px 28px 24px;border:1px solid var(--line);border-radius:12px;background:#fbfaf7}
+.decks-home .plan h3{font-size:17px;margin:0 0 14px}
+.decks-home .plan-price{font-size:36px;line-height:1.1;letter-spacing:-.03em;color:var(--ink);margin:0 0 6px}
+.decks-home .plan-price span{font-size:15px;letter-spacing:0;color:var(--muted)}
+.decks-home .plan-options{font-size:14px;margin:0}
+.plan ul{list-style:none;margin:20px 0 0;padding:0}
+.plan li{padding:10px 0;border-top:1px solid var(--line);font-size:15px;line-height:1.5;color:var(--ink)}
+.plan-pro{background:var(--ink);border-color:var(--ink)}
+.decks-home .plan-pro h3,.decks-home .plan-pro .plan-price,.plan-pro li{color:#f5f4f0}
+.decks-home .plan-pro .plan-price span,.decks-home .plan-pro .plan-options{color:#c9c8c1}
+.plan-pro li{border-top-color:#4a4a45}
+.pricing-cta{display:flex;align-items:center;gap:28px;margin:32px 0 8px}
+.decks-home .pricing-cta p{font-size:14px;margin:0;max-width:62ch}
+.pricing-faq{max-width:780px;margin-top:44px}
+.decks-home .pricing-faq h3{font-size:19px;margin:0 0 8px}
+.pricing-faq details{border-top:1px solid var(--line)}
+.pricing-faq details:last-child{border-bottom:1px solid var(--line)}
+.pricing-faq summary{cursor:pointer;padding:16px 0;font-size:16px;font-weight:500;color:var(--ink)}
+.pricing-faq summary:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.decks-home .pricing-faq details p{font-size:15px;margin:0 0 18px;max-width:68ch}
+@media(max-width:900px){.pricing-grid{grid-template-columns:1fr;max-width:520px}.pricing-cta{flex-direction:column;align-items:flex-start;gap:16px}}

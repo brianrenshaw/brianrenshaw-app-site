@@ -33,3 +33,21 @@ Sources read for labels (all at `42c30ae`):
 Screenshots: captures showing Layout Builder, the old Smart Layout step screens, the old camera card, or an editor tool strip without Stamp were removed from articles. Kept: `build132-mac-frame-menu` (Add a Photo Frame sheet), `oct08-smart-spot-phone-share-aura` (system share sheet), and the hardcoded Fujifilm Details, Photos Shortcut setup, and Ingest receiving captures. Replacement captures are listed as NEEDS-SHOT in each article's `source` field. Date Stamp purchase requirements are intentionally not described.
 
 This is a source audit, not a fresh device replay. No new screenshots, hardware frame tests, or cross-device sync replays are claimed.
+
+## App Store 1.0 (November 27, 2026)
+
+Decks 1.0 was released on the App Store on November 26, 2026 (iOS build 171, Mac build 170). The help center was checked against source `2481132`, reviewing `git diff 42c30ae 2481132 -- Social`. Changes:
+- On Mac, the open project's pages are now in the sidebar; the page strip under the canvas is gone (build 154).
+- Mac Export now has Size, Limit File Size, Sharpening, and Allow Enlarging.
+- Film on Mac has no Width control.
+- Plain shows Thickness, color swatches, and Frame Color.
+- Keep Inside Stories Safe Area starts off.
+- The four-screen first-run tour.
+- New Pro notes: camera details, Fujifilm recipes, and Film date stamps need Pro to share or save; smart layouts use the free allowance.
+- The Fujifilm recipe can be read from the Instructions field.
+- Help for photos with no camera information.
+- A saved smart layout opens on its Layout screen.
+- The Photos picker has albums, Sort and Show, and a picks tray.
+- Mac Ready to post.
+
+App-side mismatch: the Mac in-app help still mentions a Film border Width that the inspector no longer shows (`DecksInspector.swift:192-196`). This was a source audit, not a device replay. Not confirmed: whether Tab still hides the Mac inspector (⌘I is Toggle Inspector).

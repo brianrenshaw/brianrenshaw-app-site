@@ -85,3 +85,17 @@ References: [Pages custom domains](https://developers.cloudflare.com/pages/confi
 ## October 19, 2026 release preparation
 
 Both iOS 1.0 (171) and Mac 1.0 (170) are WAITING_FOR_REVIEW, verified live. Keep TestFlight calls to action until the app is approved and publicly available. The landing page and help now explain the five-batch free allowance, Pro, trial, restore, and TestFlight purchase limitations. On public release, replace beta calls to action with https://apps.apple.com/app/id6817408326 and update the install guide, support source, portfolio status, and generated help pages together. Do not advertise the deferred Smart Layout pricing proposal.
+
+## App Store release — November 27, 2026
+
+Decks Photo App 1.0 is live on the App Store (https://apps.apple.com/app/id6817408326), released November 26, 2026: one universal listing for iPhone, iPad, and Mac (iOS 171, Mac 170). Verified November 27 through Apple's lookup API and the public listing: free download; in-app purchases Decks Pro Monthly $1.99, Annual $9.99, Lifetime $24.99 (USD); requires iOS/iPadOS 18 and macOS 15 on M1 or later.
+
+Site changes for the release:
+
+- Every TestFlight call to action now points to the App Store. The homepage, Aura page, and the closing and pricing sections use Apple's official black "Download on the App Store" badge (`assets/app-store-badge-black.svg`, downloaded unmodified from toolbox.marketingtools.apple.com). The header link reads "App Store ↗".
+- Every Decks page has the Smart App Banner (`<meta name="apple-itunes-app" content="app-id=6817408326">`), and the homepage has SoftwareApplication JSON-LD.
+- The homepage pricing section shows Free, Decks Pro, and Lifetime cards with US prices, plus five pricing questions whose answers come from `SocialProView.swift` and `SocialAccessController.swift` at build 171.
+- The help center footer reads "Decks 1.0 on the App Store." The install guide and the support hub explain App Store installation and moving from the TestFlight beta (the App Store version replaces the beta build; TestFlight purchases do not carry over).
+- The portfolio card reads "Free on the App Store" and links to the listing.
+
+App Store Connect campaign links (`pt=` provider token plus `ct=`) are not used yet. To add them, get the provider token from App Store Connect → Apps → Analytics → Campaigns and tag each badge (for example `ct=website-hero`, `ct=website-pricing`).
