@@ -18,16 +18,26 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="wrap"><nav aria-label="Site navigation"><a href="/">Brian Renshaw Apps</a><a href="#benchmark">Compression results</a></nav></header>
+<header class="wrap"><nav aria-label="Site navigation"><a href="/">Brian Renshaw Apps</a><a href="#field-test">Compression results</a></nav></header>
 <main id="main">
 <div class="cover"><div class="wrap hero">
 <h1><img src="assets/wordmark.webp" width="1250" height="208" alt="Smooshed"></h1>
 <div class="spread">
 <img class="stone" src="assets/paperweight.webp" width="1127" height="551" alt="A determined little rock in a red headband squashes a stack of photo prints.">
 <div class="intro"><p class="lead">Smaller JPEGs for the next delivery.</p>
-<p>I built Smooshed for my photography workflow. Drop in a finished shoot and it writes smaller copies on your Mac, keeping the original dimensions and folder structure.</p>
-<a class="jump" href="#benchmark">Compare the files</a></div>
+<p>I built Smooshed as a free Mac app for my photography workflow. Drop in a finished shoot and it writes smaller copies on your Mac, keeping the original dimensions and folder structure.</p>
+<a class="jump" href="#field-test">Compare the files</a></div>
 </div></div></div>
+<section id="field-test" class="real detail" aria-labelledby="field-heading"><div class="wrap">
+<div><h2 id="field-heading">A gigabyte of my photos, down to 368 MB.</h2>
+<p>I tried Smooshed on 64 JPEGs from my own workflow, split evenly among Fuji straight-out-of-camera photos, other camera originals, editor exports, and AutoHDR exports. Together they weighed 993 MB. With one drop and the automatic setting, Smooshed saved 62.9% of that space. JPEGmini Pro saved 63.5% on the same files.</p></div>
+<div><p><strong>How close was the image quality?</strong> Smooshed and JPEGmini landed close on measured image quality, too. Their median similarity scores were 87.6 and 87.4. MozJPEG at quality 85 saved the most space (74.1%), with a lower score of 83.0. For my everyday exports, Smooshed gets close to JPEGmini without asking me to pick a quality setting.</p>
+<p>On the Fuji files, Smooshed kept 12 of the 16 byte-for-byte identical. On the editor exports, it cut the total size by 71%. That difference is why I like testing with the JPEGs I actually use.</p>
+<details><summary>How I measured this batch</summary>
+<p>I compared five 512-pixel-square crops from each output with the same areas of its original JPEG using SSIMULACRA2. I averaged the five scores for each photo and took the median across all 64. Higher scores indicate a closer match. These are automated measurements from the development collection. The public test below scores whole images.</p>
+<p>libjpeg-turbo at quality 85 saved 67.6% and scored 85.3. Both fixed-quality encoders used progressive JPEGs with 4:2:0 chroma sampling. Savings use the total bytes for the batch.</p>
+<p><a href="assets/mixed-64-results.csv" download>Download the 64 per-photo measurements (CSV)</a></p>
+</details></div></div></section>
 <section id="benchmark" class="wrap detail" aria-labelledby="bench-heading">
 <h2 id="bench-heading">One hundred photos.<br>Four compressors.</h2>
 <p class="summary" id="finding">Smooshed cut the batch from 108.41 MB to 62.96 MB. JPEGmini Pro finished at 62.00 MB. MozJPEG made the smallest files at the tested settings, and libjpeg-turbo had the highest median image score.</p>
@@ -60,7 +70,7 @@
 <div><h2 id="workflow-heading">Pick a folder for this one batch.</h2>
 <p>Click <strong>Choose for This Batch…</strong> before dropping the photos. The smaller copies go to that folder, and the next shoot goes back to your usual destination.</p>
 <p>For Lightroom Classic, choose Smooshed under <strong>After Export</strong>. It optimizes the exported JPEGs in place. The library originals stay where they are.</p>
-<p class="small">Personal Mac app · macOS 27</p></div>
+<p class="small">Free Mac app · macOS 27</p></div>
 <figure><img src="assets/window.webp" width="1064" height="784" loading="lazy" alt="Smooshed’s Mac window with Add Photos and Choose for This Batch controls."></figure>
 </section>
 </main>
