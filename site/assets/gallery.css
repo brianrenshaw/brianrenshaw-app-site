@@ -143,3 +143,13 @@ h2, .story h3 { font-family: var(--display); font-weight: 400; letter-spacing: -
 @media(max-width:380px) { .mini-icons img + img { display:none; } }
 
 .categories a, .mast nav a, .platform, .switcher button, .filters button, .collection h4, .get-project { font-family: var(--ui); font-weight: 400; }
+
+/* Shared platform metadata and release actions throughout the project index. */
+.project-meta { display:flex; flex-wrap:wrap; align-items:center; gap:.45rem .65rem; margin:.5rem 0 .6rem; }
+.platform-badges { display:flex; flex-wrap:wrap; gap:.35rem; }
+.platform-badge { display:inline-flex; align-items:center; gap:.3rem; padding:.2rem .5rem; border-radius:.35rem; background:color-mix(in srgb, var(--paper) 70%, transparent); font-size:.75rem; line-height:1.5; white-space:nowrap; }
+.platform-badge svg { width:1rem; height:1rem; flex-shrink:0; }
+.release-status { font-size:.75rem; font-weight:600; }
+.get-project { justify-content:center; text-align:center; line-height:1.35; }
+.get-project:hover { background:color-mix(in srgb, var(--gold) 80%, white); text-decoration:none; }
+.get-project:active { background:color-mix(in srgb, var(--gold) 85%, var(--ochre)); }
