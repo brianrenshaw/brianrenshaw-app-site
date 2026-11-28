@@ -21,29 +21,25 @@
 <meta name="twitter:description" content="Ingest and Decks for photographers. Apps for reading, choosing restaurants, and everyday tasks. Blogs about baseball and books. Built by Brian Renshaw.">
 <meta name="twitter:image" content="https://brianrenshaw.app/assets/social-projects-v15.png">
 <meta name="twitter:image:alt" content="Two featured cards for Ingest and Decks above nine colorful project cards for Brian Renshaw’s apps, blogs, and spreadsheet tools.">
-<link rel="stylesheet" href="/assets/gallery.css?v=3">
+<link rel="stylesheet" href="/assets/gallery.css?v=2">
 <link rel="icon" href="/assets/favicon.svg">
 <script src="/assets/portfolio.js?v=2" defer></script>
 </head>
-<body id="main">
-<a class="skip" href="#apps">Skip to the collections</a>
-<header class="mast"><a class="signature" href="#main">Brian Renshaw</a><nav aria-label="Main navigation"><a href="#more">Project index</a><a href="mailto:contact@brianrenshaw.app">Get in touch ↗</a></nav></header>
-<main>
-<section class="cover" id="about" aria-labelledby="cover-title">
-  <div class="intro"><h1 id="cover-title">A field guide<br>to <em>my work.</em></h1>
-  <p>I’m Brian. I make software for photographers, save family recipes, and write about the Cardinals. Here’s what comes out of those interests.</p>
-  <a class="contents-link" href="#apps">Explore the collections ↓</a></div>
-  <div class="objects">
-    <a class="print" href="#photography"><img src="/walkthrough/assets/buckeye-drone-original-1.5.0-1600.webp" width="1600" height="1199" fetchpriority="high" alt="Aerial photograph of a home beside a pond"><span>Behind the lens ↘</span></a>
-    <a class="scorecard" href="#reading"><small>St. Louis baseball</small><strong>Lankford<br><i>Legends</i></strong><span>Read the collection ↗</span></a>
-    <a class="recipe" href="#everyday"><img src="/faded-recipes/assets/biscuit-card.webp" width="1152" height="730" alt="Handwritten biscuit recipe — explore the everyday collection"></a>
-  </div>
-</section>
-<nav id="apps" class="contents" aria-label="Collections"><a href="#photography">Photography <span aria-hidden="true">↘</span></a><a href="#everyday">Everyday life <span aria-hidden="true">↘</span></a><a href="#reading">Reading &amp; writing <span aria-hidden="true">↘</span></a><a href="#desk">Desk tools <span aria-hidden="true">↘</span></a></nav>
-<section id="photography" class="chapter photography" aria-labelledby="photography-title">
-  <header class="chapter-head"><div><p class="subject">Photography</p><h2 id="photography-title">Behind the lens</h2></div><p>A shoot keeps going after the camera goes back in the bag. These are my tools for bringing the files home, getting them in order, and giving the pictures somewhere to live.</p></header>
-  <div class="projects">
-    <article class="feature">
+<body>
+<a class="skip" href="#apps">Skip to projects</a>
+<main id="main">
+  <header class="rail" id="about">
+    <div>
+      <h1>Brian <br>Renshaw<span>.</span></h1>
+      <p>I build apps for everyday tasks and write about baseball and books.</p>
+      <nav aria-label="Portfolio"><a href="#apps">Project gallery</a><a href="#more">Project index <span aria-hidden="true">↘</span></a></nav>
+    </div>
+    <a class="contact" href="mailto:contact@brianrenshaw.app">Get in touch ↗</a>
+  </header>
+  <div class="work">
+  <section id="apps" aria-labelledby="gallery-title">
+    <h2 class="label" id="gallery-title">Project gallery</h2>
+    <article class="feature" style="--project-color: #ff956e">
       <a href="/ingest/" class="feature-link" aria-label="Explore Ingest">
         <div class="artwork sand"><img src="/assets/featured-ingest-0.9.8.webp" fetchpriority="high" alt="Ingest on a MacBook showing a wedding shoot."></div>
       </a>
@@ -53,7 +49,7 @@
         <div class="project-actions"><a class="get-project" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/ingest-v0.9.9.12/Ingest-0.9.9.12.dmg" aria-label="Ingest: Download for Mac">Download for Mac</a> <a class="learn" href="/ingest/" aria-label="Learn more about Ingest">Learn more <span aria-hidden="true">↗</span></a></div>
       </div>
     </article>
-    <article class="feature">
+    <article class="feature" style="--project-color: #8b98ff">
       <a href="/decks/" class="feature-link" aria-label="Explore Decks">
         <div class="artwork sky"><img src="/assets/featured-decks-devices-build148.webp" loading="lazy" alt="Photo layouts in Decks on iPhone, iPad, and Mac."></div>
       </a>
@@ -63,19 +59,17 @@
         <div class="project-actions"><a class="get-project" href="https://apps.apple.com/app/id6817408326" aria-label="Decks: Download on the App Store">Download on the App Store</a> <a class="learn" href="/decks/" aria-label="Learn more about Decks">Learn more <span aria-hidden="true">↗</span></a></div>
       </div>
     </article>
-    <article class="feature">
-      <a href="/walkthrough/" class="feature-link" aria-label="Explore Walkthrough">
-        <div class="artwork sky">
-          <img src="/walkthrough/assets/macbook-workspace-1.4.2.webp" loading="lazy" decoding="async" alt="">
-        </div>
+    <article class="feature" style="--project-color: #f6bc57">
+      <a href="/faded-recipes/" class="feature-link" aria-label="Explore Faded Recipes">
+        <div class="artwork sage"><img src="/faded-recipes/assets/biscuit-card.webp" loading="lazy" alt="A handwritten family recipe for buttermilk biscuits."></div>
       </a>
       <div class="caption">
-        <h3>Walkthrough</h3><small class="platform">Mac</small>
-        <p>Group listing photos by room and rename the whole shoot.</p>
-        <div class="project-actions"><a class="get-project" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.6.0/Walkthrough-1.6.0.dmg" aria-label="Walkthrough: Download for Mac">Download for Mac</a> <a class="learn" href="/walkthrough/" aria-label="Learn more about Walkthrough">Learn more <span aria-hidden="true">↗</span></a></div>
+        <h3>Faded Recipes</h3><small class="platform">iPhone, iPad &amp; Mac · Coming soon</small>
+        <p>Keep the handwriting behind your family recipes.</p>
+        <div class="project-actions"><a class="learn" href="/faded-recipes/" aria-label="Learn more about Faded Recipes">Learn more <span aria-hidden="true">↗</span></a></div>
       </div>
     </article>
-    <article class="feature">
+    <article class="feature" style="--project-color: #b8d857">
       <a href="/smooshed/" class="feature-link" aria-label="Explore Smooshed">
         <div class="artwork sand">
           <img src="/smooshed/assets/window.webp" loading="lazy" decoding="async" alt="">
@@ -87,73 +81,7 @@
         <div class="project-actions"><a class="get-project" href="/smooshed/releases/Smooshed-1.0.2.dmg" aria-label="Smooshed: Download for Mac">Download for Mac</a> <a class="learn" href="/smooshed/" aria-label="Learn more about Smooshed">Learn more <span aria-hidden="true">↗</span></a></div>
       </div>
     </article>
-  </div>
-</section>
-<section id="everyday" class="chapter everyday" aria-labelledby="everyday-title">
-  <header class="chapter-head"><div><p class="subject">Everyday life</p><h2 id="everyday-title">Day to day</h2></div><p>A biscuit recipe in familiar handwriting. A place worth saving. The question of who goes first. Small parts of a day have a way of turning into apps.</p></header>
-  <div class="projects">
-    <article class="feature">
-      <a href="/faded-recipes/" class="feature-link" aria-label="Explore Faded Recipes">
-        <div class="artwork sage"><img src="/faded-recipes/assets/biscuit-card.webp" loading="lazy" alt="A handwritten family recipe for buttermilk biscuits."></div>
-      </a>
-      <div class="caption">
-        <h3>Faded Recipes</h3><small class="platform">iPhone, iPad &amp; Mac · Coming soon</small>
-        <p>Keep the handwriting behind your family recipes.</p>
-        <div class="project-actions"><a class="learn" href="/faded-recipes/" aria-label="Learn more about Faded Recipes">Learn more <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </article>
-    <article class="feature">
-      <a href="https://nearaboutapp.com/" class="feature-link" aria-label="Explore Nearabout">
-        <div class="artwork sage">
-          <img src="/nearabout/assets/mac-list-v1.webp" loading="lazy" decoding="async" alt="">
-        </div>
-      </a>
-      <div class="caption">
-        <h3>Nearabout</h3><small class="platform">iPhone, iPad &amp; Mac</small>
-        <p>Save places you want to visit and see them together on a map.</p>
-        <div class="project-actions"><a class="get-project" href="https://testflight.apple.com/join/prASAccF" aria-label="Nearabout: Join TestFlight">Join TestFlight</a> <a class="learn" href="https://nearaboutapp.com/" aria-label="Learn more about Nearabout">Learn more <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </article>
-    <article class="feature">
-      <a href="/where-do-we-eat/" class="feature-link" aria-label="Explore Where Do We Eat">
-        <div class="artwork sand pair">
-          <img src="/where-do-we-eat/assets/work-lunch-decide.png" loading="lazy" decoding="async" alt="">
-          <img src="/where-do-we-eat/assets/work-lunch-choices.png" loading="lazy" decoding="async" alt="">
-        </div>
-      </a>
-      <div class="caption">
-        <h3>Where Do We Eat</h3><small class="platform">iPhone &amp; iPad</small>
-        <p>Narrow your saved restaurants down to three choices.</p>
-        <div class="project-actions"><a class="get-project" href="https://apps.apple.com/app/id6808350718" aria-label="Where Do We Eat: Download on the App Store">Download on the App Store</a> <a class="learn" href="/where-do-we-eat/" aria-label="Learn more about Where Do We Eat">Learn more <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </article>
-    <article class="feature">
-      <a href="/whos-first/" class="feature-link" aria-label="Explore Who’s First?">
-        <div class="artwork sand pair">
-          <img src="/whos-first/assets/chooser-current.webp" loading="lazy" decoding="async" alt="">
-          <img src="/whos-first/assets/tap-in-current.webp" loading="lazy" decoding="async" alt="">
-        </div>
-      </a>
-      <div class="caption">
-        <h3>Who’s First?</h3><small class="platform">iPhone &amp; iPad</small>
-        <p>Pick a starting player by putting your fingers on the screen.</p>
-        <div class="project-actions"><a class="get-project" href="https://apps.apple.com/app/id6806757289" aria-label="Who’s First?: Download on the App Store">Download on the App Store</a> <a class="learn" href="/whos-first/" aria-label="Learn more about Who’s First?">Learn more <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </article>
-    <article class="feature">
-      <a href="/canceled/" class="feature-link" aria-label="Explore Canceled">
-        <div class="artwork sand pair">
-          <img src="/canceled/assets/invite.png" loading="lazy" decoding="async" alt="">
-          <img src="/canceled/assets/reveal.png" loading="lazy" decoding="async" alt="">
-        </div>
-      </a>
-      <div class="caption">
-        <h3>Canceled</h3><small class="platform">iPhone &amp; iPad · In development</small>
-        <p>Find out when you and a friend both want to call off a plan.</p>
-        <div class="project-actions"><a class="learn" href="/canceled/" aria-label="Learn more about Canceled">Learn more <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </article>
-    <article class="feature">
+    <article class="feature" style="--project-color: #5fd1bc">
       <a href="/robot-health/" class="feature-link" aria-label="Explore Robot Health">
         <div class="artwork sky pair">
           <img src="/robot-health/assets/today.webp" loading="lazy" decoding="async" alt="">
@@ -166,64 +94,7 @@
         <div class="project-actions"><a class="get-project" href="https://testflight.apple.com/join/PKjS72Q9" aria-label="Robot Health: Join TestFlight">Join TestFlight</a> <a class="learn" href="/robot-health/" aria-label="Learn more about Robot Health">Learn more <span aria-hidden="true">↗</span></a></div>
       </div>
     </article>
-  </div>
-</section>
-<section id="reading" class="chapter reading" aria-labelledby="reading-title">
-  <header class="chapter-head"><div><p class="subject">Reading &amp; writing</p><h2 id="reading-title">In the margins</h2></div><p>I keep track of what I read, look up the books people mention on podcasts, and follow the Cardinals one game at a time.</p></header>
-  <div class="projects">
-    <article class="feature">
-      <a href="https://lankfordlegends.co/" class="feature-link" aria-label="Explore Lankford Legends">
-        <div class="artwork baseball"><div class="ball-mark" aria-hidden="true">Lankford<br><i>Legends</i></div></div>
-      </a>
-      <div class="caption">
-        <h3>Lankford Legends</h3><small class="platform">Web</small>
-        <p>Catch up on the Cardinals and the rest of Major League Baseball.</p>
-        <div class="project-actions"><a class="get-project" href="https://lankfordlegends.co/" aria-label="Lankford Legends: Read the blog">Read the blog</a></div>
-      </div>
-    </article>
-    <article class="feature">
-      <a href="https://www.whatdidtheyread.com/" class="feature-link" aria-label="Explore What Did They Read?">
-        <div class="artwork sage emblem">
-          <img src="/assets/what-did-they-read.svg" loading="lazy" decoding="async" alt="">
-        </div>
-      </a>
-      <div class="caption">
-        <h3>What Did They Read?</h3><small class="platform">Web</small>
-        <p>Find books mentioned on podcasts and the conversations behind them.</p>
-        <div class="project-actions"><a class="get-project" href="https://www.whatdidtheyread.com/books" aria-label="What Did They Read?: Browse books">Browse books</a> <a class="learn" href="https://www.whatdidtheyread.com/" aria-label="Learn more about What Did They Read?">Learn more <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </article>
-    <article class="feature">
-      <a href="/reading-habit/" class="feature-link" aria-label="Explore Reading Habit">
-        <div class="artwork sage pair">
-          <img src="/reading-habit/assets/v1-0-1-phone-journal.webp" loading="lazy" decoding="async" alt="">
-          <img src="/reading-habit/assets/v1-0-1-phone-library.webp" loading="lazy" decoding="async" alt="">
-        </div>
-      </a>
-      <div class="caption">
-        <h3>Reading Habit</h3><small class="platform">iPhone &amp; iPad</small>
-        <p>Log a day of reading and follow your progress book by book.</p>
-        <div class="project-actions"><a class="get-project" href="https://apps.apple.com/app/id6809740339" aria-label="Reading Habit: Download on the App Store">Download on the App Store</a> <a class="learn" href="/reading-habit/" aria-label="Learn more about Reading Habit">Learn more <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </article>
-  </div>
-</section>
-<section id="desk" class="chapter desk" aria-labelledby="desk-title">
-  <header class="chapter-head"><div><p class="subject">Desk tools</p><h2 id="desk-title">At my desk</h2></div><p>A note I need to park, a screenshot that explains a bug, a report I want to carry with me. These tools started with the work in front of me.</p></header>
-  <div class="projects">
-    <article class="feature">
-      <a href="/valetnotes/" class="feature-link" aria-label="Explore Valet Notes">
-        <div class="artwork sand">
-          <img src="/valetnotes/assets/responsive/build22-framed-mac-drawer-dccf199c68-1600.webp" loading="lazy" decoding="async" alt="">
-        </div>
-      </a>
-      <div class="caption">
-        <h3>Valet Notes</h3><small class="platform">iPhone &amp; iPad beta · Mac pending</small>
-        <p>Keep notes within reach in a drawer at the top of your Mac.</p>
-        <div class="project-actions"><a class="get-project" href="https://testflight.apple.com/join/5q8jNw2F" aria-label="Valet Notes: Join TestFlight">Join TestFlight</a> <a class="learn" href="/valetnotes/" aria-label="Learn more about Valet Notes">Learn more <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </article>
-    <article class="feature">
+    <article class="feature" style="--project-color: #bd95f4">
       <a href="/codeshot/" class="feature-link" aria-label="Explore CodeShot">
         <div class="artwork sky">
           <img src="/codeshot/assets/capture-note.webp" loading="lazy" decoding="async" alt="">
@@ -235,7 +106,31 @@
         <div class="project-actions"><a class="get-project" href="https://github.com/brianrenshaw/code-shot/releases/latest/download/CodeShot.dmg" aria-label="CodeShot: Download for Mac">Download for Mac</a> <a class="learn" href="/codeshot/" aria-label="Learn more about CodeShot">Learn more <span aria-hidden="true">↗</span></a></div>
       </div>
     </article>
-    <article class="feature">
+    <article class="feature" style="--project-color: #76c7a3">
+      <a href="https://nearaboutapp.com/" class="feature-link" aria-label="Explore Nearabout">
+        <div class="artwork sage">
+          <img src="/nearabout/assets/mac-list-v1.webp" loading="lazy" decoding="async" alt="">
+        </div>
+      </a>
+      <div class="caption">
+        <h3>Nearabout</h3><small class="platform">iPhone, iPad &amp; Mac</small>
+        <p>Save places you want to visit and see them together on a map.</p>
+        <div class="project-actions"><a class="get-project" href="https://testflight.apple.com/join/prASAccF" aria-label="Nearabout: Join TestFlight">Join TestFlight</a> <a class="learn" href="https://nearaboutapp.com/" aria-label="Learn more about Nearabout">Learn more <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+    <article class="feature" style="--project-color: #dbacfa">
+      <a href="/valetnotes/" class="feature-link" aria-label="Explore Valet Notes">
+        <div class="artwork sand">
+          <img src="/valetnotes/assets/responsive/build22-framed-mac-drawer-dccf199c68-1600.webp" loading="lazy" decoding="async" alt="">
+        </div>
+      </a>
+      <div class="caption">
+        <h3>Valet Notes</h3><small class="platform">iPhone &amp; iPad beta · Mac pending</small>
+        <p>Keep notes within reach in a drawer at the top of your Mac.</p>
+        <div class="project-actions"><a class="get-project" href="https://testflight.apple.com/join/5q8jNw2F" aria-label="Valet Notes: Join TestFlight">Join TestFlight</a> <a class="learn" href="/valetnotes/" aria-label="Learn more about Valet Notes">Learn more <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+    <article class="feature" style="--project-color: #76c7ff">
       <a href="/folio/" class="feature-link" aria-label="Explore Folio">
         <div class="artwork sky pair">
           <img src="/folio/assets/screen-1.webp" loading="lazy" decoding="async" alt="">
@@ -248,7 +143,95 @@
         <div class="project-actions"><a class="get-project" href="https://apps.apple.com/app/id6803229706" aria-label="Folio: Download on the App Store">Download on the App Store</a> <a class="learn" href="/folio/" aria-label="Learn more about Folio">Learn more <span aria-hidden="true">↗</span></a></div>
       </div>
     </article>
-    <article class="feature">
+    <article class="feature" style="--project-color: #f7ab97">
+      <a href="/whos-first/" class="feature-link" aria-label="Explore Who’s First?">
+        <div class="artwork sand pair">
+          <img src="/whos-first/assets/chooser-current.webp" loading="lazy" decoding="async" alt="">
+          <img src="/whos-first/assets/tap-in-current.webp" loading="lazy" decoding="async" alt="">
+        </div>
+      </a>
+      <div class="caption">
+        <h3>Who’s First?</h3><small class="platform">iPhone &amp; iPad</small>
+        <p>Pick a starting player by putting your fingers on the screen.</p>
+        <div class="project-actions"><a class="get-project" href="https://apps.apple.com/app/id6806757289" aria-label="Who’s First?: Download on the App Store">Download on the App Store</a> <a class="learn" href="/whos-first/" aria-label="Learn more about Who’s First?">Learn more <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+    <article class="feature" style="--project-color: #b5d7a2">
+      <a href="/reading-habit/" class="feature-link" aria-label="Explore Reading Habit">
+        <div class="artwork sage pair">
+          <img src="/reading-habit/assets/v1-0-1-phone-journal.webp" loading="lazy" decoding="async" alt="">
+          <img src="/reading-habit/assets/v1-0-1-phone-library.webp" loading="lazy" decoding="async" alt="">
+        </div>
+      </a>
+      <div class="caption">
+        <h3>Reading Habit</h3><small class="platform">iPhone &amp; iPad</small>
+        <p>Log a day of reading and follow your progress book by book.</p>
+        <div class="project-actions"><a class="get-project" href="https://apps.apple.com/app/id6809740339" aria-label="Reading Habit: Download on the App Store">Download on the App Store</a> <a class="learn" href="/reading-habit/" aria-label="Learn more about Reading Habit">Learn more <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+    <article class="feature" style="--project-color: #ffca67">
+      <a href="/where-do-we-eat/" class="feature-link" aria-label="Explore Where Do We Eat">
+        <div class="artwork sand pair">
+          <img src="/where-do-we-eat/assets/work-lunch-decide.png" loading="lazy" decoding="async" alt="">
+          <img src="/where-do-we-eat/assets/work-lunch-choices.png" loading="lazy" decoding="async" alt="">
+        </div>
+      </a>
+      <div class="caption">
+        <h3>Where Do We Eat</h3><small class="platform">iPhone &amp; iPad</small>
+        <p>Narrow your saved restaurants down to three choices.</p>
+        <div class="project-actions"><a class="get-project" href="https://apps.apple.com/app/id6808350718" aria-label="Where Do We Eat: Download on the App Store">Download on the App Store</a> <a class="learn" href="/where-do-we-eat/" aria-label="Learn more about Where Do We Eat">Learn more <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+    <article class="feature" style="--project-color: #ff8c88">
+      <a href="/canceled/" class="feature-link" aria-label="Explore Canceled">
+        <div class="artwork sand pair">
+          <img src="/canceled/assets/invite.png" loading="lazy" decoding="async" alt="">
+          <img src="/canceled/assets/reveal.png" loading="lazy" decoding="async" alt="">
+        </div>
+      </a>
+      <div class="caption">
+        <h3>Canceled</h3><small class="platform">iPhone &amp; iPad · In development</small>
+        <p>Find out when you and a friend both want to call off a plan.</p>
+        <div class="project-actions"><a class="learn" href="/canceled/" aria-label="Learn more about Canceled">Learn more <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+    <article class="feature" style="--project-color: #8dc8c5">
+      <a href="/walkthrough/" class="feature-link" aria-label="Explore Walkthrough">
+        <div class="artwork sky">
+          <img src="/walkthrough/assets/macbook-workspace-1.4.2.webp" loading="lazy" decoding="async" alt="">
+        </div>
+      </a>
+      <div class="caption">
+        <h3>Walkthrough</h3><small class="platform">Mac</small>
+        <p>Group listing photos by room and rename the whole shoot.</p>
+        <div class="project-actions"><a class="get-project" href="https://github.com/brianrenshaw/brianrenshaw-app-site/releases/download/listing-namer-v1.6.0/Walkthrough-1.6.0.dmg" aria-label="Walkthrough: Download for Mac">Download for Mac</a> <a class="learn" href="/walkthrough/" aria-label="Learn more about Walkthrough">Learn more <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+    <article class="feature" style="--project-color: #ef8d96">
+      <a href="https://lankfordlegends.co/" class="feature-link" aria-label="Explore Lankford Legends">
+        <div class="artwork sand emblem">
+          <img src="/assets/lankford-legends.svg" loading="lazy" decoding="async" alt="">
+        </div>
+      </a>
+      <div class="caption">
+        <h3>Lankford Legends</h3><small class="platform">Web</small>
+        <p>Catch up on the Cardinals and the rest of Major League Baseball.</p>
+        <div class="project-actions"><a class="get-project" href="https://lankfordlegends.co/" aria-label="Lankford Legends: Read the blog">Read the blog</a></div>
+      </div>
+    </article>
+    <article class="feature" style="--project-color: #c2afed">
+      <a href="https://www.whatdidtheyread.com/" class="feature-link" aria-label="Explore What Did They Read?">
+        <div class="artwork sage emblem">
+          <img src="/assets/what-did-they-read.svg" loading="lazy" decoding="async" alt="">
+        </div>
+      </a>
+      <div class="caption">
+        <h3>What Did They Read?</h3><small class="platform">Web</small>
+        <p>Find books mentioned on podcasts and the conversations behind them.</p>
+        <div class="project-actions"><a class="get-project" href="https://www.whatdidtheyread.com/books" aria-label="What Did They Read?: Browse books">Browse books</a> <a class="learn" href="https://www.whatdidtheyread.com/" aria-label="Learn more about What Did They Read?">Learn more <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+    <article class="feature" style="--project-color: #88d9bc">
       <a href="/spreadsheet-tools/" class="feature-link" aria-label="Explore Spreadsheet Tools">
         <div class="artwork sky emblem">
           <img src="/assets/spreadsheet-tools.svg" loading="lazy" decoding="async" alt="">
@@ -260,8 +243,8 @@
         <div class="project-actions"><a class="get-project" href="/spreadsheet-tools/" aria-label="Spreadsheet Tools: Open the tools">Open the tools</a> <a class="learn" href="https://github.com/brianrenshaw/spreadsheet-scripts" aria-label="Learn more about Spreadsheet Tools">Learn more <span aria-hidden="true">↗</span></a></div>
       </div>
     </article>
-  </div>
-</section>  <section id="more" aria-labelledby="index-title">
+  </section>
+  <section id="more" aria-labelledby="index-title">
     <h2 id="index-title">Project index</h2>
     <div class="project-browser" hidden>
       <div class="filters" role="group" aria-label="Filter the project index">
@@ -292,7 +275,8 @@
       <li id="utilities" data-category="web"><a href="/spreadsheet-tools/"><img src="/assets/spreadsheet-tools.svg?v=2" width="34" height="34" loading="lazy" alt=""><strong>Spreadsheet Tools</strong><small>Web</small><span aria-hidden="true">↗</span></a></li>
     </ul>
   </section>
+  <footer>© 2026 Brian Renshaw <a href="#main">Back to top ↑</a></footer>
+  </div>
 </main>
-<footer><a class="signature" href="#main">Brian Renshaw</a><a href="mailto:contact@brianrenshaw.app">contact@brianrenshaw.app</a><a href="#main">Back to top ↑</a></footer>
 </body>
 </html>
