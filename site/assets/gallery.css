@@ -5,8 +5,8 @@
   font-display: swap;
 }
 :root {
-  color: #251938;
-  background: #fff8ee;
+  color: #292923;
+  background: #f7f6f1;
   font: 100%/1.5 Archivo, system-ui, sans-serif;
   --muted: #62625a;
   --rule: #d4d3ca;
@@ -22,7 +22,7 @@ main {
   max-width: 1600px;
   margin: auto;
   display: grid;
-  grid-template-columns: minmax(15rem, 1fr) minmax(0, 2.2fr);
+  grid-template-columns: minmax(12rem, 1fr) minmax(0, 2.2fr);
   gap: clamp(2rem, 6vw, 7rem);
   padding-inline: clamp(1.25rem, 5vw, 6rem);
 }
@@ -45,7 +45,9 @@ nav a, .contact { padding-block: .3rem; font-weight: 550; }
 .feature-link:hover h3 { text-decoration: underline; text-underline-offset: .12em; }
 .artwork { aspect-ratio: 1.65; display: grid; place-items: center; overflow: hidden; border-radius: .45rem; }
 .artwork img { width: 91%; height: 91%; object-fit: contain; }
-.artwork { background: linear-gradient(145deg, color-mix(in srgb, var(--project-color) 74%, white), var(--project-color) 62%, color-mix(in srgb, var(--project-color) 85%, #322451)); }
+.sand { background: #e0d9ce; }
+.sky { background: #d7e2e7; }
+.sage { background: #dce1d4; }
 .sage img { width: 75%; height: 82%; filter: drop-shadow(0 .6rem .7rem #31352726); }
 .caption { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: .1rem 1rem; padding-top: .9rem; }
 .caption h3, #index-title { font-size: clamp(1.65rem, 3vw, 3rem); line-height: 1.15; letter-spacing: -.055em; }
@@ -58,7 +60,7 @@ nav a, .contact { padding-block: .3rem; font-weight: 550; }
   .caption { grid-template-columns: 1fr; gap: .35rem; }
 }
 .caption p { color: var(--muted); grid-column: 1/-1; }
-@media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
+@media (min-width: 680px) and (prefers-reduced-motion: no-preference) {
   @supports (animation-timeline: view()) {
     .artwork {
       animation: roll linear both;
@@ -83,7 +85,7 @@ li a { display: grid; grid-template-columns: auto 1fr auto auto; align-items: ce
 li img { object-fit: contain; border-radius: .4rem; }
 small, footer { color: var(--muted); }
 footer { display: flex; justify-content: space-between; border-top: 1px solid var(--rule); padding: 2rem 0; font-size: .85rem; }
-@media (max-width: 760px) {
+@media (max-width: 679px) {
   main { display: block; }
   .rail { position: static; height: auto; padding: 2rem 0; border-bottom: 1px solid var(--rule); }
   h1 { font-size: clamp(2.7rem, 10vw, 4rem); }
