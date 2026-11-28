@@ -14,7 +14,9 @@ screen width and placed below the menu bar area on a plain desktop. That is the 
 presentation, and the manifest says so.
 
 Usage:
-  build_valetnotes_assets.py --phone DIR --pad DIR --mac PNG --commit SHA
+  build_valetnotes_assets.py --phone DIR --pad DIR --mac PNG --commit SHA --build N
+
+Each build's files carry a build prefix, so replaced captures get fresh URLs.
 """
 import argparse
 import hashlib
@@ -29,9 +31,11 @@ p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDes
 for name in ['phone', 'pad', 'mac']:
     p.add_argument('--' + name, required=True, type=Path)
 p.add_argument('--commit', required=True)
+p.add_argument('--build', required=True)
 a = p.parse_args()
 sha = lambda path: hashlib.sha256(Path(path).read_bytes()).hexdigest()
 entries = []
+P = 'build%s-' % a.build
 TEST = 'WebsiteCaptureUITests.testWebsiteCaptures (capture-only test in an exported copy of the source)'
 
 
@@ -118,15 +122,15 @@ DEST.mkdir(parents=True, exist_ok=True)
 PHONE = ('oct06-framed-phone-camera.webp', 'oct06-phone-camera.webp', 'iPhone 17 Pro (simulator, iOS 27.0)')
 PAD = ('oct06-framed-builder.webp', 'oct06-next-ipad-builder-upright.webp', 'iPad Air 11-inch M4 (simulator, iOS 27.0), landscape')
 phone = by_name(a.phone)
-for shot in ['writing', 'commands', 'send-tasks']:
-    image = capture(phone[shot], 'phone-%s.webp' % shot, PHONE[2])
-    reframe(image, PHONE[0], PHONE[1], 'framed-phone-%s.webp' % shot, 'iPhone 17 Pro Portrait Silver', 'No resampling.')
+for shot in ['writing', 'space-actions', 'send-tasks']:
+    image = capture(phone[shot], P + 'phone-%s.webp' % shot, PHONE[2])
+    reframe(image, PHONE[0], PHONE[1], P + 'framed-phone-%s.webp' % shot, 'iPhone 17 Pro Portrait Silver', 'No resampling.')
 pad = by_name(a.pad)
-image = capture(pad['writing'], 'pad-writing.webp', PAD[2], rotate=90)
-reframe(image, PAD[0], PAD[1], 'framed-pad-writing.webp', 'iPad Air 2020 Landscape', 'No resampling.')
+image = capture(pad['writing'], P + 'pad-writing.webp', PAD[2], rotate=90)
+reframe(image, PAD[0], PAD[1], P + 'framed-pad-writing.webp', 'iPad Air 2020 Landscape', 'No resampling.')
 
 drawer = Image.open(a.mac).convert('RGBA')
-target = save(drawer, 'mac-drawer.webp')
+target = save(drawer, P + 'mac-drawer.webp')
 entries.append(dict(file=target.name, kind='native-screenshot', width=drawer.width, height=drawer.height, source=a.mac.name,
                     sourceSha256=sha(a.mac), sha256=sha(target), sourceCommit=a.commit,
                     device='Mac (Apple silicon), TopDrawerMac Debug build, 2056-point-wide display',
@@ -134,10 +138,10 @@ entries.append(dict(file=target.name, kind='native-screenshot', width=drawer.wid
                          '-appearanceTheme classic',
                     transformation='lossless WebP; decoded pixels equal the window capture'))
 half = drawer.crop((0, 0, drawer.width // 2, drawer.height))
-target = save(half, 'mac-drawer-first-spaces.webp')
-entries.append(dict(file=target.name, kind='native-screenshot-crop', width=half.width, height=half.height, source='mac-drawer.webp',
-                    sha256=sha(target), transformation='left half of mac-drawer.webp, spaces 1 and 2; no resampling'))
-reframe(mac_screen(drawer),'oct06-framed-mac.webp', 'oct06-mac.webp', 'framed-mac-drawer.webp', 'MacBook Pro M5 14 Silver',
+target = save(half, P + 'mac-drawer-first-spaces.webp')
+entries.append(dict(file=target.name, kind='native-screenshot-crop', width=half.width, height=half.height, source=P + 'mac-drawer.webp',
+                    sha256=sha(target), transformation='left half of the drawer capture, spaces 1 and 2; no resampling'))
+reframe(mac_screen(drawer),'oct06-framed-mac.webp', 'oct06-mac.webp', P + 'framed-mac-drawer.webp', 'MacBook Pro M5 14 Silver',
         'The drawer was scaled from %d to 3024 pixels wide to fit this screen and placed below the menu bar area on a '
         'plain green desktop; no other interface was added.' % drawer.width)
 
@@ -145,11 +149,11 @@ reframe(mac_screen(drawer),'oct06-framed-mac.webp', 'oct06-mac.webp', 'framed-ma
 
 # Share image: the hero arrangement on the page's paper color, 1200 x 630.
 social = Image.new('RGBA', (1200, 630), '#f5f2ea')
-for name, share, left, right, bottom in [('framed-mac-drawer.webp', .80, .10, None, .08), ('framed-pad-writing.webp', .46, None, .04, .03),
-                                         ('framed-phone-writing.webp', .21, .04, None, .03)]:
+for name, share, left, right, bottom in [(P + 'framed-mac-drawer.webp', .80, .10, None, .08), (P + 'framed-pad-writing.webp', .46, None, .04, .03),
+                                         (P + 'framed-phone-writing.webp', .21, .04, None, .03)]:
     art = Image.open(DEST / name).convert('RGBA')
     width = round(1200 * share)
     art = art.resize((width, round(art.height * width / art.width)), Image.Resampling.LANCZOS)
     x = round(1200 * left) if left is not None else 1200 - width - round(1200 * right)
     social.alpha_composite(art, (x, 630 - art.height - round(630 * bottom)))
-social.convert('RGB').save(DEST / 'social.png', optimize=True)
+social.convert('RGB').save(DEST / (P + 'social.png'), optimize=True)

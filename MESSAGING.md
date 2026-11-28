@@ -548,7 +548,7 @@ Added at Brian's request at `/valetnotes/`, following the Decks layout with iPho
 
 **Problem:** Some writing only needs to last a day or two, and filing each note takes longer than writing it.
 
-**Headline:** Park your notes until you know where they go. The valet idea is the product: notes wait in a space until they are sent on or archived.
+**Headline:** Park your notes until they’re ready to go. (Changed October 22, 2026 from “until you know where they go.”) The valet idea is the product: notes wait in a space until they are sent on or archived. Do not state a fixed number of spaces: fresh installs create four and people add more. The Mac drawer shows four at a time, and Command with a space’s number jumps to it.
 
 **Plan:** Write it down. Leave it parked. Send it on.
 
@@ -556,5 +556,7 @@ Added at Brian's request at `/valetnotes/`, following the Decks layout with iPho
 
 **Priorities, in order:** Quick writing in named, colored spaces. Sending a note to the app where it belongs, or archiving it. The Mac drawer. Then archiving, the share extension, widgets, and Shortcuts as short supporting details.
 
-**Factual boundaries:** The public TestFlight beta is iPhone and iPad only; the Mac app is in private testing. Send to Drafts and Send tasks archive the sent text only after the other app confirms the save; Apple Notes, Obsidian, and Quick Draft keep the note. Quick Draft needs Quick Draft Pro. Automatic archiving defaults to 14 days and can be 7, 30, or off. Do not promise sync speed: physical cross-device iCloud acceptance was still open in the app's `VALIDATION.md` on October 22, 2026. Do not describe the archive as a backup.
+**Factual boundaries:** The public TestFlight beta is open on iPhone and iPad; the build 22 Mac app awaits external beta approval on the same link. Send to Drafts and Send tasks archive the sent text only after the other app confirms the save; Apple Notes, Obsidian, and Quick Draft keep the note. Quick Draft needs Quick Draft Pro. Automatic archiving defaults to 14 days and can be 7, 30, or off. Do not promise sync speed: physical cross-device iCloud acceptance was still open in the app's `VALIDATION.md` on October 22, 2026. Do not describe the archive as a backup.
 
+
+**Use cases (Brian, October 22, 2026):** phone-call notes sent to Drafts, a running task inbox sent to a task manager at day's end, today's three things as a checklist, starting a longer piece, tracking project feedback, and collecting quotes from Safari. Position it as a companion to Drafts, Bear, Obsidian, iA Writer, and Ulysses: a place to start with a few dedicated spaces. Build 21 added Space Actions: each space sends to Drafts, Bear, Ulysses, iA Writer, Obsidian (including the daily note), its task app, or a Markdown folder, and Control–Option–Command–A runs them from any Mac app. Live Markdown hides syntax except where the cursor is. Say a send archives only after the app confirms the save; iA Writer sends are limited to 4,000 characters. The Safari quote capture is the iPhone and iPad share extension; the Mac has none.

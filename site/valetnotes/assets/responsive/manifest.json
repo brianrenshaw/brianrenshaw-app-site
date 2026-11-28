@@ -1,41 +1,41 @@
 {
-  "original_bytes": 1796308,
-  "fallback_bytes": 385160,
+  "original_bytes": 1980118,
+  "fallback_bytes": 386044,
   "distinct_images": 6,
   "quality": 90,
   "images": {
-    "valetnotes/assets/framed-mac-drawer.webp": [
-      "valetnotes/assets/responsive/framed-mac-drawer-1e1cef3824-480.webp",
-      "valetnotes/assets/responsive/framed-mac-drawer-1e1cef3824-960.webp",
-      "valetnotes/assets/responsive/framed-mac-drawer-1e1cef3824-1600.webp",
-      "valetnotes/assets/responsive/framed-mac-drawer-1e1cef3824-2400.webp"
+    "valetnotes/assets/build22-framed-mac-drawer.webp": [
+      "valetnotes/assets/responsive/build22-framed-mac-drawer-dccf199c68-480.webp",
+      "valetnotes/assets/responsive/build22-framed-mac-drawer-dccf199c68-960.webp",
+      "valetnotes/assets/responsive/build22-framed-mac-drawer-dccf199c68-1600.webp",
+      "valetnotes/assets/responsive/build22-framed-mac-drawer-dccf199c68-2400.webp"
     ],
-    "valetnotes/assets/framed-pad-writing.webp": [
-      "valetnotes/assets/responsive/framed-pad-writing-baeff4b8d7-480.webp",
-      "valetnotes/assets/responsive/framed-pad-writing-baeff4b8d7-960.webp",
-      "valetnotes/assets/responsive/framed-pad-writing-baeff4b8d7-1600.webp",
-      "valetnotes/assets/responsive/framed-pad-writing-baeff4b8d7-2400.webp"
+    "valetnotes/assets/build22-framed-pad-writing.webp": [
+      "valetnotes/assets/responsive/build22-framed-pad-writing-34c4d509bd-480.webp",
+      "valetnotes/assets/responsive/build22-framed-pad-writing-34c4d509bd-960.webp",
+      "valetnotes/assets/responsive/build22-framed-pad-writing-34c4d509bd-1600.webp",
+      "valetnotes/assets/responsive/build22-framed-pad-writing-34c4d509bd-2400.webp"
     ],
-    "valetnotes/assets/framed-phone-commands.webp": [
-      "valetnotes/assets/responsive/framed-phone-commands-386599be28-480.webp",
-      "valetnotes/assets/responsive/framed-phone-commands-386599be28-960.webp",
-      "valetnotes/assets/responsive/framed-phone-commands-386599be28-1350.webp"
+    "valetnotes/assets/build22-framed-phone-send-tasks.webp": [
+      "valetnotes/assets/responsive/build22-framed-phone-send-tasks-43c067c801-480.webp",
+      "valetnotes/assets/responsive/build22-framed-phone-send-tasks-43c067c801-960.webp",
+      "valetnotes/assets/responsive/build22-framed-phone-send-tasks-43c067c801-1350.webp"
     ],
-    "valetnotes/assets/framed-phone-send-tasks.webp": [
-      "valetnotes/assets/responsive/framed-phone-send-tasks-baf7ebc82e-480.webp",
-      "valetnotes/assets/responsive/framed-phone-send-tasks-baf7ebc82e-960.webp",
-      "valetnotes/assets/responsive/framed-phone-send-tasks-baf7ebc82e-1350.webp"
+    "valetnotes/assets/build22-framed-phone-space-actions.webp": [
+      "valetnotes/assets/responsive/build22-framed-phone-space-actions-d8cf4c01b2-480.webp",
+      "valetnotes/assets/responsive/build22-framed-phone-space-actions-d8cf4c01b2-960.webp",
+      "valetnotes/assets/responsive/build22-framed-phone-space-actions-d8cf4c01b2-1350.webp"
     ],
-    "valetnotes/assets/framed-phone-writing.webp": [
-      "valetnotes/assets/responsive/framed-phone-writing-61b34f22f3-480.webp",
-      "valetnotes/assets/responsive/framed-phone-writing-61b34f22f3-960.webp",
-      "valetnotes/assets/responsive/framed-phone-writing-61b34f22f3-1350.webp"
+    "valetnotes/assets/build22-framed-phone-writing.webp": [
+      "valetnotes/assets/responsive/build22-framed-phone-writing-f15c47e113-480.webp",
+      "valetnotes/assets/responsive/build22-framed-phone-writing-f15c47e113-960.webp",
+      "valetnotes/assets/responsive/build22-framed-phone-writing-f15c47e113-1350.webp"
     ],
-    "valetnotes/assets/mac-drawer-first-spaces.webp": [
-      "valetnotes/assets/responsive/mac-drawer-first-spaces-0ec08fa318-480.webp",
-      "valetnotes/assets/responsive/mac-drawer-first-spaces-0ec08fa318-960.webp",
-      "valetnotes/assets/responsive/mac-drawer-first-spaces-0ec08fa318-1600.webp",
-      "valetnotes/assets/responsive/mac-drawer-first-spaces-0ec08fa318-2056.webp"
+    "valetnotes/assets/build22-mac-drawer-first-spaces.webp": [
+      "valetnotes/assets/responsive/build22-mac-drawer-first-spaces-f94b13c7c0-480.webp",
+      "valetnotes/assets/responsive/build22-mac-drawer-first-spaces-f94b13c7c0-960.webp",
+      "valetnotes/assets/responsive/build22-mac-drawer-first-spaces-f94b13c7c0-1600.webp",
+      "valetnotes/assets/responsive/build22-mac-drawer-first-spaces-f94b13c7c0-2056.webp"
     ]
   }
 }
