@@ -55,12 +55,10 @@ privacy section discloses performance and page-view measurement.
 
 ## Availability
 
-On October 18, 2026 the public invitation at https://testflight.apple.com/join/prASAccF
-showed the join steps, so the site invites visitors to the beta. Version 1.0 was prepared
-for App Store review the same day, with the Unlimited Lists one-time purchase. The site says
-"coming to the App Store" until Apple approves it; then replace the TestFlight calls to action
-with https://apps.apple.com/app/id6823391953 and remove the beta wording, as was done for
-Where Do We Eat. Do not link the App Store page before the release is live.
+Nearabout 1.0 is available on the App Store at https://apps.apple.com/app/id6823391953.
+Verified November 28, 2026 through Apple's public lookup API, which reports an
+October 30, 2026 release date. The portfolio, product page, and support page now
+link to the App Store instead of promoting the TestFlight beta.
 
 Pricing copy: free with three saved lists, unlimited places per list; Unlimited Lists is a
 one-time purchase across iPhone, iPad, and Mac, not a subscription. The price is shown by the
