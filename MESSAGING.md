@@ -68,7 +68,7 @@ The Mobbin-informed homepage retains “Apps and tools by Brian Renshaw.” and 
 
 **Headline:** Choose who goes first. Get on with the game.
 
-**Supporting copy:** Quickly and fairly pick your first player. Use fingers on the screen for up to five people, or choose a mode with room for a larger group.
+**Supporting copy:** Fingers down, tap to join, or flick a pinball. Pick your first player fairly, with room for up to 50 people and fourteen illustrated worlds to suit your game night.
 
 **Priority:** Choose the first player quickly and fairly. Include the whole group: Chooser for two to five fingers, Tap In for up to 50 people, Pinball for two to twelve seats.
 
@@ -560,3 +560,9 @@ Added at Brian's request at `/valetnotes/`, following the Decks layout with iPho
 
 
 **Use cases (Brian, October 22, 2026):** phone-call notes sent to Drafts, a running task inbox sent to a task manager at day's end, today's three things as a checklist, starting a longer piece, tracking project feedback, and collecting quotes from Safari. Position it as a companion to Drafts, Bear, Obsidian, iA Writer, and Ulysses: a place to start with a few dedicated spaces. Build 21 added Space Actions: each space sends to Drafts, Bear, Ulysses, iA Writer, Obsidian (including the daily note), its task app, or a Markdown folder, and Control–Option–Command–A runs them from any Mac app. Live Markdown hides syntax except where the cursor is. Say a send archives only after the app confirms the save; iA Writer sends are limited to 4,000 characters. The Safari quote capture is the iPhone and iPad share extension; the Mac has none.
+
+### Who’s First? feature refresh, November 28, 2026
+
+Verified the public App Store lookup reports version 1.4.1. Landing and support copy now cover fourteen illustrated worlds, the one-tap Worlds picker, three-finger shuffle and VoiceOver equivalent, repeat rounds, launch defaults, and App Shortcuts. The fifteenth world, 13 Dead End Drive, remains excluded: the app repository records version 1.5 as prepared but not submitted. Updated the homepage summary and corrected privacy hosting to Cloudflare Pages.
+
+Replaced all displayed screenshots with the native version 1.4 (22) captures from app commit 381645c, including the illustrated boards, palette button, Pinball result, and Settings world collection. The earlier asset documentation was stale; the source PNGs had already been refreshed. See site/whos-first/assets/SOURCES.md for exact mappings. Feature evidence: sibling chooser-web-app README.md and NativeWorldPickerSheet.swift / ChooserRootView.swift.
