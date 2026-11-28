@@ -1,43 +1,30 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Import recipe photos with your own AI — Faded Recipes</title><meta name="description" content="Read a stack of recipe photos with ChatGPT, Claude, Gemini, or an AI agent on your computer, then bring every recipe into Faded Recipes at once with its photos. Export your whole library the same way.">
+<title>Import recipe photos with your own AI — Faded Recipes</title><meta name="description" content="Import recipe photos using ChatGPT, Claude, Gemini, or an AI agent on your computer.">
 <link rel="canonical" href="https://brianrenshaw.app/faded-recipes/import-with-ai/">
 <meta property="og:type" content="website"><meta property="og:title" content="Import recipe photos with your own AI — Faded Recipes">
-<meta property="og:description" content="Read a stack of recipe photos with ChatGPT, Claude, Gemini, or an AI agent on your computer, then bring every recipe into Faded Recipes at once with its photos. Export your whole library the same way."><meta property="og:url" content="https://brianrenshaw.app/faded-recipes/import-with-ai/">
+<meta property="og:description" content="Import recipe photos using ChatGPT, Claude, Gemini, or an AI agent on your computer."><meta property="og:url" content="https://brianrenshaw.app/faded-recipes/import-with-ai/">
 <meta property="og:image" content="https://brianrenshaw.app/faded-recipes/assets/biscuit-card.webp">
 <link rel="icon" href="/faded-recipes/assets/icon.png"><link rel="stylesheet" href="/faded-recipes/assets/recipe-box.css">
 </head><body><a class="skip" href="#main">Skip to content</a><div class="box">
 <nav class="tabs" aria-label="Main"><a href="/faded-recipes/">Faded Recipes</a><a href="/faded-recipes/#how-it-works">How it works</a><a href="/faded-recipes/import-with-ai/" aria-current="page">Import with AI</a><a href="/faded-recipes/privacy/">Privacy</a></nav>
 <main id="main"><article class="card first policy">
-<h1>Import a stack of recipe photos with your own AI</h1><div class="rule"></div>
-<p>Faded Recipes reads a card with Apple Intelligence when you scan it. If you have a shoebox of cards already photographed, you can have an AI you already use read them all, then bring every recipe into Faded at once. Each recipe keeps its photos as the reference card. Faded never connects to your AI account; you hand the AI the photos, and it writes one file that Faded reads.</p>
-<p>This works with a chat app like ChatGPT, Claude, or Gemini, or with an AI agent on your computer that can read and save files. Any AI that can read photos will do. Use the most capable model you have; handwriting is hard, and better models make fewer mistakes.</p>
-
-<h2>How it works</h2>
-<ol class="steps">
-<li><h3>Put the photos in one folder</h3><p>One photo per card side is fine. The front and back of a card can sit side by side; the AI keeps them together as one recipe.</p></li>
-<li><h3>Give your AI the folder and the prompt</h3><p>The prompt below asks it to copy each card exactly and save every recipe in one file, <strong>faded-import.json</strong>, in the same folder.</p></li>
-<li><h3>Choose the folder in Faded</h3><p>On the Mac, choose <strong>Add › Import with Your AI › Choose Folder</strong>, or <strong>File › Import with Your AI</strong>. Faded lists the recipes, then adds them all, each marked Check. On iPhone and iPad, see below.</p></li>
-</ol>
-
-<h2>With an AI agent on your computer</h2>
-<p>An AI agent that can work with files on your computer can do the whole job. Point it at the folder of photos and paste the prompt. The agent reads each photo, renames it after its recipe (tempting-apple-crisp.jpg), and writes faded-import.json next to them. Then choose that folder in Faded on your Mac, or put it in iCloud Drive and choose it on your iPhone or iPad.</p>
-
-<h2>On iPhone and iPad</h2>
-<p>Choose <strong>Add › Import with Your AI</strong>, then:</p>
+<h1>Import recipe photos with your own AI</h1><div class="rule"></div>
+<p>Use ChatGPT, Claude, Gemini, or an AI agent to transcribe recipe photos. You choose which photos to share. Your AI provider’s privacy terms apply.</p>
+<h2>iPhone and iPad</h2>
 <ol class="plain">
-<li><strong>Choose Photos.</strong> Pick the card photos. Faded keeps them, numbered in the order you chose them, while you’re in the other app.</li>
-<li><strong>Copy Prompt</strong>, then <strong>Share Photos</strong> to ChatGPT, Claude, or Gemini. Paste the prompt with the photos and send it. The prompt asks the AI to call the photos 1, 2, 3 in the order attached and to reply with the recipes in one code block.</li>
-<li>When the AI answers, copy its whole reply, come back to Faded, and tap <strong>Paste</strong>. Faded matches each recipe to its photo and adds them all.</li>
+<li>Open <strong>Add › Import with Your AI › Choose Photos</strong>. Select the card photos in order, front before back.</li>
+<li>Tap <strong>Copy Prompt</strong>, then <strong>Share Photos</strong>. In your AI chat, paste the prompt and send it with the photos.</li>
+<li>Copy the entire reply. Return to Faded Recipes and tap <strong>Paste</strong> to import the recipes with their photos.</li>
 </ol>
-<p>If your AI saved photos and a faded-import.json together in Files, choose <strong>Use a Folder Instead</strong>.</p>
-
-<h2>With a chat app on a Mac</h2>
-<p>Attach the photos and paste the prompt. Save the AI’s reply as a file named faded-import.json in the folder with the same photos, then choose the folder in Faded. Chat apps may rename photos you attach; if a recipe comes in without its photo, ask the AI to use the names of the files you attached.</p>
-
-<h2>The prompt</h2>
-<p>Faded shows the same prompt under <strong>Copy Prompt</strong> on the Mac. On iPhone and iPad, Copy Prompt gives a version for chat apps that numbers the attached photos instead of naming files.</p>
+<h2>Mac</h2>
+<ol class="plain">
+<li>Put the photos in one folder. Open <strong>File › Import with Your AI</strong> and choose <strong>Copy Prompt</strong>.</li>
+<li>Attach the photos to your AI chat and paste the prompt. Save the reply as <code>faded-import.json</code> in the photos folder. If you use an AI agent with file access, give it the folder and prompt so it can save the file for you.</li>
+<li>In Faded Recipes, select <strong>Choose Folder</strong> and import the recipes. To import the same folder on iPhone or iPad, open <strong>Import with Your AI › Use a Folder Instead</strong>.</li>
+</ol>
+<details><summary>View the Mac import prompt</summary>
 <pre class="prompt">I&#x27;m importing handwritten and printed recipe cards into Faded, a recipe app. Read every photo of a recipe in the folder I point you to. Use each photo&#x27;s exact file name.
 
 Transcribe each recipe exactly as it is written. This is copying, not cooking:
@@ -82,15 +69,11 @@ Write the result as JSON in exactly this shape, and nothing else. When you can w
 }
 
 Use &quot;&quot; or 0 for anything the card doesn&#x27;t say.</pre>
-
-<h2>Check what the AI read</h2>
-<p>Even the best AI misreads some handwriting. Every imported recipe is marked Check, so you can open it next to its photo and fix a line. Anything the AI couldn’t read is marked [unclear].</p>
-
-<h2>Get your whole library out</h2>
-<p>Choose <strong>Sort &amp; View › Export Library</strong>, or <strong>File › Export Library</strong> on the Mac, to save a folder with every recipe. It holds each recipe as a Markdown file you can open anywhere, every reference photo as a JPEG, a Faded recipe file for each recipe, and a faded-import.json. Choose that folder with Import with Your AI to bring the whole library back into Faded.</p>
-
-<h2>Privacy</h2>
-<p>Faded doesn’t send your photos to any AI for this. You choose the AI and give it the photos yourself, and that service’s own privacy terms apply. <a class="textlink" href="/faded-recipes/privacy/">Read the Faded Recipes privacy policy</a></p>
+</details>
+<h2>Review imported recipes</h2>
+<p>Open recipes marked <strong>Check</strong> and compare them with the photos. Look for <code>[unclear]</code> where the AI couldn’t read a word or amount. If a photo is missing, check that its filename matches the one in <code>faded-import.json</code>.</p>
+<h2>Restore an exported library</h2>
+<p>Choose <strong>Import with Your AI</strong> and select the folder saved by <strong>Export Library</strong>. It already contains the recipes and photos.</p>
 </article></main>
 <footer class="foot"><span>Faded Recipes</span><nav aria-label="Footer"><a href="/faded-recipes/import-with-ai/">Import with AI</a><a href="/faded-recipes/privacy/">Privacy</a><a href="mailto:contact@brianrenshaw.app">Contact</a><a href="/">More apps</a></nav></footer>
 </div></body></html>
