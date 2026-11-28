@@ -18,17 +18,26 @@
 <ol class="steps">
 <li><h3>Put the photos in one folder</h3><p>One photo per card side is fine. The front and back of a card can sit side by side; the AI keeps them together as one recipe.</p></li>
 <li><h3>Give your AI the folder and the prompt</h3><p>The prompt below asks it to copy each card exactly and save every recipe in one file, <strong>faded-import.json</strong>, in the same folder.</p></li>
-<li><h3>Choose the folder in Faded</h3><p>Choose <strong>Add › Import with Your AI › Choose Folder</strong>. On the Mac it is also <strong>File › Import with Your AI</strong>. Faded lists the recipes, then adds them all, each marked Check.</p></li>
+<li><h3>Choose the folder in Faded</h3><p>On the Mac, choose <strong>Add › Import with Your AI › Choose Folder</strong>, or <strong>File › Import with Your AI</strong>. Faded lists the recipes, then adds them all, each marked Check. On iPhone and iPad, see below.</p></li>
 </ol>
 
 <h2>With Claude Code or another agent on your computer</h2>
 <p>Open the folder of photos in Terminal, start your agent, and paste the prompt. The agent reads each photo, renames it after its recipe (tempting-apple-crisp.jpg), and writes faded-import.json next to them. Then choose that folder in Faded on your Mac, or put it in iCloud Drive and choose it on your iPhone or iPad.</p>
 
-<h2>With a chat app</h2>
+<h2>On iPhone and iPad</h2>
+<p>Choose <strong>Add › Import with Your AI</strong>, then:</p>
+<ol class="plain">
+<li><strong>Choose Photos.</strong> Pick the card photos. Faded keeps them, numbered in the order you chose them, while you’re in the other app.</li>
+<li><strong>Copy Prompt</strong>, then <strong>Share Photos</strong> to ChatGPT, Claude, or Gemini. Paste the prompt with the photos and send it. The prompt asks the AI to call the photos 1, 2, 3 in the order attached and to reply with the recipes in one code block.</li>
+<li>When the AI answers, copy its whole reply, come back to Faded, and tap <strong>Paste</strong>. Faded matches each recipe to its photo and adds them all.</li>
+</ol>
+<p>If your AI saved photos and a faded-import.json together in Files, choose <strong>Use a Folder Instead</strong>.</p>
+
+<h2>With a chat app on a Mac</h2>
 <p>Attach the photos and paste the prompt. Save the AI’s reply as a file named faded-import.json in the folder with the same photos, then choose the folder in Faded. Chat apps may rename photos you attach; if a recipe comes in without its photo, ask the AI to use the names of the files you attached.</p>
 
 <h2>The prompt</h2>
-<p>Faded shows the same prompt under <strong>Copy Prompt</strong>.</p>
+<p>Faded shows the same prompt under <strong>Copy Prompt</strong> on the Mac. On iPhone and iPad, Copy Prompt gives a version for chat apps that numbers the attached photos instead of naming files.</p>
 <pre class="prompt">I&#x27;m importing handwritten and printed recipe cards into Faded, a recipe app. Read every photo of a recipe in the folder I point you to. Use each photo&#x27;s exact file name.
 
 Transcribe each recipe exactly as it is written. This is copying, not cooking:
